@@ -1,0 +1,22 @@
+[
+  {
+    "id": 31,
+    "label": "基准 · 相对229.57收益",
+    "reported_value": 16.73,
+    "unit": "%",
+    "raw_text": "| 基准 | +6% | 14.8877 | 18倍 | 267.98 | +16.73% |",
+    "line_number": 83,
+    "classification": "math_only_no_external_certification",
+    "computed_value": "16.73067038376094437426493008668380014810"
+  },
+  {
+    "id": 34,
+    "label": "今天的研究买带",
+    "reported_value": 176.2,
+    "unit": "",
+    "raw_text": "**今天的研究买带：176.20—201.34美元。** 严格由267.9786÷1.15³与÷1.10³得出，对应基准三年价格终值以15%—10%必要回报折现。它不是未来目标价，也不表示下限没有风险。无可靠历史估值分位可用，不用“比历史便",
+    "line_number": 88,
+    "classification": "math_only_no_external_certification",
+    "computed_value": "176.20"
+  }
+]

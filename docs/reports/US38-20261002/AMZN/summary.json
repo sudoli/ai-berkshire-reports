@@ -1,0 +1,14 @@
+{
+  "ticker": "AMZN",
+  "company": "Amazon.com, Inc.",
+  "sector": "电商广告与云计算",
+  "research_date": "2026-10-02",
+  "quote": {"price": 250.64, "currency": "USD", "asof": "2026-10-02 11:20 EDT", "source_url": "https://stockanalysis.com/stocks/amzn/financials/", "verified": true, "note": "浏览器直接读取单站盘中价，非收盘；图片249.15美元未经验证。股价与EPS使用2022年20拆1后的普通股口径。"},
+  "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+  "recommendation": {"rating": "等待价格", "buy_low": 176, "buy_high": 208, "currency": "USD", "basis": "前瞻正常化EPS8美元×22—26倍=176—208美元；校准经营利润1100亿美元、税率20%、稀释股109亿，剔除股权重估且保留SBC。", "conditions": "AWS和广告增长兑现、租赁后现金缺口收窄，资本开支与稀释没有持续失控。", "holder_action": "可在核心运营保持时观察持有，新增资金等安全边际；AWS利润率与现金回报同步恶化时重估。"},
+  "thesis": "物流交易网络支撑广告与零售、AWS贡献主要利润，但重估收益和巨额AI投入必须从经营回报中分离。",
+  "key_risk": "AI资本开支和租赁刚性可能使AWS收入增长不能转化为股东现金，同时投资重估美化EPS。",
+  "confidence": "中",
+  "source_limitations": ["行情仅单一供应商盘中快照。", "未核验后续全年资本支出上调的完整发行人电话会，不将搜索摘要作为已证实指引。", "完整租赁承诺与到期表、管理层持股未逐项复核；估值参数为假设。"],
+  "report_file": "AMZN研究报告-20261002.md"
+}

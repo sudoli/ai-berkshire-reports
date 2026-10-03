@@ -1,0 +1,71 @@
+======================================================================
+报告数据抽检清单
+文件：ai-berkshire\reports\US38-20261002\AMZN\AMZN研究报告-20261002.md
+总提取数据点：21  |  抽样比例：15%  |  抽检数量：4
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  1     13  北美 · 收入，十亿美元                               116.18  
+  4     14  国际 · 收入，十亿美元                                42.20  
+  9     15  AWS · 经营利润率                                 39.40  %
+ 21     96  tistics/)，2026-10-02访问。行情为财务页11             20.00  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 1,
+    "label": "北美 · 收入，十亿美元",
+    "reported_value": 116.177,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| 北美 | 116.177 | 9.123 | 7.9% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 4,
+    "label": "国际 · 收入，十亿美元",
+    "reported_value": 42.197,
+    "unit": "",
+    "line_number": 14,
+    "raw_text": "| 国际 | 42.197 | 1.717 | 4.1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "AWS · 经营利润率",
+    "reported_value": 39.4,
+    "unit": "%",
+    "line_number": 15,
+    "raw_text": "| AWS | 42.232 | 16.621 | 39.4% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 21,
+    "label": "tistics/)，2026-10-02访问。行情为财务页11",
+    "reported_value": 20.0,
+    "unit": "",
+    "line_number": 96,
+    "raw_text": "3. [StockAnalysis财务](https://stockanalysis.com/stocks/amzn/financials/)、[资产负债表](https://stockanalysis.com/stocks/amzn/fi",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "ticker": "ANET",
+  "company": "Arista Networks, Inc.",
+  "sector": "数据中心网络与交换机",
+  "research_date": "2026-10-02",
+  "quote": {"price": 203.59, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/anet/history/", "verified": true, "note": "历史行情直接核对与原图片一致；仅单一行情商，非即时价。2024年12月4拆1后美元普通股口径。"},
+  "financial_period": "Q2 2026 ended 2026-06-30; FY2025 annual",
+  "recommendation": {"rating": "等待价格", "buy_low": 120, "buy_high": 144, "currency": "USD", "basis": "正常化前瞻EPS假设4.00美元×30—36倍PE；以Q2调整后EPS1.02及Q3指引1.06—1.08的年化能力为锚并保留费用稀释风险。", "conditions": "正常化EPS仍可支持4美元、GAAP营业利润率保持40%左右或更高，重要客户项目及EOS竞争优势未受损。", "holder_action": "以现金兑现、客户份额和软件优势检验持有；高估值或结构性客户流失时降低风险，不因单季交付波动或价格下跌机械交易。"},
+  "thesis": "EOS可靠性、自动化和运维转换成本让Arista分享AI网络扩容利润，但高买价可能吞噬成长回报。",
+  "key_risk": "少数云客户与商用交换芯片供应集中，叠加NVIDIA、Cisco及白牌竞争压缩利润和估值。",
+  "confidence": "中",
+  "source_limitations": ["报价为单一独立行情源核验的9月30日收盘价。", "最新各大客户收入占比及高管经济/投票权益未从年报正文复核。", "2026年6月现金加投资最新余额主要依赖第三方；2025年底余额完成主副源核对。", "前瞻EPS及终值倍数是研究假设，不是公司指引或市场共识。"],
+  "report_file": "ANET研究报告-20261002.md"
+}

@@ -1,0 +1,14 @@
+{
+  "ticker": "CLS",
+  "company": "Celestica Inc.",
+  "sector": "数据中心硬件设计与制造",
+  "research_date": "2026-10-02",
+  "quote": {"price": 361.43, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/cls/history/", "verified": true, "note": "历史行情Close及Adjusted Close直接核对一致；纽约美元普通股，不是多伦多加元报价；单一行情源、非实时价。"},
+  "financial_period": "Q2 2026 ended 2026-06-30; FY2025 annual",
+  "recommendation": {"rating": "等待价格", "buy_low": 226, "buy_high": 282.5, "currency": "USD", "basis": "公司2026调整后EPS指引11.30美元×20—25倍PE；以现金流、扩产资本需求和客户集中度限制制造企业溢价。", "conditions": "EPS11.30指引仍可信、关键项目按期投产，FCF指引不因资本开支和营运资本持续恶化。", "holder_action": "跟踪CFO、资本开支、客户集中度及调整后利润；不把总回报掉期收益资本化，大客户转单或现金兑现落后时重估。"},
+  "thesis": "HPS平台及复杂硬件能力提升附加值，但制造利润仍受大客户议价和资本再投入约束。",
+  "key_risk": "少数客户集中、薄经营利润率及扩厂资本开支，使高速收入增长不必然转化为股东现金。",
+  "confidence": "中",
+  "source_limitations": ["9月30日报价仅一个独立行情商核验，非即时价。", "客户具体合同、取消权、最新治理和债务契约未完整复核。", "部分历史财务仅第三方；营业利润分类存在差异，采用公司口径。", "2027需求展望不是已锁定收入，三年EPS增速为分析假设。"],
+  "report_file": "CLS研究报告-20261002.md"
+}

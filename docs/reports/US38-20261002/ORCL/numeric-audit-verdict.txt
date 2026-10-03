@@ -1,0 +1,30 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：ORCL
+======================================================================
+
+  [92m✅ 通过[0m [ 1] 云基础设施IaaS · 十亿美元                     报告:         7.39 
+                                                    https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf: 7.39 (偏差 0.00%)
+  [92m✅ 通过[0m [ 4] 硬件 · 十亿美元                            报告:         0.77 
+                                                    https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf: 0.77 (偏差 0.00%)
+  [92m✅ 通过[0m [101] annual revenue                       报告:     67357.00 USD million
+                                                    https://s23.q4cdn.com/440135859/files/doc_earnings/2026/q4/earnings-result/4q26-pressrelease-final.pdf: 67357.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/orcl/financials/: 67357.00 (偏差 0.00%)
+  [92m✅ 通过[0m [102] annual net income available to comm  报告:     16984.00 USD million
+                                                    https://s23.q4cdn.com/440135859/files/doc_earnings/2026/q4/earnings-result/4q26-pressrelease-final.pdf: 16984.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/orcl/financials/: 16984.00 (偏差 0.00%)
+  [92m✅ 通过[0m [103] latest cash plus marketable securit  报告:     37077.00 USD million
+                                                    https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf: 37077.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/orcl/financials/: 37077.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 5  |  通过: [92m5[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 5,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 5,
+  "fail_items": [],
+  "warn_items": []
+}

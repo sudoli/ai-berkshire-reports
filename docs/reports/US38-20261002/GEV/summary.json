@@ -1,0 +1,29 @@
+{
+  "ticker": "GEV",
+  "company": "GE Vernova Inc.",
+  "sector": "燃气轮机、电网设备与风电",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 984.44,
+    "currency": "USD",
+    "asof": "2026-10-02 11:18 EDT",
+    "source_url": "https://stockanalysis.com/stocks/gev/financials/",
+    "verified": true,
+    "note": "单平台直接核实盘中价，非收盘。9月30日图片950.49美元未核实。当前普通股，未列拆股记录，2024年分拆不等于拆股。"
+  },
+  "financial_period": "2026年第二季度，截至2026-06-30；2026-07-22发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 467.25,
+    "buy_high": 534,
+    "currency": "USD",
+    "basis": "收入460亿美元×13% EBITDA率，减假设折旧15亿美元，加净财务收入2亿美元、税率24%，除以2.66333581亿股，正常化EPS约13.35；×35至40倍=467.25至534.00美元。",
+    "conditions": "燃机档期预留继续转订单，Power和电网利润兑现、Wind损失受控，预收款不被当成永久可分配现金；桥接假设变动即重算。",
+    "holder_action": "跟踪现金履约质量和风电尾部责任，不用含股权重估收益的TTM PE证明便宜；估值过度或风险集中时可分步降低敞口，证伪时重估退出。"
+  },
+  "thesis": "燃机服务及电网设备的稀缺性真实，但现价已需要多年高速正常化利润增长才能消化。",
+  "key_risk": "预付款与交易收益夸大表面现金和盈利，风电亏损、档期取消或估值压缩共同损害普通股回报。",
+  "confidence": "中",
+  "source_limitations": ["独立上市历史较短；正常化EPS的折旧、净财务收入及税率为研究假设。", "公司headline现金含受限资金，与金融平台现金口径不同，未视为完全交叉认证。", "报价单平台；管理层持股及最新SBC明细未全面核实。"],
+  "report_file": "GEV研究报告-20261002.md"
+}

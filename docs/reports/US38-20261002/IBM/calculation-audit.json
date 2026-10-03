@@ -1,0 +1,178 @@
+{
+  "ticker": "IBM",
+  "inputs": {
+    "price": "222.50",
+    "image": "219.93",
+    "eps": "12.5",
+    "shares": "942.13e6",
+    "reported": "209.62e9",
+    "growth": [
+      "0.09",
+      "0.05",
+      "0"
+    ],
+    "pe": [
+      "21",
+      "17",
+      "13"
+    ],
+    "band": [
+      "14",
+      "16"
+    ],
+    "rev": [
+      "67535",
+      "67535"
+    ],
+    "net": [
+      "10593",
+      "10593"
+    ],
+    "cash": [
+      "8132",
+      "8132"
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "bull",
+      "growth": "0.09",
+      "pe": "21",
+      "eps": "16.1878625",
+      "target": "339.9451125",
+      "return_pct": "52.78432022471910112359550560",
+      "cagr_pct": "15.17536451589467526900815290"
+    },
+    {
+      "name": "base",
+      "growth": "0.05",
+      "pe": "17",
+      "eps": "14.4703125",
+      "target": "245.9953125",
+      "return_pct": "10.55969101123595505617977530",
+      "cagr_pct": "3.402793595804599837074103000"
+    },
+    {
+      "name": "bear",
+      "growth": "0",
+      "pe": "13",
+      "eps": "12.5",
+      "target": "162.5",
+      "return_pct": "-26.96629213483146067415730337",
+      "cagr_pct": "-9.945009793159251624816768480"
+    }
+  ],
+  "buy_low": "175.0",
+  "buy_high": "200.0",
+  "image_to_quote_pct": "1.168553630700677488291729200",
+  "forward_normalized_pe": "17.8",
+  "marketcap": "2.096239250E+11",
+  "warning": "EPS is forward normalized assumption; tool TTM label is inapplicable. Crosschecks use same basis, not independent audit.",
+  "financial_rigor": [
+    {
+      "command": [
+        "verify-market-cap",
+        "--price",
+        "222.50",
+        "--shares",
+        "942.13e6",
+        "--reported",
+        "209.62e9",
+        "--currency",
+        "USD"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       222.5 USD\n  总股本 (Shares):    942.13M\n  计算市值:           209.62B USD\n  报告市值:           209.62B USD\n  偏差:               0.00%\n\n  ✅ 验证通过, 偏差仅 0.00%\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify-valuation",
+        "--price",
+        "222.50",
+        "--eps",
+        "12.5"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 222.5\n\n  PE (TTM):  222.5 / 12.5 = 17.80x\n  盈利收益率: 5.62%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "three-scenario",
+        "--price",
+        "222.50",
+        "--eps",
+        "12.5",
+        "--shares",
+        "9.4213",
+        "--growth",
+        "0.09",
+        "0.05",
+        "0",
+        "--pe",
+        "21",
+        "17",
+        "13",
+        "--years",
+        "3",
+        "--currency",
+        "USD"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n三情景估值模型 (Three-Scenario Valuation)\n============================================================\n  当前股价: 222.5 USD\n  当前EPS:  12.5\n  预测期:   3年\n\n  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅\n  ------------ -------- -------- ---------- ---------- --------\n  乐观 (Bull)          9%      21x      16.19     339.9   +52.8%\n  中性 (Base)          5%      17x      14.47     246.0   +10.6%\n  悲观 (Bear)          0%      13x      12.50     162.5   -27.0%\n\n  ✅ 所有计算使用精确十进制, 结果可审计复现\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "rev",
+        "--values",
+        "{\"Issuer\": 67535.0, \"StockAnalysis\": 67535.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: rev (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 67,535.00 USD_million\n\n  ✅ Issuer              : 67,535.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 67,535.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 67,535.00 USD_million\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "net",
+        "--values",
+        "{\"Issuer\": 10593.0, \"StockAnalysis\": 10593.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 10,593.00 USD_million\n\n  ✅ Issuer              : 10,593.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 10,593.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 10,593.00 USD_million\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "cash",
+        "--values",
+        "{\"Issuer\": 8132.0, \"StockAnalysis\": 8132.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: cash (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 8,132.00 USD_million\n\n  ✅ Issuer              : 8,132.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 8,132.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 8,132.00 USD_million\n",
+      "stderr": ""
+    }
+  ],
+  "supplemental_decimal_checks": {
+    "normal_eps_calibration": "12.49633507853403141361256545",
+    "cash_valuation_calibration": "181.5789473684210526315789474",
+    "debt_ex_leases_bn": "61.987",
+    "net_debt_ex_leases_bn": "53.855",
+    "lease_liabilities_bn": "3.285",
+    "annualized_dividend_yield_pct": "3.038202247191011235955056180",
+    "three_year_unchanged_dividend": "20.28"
+  }
+}

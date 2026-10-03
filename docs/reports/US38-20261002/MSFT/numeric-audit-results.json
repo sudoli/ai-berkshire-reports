@@ -1,0 +1,93 @@
+{
+  "ticker": "MSFT",
+  "fact_samples": [
+    {
+      "id": 1,
+      "label": "Productivity and Business Processes · 收入，十亿美元",
+      "reported_value": 37.847,
+      "unit": "",
+      "line_number": 13,
+      "raw_text": "| Productivity and Business Processes | 37.847 | +14% | Microsoft 365按席位订阅，Copilot增加席位及用量付费；另有LinkedIn、Dynamics |",
+      "fetched_value": 37.847,
+      "fetched_source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 4,
+      "label": "Intelligent Cloud · 收入，十亿美元",
+      "reported_value": 39.306,
+      "unit": "",
+      "line_number": 14,
+      "raw_text": "| Intelligent Cloud | 39.306 | +32% | Azure算力、存储及数据库按消耗收费，另含服务器产品；不是纯Azure分部 |",
+      "fetched_value": 39.306,
+      "fetched_source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 101,
+      "label": "annual revenue",
+      "reported_value": 331839.0,
+      "unit": "USD million",
+      "fetched_value": 331839.0,
+      "fetched_source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "fetched_value2": 331839.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 102,
+      "label": "annual net income available to common holders",
+      "reported_value": 133749.0,
+      "unit": "USD million",
+      "fetched_value": 133749.0,
+      "fetched_source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "fetched_value2": 133749.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 103,
+      "label": "latest cash plus marketable securities, excluding restricted cash",
+      "reported_value": 76843.0,
+      "unit": "USD million",
+      "fetched_value": 76843.0,
+      "fetched_source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "fetched_value2": 76843.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    }
+  ],
+  "excluded_from_external_fact_verdict": [
+    {
+      "id": 9,
+      "label": "熊市：资本回报下降、利润缩减 · 期末PE",
+      "reported_value": 20.0,
+      "unit": "倍",
+      "line_number": 67,
+      "raw_text": "| 熊市：资本回报下降、利润缩减 | -3% | 20倍 | 346.82 | -32.65% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "model assumption or computed model value; arithmetic separately verified"
+    },
+    {
+      "id": 21,
+      "label": "tistics/)，2026-10-02访问。报价取财务页11",
+      "reported_value": 21.0,
+      "unit": "",
+      "line_number": 89,
+      "raw_text": "3. [StockAnalysis财务表](https://stockanalysis.com/stocks/msft/financials/)、[资产负债表](https://stockanalysis.com/stocks/msft/f",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "parser false positive: timestamp minute, not financial data"
+    }
+  ],
+  "warning": "PASS applies only to fact samples; some are issuer-only. Assumptions and parser false positives excluded, not certified. Full financial statement and contract audit not performed."
+}

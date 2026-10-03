@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="物流交易网络支撑广告与零售、AWS贡献主要利润，但重估收益和巨额AI投入必须从经营回报中分离。"><meta name="source-sha256" content="6d8cf3904b599df3bba96c965af6ffa68204f1414c39df598c77ee6d36a79fe9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>亚马逊（AMZN）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="AMZN%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / AMZN / 2026-10-02</div>
+<h1>Amazon.com, Inc.<span>电商广告与云计算 · 公司研究</span></h1><p class="hero-deck">物流交易网络支撑广告与零售、AWS贡献主要利润，但重估收益和巨额AI投入必须从经营回报中分离。</p>
+<div class="hero-meta"><span>2026 Q2，截至2026-06-30；全年基准2025</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$250.64<small>2026-10-02 11:20 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">浏览器直接读取单站盘中价，非收盘；图片249.15美元未经验证。股价与EPS使用2022年20拆1后的普通股口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">一、信息质量及公司如何赚钱</a></li><li><a href="#section-2">二、四年趋势与最新季度</a></li><li><a href="#section-3">三、AWS规模效应与现金账本</a></li><li><a href="#section-4">四、质量、资本配置及逆向检验</a></li><li><a href="#section-5">五、估值与情景</a></li><li><a href="#section-6">六、行动清单</a></li><li><a href="#section-7">来源、差异与计算审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">一、信息质量及公司如何赚钱</a></li><li><a href="#section-2">二、四年趋势与最新季度</a></li><li><a href="#section-3">三、AWS规模效应与现金账本</a></li><li><a href="#section-4">四、质量、资本配置及逆向检验</a></li><li><a href="#section-5">五、估值与情景</a></li><li><a href="#section-6">六、行动清单</a></li><li><a href="#section-7">来源、差异与计算审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>亚马逊（AMZN）研究报告</h1>
+<blockquote>
+<p>研究及信息截止：2026-10-02。采用250.64美元，StockAnalysis于2026-10-02 11:20 EDT显示的盘中价，非收盘、单一报价源。用户9月30日图片249.15美元未验证，本次价高0.60%。最新已核财期2026年第二季度。按6月底107.83亿普通股计算市值2.703万亿美元；对本文8美元前瞻正常化EPS约31.33倍。</p>
+</blockquote>
+<p><strong>核心命题：亚马逊用零售和物流留住交易、用广告变现交易意图、用AWS出售数字基础设施；三门生意的利润率与资本需求不能混为一谈。</strong></p>
+<h2 id="section-1">一、信息质量及公司如何赚钱</h2>
+<p>信息丰富度A级。共识陷阱是看到AWS高速增长便忽略零售、卫星、机房和股权投资占用现金。本报告核对发行人财报及第三方表格；没有把Anthropic重估收益当作销售利润，也不对未来投资回报给保证。</p>
+<div aria-label="一、信息质量及公司如何赚钱" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">2026 Q2分部</th>
+<th scope="col" style="text-align: right;">收入，十亿美元</th>
+<th scope="col" style="text-align: right;">经营利润，十亿美元</th>
+<th scope="col" style="text-align: right;">经营利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>北美</td>
+<td style="text-align: right;">116.177</td>
+<td style="text-align: right;">9.123</td>
+<td style="text-align: right;">7.9%</td>
+</tr>
+<tr>
+<td>国际</td>
+<td style="text-align: right;">42.197</td>
+<td style="text-align: right;">1.717</td>
+<td style="text-align: right;">4.1%</td>
+</tr>
+<tr>
+<td>AWS</td>
+<td style="text-align: right;">42.232</td>
+<td style="text-align: right;">16.621</td>
+<td style="text-align: right;">39.4%</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">200.606</td>
+<td style="text-align: right;">27.461</td>
+<td style="text-align: right;">13.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p>北美与国际并非纯商品自营：包含第三方卖家佣金、履约和广告。季度产品收入776.02亿美元、服务收入1,230.04亿美元；广告收入198.09亿美元、同比+26%，已包含在地区分部，<strong>不能当成第四分部重复加总</strong>。AWS收入同比+37%，经营利润占比高，但AWS以外仍需大量仓储、运输和内容支出。</p>
+<p>客户有消费者、第三方商家、广告主及企业开发者。消费者为选择、速度和便利而来；卖家为流量、仓配和转化率付费；广告主为临近购买的曝光竞价；云客户为可靠计算、数据库和开发工具持续付款。收入计量也不同：自营商品按销售总额、第三方服务主要按佣金收费，故收入增速不能直接解释交易份额。</p>
+<h2 id="section-2">二、四年趋势与最新季度</h2>
+<p>单位：十亿美元；自然年。简式FCF为经营现金流减现金购置固定资产，来自StockAnalysis，未加回资产出售及供应商激励。</p>
+<div aria-label="二、四年趋势与最新季度" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">年度</th>
+<th scope="col" style="text-align: right;">收入</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+<th scope="col" style="text-align: right;">现金资本支出</th>
+<th scope="col" style="text-align: right;">简式FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">513.983</td>
+<td style="text-align: right;">-2.722</td>
+<td style="text-align: right;">46.752</td>
+<td style="text-align: right;">63.645</td>
+<td style="text-align: right;">-16.893</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">574.785</td>
+<td style="text-align: right;">30.425</td>
+<td style="text-align: right;">84.946</td>
+<td style="text-align: right;">52.729</td>
+<td style="text-align: right;">32.217</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">637.959</td>
+<td style="text-align: right;">59.248</td>
+<td style="text-align: right;">115.877</td>
+<td style="text-align: right;">82.999</td>
+<td style="text-align: right;">32.878</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">716.924</td>
+<td style="text-align: right;">77.670</td>
+<td style="text-align: right;">139.514</td>
+<td style="text-align: right;">131.819</td>
+<td style="text-align: right;">7.695</td>
+</tr>
+</tbody>
+</table></div>
+<p>公司2025年口径FCF为111.94亿美元，而上表为76.95亿美元，差34.99亿美元，原因是公司扣除的是<strong>资本支出减出售回款及激励后的净额</strong>，并非财报冲突。2026 Q2末TTM经营现金流1,614.03亿美元，毛现金CapEx1,730.28亿美元，净现金CapEx1,690.07亿美元；对应两种FCF分别为-116.25亿与-76.04亿美元。</p>
+<p>Q2 GAAP净利626.47亿美元、EPS5.75美元，含534.15亿美元非经营其他收入，主要来自Anthropic投资。季度经营利润仅274.61亿美元；将EPS5.75直接乘四会严重抬高经常性盈利。半年净利润也不宜据以判断现金回收。</p>
+<p>Q3公司指引收入1,970—2,020亿美元，经营利润225—265亿美元。全年2026资本支出在年初发行人财报中预计约2,000亿美元；部分新闻提及后续上调，但本报告未取得相应完整发行人电话会核验，<strong>不把搜索摘要中的2,200亿美元作为已证实指引</strong>。估值仍按高投入压力测试，而不是认为旧指引是上限。</p>
+<h2 id="section-3">三、AWS规模效应与现金账本</h2>
+<p>AWS既卖通用CPU、存储、数据库，也卖AI训练和推理。Trainium、Graviton及Bedrock可降低硬件或模型采购依赖，托管服务提高黏性。但“自研芯片业务收入”与AWS收入存在交叉，不能另加价值。芯片便宜并不自动提高股东回报：价格竞争、模型厂客户议价以及新设备快速迭代都可能吞噬节省。</p>
+<p>Q2 AWS39.4%经营利润率非常强，仍包含折旧时间分配效果，不能假设所有新GPU都永久达到该水平。微软Azure、Google Cloud及客户自建数据中心争夺同一利润池。应看投入使用后的现金毛利、利用率和续约价格，而非单看采购GPU数量。</p>
+<p>6月底现金及有价证券1,229.88亿美元，长期债务1,288.94亿美元，长期租赁负债943.38亿美元；StockAnalysis含租赁等广义债务为2,516.35亿美元。长期债务、总债务、所有租赁并非同一口径，不能简单相加第三方总债务再扣一次租赁。广义净负债约1,286.47亿美元，只是方向性偿债衡量，未取得完整到期表。</p>
+<p>TTM经营租赁现金支付155.22亿美元、融资租赁本金15.99亿美元，后者在融资现金流中，普通公司FCF并未扣除；本期取得未付款PP&amp;E增加、未来开始的租赁也会带来后续现金压力。TTM SBC193.14亿美元仍是股东成本，EPS估值保留SBC，不因现金流加回就忽略稀释。财报普通股由2025年底107.31亿增至107.83亿。</p>
+<h2 id="section-4">四、质量、资本配置及逆向检验</h2>
+<p>零售与广告的护城河是物流密度、交易数据和消费者习惯；AWS是企业数据迁移成本、开发者生态与可靠性。沃尔玛、低价跨境平台、微软和Google分别从不同侧面竞争，亚马逊不能靠一个“平台”标签免疫所有价格战。</p>
+<p>Jassy的区域化履约和成本控制已有利润率改善证据；与此同时，AI、卫星和新零售扩张增加资本配置难度。Anthropic股权增值不等于新增现金，不宜用它给后续投资开无限支票。未核验最新董事及管理层持股，不编造治理评分。</p>
+<p>最强反方：传统零售低利润、AWS新增长重资本，广告利润又嵌在地区分部，外部投资者无法独立确认各利润池的投入回报；在现金FCF为负时以净利增长判断低估，很可能买到重估收益和延后折旧。</p>
+<div aria-label="四、质量、资本配置及逆向检验" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">风险</th>
+<th scope="col">主观可能性/影响</th>
+<th scope="col">观察或失效条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI客户压价、算力过剩</td>
+<td>中/高</td>
+<td>AWS收入仍增长但利润率和单位资本回报下降</td>
+</tr>
+<tr>
+<td>AI购物代理绕开赞助广告位</td>
+<td>中/中高</td>
+<td>广告收入增长落后交易、广告主转化率下降</td>
+</tr>
+<tr>
+<td>零售配送竞争吞噬效率</td>
+<td>中/中</td>
+<td>单位运输成本及承诺配送时效成本上升</td>
+</tr>
+<tr>
+<td>反垄断、商家规则受限</td>
+<td>难量化/高</td>
+<td>平台收费或广告排位被实质限制</td>
+</tr>
+<tr>
+<td>投资与租赁超过经营资金能力</td>
+<td>中/高</td>
+<td>FCF长期为负、债务及股数一起上升</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI代理也可能增强购买便利与广告转化，方向并非单边；本报告不把“AI提高生产率”自动翻译为亚马逊增加利润。</p>
+<h2 id="section-5">五、估值与情景</h2>
+<p>前瞻正常化EPS设为<strong>8美元研究假设</strong>，排除股权重估而保留SBC。近似校准：未来经营利润1,100亿美元，净非经营收益取零，20%税率，约109亿稀释股，对应8.07美元，保守取8；这不是公司净利指引。按此现价PE31.33倍，远高于用异常TTM EPS12.44得到的表面PE。</p>
+<div aria-label="五、估值与情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">三年情景</th>
+<th scope="col" style="text-align: right;">EPS复合增长</th>
+<th scope="col" style="text-align: right;">期末前瞻PE</th>
+<th scope="col" style="text-align: right;">三年后价格</th>
+<th scope="col" style="text-align: right;">相对250.64美元回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊：AWS降价、零售利润停滞</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">20倍</td>
+<td style="text-align: right;">160.00</td>
+<td style="text-align: right;">-36.16%</td>
+</tr>
+<tr>
+<td>基准：AWS和广告扩张</td>
+<td style="text-align: right;">+16%</td>
+<td style="text-align: right;">28倍</td>
+<td style="text-align: right;">349.64</td>
+<td style="text-align: right;">+39.50%</td>
+</tr>
+<tr>
+<td>牛：芯片、云和零售效率共振</td>
+<td style="text-align: right;">+23%</td>
+<td style="text-align: right;">34倍</td>
+<td style="text-align: right;">506.16</td>
+<td style="text-align: right;">+101.95%</td>
+</tr>
+</tbody>
+</table></div>
+<p>公式为8×(1+增长率)^3×倍数；不计股息、税费或汇率。基准年化价格收益11.74%，依赖盈利持续增长及28倍退出估值，不能视为保底。</p>
+<p>当下买入研究区间为<strong>176—208美元=8×22—26倍</strong>。低于基准终值倍数的原因是负现金FCF、租赁刚性和云盈利周期；在收益率约3.85%—4.55%的基础上，需要可持续两位数增长补偿机会成本。没有虚构历史PE分位；这不是把三年目标价直接当今天价值，也不是技术支撑位。</p>
+<h2 id="section-6">六、行动清单</h2>
+<p>评级：<strong>等待价格</strong>。250.64美元盘中价及249.15美元图片价都没有达到上述安全边际。</p>
+<ul>
+<li>空仓：等176—208美元，并核查最新投入计划与AWS现金转化，不能因一笔投资重估利润大增而追价。</li>
+<li>持有：基本面仍可跟踪持有；不因一次负FCF认定生意坏了，也不无限容忍每年“只是投资期”。</li>
+<li>加仓：AWS增长、广告转化和地区利润同时保持，租赁后现金缺口收窄且没有持续股本膨胀。</li>
+<li>卖出/失效：正常化EPS8美元不能达到，或连续数季AWS利润率下降伴随资本开支加速；下调估值而不是沿旧买区补仓。</li>
+</ul>
+<p>信息证据较丰富，AI研究置信度中；实际投资不确定性来自资本回报与竞争，而非资料数量。建议是条件研究纪律，不包含个性化仓位或保证收益。</p>
+<h2 id="section-7">来源、差异与计算审计</h2>
+<ol>
+<li><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx" rel="noreferrer">Amazon 2026 Q2业绩，2026-07-30</a>：最新分部、股权重估、租赁、广告及Q3指引。</li>
+<li><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx" rel="noreferrer">Amazon 2025全年业绩，2026-02-05</a>：年度比较与当时资本支出计划。</li>
+<li><a href="https://stockanalysis.com/stocks/amzn/financials/" rel="noreferrer">StockAnalysis财务</a>、<a href="https://stockanalysis.com/stocks/amzn/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/amzn/statistics/" rel="noreferrer">统计</a>，2026-10-02访问。行情为财务页11:20 EDT快照。</li>
+</ol>
+<p>FY2025收入716,924百万、净利77,670百万，以及2026 Q2现金与有价证券122,988百万与第三方数值一致，程序差异0%。第三方FCF不加回PP&amp;E出售和激励，已明确调节；不是将差异直接平均。107.83亿股×250.64=2.70265万亿美元，对第三方约2.71万亿美元差异不足1%，股本及报价时点略异。<code>financial_rigor.py</code>及Decimal记录见<code>calculation-audit.json</code>；工具TTM标签不适用本报告前瞻8美元假设。已完成数字提取与财报样本核验；未认证全部合同付款、历史各项及未来估值假设。</p></article><footer class="report-footer"><span>AMZN · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

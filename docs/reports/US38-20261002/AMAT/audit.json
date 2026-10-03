@@ -1,0 +1,80 @@
+{
+  "scope_note": "LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.",
+  "automatic_sample_classification": [
+    {
+      "id": 4,
+      "label": "偏弱 · 相对538.73价格回报",
+      "reported_value": -53.22,
+      "unit": "%",
+      "raw_text": "| 偏弱 | 0% | 18 | 14.00 | 252.00 | -53.22% |",
+      "line_number": 84,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 1,
+      "label": "偏弱 · 三年终值PE",
+      "reported_value": 18.0,
+      "unit": "",
+      "raw_text": "| 偏弱 | 0% | 18 | 14.00 | 252.00 | -53.22% |",
+      "line_number": 84,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 12,
+      "label": "乐观 · 三年EPS",
+      "reported_value": 24.19,
+      "unit": "",
+      "raw_text": "| 乐观 | +20% | 32 | 24.19 | 774.14 | +43.70% |",
+      "line_number": 86,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    }
+  ],
+  "supplementary_historical_checks": [
+    {
+      "id": 101,
+      "label": "FY2025 revenue",
+      "reported_value": 28368,
+      "unit": "million, statement currency",
+      "fetched_value": 28368,
+      "fetched_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025/",
+      "fetched_value2": 28368,
+      "fetched_source2": "https://stockanalysis.com/stocks/amat/financials/"
+    },
+    {
+      "id": 102,
+      "label": "FY2025 net income",
+      "reported_value": 6998,
+      "unit": "million, statement currency",
+      "fetched_value": 6998,
+      "fetched_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025/",
+      "fetched_value2": 6998,
+      "fetched_source2": "https://stockanalysis.com/stocks/amat/financials/"
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 2,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 2,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "additional_decimal_checks": {
+    "Q3_simple_fcf_USD_million": "2330",
+    "nine_month_simple_fcf_USD_million": "3580",
+    "net_cash_ex_operating_leases_USD_million": "2689",
+    "debt_definition_gap_USD_million": "802",
+    "normalized_eps_operating_bridge": "13.775",
+    "ttm_pe": "46.48231233822260569456427955",
+    "alternative_band_low": "230",
+    "alternative_band_high": "270"
+  },
+  "summary_schema_and_band_order": "PASS"
+}

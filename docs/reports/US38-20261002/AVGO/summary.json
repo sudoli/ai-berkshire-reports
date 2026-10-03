@@ -1,0 +1,34 @@
+{
+  "ticker": "AVGO",
+  "company": "Broadcom Inc.",
+  "sector": "定制AI芯片与基础设施软件",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 352.83,
+    "currency": "USD",
+    "asof": "2026-10-02 11:18 EDT",
+    "source_url": "https://stockanalysis.com/stocks/avgo/financials/",
+    "verified": true,
+    "note": "盘中非收盘；Yahoo 11:22:42 EDT为352.26。图片351.19未核验，与基准相差+0.47%；2024年10拆1后口径。"
+  },
+  "financial_period": "FY2026 Q3，截至2026-08-02，2026-09-02发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 260,
+    "buy_high": 299,
+    "currency": "USD",
+    "basis": "收入1350亿美元、含SBC经营利润率60%、净利息25亿美元、税率16%、稀释49.5亿股推得经济EPS13.32，取13；13×20–23倍=260–299。三年基准474.51折现12%为337.75。",
+    "conditions": "定制项目按期量产且软件现金续费保持，净债务可控，13美元经济EPS不依赖排除全部SBC。",
+    "holder_action": "论点保持可观察持有；不因AI收入增长自动加仓，项目流失、软件现金受损或并购再杠杆时重估。"
+  },
+  "thesis": "ASIC工程能力和关键企业软件共同创造现金，但两者的增长、利润率及债务风险应分开判断。",
+  "key_risk": "少数云客户切换定制项目叠加软件客户迁移，净债务和SBC放大每股价值损失。",
+  "confidence": "中",
+  "source_limitations": [
+    "AI半导体包括网络，不等于全部ASIC；未取得按客户或项目拆分利润。",
+    "软件真实流失率和最新合同条款未完全公开。",
+    "StockAnalysis经营利润重分类与SEC GAAP不一致，采用SEC。",
+    "报价为双平台异时点盘中数据，图价未经核验；13美元EPS和情景为研究假设。"
+  ],
+  "report_file": "AVGO研究报告-20261002.md"
+}

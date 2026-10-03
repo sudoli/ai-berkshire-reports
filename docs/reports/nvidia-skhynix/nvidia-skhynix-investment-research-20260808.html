@@ -1,0 +1,2714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="英伟达（NASDAQ: NVDA）与 SK 海力士（NASDAQ: SKHY）投资研究报告：巴菲特—芒格—段永平—李录四大师综合分析，聚焦 AI 算力价值链上的价值捕获。">
+  <title>英伟达 与 SK 海力士 · 投资研究报告 | AI Berkshire Research</title>
+  <style>
+    :root {
+      --ink: #17202b;
+      --ink-soft: #56606c;
+      --paper: #f3f0e8;
+      --paper-bright: #fffdf8;
+      --navy: #101d2e;
+      --navy-2: #182a40;
+      --line: #d8d1c4;
+      --msft: #2a6fdb;
+      --spacex: #d95d42;
+      --positive: #167258;
+      --warning: #a84a2f;
+      --accent: #d7ff62;
+      --shadow: 0 24px 70px rgba(22, 31, 42, 0.12);
+      --radius: 18px;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      --serif: Georgia, "Noto Serif SC", "Songti SC", "SimSun", serif;
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--msft);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #164f9f;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 4px;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(215, 255, 98, 0.6);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      padding: 0 max(24px, calc((100vw - 1400px) / 2));
+      color: #fff;
+      background: rgba(16, 29, 46, 0.93);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      grid-template-columns: repeat(2, 7px);
+      gap: 3px;
+      transform: rotate(45deg);
+    }
+
+    .brand-mark i {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-meta {
+      color: #bac5d2;
+      font-size: 12px;
+    }
+
+    .print-button {
+      padding: 8px 13px;
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .print-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 610px;
+      overflow: hidden;
+      color: #fff;
+      background: var(--navy);
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::before {
+      width: 780px;
+      height: 780px;
+      top: -390px;
+      right: -120px;
+      box-shadow:
+        0 0 0 90px rgba(255, 255, 255, 0.025),
+        0 0 0 230px rgba(255, 255, 255, 0.018);
+    }
+
+    .hero::after {
+      width: 420px;
+      height: 420px;
+      right: 22%;
+      bottom: -330px;
+      border-color: rgba(215, 255, 98, 0.28);
+      box-shadow: 0 0 0 110px rgba(215, 255, 98, 0.025);
+    }
+
+    .hero-grid {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 96px 0 72px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 40px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .hero h1 {
+      max-width: 970px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(46px, 7vw, 94px);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      color: #91bfff;
+    }
+
+    .hero h1 em {
+      color: #ff9b84;
+      font-style: normal;
+    }
+
+    .hero-deck {
+      max-width: 760px;
+      margin: 32px 0 0;
+      color: #c7d0dc;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 36px;
+    }
+
+    .hero-meta span {
+      padding: 7px 12px;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .verdict-strip {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1fr;
+      width: min(1400px, calc(100% - 48px));
+      margin: -54px auto 0;
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .verdict-card {
+      min-height: 152px;
+      padding: 26px 30px;
+      border-right: 1px solid var(--line);
+    }
+
+    .verdict-card:last-child {
+      border-right: 0;
+    }
+
+    .verdict-card .label {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .verdict-card strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3vw, 38px);
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .verdict-card p {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .verdict-card.microsoft strong {
+      color: var(--msft);
+    }
+
+    .verdict-card.spacex strong {
+      color: var(--spacex);
+    }
+
+    .page-shell {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 940px);
+      gap: 64px;
+      width: min(1260px, calc(100% - 48px));
+      margin: 84px auto 120px;
+      align-items: start;
+    }
+
+    .toc-panel {
+      position: sticky;
+      top: 98px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      padding-right: 18px;
+      scrollbar-width: thin;
+    }
+
+    .toc-title {
+      display: block;
+      margin-bottom: 18px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .toc-panel nav {
+      display: grid;
+      gap: 3px;
+    }
+
+    .toc-panel a {
+      display: block;
+      padding: 7px 10px;
+      color: #68717b;
+      border-left: 2px solid transparent;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.4;
+      transition: 160ms ease;
+    }
+
+    .toc-panel a:hover,
+    .toc-panel a.active {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.52);
+      border-left-color: var(--msft);
+    }
+
+    .mobile-toc {
+      display: none;
+      width: 100%;
+      margin-bottom: 24px;
+      padding: 12px 42px 12px 14px;
+      color: var(--ink);
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .report {
+      min-width: 0;
+      padding: 52px 62px 70px;
+      background: var(--paper-bright);
+      border: 1px solid rgba(216, 209, 196, 0.8);
+      border-radius: var(--radius);
+      box-shadow: 0 15px 50px rgba(22, 31, 42, 0.08);
+    }
+
+    .report > h1:first-child {
+      display: none;
+    }
+
+    .report > h1:first-child + p {
+      margin-top: 0;
+      padding: 18px 20px;
+      color: var(--ink-soft);
+      background: #f3f6f9;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 12px 12px 0;
+      font-size: 14px;
+    }
+
+    .report h2,
+    .report h3,
+    .report h4 {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      scroll-margin-top: 90px;
+    }
+
+    .report h2 {
+      position: relative;
+      margin: 76px 0 30px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.18;
+    }
+
+    .report h2::before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 74px;
+      height: 3px;
+      background: var(--accent);
+      content: "";
+    }
+
+    .report h2:first-of-type {
+      margin-top: 45px;
+    }
+
+    .report h3 {
+      margin: 43px 0 18px;
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    .report h4 {
+      margin: 34px 0 12px;
+      font-size: 20px;
+    }
+
+    .report p {
+      margin: 0 0 18px;
+    }
+
+    .report ul,
+    .report ol {
+      margin: 16px 0 24px;
+      padding-left: 24px;
+    }
+
+    .report li {
+      margin: 7px 0;
+      padding-left: 4px;
+    }
+
+    .report hr {
+      height: 1px;
+      margin: 58px 0;
+      background: var(--line);
+      border: 0;
+    }
+
+    .table-scroll {
+      width: 100%;
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      scrollbar-width: thin;
+    }
+
+    .report table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .report thead {
+      color: #fff;
+      background: var(--navy-2);
+    }
+
+    .report th,
+    .report td {
+      padding: 13px 15px;
+      text-align: left;
+      vertical-align: top;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .report th.numeric,
+    .report td.numeric {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .report th:last-child,
+    .report td:last-child {
+      border-right: 0;
+    }
+
+    .report tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .report tbody tr:nth-child(even) {
+      background: #f7f4ee;
+    }
+
+    .report tbody tr:hover {
+      background: #eef3f8;
+    }
+
+    .report blockquote {
+      position: relative;
+      margin: 34px 0;
+      padding: 25px 28px 25px 32px;
+      color: #273446;
+      background: #edf2f6;
+      border: 0;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .report blockquote::before {
+      position: absolute;
+      top: 8px;
+      right: 18px;
+      color: rgba(42, 111, 219, 0.16);
+      font-family: var(--serif);
+      font-size: 65px;
+      line-height: 1;
+      content: "“";
+    }
+
+    .report blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .report code {
+      padding: 0.15em 0.42em;
+      color: #b23e2a;
+      background: #f2ece2;
+      border: 1px solid #e4dacb;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.88em;
+      overflow-wrap: anywhere;
+    }
+
+    .report strong {
+      color: #111a24;
+      font-weight: 800;
+    }
+
+    .citation {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 27px;
+      height: 19px;
+      margin: 0 2px;
+      padding: 0 5px;
+      color: #315a91;
+      background: #e7eef8;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1;
+      vertical-align: 0.12em;
+    }
+
+    .citation:hover {
+      color: #fff;
+      background: var(--msft);
+    }
+
+    .source-highlight {
+      animation: source-flash 1.8s ease-out;
+    }
+
+    @keyframes source-flash {
+      from { background: rgba(215, 255, 98, 0.7); }
+      to { background: transparent; }
+    }
+
+    .site-footer {
+      padding: 44px 24px;
+      color: #aeb9c6;
+      background: var(--navy);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .site-footer strong {
+      color: #fff;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 60;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      background: var(--navy);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(16, 29, 46, 0.22);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: 180ms ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .verdict-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .verdict-card {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .verdict-card:last-child {
+        border-bottom: 0;
+      }
+
+      .page-shell {
+        display: block;
+        width: min(860px, calc(100% - 32px));
+        margin-top: 52px;
+      }
+
+      .toc-panel {
+        display: none;
+      }
+
+      .mobile-toc {
+        display: block;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        font-size: 15px;
+      }
+
+      .site-header {
+        height: 58px;
+        padding: 0 16px;
+      }
+
+      .brand {
+        font-size: 11px;
+      }
+
+      .header-meta {
+        display: none;
+      }
+
+      .print-button {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 540px;
+      }
+
+      .hero-grid {
+        width: calc(100% - 32px);
+        padding: 78px 0 100px;
+      }
+
+      .hero h1 {
+        font-size: clamp(42px, 15vw, 67px);
+      }
+
+      .hero-deck {
+        font-size: 17px;
+      }
+
+      .verdict-strip {
+        width: calc(100% - 32px);
+        margin-top: -70px;
+      }
+
+      .verdict-card {
+        min-height: auto;
+        padding: 22px;
+      }
+
+      .report {
+        padding: 30px 20px 48px;
+        border-radius: 14px;
+      }
+
+      .report h2 {
+        margin-top: 58px;
+        font-size: 31px;
+      }
+
+      .report h3 {
+        font-size: 22px;
+      }
+
+      .report blockquote {
+        margin-inline: 0;
+        padding: 21px 20px 21px 23px;
+      }
+
+      .back-to-top {
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+        size: A4;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 10pt;
+      }
+
+      .site-header,
+      .toc-panel,
+      .mobile-toc,
+      .back-to-top,
+      .scroll-progress {
+        display: none !important;
+      }
+
+      .hero {
+        min-height: auto;
+        color: #000;
+        background: #fff;
+        border-bottom: 2px solid #000;
+      }
+
+      .hero-grid {
+        width: 100%;
+        padding: 20mm 0 12mm;
+      }
+
+      .hero h1 {
+        max-width: none;
+        font-size: 38pt;
+      }
+
+      .hero h1 span,
+      .hero h1 em,
+      .eyebrow,
+      .hero-deck,
+      .hero-meta span {
+        color: #000;
+      }
+
+      .hero-meta span {
+        border-color: #999;
+      }
+
+      .verdict-strip {
+        width: 100%;
+        margin: 10mm 0 0;
+        box-shadow: none;
+      }
+
+      .page-shell {
+        display: block;
+        width: 100%;
+        margin: 8mm 0 0;
+      }
+
+      .report {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .report h2,
+      .report h3 {
+        break-after: avoid;
+      }
+
+      .table-scroll {
+        overflow: visible;
+        break-inside: avoid;
+      }
+
+      .report table {
+        min-width: 0;
+        font-size: 7.5pt;
+      }
+
+      .report a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .site-footer {
+        color: #000;
+        background: #fff;
+        border-top: 1px solid #000;
+      }
+    }
+  
+    /* --- funnel-specific additions --- */
+    .funnel-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+    }
+
+    .funnel-step {
+      position: relative;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 13px;
+    }
+
+    .funnel-step b {
+      display: block;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .funnel-step span {
+      display: block;
+      margin-top: 8px;
+      color: #b6c2d1;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .funnel-step:last-child {
+      background: rgba(215, 255, 98, 0.1);
+      border-color: rgba(215, 255, 98, 0.42);
+    }
+
+    .funnel-step:last-child b {
+      color: var(--accent);
+    }
+
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.core .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.core strong { color: var(--positive); }
+    .verdict-card.satellite .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.satellite strong { color: var(--msft); }
+    .verdict-card.option .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.option strong { color: var(--warning); }
+
+    .weight-bar {
+      height: 4px;
+      margin-top: 14px;
+      background: #e7e2d7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .weight-bar i {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .verdict-card.core .weight-bar i { width: 55%; background: var(--positive); }
+    .verdict-card.satellite .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.option .weight-bar i { width: 10%; background: var(--warning); }
+
+    @media (max-width: 980px) {
+      .funnel-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 680px) {
+      .funnel-strip { width: calc(100% - 32px); gap: 8px; }
+      .funnel-step { padding: 14px; }
+    }
+
+    @media print {
+      .funnel-strip { width: 100%; margin: 8mm 0 0; }
+      .funnel-step { background: #fff; border-color: #999; }
+      .funnel-step b, .funnel-step span { color: #000; }
+      .funnel-step:last-child { background: #fff; border-color: #000; }
+      .funnel-step:last-child b { color: #000; }
+    }
+  
+    /* --- cross-sector report additions --- */
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.fin .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.fin strong { color: var(--positive); }
+    .verdict-card.tech .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.tech strong { color: var(--msft); }
+    .verdict-card.energy .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.energy strong { color: var(--warning); }
+
+    .weight-bar { height: 4px; margin-top: 14px; background: #e7e2d7; border-radius: 999px; overflow: hidden; }
+    .weight-bar i { display: block; height: 100%; border-radius: 999px; }
+    .verdict-card.fin .weight-bar i { width: 45%; background: var(--positive); }
+    .verdict-card.tech .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.energy .weight-bar i { width: 25%; background: var(--warning); }
+
+    .yield-banner {
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+      padding: 20px 24px;
+      background: rgba(215, 255, 98, 0.09);
+      border: 1px solid rgba(215, 255, 98, 0.4);
+      border-radius: 14px;
+      color: #dfe7f0;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .yield-banner b { color: var(--accent); font-size: 15px; }
+
+    @media (max-width: 680px) {
+      .yield-banner { width: calc(100% - 32px); padding: 16px; font-size: 13px; }
+    }
+
+    @media print {
+      .yield-banner { width: 100%; margin: 6mm 0 0; background: #fff; border-color: #000; color: #000; }
+      .yield-banner b { color: #000; }
+    }
+  
+    /* --- single-company report additions --- */
+    .verdict-card.avoid .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.avoid strong { color: var(--warning); }
+    .verdict-card.neutral .ticker { background: #eef2f6; color: var(--ink-soft); }
+
+    .scenario-strip .funnel-step:last-child {
+      background: rgba(217, 93, 66, 0.14);
+      border-color: rgba(217, 93, 66, 0.5);
+    }
+
+    .scenario-strip .funnel-step:last-child b { color: #ff9b84; }
+
+    .scenario-strip .funnel-step b { font-size: clamp(22px, 3vw, 34px); }
+  
+    /* --- two-company comparison additions --- */
+    .verdict-card.watch .ticker { background: #eaf1fb; color: #2f6fb5; }
+    .verdict-card.watch strong { color: #2f6fb5; }
+
+    .scenario-strip .funnel-step:nth-child(2),
+    .scenario-strip .funnel-step:nth-child(4) {
+      background: rgba(217, 93, 66, 0.14);
+      border-color: rgba(217, 93, 66, 0.5);
+    }
+
+    .scenario-strip .funnel-step:nth-child(2) b,
+    .scenario-strip .funnel-step:nth-child(4) b { color: #ff9b84; }
+
+    .scenario-strip .funnel-step b { font-size: clamp(22px, 3vw, 34px); }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回页面顶部">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      AI Berkshire Research
+    </a>
+    <div class="header-actions">
+      <span class="header-meta">价格基准 2026-08-07 收盘</span>
+      <button class="print-button" id="printButton" type="button">打印 / PDF</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-grid">
+        <div class="eyebrow">Investment Research · NVDA × SKHY · 2026</div>
+        <h1 id="pageTitle"><span>英伟达 与 SK 海力士</span><br><em>价值在链条上被谁捕获</em></h1>
+        <p class="hero-deck">两者不是竞争对手，而是上下游。HBM 占英伟达加速卡 BOM 的 46.4%，是最大单一物料成本——但英伟达拿走了整条链 82% 的毛利。</p>
+        <div class="hero-meta" role="group" aria-label="报告元数据">
+          <span>2026-08-07</span>
+          <span>NVDA $223.96</span>
+          <span>SKHY $137.91</span>
+          <span>30 / 30 抽检准出</span>
+        </div>
+      </div>
+
+      <div class="funnel-strip scenario-strip" role="group" aria-label="估值与现价对照">
+        <div class="funnel-step"><b>$183.02</b><span>NVDA 中性情景<br>折现现值</span></div>
+        <div class="funnel-step"><b>$223.96</b><span>NVDA 现价<br><strong>高出 18.3%</strong></span></div>
+        <div class="funnel-step"><b>$123.67</b><span>SKHY 乐观情景<br>折现现值</span></div>
+        <div class="funnel-step"><b>$137.91</b><span>SKHY 现价<br><strong>高出乐观情景 10.3%</strong></span></div>
+      </div>
+
+      <p class="yield-banner">
+        <b>核心结论：英伟达观望，SK 海力士回避。</b>存储厂商赢下了这一轮的<b>价格</b>，但没有赢下<b>数量</b>，也没有赢下<b>穿越周期的资本回报</b>——
+        ROIC <b>104.67%</b> vs <b>62.06%</b>，资本开支/收入 <b>2.6%</b> vs <b>18.6%</b>。而当前季度，是外推这件事最糟糕的时点。
+      </p>
+    </section>
+
+    <section class="verdict-strip" aria-label="核心判断">
+      <article class="verdict-card watch">
+        <span class="label">结论 · ★★★★</span>
+        <span class="ticker">NASDAQ: NVDA</span>
+        <strong>观望</strong>
+        <p>剔除 $250.29 亿投资收益后 PE 由 34.3x 升至 <b>39.5x</b>。合理买入区间 $155–185。风险：前三大客户占 54% 收入，且都在造自研芯片。</p>
+      </article>
+      <article class="verdict-card avoid">
+        <span class="label">结论 · ★★</span>
+        <span class="ticker">NASDAQ: SKHY</span>
+        <strong>回避</strong>
+        <p>三条独立否决理由，任一成立即足够：ADS 较韩股溢价 <b>36.5%</b> 且套利单向封死；毛利率 83.2% 处周期峰值；剔除 Kioxia 后 PE 由 8.73x 升至 <b>14.02x</b>。</p>
+      </article>
+      <article class="verdict-card neutral">
+        <span class="label">最大认知纠正</span>
+        <span class="ticker">论点错配</span>
+        <strong>它不是 HBM 标的</strong>
+        <p>HBM 仅约占 2026E DRAM 行业收入的 <b>14%</b>。本轮利润爆发主要来自<b>常规 DRAM 涨价</b>，而非 HBM——买入逻辑与盈利来源并不吻合。</p>
+      </article>
+    </section>
+
+    <div class="page-shell">
+      <aside class="toc-panel" aria-label="章节目录">
+        <span class="toc-title">Contents</span>
+        <nav id="toc"></nav>
+      </aside>
+
+      <div>
+        <label class="toc-title" for="mobileToc">跳转至章节</label>
+        <select class="mobile-toc" id="mobileToc" aria-label="选择章节"></select>
+        <article class="report" id="report">
+          <h1>英伟达 与 SK 海力士 投资研究报告</h1>
+          <p><strong>报告日期：</strong> 2026-08-08（周六，美股与韩股均已收周线）
+          <strong>价格基准：</strong> 2026-08-07 收盘 —— <strong>NVDA $223.96</strong>｜<strong>SKHY $137.91</strong>｜<strong>000660.KS ₩1,422,000</strong>
+          <strong>分析框架：</strong> 巴菲特—芒格—段永平—李录 四大师综合分析
+          <strong>关系定性：</strong> 两者<strong>不是竞争对手，而是上下游</strong>。HBM 是英伟达加速卡最大的单一物料成本（约占 BOM 的 <strong>46.4%</strong>）。本报告的核心问题是：<strong>在同一条 AI 算力价值链上，价值最终被谁捕获。</strong></p>
+          <p><strong>结论先行：</strong></p>
+          <ul>
+          <li><strong>英伟达：观望。</strong> 剔除投资收益后 PE <strong>39.5x</strong>，中性情景折现现值 <strong>$183.02</strong>，低于现价 18.3%。</li>
+          <li><strong>SK 海力士 ADS（SKHY）：回避。</strong> 三个独立理由叠加，其中任何一个单独成立都足以否决。</li>
+          </ul>
+          <blockquote>
+          <p>本报告用于学习研究，不构成投资建议。</p>
+          </blockquote>
+          <hr>
+          <h2>前置步骤：AI 研究偏见自觉</h2>
+          <h3>信息丰富度评级</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>评级</th>
+          <th>依据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>英伟达</strong></td>
+          <td><strong>A 级</strong></td>
+          <td>上市多年、61 位分析师覆盖、SEC 文件完整、XBRL 可直接提取</td>
+          </tr>
+          <tr>
+          <td><strong>SK 海力士</strong></td>
+          <td><strong>B 级</strong></td>
+          <td><strong>2026-07-10 才在纳斯达克上市</strong>，尚无 20-F（首份预计 2027 年 4 月）；Q2 2026 为<strong>未经审计的初步业绩</strong>，完整报表与附注尚未提交 SEC；HBM 收入从不单独披露</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>本轮实际纠正的重大错误（三项）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>我此前的判断</th>
+          <th>核查结论</th>
+          <th>证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>SKHY 首个交易日约 2026-04-10</td>
+          <td><strong>错误。实际为 2026-07-10</strong></td>
+          <td>Yahoo <code>firstTradeDate=1783690200</code> 对应 2026-07-10；SEC 的 8-A12B / CERT / EFFECT 均为 2026-07-09；424B4 封面写明&quot;Prior to this offering, there has been no public market for our ADSs&quot;</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>SK 海力士市值约 $1.019 万亿（沿用 Yahoo 口径）</td>
+          <td><strong>口径不完整。ADS 与韩国本地股存在 +36.50% 的持续性溢价</strong>，两个市值都&quot;对&quot;，但含义完全不同</td>
+          <td>见第一步 §1.3</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>把 SK 海力士当作&quot;HBM 标的&quot;</td>
+          <td><strong>论点错配。HBM 仅约占 2026E DRAM 行业收入的 14%</strong>，本轮利润爆发主要来自<strong>常规 DRAM 涨价</strong>而非 HBM</td>
+          <td>见第六步 §6.2</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>本轮触发并纠正的偏见</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>偏见</th>
+          <th>具体表现</th>
+          <th>纠正动作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>低 PE 偏好</strong></td>
+          <td>SK 海力士 ADS 口径 PE <strong>8.73x</strong>、韩股口径 <strong>6.40x</strong>，看起来是全球最便宜的大盘科技股</td>
+          <td>剔除 Kioxia 股权重估后，两个口径分别升至 <strong>14.02x / 10.27x</strong>（+60.6%）。<strong>存储股的低 PE 是警告不是便宜</strong></td>
+          </tr>
+          <tr>
+          <td><strong>非现金利润偏好</strong></td>
+          <td>英伟达 TTM 净利 $1,596.13亿 看似碾压一切</td>
+          <td>其中 **$250.29亿（15.7%）**来自 AI 生态股权重估，且几乎 100% 未实现、约 70% 标的处于锁定期。剔除后 PE 由 34.3x 升至 <strong>39.5x</strong></td>
+          </tr>
+          <tr>
+          <td><strong>上游即瓶颈</strong></td>
+          <td>HBM 是瓶颈，所以 HBM 供应商应该赚最多</td>
+          <td>英伟达已<strong>三源认证 HBM4</strong>（三星、SK 海力士、美光全部通过），并<strong>主动削减 Rubin Ultra 的 HBM 配置</strong>；其毛利率在存储史上最猛涨价周期中<strong>持平且指引持平</strong></td>
+          </tr>
+          <tr>
+          <td><strong>动量偏好</strong></td>
+          <td>SK 海力士 52 周涨 <strong>+450.1%</strong></td>
+          <td>但当前股价<strong>低于 50 日均线 33.0%</strong>；英伟达<strong>高于 50 日均线 8.7%</strong>。市场已在给存储杀估值</td>
+          </tr>
+          <tr>
+          <td><strong>单季外推</strong></td>
+          <td>SK 海力士 Q2 毛利率 <strong>83.2%</strong>、经营利润率 <strong>76.3%</strong>，双双超过英伟达</td>
+          <td>存储行业历史：美光曾在 13 个季度内从 <strong>−32.66%</strong> 毛利率升到 <strong>+84.56%</strong>；也曾在 4 个季度内从 +45.2% 跌到 <strong>−9.1%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <hr>
+          <h2>第一步：数据收集与交叉验证</h2>
+          <h3>1.1 市场快照（2026-08-07 收盘）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric"><strong>英伟达 NVDA</strong></th>
+          <th class="numeric"><strong>SK 海力士 SKHY（ADS）</strong></th>
+          <th class="numeric"><strong>SK 海力士 000660.KS</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>收盘价</td>
+          <td class="numeric"><strong>$223.96</strong></td>
+          <td class="numeric"><strong>$137.91</strong></td>
+          <td class="numeric"><strong>₩1,422,000</strong></td>
+          </tr>
+          <tr>
+          <td>股本</td>
+          <td class="numeric">242.21亿股</td>
+          <td class="numeric">7.2887亿普通股（=72.887亿 ADS）</td>
+          <td class="numeric">同左</td>
+          </tr>
+          <tr>
+          <td><strong>市值</strong></td>
+          <td class="numeric"><strong>$5.4245万亿</strong></td>
+          <td class="numeric"><strong>$1.00518万亿</strong></td>
+          <td class="numeric"><strong>₩1,036.45万亿（$7,364亿）</strong></td>
+          </tr>
+          <tr>
+          <td>52 周区间</td>
+          <td class="numeric">$164.07 – $236.54</td>
+          <td class="numeric">$124.80 – $194.80</td>
+          <td class="numeric">—</td>
+          </tr>
+          <tr>
+          <td>52 周涨幅</td>
+          <td class="numeric">+24.8%</td>
+          <td class="numeric">—</td>
+          <td class="numeric"><strong>+450.1%</strong></td>
+          </tr>
+          <tr>
+          <td>相对 50 日均线</td>
+          <td class="numeric"><strong>+8.7%</strong></td>
+          <td class="numeric">—</td>
+          <td class="numeric"><strong>−33.0%</strong></td>
+          </tr>
+          <tr>
+          <td>相对 200 日均线</td>
+          <td class="numeric">+15.5%</td>
+          <td class="numeric">—</td>
+          <td class="numeric">+18.2%</td>
+          </tr>
+          </tbody>
+          </table>
+          <blockquote>
+          <p><strong>两个价格都经 Yahoo v8 与 stockanalysis 双源核对，偏差 0.00%。</strong></p>
+          </blockquote>
+          <h3>1.2 财务对比（TTM）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric"><strong>英伟达</strong>（截 2026-04-26）</th>
+          <th class="numeric"><strong>SK 海力士</strong>（截 2026-06-30）</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>收入</td>
+          <td class="numeric"><strong>$2,534.91亿</strong></td>
+          <td class="numeric"><strong>₩189.17万亿（$1,344亿）</strong></td>
+          </tr>
+          <tr>
+          <td>GAAP 净利润</td>
+          <td class="numeric"><strong>$1,596.13亿</strong></td>
+          <td class="numeric"><strong>₩161.97万亿（$1,151亿）</strong></td>
+          </tr>
+          <tr>
+          <td>毛利率</td>
+          <td class="numeric">74.15%</td>
+          <td class="numeric">70.20%</td>
+          </tr>
+          <tr>
+          <td><strong>最新季度毛利率</strong></td>
+          <td class="numeric"><strong>74.9%</strong></td>
+          <td class="numeric"><strong>83.20%</strong></td>
+          </tr>
+          <tr>
+          <td><strong>最新季度经营利润率</strong></td>
+          <td class="numeric">65.6%</td>
+          <td class="numeric"><strong>76.33%</strong></td>
+          </tr>
+          <tr>
+          <td>经营现金流</td>
+          <td class="numeric">$1,256.48亿</td>
+          <td class="numeric">₩127.22万亿</td>
+          </tr>
+          <tr>
+          <td>资本开支</td>
+          <td class="numeric"><strong>$65.72亿</strong></td>
+          <td class="numeric"><strong>₩35.23万亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>资本开支/收入</strong></td>
+          <td class="numeric"><strong>2.6%</strong></td>
+          <td class="numeric"><strong>18.6%</strong></td>
+          </tr>
+          <tr>
+          <td>自由现金流</td>
+          <td class="numeric"><strong>$1,190.76亿</strong></td>
+          <td class="numeric">₩91.99万亿</td>
+          </tr>
+          <tr>
+          <td>OCF/净利润</td>
+          <td class="numeric">0.787</td>
+          <td class="numeric"><strong>0.79</strong></td>
+          </tr>
+          <tr>
+          <td>总债务</td>
+          <td class="numeric">$84.70亿（<strong>见 §1.5</strong>）</td>
+          <td class="numeric">₩18.59万亿</td>
+          </tr>
+          <tr>
+          <td>股东权益</td>
+          <td class="numeric">$1,954.74亿</td>
+          <td class="numeric">₩262.69万亿</td>
+          </tr>
+          <tr>
+          <td>D/E</td>
+          <td class="numeric">0.043</td>
+          <td class="numeric"><strong>0.071</strong></td>
+          </tr>
+          <tr>
+          <td>净现金</td>
+          <td class="numeric">$805.72亿（含全部投资）</td>
+          <td class="numeric"><strong>₩69.37万亿</strong>（另有 IPO 净额约 ₩39.5万亿未入账）</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>1.3 SK 海力士的市值悖论：ADS 溢价 +36.50%（本报告最重要的单一发现）</h3>
+          <p><strong>同一份经济权益，两个价格：</strong></p>
+          <pre><code>口径 A（ADS，美国投资者实际支付）
+            $137.91 × 10（1 ADS = 1/10 普通股）= 隐含每股 $1,379.10
+            × 728,866,056 股 = $1,005,179,177,830 ≈ $1.005 万亿
+
+          口径 B（KRX，韩国本地定价）
+            ₩1,422,000 × 728,866,056 股 = ₩1,036.45 万亿
+            ÷ 1,407.45 KRW/USD = $736.40 亿×10 = $7,364 亿
+
+          溢价 = (137.91 × 10 × 1,407.45) ÷ 1,422,000 − 1 = +36.50%
+          </code></pre>
+          <p>工具交叉验证判定 <strong>❌ 偏差 15.43%（超 1% 容差）</strong>——这不是数据错误，是真实存在的两个价格。</p>
+          <p><strong>溢价的时间序列（并非一次性异常）：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>日期</th>
+          <th class="numeric">SKHY</th>
+          <th class="numeric">折合每股</th>
+          <th class="numeric">KRX 收盘</th>
+          <th class="numeric"><strong>溢价</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2026-07-09（IPO 定价）</td>
+          <td class="numeric">$149.00</td>
+          <td class="numeric">$1,490.00</td>
+          <td class="numeric">₩2,186,000</td>
+          <td class="numeric"><strong>+4.83%</strong></td>
+          </tr>
+          <tr>
+          <td>2026-07-14</td>
+          <td class="numeric">$193.92</td>
+          <td class="numeric">$1,939.20</td>
+          <td class="numeric">₩1,913,000</td>
+          <td class="numeric">+50.83%</td>
+          </tr>
+          <tr>
+          <td>2026-07-27</td>
+          <td class="numeric">$143.02</td>
+          <td class="numeric">$1,430.20</td>
+          <td class="numeric">₩1,816,000</td>
+          <td class="numeric">+15.33%（最低）</td>
+          </tr>
+          <tr>
+          <td>2026-07-30</td>
+          <td class="numeric">$149.00</td>
+          <td class="numeric">$1,490.00</td>
+          <td class="numeric">₩1,322,000</td>
+          <td class="numeric"><strong>+60.11%（最高）</strong></td>
+          </tr>
+          <tr>
+          <td><strong>2026-08-07</strong></td>
+          <td class="numeric"><strong>$137.91</strong></td>
+          <td class="numeric"><strong>$1,379.10</strong></td>
+          <td class="numeric"><strong>₩1,422,000</strong></td>
+          <td class="numeric"><strong>+36.50%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>为什么溢价能持续、甚至扩大？</strong> 招股书风险因素给出了机制：</p>
+          <ol>
+          <li><strong>ADS 池极小</strong>——ADS 仅对应 17,790,000 股普通股，占流通股的 <strong>2.44%</strong></li>
+          <li><strong>套利是单向的</strong>——ADS 可注销换取普通股，但普通股存入换取新 ADS <strong>受限</strong>。招股书原文：&quot;if you surrender ADSs and withdraw the underlying common shares, <strong>you may not be allowed to deposit the common shares again to obtain ADSs</strong>&quot;。原因是需公司同意 + 向韩国金融委员会提交韩文证券申报书并生效</li>
+          <li>存托协议另允许公司设定 ADS 上限</li>
+          </ol>
+          <blockquote>
+          <p><strong>投资含义：在 $137.91 买入 SKHY，等于为同一份经济权益比首尔投资者多付 36.5%。这不是估值判断，是结构性价值损耗。</strong>
+          更危险的是不对称：若韩国监管未来放开 ADS 增发，溢价可能迅速收敛——<strong>收敛方向对 ADS 持有人不利。</strong></p>
+          </blockquote>
+          <h3>1.4 关键数据交叉验证记录</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>数据点</th>
+          <th class="numeric">主来源</th>
+          <th class="numeric">副来源</th>
+          <th>工具结论</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>NVDA 2026-08-07 收盘</td>
+          <td class="numeric">Yahoo v8 $223.96</td>
+          <td class="numeric">stockanalysis $223.96</td>
+          <td>✅ 偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td>SKHY 2026-08-07 收盘</td>
+          <td class="numeric">Yahoo v8 $137.91</td>
+          <td class="numeric">stockanalysis $137.91</td>
+          <td>✅ 偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td>NVDA 市值</td>
+          <td class="numeric">$223.96 × 242.21亿股</td>
+          <td class="numeric">$5.4245万亿</td>
+          <td>✅ 偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td><strong>SK 海力士市值</strong></td>
+          <td class="numeric">ADS 口径 $10,051.79亿</td>
+          <td class="numeric">KRX 口径 $7,364亿</td>
+          <td>❌ <strong>偏差 15.43%（结构性溢价，非错误）</strong></td>
+          </tr>
+          <tr>
+          <td>SK 海力士股本</td>
+          <td class="numeric">424B4 + 6-K 推算 728,866,056 股</td>
+          <td class="numeric">股息总额 ₩273,324,801,750 ÷ ₩375 = 728,866,138 股</td>
+          <td>✅ 差 82 股（0.00001%），恰为待交付独董的库藏股</td>
+          </tr>
+          <tr>
+          <td>NVDA TTM 投资收益</td>
+          <td class="numeric">利润表 $25,132M</td>
+          <td class="numeric">现金流量表 $25,029M</td>
+          <td>✅ 差 0.4%</td>
+          </tr>
+          <tr>
+          <td>NVDA 剔除后 PE</td>
+          <td class="numeric">$223.96 ÷ $5.67</td>
+          <td class="numeric"><strong>39.49x</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          <tr>
+          <td>SK 海力士剔除后 PE（ADS）</td>
+          <td class="numeric">₩1,414.74万亿 ÷ ₩100.91万亿</td>
+          <td class="numeric"><strong>14.02x</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>1.5 两处第三方数据已过时（必须点名）</h3>
+          <p><strong>英伟达</strong>：2026-06-18 完成 <strong>$250亿</strong>高级票据发行（7 档，票息 4.250%–5.625%，2028–2056 年到期）。<strong>所有主流数据终端的总债务仍停留在 2026-04-26 的 $84.70亿</strong>，D/E 由 0.043 升至形式上的 <strong>0.171</strong>。同时新增 <strong>$800亿</strong>回购授权、季度股息由 $0.01 提至 <strong>$0.25</strong>（25 倍）。</p>
+          <p><strong>SK 海力士</strong>：资产负债表数据为 2026-06-30，<strong>不含 7 月 14 日到账的 IPO 募资 ₩39.89万亿</strong>。做企业价值计算须备考加回，净现金实为约 <strong>₩108.9万亿</strong>。</p>
+          <hr>
+          <h2>第二步：生意本质分析 — 段永平&quot;对的生意&quot;</h2>
+          <h3>一句话定义</h3>
+          <ul>
+          <li><strong>英伟达</strong>：把 GPU、NVLink、网络与 CUDA 软件打包成机柜级 AI 计算系统，按系统而非按芯片收费。</li>
+          <li><strong>SK 海力士</strong>：制造并销售 DRAM、HBM 与 NAND，靠工艺代际与产能规模在三寡头格局中赚周期的钱。</li>
+          </ul>
+          <h3>两门生意的结构性差异</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>维度</th>
+          <th>英伟达</th>
+          <th>SK 海力士</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>产品同质度</td>
+          <td>低（CUDA 生态锁定）</td>
+          <td><strong>高</strong>（DRAM 是标准品，HBM 有规格但可替代）</td>
+          </tr>
+          <tr>
+          <td>定价机制</td>
+          <td>自主定价</td>
+          <td><strong>供需边际定价</strong></td>
+          </tr>
+          <tr>
+          <td>资本强度</td>
+          <td><strong>2.6%</strong> 收入</td>
+          <td><strong>18.6%</strong> 收入</td>
+          </tr>
+          <tr>
+          <td>产能扩张周期</td>
+          <td>无（Fabless）</td>
+          <td><strong>3–5 年</strong>（M17 首条洁净室 2028-12，Y2 为 2029-06）</td>
+          </tr>
+          <tr>
+          <td>客户集中度</td>
+          <td>前三大 = <strong>54%</strong> 收入</td>
+          <td>最大客户 14.8%、前两大 27.2%</td>
+          </tr>
+          <tr>
+          <td>需求波动传导</td>
+          <td>通过订单簿缓冲</td>
+          <td><strong>直接、剧烈</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>段永平会问的三个问题</h3>
+          <p><strong>问题一：这门生意好在哪？</strong></p>
+          <p><strong>英伟达好在&quot;卖系统不卖芯片&quot;。</strong> Epoch AI 的物料成本模型显示：B200 单卡制造成本约 $6,250，其中 <strong>HBM $2,900（46.4%）、先进封装 $1,100（17.6%），而作为 GPU 核心的逻辑裸片只有 $900（14.4%）</strong>。英伟达以 $30,000–40,000 售出，芯片层毛利率约 82%。<strong>它的价值不在自己制造的那部分，而在把别人制造的部分组织起来的能力。</strong></p>
+          <p><strong>SK 海力士好在&quot;三寡头 + 工艺领先&quot;。</strong> 2026Q1 HBM 收入份额 <strong>58%</strong>（全球第一）、DRAM 29.1%（第二）。Q2 2026 毛利率 83.2%、经营利润率 76.3%——<strong>双双超过英伟达</strong>。这不是幻觉，这是真实的定价权兑现。</p>
+          <p><strong>问题二：本分是什么？有没有偏离？</strong></p>
+          <p>英伟达的本分是让开发者的 AI 工作跑得更快。但有一个新出现的偏离信号：<strong>FY2027 Q1 起，Gaming、专业可视化、汽车三项终端市场收入不再单独披露</strong>，全部并入 &quot;Edge Computing&quot;。这是<strong>披露颗粒度的实质性下降</strong>——投资者已无法追踪游戏业务的独立表现。</p>
+          <p>SK 海力士的本分是把制程做到最好、把产能开到最满。招股书称工厂&quot;365 天 24 小时满负荷运转&quot;。管理层同时明确提&quot;<strong>CapEx Discipline</strong>&quot;（资本开支纪律）——在史上最好的周期里主动克制扩产，这是加分项。</p>
+          <p><strong>问题三：持续性在哪？</strong></p>
+          <p>英伟达的持续性在 <strong>CUDA 生态的软件锁定</strong>，这不随硬件代际更替消失。</p>
+          <p>SK 海力士的持续性存疑——<strong>它的超额利润来自供给短缺，而供给短缺按定义是暂时的</strong>。公司自己的新闻中心（2026-01-05）都引用了外部观点：&quot;HBM 价格可能在 2026 年后进入调整期&quot;。</p>
+          <h3>必须诚实说的不好</h3>
+          <p><strong>英伟达</strong>：</p>
+          <ul>
+          <li>TTM 净利中 **$250.29亿（15.7%）**来自非经营性投资收益</li>
+          <li>前三大直接客户占收入 <strong>54%</strong>（一年前为 30%）、占应收账款 <strong>64%</strong>（约 $261亿）</li>
+          <li>公司自认存在<strong>循环性风险</strong>：10-Q 原文&quot;$18.6 billion in private companies and infrastructure funds. <strong>Some of these investments include AI model makers that may indirectly purchase or use our products in the cloud.</strong>&quot;，并另称&quot;<strong>one AI research and deployment company contributed to a meaningful amount of our revenue by purchasing cloud services from our customers</strong>&quot;</li>
+          </ul>
+          <p><strong>SK 海力士</strong>：</p>
+          <ul>
+          <li>TTM 税前利润的 **37.8%（₩78.06万亿）**是营业外收益，主体是 Kioxia 股权重估与处置</li>
+          <li><strong>Kioxia 已于 2026 年 6 月全部售出</strong>——这个收益来源从 2026Q3 起消失</li>
+          <li>Q1 2026 DRAM 出货 bit <strong>持平</strong>，利润爆发<strong>几乎全部来自价格</strong></li>
+          </ul>
+          <hr>
+          <h2>第三步：护城河评估 — 巴菲特&quot;经济护城河&quot;</h2>
+          <table>
+          <thead>
+          <tr>
+          <th>护城河</th>
+          <th><strong>英伟达</strong></th>
+          <th><strong>SK 海力士</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>品牌/定价权</td>
+          <td>★★★★★ 74.9% 毛利率且指引持平</td>
+          <td>★★★ 当前定价权极强，但来自短缺而非品牌</td>
+          </tr>
+          <tr>
+          <td>转换成本</td>
+          <td>★★★★★ CUDA 生态、算子库、十余年工程师习惯</td>
+          <td>★★★ HBM 需协同设计验证；常规 DRAM 几乎无转换成本</td>
+          </tr>
+          <tr>
+          <td>网络效应</td>
+          <td>★★★★ 开发者越多生态库越全</td>
+          <td>★ 不存在</td>
+          </tr>
+          <tr>
+          <td>规模效应</td>
+          <td>★★★★ 对 CoWoS 产能与 HBM 供应的优先议价权</td>
+          <td>★★★★ 三寡头，制程与产能规模决定成本曲线</td>
+          </tr>
+          <tr>
+          <td>技术壁垒</td>
+          <td>★★★★ 机柜级 NVLink 领先，但硅片差距在收窄</td>
+          <td>★★★★ 1c 制程 DRAM、321 层 NAND、HBM4 已量产</td>
+          </tr>
+          <tr>
+          <td><strong>综合</strong></td>
+          <td><strong>★★★★★</strong></td>
+          <td><strong>★★★★</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>10 年后护城河还在吗？</h3>
+          <p><strong>英伟达：软件层大概率在，硬件层大概率被侵蚀。</strong></p>
+          <p>关键证据不是竞品性能，而是<strong>客户结构的变化</strong>。10-Q 风险因素原文：&quot;<strong>Some of our customers are developing their own ASICs</strong>&quot;。而英伟达的应对不是正面阻击，而是<strong>把定制 ASIC 拉进自己的生态</strong>——FY2026 推出 NVLink Fusion，2026Q1 与 <strong>Marvell 达成 NVLink Fusion 战略合作</strong>。这是聪明的防守，但也承认了硬件层的垄断守不住。</p>
+          <p><strong>SK 海力士：三寡头格局大概率在，但份额高速流动。</strong></p>
+          <p>Counterpoint 数据显示 HBM 收入份额：</p>
+          <ul>
+          <li>2025Q1：SK 海力士 <strong>69%</strong> / 三星 13% / 美光 18%</li>
+          <li>2025Q3：SK 海力士 <strong>57%</strong></li>
+          <li>2026Q1：SK 海力士 <strong>58%</strong> / 三星 <strong>21%</strong> / 美光 <strong>21%</strong></li>
+          </ul>
+          <p><strong>一年内 SK 海力士丢了 11 个点，三星拿走 8 个点。</strong> 份额在 2025 年下半年企稳，但这是一个流动性极高的市场，不是稳定寡头。</p>
+          <h3>摧毁护城河的力量</h3>
+          <p><strong>英伟达</strong>：企业转向自研 ASIC（AVGO/MRVL 的业务正是这一迁移的镜像）；推理市场对成本敏感，ASIC 经济性更优，而推理的长期规模大于训练。</p>
+          <p><strong>SK 海力士</strong>：<strong>英伟达已成功三源认证 HBM4</strong>——2026-06-05 黄仁勋在首尔确认三星、SK 海力士、美光<strong>全部通过 Vera Rubin 的 HBM4 认证并进入量产</strong>。2026 年 2–3 月流传的&quot;三星/美光被排除&quot;报道<strong>没有成立</strong>。单一供应商依赖已被打破。</p>
+          <hr>
+          <h2>第四步：逆向思考与风险清单 — 芒格&quot;反过来想&quot;</h2>
+          <h3>4.1 失败路径清单</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>失败路径</th>
+          <th>公司</th>
+          <th>概率判断</th>
+          <th>影响</th>
+          <th>关键观察指标</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>客户自研 ASIC 侵蚀份额</td>
+          <td>英伟达</td>
+          <td>中高</td>
+          <td>高</td>
+          <td>AVGO/MRVL 季度 AI 收入；前三大客户占比</td>
+          </tr>
+          <tr>
+          <td>投资收益反转</td>
+          <td>英伟达</td>
+          <td>中</td>
+          <td>中高</td>
+          <td>$824.65亿权益组合；上市部分跌 10% = 税前 −$39亿</td>
+          </tr>
+          <tr>
+          <td>循环生态被证伪</td>
+          <td>英伟达</td>
+          <td>中</td>
+          <td>高</td>
+          <td>被投 AI 公司的融资与付费能力</td>
+          </tr>
+          <tr>
+          <td><strong>存储周期见顶</strong></td>
+          <td><strong>SK 海力士</strong></td>
+          <td><strong>高</strong></td>
+          <td><strong>极高</strong></td>
+          <td>单季毛利率（当前 83.2%）；DRAM 合约价环比</td>
+          </tr>
+          <tr>
+          <td><strong>Kioxia 收益消失</strong></td>
+          <td><strong>SK 海力士</strong></td>
+          <td><strong>已确定</strong></td>
+          <td><strong>高</strong></td>
+          <td>2026Q3 起营业外收益归零</td>
+          </tr>
+          <tr>
+          <td><strong>ADS 溢价收敛</strong></td>
+          <td><strong>SK 海力士</strong></td>
+          <td><strong>中高</strong></td>
+          <td><strong>高</strong></td>
+          <td>ADS vs KRX 价差（当前 +36.50%）</td>
+          </tr>
+          <tr>
+          <td>三星 HBM4 放量抢份额</td>
+          <td>SK 海力士</td>
+          <td>中高</td>
+          <td>高</td>
+          <td>季度 HBM 份额（Counterpoint）</td>
+          </tr>
+          <tr>
+          <td>英伟达削减 HBM 用量</td>
+          <td>SK 海力士</td>
+          <td><strong>已在发生</strong></td>
+          <td>中高</td>
+          <td>见 4.3</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>4.2 存储周期的历史校准（这一段决定 SK 海力士的结论）</h3>
+          <p><strong>美光季度数据（可复核）：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th></th>
+          <th class="numeric">谷底：FY23 Q2（2023-03）</th>
+          <th class="numeric">峰值：FY26 Q3（2026-05）</th>
+          <th class="numeric">摆幅</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>收入</td>
+          <td class="numeric">$36.93亿</td>
+          <td class="numeric"><strong>$414.56亿</strong></td>
+          <td class="numeric"><strong>11.2 倍</strong></td>
+          </tr>
+          <tr>
+          <td>毛利率</td>
+          <td class="numeric"><strong>−32.66%</strong></td>
+          <td class="numeric"><strong>+84.56%</strong></td>
+          <td class="numeric"><strong>117 个百分点</strong></td>
+          </tr>
+          <tr>
+          <td>经营利润率</td>
+          <td class="numeric">−62.36%</td>
+          <td class="numeric">+80.37%</td>
+          <td class="numeric">143 个百分点</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>SK 海力士季度数据：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th></th>
+          <th class="numeric">谷底：2023Q1</th>
+          <th class="numeric">峰值：2026Q2</th>
+          <th class="numeric">摆幅</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>收入</td>
+          <td class="numeric">₩5.09万亿</td>
+          <td class="numeric"><strong>₩79.32万亿</strong></td>
+          <td class="numeric"><strong>15.6 倍</strong></td>
+          </tr>
+          <tr>
+          <td>毛利率</td>
+          <td class="numeric"><strong>−32.34%</strong></td>
+          <td class="numeric"><strong>+83.20%</strong></td>
+          <td class="numeric"><strong>116 个百分点</strong></td>
+          </tr>
+          <tr>
+          <td>经营利润率</td>
+          <td class="numeric">−66.87%</td>
+          <td class="numeric">+76.33%</td>
+          <td class="numeric">143 个百分点</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>更关键的是下行速度</strong>：美光 FY2022 收入 $308亿、毛利率 45.2% → <strong>FY2023 收入 $155亿（−49.5%）、毛利率 −9.1%、净亏 $58亿</strong>。<strong>四个季度完成。</strong></p>
+          <p>SemiAnalysis（2026-02-06）的历史总结：<em>&quot;prior memory supercycles have tended to <strong>peak and roll into downcycles within one or two years</strong>&quot;</em>，且 <em>&quot;<strong>Investors anticipate shifts in the supply–demand balance and pricing well before supplier earnings and margins actually peak.</strong>&quot;</em></p>
+          <p><strong>这句话正在应验</strong>：SK 海力士股价已低于 50 日均线 <strong>33.0%</strong>，而 Q2 是史上最好的季度。</p>
+          <h3>4.3 英伟达正在削减 HBM 用量（最直接的议价权证据）</h3>
+          <p>这是本轮研究最有力的单条证据链：</p>
+          <ul>
+          <li><strong>TrendForce（2026-08-04）</strong>：&quot;自 2026 年第三季度起，英伟达已开始将 Rubin Ultra 的 HBM 配置评估范围从原设计的 <strong>12-Hi HBM4e</strong> 扩展到 <strong>8-Hi HBM4e、12-Hi HBM4 与 8-Hi HBM4</strong>&quot;</li>
+          <li><strong>The Information（2026-08-06，经 Seoul Economic Daily 转述）</strong>：黄仁勋曾宣布每 GPU 配 <strong>1TB HBM4E</strong>；实际送测样品为 <strong>192GB 与 256GB</strong>——<strong>低于 Rubin 当前 288GB 的上限</strong>，且部分样品使用上一代 HBM4</li>
+          <li><strong>TrendForce（2026-08-04）</strong>：英伟达&quot;决定将 Vera Rubin 超级芯片模块的 <strong>SOCAMM 容量减半</strong>&quot;</li>
+          </ul>
+          <p><strong>TrendForce 给出的动机</strong>：&quot;AI 芯片厂商将同时面临 HBM 供应受限与<strong>采购成本上升</strong>的双重挑战，<strong>采用更低容量 HBM 配置的动机增强</strong>&quot;。</p>
+          <blockquote>
+          <p><strong>一个供应商赢得了 50% 的价格溢价，但客户以削减 33%–75% 用量回应——这不叫赢。</strong></p>
+          </blockquote>
+          <h3>4.4 英伟达毛利率在存储史上最猛涨价周期中纹丝不动</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>期间</th>
+          <th class="numeric">英伟达 GAAP 毛利率</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>FY2027 Q1（2026-04）</td>
+          <td class="numeric"><strong>74.9%</strong></td>
+          </tr>
+          <tr>
+          <td>FY2027 Q2 指引（2026-05-20 给出）</td>
+          <td class="numeric"><strong>74.9% ± 50bp</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>HBM 占其物料成本 46.4%，而 HBM 价格在同期暴涨——英伟达的毛利率却持平且指引持平。</strong> 它把 100% 的成本通胀转嫁给了客户，或用工程手段消化掉了。</p>
+          <h3>4.5 芒格式追问</h3>
+          <blockquote>
+          <p><strong>聪明人为什么不买？</strong></p>
+          <p><strong>不买英伟达</strong>：因为你在为一家前三大客户占收入 54%、且这三家都在系统性建设替代方案的公司支付 39.5 倍（剔除投资收益后）利润。历史上思科在 1999 年也有真护城河，但估值过高导致十年不回本。</p>
+          <p><strong>不买 SK 海力士 ADS</strong>：三条独立理由，任何一条单独成立都足够——
+          ① <strong>你比首尔投资者多付 36.5%</strong>，且套利被单向封死；
+          ② <strong>PE 8.73x 里有 60% 的折扣是一笔已经卖掉、不可重复的 Kioxia 收益制造的</strong>，真实 PE 是 14.02x；
+          ③ <strong>83.2% 的毛利率是有记录以来存储行业的最高值</strong>，而上一次周期峰值在四个季度内崩到负数。</p>
+          <p>芒格的反问会是：<strong>如果这三条你有任何一条无法证伪，为什么要买？</strong></p>
+          </blockquote>
+          <h3>4.6 历史类比</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>类比</th>
+          <th>对应</th>
+          <th>教训</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>1990 年代的 Intel</strong></td>
+          <td>英伟达</td>
+          <td>定义了一个时代的计算标准，赚了整整一个时代的钱。但 Intel 今日 TTM 亏损、ROE −10.7%——<strong>标准仍在，公司却在下一个范式中掉队</strong></td>
+          </tr>
+          <tr>
+          <td><strong>2000 年的思科</strong></td>
+          <td>英伟达</td>
+          <td>真护城河 + 真需求 + PE 100+，泡沫破裂后跌 80%，直到 2024 年才接近 1999 年市值</td>
+          </tr>
+          <tr>
+          <td><strong>2000 年的光纤、2021 年的航运</strong></td>
+          <td>SK 海力士</td>
+          <td>真实短缺推动价格与利润暴涨，公司短期财务指标全部&quot;优秀&quot;，但供给最终响应，利润率回归</td>
+          </tr>
+          <tr>
+          <td><strong>2018 年的存储周期</strong></td>
+          <td>SK 海力士</td>
+          <td>2018 下半年见顶（经营利润率约 50%），<strong>四个季度内转负</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <hr>
+          <h2>第五步：管理层评估</h2>
+          <h3>5.1 英伟达</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>时间</th>
+          <th>决策</th>
+          <th>评价</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2006 起</td>
+          <td>持续投入 CUDA 生态</td>
+          <td>A+，十七年长期主义</td>
+          </tr>
+          <tr>
+          <td>FY2026</td>
+          <td>推出 NVLink Fusion，允许定制 ASIC 接入</td>
+          <td>A，把对手变成生态参与者</td>
+          </tr>
+          <tr>
+          <td>2025-12</td>
+          <td>Groq LPU 技术授权（$130亿交割 + $40亿一年内），确认商誉 $144亿</td>
+          <td>待验证</td>
+          </tr>
+          <tr>
+          <td><strong>2026-05-20</strong></td>
+          <td><strong>Non-GAAP 口径不再加回股权激励</strong></td>
+          <td><strong>A+，罕见的披露质量提升，严于绝大多数美股科技公司</strong></td>
+          </tr>
+          <tr>
+          <td><strong>FY2027 Q1</strong></td>
+          <td><strong>停止单独披露 Gaming / 专业可视化 / 汽车收入</strong></td>
+          <td><strong>C−，披露颗粒度实质性下降</strong></td>
+          </tr>
+          <tr>
+          <td>2026-06-18</td>
+          <td>发债 $250亿（TTM 自由现金流已有 $1,191亿）</td>
+          <td><strong>用途需追问</strong></td>
+          </tr>
+          <tr>
+          <td>2026-05-18</td>
+          <td>新增 $800亿回购授权 + 股息提高 25 倍</td>
+          <td>中性</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>股权激励占收入仅 2.70%</strong>，是大型科技公司中最低之一。</p>
+          <h3>5.2 SK 海力士</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>时间</th>
+          <th>决策</th>
+          <th>评价</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2018</td>
+          <td>参与 Bain 财团投资 Kioxia（投入 ₩3.92万亿）</td>
+          <td><strong>A+，账面价值涨到 ₩20.23万亿，2026 年 6 月全部售出</strong></td>
+          </tr>
+          <tr>
+          <td>2021-12</td>
+          <td>收购 Intel NAND 业务</td>
+          <td>B，但中国 SAMR 附条件批准限制 2026 年在华 NAND 涨价</td>
+          </tr>
+          <tr>
+          <td>2025-2026</td>
+          <td>M15X 加速量产、1c 制程 DRAM 出货、321 层 NAND 占产量最大份额</td>
+          <td>A</td>
+          </tr>
+          <tr>
+          <td>2026-07-29</td>
+          <td>与约 <strong>10 家客户</strong>签订长期协议（LTA）</td>
+          <td>A−，但<strong>锁量/锁价程度、期限、金额均未披露</strong></td>
+          </tr>
+          <tr>
+          <td><strong>2026-08-07</strong></td>
+          <td><strong>董事会批准 Yongin Y2（₩35.22万亿）+ Cheongju M17（₩19.10万亿）= ₩54.32万亿</strong></td>
+          <td><strong>待验证——首条洁净室分别为 2029-06 与 2028-12</strong></td>
+          </tr>
+          <tr>
+          <td>2024-11 起</td>
+          <td>股息政策 ₩1,500/股/年；FY2025 实付 <strong>₩3,000</strong>（超额现金回报）</td>
+          <td>A</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>一个值得注意的正面细节</strong>：库藏股处分收益（FY2025 ₩4.31万亿、Q1 2026 ₩3.98万亿）<strong>全部计入权益而非损益</strong>，未虚增利润。<strong>这是会计诚信的加分项。</strong></p>
+          <h3>5.3 治理结构</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>项目</th>
+          <th>英伟达</th>
+          <th>SK 海力士</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>股权结构</td>
+          <td>单一类别，同股同权</td>
+          <td>单一类别</td>
+          </tr>
+          <tr>
+          <td>控股股东</td>
+          <td>无</td>
+          <td><strong>SK square 20.00%</strong>（法定下限）→ SK Inc. 32.14% → 崔泰源 17.90%</td>
+          </tr>
+          <tr>
+          <td>上市地</td>
+          <td>纳斯达克</td>
+          <td><strong>KRX 98.1% + 卢森堡 GDR 1.9% + 纳斯达克 ADS 2.44%（三条线）</strong></td>
+          </tr>
+          <tr>
+          <td>少数股东保护</td>
+          <td>标准</td>
+          <td>韩国财阀结构，ADS 持有人在三条线的最末端</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>5.4 段永平式追问</h3>
+          <blockquote>
+          <p><strong>如果 CEO 退休，公司还能保持竞争力吗？</strong></p>
+          <p><strong>英伟达</strong>：黄仁勋的产品判断力难以替代，但 CUDA 生态已制度化，短期不会崩塌。</p>
+          <p><strong>SK 海力士</strong>：管理层的价值主要体现在<strong>制程执行与资本纪律</strong>，这两项都是可传承的组织能力。<strong>存储公司的命运由周期而非 CEO 决定</strong>——这既降低了关键人物风险，也意味着管理层能做的有限。</p>
+          </blockquote>
+          <hr>
+          <h2>第六步：行业与文明趋势 — 李录&quot;文明演进框架&quot;</h2>
+          <h3>6.1 是文明级范式转移吗？</h3>
+          <p><strong>AI 计算是文明级的</strong>（类比电力革命，20–30 年扩散）。英伟达与 SK 海力士都是这场转移的受益者，但<strong>位置完全不同</strong>：</p>
+          <ul>
+          <li><strong>英伟达在&quot;定义标准&quot;的位置</strong>——类比 1990 年代的 Intel 之于 PC</li>
+          <li><strong>SK 海力士在&quot;供应零部件&quot;的位置</strong>——类比同期的存储厂商，它们同样赚到了钱，但<strong>估值中枢从未接近过 Intel</strong></li>
+          </ul>
+          <h3>6.2 论点错配：这不主要是一场 HBM 周期（本报告的关键行业发现）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric">2025</th>
+          <th class="numeric">2026E</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>HBM 市场规模</td>
+          <td class="numeric">约 $346亿</td>
+          <td class="numeric"><strong>$546亿（+58%）</strong>（BofA，2026-01-05）</td>
+          </tr>
+          <tr>
+          <td>DRAM 行业收入</td>
+          <td class="numeric">约 $1,657亿</td>
+          <td class="numeric">约 <strong>$4,043亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>HBM 占 DRAM 收入比</strong></td>
+          <td class="numeric"><strong>约 20.8%</strong></td>
+          <td class="numeric"><strong>约 13.7%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>HBM 增长 58%，但占 DRAM 收入的比重反而下降——因为常规 DRAM 涨得更快。</strong></p>
+          <p>佐证：</p>
+          <ul>
+          <li>三星在 DRAM 收入份额上反超 SK 海力士，且<strong>差距从 4 个百分点扩大到 9 个</strong>（2025Q4 的 36/32 → 2026Q1 的 38/29）。<strong>三星的优势是常规产能，不是 HBM</strong></li>
+          <li>三星 Q2 2026 存储创纪录，归因于&quot;<strong>服务器产品</strong>&quot;与&quot;行业性价格上行&quot;</li>
+          <li>SK 海力士 Q2 2026 原文：&quot;<strong>DRAM 与 NAND 闪存价格均出现显著的环比上涨</strong>&quot;</li>
+          </ul>
+          <blockquote>
+          <p><strong>投资含义：一个&quot;因为 HBM 所以买 SK 海力士&quot;的论点是错配的。真正的驱动是常规 DRAM 的价格通胀，而那是纯周期。</strong></p>
+          </blockquote>
+          <blockquote>
+          <p>⚠️ <strong>此处必须标注</strong>：13.7% 这个数字是<strong>本报告的推导</strong>（$546亿 ÷ 约 $4,043亿），底层的 DRAM 年度总额来自单一二手来源转述 TrendForce，未直接向 TrendForce 核实。方向性结论有多方定性佐证，但精确比例应谨慎使用。</p>
+          </blockquote>
+          <h3>6.3 周期位置：价格仍在涨，但二阶导已转向</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>期间</th>
+          <th class="numeric">服务器 DRAM 合约价</th>
+          <th class="numeric">PC DRAM</th>
+          <th class="numeric">NAND</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2026Q3</td>
+          <td class="numeric"><strong>+13–18% 环比</strong></td>
+          <td class="numeric">+15–20%</td>
+          <td class="numeric">+10–15%</td>
+          </tr>
+          <tr>
+          <td>2026Q4</td>
+          <td class="numeric">—</td>
+          <td class="numeric"><strong>+3–8% 环比</strong></td>
+          <td class="numeric">—</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>来源：TrendForce，2026-07-03 与 2026-06-30。</p>
+          <p><strong>PC DRAM 从 +15–20% 减速到 +3–8%。</strong> TrendForce 给出的原因是需求侧的：<em>&quot;记录高位的合约价意味着 PC 与智能手机等消费市场客户<strong>正在触及可承受极限</strong>&quot;</em>，并已将 2026 年全球笔电出货预测下调至 <strong>−13.6%</strong>。</p>
+          <p><strong>存储涨价开始摧毁终端需求。</strong></p>
+          <h3>6.4 供给何时追上需求？</h3>
+          <p>所有具名来源都说 <strong>2028 年之前不会</strong>：</p>
+          <ul>
+          <li><strong>TrendForce（2026-08-04）</strong>：&quot;DRAM 供应将在 <strong>2027 年全年</strong>保持紧张&quot;，HBM 供应商&quot;<strong>在 2027 年全年保留定价权</strong>&quot;</li>
+          <li><strong>美光（2026-06-25）</strong>：&quot;HBM 与 DRAM 的市场紧张预计持续<strong>到 2027 年之后</strong>&quot;</li>
+          <li><strong>三星（2026-07-30）</strong>：&quot;尽管努力增产，<strong>供给约束预计将持续</strong>&quot;</li>
+          </ul>
+          <p><strong>但必须注意来源独立性</strong>：这份名单里没有一个不利益相关方——要么是供应商本身，要么是向供应商卖研究的机构。</p>
+          <p><strong>SK 海力士自己的新闻中心（2026-01-05）反而给了反面观点</strong>：&quot;部分市场研究机构与海外媒体认为，<strong>HBM 价格可能在 2026 年后进入调整期</strong>，原因是竞争加剧与产能扩张。&quot;</p>
+          <h3>6.5 中国 CXMT：2029 年的风险，不是 2026 年的</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric">数值</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>CXMT DRAM 收入份额</td>
+          <td class="numeric">3%（2025Q1）→ <strong>8%（2026Q1）</strong></td>
+          </tr>
+          <tr>
+          <td>CXMT 2026E 晶圆产能</td>
+          <td class="numeric">约 35 万片/月（美光 37.5 万片）</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>但对价格无影响</strong>——Tom's Hardware（2026-07-26）实证：京东上 64GB DDR5-5600 RDIMM，三星/SK 海力士颗粒版售价 ¥18,595，<strong>CXMT 颗粒版 ¥18,999，反而贵 2.2%</strong>。原因是 CXMT 用较老制程，且&quot;<strong>在人人产能受限的环境下，CXMT 没有动机显著低价</strong>&quot;。</p>
+          <p>中国缺乏国产浸没式 DUV，SMEE 量产最早 2026 年底/2027 年初。<strong>CXMT 是 2029 年后的风险。</strong></p>
+          <h3>6.6 李录式追问</h3>
+          <blockquote>
+          <p><strong>站在 20 年后回看，这两家公司分别是什么？</strong></p>
+          <p><strong>英伟达最可能是&quot;这个时代的 Intel&quot;</strong>——定义了一个计算范式的标准，赚了一整个时代的钱，份额最终从近乎垄断回落到 40–60%。软件（CUDA）比硬件（GPU）更可能是它的长期价值来源。</p>
+          <p><strong>SK 海力士最可能仍是&quot;三大存储厂之一&quot;</strong>——不会消失，但<strong>利润率会回到远低于当前的水平</strong>。它没有台积电式的不可替代性，也没有英伟达式的生态锁定。HBM 三寡头且份额一年流动 11 个百分点，这与&quot;赢家通吃&quot;相去甚远。</p>
+          <p><strong>一个提醒</strong>：铁路改变了世界，但多数铁路投资者亏了钱。SK 海力士正在承诺 ₩54.32万亿的新产能，而这些产能 <strong>2029 年前不产出任何 bit</strong>。这正是&quot;建设高峰期支付终局价格&quot;的典型形态。</p>
+          </blockquote>
+          <hr>
+          <h2>第七步：估值与安全边际</h2>
+          <h3>7.1 当前定价对比</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric"><strong>英伟达</strong></th>
+          <th class="numeric"><strong>SKHY（ADS 口径）</strong></th>
+          <th class="numeric"><strong>SK 海力士（KRX 口径）</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>股价</td>
+          <td class="numeric">$223.96</td>
+          <td class="numeric">$137.91</td>
+          <td class="numeric">₩1,422,000</td>
+          </tr>
+          <tr>
+          <td>市值</td>
+          <td class="numeric">$5.4245万亿</td>
+          <td class="numeric">$1.00518万亿</td>
+          <td class="numeric">₩1,036.45万亿</td>
+          </tr>
+          <tr>
+          <td><strong>报告 PE（TTM）</strong></td>
+          <td class="numeric"><strong>34.30x</strong></td>
+          <td class="numeric"><strong>8.73x</strong></td>
+          <td class="numeric"><strong>6.40x</strong></td>
+          </tr>
+          <tr>
+          <td><strong>剔除非经营收益后 PE</strong></td>
+          <td class="numeric"><strong>39.49x</strong></td>
+          <td class="numeric"><strong>14.02x</strong></td>
+          <td class="numeric"><strong>10.27x</strong></td>
+          </tr>
+          <tr>
+          <td><strong>倍数抬升</strong></td>
+          <td class="numeric"><strong>+15.1%</strong></td>
+          <td class="numeric"><strong>+60.6%</strong></td>
+          <td class="numeric"><strong>+60.6%</strong></td>
+          </tr>
+          <tr>
+          <td>前瞻 PE</td>
+          <td class="numeric">22.43x（NTM）</td>
+          <td class="numeric">5.54x</td>
+          <td class="numeric">4.06x</td>
+          </tr>
+          <tr>
+          <td>PS</td>
+          <td class="numeric">21.40x</td>
+          <td class="numeric">7.48x</td>
+          <td class="numeric">5.48x</td>
+          </tr>
+          <tr>
+          <td>P/FCF</td>
+          <td class="numeric">45.56x</td>
+          <td class="numeric">15.38x</td>
+          <td class="numeric">11.27x</td>
+          </tr>
+          <tr>
+          <td><strong>FCF 收益率</strong></td>
+          <td class="numeric"><strong>2.20%</strong></td>
+          <td class="numeric"><strong>6.50%</strong></td>
+          <td class="numeric"><strong>8.88%</strong></td>
+          </tr>
+          <tr>
+          <td>资本开支/收入</td>
+          <td class="numeric"><strong>2.6%</strong></td>
+          <td class="numeric">18.6%</td>
+          <td class="numeric">18.6%</td>
+          </tr>
+          <tr>
+          <td>ROIC</td>
+          <td class="numeric"><strong>104.67%</strong></td>
+          <td class="numeric">62.06%</td>
+          <td class="numeric">62.06%</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>7.2 非经营性收益的精确拆解</h3>
+          <p><strong>英伟达（TTM，截 2026-04-26）：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>季度</th>
+          <th class="numeric">其他收益（费用）净额</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>FY26 Q2</td>
+          <td class="numeric">+$22.36亿</td>
+          </tr>
+          <tr>
+          <td>FY26 Q3</td>
+          <td class="numeric">+$13.63亿</td>
+          </tr>
+          <tr>
+          <td>FY26 Q4</td>
+          <td class="numeric">+$56.04亿</td>
+          </tr>
+          <tr>
+          <td><strong>FY27 Q1</strong></td>
+          <td class="numeric"><strong>+$159.29亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>TTM 合计</strong></td>
+          <td class="numeric"><strong>+$251.32亿</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p>FY27 Q1 单季构成：上市股权<strong>未实现</strong>收益 <strong>$134亿</strong> + 非上市股权未实现收益 <strong>$26.03亿</strong>——<strong>几乎 100% 未实现</strong>。</p>
+          <p><strong>流动性受限</strong>：$391.01亿上市股权中 <strong>$274亿（70%）受短期锁定</strong>，另 $88.64亿锁定至 2027 年 12 月。权益组合总规模 <strong>$824.65亿</strong>，占总资产 31.8%、占股东权益 42.2%。</p>
+          <p><strong>SK 海力士（TTM，截 2026-06-30）：</strong></p>
+          <pre><code>TTM 税前利润  ₩206.77万亿
+          − TTM 营业利润 ₩128.71万亿
+          = 营业外收益   ₩78.06万亿  （占税前利润 37.8%）
+          </code></pre>
+          <p><strong>Q2 2026 单季营业外收益 ₩62.17万亿（约 $442亿）——超过公司 FY2024 全年净利润。</strong></p>
+          <p>Kioxia 持仓拆解：投入 ₩3.92万亿 → 2026-03-31 账面 ₩20.23万亿，按 **FVTPL（Level 3）**核算，全部公允价值变动直接进损益。<strong>2026 年 6 月已全部售出</strong>——招股书三处重复披露&quot;SPC 1 completed the sale of all of its remaining equity interest in Kioxia&quot;。</p>
+          <blockquote>
+          <p><strong>Kioxia 是一笔极其成功的投资（5.2 倍回报），但它是一次性的。从 2026Q3 起，这个收益来源归零。</strong></p>
+          </blockquote>
+          <h3>7.3 英伟达三情景（起点：剔除投资收益后 EPS $5.67，10% 折现）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th class="numeric">EPS 增速</th>
+          <th class="numeric">第 3 年 PE</th>
+          <th class="numeric">第 3 年目标价</th>
+          <th class="numeric"><strong>折现现值</strong></th>
+          <th class="numeric">相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>乐观</td>
+          <td class="numeric">35%</td>
+          <td class="numeric">30x</td>
+          <td class="numeric">$418.5</td>
+          <td class="numeric"><strong>$314.43</strong></td>
+          <td class="numeric"><strong>+40.4%</strong></td>
+          </tr>
+          <tr>
+          <td>中性</td>
+          <td class="numeric">25%</td>
+          <td class="numeric">22x</td>
+          <td class="numeric">$243.6</td>
+          <td class="numeric"><strong>$183.02</strong></td>
+          <td class="numeric"><strong>−18.3%</strong></td>
+          </tr>
+          <tr>
+          <td>悲观</td>
+          <td class="numeric">5%</td>
+          <td class="numeric">15x</td>
+          <td class="numeric">$98.5</td>
+          <td class="numeric"><strong>$74.00</strong></td>
+          <td class="numeric">−67.0%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>中性情景 −18.3%。合理买入区间 $155–185。</strong></p>
+          <p>对照卖方共识：61 位分析师，平均目标价 <strong>$302.83</strong>（+35.2%），中位数 $300，区间 $180–$500。<strong>本报告的乐观情景 $314.43 与共识平均值接近</strong>——即市场当前定价隐含的是我的乐观假设。</p>
+          <h3>7.4 SK 海力士 ADS 三情景（起点：剔除 Kioxia 后每 ADS $9.84，10% 折现）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th class="numeric">EPS 增速</th>
+          <th class="numeric">第 3 年 PE</th>
+          <th class="numeric">第 3 年目标价</th>
+          <th class="numeric"><strong>折现现值</strong></th>
+          <th class="numeric">相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>乐观（存储不回归）</td>
+          <td class="numeric">+15%</td>
+          <td class="numeric">11x</td>
+          <td class="numeric">$164.6</td>
+          <td class="numeric"><strong>$123.67</strong></td>
+          <td class="numeric"><strong>−10.3%</strong></td>
+          </tr>
+          <tr>
+          <td>中性（正常化）</td>
+          <td class="numeric">−25%</td>
+          <td class="numeric">9x</td>
+          <td class="numeric">$37.4</td>
+          <td class="numeric"><strong>$28.10</strong></td>
+          <td class="numeric">−79.6%</td>
+          </tr>
+          <tr>
+          <td>悲观（周期崩塌）</td>
+          <td class="numeric">−45%</td>
+          <td class="numeric">7x</td>
+          <td class="numeric">$11.5</td>
+          <td class="numeric"><strong>$8.64</strong></td>
+          <td class="numeric">−93.7%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>即使乐观情景（假设存储超级周期永不回归）折现现值 $123.67，仍低于当前 $137.91。</strong></p>
+          <p><strong>若按 KRX 口径</strong>（消除 36.5% ADS 溢价），三个情景分别为约 <strong>$168.7 / $38.3 / $11.8</strong>——乐观情景才转为正收益。<strong>这本身就说明：ADS 溢价吃掉了乐观情景的全部安全边际。</strong></p>
+          <h3>7.5 存储股的估值规律（美光年度 PE 史）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>财年</th>
+          <th>周期位置</th>
+          <th class="numeric">毛利率</th>
+          <th class="numeric"><strong>滚动 PE</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>FY2022</td>
+          <td><strong>利润峰值</strong></td>
+          <td class="numeric">45.2%</td>
+          <td class="numeric"><strong>7.39</strong></td>
+          </tr>
+          <tr>
+          <td>FY2023</td>
+          <td><strong>谷底（亏损）</strong></td>
+          <td class="numeric"><strong>−9.1%</strong></td>
+          <td class="numeric">不适用</td>
+          </tr>
+          <tr>
+          <td>FY2024</td>
+          <td><strong>复苏初期</strong></td>
+          <td class="numeric">22.4%</td>
+          <td class="numeric"><strong>136.53</strong></td>
+          </tr>
+          <tr>
+          <td>当前</td>
+          <td><strong>峰值？</strong></td>
+          <td class="numeric">72.6%</td>
+          <td class="numeric">19.80 / <strong>6.10 前瞻</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>规律：存储股在周期峰值交易于 7–15 倍，在谷底是三位数或负数。低 PE 是警告，不是便宜。</strong></p>
+          <p>当前 SK 海力士前瞻 PE <strong>3.44x</strong>、三星 3.59x、美光 6.10x——<strong>低于历史峰值倍数区间</strong>。两种解读：</p>
+          <ul>
+          <li><strong>多头</strong>：市场错了，长协与结构性 AI 需求让这些盈利可持续</li>
+          <li><strong>空头</strong>：市场在正常执行纪律。<strong>3.5 倍前瞻 PE 意味着市场预期前瞻盈利将下跌 60–75%</strong></li>
+          </ul>
+          <p>SK 海力士在史上最好季报后股价低于 50 日均线 33.0%——<strong>这是空头解读的实时表达</strong>。</p>
+          <h3>7.6 段永平式追问</h3>
+          <blockquote>
+          <p><strong>如果股市明天关闭 5 年，你愿意以这个价格持有哪一个？</strong></p>
+          <p><strong>英伟达：勉强愿意，但不在这个价格。</strong> 它的商业模式经得起五年不看盘——CUDA 生态、2.6% 的资本强度、$1,191亿自由现金流。问题只在价格：39.5 倍（剔除投资收益后）要求它继续以 25%+ 复合增长三年。$155–185 才是我愿意关灯的价格。</p>
+          <p><strong>SK 海力士 ADS：不愿意，且理由与公司质量无关。</strong> 五年里存储一定会经历至少一次完整周期，而我无法预测周期。更致命的是，<strong>我在买入的瞬间就多付了 36.5%</strong>——这不是周期风险，这是确定性损失。</p>
+          </blockquote>
+          <hr>
+          <h2>第八步：综合决策备忘录</h2>
+          <h3>8.1 汇总评估</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>维度</th>
+          <th>英伟达</th>
+          <th>SK 海力士</th>
+          <th>优势方</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>生意质量（段永平）</strong></td>
+          <td>轻资本（2.6% 资本开支/收入）、生态锁定、系统级定价</td>
+          <td>重资本（18.6%）、周期定价、产能扩张周期 3–5 年</td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>护城河（巴菲特）</strong></td>
+          <td>★★★★★ CUDA 转换成本</td>
+          <td>★★★★ 三寡头 + 制程，但份额一年流动 11 个点</td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>管理层</strong></td>
+          <td>长期主义；Non-GAAP 口径变严（+）；停止披露三项终端市场（−）</td>
+          <td>制程执行与资本纪律优秀；Kioxia 投资 5.2 倍回报；库藏股收益不入损益（+）</td>
+          <td>平手</td>
+          </tr>
+          <tr>
+          <td><strong>当期盈利能力</strong></td>
+          <td>毛利率 74.9%、经营利润率 65.6%</td>
+          <td><strong>毛利率 83.2%、经营利润率 76.3%</strong></td>
+          <td><strong>SK 海力士</strong></td>
+          </tr>
+          <tr>
+          <td><strong>盈利质量</strong></td>
+          <td>15.7% 来自投资收益，PE 34.3→<strong>39.5</strong></td>
+          <td><strong>37.8% 税前利润来自营业外，PE 8.73→14.02（+60.6%）</strong></td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>周期位置（芒格）</strong></td>
+          <td>AI 资本开支周期中段</td>
+          <td><strong>存储周期峰值</strong>（毛利率史上最高）</td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>文明趋势（李录）</strong></td>
+          <td>定义标准的位置</td>
+          <td>供应零部件的位置</td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>估值安全边际</strong></td>
+          <td>中性 −18.3%</td>
+          <td>ADS 乐观情景仍 −10.3%</td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          <tr>
+          <td><strong>结构性风险</strong></td>
+          <td>前三大客户 54% 收入</td>
+          <td><strong>ADS 较韩股溢价 36.5%，套利单向封死</strong></td>
+          <td><strong>英伟达</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>8.2 最终决策</h3>
+          <table>
+          <thead>
+          <tr>
+          <th></th>
+          <th><strong>英伟达（NVDA）</strong></th>
+          <th><strong>SK 海力士 ADS（SKHY）</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>结论</strong></td>
+          <td><strong>观望</strong></td>
+          <td><strong>回避</strong></td>
+          </tr>
+          <tr>
+          <td><strong>推荐度</strong></td>
+          <td>★★★★</td>
+          <td>★★</td>
+          </tr>
+          <tr>
+          <td>合理买入区间</td>
+          <td><strong>$155–185</strong></td>
+          <td><strong>不建议通过 ADS 参与</strong></td>
+          </tr>
+          <tr>
+          <td>空仓者</td>
+          <td>观望。$185 以下分批关注，$155 附近有明确安全边际</td>
+          <td>回避。三条独立否决理由任一成立即不应买入</td>
+          </tr>
+          <tr>
+          <td>持仓者</td>
+          <td>可持有，不追高。密切跟踪前三大客户占比</td>
+          <td>减仓。若坚持持有存储敞口，应通过韩股或 ETF，而非 ADS</td>
+          </tr>
+          <tr>
+          <td>加仓信号</td>
+          <td>① 前三大客户占比回落至 40% 以下；② 投资收益占净利比降至 10% 以下；③ 股价进入 $155–185</td>
+          <td>① ADS 溢价收敛至 10% 以内；② 单季毛利率在 60% 以上企稳两个季度；③ 三星 HBM4 未能显著抢占份额</td>
+          </tr>
+          <tr>
+          <td>卖出信号</td>
+          <td>① 数据中心收入环比转负；② AVGO/MRVL 的 AI 收入增速持续超越 NVDA；③ 毛利率跌破 70%</td>
+          <td>① 单季毛利率环比下滑超 10 个百分点；② DRAM 合约价环比转负；③ ADS 溢价扩大至 50% 以上</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>8.3 四位大师模拟点评</h3>
+          <blockquote>
+          <p><strong>巴菲特</strong>：&quot;英伟达是一门我能理解的好生意——它几乎不需要资本就能产生现金。但我付不起 39 倍利润，尤其当三个客户占了一半收入、而这三家都在造自己的芯片。<strong>SK 海力士我根本不会碰</strong>：一家我看不懂周期的公司，我还要为它多付 36.5% 的挂牌溢价。&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>芒格</strong>：&quot;反过来想。SK 海力士的 83% 毛利率，是不是有记录以来最高的？是。上一次接近这个水平之后发生了什么？四个季度内变成负数。那我为什么要在这里买入？至于那笔 Kioxia 收益——<strong>投资很成功，但它已经卖掉了。你不能为一笔已经变现且不会重演的收益支付估值。</strong>&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>段永平</strong>：&quot;英伟达卖的是系统，不是芯片——这一点很多人没搞懂。它自己造的那部分（逻辑裸片）只占成本 14%，HBM 占 46%，但它拿走了 82% 的毛利。<strong>这说明价值不在制造，在组织制造的能力。</strong> SK 海力士做的是我一贯不碰的生意：产品同质、价格由别人决定、投钱要等三五年才见产出。&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>李录</strong>：&quot;AI 是文明级转移，两家都受益。但请注意位置差异：<strong>英伟达在定义标准，SK 海力士在供应零部件。</strong> 20 世纪 90 年代的存储厂商也赚了钱，但它们的估值中枢从未接近过 Intel。更要警惕的是，SK 海力士刚承诺了 ₩54 万亿的新产能，而这些产能 2029 年前不产出任何东西——这是典型的建设高峰期。&quot;</p>
+          </blockquote>
+          <h3>8.4 最终结论：价值在链条上被谁捕获</h3>
+          <p><strong>答案是分层的，且比&quot;上游赢&quot;或&quot;下游赢&quot;都更复杂：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>层面</th>
+          <th>赢家</th>
+          <th>证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>当期毛利率</strong></td>
+          <td><strong>SK 海力士</strong></td>
+          <td>Q2 毛利率 83.2% vs 英伟达 74.9%；经营利润率 76.3% vs 65.6%</td>
+          </tr>
+          <tr>
+          <td><strong>穿越周期的资本回报</strong></td>
+          <td><strong>英伟达</strong></td>
+          <td>ROIC 104.67% vs 62.06%；资本开支/收入 2.6% vs 18.6%</td>
+          </tr>
+          <tr>
+          <td><strong>议价权</strong></td>
+          <td><strong>英伟达</strong></td>
+          <td>三源认证 HBM4 + 主动削减 Rubin Ultra 的 HBM 配置 + 毛利率在存储暴涨中持平且指引持平</td>
+          </tr>
+          <tr>
+          <td><strong>估值给予的信任</strong></td>
+          <td><strong>英伟达</strong></td>
+          <td>34.3x 滚动 / 22.4x 前瞻，PEG 0.51；存储三家前瞻 PE 仅 3.4–6.1x</td>
+          </tr>
+          </tbody>
+          </table>
+          <blockquote>
+          <p><strong>存储厂商赢下了这一轮的价格，但没有赢下数量，也没有赢下穿越周期的资本回报。而当前季度是外推这件事最糟糕的时点。</strong></p>
+          </blockquote>
+          <p><strong>AI 分析置信度</strong>：英伟达<strong>高</strong>；SK 海力士<strong>中</strong>（Q2 完整报表未提交、HBM 收入从不披露、Q2 营业外收益分项 N/A）。</p>
+          <p><strong>实际投资确定性</strong>：英伟达<strong>中</strong>——决定回报的是客户自研进度与 AI 资本开支周期，均不可预测；SK 海力士<strong>低</strong>——决定回报的是存储周期拐点与 ADS 溢价走向，两者都不可预测且当前均处于不利位置。</p>
+          <hr>
+          <h2>需要一手验证的问题清单</h2>
+          <p><strong>关于英伟达</strong></p>
+          <ol>
+          <li>2026-06-18 发行的 <strong>$250亿</strong>债券，在 TTM 自由现金流已有 $1,191亿的情况下，资金用途是什么？回购、生态投资还是产能预付？</li>
+          <li>前三大直接客户（21%/17%/16%）分别是谁？其中多少与自研 ASIC 项目重叠？</li>
+          <li>那家&quot;通过向我们的客户购买云服务而对我们收入有实质贡献的 AI 研究与部署公司&quot;是谁？它同时是否为英伟达的被投企业？</li>
+          <li>$824.65亿权益投资组合中，非上市部分（$423.36亿）的估值方法与第三方验证机制是什么？</li>
+          <li><strong>$1,190亿</strong>的制造/供应/产能承诺（其中 $950亿在 FY2027 内支付）——若需求放缓，违约条款如何？</li>
+          </ol>
+          <p><strong>关于 SK 海力士</strong>
+          6. 与约 10 家客户的长期协议（LTA），<strong>锁量还是锁价？期限多长？覆盖多少收入？</strong>（新闻稿称&quot;多年期合约&quot;，但招股书法律表述仍是&quot;数量与价格通常在采购时逐笔协商&quot;——两者存在张力）
+          7. HBM 收入的绝对金额与占 DRAM 收入的比例是多少？（公司从不披露）
+          8. 2026 年 6 月出售 Kioxia 的对价是多少？已实现处置收益的具体金额？
+          9. Yongin Y2 与 Cheongju M17 合计 ₩54.32万亿，<strong>设备投资另需多少？</strong>（媒体称 Y2 含设备总额超 ₩150万亿）
+          10. <strong>ADS 增发是否有放开的可能？</strong> 韩国金融委员会对存量普通股转 ADS 的限制在什么条件下会松动？——这直接决定 36.5% 溢价的收敛路径</p>
+          <p><strong>关于行业</strong>
+          11. HBM 占 DRAM 行业收入的精确比例（本报告推导为约 13.7%，需向 TrendForce 或 Omdia 直接核实）
+          12. 三星 2026/2027 年资本开支计划（Q2 财报未披露，是本轮最大的行业数据缺口）
+          13. 英伟达 Rubin Ultra 最终的 HBM 配置决策与时点</p>
+          <hr>
+          <h2>附录 A：工具验证记录</h2>
+          <p><code>tools/financial_rigor.py</code> 执行结果：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>验证项</th>
+          <th>结果</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>NVDA 2026-08-07 收盘价双源交叉验证</td>
+          <td>✅ 偏差 0.00%（$223.96）</td>
+          </tr>
+          <tr>
+          <td>SKHY 2026-08-07 收盘价双源交叉验证</td>
+          <td>✅ 偏差 0.00%（$137.91）</td>
+          </tr>
+          <tr>
+          <td>NVDA 市值验算（$223.96 × 242.21亿股）</td>
+          <td>✅ 偏差 0.00%，$5.4245万亿</td>
+          </tr>
+          <tr>
+          <td><strong>SK 海力士市值双口径交叉验证</strong></td>
+          <td>❌ <strong>偏差 15.43%（ADS $10,051.79亿 vs KRX $7,364亿）——结构性溢价，非数据错误</strong></td>
+          </tr>
+          <tr>
+          <td>SK 海力士 ADS 市值 = 728,866,056 × $137.91 × 10</td>
+          <td><strong>$10,051.79亿</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士 KRX 市值 = 728,866,056 × ₩1,422,000</td>
+          <td><strong>₩1,036.45万亿</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td><strong>ADS 溢价 = (137.91 × 10 × 1,407.45) ÷ 1,422,000 − 1</strong></td>
+          <td><strong>+36.4989%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>NVDA 剔除投资收益后 EPS = ($1,894.43亿−$250.29亿)×(1−15.75%)÷244.5亿股</td>
+          <td><strong>$5.665</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>NVDA 剔除后 PE = $223.96 ÷ $5.6714</td>
+          <td><strong>39.489x</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>NVDA FCF 收益率 = $1,190.76亿 ÷ $54,245.35亿</td>
+          <td><strong>2.195%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士核心经营税后利润 = ₩128.71万亿 × (1−21.6%)</td>
+          <td><strong>₩100.91万亿</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士剔除后 PE（ADS 口径）</td>
+          <td><strong>14.020x</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士剔除后 PE（KRX 口径）</td>
+          <td><strong>10.271x</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士核心每 ADS 盈利</td>
+          <td><strong>$9.837</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>SK 海力士 FCF 收益率（ADS / KRX）</td>
+          <td><strong>6.502% / 8.875%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>NVDA / SKHY 三情景估值</td>
+          <td>全部由 <code>three-scenario</code> 计算，现值由 <code>calc</code> 按 10% 折现三年</td>
+          </tr>
+          </tbody>
+          </table>
+          <h2>附录 B：资料来源</h2>
+          <p><strong>英伟达 SEC 一手文件（CIK 0001045810，全部 2026-08-08 访问）</strong></p>
+          <ol>
+          <li>Form 10-Q（FY2027 Q1，期末 2026-04-26，报送 2026-05-20）：<code><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm</a></code></li>
+          <li>Form 10-K（FY2026，期末 2026-01-25，报送 2026-02-25）：<code><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm</a></code></li>
+          <li>8-K EX-99.1 业绩新闻稿（2026-05-20）：<code><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm</a></code></li>
+          <li>8-K EX-99.2 CFO Commentary（2026-05-20）</li>
+          <li><strong>8-K — $250亿债券发行完成（2026-06-18）</strong>：<code><a href="https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm</a></code></li>
+          <li>SEC XBRL Company Facts API：<code><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json" target="_blank" rel="noopener">https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json</a></code></li>
+          </ol>
+          <p><strong>SK 海力士 SEC 一手文件（CIK 0002120882，全部 2026-08-08 访问）</strong>
+          7. <strong>424B4 IPO 招股书（2026-07-10）</strong>：<code><a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm</a></code>
+          8. Form F-6（ADS 注册，2026-07-01，Citibank N.A. 存托）：<code><a href="https://www.sec.gov/Archives/edgar/data/2120882/000119380526000898/e665622_f6-skhynix.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/2120882/000119380526000898/e665622_f6-skhynix.htm</a></code>
+          9. <strong>6-K：2026 Q2 初步业绩（2026-07-29）</strong>：<code><a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/2120882/000119312526321989/d115239d6k.htm</a></code>
+          10. 6-K：IPO 交割（2026-07-15）；6-K：Yongin Y2 投资 ₩35.22万亿（2026-08-07）；6-K：Cheongju M17 投资 ₩19.10万亿（2026-08-07）；6-K：Q2 股息（2026-08-07）；6-K：库藏股处分（2026-08-07）
+          11. SEC Submissions API：<code><a href="https://data.sec.gov/submissions/CIK0002120882.json" target="_blank" rel="noopener">https://data.sec.gov/submissions/CIK0002120882.json</a></code></p>
+          <p><strong>公司 IR</strong>
+          12. SK hynix《2Q26 Business Results》（2026-07-29）：<code><a href="https://news.skhynix.com/en/q2-2026-business-results/" target="_blank" rel="noopener">https://news.skhynix.com/en/q2-2026-business-results/</a></code>
+          13. SK hynix《2026 Market Outlook》（2026-01-05）：<code><a href="https://news.skhynix.com/en/2026-market-outlook-focus-on-the-hbm-led-memory-supercycle/" target="_blank" rel="noopener">https://news.skhynix.com/en/2026-market-outlook-focus-on-the-hbm-led-memory-supercycle/</a></code>
+          14. SK Group / NVIDIA 战略合作扩大（2026-07-25）
+          15. Samsung Q2 2026 业绩（2026-07-30）</p>
+          <p><strong>行业研究</strong>
+          16. <strong>TrendForce《DRAM Supply to Remain Tight in 2027, Prompting NVIDIA to Lower HBM Configurations for Rubin Ultra》（2026-08-04）</strong>：<code><a href="https://www.trendforce.com/presscenter/news/20260804-13166.html" target="_blank" rel="noopener">https://www.trendforce.com/presscenter/news/20260804-13166.html</a></code>
+          17. TrendForce《AI Server Demand Continues to Support Memory Prices in 3Q26, but Gains Moderate》（2026-07-03）
+          18. TrendForce《HBM4 Premium Expected to Exceed 30%》（2025-05-22）
+          19. <strong>Counterpoint Research HBM 份额数据</strong>，经 Seoul Economic Daily 转述（2026-06-25）：<code><a href="https://en.sedaily.com/finance/2026/06/25/samsung-defends-dram-nand-lead-sk-hynix-holds-58-percent-of" target="_blank" rel="noopener">https://en.sedaily.com/finance/2026/06/25/samsung-defends-dram-nand-lead-sk-hynix-holds-58-percent-of</a></code>
+          20. <strong>SemiAnalysis《Memory Mania》（2026-02-06）</strong>（免费部分）：<code><a href="https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades" target="_blank" rel="noopener">https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades</a></code>
+          21. <strong>Epoch AI《NVIDIA's B200 costs around $6,400 to produce》（2025-12-10）</strong>：<code><a href="https://epoch.ai/data-insights/b200-cost-breakdown" target="_blank" rel="noopener">https://epoch.ai/data-insights/b200-cost-breakdown</a></code>
+          22. Seoul Economic Daily《Nvidia Weighs Cutting HBM in Rubin Ultra to Trim Costs》（2026-08-08）
+          23. Seoul Economic Daily《SK hynix Reaps Over 60 Trillion Won from Kioxia Investment》（2026-07-29）
+          24. Tom's Hardware《Chinese CXMT DRAM doesn't look like the budget savior》（2026-07-26）</p>
+          <p><strong>市场数据</strong>
+          25. Yahoo Finance v8 chart API：NVDA、SKHY、000660.KS、KRW=X
+          26. stockanalysis.com：<code>/stocks/nvda/</code>、<code>/quote/KRX/000660/</code>、<code>/stocks/mu/</code>、<code>/quote/KRX/005930/</code>
+          27. companiesmarketcap.com、finviz.com（市值与目标价交叉验证）</p>
+          <p><strong>未使用 / 失败的来源（披露完整性）</strong>
+          28. macrotrends.net —— HTTP 403，全程未使用
+          29. Counterpoint Research 官方 HBM 季度数据页 —— 客户端渲染，非订阅用户无法获取原始数据；全部 HBM 份额数字均经二手转述
+          30. investor.nvidia.com —— HTTP 403（公司口径信息已全部从 SEC 8-K 附件取得，无信息缺口）
+          31. TrendForce 现货价格序列 —— 会员墙
+          32. 三星 2026/2027 资本开支 —— Q2 财报未披露，<strong>本轮最大的行业数据缺口</strong></p>
+          <hr>
+          <p><strong>报告完成：2026-08-08</strong></p>
+          <p><strong>英伟达：观望（★★★★），合理买入区间 $155–185，当前 $223.96 高于中性情景 18.3%。</strong>
+          <strong>SK 海力士 ADS：回避（★★），乐观情景折现现值 $123.67 仍低于当前 $137.91；且 ADS 较韩股溢价 36.50%。</strong></p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <strong>AI Berkshire Research</strong> · 本报告用于学习研究，不构成投资建议。
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部">↑</button>
+
+  <script>
+    (() => {
+      const report = document.getElementById('report');
+      const toc = document.getElementById('toc');
+      const mobileToc = document.getElementById('mobileToc');
+      const progress = document.getElementById('scrollProgress');
+      const backToTop = document.getElementById('backToTop');
+      const printButton = document.getElementById('printButton');
+
+      report.querySelectorAll('table').forEach((table) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-scroll';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+
+      const headings = [...report.querySelectorAll('h2')];
+      headings.forEach((heading, index) => {
+        heading.id = `section-${index + 1}`;
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+        toc.appendChild(link);
+
+        const option = document.createElement('option');
+        option.value = heading.id;
+        option.textContent = heading.textContent;
+        mobileToc.appendChild(option);
+      });
+
+      mobileToc.addEventListener('change', () => {
+        document.getElementById(mobileToc.value)?.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      const tocLinks = [...toc.querySelectorAll('a')];
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (!visible) return;
+        tocLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${visible.target.id}`));
+        mobileToc.value = visible.target.id;
+      }, { rootMargin: '-15% 0px -75% 0px' });
+      headings.forEach((heading) => observer.observe(heading));
+
+      const sourceItems = [...report.querySelectorAll('li')];
+      sourceItems.forEach((item) => {
+        const match = item.textContent.trim().match(/^\[([MS]\d+)\]/);
+        if (match) item.id = `ref-${match[1].toLowerCase()}`;
+      });
+
+      const walker = document.createTreeWalker(report, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+      textNodes.forEach((node) => {
+        if (node.parentElement.closest('[id^="ref-"]')) return;
+        if (!/\[[MS]\d+\]/.test(node.nodeValue)) return;
+        const parts = node.nodeValue.split(/(\[[MS]\d+\])/g);
+        const fragment = document.createDocumentFragment();
+        parts.forEach((part) => {
+          const match = part.match(/^\[([MS]\d+)\]$/);
+          if (!match) {
+            fragment.appendChild(document.createTextNode(part));
+            return;
+          }
+          const citation = document.createElement('a');
+          citation.className = 'citation';
+          citation.href = `#ref-${match[1].toLowerCase()}`;
+          citation.textContent = match[1];
+          citation.title = `查看来源 ${match[1]}`;
+          fragment.appendChild(citation);
+        });
+        node.replaceWith(fragment);
+      });
+
+      report.addEventListener('click', (event) => {
+        const citation = event.target.closest('.citation');
+        if (!citation) return;
+        const target = document.querySelector(citation.hash);
+        if (!target) return;
+        target.classList.remove('source-highlight');
+        requestAnimationFrame(() => target.classList.add('source-highlight'));
+      });
+
+      report.querySelectorAll('a[href^="http"]').forEach((link) => {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = max > 0 ? window.scrollY / max : 0;
+        progress.style.width = `${Math.min(100, Math.max(0, ratio * 100))}%`;
+        backToTop.classList.toggle('visible', window.scrollY > 700);
+      };
+      window.addEventListener('scroll', updateScroll, { passive: true });
+      window.addEventListener('resize', updateScroll);
+      updateScroll();
+
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      printButton.addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>

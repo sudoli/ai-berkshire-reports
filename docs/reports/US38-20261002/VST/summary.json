@@ -1,0 +1,29 @@
+{
+  "ticker": "VST",
+  "company": "Vistra Corp.",
+  "sector": "综合发电、核电与零售售电",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 137.51,
+    "currency": "USD",
+    "asof": "2026-10-02 11:20 EDT",
+    "source_url": "https://stockanalysis.com/stocks/vst/financials/",
+    "verified": true,
+    "note": "单平台盘中实读行情，非收盘；9月30日图片138.35美元未经核实；当前普通股，统计页未列拆股。"
+  },
+  "financial_period": "2026年第二季度，截至2026-06-30；2026-08-07发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 110,
+    "buy_high": 126.5,
+    "currency": "USD",
+    "basis": "2026 FCFbG中点43.25亿美元减研究现金缓冲6.25亿美元，37亿美元/335635195股约11.02，模型取11美元；×10至11.5倍=110至126.50美元。",
+    "conditions": "对冲后盈利、流动性和维持资本开支可支持11美元正常化现金；执行前必须核实Cogentrix完成状态并更新债务、股份及增量现金。",
+    "holder_action": "经营与对冲兑现可继续跟踪，不对未实现套保亏损机械止损；若并购/新投资吞噬普通股现金、债务或机组风险恶化则考虑减持重估。"
+  },
+  "thesis": "套保后的发电及零售组合有可见现金，但核电溢价不能覆盖全部资产和债务风险。",
+  "key_risk": "停机与购电基差、套保到期后电价回落，加上并购及Helix资本承诺削弱普通股现金。",
+  "confidence": "中",
+  "source_limitations": ["Cogentrix在已读8月7日公告仍待完成，截至截止日未取得明确完成公告，基准未纳入交易增量。", "核电合同电价、完整机组级对冲和最新SBC/管理层持股未核实。", "盘中行情单平台；FCFbG不等于扣全部增长资本后的自由现金流。"],
+  "report_file": "VST研究报告-20261002.md"
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="光子技术和制造规模受益高速连接升级，但扩产是否转化为每股现金决定长期价值。"><meta name="source-sha256" content="19e9b7eba0f456f14b97bd2e3d3a7af947d136e9f64071a5018dc7263df12587">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Coherent（COHR）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="COHR%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / COHR / 2026-10-02</div>
+<h1>Coherent Corp.<span>光子技术与光通信制造 · 公司研究</span></h1><p class="hero-deck">光子技术和制造规模受益高速连接升级，但扩产是否转化为每股现金决定长期价值。</p>
+<div class="hero-meta"><span>FY2026 and Q4 ended 2026-06-30</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$287.81<small>2026-09-30 regular-session close<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">直接核对历史Close及Adjusted Close与原图片一致；单一行情商、非即时价。现Coherent Corp普通股，不混用旧独立Coherent公司历史每股数据。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司是谁，产品如何变成利润</a></li><li><a href="#section-3">第二步：四年报表与现金反差</a></li><li><a href="#section-4">第三步：资本开支、债务与每股收益</a></li><li><a href="#section-5">第四步：壁垒与管理层</a></li><li><a href="#section-6">第五步：最强反方及失效条件</a></li><li><a href="#section-7">第六步：按正常化盈利估值</a></li><li><a href="#section-8">第七步：行动建议</a></li><li><a href="#section-9">来源与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司是谁，产品如何变成利润</a></li><li><a href="#section-3">第二步：四年报表与现金反差</a></li><li><a href="#section-4">第三步：资本开支、债务与每股收益</a></li><li><a href="#section-5">第四步：壁垒与管理层</a></li><li><a href="#section-6">第五步：最强反方及失效条件</a></li><li><a href="#section-7">第六步：按正常化盈利估值</a></li><li><a href="#section-8">第七步：行动建议</a></li><li><a href="#section-9">来源与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Coherent（COHR）研究报告</h1>
+<blockquote>
+<p>研究与信息截止：2026-10-02。统一基准价：2026-09-30收盘 <strong>287.81美元</strong>，本次直接读取StockAnalysis历史行情确认原图片数值；仅一个独立行情源，不是10月2日实时价格。最新财务为截至2026-06-30的FY2026及Q4。按约1.9583亿普通股重构参考市值约563.6亿美元，股本非严格9月30日快照。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A。本报告的主要反共识不是否定光学需求，而是指出：<strong>利润强劲复苏的同一年，经营现金流只有约7,950万美元，资本开支却超过11亿美元。</strong> 光子技术壁垒、AI需求和股东现金是三个不同问题。未来产能可能很值钱，但今天融资和稀释成本不能忽略。</p>
+<h2 id="section-2">第一步：公司是谁，产品如何变成利润</h2>
+<p>Coherent是一家光子技术公司，产品覆盖光学材料、组件、激光器和系统，服务数据中心、通信及工业市场。现主体延续II-VI整合Coherent后的业务体系，不能把旧独立Coherent公司的每股历史与现公司直接拼接。</p>
+<p>FY2026数据中心与通信收入52.746亿美元，工业18.436亿美元；Q4分别16.150亿和4.305亿美元。相较FY2025，数据中心与通信显著增长，工业收入从20.549亿美元下降。总公司既不是纯AI光模块公司，也不是无周期的材料平台：网络端扩容、工业设备需求和资产组合变动同时影响结果。</p>
+<p>客户为通信设备、网络、数据中心及工业系统厂商等。公司凭先进材料与器件制造、光学封装、生产规模和客户认证获得订单，收益取决于产品组合、良率、利用率、平均售价及扩产效率。更快的连接速率创造需求，也要求持续研发和制造投入。</p>
+<h2 id="section-3">第二步：四年报表与现金反差</h2>
+<p>金额百万美元。净利润列为归属Coherent的GAAP净利润，普通股利润另说明；历史2023—2024取StockAnalysis，2025—2026主要与公司公告核对。</p>
+<div aria-label="第二步：四年报表与现金反差" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">FY2023</th>
+<th scope="col" style="text-align: right;">FY2024</th>
+<th scope="col" style="text-align: right;">FY2025</th>
+<th scope="col" style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">5,160</td>
+<td style="text-align: right;">4,708</td>
+<td style="text-align: right;">5,810.1</td>
+<td style="text-align: right;">7,118.2</td>
+</tr>
+<tr>
+<td>GAAP归属净利润</td>
+<td style="text-align: right;">-259.5</td>
+<td style="text-align: right;">-156.2</td>
+<td style="text-align: right;">49.4</td>
+<td style="text-align: right;">805.0</td>
+</tr>
+<tr>
+<td>普通股GAAP稀释EPS</td>
+<td style="text-align: right;">-2.93</td>
+<td style="text-align: right;">-1.84</td>
+<td style="text-align: right;">-0.52</td>
+<td style="text-align: right;">4.12</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">634.0</td>
+<td style="text-align: right;">545.7</td>
+<td style="text-align: right;">633.6</td>
+<td style="text-align: right;">79.5</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td style="text-align: right;">436.1</td>
+<td style="text-align: right;">346.8</td>
+<td style="text-align: right;">440.8</td>
+<td style="text-align: right;">1,102.9</td>
+</tr>
+<tr>
+<td>简单自由现金流</td>
+<td style="text-align: right;">198.0</td>
+<td style="text-align: right;">198.9</td>
+<td style="text-align: right;">192.8</td>
+<td style="text-align: right;">-1,023.4</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2025归属净利润虽为正，但扣除优先股股息后普通股亏损约8,060万美元，不能把49.4百万美元当作全部归普通股。FY2026相应归普通股利润769.9百万美元，披露稀释EPS4.12还受证券假设转换计算影响，不能用期末股数强行重算。</p>
+<p>FY2026 GAAP毛利率37.5%、营业利润率12.6%；调整后分别39.4%、20.5%，调整后EPS5.61。Q4收入20.455亿美元，同比增长33.8%；GAAP毛利率38.5%、EPS1.19，调整后毛利率40.2%、EPS1.74。FY2027 Q1指引收入22亿—24亿美元，调整后毛利率39.5%—41.5%、调整后EPS1.85—2.05。</p>
+<p>公司还披露Q4收入同比增长34%、备考口径42%，两者基数不同，不可择高者充当报告增长。非GAAP剔除SBC、并购摊销、重组、减值及处置等项目；重组经常发生时，全部剔除未必代表真实长期收益。</p>
+<h2 id="section-4">第三步：资本开支、债务与每股收益</h2>
+<p>期末现金11.620亿美元、短投8.250亿美元，共19.870亿美元；长期及当期有息债共32.222亿美元，不含租赁，净负债12.352亿美元。另有受限现金，不能全部视为随时可还债的现金。第三方总债务约35.53亿美元采用更宽口径，不应与公司有息债直接平均。</p>
+<p>库存从14.376亿升至25.810亿美元，应收从9.641亿升至13.433亿美元，应付也从8.470亿升至19.054亿美元。现金流之弱不能仅用一个库存项目解释；客户付款、供应商账期、预付款和其他资产必须合看。高投入可以是未来成长的必要条件，也可以是需求过度乐观的先行指标。</p>
+<p>现金流表列发行普通股融资约19.986亿美元，说明资产扩张不是全部来自内生现金。优先股转换及融资影响股数，Q4基本股数约1.957亿、稀释约2.022亿；FY2025基本股数约1.548亿，不能在预测高盈利时沿用旧分母。公司非GAAP桥接中的全年SBC约1.938亿美元，现金流第三方为1.865亿美元，两者确认/分类口径未完整桥接，报告不混用，不把剔除SBC后的全部利润当作免费现金。</p>
+<h2 id="section-5">第四步：壁垒与管理层</h2>
+<p>Coherent的优势是从材料、器件到系统的较完整技术和制造体系。客户认证涉及可靠性、能耗、良率与长期供货，替换有成本；公司可在新一代速率和功率需求中参与更多环节。但垂直整合也使工厂、设备、库存和技术路线风险更多留在自身。</p>
+<p>Lumentum及其他光器件/模块企业争夺高端光学，部分制造商可为客户提供更灵活的采购方式。大型客户希望多源供应，不能因器件暂时短缺就假设永远提价。光学渗透率上升可能扩大市场，但价值有可能由芯片、模块、系统或终端客户重新分配。</p>
+<p>Jim Anderson任CEO、Sherri Luther任CFO。FY2026资产处置、制造扩产及资本结构变化表明管理层积极调整组合，但“出售业务获得现金”不属于经营现金流，不应粉饰FCF。资本配置的下一阶段考核应是新产能的现金回报和每股价值，而非只看公司规模及非GAAP EPS。未核实最新管理层持股和全部薪酬机制，不给绝对治理背书。</p>
+<p>最新前几大客户比例没有从一手附注完整抽出；公司披露客户采购波动风险，因此不能把收入增长当成分散客户、可预测年金。</p>
+<h2 id="section-6">第五步：最强反方及失效条件</h2>
+<p>最强反方是：AI网络光学正在景气高点，公司为了份额进行重投入，等产能出来时，客户转向下一代架构或供应增加压低售价；利润率下跌、新股稀释和估值收缩将同时打击每股收益。工业业务疲软也可能抵消一部分数据中心增长。</p>
+<p>需要监测的条件：连续两季调整后毛利率低于36%；库存和应收明显快于收入扩张；新增产能爬坡延后；FCF持续大幅负值且再融资加速；核心客户更换技术路线。它们是研究触发器，不是已发生事件，不提供虚假的精确概率。严重失单或资产减值可能比普通周期悲观情景更差。</p>
+<h2 id="section-7">第六步：按正常化盈利估值</h2>
+<p>取分析假设正常化前瞻调整后EPS <strong>7.50美元</strong>：Q1 FY2027指引中点1.95简单年化7.80，再对周期、费用与稀释留余量。该EPS不是TTM或公司全年指引；维持这个数字仍要求收入爬坡与成本执行。资本开支高峰时PE必须由未来FCF回归交叉验证。</p>
+<p>基准价287.81对应38.37倍该前瞻EPS，FY2026调整后EPS5.61对应约51.30倍。不能用负FCF算出一个有意义的便宜现金收益率。</p>
+<div aria-label="第六步：按正常化盈利估值" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">三年情景</th>
+<th scope="col" style="text-align: right;">EPS年增长</th>
+<th scope="col" style="text-align: right;">终年EPS</th>
+<th scope="col" style="text-align: right;">PE</th>
+<th scope="col" style="text-align: right;">三年末价格</th>
+<th scope="col" style="text-align: right;">累计价格收益</th>
+<th scope="col" style="text-align: right;">年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：扩产只能守住盈利</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">7.500</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">135.00</td>
+<td style="text-align: right;">-53.09%</td>
+<td style="text-align: right;">-22.30%</td>
+</tr>
+<tr>
+<td>基准：产能转换为正常回报</td>
+<td style="text-align: right;">+18%</td>
+<td style="text-align: right;">12.323</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">308.07</td>
+<td style="text-align: right;">+7.04%</td>
+<td style="text-align: right;">+2.29%</td>
+</tr>
+<tr>
+<td>乐观：新光学架构全面放量</td>
+<td style="text-align: right;">+30%</td>
+<td style="text-align: right;">16.478</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">527.28</td>
+<td style="text-align: right;">+83.20%</td>
+<td style="text-align: right;">+22.36%</td>
+</tr>
+</tbody>
+</table></div>
+<p>公式为<code>7.50×(1+g)^3×PE</code>；不计股息、税费。未来308.07不是今天公允价值；基准EPS增长18%却只有约2.29%年化价格收益，说明估值可能已经预付很多增长。</p>
+<p>起点与三年末均按对应时点的前瞻年度EPS能力估值，保持同一时间口径。</p>
+<p>今天条件买入研究区间 <strong>150—187.50美元</strong>，来自<code>7.50×20—25倍</code>，比当前前瞻倍数低，补偿光学周期、资本投入与现金转换风险。不以行业平均PE或历史股价支撑位拍脑袋定价；无充分证据支撑EPS7.50时，区间应撤销。</p>
+<h2 id="section-8">第七步：行动建议</h2>
+<p><strong>评级：等待价格。</strong> 空仓者不在287.81基准追买；即便跌至150—187.50，也要看到现金转换改善、资本开支有客户需求支持、订单未因路线改变失效。若连续季度FCF仍显著负值，低价本身不能构成催化剂。</p>
+<p>持仓者关注新产能回报而不只看调后EPS；需求增长、融资稀释与每股FCF应放在同一张表检查。价格明显脱离能被现金支持的基准估值，或客户项目、利润率发生结构破坏时降低风险。无个人风险画像，不给仓位比例。</p>
+<p>AI置信度中：最新财务和现金反差证据较扎实；扩产回报、技术路线与终值倍数的投资确定性偏低。</p>
+<h2 id="section-9">来源与审计</h2>
+<ul>
+<li><a href="https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-fourth-quarter-and-full-year-fiscal-2026" rel="noreferrer">FY2026及Q4业绩完整报表，2026-08-12</a>。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000820318.json" rel="noreferrer">SEC公司事实</a>、<a href="https://stockanalysis.com/stocks/cohr/financials/income-statement/" rel="noreferrer">StockAnalysis利润表</a>、<a href="https://stockanalysis.com/stocks/cohr/financials/cash-flow-statement/" rel="noreferrer">现金流</a>、<a href="https://stockanalysis.com/stocks/cohr/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/cohr/history/" rel="noreferrer">历史行情</a>、<a href="https://stockanalysis.com/stocks/cohr/statistics/" rel="noreferrer">股份与拆股</a>，2026-10-02读取。</li>
+</ul>
+<p>financial_rigor核验FY2026收入7,118.2/7,118、净利润805/805、现金1,162/1,162（百万美元），均为舍入级差异。CFO79.5−资本开支1,102.9＝FCF -1,023.4。重大分类差异：FY2025第三方营业利润率9.50%，公司GAAP5.0%，包含重组、减值等分类影响，未完整桥接；以公司为准，不取平均。拆股统计最近日期为前身2011年事件，本报告未对现有EPS/报价再次拆分，不混用旧独立公司的股价。Decimal与估值工具完成计算，前瞻EPS不能套工具TTM标签；report_audit抽样及未核条款另存。</p>
+<p>普通股数以SEC DEI的8月披露与第三方核对并完成市值单位测试。随机抽样六项事实均在容差内，其中三项有一手对照；另一个乐观年化收益仅是模型计算核验，不能作为外部确认的回报预测。</p></article><footer class="report-footer"><span>COHR · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

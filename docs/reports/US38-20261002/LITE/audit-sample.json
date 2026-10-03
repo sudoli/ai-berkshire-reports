@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2,
+    "label": "收入 · FY2024",
+    "reported_value": 1359.0,
+    "unit": "",
+    "line_number": 23,
+    "raw_text": "| 收入 | 1,767 | 1,359 | 1,645.0 | 3,014.0 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "GAAP净利润 · FY2026",
+    "reported_value": -6935.1,
+    "unit": "",
+    "line_number": 24,
+    "raw_text": "| GAAP净利润 | -131.6 | -546.5 | 25.9 | -6,935.1 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "经营现金流 · FY2023",
+    "reported_value": 179.8,
+    "unit": "",
+    "line_number": 25,
+    "raw_text": "| 经营现金流 | 179.8 | 24.7 | 126.3 | 751.4 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "资本开支 · FY2026",
+    "reported_value": 451.3,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 资本开支 | 128.5 | 133.0 | 231.0 | 451.3 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "资本开支 · FY2025",
+    "reported_value": 231.0,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| 资本开支 | 128.5 | 133.0 | 231.0 | 451.3 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "自由现金流 · FY2024",
+    "reported_value": -108.3,
+    "unit": "",
+    "line_number": 27,
+    "raw_text": "| 自由现金流 | 51.3 | -108.3 | -104.7 | 300.1 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

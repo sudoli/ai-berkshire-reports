@@ -1,0 +1,21 @@
+LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.
+
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：TSM研究报告-20261002.md
+======================================================================
+
+  [92m✅ 通过[0m [101] FY2025 revenue                       报告:   3809054.00 million, statement currency
+                                                    https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf: 3809054.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsm/financials/: 3809054.00 (偏差 0.00%)
+  [93m⚠️  警告[0m [102] FY2025 parent net income             报告:   1717883.00 million, statement currency
+                                                    https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf: 1717883.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsm/financials/: 1697604.00 (偏差 1.18%)
+  [92m✅ 通过[0m [103] FY2025 cash                          报告:   2767856.00 million, statement currency
+                                                    https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf: 2767856.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/tsm/financials/balance-sheet/: 2767856.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 3  |  通过: [92m2[0m  |  警告: [93m1[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+[93m注意：1 个数据点两来源结果不一致（超过1%），可能是口径差异（GAAP/Non-GAAP或汇率），请人工复核。[0m
+  ⚠️  FY2025 parent net income  报告:1717883.0 million, statement currency  偏差: 0.0% / 1.18%
+======================================================================

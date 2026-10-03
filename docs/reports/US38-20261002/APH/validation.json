@@ -1,0 +1,10 @@
+{
+  "summary_schema": "pass",
+  "quote_history_comparison": "pass_single_vendor",
+  "buy_band_math": "pass",
+  "three_scenario_decimal_math": "pass",
+  "cjk_characters": 2513,
+  "report_sha256": "23183a5787e1af615412b5d8deed4c38c853c28aae9f3496dee031d51d0ee5ea",
+  "report_audit_sample_count": 6,
+  "source_scope": "Facts and model assumptions distinct; detailed single/dual source status in audit-results.json; no full-certification claim."
+}

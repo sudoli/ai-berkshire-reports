@@ -1,0 +1,14 @@
+{
+  "ticker": "TSLA",
+  "company": "Tesla 特斯拉",
+  "sector": "汽车储能与自动驾驶",
+  "research_date": "2026-10-02",
+  "quote": {"price": 370.68, "currency": "USD", "asof": "2026-10-02 11:21 EDT，盘中", "source_url": "https://stockanalysis.com/stocks/tsla/", "verified": true, "note": "单源行情；当天已公布Q3交付，但未公布Q3财务；图片354.81未验证。"},
+  "financial_period": "2026Q2财务；2026Q3交付及储能运营已更新",
+  "recommendation": {"rating": "暂不买入", "buy_low": null, "buy_high": null, "currency": "USD", "basis": "2029 EPS1.5/4/9与PE35/55/70的诊断终值52.5/220/630；新业务现金桥接不足，不把基准折现156.59当可信买价。", "conditions": "需汽车和储能可持续盈利、Robotaxi完整单位经济性、capex与稀释证据后重新建模。", "holder_action": "审查新业务风险承受能力，避免杠杆；安全/许可限制、现金消耗和稀释恶化则重估，不机械摊低成本。"},
+  "thesis": "核心业务与高潜力新业务并存，但当前股价主要预付尚未充分财务验证的成功。",
+  "key_risk": "传统利润承压与新业务长期投入同时发生，Robotaxi/机器人兑现延迟或稀释。",
+  "confidence": "低",
+  "source_limitations": ["行情单源。", "新业务缺少可验证分部现金和完整单位经济性，数值买区留空。", "实发、参与分配和EPS加权股数尚未完成全桥接，不给精确实时市值。", "IR交付页403，采用8-K镜像与CNBC交叉；Q3完整财务尚未发布。"],
+  "report_file": "TSLA研究报告-20261002.md"
+}

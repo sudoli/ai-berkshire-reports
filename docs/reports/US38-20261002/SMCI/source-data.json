@@ -1,0 +1,2247 @@
+{
+  "financials/income-statement/": {
+    "url": "https://stockanalysis.com/stocks/smci/financials/income-statement/",
+    "status": 200,
+    "text": "Super Micro Computer, Inc. (SMCI) NASDAQ: SMCI Â· Real-Time Price Â· USD Full Chart Watchlist Alerts Compare 43.13 +1.21 (2.89%) Oct 2, 2026, 11:22 AM EDT - Market open Overview Financials Forecast Statistics Metrics Dividends History Profile Chart Financials Income Statement Balance Sheet Cash Flow Ratios KPIs Annual Quarterly TTM Super Micro Computer Income Statement Financials in millions USD. Fiscal year is July - June. Millions USD. Fiscal year is Jul - Jun. Standardized As Reported Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Revenue 39,063 21,972 14,989 7,123 5,196 Revenue Growth 77.79% 46.59% 110.42% 37.09% 46.06% Cost of Revenue 34,836 19,542 12,928 5,840 4,396 Gross Profit 4,227 2,430 2,061 1,283 800 Selling, General & Admin 685.53 540.38 387.09 214.61 192.56 Research & Development 771.23 636.55 463.55 307.26 272.27 Operating Expenses 1,457 1,177 850.64 521.87 464.83 Operating Income 2,770 1,253 1,211 761.14 335.17 Interest Expense -194.57 -59.57 -19.35 -10.49 -6.41 Interest & Investment Income 186.92 59.83 28.96 - - Earnings From Equity Investments -2.48 -6.21 1.82 -3.63 1.21 Currency Exchange Gain (Loss) 5.9 -11.6 6.3 0.2 7.7 Other Non Operating Income (Expenses) 3.63 -2.09 -11.24 3.45 0.38 EBT Excluding Unusual Items 2,770 1,233 1,217 750.66 338.04 Gain (Loss) on Sale of Investments 16.9 2.6 -1.3 - - Other Unusual Items - -30.25 - - - Pretax Income 2,787 1,206 1,216 750.66 338.04 Income Tax Expense 556.33 156.85 63.29 110.67 52.88 Net Income 2,230 1,049 1,153 640 285.16 Preferred Dividends & Other Adjustments 34.61 - - - - Net Income to Common 2,196 1,049 1,153 640 285.16 Net Income Growth 109.36% -9.01% 80.11% 124.43% 154.92% Shares Outstanding (Basic) 602 594 556 529 515 Shares Outstanding (Diluted) 697 628 602 560 536 Shares Change 10.97% 4.36% 7.58% 4.39% 0.20% EPS (Basic) 3.65 1.77 2.07 1.21 0.55 EPS (Diluted) 3.26 1.68 1.92 1.14 0.53 EPS Growth 93.98% -12.45% 68.13% 115.09% 153.59% Additional Metrics Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Free Cash Flow -6,972 1,532 -2,610 626.79 -485.98 Free Cash Flow Per Share -10.00 2.44 -4.33 1.12 -0.91 Gross Margin 10.82% 11.06% 13.75% 18.01% 15.40% Operating Margin 7.09% 5.70% 8.08% 10.69% 6.45% Profit Margin 5.62% 4.77% 7.69% 8.98% 5.49% Free Cash Flow Margin -17.85% 6.97% -17.41% 8.80% -9.35% EBITDA 2,824 1,294 1,240 796.05 367.64 EBITDA Margin 7.23% 5.89% 8.28% 11.18% 7.07% D&A For EBITDA 53.67 41.3 29.62 34.9 32.47 EBIT 2,770 1,253 1,211 761.14 335.17 EBIT Margin 7.09% 5.70% 8.08% 10.69% 6.45% Effective Tax Rate 19.96% 13.01% 5.21% 14.74% 15.64% Advertising Expenses 2 38.1 10.7 2 0.1 SEC Filings: 10-K Â· 10-Q Data Source: S&P Global Market Intelligence Last updated: Aug 31, 2026 Financial data is provided by S&P Global Market Intelligence and updates within hours after each earnings release, which is every three months for this company. Update frequency: Quarterly Last checked: Sep 30, 2026 Data Sources Report a data error",
+    "rows": [
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Revenue",
+        "39,063",
+        "21,972",
+        "14,989",
+        "7,123",
+        "5,196"
+      ],
+      [
+        "Revenue Growth",
+        "77.79%",
+        "46.59%",
+        "110.42%",
+        "37.09%",
+        "46.06%"
+      ],
+      [
+        "Cost of Revenue",
+        "34,836",
+        "19,542",
+        "12,928",
+        "5,840",
+        "4,396"
+      ],
+      [
+        "Gross Profit",
+        "4,227",
+        "2,430",
+        "2,061",
+        "1,283",
+        "800"
+      ],
+      [
+        "Selling, General & Admin",
+        "685.53",
+        "540.38",
+        "387.09",
+        "214.61",
+        "192.56"
+      ],
+      [
+        "Research & Development",
+        "771.23",
+        "636.55",
+        "463.55",
+        "307.26",
+        "272.27"
+      ],
+      [
+        "Operating Expenses",
+        "1,457",
+        "1,177",
+        "850.64",
+        "521.87",
+        "464.83"
+      ],
+      [
+        "Operating Income",
+        "2,770",
+        "1,253",
+        "1,211",
+        "761.14",
+        "335.17"
+      ],
+      [
+        "Interest Expense",
+        "-194.57",
+        "-59.57",
+        "-19.35",
+        "-10.49",
+        "-6.41"
+      ],
+      [
+        "Interest & Investment Income",
+        "186.92",
+        "59.83",
+        "28.96",
+        "-",
+        "-"
+      ],
+      [
+        "Earnings From Equity Investments",
+        "-2.48",
+        "-6.21",
+        "1.82",
+        "-3.63",
+        "1.21"
+      ],
+      [
+        "Currency Exchange Gain (Loss)",
+        "5.9",
+        "-11.6",
+        "6.3",
+        "0.2",
+        "7.7"
+      ],
+      [
+        "Other Non Operating Income (Expenses)",
+        "3.63",
+        "-2.09",
+        "-11.24",
+        "3.45",
+        "0.38"
+      ],
+      [
+        "EBT Excluding Unusual Items",
+        "2,770",
+        "1,233",
+        "1,217",
+        "750.66",
+        "338.04"
+      ],
+      [
+        "Gain (Loss) on Sale of Investments",
+        "16.9",
+        "2.6",
+        "-1.3",
+        "-",
+        "-"
+      ],
+      [
+        "Other Unusual Items",
+        "-",
+        "-30.25",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Pretax Income",
+        "2,787",
+        "1,206",
+        "1,216",
+        "750.66",
+        "338.04"
+      ],
+      [
+        "Income Tax Expense",
+        "556.33",
+        "156.85",
+        "63.29",
+        "110.67",
+        "52.88"
+      ],
+      [
+        "Net Income",
+        "2,230",
+        "1,049",
+        "1,153",
+        "640",
+        "285.16"
+      ],
+      [
+        "Preferred Dividends & Other Adjustments",
+        "34.61",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Net Income to Common",
+        "2,196",
+        "1,049",
+        "1,153",
+        "640",
+        "285.16"
+      ],
+      [
+        "Net Income Growth",
+        "109.36%",
+        "-9.01%",
+        "80.11%",
+        "124.43%",
+        "154.92%"
+      ],
+      [
+        "Shares Outstanding (Basic)",
+        "602",
+        "594",
+        "556",
+        "529",
+        "515"
+      ],
+      [
+        "Shares Outstanding (Diluted)",
+        "697",
+        "628",
+        "602",
+        "560",
+        "536"
+      ],
+      [
+        "Shares Change",
+        "10.97%",
+        "4.36%",
+        "7.58%",
+        "4.39%",
+        "0.20%"
+      ],
+      [
+        "EPS (Basic)",
+        "3.65",
+        "1.77",
+        "2.07",
+        "1.21",
+        "0.55"
+      ],
+      [
+        "EPS (Diluted)",
+        "3.26",
+        "1.68",
+        "1.92",
+        "1.14",
+        "0.53"
+      ],
+      [
+        "EPS Growth",
+        "93.98%",
+        "-12.45%",
+        "68.13%",
+        "115.09%",
+        "153.59%"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Free Cash Flow",
+        "-6,972",
+        "1,532",
+        "-2,610",
+        "626.79",
+        "-485.98"
+      ],
+      [
+        "Free Cash Flow Per Share",
+        "-10.00",
+        "2.44",
+        "-4.33",
+        "1.12",
+        "-0.91"
+      ],
+      [
+        "Gross Margin",
+        "10.82%",
+        "11.06%",
+        "13.75%",
+        "18.01%",
+        "15.40%"
+      ],
+      [
+        "Operating Margin",
+        "7.09%",
+        "5.70%",
+        "8.08%",
+        "10.69%",
+        "6.45%"
+      ],
+      [
+        "Profit Margin",
+        "5.62%",
+        "4.77%",
+        "7.69%",
+        "8.98%",
+        "5.49%"
+      ],
+      [
+        "Free Cash Flow Margin",
+        "-17.85%",
+        "6.97%",
+        "-17.41%",
+        "8.80%",
+        "-9.35%"
+      ],
+      [
+        "EBITDA",
+        "2,824",
+        "1,294",
+        "1,240",
+        "796.05",
+        "367.64"
+      ],
+      [
+        "EBITDA Margin",
+        "7.23%",
+        "5.89%",
+        "8.28%",
+        "11.18%",
+        "7.07%"
+      ],
+      [
+        "D&A For EBITDA",
+        "53.67",
+        "41.3",
+        "29.62",
+        "34.9",
+        "32.47"
+      ],
+      [
+        "EBIT",
+        "2,770",
+        "1,253",
+        "1,211",
+        "761.14",
+        "335.17"
+      ],
+      [
+        "EBIT Margin",
+        "7.09%",
+        "5.70%",
+        "8.08%",
+        "10.69%",
+        "6.45%"
+      ],
+      [
+        "Effective Tax Rate",
+        "19.96%",
+        "13.01%",
+        "5.21%",
+        "14.74%",
+        "15.64%"
+      ],
+      [
+        "Advertising Expenses",
+        "2",
+        "38.1",
+        "10.7",
+        "2",
+        "0.1"
+      ]
+    ]
+  },
+  "financials/balance-sheet/": {
+    "url": "https://stockanalysis.com/stocks/smci/financials/balance-sheet/",
+    "status": 200,
+    "text": "Super Micro Computer, Inc. (SMCI) NASDAQ: SMCI Â· Real-Time Price Â· USD Full Chart Watchlist Alerts Compare 43.13 +1.21 (2.89%) Oct 2, 2026, 11:22 AM EDT - Market open Overview Financials Forecast Statistics Metrics Dividends History Profile Chart Financials Income Statement Balance Sheet Cash Flow Ratios KPIs Annual Quarterly TTM Super Micro Computer Balance Sheet Financials in millions USD. Fiscal year is July - June. Millions USD. Fiscal year is Jul - Jun. Standardized As Reported Assets Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Cash & Equivalents 7,521 5,170 1,670 440.46 267.4 Short-Term Investments 23.11 6.24 3.69 - 0.3 Cash & Short-Term Investments 7,545 5,176 1,673 440.46 267.7 Cash Growth 45.76% 209.31% 279.93% 64.54% 15.25% Accounts Receivable 6,125 2,204 2,737 1,148 834.51 Other Receivables 137.21 155.25 11.94 27.73 24.41 Receivables 6,263 2,359 2,749 1,176 858.93 Inventory 12,896 4,680 4,333 1,446 1,546 Prepaid Expenses 92.29 26.82 176.21 117.41 134.09 Restricted Cash 47 - - - - Other Current Assets 883.8 59.11 - - - Total Current Assets 27,726 12,302 8,932 3,179 2,806 Property, Plant & Equipment 1,147 798.18 448.57 309.14 285.97 Long-Term Investments 148.02 112.37 61 - - Goodwill - - - 1.8 - Long-Term Accounts Receivable 4.85 166.41 - - - Long-Term Deferred Tax Assets 697.44 607.42 365.17 162.65 69.93 Long-Term Deferred Charges 36.57 10.71 11.04 - - Other Long-Term Assets 185.5 21.69 8.36 21.71 42.86 Total Assets 29,945 14,018 9,826 3,675 3,205 Liabilities Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Accounts Payable 2,247 1,282 1,472 776.83 655.4 Accrued Expenses 508.94 241.71 151.11 163.87 212.42 Short-Term Debt 258.27 30 361.87 131.58 449.15 Current Portion of Long-Term Debt 1,782 45.06 40.47 38.54 - Current Portion of Leases 40.63 21.19 9.25 - - Current Income Taxes Payable 262.61 53.38 18.27 129.17 41.74 Current Unearned Revenue 1,578 368.74 193.05 134.67 111.31 Other Current Liabilities 483.15 302.74 99.32 - - Total Current Liabilities 7,160 2,345 2,346 1,375 1,470 Long-Term Debt 6,681 4,683 1,772 120.18 147.62 Long-Term Leases 498.97 280.37 - - - Long-Term Unearned Revenue 1,034 362.65 223.32 169.78 122.55 Other Long-Term Liabilities 92.23 46.16 67.88 37.95 39.14 Total Liabilities 15,466 7,717 4,409 1,703 1,779 Shareholders' Equity Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Common Stock 4,601 2,866 2,831 538.35 481.74 Retained Earnings 5,652 3,435 2,586 1,433 942.92 Comprehensive Income & Other 0.4 0.71 0.71 0.64 0.91 Total Common Equity 10,253 6,302 5,417 1,972 1,426 Minority Interest 0.16 0.18 0.16 0.17 0.17 Shareholders' Equity 14,480 6,302 5,417 1,972 1,426 Total Liabilities & Equity 29,945 14,018 9,826 3,675 3,205 Additional Metrics Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Total Debt 9,260 5,059 2,183 290.3 596.76 Net Cash (Debt) -1,715 116.94 -509.94 150.16 -329.07 Net Cash Growth - - - - - Net Cash Per Share -2.46 0.19 -0.85 0.27 -0.61 Filing Date Shares Outstanding 656.97 594.27 588.09 529.06 523.47 Total Common Shares Outstanding 656.88 594.14 588.09 529.01 523.11 Working Capital 20,566 9,957 6,586 1,805 1,336 Book Value Per Share 15.61 10.61 9.21 3.73 2.73 Tangible Book Value 10,253 6,302 5,417 1,970 1,426 Tangible Book Value Per Share 15.61 10.61 9.21 3.72 2.73 Land 196.23 162.85 150.14 86.64 84.62 Buildings 340.13 304.13 235.84 203.13 198.54 Machinery 185.27 147.6 202.74 166.45 147.08 Construction In Progress 52.59 1.04 14.83 0.3 0.3 SEC Filings: 10-K Â· 10-Q Data Source: S&P Global Market Intelligence Last updated: Aug 31, 2026 Financial data is provided by S&P Global Market Intelligence and updates within hours after each earnings release, which is every three months for this company. Update frequency: Quarterly Last checked: Sep 30, 2026 Data Sources Report a data error",
+    "rows": [
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Cash & Equivalents",
+        "7,521",
+        "5,170",
+        "1,670",
+        "440.46",
+        "267.4"
+      ],
+      [
+        "Short-Term Investments",
+        "23.11",
+        "6.24",
+        "3.69",
+        "-",
+        "0.3"
+      ],
+      [
+        "Cash & Short-Term Investments",
+        "7,545",
+        "5,176",
+        "1,673",
+        "440.46",
+        "267.7"
+      ],
+      [
+        "Cash Growth",
+        "45.76%",
+        "209.31%",
+        "279.93%",
+        "64.54%",
+        "15.25%"
+      ],
+      [
+        "Accounts Receivable",
+        "6,125",
+        "2,204",
+        "2,737",
+        "1,148",
+        "834.51"
+      ],
+      [
+        "Other Receivables",
+        "137.21",
+        "155.25",
+        "11.94",
+        "27.73",
+        "24.41"
+      ],
+      [
+        "Receivables",
+        "6,263",
+        "2,359",
+        "2,749",
+        "1,176",
+        "858.93"
+      ],
+      [
+        "Inventory",
+        "12,896",
+        "4,680",
+        "4,333",
+        "1,446",
+        "1,546"
+      ],
+      [
+        "Prepaid Expenses",
+        "92.29",
+        "26.82",
+        "176.21",
+        "117.41",
+        "134.09"
+      ],
+      [
+        "Restricted Cash",
+        "47",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Other Current Assets",
+        "883.8",
+        "59.11",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Total Current Assets",
+        "27,726",
+        "12,302",
+        "8,932",
+        "3,179",
+        "2,806"
+      ],
+      [
+        "Property, Plant & Equipment",
+        "1,147",
+        "798.18",
+        "448.57",
+        "309.14",
+        "285.97"
+      ],
+      [
+        "Long-Term Investments",
+        "148.02",
+        "112.37",
+        "61",
+        "-",
+        "-"
+      ],
+      [
+        "Goodwill",
+        "-",
+        "-",
+        "-",
+        "1.8",
+        "-"
+      ],
+      [
+        "Long-Term Accounts Receivable",
+        "4.85",
+        "166.41",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Long-Term Deferred Tax Assets",
+        "697.44",
+        "607.42",
+        "365.17",
+        "162.65",
+        "69.93"
+      ],
+      [
+        "Long-Term Deferred Charges",
+        "36.57",
+        "10.71",
+        "11.04",
+        "-",
+        "-"
+      ],
+      [
+        "Other Long-Term Assets",
+        "185.5",
+        "21.69",
+        "8.36",
+        "21.71",
+        "42.86"
+      ],
+      [
+        "Total Assets",
+        "29,945",
+        "14,018",
+        "9,826",
+        "3,675",
+        "3,205"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Accounts Payable",
+        "2,247",
+        "1,282",
+        "1,472",
+        "776.83",
+        "655.4"
+      ],
+      [
+        "Accrued Expenses",
+        "508.94",
+        "241.71",
+        "151.11",
+        "163.87",
+        "212.42"
+      ],
+      [
+        "Short-Term Debt",
+        "258.27",
+        "30",
+        "361.87",
+        "131.58",
+        "449.15"
+      ],
+      [
+        "Current Portion of Long-Term Debt",
+        "1,782",
+        "45.06",
+        "40.47",
+        "38.54",
+        "-"
+      ],
+      [
+        "Current Portion of Leases",
+        "40.63",
+        "21.19",
+        "9.25",
+        "-",
+        "-"
+      ],
+      [
+        "Current Income Taxes Payable",
+        "262.61",
+        "53.38",
+        "18.27",
+        "129.17",
+        "41.74"
+      ],
+      [
+        "Current Unearned Revenue",
+        "1,578",
+        "368.74",
+        "193.05",
+        "134.67",
+        "111.31"
+      ],
+      [
+        "Other Current Liabilities",
+        "483.15",
+        "302.74",
+        "99.32",
+        "-",
+        "-"
+      ],
+      [
+        "Total Current Liabilities",
+        "7,160",
+        "2,345",
+        "2,346",
+        "1,375",
+        "1,470"
+      ],
+      [
+        "Long-Term Debt",
+        "6,681",
+        "4,683",
+        "1,772",
+        "120.18",
+        "147.62"
+      ],
+      [
+        "Long-Term Leases",
+        "498.97",
+        "280.37",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Long-Term Unearned Revenue",
+        "1,034",
+        "362.65",
+        "223.32",
+        "169.78",
+        "122.55"
+      ],
+      [
+        "Other Long-Term Liabilities",
+        "92.23",
+        "46.16",
+        "67.88",
+        "37.95",
+        "39.14"
+      ],
+      [
+        "Total Liabilities",
+        "15,466",
+        "7,717",
+        "4,409",
+        "1,703",
+        "1,779"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Common Stock",
+        "4,601",
+        "2,866",
+        "2,831",
+        "538.35",
+        "481.74"
+      ],
+      [
+        "Retained Earnings",
+        "5,652",
+        "3,435",
+        "2,586",
+        "1,433",
+        "942.92"
+      ],
+      [
+        "Comprehensive Income & Other",
+        "0.4",
+        "0.71",
+        "0.71",
+        "0.64",
+        "0.91"
+      ],
+      [
+        "Total Common Equity",
+        "10,253",
+        "6,302",
+        "5,417",
+        "1,972",
+        "1,426"
+      ],
+      [
+        "Minority Interest",
+        "0.16",
+        "0.18",
+        "0.16",
+        "0.17",
+        "0.17"
+      ],
+      [
+        "Shareholders' Equity",
+        "14,480",
+        "6,302",
+        "5,417",
+        "1,972",
+        "1,426"
+      ],
+      [
+        "Total Liabilities & Equity",
+        "29,945",
+        "14,018",
+        "9,826",
+        "3,675",
+        "3,205"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Total Debt",
+        "9,260",
+        "5,059",
+        "2,183",
+        "290.3",
+        "596.76"
+      ],
+      [
+        "Net Cash (Debt)",
+        "-1,715",
+        "116.94",
+        "-509.94",
+        "150.16",
+        "-329.07"
+      ],
+      [
+        "Net Cash Growth",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Net Cash Per Share",
+        "-2.46",
+        "0.19",
+        "-0.85",
+        "0.27",
+        "-0.61"
+      ],
+      [
+        "Filing Date Shares Outstanding",
+        "656.97",
+        "594.27",
+        "588.09",
+        "529.06",
+        "523.47"
+      ],
+      [
+        "Total Common Shares Outstanding",
+        "656.88",
+        "594.14",
+        "588.09",
+        "529.01",
+        "523.11"
+      ],
+      [
+        "Working Capital",
+        "20,566",
+        "9,957",
+        "6,586",
+        "1,805",
+        "1,336"
+      ],
+      [
+        "Book Value Per Share",
+        "15.61",
+        "10.61",
+        "9.21",
+        "3.73",
+        "2.73"
+      ],
+      [
+        "Tangible Book Value",
+        "10,253",
+        "6,302",
+        "5,417",
+        "1,970",
+        "1,426"
+      ],
+      [
+        "Tangible Book Value Per Share",
+        "15.61",
+        "10.61",
+        "9.21",
+        "3.72",
+        "2.73"
+      ],
+      [
+        "Land",
+        "196.23",
+        "162.85",
+        "150.14",
+        "86.64",
+        "84.62"
+      ],
+      [
+        "Buildings",
+        "340.13",
+        "304.13",
+        "235.84",
+        "203.13",
+        "198.54"
+      ],
+      [
+        "Machinery",
+        "185.27",
+        "147.6",
+        "202.74",
+        "166.45",
+        "147.08"
+      ],
+      [
+        "Construction In Progress",
+        "52.59",
+        "1.04",
+        "14.83",
+        "0.3",
+        "0.3"
+      ]
+    ]
+  },
+  "financials/cash-flow-statement/": {
+    "url": "https://stockanalysis.com/stocks/smci/financials/cash-flow-statement/",
+    "status": 200,
+    "text": "Super Micro Computer, Inc. (SMCI) NASDAQ: SMCI Â· Real-Time Price Â· USD Full Chart Watchlist Alerts Compare 43.13 +1.21 (2.89%) Oct 2, 2026, 11:22 AM EDT - Market open Overview Financials Forecast Statistics Metrics Dividends History Profile Chart Financials Income Statement Balance Sheet Cash Flow Ratios KPIs Annual Quarterly TTM Super Micro Computer Cash Flow Statement Financials in millions USD. Fiscal year is July - June. Millions USD. Fiscal year is Jul - Jun. Standardized As Reported Operating Activities Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Net Income 2,230 1,049 1,153 640 285.16 Depreciation & Amortization 90.27 58.34 38.69 34.9 32.47 Other Amortization 25.89 10.27 2.29 - - Loss (Gain) From Sale of Investments 0.41 - - - - Loss (Gain) on Equity Investments 2.48 6.21 -1.82 3.63 -1.21 Stock-Based Compensation 412.12 314.45 231.51 54.43 32.82 Other Operating Activities 76.76 63.45 -73.68 -96.26 -20.2 Change in Accounts Receivable -3,922 533.34 -1,589 -311.9 -372.44 Change in Inventory -8,877 -587.69 -2,983 100.04 -504.64 Change in Accounts Payable 963.26 -180.97 679.19 127.14 50.15 Change in Unearned Revenue 1,881 315.01 111.93 70.59 31.54 Change in Income Taxes 213.53 32.04 -110.9 87.42 29 Change in Other Net Operating Assets 92.91 46.21 56.34 -46.42 -3.46 Operating Cash Flow -6,810 1,660 -2,486 663.58 -440.8 Operating Cash Flow Growth - - - - - Investing Activities Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Capital Expenditures -162 -127.21 -124.28 -36.79 -45.18 Cash Acquisitions - - -0.3 -2.19 - Investment in Securities -38.28 -56 -69.67 -0.5 -1.1 Investing Cash Flow -200.28 -183.21 -194.25 -39.49 -46.28 Financing Activities Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Long-Term Debt Issued 4,469 4,328 3,852 1,094 1,153 Total Debt Issued 4,469 4,328 3,852 1,094 1,153 Long-Term Debt Repaid -520.51 -1,769 -1,968 -1,394 -640.7 Total Debt Repaid -520.51 -1,769 -1,968 -1,394 -640.7 Net Debt Issued (Repaid) 3,948 2,559 1,885 -300.53 512.62 Issuance of Common Stock 1,453 20.9 2,343 30.47 20.99 Repurchase of Common Stock -129.88 -342.46 -174.35 -178.2 -10.08 Other Financing Activities -24.52 -213.41 -142.11 -0.03 -0.66 Financing Cash Flow 9,479 2,024 3,912 -448.29 522.87 Net Cash Flow Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Foreign Exchange Rate Adjustments -9.36 1.67 -2.19 -3.4 -0.68 Net Cash Flow 2,459 3,502 1,229 172.4 35.11 Free Cash Flow Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Free Cash Flow -6,972 1,532 -2,610 626.79 -485.98 Free Cash Flow Growth - - - - - Free Cash Flow Margin -17.85% 6.97% -17.41% 8.80% -9.35% Free Cash Flow Per Share -10.00 2.44 -4.33 1.12 -0.91 Levered Free Cash Flow -8,249 1,449 -2,897 505 -556.25 Unlevered Free Cash Flow -8,153 1,476 -2,887 511.56 -552.25 Additional Metrics Mil Millions Data Data Source USD USD More Download Full Width Fiscal Year FY 2026 FY 2025 FY 2024 FY 2023 FY 2022 Period Ending Jun '26 Jun 30, 2026 Jun '25 Jun 30, 2025 Jun '24 Jun 30, 2024 Jun '23 Jun 30, 2023 Jun '22 Jun 30, 2022 Cash Interest Paid 109.31 25.49 16.02 8.54 5.49 Cash Income Tax Paid 399.28 327.16 392.02 114.96 19.69 Change in Working Capital -9,648 157.94 -3,836 26.87 -769.85 SEC Filings: 10-K Â· 10-Q Data Source: S&P Global Market Intelligence Last updated: Aug 31, 2026 Financial data is provided by S&P Global Market Intelligence and updates within hours after each earnings release, which is every three months for this company. Update frequency: Quarterly Last checked: Sep 30, 2026 Data Sources Report a data error",
+    "rows": [
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Net Income",
+        "2,230",
+        "1,049",
+        "1,153",
+        "640",
+        "285.16"
+      ],
+      [
+        "Depreciation & Amortization",
+        "90.27",
+        "58.34",
+        "38.69",
+        "34.9",
+        "32.47"
+      ],
+      [
+        "Other Amortization",
+        "25.89",
+        "10.27",
+        "2.29",
+        "-",
+        "-"
+      ],
+      [
+        "Loss (Gain) From Sale of Investments",
+        "0.41",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Loss (Gain) on Equity Investments",
+        "2.48",
+        "6.21",
+        "-1.82",
+        "3.63",
+        "-1.21"
+      ],
+      [
+        "Stock-Based Compensation",
+        "412.12",
+        "314.45",
+        "231.51",
+        "54.43",
+        "32.82"
+      ],
+      [
+        "Other Operating Activities",
+        "76.76",
+        "63.45",
+        "-73.68",
+        "-96.26",
+        "-20.2"
+      ],
+      [
+        "Change in Accounts Receivable",
+        "-3,922",
+        "533.34",
+        "-1,589",
+        "-311.9",
+        "-372.44"
+      ],
+      [
+        "Change in Inventory",
+        "-8,877",
+        "-587.69",
+        "-2,983",
+        "100.04",
+        "-504.64"
+      ],
+      [
+        "Change in Accounts Payable",
+        "963.26",
+        "-180.97",
+        "679.19",
+        "127.14",
+        "50.15"
+      ],
+      [
+        "Change in Unearned Revenue",
+        "1,881",
+        "315.01",
+        "111.93",
+        "70.59",
+        "31.54"
+      ],
+      [
+        "Change in Income Taxes",
+        "213.53",
+        "32.04",
+        "-110.9",
+        "87.42",
+        "29"
+      ],
+      [
+        "Change in Other Net Operating Assets",
+        "92.91",
+        "46.21",
+        "56.34",
+        "-46.42",
+        "-3.46"
+      ],
+      [
+        "Operating Cash Flow",
+        "-6,810",
+        "1,660",
+        "-2,486",
+        "663.58",
+        "-440.8"
+      ],
+      [
+        "Operating Cash Flow Growth",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Capital Expenditures",
+        "-162",
+        "-127.21",
+        "-124.28",
+        "-36.79",
+        "-45.18"
+      ],
+      [
+        "Cash Acquisitions",
+        "-",
+        "-",
+        "-0.3",
+        "-2.19",
+        "-"
+      ],
+      [
+        "Investment in Securities",
+        "-38.28",
+        "-56",
+        "-69.67",
+        "-0.5",
+        "-1.1"
+      ],
+      [
+        "Investing Cash Flow",
+        "-200.28",
+        "-183.21",
+        "-194.25",
+        "-39.49",
+        "-46.28"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Long-Term Debt Issued",
+        "4,469",
+        "4,328",
+        "3,852",
+        "1,094",
+        "1,153"
+      ],
+      [
+        "Total Debt Issued",
+        "4,469",
+        "4,328",
+        "3,852",
+        "1,094",
+        "1,153"
+      ],
+      [
+        "Long-Term Debt Repaid",
+        "-520.51",
+        "-1,769",
+        "-1,968",
+        "-1,394",
+        "-640.7"
+      ],
+      [
+        "Total Debt Repaid",
+        "-520.51",
+        "-1,769",
+        "-1,968",
+        "-1,394",
+        "-640.7"
+      ],
+      [
+        "Net Debt Issued (Repaid)",
+        "3,948",
+        "2,559",
+        "1,885",
+        "-300.53",
+        "512.62"
+      ],
+      [
+        "Issuance of Common Stock",
+        "1,453",
+        "20.9",
+        "2,343",
+        "30.47",
+        "20.99"
+      ],
+      [
+        "Repurchase of Common Stock",
+        "-129.88",
+        "-342.46",
+        "-174.35",
+        "-178.2",
+        "-10.08"
+      ],
+      [
+        "Other Financing Activities",
+        "-24.52",
+        "-213.41",
+        "-142.11",
+        "-0.03",
+        "-0.66"
+      ],
+      [
+        "Financing Cash Flow",
+        "9,479",
+        "2,024",
+        "3,912",
+        "-448.29",
+        "522.87"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Foreign Exchange Rate Adjustments",
+        "-9.36",
+        "1.67",
+        "-2.19",
+        "-3.4",
+        "-0.68"
+      ],
+      [
+        "Net Cash Flow",
+        "2,459",
+        "3,502",
+        "1,229",
+        "172.4",
+        "35.11"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Free Cash Flow",
+        "-6,972",
+        "1,532",
+        "-2,610",
+        "626.79",
+        "-485.98"
+      ],
+      [
+        "Free Cash Flow Growth",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      [
+        "Free Cash Flow Margin",
+        "-17.85%",
+        "6.97%",
+        "-17.41%",
+        "8.80%",
+        "-9.35%"
+      ],
+      [
+        "Free Cash Flow Per Share",
+        "-10.00",
+        "2.44",
+        "-4.33",
+        "1.12",
+        "-0.91"
+      ],
+      [
+        "Levered Free Cash Flow",
+        "-8,249",
+        "1,449",
+        "-2,897",
+        "505",
+        "-556.25"
+      ],
+      [
+        "Unlevered Free Cash Flow",
+        "-8,153",
+        "1,476",
+        "-2,887",
+        "511.56",
+        "-552.25"
+      ],
+      [
+        "Fiscal Year",
+        "FY 2026",
+        "FY 2025",
+        "FY 2024",
+        "FY 2023",
+        "FY 2022"
+      ],
+      [
+        "Period Ending",
+        "Jun '26 Jun 30, 2026",
+        "Jun '25 Jun 30, 2025",
+        "Jun '24 Jun 30, 2024",
+        "Jun '23 Jun 30, 2023",
+        "Jun '22 Jun 30, 2022"
+      ],
+      [
+        "Cash Interest Paid",
+        "109.31",
+        "25.49",
+        "16.02",
+        "8.54",
+        "5.49"
+      ],
+      [
+        "Cash Income Tax Paid",
+        "399.28",
+        "327.16",
+        "392.02",
+        "114.96",
+        "19.69"
+      ],
+      [
+        "Change in Working Capital",
+        "-9,648",
+        "157.94",
+        "-3,836",
+        "26.87",
+        "-769.85"
+      ]
+    ]
+  },
+  "history/": {
+    "url": "https://stockanalysis.com/stocks/smci/history/",
+    "status": 200,
+    "text": "Super Micro Computer, Inc. (SMCI) NASDAQ: SMCI Â· Real-Time Price Â· USD Full Chart Watchlist Alerts Compare 43.13 +1.21 (2.89%) Oct 2, 2026, 11:22 AM EDT - Market open Overview Financials Forecast Statistics Metrics Dividends History Profile Chart Super Micro Computer Stock Price History Price Stock Price Price Change (%) Price Change (%) Total Return (%) Total Return (%) Historical Data Daily 6M 6 Months Download Date Open High Low Close Adj. Close Change Volume Oct 2, 2026 42.78 44.59 42.28 43.80 - 4.48% 21,651,403 Oct 1, 2026 40.89 42.02 40.13 41.92 41.92 2.07% 26,368,900 Sep 30, 2026 42.17 42.68 40.47 41.07 41.07 0.12% 31,835,419 Sep 29, 2026 42.60 42.69 40.86 41.02 41.02 -1.82% 25,272,936 Sep 28, 2026 42.75 43.06 40.96 41.78 41.78 -3.42% 29,494,528 Sep 25, 2026 42.00 43.76 41.90 43.26 43.26 4.22% 49,323,237 Sep 24, 2026 40.44 42.28 39.85 41.51 41.51 0.17% 34,885,557 Sep 23, 2026 42.27 42.70 40.79 41.44 41.44 -0.24% 40,871,514 Sep 22, 2026 41.26 41.74 40.45 41.54 41.54 0.83% 30,249,834 Sep 21, 2026 40.63 41.72 40.00 41.20 41.20 5.40% 48,218,355 Sep 18, 2026 40.20 40.41 38.32 39.09 39.09 -3.12% 48,079,259 Sep 17, 2026 38.04 41.01 37.82 40.35 40.35 9.50% 62,517,147 Sep 16, 2026 35.95 37.12 35.36 36.85 36.85 3.40% 31,390,538 Sep 15, 2026 36.74 37.55 35.57 35.64 35.64 -2.99% 26,725,862 Sep 14, 2026 37.43 38.10 36.38 36.74 36.74 -8.38% 39,892,522 Sep 11, 2026 37.76 40.45 37.56 40.10 40.10 7.28% 46,492,731 Sep 10, 2026 37.91 39.26 37.37 37.38 37.38 -3.98% 26,771,390 Sep 9, 2026 40.01 40.18 38.84 38.93 38.93 -3.30% 31,196,990 Sep 8, 2026 39.67 41.53 39.67 40.26 40.26 1.69% 42,400,744 Sep 4, 2026 38.16 40.91 37.92 39.59 39.59 4.54% 53,633,172 Sep 3, 2026 36.50 38.22 35.75 37.87 37.87 2.35% 34,436,447 Sep 2, 2026 37.65 37.88 35.63 37.00 37.00 0.79% 33,258,780 Sep 1, 2026 36.43 37.15 35.72 36.71 36.71 -1.53% 26,862,940 Aug 31, 2026 36.54 37.59 36.12 37.28 37.28 0.54% 22,915,018 Aug 28, 2026 38.02 38.97 36.87 37.08 37.08 -3.59% 29,132,859 Aug 27, 2026 38.69 39.47 37.48 38.46 38.46 2.86% 41,662,108 Aug 26, 2026 38.03 38.27 37.23 37.39 37.39 -2.78% 33,723,170 Aug 25, 2026 36.13 38.60 36.01 38.46 38.46 9.35% 48,106,902 Aug 24, 2026 36.49 36.70 34.09 35.17 35.17 -5.56% 39,934,865 Aug 21, 2026 37.16 37.67 36.42 37.24 37.24 2.03% 36,474,341 Aug 20, 2026 36.90 38.74 35.58 36.50 36.50 -0.22% 51,286,605 Aug 19, 2026 37.15 37.69 35.72 36.58 36.58 -2.22% 35,466,176 Aug 18, 2026 37.10 38.16 36.22 37.41 37.41 -2.27% 52,260,068 Aug 17, 2026 39.31 39.51 37.68 38.28 38.28 -3.92% 55,467,039 Aug 14, 2026 39.16 40.60 38.73 39.84 39.84 1.74% 61,990,870 Aug 13, 2026 38.28 42.31 38.20 39.16 39.16 4.12% 122,775,704 Aug 12, 2026 34.99 38.15 33.94 37.61 37.61 19.02% 165,736,379 Aug 11, 2026 32.02 32.36 30.92 31.60 31.60 0.45% 95,520,451 Aug 10, 2026 32.00 33.39 31.43 31.46 31.46 1.06% 56,320,400 Aug 7, 2026 29.94 31.34 29.68 31.13 31.13 5.96% 32,380,697 Aug 6, 2026 30.00 30.94 29.33 29.38 29.38 -3.10% 26,697,951 Aug 5, 2026 31.71 31.78 30.29 30.32 30.32 -4.32% 35,605,035 Aug 4, 2026 29.65 31.84 29.07 31.69 31.69 10.65% 56,404,626 Aug 3, 2026 28.00 28.93 27.44 28.64 28.64 0.85% 24,010,919 Jul 31, 2026 28.65 29.30 27.21 28.40 28.40 2.42% 34,956,061 Jul 30, 2026 26.84 28.17 26.65 27.73 27.73 7.90% 38,544,949 Jul 29, 2026 28.02 28.07 25.68 25.70 25.70 -9.67% 40,892,234 Jul 28, 2026 28.64 28.87 27.13 28.45 28.45 -4.56% 36,449,752 Jul 27, 2026 30.60 30.94 28.50 29.81 29.81 -0.96% 35,912,282 Jul 24, 2026 30.62 31.33 29.28 30.10 30.10 -3.53% 49,701,580 Previous Page 1 of 3 50 Rows Next Back to Top â Data Source: S&P Global Market Intelligence Last updated: Oct 2, 2026 Historical price data is provided by S&P Global Market Intelligence . New prices are added after the close of each trading day, and past prices are adjusted for stock splits. Update frequency: Daily Last checked: Oct 2, 2026 Data Sources Report a data error Stock Analysis Pro Upgrade now for unlimited access to all data and tools. Market Newsletter Get a daily email with the top market news in bullet point format. SMCI News 2 days ago - VDURA Data Platform V12 Now Generally Available, the Hyperscaler Storage Playbook to AI Factories and Neoclouds on Supermicro - Business Wire 2 days ago - VDURA Data Platform V12 Now Generally Available, the Hyperscaler Storage Playbook to AI Factories and Neoclouds on Supermicro - Business Wire 2 days ago - NetApp, Super Micro collaborate on validated AI infrastructure solutions - TheFly 3 days ago - Super Micro Computer Investigation Initiated: Kahn Swick & Foti, LLC Investigates the Officers and Directors of Super Micro Computer, Inc. - SMCI - Business Wire 8 days ago - U.S. International Trade Commission begins investigation into Micron, others - TheFly 8 days ago - Intel, Marvell, Super Micro, Meta, MGM, and More Stocks That Explain Today's Market - Barrons 9 days ago - Super Micro now shipping Nvidia Vera Rubin NVL72 racks - TheFly 9 days ago - Supermicro Now Shipping NVIDIA Vera Rubin NVL72 Racks - PRNewsWire 9 days ago - Sandisk, Super Micro, IonQ, Six Flags, and More Stocks That Explain Today's Market - Barrons 14 days ago - SMCI stock rallies 9% as Goldman Sachs flags expanding addressable market - Invezz More News",
+    "rows": [
+      [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj. Close",
+        "Change",
+        "Volume"
+      ],
+      [
+        "Oct 2, 2026",
+        "42.78",
+        "44.59",
+        "42.28",
+        "43.80",
+        "-",
+        "4.48%",
+        "21,651,403"
+      ],
+      [
+        "Oct 1, 2026",
+        "40.89",
+        "42.02",
+        "40.13",
+        "41.92",
+        "41.92",
+        "2.07%",
+        "26,368,900"
+      ],
+      [
+        "Sep 30, 2026",
+        "42.17",
+        "42.68",
+        "40.47",
+        "41.07",
+        "41.07",
+        "0.12%",
+        "31,835,419"
+      ],
+      [
+        "Sep 29, 2026",
+        "42.60",
+        "42.69",
+        "40.86",
+        "41.02",
+        "41.02",
+        "-1.82%",
+        "25,272,936"
+      ],
+      [
+        "Sep 28, 2026",
+        "42.75",
+        "43.06",
+        "40.96",
+        "41.78",
+        "41.78",
+        "-3.42%",
+        "29,494,528"
+      ],
+      [
+        "Sep 25, 2026",
+        "42.00",
+        "43.76",
+        "41.90",
+        "43.26",
+        "43.26",
+        "4.22%",
+        "49,323,237"
+      ],
+      [
+        "Sep 24, 2026",
+        "40.44",
+        "42.28",
+        "39.85",
+        "41.51",
+        "41.51",
+        "0.17%",
+        "34,885,557"
+      ],
+      [
+        "Sep 23, 2026",
+        "42.27",
+        "42.70",
+        "40.79",
+        "41.44",
+        "41.44",
+        "-0.24%",
+        "40,871,514"
+      ],
+      [
+        "Sep 22, 2026",
+        "41.26",
+        "41.74",
+        "40.45",
+        "41.54",
+        "41.54",
+        "0.83%",
+        "30,249,834"
+      ],
+      [
+        "Sep 21, 2026",
+        "40.63",
+        "41.72",
+        "40.00",
+        "41.20",
+        "41.20",
+        "5.40%",
+        "48,218,355"
+      ],
+      [
+        "Sep 18, 2026",
+        "40.20",
+        "40.41",
+        "38.32",
+        "39.09",
+        "39.09",
+        "-3.12%",
+        "48,079,259"
+      ],
+      [
+        "Sep 17, 2026",
+        "38.04",
+        "41.01",
+        "37.82",
+        "40.35",
+        "40.35",
+        "9.50%",
+        "62,517,147"
+      ],
+      [
+        "Sep 16, 2026",
+        "35.95",
+        "37.12",
+        "35.36",
+        "36.85",
+        "36.85",
+        "3.40%",
+        "31,390,538"
+      ],
+      [
+        "Sep 15, 2026",
+        "36.74",
+        "37.55",
+        "35.57",
+        "35.64",
+        "35.64",
+        "-2.99%",
+        "26,725,862"
+      ],
+      [
+        "Sep 14, 2026",
+        "37.43",
+        "38.10",
+        "36.38",
+        "36.74",
+        "36.74",
+        "-8.38%",
+        "39,892,522"
+      ],
+      [
+        "Sep 11, 2026",
+        "37.76",
+        "40.45",
+        "37.56",
+        "40.10",
+        "40.10",
+        "7.28%",
+        "46,492,731"
+      ],
+      [
+        "Sep 10, 2026",
+        "37.91",
+        "39.26",
+        "37.37",
+        "37.38",
+        "37.38",
+        "-3.98%",
+        "26,771,390"
+      ],
+      [
+        "Sep 9, 2026",
+        "40.01",
+        "40.18",
+        "38.84",
+        "38.93",
+        "38.93",
+        "-3.30%",
+        "31,196,990"
+      ],
+      [
+        "Sep 8, 2026",
+        "39.67",
+        "41.53",
+        "39.67",
+        "40.26",
+        "40.26",
+        "1.69%",
+        "42,400,744"
+      ],
+      [
+        "Sep 4, 2026",
+        "38.16",
+        "40.91",
+        "37.92",
+        "39.59",
+        "39.59",
+        "4.54%",
+        "53,633,172"
+      ],
+      [
+        "Sep 3, 2026",
+        "36.50",
+        "38.22",
+        "35.75",
+        "37.87",
+        "37.87",
+        "2.35%",
+        "34,436,447"
+      ],
+      [
+        "Sep 2, 2026",
+        "37.65",
+        "37.88",
+        "35.63",
+        "37.00",
+        "37.00",
+        "0.79%",
+        "33,258,780"
+      ],
+      [
+        "Sep 1, 2026",
+        "36.43",
+        "37.15",
+        "35.72",
+        "36.71",
+        "36.71",
+        "-1.53%",
+        "26,862,940"
+      ],
+      [
+        "Aug 31, 2026",
+        "36.54",
+        "37.59",
+        "36.12",
+        "37.28",
+        "37.28",
+        "0.54%",
+        "22,915,018"
+      ],
+      [
+        "Aug 28, 2026",
+        "38.02",
+        "38.97",
+        "36.87",
+        "37.08",
+        "37.08",
+        "-3.59%",
+        "29,132,859"
+      ],
+      [
+        "Aug 27, 2026",
+        "38.69",
+        "39.47",
+        "37.48",
+        "38.46",
+        "38.46",
+        "2.86%",
+        "41,662,108"
+      ],
+      [
+        "Aug 26, 2026",
+        "38.03",
+        "38.27",
+        "37.23",
+        "37.39",
+        "37.39",
+        "-2.78%",
+        "33,723,170"
+      ],
+      [
+        "Aug 25, 2026",
+        "36.13",
+        "38.60",
+        "36.01",
+        "38.46",
+        "38.46",
+        "9.35%",
+        "48,106,902"
+      ],
+      [
+        "Aug 24, 2026",
+        "36.49",
+        "36.70",
+        "34.09",
+        "35.17",
+        "35.17",
+        "-5.56%",
+        "39,934,865"
+      ],
+      [
+        "Aug 21, 2026",
+        "37.16",
+        "37.67",
+        "36.42",
+        "37.24",
+        "37.24",
+        "2.03%",
+        "36,474,341"
+      ],
+      [
+        "Aug 20, 2026",
+        "36.90",
+        "38.74",
+        "35.58",
+        "36.50",
+        "36.50",
+        "-0.22%",
+        "51,286,605"
+      ],
+      [
+        "Aug 19, 2026",
+        "37.15",
+        "37.69",
+        "35.72",
+        "36.58",
+        "36.58",
+        "-2.22%",
+        "35,466,176"
+      ],
+      [
+        "Aug 18, 2026",
+        "37.10",
+        "38.16",
+        "36.22",
+        "37.41",
+        "37.41",
+        "-2.27%",
+        "52,260,068"
+      ],
+      [
+        "Aug 17, 2026",
+        "39.31",
+        "39.51",
+        "37.68",
+        "38.28",
+        "38.28",
+        "-3.92%",
+        "55,467,039"
+      ],
+      [
+        "Aug 14, 2026",
+        "39.16",
+        "40.60",
+        "38.73",
+        "39.84",
+        "39.84",
+        "1.74%",
+        "61,990,870"
+      ],
+      [
+        "Aug 13, 2026",
+        "38.28",
+        "42.31",
+        "38.20",
+        "39.16",
+        "39.16",
+        "4.12%",
+        "122,775,704"
+      ],
+      [
+        "Aug 12, 2026",
+        "34.99",
+        "38.15",
+        "33.94",
+        "37.61",
+        "37.61",
+        "19.02%",
+        "165,736,379"
+      ],
+      [
+        "Aug 11, 2026",
+        "32.02",
+        "32.36",
+        "30.92",
+        "31.60",
+        "31.60",
+        "0.45%",
+        "95,520,451"
+      ],
+      [
+        "Aug 10, 2026",
+        "32.00",
+        "33.39",
+        "31.43",
+        "31.46",
+        "31.46",
+        "1.06%",
+        "56,320,400"
+      ],
+      [
+        "Aug 7, 2026",
+        "29.94",
+        "31.34",
+        "29.68",
+        "31.13",
+        "31.13",
+        "5.96%",
+        "32,380,697"
+      ],
+      [
+        "Aug 6, 2026",
+        "30.00",
+        "30.94",
+        "29.33",
+        "29.38",
+        "29.38",
+        "-3.10%",
+        "26,697,951"
+      ],
+      [
+        "Aug 5, 2026",
+        "31.71",
+        "31.78",
+        "30.29",
+        "30.32",
+        "30.32",
+        "-4.32%",
+        "35,605,035"
+      ],
+      [
+        "Aug 4, 2026",
+        "29.65",
+        "31.84",
+        "29.07",
+        "31.69",
+        "31.69",
+        "10.65%",
+        "56,404,626"
+      ],
+      [
+        "Aug 3, 2026",
+        "28.00",
+        "28.93",
+        "27.44",
+        "28.64",
+        "28.64",
+        "0.85%",
+        "24,010,919"
+      ],
+      [
+        "Jul 31, 2026",
+        "28.65",
+        "29.30",
+        "27.21",
+        "28.40",
+        "28.40",
+        "2.42%",
+        "34,956,061"
+      ],
+      [
+        "Jul 30, 2026",
+        "26.84",
+        "28.17",
+        "26.65",
+        "27.73",
+        "27.73",
+        "7.90%",
+        "38,544,949"
+      ],
+      [
+        "Jul 29, 2026",
+        "28.02",
+        "28.07",
+        "25.68",
+        "25.70",
+        "25.70",
+        "-9.67%",
+        "40,892,234"
+      ],
+      [
+        "Jul 28, 2026",
+        "28.64",
+        "28.87",
+        "27.13",
+        "28.45",
+        "28.45",
+        "-4.56%",
+        "36,449,752"
+      ],
+      [
+        "Jul 27, 2026",
+        "30.60",
+        "30.94",
+        "28.50",
+        "29.81",
+        "29.81",
+        "-0.96%",
+        "35,912,282"
+      ],
+      [
+        "Jul 24, 2026",
+        "30.62",
+        "31.33",
+        "29.28",
+        "30.10",
+        "30.10",
+        "-3.53%",
+        "49,701,580"
+      ]
+    ]
+  },
+  "statistics/": {
+    "url": "https://stockanalysis.com/stocks/smci/statistics/",
+    "status": 200,
+    "text": "Super Micro Computer, Inc. (SMCI) NASDAQ: SMCI Â· Real-Time Price Â· USD Full Chart Watchlist Alerts Compare 43.13 +1.21 (2.89%) Oct 2, 2026, 11:22 AM EDT - Market open Overview Financials Forecast Statistics Metrics Dividends History Profile Chart Statistics Market Cap Revenue Super Micro Computer Statistics Total Valuation SMCI has a market cap or net worth of $28.33 billion. The enterprise value is $30.05 billion. Market Cap 28.33B Enterprise Value 30.05B Important Dates The next estimated earnings date is Tuesday, November 3, 2026, after market close. Earnings Date Nov 3, 2026 Ex-Dividend Date n/a Share Statistics SMCI has 656.97 million shares outstanding. The number of shares has increased by 10.97% in one year. Current Share Class 656.97M Shares Outstanding 656.97M Shares Change (YoY) +10.97% Shares Change (QoQ) +1.85% Owned by Insiders (%) 12.59% Owned by Institutions (%) 68.67% Float 557.63M Valuation Ratios The trailing PE ratio is 13.25 and the forward PE ratio is 9.94. SMCI's PEG ratio is 0.47. PE Ratio 13.25 Forward PE 9.94 PS Ratio 0.71 Forward PS 0.41 PB Ratio 2.69 P/TBV Ratio 2.69 P/FCF Ratio n/a P/OCF Ratio n/a PEG Ratio 0.47 Financial Ratio History Enterprise Valuation EV / Earnings 13.32 EV / Sales 0.75 EV / EBITDA 10.36 EV / EBIT 10.56 EV / FCF n/a Financial Position The company has a current ratio of 3.87, with a Debt / Equity ratio of 0.64. Current Ratio 3.87 Quick Ratio 1.93 Debt / Equity 0.64 Debt / EBITDA 3.21 Debt / FCF n/a Interest Coverage 14.24 Financial Efficiency Return on equity (ROE) is 21.47% and return on invested capital (ROIC) is 14.03%. Return on Equity (ROE) 21.47% Return on Assets (ROA) 7.88% Return on Invested Capital (ROIC) 14.03% Return on Capital Employed (ROCE) 12.16% Weighted Average Cost of Capital (WACC) 11.87% Revenue Per Employee $5.58M Profits Per Employee $313,692 Employee Count 7,000 Asset Turnover 1.78 Inventory Turnover 3.96 Taxes In the past 12 months, SMCI has paid $556.33 million in taxes. Income Tax 556.33M Effective Tax Rate 19.96% Stock Price Statistics The stock price has decreased by -16.40% in the last 52 weeks. The beta is 2.01, so SMCI's price volatility has been higher than the market average. Beta (5Y) 2.01 52-Week Price Change -16.40% 50-Day Moving Average 36.52 200-Day Moving Average 32.00 Relative Strength Index (RSI) 63.19 Average Volume (20 Days) 37,363,602 Short Selling Information The latest short interest is 95.16 million, so 14.48% of the outstanding shares have been sold short. Short Interest 95.16M Short Previous Month 93.43M Short % of Shares Out 14.48% Short % of Float 17.06% Short Ratio (days to cover) 2.47 Income Statement In the last 12 months, SMCI had revenue of $39.06 billion and earned $2.20 billion in profits. Earnings per share was $3.26. Revenue 39.06B Gross Profit 4.23B Operating Income 2.77B Pretax Income 2.79B Net Income 2.20B EBITDA 2.82B EBIT 2.77B Earnings Per Share (EPS) $3.26 Full Income Statement Balance Sheet The company has $7.54 billion in cash and $9.26 billion in debt, with a net cash position of -$1.72 billion or -$2.61 per share. Cash & Cash Equivalents 7.54B Total Debt 9.26B Net Cash -1.72B Net Cash Per Share -$2.61 Equity (Book Value) 14.48B Book Value Per Share 15.61 Working Capital 20.57B Full Balance Sheet Cash Flow In the last 12 months, operating cash flow was -$6.81 billion and capital expenditures -$162.00 million, giving a free cash flow of -$6.97 billion. Operating Cash Flow -6.81B Capital Expenditures -162.00M Depreciation & Amortization 53.67M Net Borrowing 3.95B Free Cash Flow -6.97B FCF Per Share -$10.61 Full Cash Flow Statement Margins Gross margin is 10.82%, with operating and profit margins of 7.09% and 5.71%. Gross Margin 10.82% Operating Margin 7.09% Pretax Margin 7.13% Profit Margin 5.71% EBITDA Margin 7.23% EBIT Margin 7.09% FCF Margin n/a Dividends & Yields SMCI does not appear to pay any dividends at this time. Dividend Per Share n/a Dividend Yield n/a Dividend Growth (YoY) n/a Years of Dividend Growth n/a Payout Ratio n/a FCF Payout Ratio n/a Buyback Yield -10.97% Shareholder Yield -10.97% Earnings Yield 7.97% FCF Yield -25.32% Dividend Details Analyst Forecast The average price target for SMCI is $42.38, which is -1.74% lower than the current price. The consensus rating is \"Hold\". Price Target $42.38 Price Target Difference -1.74% Analyst Consensus Hold Analyst Count 19 Revenue Growth Forecast (3Y) 32.91% EPS Growth Forecast (3Y) 18.32% Stock Forecasts Fair Value There are several formulas that can be used to estimate the intrinsic value of a stock. Lynch Fair Value Upgrade Lynch Upside Upgrade Graham Number Upgrade Graham Upside Upgrade Stock Splits The last stock split was on October 1, 2024. It was a forward split with a ratio of 10:1. Last Split Date Oct 1, 2024 Split Type Forward Split Ratio 10:1 Scores SMCI has an Altman Z-Score of 3.58 and a Piotroski F-Score of 2. Altman Z-Score 3.58 Piotroski F-Score 2 Data Source: S&P Global Market Intelligence Last updated: Oct 2, 2026 Financial statistics are provided by S&P Global Market Intelligence . Financial numbers update within hours after each earnings release, while price-based statistics and ratios update throughout each trading day. Update frequency: Daily Last checked: Oct 2, 2026 Data Sources Report a data error",
+    "rows": [
+      [
+        "Market Cap",
+        "28.33B"
+      ],
+      [
+        "Enterprise Value",
+        "30.05B"
+      ],
+      [
+        "Earnings Date",
+        "Nov 3, 2026"
+      ],
+      [
+        "Ex-Dividend Date",
+        "n/a"
+      ],
+      [
+        "Current Share Class",
+        "656.97M"
+      ],
+      [
+        "Shares Outstanding",
+        "656.97M"
+      ],
+      [
+        "Shares Change (YoY)",
+        "+10.97%"
+      ],
+      [
+        "Shares Change (QoQ)",
+        "+1.85%"
+      ],
+      [
+        "Owned by Insiders (%)",
+        "12.59%"
+      ],
+      [
+        "Owned by Institutions (%)",
+        "68.67%"
+      ],
+      [
+        "Float",
+        "557.63M"
+      ],
+      [
+        "PE Ratio",
+        "13.25"
+      ],
+      [
+        "Forward PE",
+        "9.94"
+      ],
+      [
+        "PS Ratio",
+        "0.71"
+      ],
+      [
+        "Forward PS",
+        "0.41"
+      ],
+      [
+        "PB Ratio",
+        "2.69"
+      ],
+      [
+        "P/TBV Ratio",
+        "2.69"
+      ],
+      [
+        "P/FCF Ratio",
+        "n/a"
+      ],
+      [
+        "P/OCF Ratio",
+        "n/a"
+      ],
+      [
+        "PEG Ratio",
+        "0.47"
+      ],
+      [
+        "EV / Earnings",
+        "13.32"
+      ],
+      [
+        "EV / Sales",
+        "0.75"
+      ],
+      [
+        "EV / EBITDA",
+        "10.36"
+      ],
+      [
+        "EV / EBIT",
+        "10.56"
+      ],
+      [
+        "EV / FCF",
+        "n/a"
+      ],
+      [
+        "Current Ratio",
+        "3.87"
+      ],
+      [
+        "Quick Ratio",
+        "1.93"
+      ],
+      [
+        "Debt / Equity",
+        "0.64"
+      ],
+      [
+        "Debt / EBITDA",
+        "3.21"
+      ],
+      [
+        "Debt / FCF",
+        "n/a"
+      ],
+      [
+        "Interest Coverage",
+        "14.24"
+      ],
+      [
+        "Return on Equity (ROE)",
+        "21.47%"
+      ],
+      [
+        "Return on Assets (ROA)",
+        "7.88%"
+      ],
+      [
+        "Return on Invested Capital (ROIC)",
+        "14.03%"
+      ],
+      [
+        "Return on Capital Employed (ROCE)",
+        "12.16%"
+      ],
+      [
+        "Weighted Average Cost of Capital (WACC)",
+        "11.87%"
+      ],
+      [
+        "Revenue Per Employee",
+        "$5.58M"
+      ],
+      [
+        "Profits Per Employee",
+        "$313,692"
+      ],
+      [
+        "Employee Count",
+        "7,000"
+      ],
+      [
+        "Asset Turnover",
+        "1.78"
+      ],
+      [
+        "Inventory Turnover",
+        "3.96"
+      ],
+      [
+        "Income Tax",
+        "556.33M"
+      ],
+      [
+        "Effective Tax Rate",
+        "19.96%"
+      ],
+      [
+        "Beta (5Y)",
+        "2.01"
+      ],
+      [
+        "52-Week Price Change",
+        "-16.40%"
+      ],
+      [
+        "50-Day Moving Average",
+        "36.52"
+      ],
+      [
+        "200-Day Moving Average",
+        "32.00"
+      ],
+      [
+        "Relative Strength Index (RSI)",
+        "63.19"
+      ],
+      [
+        "Average Volume (20 Days)",
+        "37,363,602"
+      ],
+      [
+        "Short Interest",
+        "95.16M"
+      ],
+      [
+        "Short Previous Month",
+        "93.43M"
+      ],
+      [
+        "Short % of Shares Out",
+        "14.48%"
+      ],
+      [
+        "Short % of Float",
+        "17.06%"
+      ],
+      [
+        "Short Ratio (days to cover)",
+        "2.47"
+      ],
+      [
+        "Revenue",
+        "39.06B"
+      ],
+      [
+        "Gross Profit",
+        "4.23B"
+      ],
+      [
+        "Operating Income",
+        "2.77B"
+      ],
+      [
+        "Pretax Income",
+        "2.79B"
+      ],
+      [
+        "Net Income",
+        "2.20B"
+      ],
+      [
+        "EBITDA",
+        "2.82B"
+      ],
+      [
+        "EBIT",
+        "2.77B"
+      ],
+      [
+        "Earnings Per Share (EPS)",
+        "$3.26"
+      ],
+      [
+        "Cash & Cash Equivalents",
+        "7.54B"
+      ],
+      [
+        "Total Debt",
+        "9.26B"
+      ],
+      [
+        "Net Cash",
+        "-1.72B"
+      ],
+      [
+        "Net Cash Per Share",
+        "-$2.61"
+      ],
+      [
+        "Equity (Book Value)",
+        "14.48B"
+      ],
+      [
+        "Book Value Per Share",
+        "15.61"
+      ],
+      [
+        "Working Capital",
+        "20.57B"
+      ],
+      [
+        "Operating Cash Flow",
+        "-6.81B"
+      ],
+      [
+        "Capital Expenditures",
+        "-162.00M"
+      ],
+      [
+        "Depreciation & Amortization",
+        "53.67M"
+      ],
+      [
+        "Net Borrowing",
+        "3.95B"
+      ],
+      [
+        "Free Cash Flow",
+        "-6.97B"
+      ],
+      [
+        "FCF Per Share",
+        "-$10.61"
+      ],
+      [
+        "Gross Margin",
+        "10.82%"
+      ],
+      [
+        "Operating Margin",
+        "7.09%"
+      ],
+      [
+        "Pretax Margin",
+        "7.13%"
+      ],
+      [
+        "Profit Margin",
+        "5.71%"
+      ],
+      [
+        "EBITDA Margin",
+        "7.23%"
+      ],
+      [
+        "EBIT Margin",
+        "7.09%"
+      ],
+      [
+        "FCF Margin",
+        "n/a"
+      ],
+      [
+        "Dividend Per Share",
+        "n/a"
+      ],
+      [
+        "Dividend Yield",
+        "n/a"
+      ],
+      [
+        "Dividend Growth (YoY)",
+        "n/a"
+      ],
+      [
+        "Years of Dividend Growth",
+        "n/a"
+      ],
+      [
+        "Payout Ratio",
+        "n/a"
+      ],
+      [
+        "FCF Payout Ratio",
+        "n/a"
+      ],
+      [
+        "Buyback Yield",
+        "-10.97%"
+      ],
+      [
+        "Shareholder Yield",
+        "-10.97%"
+      ],
+      [
+        "Earnings Yield",
+        "7.97%"
+      ],
+      [
+        "FCF Yield",
+        "-25.32%"
+      ],
+      [
+        "Price Target",
+        "$42.38"
+      ],
+      [
+        "Price Target Difference",
+        "-1.74%"
+      ],
+      [
+        "Analyst Consensus",
+        "Hold"
+      ],
+      [
+        "Analyst Count",
+        "19"
+      ],
+      [
+        "Revenue Growth Forecast (3Y)",
+        "32.91%"
+      ],
+      [
+        "EPS Growth Forecast (3Y)",
+        "18.32%"
+      ],
+      [
+        "Lynch Fair Value",
+        "Upgrade"
+      ],
+      [
+        "Lynch Upside",
+        "Upgrade"
+      ],
+      [
+        "Graham Number",
+        "Upgrade"
+      ],
+      [
+        "Graham Upside",
+        "Upgrade"
+      ],
+      [
+        "Last Split Date",
+        "Oct 1, 2024"
+      ],
+      [
+        "Split Type",
+        "Forward"
+      ],
+      [
+        "Split Ratio",
+        "10:1"
+      ],
+      [
+        "Altman Z-Score",
+        "3.58"
+      ],
+      [
+        "Piotroski F-Score",
+        "2"
+      ]
+    ]
+  }
+}

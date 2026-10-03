@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="EOS可靠性、自动化和运维转换成本让Arista分享AI网络扩容利润，但高买价可能吞噬成长回报。"><meta name="source-sha256" content="10a21d0ab06ffa02fafb6530b4bd25f39df403289d5711f6858c53ff7081612e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Arista Networks（ANET）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="ANET%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / ANET / 2026-10-02</div>
+<h1>Arista Networks, Inc.<span>数据中心网络与交换机 · 公司研究</span></h1><p class="hero-deck">EOS可靠性、自动化和运维转换成本让Arista分享AI网络扩容利润，但高买价可能吞噬成长回报。</p>
+<div class="hero-meta"><span>Q2 2026 ended 2026-06-30; FY2025 annual</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$203.59<small>2026-09-30 regular-session close<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">历史行情直接核对与原图片一致；仅单一行情商，非即时价。2024年12月4拆1后美元普通股口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：经营地图与财务趋势</a></li><li><a href="#section-3">第二步：现金质量好在哪里，又可能误判哪里</a></li><li><a href="#section-4">第三步：交换机经济学与竞争</a></li><li><a href="#section-5">第四步：管理层与反方</a></li><li><a href="#section-6">第五步：合理价格与三年情景</a></li><li><a href="#section-7">第六步：最终行动</a></li><li><a href="#section-8">数据来源与核验记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：经营地图与财务趋势</a></li><li><a href="#section-3">第二步：现金质量好在哪里，又可能误判哪里</a></li><li><a href="#section-4">第三步：交换机经济学与竞争</a></li><li><a href="#section-5">第四步：管理层与反方</a></li><li><a href="#section-6">第五步：合理价格与三年情景</a></li><li><a href="#section-7">第六步：最终行动</a></li><li><a href="#section-8">数据来源与核验记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Arista Networks（ANET）研究报告</h1>
+<blockquote>
+<p>截止日：2026-10-02。统一估值基准：2026-09-30收盘 <strong>203.59美元</strong>。原图片报价未经核实，本次直接读取StockAnalysis历史行情确认一致；仅一个独立行情源，不是10月2日实时成交报价。财务截至2026-06-30的Q2；最新完整年度FY2025。采用约12.61亿普通股重构的参考市值约2,568亿美元，股数与价格非严格同日，不能当作精确历史市值。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A。市场知道AI集群需要高速网络，研究优势不能来自重复这个共识。真正的问题是：客户愿意长期为EOS可靠性和可观测性支付多少溢价，还是会把交换硬件变成可替换的商品？公司业务质量较好，不自动意味着50倍前瞻利润仍便宜。</p>
+<h2 id="section-2">第一步：经营地图与财务趋势</h2>
+<p>Arista销售数据中心及园区交换机、路由平台、网络操作系统EOS、CloudVision管理与支持服务。云商、企业和服务提供商购买的是低延迟、可管理、可靠运行的网络，产品更新、扩容及服务续约形成重复需求。硬件常采用商用交换芯片并委托制造，研发与软件能力才是主要差异化来源。</p>
+<p>Q2 2026一手财务图表显示，产品收入26.052亿美元、服务4.305亿美元，总收入30.357亿美元；服务并非全部业务，高毛利也不能证明公司已变成纯SaaS。</p>
+<p>下表单位百万美元，净利润为GAAP。FY2023和部分历史项目来自StockAnalysis；FY2025收入、利润、现金及CFO与公司公告核对。</p>
+<div aria-label="第一步：经营地图与财务趋势" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">FY2023</th>
+<th scope="col" style="text-align: right;">FY2024</th>
+<th scope="col" style="text-align: right;">FY2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">5,860</td>
+<td style="text-align: right;">7,003</td>
+<td style="text-align: right;">9,006</td>
+</tr>
+<tr>
+<td>GAAP净利润</td>
+<td style="text-align: right;">2,087</td>
+<td style="text-align: right;">2,852</td>
+<td style="text-align: right;">3,511</td>
+</tr>
+<tr>
+<td>GAAP毛利率</td>
+<td style="text-align: right;">61.95%</td>
+<td style="text-align: right;">64.13%</td>
+<td style="text-align: right;">64.1%</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">2,034</td>
+<td style="text-align: right;">3,708.2</td>
+<td style="text-align: right;">4,371.9</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;">3,676</td>
+<td style="text-align: right;">4,252</td>
+</tr>
+<tr>
+<td>拆股后GAAP稀释EPS</td>
+<td style="text-align: right;">1.65</td>
+<td style="text-align: right;">2.23</td>
+<td style="text-align: right;">2.75</td>
+</tr>
+</tbody>
+</table></div>
+<p>2026 Q2收入同比+37.7%；GAAP毛利率62.9%、营业利润率45.4%、EPS0.95；调整后营业利润率49.9%、EPS1.02。毛利率低于上年同期，营业利润率仍高，反映费用杠杆，不能简单说所有层面的定价权都在提升。</p>
+<p>Q3指引收入约33亿美元、调整后营业利润率48%—49%、调整后EPS1.06—1.08。公司财报中历史非GAAP税务计算口径已经重列，不能把旧版调整后EPS直接拼接成增长率。</p>
+<h2 id="section-3">第二步：现金质量好在哪里，又可能误判哪里</h2>
+<p>2026上半年GAAP净利润22.358亿美元、CFO27.765亿美元、资本开支0.842亿美元，简单FCF为26.923亿美元。一手现金流表显示SBC2.413亿美元，递延收入增加14.935亿美元是重要现金来源；同时应收、存货及其他资产增加消耗资金。提前收款有价值，但存在未来交货及服务义务，不能把这部分现金全部当作没有成本、可永久分配的股东收益。</p>
+<p>2025年末现金19.639亿美元、可交易证券87.791亿美元，合计107.43亿美元。第三方2026年6月末现金加短投约133.43亿美元，本次最新余额未从一手资产负债表图形完整复核，故不能声称全部双源确认。资产负债结构明显强于负债型设备商，但不可把“第三方债务栏空白”直接翻译成绝无租赁等任何负债。</p>
+<p>SBC会增加CFO而稀释股东，购买股票抵消稀释亦是真实现金支出。上半年一手现金流表没有回购支出，而上年同期为9.83亿美元；管理层无需为了平滑EPS在高价机械回购。判断现金护城河应同时追踪每股FCF、稀释股数及递延收入消化。</p>
+<h2 id="section-4">第三步：交换机经济学与竞争</h2>
+<div aria-label="第三步：交换机经济学与竞争" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">优势来源</th>
+<th scope="col">投资意义</th>
+<th scope="col">可被破坏的方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EOS一致性、自动化、故障诊断</td>
+<td>网络更换涉及验证、运维培训及停机风险</td>
+<td>白牌开放系统的可靠性与工具链成熟</td>
+</tr>
+<tr>
+<td>大规模部署经验</td>
+<td>客户关心集群实际可用吞吐量，不仅端口参数</td>
+<td>GPU供应商捆绑网络并降低部署复杂度</td>
+</tr>
+<tr>
+<td>商用芯片与研发集中</td>
+<td>避免自行承担所有芯片研发和晶圆资本开支</td>
+<td>对少数商用硅供应商依赖，采购成本上升</td>
+</tr>
+<tr>
+<td>客户信任与渠道扩张</td>
+<td>从云数据中心延伸园区及路由</td>
+<td>园区竞争需要长期渠道和服务投入</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cisco有企业渠道，NVIDIA通过InfiniBand及Ethernet争夺AI网络，白牌/SONiC和客户自研降低封闭方案价格。ANET的转换成本是真实的，但不是社交平台式网络效应：多一个客户不会自动让所有客户的交换机更有价值。</p>
+<p>公司风险披露明确指出有限数量大客户贡献大量收入。Microsoft、Meta等大型云客户的采购节奏是重要研究对象，但本次未从可读10-K正文复核最新各家比例，不采用搜索摘要中的具体数字。客户依赖与商用交换芯片供应依赖同时存在，增长可能集中于少数项目，不能视为高度分散的订阅收入。</p>
+<h2 id="section-5">第四步：管理层与反方</h2>
+<p>Jayshree Ullal领导经营，技术团队与EOS组织能力比个人宣传更重要。FY2025公司收购VeloCloud SD-WAN组合，意在加强跨数据中心、园区和分支连接；能否提高交叉销售应由服务收入、留存及现金回报证明，不能因收购宣布就计算协同利润。管理层经济权益和投票权未重新核验，不给“创始人持股高所以无治理风险”的结论。</p>
+<p>最强反方：以太网市场增长，但NVIDIA/白牌拿走新增份额，大客户压价，使网络供应商无法维持当前高利润率；即使EPS继续增长，估值从高倍数回落，也可能多年不赚钱。2026 Q2毛利下降已提醒我们区分收入增长和利润池分配。</p>
+<p>观察失效条件：连续两个季度收入增速低于15%且未因可解释交付时点造成；GAAP营业利润率持续低于35%；重要客户切换导致订单取消；剔除预收款变动后的现金兑现变差；SBC和稀释股数快速增加。上述阈值是研究纪律，不是公司已发生的事实，也不赋予任何精确事件概率。</p>
+<blockquote>
+<p>如果行业仍增长而公司份额下降，原来的“AI趋势正确”并不能救回买入价格。</p>
+</blockquote>
+<h2 id="section-6">第五步：合理价格与三年情景</h2>
+<p>采用分析假设正常化前瞻EPS <strong>4.00美元</strong>，锚定Q2调整后EPS1.02及Q3指引中点1.07的年化能力，并留出费用、税率和稀释波动；不是公司全年指引或TTM。GAAP Q2的简单年化只有3.80，说明4.00仍需要正常执行，不能把非GAAP调整全视为无成本。</p>
+<p>203.59对应50.90倍该EPS，FY2025 GAAP EPS2.75对应74.03倍；较高确定性的生意也不值得无限倍数。三年情景按正常化EPS复合增长，不含股息税费：</p>
+<p>起点和三年末的EPS均为对应时点估计的前瞻年度能力，而非将未来已实现利润倒填到今天。</p>
+<div aria-label="第五步：合理价格与三年情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">年增长</th>
+<th scope="col" style="text-align: right;">终年EPS</th>
+<th scope="col" style="text-align: right;">终值PE</th>
+<th scope="col" style="text-align: right;">三年末价</th>
+<th scope="col" style="text-align: right;">累计价格收益</th>
+<th scope="col" style="text-align: right;">年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：增长放缓、白牌竞争</td>
+<td style="text-align: right;">+8%</td>
+<td style="text-align: right;">5.039</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">125.97</td>
+<td style="text-align: right;">-38.13%</td>
+<td style="text-align: right;">-14.79%</td>
+</tr>
+<tr>
+<td>基准：扩大部署、利润率可守</td>
+<td style="text-align: right;">+20%</td>
+<td style="text-align: right;">6.912</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">241.92</td>
+<td style="text-align: right;">+18.83%</td>
+<td style="text-align: right;">+5.92%</td>
+</tr>
+<tr>
+<td>乐观：AI及园区双突破</td>
+<td style="text-align: right;">+30%</td>
+<td style="text-align: right;">8.788</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">395.46</td>
+<td style="text-align: right;">+94.24%</td>
+<td style="text-align: right;">+24.77%</td>
+</tr>
+</tbody>
+</table></div>
+<p>这是未来终值，不是今日公允价值。基准即使实现20%盈利增长，买入回报也只有约5.92%年化，揭示高买价的机会成本；终值PE35本身已经不是保守清算估值。维持较高倍数需要软件价值、规模、现金流优势持续。</p>
+<p>今天条件买入研究区间为 <strong>120—144美元</strong>，由<code>4.00×30—36倍</code>得到。相较普通设备制造商允许更高倍数，是因为软件转换成本、低资本开支和资产负债表，而不是统一套用科技股估值。区间不含未来可能新拆股，若EPS假设被证伪应重算。无可靠同日同口径同行估值序列，不伪造历史PE分位。</p>
+<h2 id="section-7">第六步：最终行动</h2>
+<p><strong>评级：等待价格。</strong> 在203.59美元基准不追涨；空仓者等待120—144美元，并要求前瞻正常化EPS仍约4美元、GAAP营业利润率保持40%左右或更高、客户扩张未被取消。如果盈利预期实质提升，可先重估而非死守固定价格。</p>
+<p>持仓者可按现金兑现和竞争位势检验长期持有，不因单季大客户交付波动全部退出；若价格显著高于能够支撑的增长，或客户份额、利润率出现结构性破坏，则考虑降低风险。不存在“跌到区间就必须补仓”。不提供个人仓位比例。</p>
+<p>AI研究置信度中：盈利和现金趋势证据较强，但客户细分占比和未来竞争不能充分量化；投资确定性低于历史财务数据的确定性。</p>
+<h2 id="section-8">数据来源与核验记录</h2>
+<ul>
+<li><a href="https://www.arista.com/company/news/press-release/24401-pr-20260804" rel="noreferrer">Q2 2026业绩，2026-08-04</a>，包含一手利润、非GAAP调节和现金流图表，本目录保存原图。</li>
+<li><a href="https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Fourth-Quarter-and-Year-End-2025-Financial-Results/default.aspx" rel="noreferrer">FY2025业绩，2026-02-12</a>。</li>
+<li><a href="https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2024/Arista-Networks-Completes-Four-for-One-Stock-Split-2024-UzV4VbnUJu/default.aspx" rel="noreferrer">2024年4拆1完成公告，2024-12-04</a>：本文每股数据已拆后化，不能再把203.59除以四。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001596532.json" rel="noreferrer">SEC公司事实</a>、<a href="https://stockanalysis.com/stocks/anet/financials/income-statement/" rel="noreferrer">StockAnalysis利润表</a>、<a href="https://stockanalysis.com/stocks/anet/financials/cash-flow-statement/" rel="noreferrer">现金流</a>、<a href="https://stockanalysis.com/stocks/anet/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/anet/history/" rel="noreferrer">历史行情</a>，2026-10-02访问。</li>
+</ul>
+<p>financial_rigor：FY2025收入9,006/9,006、利润3,511/3,511、现金1,963.9/1,964、CFO4,371.9/4,372（百万美元），均属舍入级差异；2026上半年FCF为2,776.5−84.2＝2,692.3。估值与三情景用Decimal复算，EPS为前瞻假设而非工具默认的TTM。report_audit事实抽样与跳过项另存，不能把数学校验当成增长预测认证。</p>
+<p>普通股数另以SEC DEI的7月末披露与第三方核对，并完成市值单位检查。随机抽样六项事实均在容差内，其中四项有一手及独立第三方对照；单源历史数据不因此升级为双源认证。</p></article><footer class="report-footer"><span>ANET · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

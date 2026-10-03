@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI Berkshire 研究报告，手机阅读与搜索。仅供学习，不构成投资建议。">
+<title>安谋（ARM）研究报告 | AI Berkshire</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head>
+<body><header><a href="../../../index.html">AI Berkshire · 研究报告库</a></header>
+<main><p class="meta"><a href="ARM%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md">Markdown 原文</a> · US38-20261002/ARM/ARM研究报告-20261002.md</p><details><summary>阅读目录</summary><div class="toc">
+<ul>
+<li><a href="#安谋arm研究报告">安谋（ARM）研究报告</a><ul>
+<li><a href="#ai研究偏见自觉">AI研究偏见自觉</a></li>
+<li><a href="#第一步从架构收费站到生产芯片">第一步：从架构收费站到生产芯片</a></li>
+<li><a href="#第二步最新季度与会计纠偏">第二步：最新季度与会计纠偏</a></li>
+<li><a href="#第三步护城河和新矛盾">第三步：护城河和新矛盾</a></li>
+<li><a href="#第四步管理层控制权与反面论证">第四步：管理层、控制权与反面论证</a></li>
+<li><a href="#第五步估值不能跳过sbc">第五步：估值不能跳过SBC</a></li>
+<li><a href="#第六步行动建议">第六步：行动建议</a></li>
+<li><a href="#数据来源与审计边界">数据来源与审计边界</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><article class="report"><h1 id="安谋arm研究报告">安谋（ARM）研究报告</h1>
+<blockquote>
+<p>研究日与信息截止：2026-10-02。纳斯达克美元ADS；发行人IPO文件确认 <strong>1 ADS代表1股普通股</strong>。StockAnalysis当日11:18 EDT盘中价314.20，Yahoo 11:22:41 EDT为313.53，非收盘。用户图片标称2026-09-30的289.66未独立核验，与基准相差+8.47%。最新期FY2027第一季度，截至2026-06-30，7月29日发布。用6月末10.68亿普通股估算市值3355.66亿美元，不可只乘公开流通ADS数。核心判断：优秀架构生态，不等于今天的股价拥有安全边际；公司也已不再是纯粹的IP授权模型。</p>
+</blockquote>
+<h2 id="ai研究偏见自觉">AI研究偏见自觉</h2>
+<p>信息丰富度A级，但新生产芯片业务的数据丰富度仅B级，整体AI分析置信度中等。本报告读了官方股东信PDF和SEC公司事实，第三方财务表用于交叉而非替代原文。主要偏见是把所有搭载Arm架构设备的销售额，误认为Arm可收取的收入；另一个偏见是只看约97%的毛利率，忽略研发、SBC和商业模式转型。</p>
+<h2 id="第一步从架构收费站到生产芯片">第一步：从架构收费站到生产芯片</h2>
+<p>Arm向半导体设计商、设备与云平台提供指令集架构、处理器IP及计算子系统。收入分两类：授权及其他收入，受合同规模、交付和确认时点影响；版税收入，通常与客户出货及合同收费方式相关。客户芯片采用新架构、更高价值IP和CSS，可以提高Arm每颗芯片的价值捕获，但版税不是整颗芯片售价，更不是客户AI服务收入。</p>
+<p>软件兼容性、编译器、开发者与工具生态使替换架构有成本，手机之外的服务器、PC、汽车和嵌入式带来增长。然而在2026年3月推出Arm AGI CPU后，公司进入自有生产芯片业务。7月股东信称已经向多个客户交付初始产品，并为FY27–FY28此前提及的10亿美元机会确保制造能力；需求超过20亿美元的表述属于公司机会/需求描述，<strong>不是已确认收入或现金</strong>。自有芯片增加供货、库存、客户竞争与资本投入，不能继续无条件以“纯IP、近零资本开支”估值。</p>
+<p>单位：百万美元。FY2023至FY2026均为相应年份3月31日结束。</p>
+<table>
+<thead>
+<tr>
+<th>财年</th>
+<th style="text-align: right;">营收</th>
+<th style="text-align: right;">GAAP净利润</th>
+<th style="text-align: right;">经营现金流</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">2,679</td>
+<td style="text-align: right;">524</td>
+<td style="text-align: right;">739</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">3,233</td>
+<td style="text-align: right;">306</td>
+<td style="text-align: right;">1,090</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">4,007</td>
+<td style="text-align: right;">792</td>
+<td style="text-align: right;">397</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">4,920</td>
+<td style="text-align: right;">904</td>
+<td style="text-align: right;">1,524</td>
+</tr>
+</tbody>
+</table>
+<p>FY26授权及其他收入23.07亿美元、版税26.13亿美元；该拆分来自第三方对披露的整理，全文年度营收和净利已与SEC交叉。现金流波动明显，不能仅按净利润稳定性推断现金回报。FY26固定资产购置5.45亿美元，已远高于数年前水平；全年SBC10.52亿美元高于9.04亿美元GAAP净利，真实成本必须计入。</p>
+<h2 id="第二步最新季度与会计纠偏">第二步：最新季度与会计纠偏</h2>
+<p>最新季度营收12.89亿美元，同比+22%；版税7.15亿美元，同比+22%，授权及其他5.74亿美元，同比+23%；数据中心版税同比超过翻倍，但官方没有在本次简报中给出足以重建各客户利润的明细。年度合同价值ACV17.32亿美元，同比+13%，与当季许可收入不是同一概念。</p>
+<p>GAAP毛利率97.2%，经营利润率却只有7.1%；GAAP经营利润0.91亿美元、净利润2.70亿美元，EPS 0.25。non-GAAP经营利润5.31亿美元、经营利润率41.2%、EPS 0.45，两者差距很大。调节表包括3.43亿美元SBC、0.90亿美元相关雇主税净项及其他费用，同时剔除1.28亿美元权益投资收益。不能选最漂亮的毛利率、调整后净利和GAAP股数拼成一个估值。</p>
+<p>Q2指引营收13.8亿美元±0.5亿美元、non-GAAP EPS 0.47±0.04、non-GAAP经营费用约7.8亿美元；不是GAAP盈利保证。当前高股价下雇主税、SBC估值及人员投入本身也可能影响盈利。</p>
+<p>6月末现金30.58亿美元、短期投资8.30亿美元，共38.88亿美元；第三方“债务”4.85亿美元主要对应租赁口径，不能描述成同规模银行借款。按扣除该租赁数的更保守净额为34.03亿美元，对约3356亿美元市值提供的保护有限。</p>
+<p>本季OCF9.02亿美元，受应收回收及税款时点有利影响；发行人口径FCF=9.02−1.97固定资产−0.11无形资产−0.29无形资产义务付款=6.65亿美元。TTM发行人FCF13.97亿美元；StockAnalysis为15.06亿美元，后者只扣固定资产，差额1.09亿美元来自无形资产及其义务付款。不能把两者当作独立一致验证，也不能将有利营运资本变化永续化。</p>
+<h2 id="第三步护城河和新矛盾">第三步：护城河和新矛盾</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>判断</th>
+<th>破坏条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>架构及软件兼容</td>
+<td>深厚，尤其在既有终端生态</td>
+<td>客户可低成本迁移架构，或开放架构在商业应用成熟</td>
+</tr>
+<tr>
+<td>工具和开发者生态</td>
+<td>有明显积累效应</td>
+<td>工具抽象让底层架构差异大幅缩小</td>
+</tr>
+<tr>
+<td>CSS与高价值IP</td>
+<td>提升每芯片收费潜力</td>
+<td>客户改用基础授权、自研核心或拒绝新商业条件</td>
+</tr>
+<tr>
+<td>低增量授权成本</td>
+<td>原有IP业务优秀</td>
+<td>自有芯片占比上升后制造、供货及存货风险改变边际利润</td>
+</tr>
+</tbody>
+</table>
+<p>竞争来自x86、RISC-V及客户自研。客户自研Arm兼容CPU不一定消灭版税，但可能改变授权层级、议价与每颗收费。最微妙的风险是Arm成为客户的芯片竞争者，损害原来“中立IP伙伴”的角色。市场份额扩张与Arm股东价值增长之间，还隔着合同条款、研发及SBC。</p>
+<blockquote>
+<p>巴菲特式追问：生态可以长期存在，但它能否以股东今天付出的价格持续收取足够利润？</p>
+</blockquote>
+<h2 id="第四步管理层控制权与反面论证">第四步：管理层、控制权与反面论证</h2>
+<p>Rene Haas推动CSS和数据中心扩张，并进入生产芯片；这些决策可能放大市场机会，也提高执行和资本配置风险。最新股东信明确将SoftBank控制股东利益可能与其他普通股/ADS持有人冲突列为风险。本文不虚构最新准确控股比例；尚未完整复核20-F关联交易、董事独立性及薪酬附表，因此不能给“治理无风险”结论。IPO公开发行比例小不等于公司总股本少。</p>
+<p>最强反面论证不是Arm技术过时，而是商业成就已经被超额计价：当收入增长二成左右、GAAP经营利润率个位数，投资者却可能按未来数年极高利润率和超高增长支付价格。自有芯片需要先投入，再经过认证、量产和回款；需求机会不会自动变成股东现金。</p>
+<table>
+<thead>
+<tr>
+<th>失败路径</th>
+<th>主观评价</th>
+<th>可见失效信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版税提升触发客户反弹</td>
+<td>中等可能、长期影响大</td>
+<td>出货增长而每颗版税停滞，客户转向更低费率授权</td>
+</tr>
+<tr>
+<td>新芯片与原客户产生冲突</td>
+<td>新风险、影响大</td>
+<td>IP客户流失、合同争议或许可条件恶化</td>
+</tr>
+<tr>
+<td>生产芯片投入回报不足</td>
+<td>中等可能、影响大</td>
+<td>库存、资本开支增长但实际芯片销售/毛利不达预期</td>
+</tr>
+<tr>
+<td>SBC及关联利益侵蚀每股现金</td>
+<td>持续风险</td>
+<td>SBC不降、基本股数持续增加，经济利润不能改善</td>
+</tr>
+</tbody>
+</table>
+<p>连续两个季度版税增速降至约10%以下且无暂时性出货解释，或生产芯片投入使经济盈利路径失效，应重新估值，而不是保持原区间。上述阈值为研究纪律，不是公司指引。</p>
+<h2 id="第五步估值不能跳过sbc">第五步：估值不能跳过SBC</h2>
+<p>采用下一正常化年度收入70亿美元、扣除持续SBC及研发后的经济经营利润率24%、税率15%、稀释11亿股，忽略净利息，则EPS≈1.30美元。收入和利润率均要求明显进步，因此该起点不是简单年化当前GAAP利润，更不是声称公司已经实现。当前价相当于 <strong>241.69倍</strong> 此经济EPS。</p>
+<p>为了给新业务机会留余地，基准仍使用高于普通芯片设计公司的40倍终值；不把每股收益0.45美元的调整后季报直接乘四，再假装它已扣除全部股东成本。</p>
+<p>以下为约2029年估值时点的三年情景；期末EPS是届时前瞻同口径经济盈利、终值PE亦为前瞻倍数，不混用GAAP TTM。不计股息、税费、ADS相关费用或汇率：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th style="text-align: right;">经济EPS年增长</th>
+<th style="text-align: right;">期末EPS</th>
+<th style="text-align: right;">期末PE</th>
+<th style="text-align: right;">三年后目标价</th>
+<th style="text-align: right;">相对314.20回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：版税放缓、芯片投入拖累</td>
+<td style="text-align: right;">+10%</td>
+<td style="text-align: right;">1.7303</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">51.91</td>
+<td style="text-align: right;">-83.48%</td>
+</tr>
+<tr>
+<td>基准：CSS/服务器成长、SBC负担改善</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">2.5391</td>
+<td style="text-align: right;">40倍</td>
+<td style="text-align: right;">101.56</td>
+<td style="text-align: right;">-67.68%</td>
+</tr>
+<tr>
+<td>乐观：芯片与IP同时成功</td>
+<td style="text-align: right;">+40%</td>
+<td style="text-align: right;">3.5672</td>
+<td style="text-align: right;">50倍</td>
+<td style="text-align: right;">178.36</td>
+<td style="text-align: right;">-43.23%</td>
+</tr>
+</tbody>
+</table>
+<p>基准目标101.56按12%折现为今日72.29美元。当前价若要求12%年回报、期末40倍，需要三年后经济EPS约11.04美元，相对1.30起点年增长约104%，说明价格要求远比“服务器份额增长”更苛刻。三个情景都下跌不是预测必然下跌，而是在明确假设下揭示估值依赖。</p>
+<p><strong>购买研究区间45.5–58.5美元=1.30美元经济EPS×35–45倍</strong>，仍给予架构平台溢价，同时低于基准折现值。区间离行情很远，应承认“当前证据不支持追价”，而不是为了给买入建议抬高估值。若新芯片真实利润、版税和SBC使经济EPS大幅上修，应重算区间；反之不得因跌价而自动买入。</p>
+<h2 id="第六步行动建议">第六步：行动建议</h2>
+<p>空仓者评级“暂不买入”，314.20实际价和289.66图片价都缺乏安全边际。持有者需审查是否实际持有的是极高增长预期，而非低风险版税资产；根据风险承受、税务与其他持仓做取舍，不提供统一减仓比例。加仓须同时满足进入研究区间、经济EPS约1.30及中立生态未受损。退出/减持触发为客户授权关系结构性受损、长期SBC压制每股价值，或生产芯片战略使资本强度超出可承受范围。</p>
+<p>镜子测试：能够说清每台设备到底支付多少、扣除人员及制造投入后股东得到什么，才算通过能力圈；只知道“全球很多芯片用Arm”不算。公司生态质量较强，但当前价格关明确未通过。</p>
+<h2 id="数据来源与审计边界">数据来源与审计边界</h2>
+<p>均在2026-10-02读取：</p>
+<ul>
+<li><a href="https://investors.arm.com/static-files/d8db20bd-7b96-486a-b99b-23315627d1ec">FY27 Q1股东信，2026-07-29，官方PDF</a>：第1–4页业务/指引，第11–13页SBC和FCF调节。</li>
+<li><a href="https://investors.arm.com/financials/quarterly-annual-results">官方季度报告入口</a>、<a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001973239.json">SEC公司事实</a>：包含截至2026-03-31的20-F及最新季度事实。</li>
+<li><a href="https://newsroom.arm.com/news/arm-announces-pricing-of-initial-public-offering">IPO发行人公告，2023-09-13</a>：1 ADS对应1普通股；第三方统计未显示随后拆股，交易前仍须确认存托安排。</li>
+<li><a href="https://stockanalysis.com/stocks/arm/financials/">StockAnalysis财务/行情</a>、<a href="https://stockanalysis.com/stocks/arm/statistics/">股本统计</a>、<a href="https://finance.yahoo.com/quote/ARM/">Yahoo行情</a>。</li>
+</ul>
+<p>SEC归档HTML曾返回403，改用可读取的官方PDF和data.sec.gov，未把被阻断网页当作已阅读。financial_rigor对FY26营收4,920/净利904百万美元和现金3,888百万双源一致、市值近似完成验算。网站FY26经营利润908百万与SEC900百万亦有分类差异，本文不引用网站数为原始GAAP。FCF15.06亿与13.97亿明确分口径，未作虚假一致认证。Decimal验证EPS、情景及折现；report_audit按15%、固定种子42抽取5项，其中2项为情景计算；补充最新年度数据后6项财务事实双源无超限差异，三情景价格/回报算术通过。预测、价格区间和缺失关联交易信息不因此获认证。AI分析置信度中等，真实投资确定性远低于资料丰富度。本报告为研究，不是个性化投资建议。</p></article></main><footer>仅供学习与研究，不构成投资建议。报告中的价格并非实时行情。
+<br>原始框架及研究：<a href="https://github.com/xbtlin/ai-berkshire">xbtlin/ai-berkshire</a> ·
+<a href="../../../LICENSE">MIT License</a> ·
+<a href="https://github.com/sudoli/ai-berkshire-reports">GitHub</a></footer></body></html>

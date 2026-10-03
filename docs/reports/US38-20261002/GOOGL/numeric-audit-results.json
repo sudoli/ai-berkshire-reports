@@ -1,0 +1,80 @@
+{
+  "ticker": "GOOGL",
+  "fact_samples": [
+    {
+      "id": 1,
+      "label": "Google Search & other · 收入，十亿美元",
+      "reported_value": 63.271,
+      "unit": "",
+      "line_number": 13,
+      "raw_text": "| Google Search & other | 63.271 | 搜索等高意图广告；收入依赖查询、商业意图、点击与广告价格 |",
+      "fetched_value": 63.271,
+      "fetched_source": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Jul/22/attachments/2026q2-alphabet-earnings-release.pdf",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 4,
+      "label": "订阅、平台、设备 · 收入，十亿美元",
+      "reported_value": 12.911,
+      "unit": "",
+      "line_number": 16,
+      "raw_text": "| 订阅、平台、设备 | 12.911 | YouTube订阅、Google One、应用分发、硬件等 |",
+      "fetched_value": 12.911,
+      "fetched_source": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Jul/22/attachments/2026q2-alphabet-earnings-release.pdf",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 101,
+      "label": "annual revenue",
+      "reported_value": 402836.0,
+      "unit": "USD million",
+      "fetched_value": 402836.0,
+      "fetched_source": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf",
+      "fetched_value2": 402836.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/googl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 102,
+      "label": "annual net income available to common holders",
+      "reported_value": 132170.0,
+      "unit": "USD million",
+      "fetched_value": 132170.0,
+      "fetched_source": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf",
+      "fetched_value2": 132170.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/googl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 103,
+      "label": "latest cash plus marketable securities, excluding restricted cash",
+      "reported_value": 242474.0,
+      "unit": "USD million",
+      "fetched_value": 242474.0,
+      "fetched_source": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Jul/22/attachments/2026q2-alphabet-earnings-release.pdf",
+      "fetched_value2": 242474.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/googl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    }
+  ],
+  "excluded_from_external_fact_verdict": [
+    {
+      "id": 12,
+      "label": "基准：搜索守住、云继续增长 · 三年后价格",
+      "reported_value": 404.62,
+      "unit": "",
+      "line_number": 80,
+      "raw_text": "| 基准：搜索守住、云继续增长 | +12% | 24倍 | 404.62 | +18.28% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "model assumption or computed model value; arithmetic separately verified"
+    }
+  ],
+  "warning": "PASS applies only to fact samples; some are issuer-only. Assumptions and parser false positives excluded, not certified. Full financial statement and contract audit not performed."
+}

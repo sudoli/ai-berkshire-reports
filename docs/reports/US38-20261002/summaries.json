@@ -1,0 +1,1282 @@
+[
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corporation",
+    "sector": "AI计算平台与半导体",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 234.98,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT",
+      "source_url": "https://stockanalysis.com/stocks/nvda/financials/",
+      "verified": true,
+      "note": "盘中非收盘；Yahoo 11:22:58 EDT为234.81作异时点交叉。图片2026-09-30的228.38未经核验，相差+2.89%；2024年10拆1后口径。"
+    },
+    "financial_period": "FY2027 Q2，截至2026-07-26，2026-08-26发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 190,
+      "buy_high": 220,
+      "currency": "USD",
+      "basis": "假设正常化年度收入4500亿美元、含SBC经营利润率65%、税率17%、稀释242亿股，经济EPS约10美元；10×19–22倍=190–220。三年基准380.22按12%折现为270.63。",
+      "conditions": "不依赖中国恢复销售；CUDA与集群系统优势保持，正常化10美元EPS及回款可兑现；应收和融资风险不显著恶化。",
+      "holder_action": "可在论点未破坏时观察持有；重点核对现金兑现、投资收益和客户融资敞口，不因价格下跌自动加仓。"
+    },
+    "thesis": "软硬件平台仍能捕获AI集群利润，但应剔除证券收益并为出口与客户融资风险留出折扣。",
+    "key_risk": "客户资本开支回撤叠加平台利润率下降，且应收账款和战略投资削弱现金转化。",
+    "confidence": "中",
+    "source_limitations": [
+      "图片228.38未验证，采用10月2日双平台异时点盘中报价，非同一时刻成交认证。",
+      "StockAnalysis现金投资口径较发行人现金加债券高10.40%，未完整重建，采用发行人分项。",
+      "未逐项核验最新出口许可、客户利用率、融资最终条款及管理层持股。",
+      "10美元正常化EPS和情景增长是研究假设；SEC与IR属于同一发行人来源。"
+    ],
+    "report_file": "NVDA研究报告-20261002.md"
+  },
+  {
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices, Inc.",
+    "sector": "CPU与AI加速器半导体",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 635.53,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT",
+      "source_url": "https://stockanalysis.com/stocks/amd/financials/",
+      "verified": true,
+      "note": "盘中非收盘；Yahoo 11:23:11 EDT为635.33作异时点交叉。图片611.76未验证，相差+3.89%；未发现2026额外拆股调整依据。"
+    },
+    "financial_period": "2026 Q2，截至2026-06-27，2026-08-04发布",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 200,
+      "buy_high": 240,
+      "currency": "USD",
+      "basis": "正常化收入650亿美元、含SBC经济经营利润率25%、税率17%、稀释16.9亿股推得EPS约8美元；8×25–30倍=200–240。基准三年468.75按12%折现为333.65。",
+      "conditions": "GPU规模化同时带来利润与回款、ROCm生产可用性持续改善、8美元经济EPS路径成立，股数和出口风险未显著恶化。",
+      "holder_action": "不因长期看好就继续高价加仓；复核高预期落空承受力，经营或每股价值恶化时考虑降低暴露。"
+    },
+    "thesis": "CPU执行力与加速器份额机会真实，但第二供应商身份不保证复制龙头利润率。",
+    "key_risk": "GPU放量但折扣、HBM与软件投入吞噬利润，极高估值要求每股盈利持续超预期。",
+    "confidence": "中",
+    "source_limitations": [
+      "加速器独立收入利润及客户合同折扣未完整公开，不能把数据中心全部收入视为GPU。",
+      "StockAnalysis毛利和经营利润与发行人GAAP分类存在差异，采用发行人数字。",
+      "未完整核验管理层持股及客户权益激励条款。",
+      "报价为双平台异时点盘中数据，图片价格未核验；8美元EPS为研究假设。"
+    ],
+    "report_file": "AMD研究报告-20261002.md"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "sector": "定制AI芯片与基础设施软件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 352.83,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT",
+      "source_url": "https://stockanalysis.com/stocks/avgo/financials/",
+      "verified": true,
+      "note": "盘中非收盘；Yahoo 11:22:42 EDT为352.26。图片351.19未核验，与基准相差+0.47%；2024年10拆1后口径。"
+    },
+    "financial_period": "FY2026 Q3，截至2026-08-02，2026-09-02发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 260,
+      "buy_high": 299,
+      "currency": "USD",
+      "basis": "收入1350亿美元、含SBC经营利润率60%、净利息25亿美元、税率16%、稀释49.5亿股推得经济EPS13.32，取13；13×20–23倍=260–299。三年基准474.51折现12%为337.75。",
+      "conditions": "定制项目按期量产且软件现金续费保持，净债务可控，13美元经济EPS不依赖排除全部SBC。",
+      "holder_action": "论点保持可观察持有；不因AI收入增长自动加仓，项目流失、软件现金受损或并购再杠杆时重估。"
+    },
+    "thesis": "ASIC工程能力和关键企业软件共同创造现金，但两者的增长、利润率及债务风险应分开判断。",
+    "key_risk": "少数云客户切换定制项目叠加软件客户迁移，净债务和SBC放大每股价值损失。",
+    "confidence": "中",
+    "source_limitations": [
+      "AI半导体包括网络，不等于全部ASIC；未取得按客户或项目拆分利润。",
+      "软件真实流失率和最新合同条款未完全公开。",
+      "StockAnalysis经营利润重分类与SEC GAAP不一致，采用SEC。",
+      "报价为双平台异时点盘中数据，图价未经核验；13美元EPS和情景为研究假设。"
+    ],
+    "report_file": "AVGO研究报告-20261002.md"
+  },
+  {
+    "ticker": "MRVL",
+    "company": "Marvell Technology, Inc.",
+    "sector": "定制芯片与高速数据互连",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 273.86,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT",
+      "source_url": "https://stockanalysis.com/stocks/mrvl/financials/",
+      "verified": true,
+      "note": "盘中非收盘；Yahoo 11:23:08 EDT为273.07。图价264.21未核验，相差+3.65%。普通股市值与含可转优先股市值不能混用。"
+    },
+    "financial_period": "FY2027 Q2，截至2026-08-01，2026-08-27发布",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 84,
+      "buy_high": 105,
+      "currency": "USD",
+      "basis": "收入140亿美元、含SBC经济经营利润率28%、净利息2亿美元、税率11%、稀释9.4亿股得EPS约3.5；3.5×24–30倍=84–105。三年基准169.34按12%折现120.54。",
+      "conditions": "核心定制项目及连接产品量产，含SBC正常化3.5美元EPS成立；客户集中、优先股和持续稀释未使每股价值进一步恶化。",
+      "holder_action": "按普通股与潜在转换股份重估真实暴露，不用出售业务收益或调整后EPS替代经济利润；项目流失或稀释失控时重估减持。"
+    },
+    "thesis": "高速连接和定制芯片具工程壁垒，但客户主导和资本稀释要求明显估值折扣。",
+    "key_risk": "少数大项目流失、SBC与优先股稀释导致收入增长不能转成普通股东收益。",
+    "confidence": "中",
+    "source_limitations": [
+      "最终云客户集中度和项目利润未完整公开，直接客户与分销商比例不能简单相加。",
+      "普通股市值与Yahoo可能包含优先股转换的市值口径不同，已按10-Q拆分。",
+      "FY2026 GAAP利润含18.304亿美元出售收益，不能直接永续化。",
+      "未纳入10月6日尚未发生的投资者日；图价未核验，3.5美元EPS为含SBC研究假设。"
+    ],
+    "report_file": "MRVL研究报告-20261002.md"
+  },
+  {
+    "ticker": "ARM",
+    "company": "Arm Holdings plc",
+    "sector": "处理器IP授权与生产芯片",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 314.2,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT",
+      "source_url": "https://stockanalysis.com/stocks/arm/financials/",
+      "verified": true,
+      "note": "1 ADS代表1普通股，市值须使用全部普通股而非流通ADS。Yahoo 11:22:41 EDT为313.53；图价289.66未核验，相差+8.47%；盘中非收盘。"
+    },
+    "financial_period": "FY2027 Q1，截至2026-06-30，2026-07-29发布",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 45.5,
+      "buy_high": 58.5,
+      "currency": "USD",
+      "basis": "正常化收入70亿美元、含SBC经济经营利润率24%、税率15%、稀释11亿股得EPS约1.30；1.30×35–45倍=45.5–58.5。三年基准101.56按12%折现72.29。",
+      "conditions": "版税/CSS持续增长，持续SBC已被经济利润覆盖，自有生产芯片不损害客户中立性且投入回报可验证。",
+      "holder_action": "审查极高增长预期与资本强度变化，不把持仓当成低风险纯版税资产；客户关系或每股经济收益受损时重估。"
+    },
+    "thesis": "架构生态很强，但SBC与进入自有芯片改变盈利质量，当前估值要求远超温和增长。",
+    "key_risk": "生产芯片与IP客户竞争、SBC稀释及控制股东利益冲突，使收入增长不能兑现为每ADS价值。",
+    "confidence": "中",
+    "source_limitations": [
+      "自有芯片需求机会不等于已确认收入，分业务真实利润仍缺乏完整披露。",
+      "最新SoftBank精确持股和关联交易附注未完整复核。",
+      "SEC归档HTML受阻，使用官方PDF及SEC companyfacts；FCF网站与发行人口径不同。",
+      "图片价格未核验；1.30美元经济EPS与情景是研究假设，不是公司GAAP指引。"
+    ],
+    "report_file": "ARM研究报告-20261002.md"
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology, Inc.",
+    "sector": "DRAM NAND与HBM存储半导体",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 1078.44,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT",
+      "source_url": "https://stockanalysis.com/stocks/mu/financials/",
+      "verified": true,
+      "note": "盘中非收盘；Yahoo 11:22:50 EDT为1075.39。图价1065.11未核验，相差+1.25%；不可仅凭旧价格记忆判断多了一个零。"
+    },
+    "financial_period": "FY2026 Q4及全年，截至2026-09-03，2026-09-30发布",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 280,
+      "buy_high": 350,
+      "currency": "USD",
+      "basis": "中周期收入1100亿美元、毛利率55%、经营费用120亿美元、税率17%、稀释11.5亿股推得EPS35；35×8–10倍=280–350。基准三年526.72按12%折现374.91。",
+      "conditions": "HBM技术与认证竞争力保持，中周期35美元盈利和跨周期现金覆盖资本投入可验证；不将峰值毛利或客户预付款永久化。",
+      "holder_action": "按全周期现金和供给纪律管理持仓，不因峰值PE低自动加仓；价格之外关注HBM认证、资本开支、存货与履约负担。"
+    },
+    "thesis": "HBM提高长期价值捕获，但存储制造仍需以中周期而非极高峰值利润定价。",
+    "key_risk": "行业扩产和价格回撤压低利润，高资本开支与客户履约义务放大周期下行。",
+    "confidence": "中",
+    "source_limitations": [
+      "最新全年10-K结构化数据尚未同步，FY2026使用发行人业绩公告及StockAnalysis交叉。",
+      "长期客户协议的最低售价、取消和履约条款未完整公开。",
+      "最新精确基本股数待新年报，市值使用约11.3亿股并与SEC旧期数比较。",
+      "图价未独立核验；中周期35美元EPS可能低估结构性变化，但不能拿近端峰值指引替代跨周期证据。"
+    ],
+    "report_file": "MU研究报告-20261002.md"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Company Limited（台积电）",
+    "sector": "半导体晶圆代工",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 470.54,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT（盘中）",
+      "source_url": "https://stockanalysis.com/stocks/tsm/",
+      "verified": true,
+      "note": "单一来源有日期行情，不是收盘价或双源认证；1 ADR=5台湾普通股。用户2026-09-30截图456.19未核验，行情页市值/PE不一致，未沿用。"
+    },
+    "financial_period": "2026Q2，2026-06-30；年度比较采用2025审计版摘要",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 374,
+      "buy_high": 425,
+      "currency": "USD",
+      "basis": "前瞻正常化ADR EPS假设17美元×22—25倍=374—425；假设USD/TWD32，非市场即期汇率；基准三年698.29美元按12%折现497.03。",
+      "conditions": "17美元正常化EPS仍可信，先进制程与现金流未恶化，核验实时ADR/本股及汇率，能够承受台湾地缘尾部风险；并非遇到政治冲击自动买入。",
+      "holder_action": "论点未破坏可跟踪持有，不追价加仓；盈利现金转换持续变差、重大迁单或运营/资产权利受限时重估并减轻风险。"
+    },
+    "thesis": "先进制程与量产生态创造稀缺利润，但资本密集和台湾尾部风险要求买入折价。",
+    "key_risk": "台湾运营中断、海外厂及2nm高投入侵蚀现金回报，且当季盈利含非经常资本收益。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情只有StockAnalysis一个时间戳来源，其现成PE/市值与价格和股份口径不一致。",
+      "2025发行人归母净利1717883百万新台币与聚合站1697604不同约1.2%，优先原始审计版，差异原因未完全确认。",
+      "2024年度比较亦有利润差异，2022—2023历史序列未逐年原始复核；债务含租赁等口径未逐项桥接。",
+      "未独立核验最新管理层持股、月营收及实时台湾本股/ADR溢价；正常化盈利和汇率为估值假设。"
+    ],
+    "report_file": "TSM研究报告-20261002.md"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding N.V.（阿斯麦）",
+    "sector": "半导体光刻设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 1861.22,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT（盘中）",
+      "source_url": "https://stockanalysis.com/stocks/asml/",
+      "verified": true,
+      "note": "单一时间戳行情来源，非收盘或双源认证；美国登记普通股，不能套用TSM的1:5比例。欧元报表需转换；截图1811.67仍未核验。"
+    },
+    "financial_period": "2026Q2，截至2026-06-28，US GAAP欧元报表",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 1108.8,
+      "buy_high": 1267.2,
+      "currency": "USD",
+      "basis": "正常化前瞻EPS36欧元×估值汇率1.10美元/欧元×28—32倍=1108.80—1267.20；汇率非现货核验值；基准三年1927.25按12%折现1371.78。",
+      "conditions": "36欧元盈利假设与订单验收继续成立，应收及现金回款改善，服务/出口许可无实质恶化；实时汇率及价格变化必须重算。",
+      "holder_action": "护城河未破坏可跟踪持有，但不追高；现金转换长期恶化、重大客户延后或High-NA经济性/出口服务权受损时降低暴露。"
+    },
+    "thesis": "先进光刻技术稀缺且安装基数扩大，但高估值已预支客户扩产与现金兑现。",
+    "key_risk": "积压订单不等于即时收入，出口许可、客户验收和High-NA采用速度叠加欧元汇率风险。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情只有单一带日期来源，页面市值及PE不同步；季度加权股份仅用于近似规模。",
+      "2026Q2最新积压订单准确余额未获得，38797百万欧元为2025年底数字。",
+      "USD/EUR1.10为模型假设；未获得实时外汇双源，流动负债中的全部融资义务未逐项核验。",
+      "2022—2023历史值未逐年原始年报复核；管理薪酬及投票权最新变动未全面审核。"
+    ],
+    "report_file": "ASML研究报告-20261002.md"
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials, Inc.（应用材料）",
+    "sector": "半导体材料工程设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 538.73,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT（盘中）",
+      "source_url": "https://stockanalysis.com/stocks/amat/",
+      "verified": true,
+      "note": "单一带日期行情源，非收盘或双源认证；用户截图511.38美元未独立核验。页面PE刷新基准不同，报告自行重算。"
+    },
+    "financial_period": "FY2026Q3，截至2026-07-26",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 322,
+      "buy_high": 378,
+      "currency": "USD",
+      "basis": "正常化前瞻EPS假设14美元×23—27倍=322—378；基准三年491.72美元按12%折现350美元；非Q4调整后EPS机械年化。",
+      "conditions": "EPS14仍可由正常化收入、净利率支持，关键工艺份额和现金流稳健，出口及服务许可证未实质恶化；价位不是机械买单。",
+      "holder_action": "不因单季高增长追高加仓；盈利上修不足、工艺份额下滑或重大合规/现金风险时控制暴露，长期论点完整可跟踪持有。"
+    },
+    "thesis": "材料工程复杂度与服务安装基数提升长期价值，但当前价格已计入强设备上行周期。",
+    "key_risk": "出口限制、晶圆厂资本开支回落及竞争份额变化可能同时压低利润和估值。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情单源，季度加权股份不是实时在外股数。",
+      "发行人短长债6544百万美元与第三方广义债务7346不同，租赁等口径未逐项完全桥接。",
+      "FY2026分部重分类，历史服务/系统收入不能直接机械同比；2022—2023历史值未逐年原始复核。",
+      "未完整审查最新出口规则细项、全部年报附注及管理层持股；EPS14和估值倍数为假设。"
+    ],
+    "report_file": "AMAT研究报告-20261002.md"
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corporation（拉姆研究）",
+    "sector": "半导体刻蚀与沉积设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 347.12,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT（盘中）",
+      "source_url": "https://stockanalysis.com/stocks/lrcx/",
+      "verified": true,
+      "note": "单一带日期行情来源，非收盘价；2024年1拆10后的每股口径。截图328.51未独立核验，全部EPS及买入带采用拆股后基础。"
+    },
+    "financial_period": "FY2026Q4及全年，截至2026-06-28",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 165,
+      "buy_high": 195,
+      "currency": "USD",
+      "basis": "正常化前瞻拆股后EPS假设7.50美元×22—26倍=165—195；基准三年307.98美元按12%折现219.21，非季度指引机械年化。",
+      "conditions": "7.50美元盈利仍由客户资本预算、工艺份额及回款支持，出口和服务许可没有实质恶化；必须按最新财报和实际股数更新。",
+      "holder_action": "不因纪录季度追高；若盈利上修不足、现金转换恶化或风险暴露过高，考虑减持；工艺和服务论点完整可继续跟踪。"
+    },
+    "thesis": "三维结构提升刻蚀沉积价值，但存储周期、现金转换和当前高倍数限制投资安全边际。",
+    "key_risk": "存储厂削减资本开支与中国出口/服务限制可能造成盈利和估值双降。",
+    "confidence": "中",
+    "source_limitations": [
+      "盘中行情单源；市值只用季度加权股份近似，不是实时股份认证。",
+      "原始长短债及融资租赁3734.563百万美元与第三方广义债务4122不同，其他租赁等未逐项桥接。",
+      "FY2023—2024历史序列未逐年原始文件复核；最新出口清单、管理层持股和回购余额未全面核验。",
+      "7.50美元正常化EPS包含增长假设，并非衰退底部；9月季度指引不是实际业绩。"
+    ],
+    "report_file": "LRCX研究报告-20261002.md"
+  },
+  {
+    "ticker": "KLAC",
+    "company": "KLA Corporation（科磊）",
+    "sector": "半导体过程控制与检测设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 206.79,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT（盘中）",
+      "source_url": "https://stockanalysis.com/stocks/klac/",
+      "verified": true,
+      "note": "单一时间戳行情来源，非收盘或双源认证。已核验2026-06-12开始1拆10后交易，截图194.93不因量级判错但具体日期价格未认证；EPS和买入带全部拆股后。"
+    },
+    "financial_period": "FY2026Q4及全年，截至2026-06-30",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 123.2,
+      "buy_high": 140.8,
+      "currency": "USD",
+      "basis": "拆股后正常化前瞻EPS假设4.40美元×28—32倍=123.20—140.80；基准三年185.45美元按12%折现132；不是拆股前EPS。",
+      "conditions": "4.40美元正常化EPS可信，检测份额及服务权稳定，现金回收改善；若因永久竞争损失下跌应撤销区间。",
+      "holder_action": "业务强不等于估值安全，不追高加仓；盈利上修不足可控制暴露；检测能力、服务许可或现金/杠杆纪律破坏时减持重估。"
+    },
+    "thesis": "制程复杂度提升良率检测价值，但拆股没有降低估值，当前价格透支较多增长。",
+    "key_risk": "晶圆厂延期、出口及售后管制与高倍数收缩叠加，现金回报可能落后会计利润。",
+    "confidence": "中",
+    "source_limitations": [
+      "单一时间戳行情来源，用户194.93截图具体报价未独立核验；拆股本身已由两份发行人公告确认。",
+      "FY2023—2024及部分分部历史未逐年原始复核；市值仅按季度加权股份近似。",
+      "原始长债5887.415百万美元与第三方广义债务6152不同，其他租赁等口径未完全桥接。",
+      "未完成统一市场份额双源核验、全部管理层持股薪酬及最新出口规则核查；EPS4.40及倍数为估值假设。"
+    ],
+    "report_file": "KLAC研究报告-20261002.md"
+  },
+  {
+    "ticker": "SMCI",
+    "company": "Super Micro Computer, Inc.",
+    "sector": "AI服务器与机架系统",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 41.07,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/smci/history/",
+      "verified": true,
+      "note": "直接读取历史行情Close及Adjusted Close均41.07，与原未核实图片相同；仅单一行情商，非10月2日实时价。2024年10拆1后的美元普通股口径。"
+    },
+    "financial_period": "FY2026 ended 2026-06-30; SEC XBRL 10-K filed 2026-08-31",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 28,
+      "buy_high": 34,
+      "currency": "USD",
+      "basis": "分析假设正常化前瞻EPS4.00美元×7—8.5倍PE；收入650亿美元、净利率约4.68%、稀释股约7.61亿支撑EPS锚。",
+      "conditions": "必须先验证至少两个季度现金回收改善、库存及应收增速回落，并核查审计意见及合规整改；价格进入区间不足以单独触发买入。",
+      "holder_action": "优先跟踪现金、坏账及合规披露；不因低PE或股价下跌机械补仓，现金恶化或审计监管风险升级时撤销原估值。"
+    },
+    "thesis": "交付与液冷集成能力可以受益于AI需求，但股东回报取决于薄毛利能否兑现为现金。",
+    "key_risk": "FY2026经营现金流大幅为负、库存和应收膨胀，叠加合规及融资稀释风险。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情由单一独立提供商核对，不是即时可成交报价。",
+      "SEC结构化年报已核验，审计意见、客户集中度与关联交易附注全文未完成一手复核。",
+      "公司内部调查完成不等于政府调查终结或监管免责。",
+      "历史年度部分指标仅第三方，估值EPS为分析假设。"
+    ],
+    "report_file": "SMCI研究报告-20261002.md"
+  },
+  {
+    "ticker": "ANET",
+    "company": "Arista Networks, Inc.",
+    "sector": "数据中心网络与交换机",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 203.59,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/anet/history/",
+      "verified": true,
+      "note": "历史行情直接核对与原图片一致；仅单一行情商，非即时价。2024年12月4拆1后美元普通股口径。"
+    },
+    "financial_period": "Q2 2026 ended 2026-06-30; FY2025 annual",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 120,
+      "buy_high": 144,
+      "currency": "USD",
+      "basis": "正常化前瞻EPS假设4.00美元×30—36倍PE；以Q2调整后EPS1.02及Q3指引1.06—1.08的年化能力为锚并保留费用稀释风险。",
+      "conditions": "正常化EPS仍可支持4美元、GAAP营业利润率保持40%左右或更高，重要客户项目及EOS竞争优势未受损。",
+      "holder_action": "以现金兑现、客户份额和软件优势检验持有；高估值或结构性客户流失时降低风险，不因单季交付波动或价格下跌机械交易。"
+    },
+    "thesis": "EOS可靠性、自动化和运维转换成本让Arista分享AI网络扩容利润，但高买价可能吞噬成长回报。",
+    "key_risk": "少数云客户与商用交换芯片供应集中，叠加NVIDIA、Cisco及白牌竞争压缩利润和估值。",
+    "confidence": "中",
+    "source_limitations": [
+      "报价为单一独立行情源核验的9月30日收盘价。",
+      "最新各大客户收入占比及高管经济/投票权益未从年报正文复核。",
+      "2026年6月现金加投资最新余额主要依赖第三方；2025年底余额完成主副源核对。",
+      "前瞻EPS及终值倍数是研究假设，不是公司指引或市场共识。"
+    ],
+    "report_file": "ANET研究报告-20261002.md"
+  },
+  {
+    "ticker": "VRT",
+    "company": "Vertiv Holdings Co",
+    "sector": "数据中心供电与热管理设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 251.45,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT",
+      "source_url": "https://stockanalysis.com/stocks/vrt/financials/",
+      "verified": true,
+      "note": "单一金融平台直接读取的盘中价，非收盘；用户9月30日图片241.31美元未核实。统计页未列拆股记录，当前普通股口径。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-07-29发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 166.4,
+      "buy_high": 192,
+      "currency": "USD",
+      "basis": "2026调整后EPS指引中点6.70减研究正常化缓冲0.30=6.40美元；6.40×26至30倍=166.40至192.00美元。",
+      "conditions": "最新指引及订单转收入能力保持，交付后现金转换稳健；利润率、液冷竞争和保修成本未触发证伪；区间不是机械买单。",
+      "holder_action": "可依据经营执行继续跟踪，避免AI资本开支敞口过度集中；若增长兑现或现金质量破坏则重新估值并考虑减持，不以跌价本身加仓。"
+    },
+    "thesis": "供电与散热的系统集成和服务网络具竞争壁垒，但参考价已预支较多高速增长。",
+    "key_risk": "大客户订单延后及预付款逆转，叠加液冷竞争或交付成本，使高利润率和高倍数同时下降。",
+    "confidence": "中",
+    "source_limitations": [
+      "盘中行情仅单一平台核实，非独立双行情源。",
+      "最新积压订单总额和热管理/电力单独利润率未核实；150亿美元仅为2025年末。",
+      "现金及债务包含租赁与否口径不同；未核实最新管理层持股和薪酬细目。"
+    ],
+    "report_file": "VRT研究报告-20261002.md"
+  },
+  {
+    "ticker": "ETN",
+    "company": "Eaton Corporation plc",
+    "sector": "电气化与电力管理设备",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 440.46,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/etn/financials/",
+      "verified": true,
+      "note": "单一平台有时间戳盘中行情，非收盘；9月30日图片429.71美元未核实。最后列示2011年2比1拆股，当前普通股口径。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-07-31发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 303.6,
+      "buy_high": 343.2,
+      "currency": "USD",
+      "basis": "2026调整后EPS指引中点13.50减研究缓冲0.30=正常化13.20；13.20×23至26倍=303.60至343.20美元。",
+      "conditions": "电气订单和利润率兑现、Boyd整合现金回报可信、并购后的有息债务开始下降；任何盈利下修须重算区间。",
+      "holder_action": "不机械清仓，但评估同一电气资本开支敞口与估值风险；有机订单转弱且债务不降时考虑减持，避免按旧低杠杆印象追加。"
+    },
+    "thesis": "配电认证、渠道和服务带来较深壁垒，但电气化成长溢价已预支未来收益，Boyd收购增加资本负担。",
+    "key_risk": "短缺期价格及收购增长被当成永续增长，债务大幅上升后利润率或现金回报低于预期。",
+    "confidence": "中",
+    "source_limitations": [
+      "公司原站多次超时，完整当季公告由公司Business Wire转载读取，并非第二独立来源。",
+      "盘中报价仅单一平台；管理层最新持股、薪酬及SBC明细未全面核实。",
+      "总债务是否包含租赁口径不同；未虚构历史估值分位。"
+    ],
+    "report_file": "ETN研究报告-20261002.md"
+  },
+  {
+    "ticker": "GEV",
+    "company": "GE Vernova Inc.",
+    "sector": "燃气轮机、电网设备与风电",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 984.44,
+      "currency": "USD",
+      "asof": "2026-10-02 11:18 EDT",
+      "source_url": "https://stockanalysis.com/stocks/gev/financials/",
+      "verified": true,
+      "note": "单平台直接核实盘中价，非收盘。9月30日图片950.49美元未核实。当前普通股，未列拆股记录，2024年分拆不等于拆股。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-07-22发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 467.25,
+      "buy_high": 534,
+      "currency": "USD",
+      "basis": "收入460亿美元×13% EBITDA率，减假设折旧15亿美元，加净财务收入2亿美元、税率24%，除以2.66333581亿股，正常化EPS约13.35；×35至40倍=467.25至534.00美元。",
+      "conditions": "燃机档期预留继续转订单，Power和电网利润兑现、Wind损失受控，预收款不被当成永久可分配现金；桥接假设变动即重算。",
+      "holder_action": "跟踪现金履约质量和风电尾部责任，不用含股权重估收益的TTM PE证明便宜；估值过度或风险集中时可分步降低敞口，证伪时重估退出。"
+    },
+    "thesis": "燃机服务及电网设备的稀缺性真实，但现价已需要多年高速正常化利润增长才能消化。",
+    "key_risk": "预付款与交易收益夸大表面现金和盈利，风电亏损、档期取消或估值压缩共同损害普通股回报。",
+    "confidence": "中",
+    "source_limitations": [
+      "独立上市历史较短；正常化EPS的折旧、净财务收入及税率为研究假设。",
+      "公司headline现金含受限资金，与金融平台现金口径不同，未视为完全交叉认证。",
+      "报价单平台；管理层持股及最新SBC明细未全面核实。"
+    ],
+    "report_file": "GEV研究报告-20261002.md"
+  },
+  {
+    "ticker": "CEG",
+    "company": "Constellation Energy 星座能源",
+    "sector": "电力与能源",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 256.65,
+      "currency": "USD",
+      "asof": "2026-10-02 10:40 EDT，盘中",
+      "source_url": "https://stockanalysis.com/stocks/ceg/",
+      "verified": true,
+      "note": "复用先前核实的盘中快照，单一行情源；不是图片9/30的254.02，非收盘价。"
+    },
+    "financial_period": "2026Q2/H1，截至2026-06-30；事件核实至2026-09-30",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 220,
+      "buy_high": 240,
+      "currency": "USD",
+      "basis": "FY26调整后EPS中点12，三年+10%与终值PE22得351.384；按10%折现为264，220-240留约9%-17%边际。",
+      "conditions": "核电可靠运行、长期合同兑现、Calpine整合和降杠杆路径没有破坏，核燃料与维护投入完整计入。",
+      "holder_action": "可按合同与现金质量持有观察；新增资金不追价，项目/监管/债务失控或盈利中枢下移则重估。"
+    },
+    "thesis": "稀缺核电资产正在转化为长期合同，但Calpine并购增加了债务和组合复杂度。",
+    "key_risk": "高杠杆叠加项目延迟、电价与政策风险；合同总MW不等于新增发电或现金。",
+    "confidence": "中",
+    "source_limitations": [
+      "单一可读行情源，精确股数另经公司与SEC核实。",
+      "长期PPA关键价格和资本分担条款未公开。",
+      "历史经营现金流受DPP分类变更影响，不能直接跨年外推。"
+    ],
+    "report_file": "CEG研究报告-20261002.md"
+  },
+  {
+    "ticker": "VST",
+    "company": "Vistra Corp.",
+    "sector": "综合发电、核电与零售售电",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 137.51,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/vst/financials/",
+      "verified": true,
+      "note": "单平台盘中实读行情，非收盘；9月30日图片138.35美元未经核实；当前普通股，统计页未列拆股。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-08-07发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 110,
+      "buy_high": 126.5,
+      "currency": "USD",
+      "basis": "2026 FCFbG中点43.25亿美元减研究现金缓冲6.25亿美元，37亿美元/335635195股约11.02，模型取11美元；×10至11.5倍=110至126.50美元。",
+      "conditions": "对冲后盈利、流动性和维持资本开支可支持11美元正常化现金；执行前必须核实Cogentrix完成状态并更新债务、股份及增量现金。",
+      "holder_action": "经营与对冲兑现可继续跟踪，不对未实现套保亏损机械止损；若并购/新投资吞噬普通股现金、债务或机组风险恶化则考虑减持重估。"
+    },
+    "thesis": "套保后的发电及零售组合有可见现金，但核电溢价不能覆盖全部资产和债务风险。",
+    "key_risk": "停机与购电基差、套保到期后电价回落，加上并购及Helix资本承诺削弱普通股现金。",
+    "confidence": "中",
+    "source_limitations": [
+      "Cogentrix在已读8月7日公告仍待完成，截至截止日未取得明确完成公告，基准未纳入交易增量。",
+      "核电合同电价、完整机组级对冲和最新SBC/管理层持股未核实。",
+      "盘中行情单平台；FCFbG不等于扣全部增长资本后的自由现金流。"
+    ],
+    "report_file": "VST研究报告-20261002.md"
+  },
+  {
+    "ticker": "EQIX",
+    "company": "Equinix, Inc.",
+    "sector": "互联与托管数据中心REIT",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 1023.21,
+      "currency": "USD",
+      "asof": "2026-10-02 11:09 EDT",
+      "source_url": "https://stockanalysis.com/stocks/eqix/financials/",
+      "verified": true,
+      "note": "单平台盘中实读，非收盘；9月30日图片1011.58美元未验证。最后列示2002年1比32反向拆股，采用当前普通股口径。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-07-29发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 830,
+      "buy_high": 913,
+      "currency": "USD",
+      "basis": "2026 AFFO/股指引中点42.99减研究非经常性/波动缓冲1.49=正常化41.50美元；41.50×20至22倍P/AFFO=830至913美元，非GAAP PE。",
+      "conditions": "剔除一次性xScale费用后的每股增长兑现，经常性资本开支分类合理，SBC与增发不吞噬增长，扩建融资和杠杆保持可控。",
+      "holder_action": "可跟踪互联、续租和正常化每股AFFO继续持有观察；过度集中时再平衡，融资稀释或维护资本上升破坏现金回报时考虑减持。"
+    },
+    "thesis": "互联生态和迁移成本支持溢价，但庞大扩建开支、SBC及融资需求要求买入价格留出缓冲。",
+    "key_risk": "一次性收费及低估维护资本夸大AFFO，融资和股权激励使总量增长不能转为每股回报。",
+    "confidence": "中",
+    "source_limitations": [
+      "报价单一平台；2023年AFFO及经常性资本开支未逐项核实。",
+      "金融数据库的收入、FCF和现金标题存在分类差异，报告按原始公告及SEC纠正。",
+      "1.49美元正常化缓冲及SBC年化敏感性为研究假设；管理层持股未全面核验。"
+    ],
+    "report_file": "EQIX研究报告-20261002.md"
+  },
+  {
+    "ticker": "DLR",
+    "company": "Digital Realty Trust, Inc.",
+    "sector": "批发、托管与互联数据中心REIT",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 177.5,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/dlr/financials/",
+      "verified": true,
+      "note": "单平台直接核实盘中价，非收盘；9月30日图片175.53美元未经验证。无列示拆股；普通股和包含经营单位的AFFO分母不同。"
+    },
+    "financial_period": "2026年第二季度，截至2026-06-30；2026-07-23发布",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 136,
+      "buy_high": 149.6,
+      "currency": "USD",
+      "basis": "Core FFO/股中点8.175减4.125亿美元维护资本/假设3.80亿股、减1.475亿美元非现金租金/3.80亿股，加研究净调整0.10，得约6.80美元AFFO/股；×20至22倍=136至149.60美元。",
+      "conditions": "剔除promote及保险后的经常性每股现金可支持6.80美元，维护资本真实，开租与融资兑现；新增股数和合资债务变化须重算。",
+      "holder_action": "继续核对分红覆盖、实际开租和每股稀释；若总量增长不转为每股现金、杠杆上升或低价增发支持低回报项目，应考虑减持而非机械补仓。"
+    },
+    "thesis": "电力接入和开发平台有价值，但大额增长资本、合资分成及增发使每股现金比签约总量更重要。",
+    "key_risk": "一次性开发收益夸大FFO，电力/建设延误与昂贵融资让增长及分红同时承压。",
+    "confidence": "中",
+    "source_limitations": [
+      "单平台盘中行情；普通股与经营单位分母及市值存在时间和口径差异。",
+      "SEC接口二季度标签不完整，采用公司完整当季公告；2023年AFFO未逐项核实。",
+      "现金与Cash & Investments差异1.05%保留；3.80亿预测分母和其他AFFO调整为研究假设。"
+    ],
+    "report_file": "DLR研究报告-20261002.md"
+  },
+  {
+    "ticker": "CLS",
+    "company": "Celestica Inc.",
+    "sector": "数据中心硬件设计与制造",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 361.43,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/cls/history/",
+      "verified": true,
+      "note": "历史行情Close及Adjusted Close直接核对一致；纽约美元普通股，不是多伦多加元报价；单一行情源、非实时价。"
+    },
+    "financial_period": "Q2 2026 ended 2026-06-30; FY2025 annual",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 226,
+      "buy_high": 282.5,
+      "currency": "USD",
+      "basis": "公司2026调整后EPS指引11.30美元×20—25倍PE；以现金流、扩产资本需求和客户集中度限制制造企业溢价。",
+      "conditions": "EPS11.30指引仍可信、关键项目按期投产，FCF指引不因资本开支和营运资本持续恶化。",
+      "holder_action": "跟踪CFO、资本开支、客户集中度及调整后利润；不把总回报掉期收益资本化，大客户转单或现金兑现落后时重估。"
+    },
+    "thesis": "HPS平台及复杂硬件能力提升附加值，但制造利润仍受大客户议价和资本再投入约束。",
+    "key_risk": "少数客户集中、薄经营利润率及扩厂资本开支，使高速收入增长不必然转化为股东现金。",
+    "confidence": "中",
+    "source_limitations": [
+      "9月30日报价仅一个独立行情商核验，非即时价。",
+      "客户具体合同、取消权、最新治理和债务契约未完整复核。",
+      "部分历史财务仅第三方；营业利润分类存在差异，采用公司口径。",
+      "2027需求展望不是已锁定收入，三年EPS增速为分析假设。"
+    ],
+    "report_file": "CLS研究报告-20261002.md"
+  },
+  {
+    "ticker": "LITE",
+    "company": "Lumentum Holdings Inc.",
+    "sector": "光通信器件与系统",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 971.26,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/lite/history/",
+      "verified": true,
+      "note": "直接读取历史Close及Adjusted Close均971.26，与原图片一致，不能擅改97.126；单一行情商、非即时价。统计页未列拆股，普通股而非ADR；另需考虑可转债及优先股稀释。"
+    },
+    "financial_period": "FY2026 ended 2026-06-27; SEC 10-K filed 2026-08-17",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 400,
+      "buy_high": 520,
+      "currency": "USD",
+      "basis": "正常化前瞻调整后EPS假设16美元×25—32.5倍PE；Q1 FY2027指引EPS中点4.20年化16.80后预留波动，须验证充分稀释及现金兑现。",
+      "conditions": "EPS16仍有订单、良率与现金流支持；客户项目未显著取消，扩产和可转证券稀释不超出模型。",
+      "holder_action": "跟踪毛利、FCF、客户集中度和充分稀释股数；估值扩张而现金兑现落后或核心客户转单时降低风险，不把非现金亏损等同无经济成本。"
+    },
+    "thesis": "高速激光器和光学系统受益AI链路升级，但极高估值要求短缺利润能够长期兑现为每股现金。",
+    "key_risk": "光学扩产周期、少数客户及技术路线变化叠加可转债权益化稀释，可能使EPS增长无法支撑股价。",
+    "confidence": "中",
+    "source_limitations": [
+      "971.26仅由一个独立行情商的历史页面核验，非即时成交报价。",
+      "客户集中度精确比例来自二手年报分析，未完成一手附注核验。",
+      "SEC结构化数据不能完整验证优先股、可转债及治理条款。",
+      "第三方毛利分类排除部分摊销，与公司GAAP不同；报告采用公司口径。",
+      "正常化前瞻EPS和三年增速为分析假设，非公司年度承诺。"
+    ],
+    "report_file": "LITE研究报告-20261002.md"
+  },
+  {
+    "ticker": "COHR",
+    "company": "Coherent Corp.",
+    "sector": "光子技术与光通信制造",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 287.81,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/cohr/history/",
+      "verified": true,
+      "note": "直接核对历史Close及Adjusted Close与原图片一致；单一行情商、非即时价。现Coherent Corp普通股，不混用旧独立Coherent公司历史每股数据。"
+    },
+    "financial_period": "FY2026 and Q4 ended 2026-06-30",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 150,
+      "buy_high": 187.5,
+      "currency": "USD",
+      "basis": "正常化前瞻调整后EPS假设7.50美元×20—25倍PE；以Q1 FY2027指引中点1.95年化7.80为锚，对周期及稀释留余量，并要求FCF回归。",
+      "conditions": "现金转换改善、资本扩张有客户需求支持、正常化EPS7.50可维持；客户项目和技术路线未实质转坏。",
+      "holder_action": "把扩产资本回报、融资稀释与每股FCF一起检查；现金持续外流或客户转单时降低风险，不只追踪调整后EPS。"
+    },
+    "thesis": "光子技术和制造规模受益高速连接升级，但扩产是否转化为每股现金决定长期价值。",
+    "key_risk": "FY2026低经营现金流与高资本开支形成巨大负FCF，供需周期反转可能叠加稀释及减值。",
+    "confidence": "中",
+    "source_limitations": [
+      "9月30日报价仅由单一独立行情源核对，非即时价。",
+      "最新客户集中度、治理权益及所有证券条款未从附注完整核验。",
+      "第三方营业利润和SBC分类与公司口径不同，报告明确采用公司经营指标。",
+      "正常化EPS、现金回归与终值倍数均为条件假设。"
+    ],
+    "report_file": "COHR研究报告-20261002.md"
+  },
+  {
+    "ticker": "APH",
+    "company": "Amphenol Corporation",
+    "sector": "连接器与高可靠互连",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 84.3,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://stockanalysis.com/stocks/aph/history/",
+      "verified": true,
+      "note": "历史收盘直接核对与原图片一致，单一行情源、非即时价。2026年9月2拆1后口径；7月发布Q2 EPS1.35及Q3指引1.40—1.42必须减半。"
+    },
+    "financial_period": "Q2 and H1 2026 ended 2026-06-30; FY2025 annual",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 59.4,
+      "buy_high": 70.2,
+      "currency": "USD",
+      "basis": "拆后正常化前瞻调整后EPS2.70美元×22—26倍PE；Q2扣关税回收年化约2.62及Q3拆后指引年化2.82之间取锚。",
+      "conditions": "正常化EPS2.70仍成立，并购现金兑现及去杠杆路径清晰，有机增长和设计导入优势未破坏。",
+      "holder_action": "跟踪有机增长、剔除关税后的盈利、收购现金回报与净负债；加杠杆并购加速而每股FCF停滞时降低风险。"
+    },
+    "thesis": "设计导入和高可靠互连具有优质复利潜力，但收购后的现金回报和债务纪律决定安全边际。",
+    "key_risk": "大型收购推高净负债及商誉，若需求正常化，EPS增厚可能不足以弥补融资和整合成本。",
+    "confidence": "中",
+    "source_limitations": [
+      "9月30日价格仅一个独立行情商核验，非实时价。",
+      "最新客户集中度、高管权益及完整收购回报未完成一手附注核验。",
+      "第三方营业利润与FCF定义不同，报告优先公司GAAP及其明确FCF口径。",
+      "正常化EPS和三年情景为分析假设，股息未计入模型。"
+    ],
+    "report_file": "APH研究报告-20261002.md"
+  },
+  {
+    "ticker": "DELL",
+    "company": "Dell Technologies 戴尔科技",
+    "sector": "服务器与企业硬件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 559.9,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT，盘中",
+      "source_url": "https://stockanalysis.com/stocks/dell/",
+      "verified": true,
+      "note": "单一可读行情源；不是收盘价，图片537.95未独立验证。"
+    },
+    "financial_period": "FY2027Q2，截至2026-07-31",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 390,
+      "buy_high": 435,
+      "currency": "USD",
+      "basis": "FY27调整后EPS25.50，未来三年+12%与终值PE18得644.86；按10%折现为484.49，再扣约10%-20%安全边际取390-435。",
+      "conditions": "EPS兑现、ISG毛利稳定、订单转为现金，且完整解释adjusted FCF与实际现金流差异。",
+      "holder_action": "按现金兑现和债务持有；订单取消、信用损失或盈利中枢下修则重估，不因到价自动加仓。"
+    },
+    "thesis": "AI系统集成需求旺盛，但硬件利润、营运资本和融资质量比订单总额更决定股东回报。",
+    "key_risk": "把快速上修的硬件周期利润当永久平台利润，忽略adjusted FCF与现金流缺口。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情仅单源带时间快照。",
+      "未逐项完成adjusted FCF融资与现金桥接。",
+      "数据商营业利润与原始公告重大差异，采用发行人口径；较早历史财务部分单源。",
+      "市值使用季末近似总股数，并非实时登记股本。"
+    ],
+    "report_file": "DELL研究报告-20261002.md"
+  },
+  {
+    "ticker": "HPE",
+    "company": "Hewlett Packard Enterprise 慧与",
+    "sector": "服务器与企业硬件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 68.8,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT，盘中",
+      "source_url": "https://stockanalysis.com/stocks/hpe/",
+      "verified": true,
+      "note": "单源快照；图片63.89未验证，不与HP Inc.混淆。"
+    },
+    "financial_period": "FY2026Q3，截至2026-07-31",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 48,
+      "buy_high": 53,
+      "currency": "USD",
+      "basis": "调整后EPS3.80，三年+14%与终值PE14得78.82；10%折现为59.22，扣10%-20%安全边际后向内取48-53。",
+      "conditions": "FY26 EPS及现金指引兑现、Juniper整合顺利、库存和净借款可控，并计入优先股稀释。",
+      "holder_action": "按网络客户保留和现金偿债能力持有；现金失约、库存或坏账恶化则暂停加仓重估。"
+    },
+    "thesis": "网络与混合云提升业务质量，但必须证明并购增长能转化为普通股股东现金。",
+    "key_risk": "并表及营运资本助推的盈利被长期化，忽略债务、SBC和强制可转优先股。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情单源。",
+      "数据商FY25营业利润和现金与SEC重大不同，采用原始SEC数据。",
+      "较早历史年度部分单源，FY25净利润涉及优先股与普通股归属差异。",
+      "最新指引为管理层前瞻框架而非既成事实。"
+    ],
+    "report_file": "HPE研究报告-20261002.md"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corporation",
+    "sector": "企业软件与云计算",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 514.95,
+      "currency": "USD",
+      "asof": "2026-10-02 11:21 EDT",
+      "source_url": "https://stockanalysis.com/stocks/msft/financials/",
+      "verified": true,
+      "note": "直接浏览器读取单一供应商盘中价，非收盘价；图片9月30日512.90美元未经验证；普通股口径。"
+    },
+    "financial_period": "FY2026及Q4，截至2026-06-30",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 456,
+      "buy_high": 494,
+      "currency": "USD",
+      "basis": "研究假设未来12个月正常化EPS19美元×24—26倍PE=456—494美元；以经营利润增长约15%、20%税率校准，剔除投资重估且保留SBC。",
+      "conditions": "Azure及办公续费保持，Copilot消耗收入覆盖推理成本，包括租赁的资本投入回报未恶化；不是价格触及即买。",
+      "holder_action": "基本面保持可观察持有；新增资金等安全边际，持续毛利下滑或RPO转化失败时重估。"
+    },
+    "thesis": "企业工作流分销优势使微软能同时卖AI工具和基础设施，但必须用包含租赁的现金回报验证成长。",
+    "key_risk": "机房租赁重分类、GPU资本密度及投资重估可能令EPS改善快于真实所有者现金收益。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情仅一个供应商盘中快照。",
+      "未完整核验未起租合同付款表及最新管理层持股。",
+      "正常化EPS、增长率及倍数均为研究假设；历史年份并非逐项双源核验。"
+    ],
+    "report_file": "MSFT研究报告-20261002.md"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com, Inc.",
+    "sector": "电商广告与云计算",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 250.64,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/amzn/financials/",
+      "verified": true,
+      "note": "浏览器直接读取单站盘中价，非收盘；图片249.15美元未经验证。股价与EPS使用2022年20拆1后的普通股口径。"
+    },
+    "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 176,
+      "buy_high": 208,
+      "currency": "USD",
+      "basis": "前瞻正常化EPS8美元×22—26倍=176—208美元；校准经营利润1100亿美元、税率20%、稀释股109亿，剔除股权重估且保留SBC。",
+      "conditions": "AWS和广告增长兑现、租赁后现金缺口收窄，资本开支与稀释没有持续失控。",
+      "holder_action": "可在核心运营保持时观察持有，新增资金等安全边际；AWS利润率与现金回报同步恶化时重估。"
+    },
+    "thesis": "物流交易网络支撑广告与零售、AWS贡献主要利润，但重估收益和巨额AI投入必须从经营回报中分离。",
+    "key_risk": "AI资本开支和租赁刚性可能使AWS收入增长不能转化为股东现金，同时投资重估美化EPS。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情仅单一供应商盘中快照。",
+      "未核验后续全年资本支出上调的完整发行人电话会，不将搜索摘要作为已证实指引。",
+      "完整租赁承诺与到期表、管理层持股未逐项复核；估值参数为假设。"
+    ],
+    "report_file": "AMZN研究报告-20261002.md"
+  },
+  {
+    "ticker": "GOOGL",
+    "company": "Alphabet Inc.",
+    "sector": "搜索广告与云计算",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 342.1,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/googl/financials/",
+      "verified": true,
+      "note": "直接读取单站盘中价，非收盘；A类普通股，2022年20拆1后口径；用户图片344.08美元未经验证。"
+    },
+    "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 240,
+      "buy_high": 276,
+      "currency": "USD",
+      "basis": "研究正常化前瞻EPS12美元×20—23倍=240—276美元；经营利润1850亿美元×80%减优先股等10亿美元，再除123亿股约11.95美元。",
+      "conditions": "AI搜索商业变现和贡献利润保持，Cloud扣共享AI成本后回报提高，新增融资与稀释受控。",
+      "holder_action": "可跟踪持有但不因巨额未实现投资收益追加；若搜索单位利润恶化或稀释破坏EPS，重新估值。"
+    },
+    "thesis": "搜索现金和云能力具备优势，但AI答案对广告点击的蚕食与资本成本决定最终每股价值。",
+    "key_risk": "搜索查询增长未必抵消点击变现下降和推理成本，且融资稀释与投资重估使表面EPS失真。",
+    "confidence": "中",
+    "source_limitations": [
+      "报价只有单一供应商盘中快照。",
+      "未完整复核最新监管案件、全部租赁付款和更新版年度CapEx指引。",
+      "正常化盈利、股数和增长是研究假设，强制可转优先股可能追加稀释。"
+    ],
+    "report_file": "GOOGL研究报告-20261002.md"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms, Inc.",
+    "sector": "社交广告与人工智能",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 730.89,
+      "currency": "USD",
+      "asof": "2026-10-02 11:21 EDT",
+      "source_url": "https://stockanalysis.com/stocks/meta/financials/",
+      "verified": true,
+      "note": "直接读取单站盘中价，非收盘；用户图片725.18美元未经验证，未采用未经证实的拆股调整。"
+    },
+    "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 640,
+      "buy_high": 704,
+      "currency": "USD",
+      "basis": "正常化前瞻EPS32美元×20—22倍=640—704美元；收入2750亿美元×含SBC经营利润率36%×84%除26亿股约31.98美元。",
+      "conditions": "广告ROI与活跃质量保持，费用纪律恢复，租赁后自由现金回收改善，32美元盈利假设兑现。",
+      "holder_action": "基本面保持可观察持有；新增资金等区间及现金回报证据，CapEx反复上调无收益或广告质量恶化时重估。"
+    },
+    "thesis": "AI可提高广告转化，但是否增加每股价值取决于研发、SBC、机房和Reality Labs补贴之后的现金回报。",
+    "key_risk": "广告业务赚来的现金被持续扩大的AI资本承诺和亏损项目消耗，EPS恢复未必带来FCF恢复。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情仅单站盘中快照，当前股本为第三方约数。",
+      "未完整复核未起租机房和采购承诺、最新控制权比例。",
+      "EPS32美元及情景参数为研究假设，不是公司指引；历史年份未逐项双源认证。"
+    ],
+    "report_file": "META研究报告-20261002.md"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corporation",
+    "sector": "企业软件与AI云基础设施",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 141.08,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/orcl/financials/",
+      "verified": true,
+      "note": "单站盘中价非收盘，图片137.30美元未验证。两处拆股历史均显示最后拆股2000-10-13；未找到2026拆股证据，不自行调整图片或EPS。200亿美元ATM是增发，不是拆股。"
+    },
+    "financial_period": "FY2027 Q1，截至2026-08-31；全年基准FY2026",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 104,
+      "buy_high": 123.5,
+      "currency": "USD",
+      "basis": "研究正常化前瞻EPS6.50美元×16—19倍=104—123.50美元；从公司非GAAP8.10美元指引扣约1.60美元SBC等经常性经济成本缓冲。",
+      "conditions": "RPO按期转收入和现金，资本需求及稀释不超过计划，排除重大融资预付款后的现金回报改善。",
+      "holder_action": "跟踪RPO转化、现金预收、租赁债务及股本；若再融资或交付失控重估，不以订单总额机械加仓。"
+    },
+    "thesis": "数据库与应用黏性提供基础，但巨额AI合同只有在交付、融资与资本回报兑现后才形成普通股价值。",
+    "key_risk": "RPO转换需要高资本投入，客户融资型预付款美化当期现金，债务利息与增发可能侵蚀每股收益。",
+    "confidence": "中",
+    "source_limitations": [
+      "报价与当前股数为单站盘中快照及约数。",
+      "全部未起租合同、客户信用条款及租赁重分类未完整复核。",
+      "第三方FY2026经营利润与发行人GAAP相差8.63%，只采用发行人值，不盲目平均。",
+      "正常化EPS6.50美元是研究桥接，不是GAAP指引。"
+    ],
+    "report_file": "ORCL研究报告-20261002.md"
+  },
+  {
+    "ticker": "IBM",
+    "company": "International Business Machines Corporation",
+    "sector": "企业软件与IT咨询",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 222.5,
+      "currency": "USD",
+      "asof": "2026-10-02 11:20 EDT",
+      "source_url": "https://stockanalysis.com/stocks/ibm/financials/",
+      "verified": true,
+      "note": "直接读取单站盘中价，非收盘；用户图片219.93美元未验证，普通股口径，未采用未经证实拆股调整。"
+    },
+    "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 175,
+      "buy_high": 200,
+      "currency": "USD",
+      "basis": "研究正常化前瞻经营性EPS12.50美元×14—16倍=175—200美元；收入720亿美元×税前利润率19.5%×85%除9.55亿稀释股校准；正常化现金115亿美元另作保守交叉检验。",
+      "conditions": "软件有机增长可验证，咨询毛利与收入同步改善，现金扣收购后足以支持降债和股息。",
+      "holder_action": "收入型持有者可跟踪持有，结合净债务、收购及股息覆盖；增长或现金目标再次下修时重估。"
+    },
+    "thesis": "企业核心系统黏性与软件组合支持现金，但咨询、主机周期和收购质量决定是否值得软件估值。",
+    "key_risk": "收购驱动的表面增长及经调整现金口径可能掩盖低有机增长、高净债务和咨询受AI压价的风险。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情与当前股数仅单站快照。",
+      "未完整拆分收购有机增长、养老金附注及最新管理层持股。",
+      "正常化EPS和现金折让均为研究假设；官方FCF与简单经营现金减资本支出不同。"
+    ],
+    "report_file": "IBM研究报告-20261002.md"
+  },
+  {
+    "ticker": "PLTR",
+    "company": "Palantir Technologies Inc.",
+    "sector": "企业AI与数据运营软件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 187.05,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/PLTR?range=1mo&interval=1d",
+      "verified": true,
+      "note": "Yahoo与StockAnalysis历史表同日收盘均与用户截图一致；两站底层行情供应链未独立核查，不是10月2日实时价。"
+    },
+    "financial_period": "2026Q2 ended 2026-06-30; 10-Q filed 2026-08-04",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": 74.83,
+      "buy_high": 87.51,
+      "currency": "USD",
+      "basis": "2026收入指引中点81.54亿美元×1.35^3×35%正常所有者现金利润率÷25.70亿稀释股×45倍=三年终值122.94743美元；分别按18%及12%折现三年得74.83—87.51美元。SBC已作为经济成本扣除，不重复另加同源稀释。",
+      "conditions": "价格进入区间仍须验证商业增长、正常税后现金利润率35%及股数约束；不得把可取消合同和调整后FCF当股东利润。",
+      "holder_action": "评估能否承受估值大幅压缩；若持有逻辑无法支持十年高增长，考虑降低过度暴露，不因下跌自动加仓。"
+    },
+    "thesis": "AIP工作流落地与转换成本真实增强，但187.05美元隐含的长期增长远超普通高增长软件假设。",
+    "key_risk": "即使经营继续高速增长，税率正常化、SBC成本和退出倍数下降仍可能造成严重股价损失。",
+    "confidence": "中",
+    "source_limitations": [
+      "Yahoo与StockAnalysis行情已双站核对，但底层行情供应链未独立核查；市值采用6月末股数估算。",
+      "Macrotrends返回403；已通过requests补足StockAnalysis完整表格，与SEC及Yahoo交叉验证。",
+      "未核实最新管理层经济权益及投票权比例、独立客户续约定价和历史估值分位。",
+      "公司92亿美元现金及国债口径与94.09099亿美元现金加流动证券不同，不混用。"
+    ],
+    "report_file": "PLTR研究报告-20261002.md"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce, Inc.",
+    "sector": "企业客户关系与AI工作流软件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 229.57,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?range=1mo&interval=1d",
+      "verified": true,
+      "note": "Yahoo与StockAnalysis历史表同日close均与用户截图一致；两站底层行情供应链未独立核查，非10月2日实时价。"
+    },
+    "financial_period": "FY2027 Q2 ended 2026-07-31; 10-Q filed 2026-08-27",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 176.2,
+      "buy_high": 201.34,
+      "currency": "USD",
+      "basis": "采用扣SBC及利息后的正常所有者现金收益12.50美元/股，三年增长6%、退出18倍得267.9786美元；以15%和10%折现三年得176.20—201.34美元。不是GAAP或公司调整EPS。",
+      "conditions": "有机收入与AI货币化维持、扣SBC现金盈利不下修，净债务不因持续借债回购扩大。",
+      "holder_action": "围绕有机收入和债务观察；排除本季大额投资收益后再评估盈利，不凭表面低PE加仓。"
+    },
+    "thesis": "客户数据与流程锁定具有价值，但AI席位替代和负债回购使合理价格比转型叙事更重要。",
+    "key_risk": "新增AI消费不能覆盖席位下降，同时并购和借债回购掩盖核心增长与现金收益疲弱。",
+    "confidence": "中",
+    "source_limitations": [
+      "行情已通过Yahoo和StockAnalysis双站核对，底层供应链未独立核查；市值采用已公布股数估算。",
+      "Macrotrends不可访问；已读取StockAnalysis完整表格，与SEC和Yahoo交叉验证，债务差异按经营及融资租赁调节。",
+      "未系统复核9月投资者日和新并购交割后的条款。",
+      "Agentforce ARR本季扩展定义；独立毛利、客户续约价格及管理层持股比例未核实。"
+    ],
+    "report_file": "CRM研究报告-20261002.md"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow, Inc.",
+    "sector": "企业工作流与AI自动化软件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 134.01,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NOW?range=1mo&interval=1d",
+      "verified": true,
+      "note": "Yahoo及StockAnalysis同日close均与用户截图一致；已核实2025年1拆5、12月18日拆后交易，价格/EPS/股数均拆后。两站底层行情供应链未独立核查。"
+    },
+    "financial_period": "2026Q2 ended 2026-06-30; 10-Q filed 2026-07-23",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 92.37,
+      "buy_high": 105.54,
+      "currency": "USD",
+      "basis": "正常所有者现金收益2.85美元/拆后股（调整FCF扣SBC和现金调整缓冲），增长18%三年、退出30倍得140.479236美元；按15%和10%折现三年得92.37—105.54美元。",
+      "conditions": "有机cRPO、AI毛利与扣SBC现金收益保持，收购整合和75.17亿美元有息债务受控；需复核现金调整缓冲。",
+      "holder_action": "监控有机合同增长、AI成本和稀释；勿因拆后股价数字低或调整FCF倍数看似便宜而加仓。"
+    },
+    "thesis": "企业执行流程与治理形成较强转换成本，但现价已要求显著增长且SBC与并购削弱可分配现金。",
+    "key_risk": "AI减少席位并抬高推理成本，大型并购和短债融资使调整FCF高于真正股东经济现金。",
+    "confidence": "中",
+    "source_limitations": [
+      "Yahoo及StockAnalysis行情已双站核对但底层供应链未独立核查，市值采用6月末股数估算。",
+      "Macrotrends访问受限；已取得StockAnalysis完整表格，与SEC和Yahoo复核，FCF差异按无形资产购置范围解释。",
+      "未获得产品级AI毛利、续约折扣、独立客户访谈及最新管理层持股比例。",
+      "公司35%指引是调整FCF率；正常收益模型含研究假设，现金并购调整缓冲可能不足。"
+    ],
+    "report_file": "NOW研究报告-20261002.md"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "sector": "创意设计、文档与数字体验软件",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 239.94,
+      "currency": "USD",
+      "asof": "2026-09-30 regular-session close",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?range=1mo&interval=1d",
+      "verified": true,
+      "note": "Yahoo及StockAnalysis历史表同日close均与用户截图一致；两站底层行情供应链未独立核查，非10月2日实时价。"
+    },
+    "financial_period": "FY2026 Q3 ended 2026-08-28; 10-Q filed 2026-09-22",
+    "recommendation": {
+      "rating": "条件买入",
+      "buy_low": 219.21,
+      "buy_high": 250.49,
+      "currency": "USD",
+      "basis": "以FY2026 GAAP EPS指引18.12—18.17美元为锚、正常基数取18美元，三年增长5%、退出16倍得333.396美元；按15%和10%折现三年得219.21—250.49美元。",
+      "conditions": "付费用户、ARR与客户群增长稳定，正常GAAP盈利18美元基数仍有效；AI投入未造成结构性利润衰退，管理层交接可控。",
+      "holder_action": "基本面稳定可继续观察持有；价格在区间且盈利兑现才考虑加仓，用户迁移和盈利下修时撤销原买带。"
+    },
+    "thesis": "专业创作与文档工作流仍有现金价值，现价不要求爆炸性增长，但AI用户迁移决定它是折价机会还是价值陷阱。",
+    "key_risk": "既有订阅、涨价与回购短期保护EPS，却掩盖新增创作者转向低价AI工具导致的长期盈利衰退。",
+    "confidence": "中",
+    "source_limitations": [
+      "Yahoo及StockAnalysis行情已双站核对，但底层供应链未独立核查；市值采用SEC9月18日股数估算。",
+      "Macrotrends仍受限；StockAnalysis完整原表已读取，其现金合计与债务分类小差异明确披露，采用SEC而非平均。",
+      "Yahoo Q3股数与SEC差约2.05%，疑似滞后；采用SEC，不平均；供应商财年日期也以SEC校正。",
+      "缺少独立用户迁移、Firefly利润和价格弹性数据，管理层12月交接尚未完成。"
+    ],
+    "report_file": "ADBE研究报告-20261002.md"
+  },
+  {
+    "ticker": "AAPL",
+    "company": "Apple 苹果",
+    "sector": "消费电子与生态",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 331.35,
+      "currency": "USD",
+      "asof": "2026-10-02 11:19 EDT，盘中",
+      "source_url": "https://stockanalysis.com/stocks/aapl/",
+      "verified": true,
+      "note": "行情单源；图片333.02未独立验证；USD普通股。"
+    },
+    "financial_period": "FY2026Q3，截至2026-06-27",
+    "recommendation": {
+      "rating": "等待价格",
+      "buy_low": 205,
+      "buy_high": 220,
+      "currency": "USD",
+      "basis": "TTM EPS约8.72扣关税退款0.11，取归一化8.60；+9%三年、PE29得322.98，按10%折现为242.66，205-220留约9%-16%额外边际。",
+      "conditions": "归一化盈利与服务现金稳定、生态没有结构性破坏；不将退款与低基数永久化。",
+      "holder_action": "可按生态和现金持有，但评估高估值的集中度与机会成本；EPS基数恶化则下修买区。"
+    },
+    "thesis": "设备入口与服务复购支撑优质现金，但当前价格要求高于基准的长期增长。",
+    "key_risk": "把关税退款和低税务基数带来的EPS增速当成持续增长，忽视估值压缩。",
+    "confidence": "中",
+    "source_limitations": [
+      "实时行情单源；市值以季末实际股数近似。",
+      "较早FY22-23历史部分单源。",
+      "8.60为研究者归一化EPS，不是公司指引；全年FY26结果尚未纳入。"
+    ],
+    "report_file": "AAPL研究报告-20261002.md"
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla 特斯拉",
+    "sector": "汽车储能与自动驾驶",
+    "research_date": "2026-10-02",
+    "quote": {
+      "price": 370.68,
+      "currency": "USD",
+      "asof": "2026-10-02 11:21 EDT，盘中",
+      "source_url": "https://stockanalysis.com/stocks/tsla/",
+      "verified": true,
+      "note": "单源行情；当天已公布Q3交付，但未公布Q3财务；图片354.81未验证。"
+    },
+    "financial_period": "2026Q2财务；2026Q3交付及储能运营已更新",
+    "recommendation": {
+      "rating": "暂不买入",
+      "buy_low": null,
+      "buy_high": null,
+      "currency": "USD",
+      "basis": "2029 EPS1.5/4/9与PE35/55/70的诊断终值52.5/220/630；新业务现金桥接不足，不把基准折现156.59当可信买价。",
+      "conditions": "需汽车和储能可持续盈利、Robotaxi完整单位经济性、capex与稀释证据后重新建模。",
+      "holder_action": "审查新业务风险承受能力，避免杠杆；安全/许可限制、现金消耗和稀释恶化则重估，不机械摊低成本。"
+    },
+    "thesis": "核心业务与高潜力新业务并存，但当前股价主要预付尚未充分财务验证的成功。",
+    "key_risk": "传统利润承压与新业务长期投入同时发生，Robotaxi/机器人兑现延迟或稀释。",
+    "confidence": "低",
+    "source_limitations": [
+      "行情单源。",
+      "新业务缺少可验证分部现金和完整单位经济性，数值买区留空。",
+      "实发、参与分配和EPS加权股数尚未完成全桥接，不给精确实时市值。",
+      "IR交付页403，采用8-K镜像与CNBC交叉；Q3完整财务尚未发布。"
+    ],
+    "report_file": "TSLA研究报告-20261002.md"
+  }
+]

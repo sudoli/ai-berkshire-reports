@@ -1,0 +1,43 @@
+{
+  "ticker": "VRT",
+  "price": "251.45",
+  "image_price": "241.31",
+  "metric_2026": "6.4",
+  "market_cap": "96805276100.85",
+  "image_difference_pct": "4.202063735444034644233558500",
+  "valuation_multiple": "39.2890625",
+  "dividend_yield_pct": "0.09942334460131238814873732352",
+  "band": [
+    "166.4",
+    "192.0"
+  ],
+  "scenario": [
+    {
+      "growth": "0",
+      "multiple": "20",
+      "metric_2029": "6.4",
+      "target": "128.0",
+      "return_pct": "-49.09524756412805726784649036",
+      "annual_return_pct": "-20.15407130709278610681565384"
+    },
+    {
+      "growth": "0.18",
+      "multiple": "30",
+      "metric_2029": "10.5154048",
+      "target": "315.4621440",
+      "return_pct": "25.45720580632332471664346790",
+      "annual_return_pct": "7.852910705908982206527334600"
+    },
+    {
+      "growth": "0.28",
+      "multiple": "38",
+      "metric_2029": "13.4217728",
+      "target": "510.0273664",
+      "return_pct": "102.8345064227480612447802744",
+      "annual_return_pct": "26.58452410031572374896957840"
+    }
+  ],
+  "base_discounted_at_10_pct": "237.0113779113448534936138242",
+  "tool_output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       251.45 USD\n  总股本 (Shares):    384.99M\n  计算市值:           96.81B USD\n  报告市值:           96.66B USD\n  偏差:               0.15%\n\n  ✅ 验证通过, 偏差仅 0.15%\n============================================================\n交叉验证: 2025 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 10,229.95 USD million\n\n  ✅ SEC_or_issuer       : 10,229.90 USD million  (偏差 0.00%)\n  ✅ StockAnalysis       : 10,230.00 USD million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 10,229.95 USD million\n============================================================\n交叉验证: 2025 common net income (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,332.90 USD million\n\n  ✅ SEC_or_issuer       : 1,332.80 USD million  (偏差 0.01%)\n  ✅ StockAnalysis       : 1,333.00 USD million  (偏差 0.01%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 1,332.90 USD million\n============================================================\n交叉验证: cash-basis check (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 3,110.80 USD million\n\n  ✅ SEC_or_issuer       : 3,110.60 USD million  (偏差 0.01%)\n  ✅ StockAnalysis       : 3,111.00 USD million  (偏差 0.01%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 3,110.80 USD million\n============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 251.45\n\n  PE (TTM):  251.45 / 6.4 = 39.29x\n  盈利收益率: 2.55%\n  股息率:    0.25 / 251.45 = 0.10%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+  "caveat": "REIT metric is normalized AFFO/share, VST normalized FCFbG-derived owner cash/share, not GAAP EPS or textbook FCF. Cash checks flagged where definitions differ."
+}

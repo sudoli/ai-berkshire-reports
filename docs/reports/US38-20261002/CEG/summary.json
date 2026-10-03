@@ -1,0 +1,14 @@
+{
+  "ticker": "CEG",
+  "company": "Constellation Energy 星座能源",
+  "sector": "电力与能源",
+  "research_date": "2026-10-02",
+  "quote": {"price": 256.65, "currency": "USD", "asof": "2026-10-02 10:40 EDT，盘中", "source_url": "https://stockanalysis.com/stocks/ceg/", "verified": true, "note": "复用先前核实的盘中快照，单一行情源；不是图片9/30的254.02，非收盘价。"},
+  "financial_period": "2026Q2/H1，截至2026-06-30；事件核实至2026-09-30",
+  "recommendation": {"rating": "等待价格", "buy_low": 220, "buy_high": 240, "currency": "USD", "basis": "FY26调整后EPS中点12，三年+10%与终值PE22得351.384；按10%折现为264，220-240留约9%-17%边际。", "conditions": "核电可靠运行、长期合同兑现、Calpine整合和降杠杆路径没有破坏，核燃料与维护投入完整计入。", "holder_action": "可按合同与现金质量持有观察；新增资金不追价，项目/监管/债务失控或盈利中枢下移则重估。"},
+  "thesis": "稀缺核电资产正在转化为长期合同，但Calpine并购增加了债务和组合复杂度。",
+  "key_risk": "高杠杆叠加项目延迟、电价与政策风险；合同总MW不等于新增发电或现金。",
+  "confidence": "中",
+  "source_limitations": ["单一可读行情源，精确股数另经公司与SEC核实。", "长期PPA关键价格和资本分担条款未公开。", "历史经营现金流受DPP分类变更影响，不能直接跨年外推。"],
+  "report_file": "CEG研究报告-20261002.md"
+}

@@ -1,0 +1,14 @@
+{
+  "ticker": "DELL",
+  "company": "Dell Technologies 戴尔科技",
+  "sector": "服务器与企业硬件",
+  "research_date": "2026-10-02",
+  "quote": {"price": 559.90, "currency": "USD", "asof": "2026-10-02 11:19 EDT，盘中", "source_url": "https://stockanalysis.com/stocks/dell/", "verified": true, "note": "单一可读行情源；不是收盘价，图片537.95未独立验证。"},
+  "financial_period": "FY2027Q2，截至2026-07-31",
+  "recommendation": {"rating": "等待价格", "buy_low": 390, "buy_high": 435, "currency": "USD", "basis": "FY27调整后EPS25.50，未来三年+12%与终值PE18得644.86；按10%折现为484.49，再扣约10%-20%安全边际取390-435。", "conditions": "EPS兑现、ISG毛利稳定、订单转为现金，且完整解释adjusted FCF与实际现金流差异。", "holder_action": "按现金兑现和债务持有；订单取消、信用损失或盈利中枢下修则重估，不因到价自动加仓。"},
+  "thesis": "AI系统集成需求旺盛，但硬件利润、营运资本和融资质量比订单总额更决定股东回报。",
+  "key_risk": "把快速上修的硬件周期利润当永久平台利润，忽略adjusted FCF与现金流缺口。",
+  "confidence": "中",
+  "source_limitations": ["行情仅单源带时间快照。", "未逐项完成adjusted FCF融资与现金桥接。", "数据商营业利润与原始公告重大差异，采用发行人口径；较早历史财务部分单源。", "市值使用季末近似总股数，并非实时登记股本。"],
+  "report_file": "DELL研究报告-20261002.md"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "DLR",
+  "company": "Digital Realty Trust, Inc.",
+  "sector": "批发、托管与互联数据中心REIT",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 177.5,
+    "currency": "USD",
+    "asof": "2026-10-02 11:20 EDT",
+    "source_url": "https://stockanalysis.com/stocks/dlr/financials/",
+    "verified": true,
+    "note": "单平台直接核实盘中价，非收盘；9月30日图片175.53美元未经验证。无列示拆股；普通股和包含经营单位的AFFO分母不同。"
+  },
+  "financial_period": "2026年第二季度，截至2026-06-30；2026-07-23发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 136,
+    "buy_high": 149.6,
+    "currency": "USD",
+    "basis": "Core FFO/股中点8.175减4.125亿美元维护资本/假设3.80亿股、减1.475亿美元非现金租金/3.80亿股，加研究净调整0.10，得约6.80美元AFFO/股；×20至22倍=136至149.60美元。",
+    "conditions": "剔除promote及保险后的经常性每股现金可支持6.80美元，维护资本真实，开租与融资兑现；新增股数和合资债务变化须重算。",
+    "holder_action": "继续核对分红覆盖、实际开租和每股稀释；若总量增长不转为每股现金、杠杆上升或低价增发支持低回报项目，应考虑减持而非机械补仓。"
+  },
+  "thesis": "电力接入和开发平台有价值，但大额增长资本、合资分成及增发使每股现金比签约总量更重要。",
+  "key_risk": "一次性开发收益夸大FFO，电力/建设延误与昂贵融资让增长及分红同时承压。",
+  "confidence": "中",
+  "source_limitations": ["单平台盘中行情；普通股与经营单位分母及市值存在时间和口径差异。", "SEC接口二季度标签不完整，采用公司完整当季公告；2023年AFFO未逐项核实。", "现金与Cash & Investments差异1.05%保留；3.80亿预测分母和其他AFFO调整为研究假设。"],
+  "report_file": "DLR研究报告-20261002.md"
+}

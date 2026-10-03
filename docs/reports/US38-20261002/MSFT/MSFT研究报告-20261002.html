@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="企业工作流分销优势使微软能同时卖AI工具和基础设施，但必须用包含租赁的现金回报验证成长。"><meta name="source-sha256" content="e9d3eab705081d94d216bfc5bfc613cd6cac97949e9075e2723575ff93600a54">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>微软（MSFT）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="MSFT%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / MSFT / 2026-10-02</div>
+<h1>Microsoft Corporation<span>企业软件与云计算 · 公司研究</span></h1><p class="hero-deck">企业工作流分销优势使微软能同时卖AI工具和基础设施，但必须用包含租赁的现金回报验证成长。</p>
+<div class="hero-meta"><span>FY2026及Q4，截至2026-06-30</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$514.95<small>2026-10-02 11:21 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">直接浏览器读取单一供应商盘中价，非收盘价；图片9月30日512.90美元未经验证；普通股口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">一、信息质量与经营地图</a></li><li><a href="#section-2">二、四年财务：利润增长不等于现金增长</a></li><li><a href="#section-3">三、Azure真正的经济问题</a></li><li><a href="#section-4">四、护城河、资本配置与最强反方</a></li><li><a href="#section-5">五、估值：先正常化，再谈成长</a></li><li><a href="#section-6">六、最终行动</a></li><li><a href="#section-7">来源与核验记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">一、信息质量与经营地图</a></li><li><a href="#section-2">二、四年财务：利润增长不等于现金增长</a></li><li><a href="#section-3">三、Azure真正的经济问题</a></li><li><a href="#section-4">四、护城河、资本配置与最强反方</a></li><li><a href="#section-5">五、估值：先正常化，再谈成长</a></li><li><a href="#section-6">六、最终行动</a></li><li><a href="#section-7">来源与核验记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>微软（MSFT）研究报告</h1>
+<blockquote>
+<p>研究日及信息截止：2026-10-02。价格：514.95美元，StockAnalysis于2026-10-02 11:21 EDT显示的盘中价，<strong>不是收盘价</strong>；单一行情提供商，未获第二报价源确认。用户图片标注9月30日512.90美元，未经独立核实；本次行情高0.40%。最新已核财期：截至2026-06-30的FY2026及第四季度。按期末74.27亿股估算市值3.825万亿美元；对本文19美元前瞻正常化EPS约27.10倍。</p>
+</blockquote>
+<p><strong>核心命题：微软把企业已有的身份、办公、开发和数据库工作流变成AI的分销渠道，但股东回报取决于租赁和折旧之后的现金，而不只取决于Azure收入。</strong></p>
+<h2 id="section-1">一、信息质量与经营地图</h2>
+<p>信息丰富度A级，财务资料充分，最容易犯的错误是把“客户离不开微软”推导成“任何价格都值得买”。本报告直接阅读公司业绩、电话会及第三方财务表，不把搜索摘要作为财报证据。没有完成全部租赁承诺、模型客户合同及最新代理声明的逐条复核。</p>
+<div aria-label="一、信息质量与经营地图" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">FY2026第四季度分部</th>
+<th scope="col" style="text-align: right;">收入，十亿美元</th>
+<th scope="col" style="text-align: right;">收入变化</th>
+<th scope="col">收钱方式及利润机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Productivity and Business Processes</td>
+<td style="text-align: right;">37.847</td>
+<td style="text-align: right;">+14%</td>
+<td>Microsoft 365按席位订阅，Copilot增加席位及用量付费；另有LinkedIn、Dynamics</td>
+</tr>
+<tr>
+<td>Intelligent Cloud</td>
+<td style="text-align: right;">39.306</td>
+<td style="text-align: right;">+32%</td>
+<td>Azure算力、存储及数据库按消耗收费，另含服务器产品；不是纯Azure分部</td>
+</tr>
+<tr>
+<td>More Personal Computing</td>
+<td style="text-align: right;">12.854</td>
+<td style="text-align: right;">-4%</td>
+<td>Windows OEM授权、设备、Xbox内容和搜索广告</td>
+</tr>
+</tbody>
+</table></div>
+<p>电话会披露季度经营利润率分别约58%、41%、21%。Azure及其他云服务收入增长43%，全年Azure收入超过1,000亿美元。Microsoft Cloud是跨分部指标，季度593亿美元，不能再加到上述收入。Copilot付费席位超过3,000万，不等于所有席位均按公开标价付费，更不等于独立披露的AI利润。</p>
+<p>微软面对企业IT部门、开发者和知识工作者：采购、权限、安全和数据留在同一体系，迁移成本高；但若代理减少员工数量，传统按人头计费会受压。公司已转向“席位+消耗”，必须观察新增用量收入能否超过席位萎缩与推理成本。</p>
+<h2 id="section-2">二、四年财务：利润增长不等于现金增长</h2>
+<p>单位：十亿美元；财年6月结束。历史表来自StockAnalysis，FY2026及FY2025与公司最新业绩比较表核对。</p>
+<div aria-label="二、四年财务：利润增长不等于现金增长" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">收入</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+<th scope="col" style="text-align: right;">现金购置固定资产</th>
+<th scope="col" style="text-align: right;">简式FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">211.915</td>
+<td style="text-align: right;">72.361</td>
+<td style="text-align: right;">87.582</td>
+<td style="text-align: right;">28.107</td>
+<td style="text-align: right;">59.475</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">245.122</td>
+<td style="text-align: right;">88.136</td>
+<td style="text-align: right;">118.548</td>
+<td style="text-align: right;">44.477</td>
+<td style="text-align: right;">74.071</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">281.724</td>
+<td style="text-align: right;">101.832</td>
+<td style="text-align: right;">136.162</td>
+<td style="text-align: right;">64.551</td>
+<td style="text-align: right;">71.611</td>
+</tr>
+<tr>
+<td>2026</td>
+<td style="text-align: right;">331.839</td>
+<td style="text-align: right;">133.749</td>
+<td style="text-align: right;">182.935</td>
+<td style="text-align: right;">115.948</td>
+<td style="text-align: right;">66.987</td>
+</tr>
+</tbody>
+</table></div>
+<p>简式FCF=经营现金流−现金资本支出，<strong>不代表已扣全部融资租赁本金或所有未来机房承诺</strong>。FY2026收入增长17.79%，简式FCF反而下降6.46%。GAAP EPS为17.95美元；仅剔除OpenAI投资影响的公司调整EPS为17.28美元，仍包含Anthropic投资等离散项目，不能称为完全经常性盈利。第四季度公司明确说明其他离散项目合计相对原指引带来每股0.27美元净收益。</p>
+<p>全年SBC为124.05亿美元，现金流表加回不表示没有股东成本；回购222.71亿美元也不能全部算每股价值创造，部分抵销薪酬稀释。6月底现金及短期投资768.43亿美元，短期到期债务与长期借款合计402.94亿美元；若只看这两项，公司有365.49亿美元净现金。StockAnalysis含租赁的广义债务为1,288.13亿美元，换成这一口径则为519.70亿美元净负债。两者并不矛盾，禁止只展示较好看的前一种。</p>
+<h2 id="section-3">三、Azure真正的经济问题</h2>
+<p>机房、电力接入、网络、客户数据与企业合规形成规模优势；AWS和Google Cloud仍会以自研芯片及价格性能竞争。AI算力收入增长快，但GPU更新周期短、利用率不稳定，租给模型公司的低毛利算力可能稀释传统软件盈利质量。公司云季度毛利率65%，低于上年；Intelligent Cloud的41%经营利润率也不是可直接套用的Azure独立利润率。</p>
+<p>第四季度资本开支410亿美元，其中融资租赁56亿美元，现金PP&amp;E为358亿美元，约三分之二投入短寿命CPU/GPU资产。管理层预计FY2027第一季度资本开支超过500亿美元。更值得警惕的是：FY2027起机房及办公楼预计使用寿命由15年延长至25年，会使更多新机房合同归为经营租赁，后者不计入公司该口径资本开支；调整后2026日历年CapEx预期约1,750亿美元。<strong>会计分类下降不是经济承诺下降，建筑寿命变化也不能套用为GPU寿命延长。</strong></p>
+<p>商业RPO为6,780亿美元，平均期限2.3年，约30%在未来12个月确认；不含OpenAI的RPO增长25%。这是合同未来收入，不是现金利润。需同时追踪外部模型客户集中度、交付日期、租赁付款及AI实际消耗，而不是将全部RPO乘软件净利率。</p>
+<h2 id="section-4">四、护城河、资本配置与最强反方</h2>
+<p>微软最强的壁垒是企业转换成本和分销，不是永远最强的模型。多模型平台可降低单一供应商依赖，自研模型和芯片能减少推理成本；反面是竞争者也获得相同效率提升，降价可能把收益返还客户。</p>
+<p>Nadella团队已把Azure、办公订阅和开发工具协同扩张，资本配置的检验点却从软件研发变成大量不可逆基础设施。Xbox收入下降及减值说明跨领域投资并非全部成功。未复核管理层最新经济持股与投票权，不能据此宣布“完全利益一致”。</p>
+<div aria-label="四、护城河、资本配置与最强反方" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观判断，不是统计概率</th>
+<th scope="col">可观察证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI大客户需求或融资放缓，设备闲置</td>
+<td>中等可能、影响高</td>
+<td>RPO转收入放慢、预付款减少、资本开支仍高</td>
+</tr>
+<tr>
+<td>Copilot是成本增加而非新利润池</td>
+<td>中等可能、影响高</td>
+<td>付费席位上升但办公云毛利持续下降</td>
+</tr>
+<tr>
+<td>代理削减传统席位</td>
+<td>中等可能、影响中高</td>
+<td>席位增量下降且用量收入不能补偿</td>
+</tr>
+<tr>
+<td>安全事故、捆绑销售监管</td>
+<td>难量化、尾部影响高</td>
+<td>大客户迁移、重大罚款或产品解绑</td>
+</tr>
+</tbody>
+</table></div>
+<p>最强空方不是“微软不会增长”，而是持续高增长需要不断投入新资本，折旧滞后使EPS比真实所有者收益更漂亮。最可能的研究错误：把过去轻资产订阅的估值直接套到未来重资产AI。</p>
+<h2 id="section-5">五、估值：先正常化，再谈成长</h2>
+<p>采用未来12个月正常化EPS <strong>19美元的研究假设</strong>，并非公司EPS指引或市场一致预期。校准：FY2026经营利润1552.37亿美元增加约15%，按20%税率、约74.3亿股计算，接近19.2美元；进一步留小幅净利息及其他缓冲取19。SBC保留在经营费用内，排除投资重估收益；资本支出不会直接从EPS扣除，故必须额外设置现金回报门槛。</p>
+<p>三年模型：未来价格=19×(1+EPS年增长率)^3×期末前瞻PE。增长是假设，期末倍数不是事实；不计股息、税、费用和汇率。终值反映三年后的前瞻盈利，不是今天合理价。</p>
+<div aria-label="五、估值：先正常化，再谈成长" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">EPS年增长</th>
+<th scope="col" style="text-align: right;">期末PE</th>
+<th scope="col" style="text-align: right;">三年后价格</th>
+<th scope="col" style="text-align: right;">相对514.95美元价格回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊市：资本回报下降、利润缩减</td>
+<td style="text-align: right;">-3%</td>
+<td style="text-align: right;">20倍</td>
+<td style="text-align: right;">346.82</td>
+<td style="text-align: right;">-32.65%</td>
+</tr>
+<tr>
+<td>基准：云和办公共同增长</td>
+<td style="text-align: right;">+13%</td>
+<td style="text-align: right;">28倍</td>
+<td style="text-align: right;">767.62</td>
+<td style="text-align: right;">+49.07%</td>
+</tr>
+<tr>
+<td>牛市：消耗计费与资本效率皆成功</td>
+<td style="text-align: right;">+18%</td>
+<td style="text-align: right;">34倍</td>
+<td style="text-align: right;">1,061.40</td>
+<td style="text-align: right;">+106.12%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准年化价格收益约14.23%，但其隐含了连续成长和较高终值倍数，并非保证。以同一EPS给出当下24—26倍，即<strong>456—494美元条件研究买入区间</strong>；盈利收益率约3.85%—4.17%，只有中双位数盈利成长且现金转化止跌才有吸引力。与基准终值28倍相比的折价是为租赁及资本密度留出的缓冲。不是历史支撑位，也不声称历史估值分位已验证。</p>
+<h2 id="section-6">六、最终行动</h2>
+<p>评级：<strong>等待价格</strong>。514.95美元盘中价与512.90美元图片价都高于研究买区，不因“AI龙头”追价。</p>
+<ul>
+<li>空仓：等待456—494美元，并复核正常化EPS与资本承诺；价格便宜但订单质量恶化时不执行。</li>
+<li>持有：只要非模型客户需求、办公续费和云利润保持，可观察持有，不因一季CapEx机械卖出；新增资金遵守同一安全边际。</li>
+<li>加仓条件：财务口径可比后，经营现金流增速重新超过包括租赁的投资增速，Copilot消耗收入能覆盖推理成本。</li>
+<li>降低敞口或重估：连续数季Azure明显减速并伴随毛利下降、RPO转化失败，或靠租赁分类变化制造现金改善印象。</li>
+<li>失效条件：19美元盈利基础明显达不到，或固定承诺使自由现金流持续弱于折旧后利润；届时买区同步下调。</li>
+</ul>
+<p>AI研究置信度中高（经营证据充分，完整租赁账本不足）；实际投资确定性中等。好企业不是低风险价格；没有用户风险承受力信息，不提供个人仓位比例。</p>
+<h2 id="section-7">来源与核验记录</h2>
+<ol>
+<li><a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast" rel="noreferrer">微软FY2026 Q4及全年业绩，2026-07-29</a>：财务、分部、现金流及资产负债表。</li>
+<li><a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4" rel="noreferrer">微软FY2026 Q4电话会，2026-07-29</a>：利润率、租赁分类变化、RPO和FY2027指引。</li>
+<li><a href="https://stockanalysis.com/stocks/msft/financials/" rel="noreferrer">StockAnalysis财务表</a>、<a href="https://stockanalysis.com/stocks/msft/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/msft/statistics/" rel="noreferrer">股本及市值</a>，2026-10-02访问。报价取财务页11:21 EDT快照。</li>
+</ol>
+<p>程序交叉核对FY2026收入331,839百万、净利133,749百万、现金及短投76,843百万，两源差异均0%。74.27亿股×514.95=3.8245万亿美元，与第三方3.82万亿近似一致；该股本是6月底时点，不假装为今日实时流通股数。第三方广义债务含租赁，已与发行人借款口径区分。<code>financial_rigor.py</code>和Decimal复算市值、区间和三情景，记录在同目录<code>calculation-audit.json</code>；工具默认“TTM EPS”标签不适用于本文前瞻假设。已运行报告数字提取及发行人/第三方样本核验；估值假设不属于外部事实认证。未独立核验全部历史年份、未取得完整未起租合同付款表。</p></article><footer class="report-footer"><span>MSFT · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

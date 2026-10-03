@@ -1,0 +1,33 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：SMCI
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 营业收入 · FY2024                        报告:     14989.00 
+                                                    https://stockanalysis.com/stocks/smci/financials/income-statement/: 14989.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] GAAP净利润 · FY2026                     报告:      2230.50 
+                                                    https://stockanalysis.com/stocks/smci/financials/income-statement/: 2230.00 (偏差 0.02%)  |  https://data.sec.gov/api/xbrl/companyfacts/CIK0001375365.json: 2230.45 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] GAAP毛利率 · FY2023                     报告:        18.01 %
+                                                    https://stockanalysis.com/stocks/smci/financials/income-statement/: 18.01 (偏差 0.00%)
+  [92m✅ 通过[0m [16] 经营现金流 · FY2026                       报告:     -6809.90 
+                                                    https://stockanalysis.com/stocks/smci/financials/cash-flow-statement/: -6810.00 (偏差 0.00%)  |  https://data.sec.gov/api/xbrl/companyfacts/CIK0001375365.json: -6809.89 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 经营现金流 · FY2025                       报告:      1660.00 
+                                                    https://stockanalysis.com/stocks/smci/financials/cash-flow-statement/: 1660.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 资本开支 · FY2024                        报告:       124.30 
+                                                    https://stockanalysis.com/stocks/smci/financials/cash-flow-statement/: 124.28 (偏差 0.02%)
+  ⬜ [41] 乐观：企业方案放量 · 三年末价格                         110.59   →  [未提供核验值，跳过]
+
+----------------------------------------------------------------------
+  抽检总数: 6  |  通过: [92m6[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 6,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 6,
+  "fail_items": [],
+  "warn_items": []
+}

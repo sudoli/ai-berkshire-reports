@@ -1,0 +1,28 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：D:\repos\SelfProjects\investigation\ai-berkshire\reports\US38-20261002\CRM\CRM研究报告-20261002.md
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 收入 · FY2024                          报告:        34.86 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json: 34.86 (偏差 0.00%)  |  https://stockanalysis.com/stocks/crm/financials/income-statement/: 34.86 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] GAAP净利润 · FY2026                     报告:         7.46 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json: 7.46 (偏差 0.00%)  |  https://stockanalysis.com/stocks/crm/financials/income-statement/: 7.46 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] GAAP净利润 · FY2023                     报告:         0.21 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json: 0.21 (偏差 0.00%)  |  https://stockanalysis.com/stocks/crm/financials/income-statement/: 0.21 (偏差 0.00%)
+  [92m✅ 通过[0m [18] FCF · FY2024                         报告:         9.50 
+                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json: 9.50 (偏差 0.00%)  |  https://stockanalysis.com/stocks/crm/financials/cash-flow-statement/: 9.50 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 4  |  通过: [92m4[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 4,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 4,
+  "fail_items": [],
+  "warn_items": []
+}

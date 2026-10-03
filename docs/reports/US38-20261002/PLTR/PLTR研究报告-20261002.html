@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AIP工作流落地与转换成本真实增强，但187.05美元隐含的长期增长远超普通高增长软件假设。"><meta name="source-sha256" content="13c4e492961d3074f38e13bfcaa48c8de28d805d8551c51873174a64edcfb5f3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Palantir（PLTR）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="PLTR%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / PLTR / 2026-10-02</div>
+<h1>Palantir Technologies Inc.<span>企业AI与数据运营软件 · 公司研究</span></h1><p class="hero-deck">AIP工作流落地与转换成本真实增强，但187.05美元隐含的长期增长远超普通高增长软件假设。</p>
+<div class="hero-meta"><span>2026Q2 ended 2026-06-30; 10-Q filed 2026-08-04</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$187.05<small>2026-09-30 regular-session close<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>暂不买入<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">Yahoo与StockAnalysis历史表同日收盘均与用户截图一致；两站底层行情供应链未独立核查，不是10月2日实时价。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：核心数据与赚钱方式</a></li><li><a href="#section-3">第二步：护城河与AI价值归属</a></li><li><a href="#section-4">第三步：管理层、反面论证与失效条件</a></li><li><a href="#section-5">第四步：估值、反向检验与买入区间</a></li><li><a href="#section-6">第五步：最终行动</a></li><li><a href="#section-7">数据来源与审计记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：核心数据与赚钱方式</a></li><li><a href="#section-3">第二步：护城河与AI价值归属</a></li><li><a href="#section-4">第三步：管理层、反面论证与失效条件</a></li><li><a href="#section-5">第四步：估值、反向检验与买入区间</a></li><li><a href="#section-6">第五步：最终行动</a></li><li><a href="#section-7">数据来源与审计记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Palantir（PLTR）研究报告</h1>
+<p><strong>研究日及信息截止：2026-10-02。</strong> 分析价格为2026-09-30美股常规交易收盘 <strong>187.05美元</strong>：用户截图最初未经验证，本次与Yahoo Finance日线API、StockAnalysis历史表同日close核对一致；两站底层行情供应链未独立核查，不代表10月2日实时成交价。最新已核实财务为2026年第二季度，公告2026-08-03、10-Q提交2026-08-04。</p>
+<p>以6月末普通股24.02897亿股估算权益市值4,494.62亿美元；这是旧股数乘指定日期价格，不是第二来源核实的即时市值。2026年收入指引中点81.54亿美元对应约55.12倍市销率。<strong>核心判断：企业AI落地能力正在兑现，但买价要求这种卓越持续得远比一轮产品周期更久。</strong></p>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级；AI分析置信度中。最容易犯的错误是把增长93%、客户案例和宏大叙事相互强化，误当成估值不需要约束。已区分公司事实、管理层目标和研究假设；不把合同总额当收入，不把GAAP低税率当永久状态。缺少独立客户访谈、按产品毛利及可靠历史估值分位，不能证明所谓“唯一平台”。</p>
+<h2 id="section-2">第一步：核心数据与赚钱方式</h2>
+<p>Palantir向政府、军工及大型企业出售连接数据、权限和实际决策的操作软件。Gotham偏政府分析，Foundry连接商业运营，Apollo负责部署管理，AIP把模型接入组织的业务对象、审批和执行流程。客户为持续可用、可审计的业务系统付费，而不是仅购买聊天界面。实施、扩展工作流与长期软件合同构成收入，工程与销售人员是主要投入，硬件资本开支较低。</p>
+<p>历史表单位为十亿美元，利润为归普通股股东GAAP净利润；FCF统一为经营现金流减购置固定资产，不是公司“调整后FCF”。</p>
+<div aria-label="第一步：核心数据与赚钱方式" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">2022</th>
+<th scope="col" style="text-align: right;">2023</th>
+<th scope="col" style="text-align: right;">2024</th>
+<th scope="col" style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">1.906</td>
+<td style="text-align: right;">2.225</td>
+<td style="text-align: right;">2.866</td>
+<td style="text-align: right;">4.475</td>
+</tr>
+<tr>
+<td>GAAP归母净利润</td>
+<td style="text-align: right;">-0.374</td>
+<td style="text-align: right;">0.210</td>
+<td style="text-align: right;">0.462</td>
+<td style="text-align: right;">1.625</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">0.224</td>
+<td style="text-align: right;">0.712</td>
+<td style="text-align: right;">1.154</td>
+<td style="text-align: right;">2.134</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td style="text-align: right;">0.040</td>
+<td style="text-align: right;">0.015</td>
+<td style="text-align: right;">0.012634</td>
+<td style="text-align: right;">0.034</td>
+</tr>
+<tr>
+<td>简单FCF</td>
+<td style="text-align: right;">0.184</td>
+<td style="text-align: right;">0.697</td>
+<td style="text-align: right;">1.141</td>
+<td style="text-align: right;">2.101</td>
+</tr>
+<tr>
+<td>股权薪酬SBC</td>
+<td style="text-align: right;">0.565</td>
+<td style="text-align: right;">0.476</td>
+<td style="text-align: right;">0.692</td>
+<td style="text-align: right;">0.684</td>
+</tr>
+</tbody>
+</table></div>
+<p>SEC原始数字与Yahoo财务时间序列的四年收入、归母净利润一致。2025年SBC占收入15.28%，2026上半年为13.08%：经营杠杆改善是真实的，但股权薪酬不是免费资金。</p>
+<p>2026Q2收入19.35464亿美元，同比增长93%；美国商业收入7.64亿美元、美国政府8.09亿美元，分别增长149%、90%。GAAP营业利润9.12004亿美元，调整后11.94472亿美元；差额主要为SBC2.65209亿美元及相关雇主税0.17259亿美元。GAAP归母净利润10.61890亿美元、稀释EPS0.41美元，不能简单乘四：当季税前利润10.81345亿美元、税费仅0.15383亿美元，有效税率约1.42%；调整后口径使用长期23%税率，故调整EPS也恰为0.41，不意味着两种利润质量相同。</p>
+<p>Q2经营现金流12.16167亿美元，扣资本开支后的现金为12.01613亿美元；公司调整后FCF12.20359亿美元还加回了股权薪酬相关现金税。公司2026年收入指引81.50—81.58亿美元、调整后FCF45—47亿美元，都是管理层预测，不是已赚到的钱。</p>
+<p>6月末现金20.30047亿美元、流动可交易证券73.79052亿美元，广义流动金融资产合计94.09099亿美元；公司标题使用“现金及短期美国国债”约92亿美元，是较窄范围。表内未列普通有息借款，但存在租赁负债；Yahoo的TotalDebt约2.114亿美元与非流动经营租赁额对应，不能据此指称公司新增银行债务。</p>
+<blockquote>
+<p>生意追问：客户愿意续费，是因为模型更聪明，还是替换已经上线的业务决策系统太困难？</p>
+</blockquote>
+<h2 id="section-3">第二步：护城河与AI价值归属</h2>
+<div aria-label="第二步：护城河与AI价值归属" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">护城河</th>
+<th scope="col">判断及边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>转换成本</td>
+<td>较强：企业对象模型、权限、业务逻辑、人员训练与部署可靠性相互嵌入；迁移并非拷贝数据</td>
+</tr>
+<tr>
+<td>技术与执行</td>
+<td>有差异化：把模型转成受控行动需要工程经验；但不是垄断基础模型，开源与大厂可持续追赶</td>
+</tr>
+<tr>
+<td>品牌与信任</td>
+<td>国防、安全与复杂任务形成采购信誉，同时也带来政治争议与招标约束</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>未证实强跨客户网络效应；客户数据通常隔离，不能把规模等同社交网络</td>
+</tr>
+<tr>
+<td>定价权</td>
+<td>客户ROI可能支持按平台、用量或价值收费，但未获得统一价格及续约折扣资料</td>
+</tr>
+</tbody>
+</table></div>
+<p>传统按用户席位收费会受到“同样工作需要更少人”冲击；Palantir相对更接近平台和业务价值收费，风险较席位纯软件低，但并不免疫客户预算压缩。模型、云、数据平台与系统集成商都争夺利润；微软生态、Databricks/Snowflake、云厂商和内部开发并非不会做同类功能。真正壁垒是安全地嵌入真实流程，而非把任何AI客户增长都归因于不可替代性。</p>
+<blockquote>
+<p>长期追问：若模型与应用生成成本持续下降，公司还能对“实施成功和治理”收取高额租金吗？</p>
+</blockquote>
+<h2 id="section-4">第三步：管理层、反面论证与失效条件</h2>
+<p>Alex Karp团队的AIP产品化和商业扩展已由收入、GAAP营业利润验证。资本配置目前偏工程投入、现金储备，而非重资产扩张。2023至2025稀释加权股数由约22.98亿上升至25.65亿，说明收入增长不能全部等比例流向每股。创始人控制、多股类治理需另读最新代理声明；本次没有核实经济权益及投票权百分比，不以“创始人公司”推导利益完全一致。</p>
+<p>最强空头论点不是“AI没用”，而是：部署需求高速增长，竞争降低平台价格，税率和人才成本正常化，同时估值向成熟软件回归。公司可以成功，股东仍可能损失一半以上。</p>
+<div aria-label="第三步：管理层、反面论证与失效条件" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观风险判断</th>
+<th scope="col">可观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增速正常化、倍数下杀</td>
+<td>高影响，发生概率不可精确量化</td>
+<td>美国商业增长持续降档、新增合同扩张减弱</td>
+</tr>
+<tr>
+<td>政府预算及政治反弹</td>
+<td>中等可能、高影响</td>
+<td>大合同延期、取消、集中客户采购变化</td>
+</tr>
+<tr>
+<td>AIP被云与模型平台挤压</td>
+<td>中等可能、高影响</td>
+<td>客户直接采购替代品、续约折价、实施周期拉长</td>
+</tr>
+<tr>
+<td>SBC与税负侵蚀每股收益</td>
+<td>持续存在</td>
+<td>现金税率上升、SBC占比回升、股数继续扩大</td>
+</tr>
+</tbody>
+</table></div>
+<p>TCV及RDV包含可选延长期、部分便利终止条款，不能当作不可取消订单，更不是利润。研究失效触发器：连续两个季度核心商业增速低于30%且合同动能同步恶化；或长期正常税后现金利润率明显达不到本报告35%基准。这些是研究警戒线，不是公司承诺。</p>
+<h2 id="section-5">第四步：估值、反向检验与买入区间</h2>
+<p>采用<strong>支付SBC经济成本后的所有者现金收益</strong>，不用单季低税率EPS，也不采用不扣SBC的调整利润直接给予高倍数。估值基数为2026收入指引中点81.54亿美元；正常现金利润率35%是研究假设，低于当季GAAP营业率经正常税率折算的水平，并保留营运资金及再投资缓冲。25.70亿稀释股对应每股1.11047美元，187.05美元为168.44倍。</p>
+<p>为避免重复扣减，现金利润率已承担SBC经济成本，情景中不再额外每年扩大同一批股权奖励导致的股数；采用25.70亿稀释股固定基数。未来股数控制不住须下调价值，不可反过来把SBC加回同时假设永不稀释。</p>
+<p>三年终值模型：收入×三年增长×所有者现金利润率÷股数×退出倍数。终值约对应2029年的简化估值节点，非精确某日价格预测；不计股息、税费，也不另外加上期间留存现金，三情景不赋予伪精确概率。</p>
+<div aria-label="第四步：估值、反向检验与买入区间" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">收入年增长</th>
+<th scope="col" style="text-align: right;">现金利润率</th>
+<th scope="col" style="text-align: right;">终值倍数</th>
+<th scope="col" style="text-align: right;">三年收入/十亿美元</th>
+<th scope="col" style="text-align: right;">三年每股终值/美元</th>
+<th scope="col" style="text-align: right;">相对187.05收益</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊</td>
+<td style="text-align: right;">+20%</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">14.090</td>
+<td style="text-align: right;">41.12</td>
+<td style="text-align: right;">-78.02%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">+35%</td>
+<td style="text-align: right;">35%</td>
+<td style="text-align: right;">45倍</td>
+<td style="text-align: right;">20.062</td>
+<td style="text-align: right;">122.95</td>
+<td style="text-align: right;">-34.27%</td>
+</tr>
+<tr>
+<td>牛</td>
+<td style="text-align: right;">+50%</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">60倍</td>
+<td style="text-align: right;">27.520</td>
+<td style="text-align: right;">256.99</td>
+<td style="text-align: right;">+37.39%</td>
+</tr>
+</tbody>
+</table></div>
+<p>牛情景已同时要求规模、利润率和高退出倍数；它不是推荐目标。45倍基准亦明显奖励高增长，并非“成熟软件应当如此”的事实。</p>
+<p><strong>反向DCF：</strong> 以每股1.11047美元起步、正常现金利润率35%、股数不变、折现率12%、第11年起每股现金流永续增长3%，加上较窄口径92亿美元现金对应每股3.57977美元，通过Decimal二分求解，现价要求未来十年收入复合增长约 <strong>41.66%</strong>，第十年收入约 <strong>2,654.18亿美元</strong>。公式为现金/股＋十年逐年现金流现值＋第十年终值现值。此法只回答“现价隐含什么”，不能证明该规模能达到；模型没有再次把现金产生的利息计入经营现金收益。</p>
+<p>今天的条件研究带来自基准终值122.94743÷1.18³至÷1.12³，即 <strong>74.83—87.51美元</strong>。这是要求约18%—12%年化价格回报的现值范围，不是三年目标价，更不是技术支撑位。即使落入其中，熊情景仍会亏损。</p>
+<h2 id="section-6">第五步：最终行动</h2>
+<div aria-label="第五步：最终行动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象</th>
+<th scope="col">条件行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>187.05美元暂不买入；不因一季超预期追价。仅在74.83—87.51美元且经营假设仍成立时重新评估</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>将现有持有理由从“公司增长快”改成“能否长期满足反向估值”；若无法接受倍数压缩，考虑降低过度暴露，而非机械清仓</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>更新财报、股数和税率，确认美国商业客户扩张、现金回款及SBC约束后才讨论</td>
+</tr>
+<tr>
+<td>减持/失效</td>
+<td>增长与合同同步降档、正常现金利润率下修、治理风险显著增加；不把所有下跌当便宜</td>
+</tr>
+</tbody>
+</table></div>
+<p>六关检查：赚钱方式可理解；生意质量较强；转换成本较强但非无敌；治理资料不足；<strong>现价安全边际不通过</strong>；情绪纪律要求拒绝FOMO。镜子测试：“我只能在价格允许增长不完美时买入，而不能用更多人愿意出价作为回报来源。”因此现价未通过买入检查。没有用户风险资料，不配置个人仓位比例。</p>
+<h2 id="section-7">数据来源与审计记录</h2>
+<ol>
+<li><a href="https://investors.palantir.com/news-details/2026/Palantir-Reports-Q2-2026-U-S--Comm-Revenue-Growth-of-149-YY-and-Revenue-Growth-of-93-YY-Raises-FY-2026-Revenue-Guidance-to-82-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-134-YY-Crushing-Consensus-Expectations/" rel="noreferrer">Palantir Q2公告</a>，2026-08-03；网页壳不含正文，本次从同域公开<code>/feed/PressRelease.svc/GetPressReleaseList</code>取得完整公告及附表。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json" rel="noreferrer">SEC companyfacts</a>，2025年报及2026-08-04季报；仅使用截至研究日已提交记录。</li>
+<li><a href="https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/PLTR?type=annualTotalRevenue,annualNetIncomeCommonStockholders,quarterlyCashCashEquivalentsAndShortTermInvestments&amp;period1=1640995200&amp;period2=1790985600" rel="noreferrer">Yahoo财务时间序列</a>，2026-10-02读取；独立供应商复核，不意味着独立审计公司账目。</li>
+<li><a href="https://query1.finance.yahoo.com/v8/finance/chart/PLTR?range=1mo&amp;interval=1d" rel="noreferrer">Yahoo日线行情</a>，本次保存2026-09-30行；日线时间戳是开盘时点标记，close是该交易日收盘值。</li>
+<li><a href="https://stockanalysis.com/stocks/pltr/financials/income-statement/" rel="noreferrer">StockAnalysis损益表</a>、<a href="https://stockanalysis.com/stocks/pltr/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/pltr/financials/cash-flow-statement/" rel="noreferrer">现金流表</a>、<a href="https://stockanalysis.com/stocks/pltr/history/" rel="noreferrer">历史行情</a>，2026-10-02通过requests取得完整HTML并读取表格，补足早先简化网页仅有空壳的限制。年度收入、归母净利润、现金和现金流与SEC在显示精度内一致。<a href="https://www.macrotrends.net/stocks/charts/PLTR/palantir-technologies/revenue" rel="noreferrer">Macrotrends</a>仍返回403。</li>
+</ol>
+<p>financial_rigor对最近年度收入、归母净利润、广义流动资产的SEC＋Yahoo交叉误差均为0%，加入StockAnalysis后仅有显示取整差异且均小于1%；市值工具核对的是乘法单位，不是独立市值行情认证。92亿与94.09099亿差异2.27%来自现金口径，不能平均。report_audit事实抽检使用SEC与StockAnalysis完整原表；情景及买带仅作Decimal数学复算，不叫外部验证。完整依据保存在同目录证据文件。</p>
+<p>本次固定随机种子抽中的5项历史事实均经双源数值核验通过；未抽取项目不因此获得认证。三情景、买带与反向DCF另外复算通过。</p>
+<p><strong>AI分析置信度中，实际投资确定性低于财务数据确定性。</strong> 对增长已发生的判断较有把握，对十年竞争与价格极不确定。本报告用于学习研究，不构成收益保证或个性化投资建议。</p></article><footer class="report-footer"><span>PLTR · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

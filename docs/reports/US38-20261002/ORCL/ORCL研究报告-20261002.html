@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="数据库与应用黏性提供基础，但巨额AI合同只有在交付、融资与资本回报兑现后才形成普通股价值。"><meta name="source-sha256" content="16a7fe086dfee580d9da6b80d4789427b5833f3caeb480ccc1638effae316429">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>甲骨文（ORCL）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="ORCL%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / ORCL / 2026-10-02</div>
+<h1>Oracle Corporation<span>企业软件与AI云基础设施 · 公司研究</span></h1><p class="hero-deck">数据库与应用黏性提供基础，但巨额AI合同只有在交付、融资与资本回报兑现后才形成普通股价值。</p>
+<div class="hero-meta"><span>FY2027 Q1，截至2026-08-31；全年基准FY2026</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$141.08<small>2026-10-02 11:20 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">单站盘中价非收盘，图片137.30美元未验证。两处拆股历史均显示最后拆股2000-10-13；未找到2026拆股证据，不自行调整图片或EPS。200亿美元ATM是增发，不是拆股。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">一、先查137.30美元是否因拆股</a></li><li><a href="#section-2">二、公司业务及变现路径</a></li><li><a href="#section-3">三、四年财务：从软件现金牛到融资型扩建</a></li><li><a href="#section-4">四、6,640亿美元RPO究竟值什么</a></li><li><a href="#section-5">五、债务与租赁先于EPS</a></li><li><a href="#section-6">六、护城河、管理层和最强反方</a></li><li><a href="#section-7">七、估值及条件买区</a></li><li><a href="#section-8">八、最终行动</a></li><li><a href="#section-9">来源及交叉核验记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">一、先查137.30美元是否因拆股</a></li><li><a href="#section-2">二、公司业务及变现路径</a></li><li><a href="#section-3">三、四年财务：从软件现金牛到融资型扩建</a></li><li><a href="#section-4">四、6,640亿美元RPO究竟值什么</a></li><li><a href="#section-5">五、债务与租赁先于EPS</a></li><li><a href="#section-6">六、护城河、管理层和最强反方</a></li><li><a href="#section-7">七、估值及条件买区</a></li><li><a href="#section-8">八、最终行动</a></li><li><a href="#section-9">来源及交叉核验记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>甲骨文（ORCL）研究报告</h1>
+<blockquote>
+<p>研究与信息截止：2026-10-02。采用141.08美元，StockAnalysis于2026-10-02 11:20 EDT显示的盘中价，单源、非收盘。用户9月30日图片137.30美元未经独立核实，本次价高2.75%。最新已核财期：截至2026-08-31的FY2027 Q1。按第三方约30.3亿股估算市值4,274.72亿美元；股数为近似当前股本，非季度加权股数。</p>
+</blockquote>
+<p><strong>核心命题：Oracle正把数据库和企业应用的高黏性现金，转为巨额AI基础设施合同；股东买到的不只是软件租金，还包括交付、融资、租赁和客户信用风险。</strong></p>
+<h2 id="section-1">一、先查137.30美元是否因拆股</h2>
+<p>不能因为图片价与印象不符就自行乘二或乘三。StockAnalysis统计页和CompaniesMarketCap拆股历史都显示最近一次ORCL拆股为<strong>2000-10-13的2拆1</strong>；本次直接读取的FY2027 Q1发行人文件未宣布新拆股。资料检索没有支持2026年3拆1等调整的证据，故本报告保留137.30美元原始图片价，仅标记未经验证。</p>
+<p>最新公司已完成200亿美元ATM普通股发行，<strong>增发不是拆股</strong>：前者筹资并可能稀释旧股东，后者按比例改变股数与每股价格而不改变总价值。若交易前发现后续正式公司行动，应让价格、EPS、股数一起调整，不能只改其中一个。</p>
+<p>信息丰富度A级，但关键AI合同条款透明度较低；合同金额很大并不使投资确定性相应提高。报告直接读取Oracle发行人PDF，未完成所有10-Q租赁附注和客户集中度条款复核。</p>
+<h2 id="section-2">二、公司业务及变现路径</h2>
+<div aria-label="二、公司业务及变现路径" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">FY2027 Q1收入项目</th>
+<th scope="col" style="text-align: right;">十亿美元</th>
+<th scope="col" style="text-align: right;">同比</th>
+<th scope="col">赚钱方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云基础设施IaaS</td>
+<td style="text-align: right;">7.388</td>
+<td style="text-align: right;">+121%</td>
+<td>向模型公司及企业出租计算、存储与网络，依赖交付和利用率</td>
+</tr>
+<tr>
+<td>云应用SaaS</td>
+<td style="text-align: right;">4.219</td>
+<td style="text-align: right;">+10%</td>
+<td>Fusion、NetSuite等ERP、财务、人力和行业应用订阅</td>
+</tr>
+<tr>
+<td>软件</td>
+<td style="text-align: right;">5.550</td>
+<td style="text-align: right;">-3%</td>
+<td>数据库许可和支持，部分向云迁移</td>
+</tr>
+<tr>
+<td>硬件</td>
+<td style="text-align: right;">0.774</td>
+<td style="text-align: right;">+15%</td>
+<td>Exadata等系统，非一般消费硬件</td>
+</tr>
+<tr>
+<td>服务</td>
+<td style="text-align: right;">1.414</td>
+<td style="text-align: right;">+5%</td>
+<td>实施、咨询及支持服务</td>
+</tr>
+<tr>
+<td>合计</td>
+<td style="text-align: right;">19.345</td>
+<td style="text-align: right;">+30%</td>
+<td>云IaaS+SaaS占约60%</td>
+</tr>
+</tbody>
+</table></div>
+<p>长期数据库客户为迁移风险、兼容性、稳定性和关键交易支持付费，企业软件确有转换成本。IaaS则面对AWS、Azure、Google Cloud及专用GPU云的价格性能竞争。数据库壁垒不能等比例搬到每一份GPU租赁合同上。Oracle Health有医疗工作流机会，但不能把尚未兑现的AI诊疗效率全部当新增利润。</p>
+<h2 id="section-3">三、四年财务：从软件现金牛到融资型扩建</h2>
+<p>单位：十亿美元；财年5月结束。净利润列为普通股股东可得利润，FY2026总净利润另为17.087，扣优先股股息0.103后为16.984。</p>
+<div aria-label="三、四年财务：从软件现金牛到融资型扩建" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">收入</th>
+<th scope="col" style="text-align: right;">普通股净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+<th scope="col" style="text-align: right;">现金CapEx</th>
+<th scope="col" style="text-align: right;">FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">49.954</td>
+<td style="text-align: right;">8.503</td>
+<td style="text-align: right;">17.165</td>
+<td style="text-align: right;">8.695</td>
+<td style="text-align: right;">8.470</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">52.961</td>
+<td style="text-align: right;">10.467</td>
+<td style="text-align: right;">18.673</td>
+<td style="text-align: right;">6.866</td>
+<td style="text-align: right;">11.807</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">57.399</td>
+<td style="text-align: right;">12.443</td>
+<td style="text-align: right;">20.821</td>
+<td style="text-align: right;">21.215</td>
+<td style="text-align: right;">-0.394</td>
+</tr>
+<tr>
+<td>2026</td>
+<td style="text-align: right;">67.357</td>
+<td style="text-align: right;">16.984</td>
+<td style="text-align: right;">31.977</td>
+<td style="text-align: right;">55.663</td>
+<td style="text-align: right;">-23.686</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2026 GAAP经营利润206.06亿美元；第三方标准化表列223.85亿美元，与发行人相差8.63%。<strong>不能把第三方“Operating Income”视为同口径GAAP，更不能平均；本报告只采用发行人206.06亿美元。</strong>未完整还原第三方重分类项目，明确保留这一局限。</p>
+<p>FY2026 GAAP EPS5.83美元，公司非GAAP EPS7.63美元，剔除Ampere及Bloom Energy相关一次性投资收益后非GAAP为6.83美元。非GAAP进一步剔除SBC、无形资产摊销及重组，仍不是股东无成本可得利润。全年SBC48.11亿美元需计入长期稀释与经济成本。</p>
+<p>FY2027 Q1 GAAP经营利润67.28亿美元，总净利47.60亿美元，扣优先股股息后普通股净利46.79亿美元、EPS1.56；非GAAP EPS1.92。下一季公司美元口径收入增长指引30%—34%、非GAAP EPS1.85—1.93；FY2027收入至少900亿美元、非GAAP EPS8.10。后两项是预测，不是已兑现现金。</p>
+<h2 id="section-4">四、6,640亿美元RPO究竟值什么</h2>
+<p>季度末剩余履约义务RPO为6,640亿美元，上一季6,380亿美元。它代表尚未确认收入的履约承诺，不是今年营收、现金或利润。Q1交付850MW新增机房容量和超过30万GPU，确有交付进展；但电力接入、机房建设、设备交付及客户实际消耗仍决定收入兑现速度。</p>
+<p>公司称新增AI合同采用预付或客户自带硬件，FY2026末这两类硬件金额合计750亿美元。这能降低Oracle部分融资需求，但不能推导为合同没有信用、维修、网络、能源或残值风险，亦不能把“客户买设备”当Oracle自有资产。</p>
+<p>最关键的现金证据：Q1经营现金流231.03亿美元中，<strong>113.63亿美元来自具有重大融资成分的客户预付款增加</strong>，其他递延收入增加39.97亿美元。预收是履约前收到现金，不等于当期利润，也可能需要未来持续服务成本。直接作敏感性演示，若剔除前一项预付款，本季经营现金流只剩117.40亿美元；这是研究压力测试，不是公司GAAP现金流。</p>
+<p>季度现金CapEx284.99亿美元、FCF=-53.96亿美元，尽管经营现金流创纪录仍需融资。RPO的价值应拆成可交付比例、确认时间、贡献毛利、客户付款能力和需投入资本，而不是“RPO÷股数”得目标价。</p>
+<h2 id="section-5">五、债务与租赁先于EPS</h2>
+<p>8月底现金及有价证券370.77亿美元；流动借款76.25亿美元、非流动借款1,177.12亿美元，合计1,253.37亿美元，净借款882.60亿美元。季度利息费用14.28亿美元，同比+55%，优先股还需支付股息。股票价值在债权与优先分配之后。</p>
+<p>发行人表列非流动经营租赁负债305.94亿美元，流动部分及其他租赁需要附注进一步拆分；StockAnalysis广义总债务1,691.43亿美元、长租赁类390.30亿美元含不同重分类。<strong>不将390.30亿美元误称为发行人非流动经营租赁负债</strong>。若以第三方广义债务扣现金，净负债为1,320.66亿美元；更完整的未起租承诺仍未纳入，不能据此宣布已充分覆盖全部义务。</p>
+<p>FY2026公司披露筹集约430亿美元债务及50亿美元股权融资；FY2027预计约400亿美元债股融资，其中200亿美元ATM已在Q1完成。长期股本不能沿用过去软件回购时期的固定假设。Q1加权稀释股30亿、第三方期末约30.3亿，时间口径不同，不是拆股证据。</p>
+<h2 id="section-6">六、护城河、管理层和最强反方</h2>
+<p>数据库与ERP迁移成本高，多云数据库可扩大触达，SaaS提供较稳定重复收入。反面是AI基础设施逐渐成为增长主体，长期软件支持的高回报可能被低毛利、融资密集的硬件租赁稀释。</p>
+<p>管理层资本配置已从回购软件现金流转向大型建设、债务、优先股和增发。评价不能只看订单增长，应看每新增一美元合同最终需多少资本、利息及股本。未复核最新管理层职务与持股百分比，不用未经证实的个人治理故事替代现金数据。</p>
+<p>最强反方：Oracle拿到大合同是真的，但合同客户本身需融资，其预付款帮助今天经营现金流，Oracle却承担多年供电及设备交付义务；若利用率、价格或交付时间偏离，EPS可能尚好而普通股不断被稀释。</p>
+<div aria-label="六、护城河、管理层和最强反方" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观判断</th>
+<th scope="col">失效信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RPO确认延期或客户重谈</td>
+<td>中等可能、极高影响</td>
+<td>短期可确认收入下降、客户付款延迟</td>
+</tr>
+<tr>
+<td>基建成本及融资成本上升</td>
+<td>中高可能、高影响</td>
+<td>利息和租赁负债快于经营利润</td>
+</tr>
+<tr>
+<td>软件下滑、SaaS补偿不足</td>
+<td>中等可能、中高影响</td>
+<td>软件收入持续降、应用增速不足</td>
+</tr>
+<tr>
+<td>预收掩盖经营现金不足</td>
+<td>中高关注、高影响</td>
+<td>扣预付款后的现金长期不足扩建</td>
+</tr>
+<tr>
+<td>GPU残值或利用率下降</td>
+<td>中等可能、高影响</td>
+<td>毛利下降、设备减值与新一轮增发</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-7">七、估值及条件买区</h2>
+<p>不能只以公司FY2027非GAAP8.10美元计算“17倍便宜”。本模型把可持续、保留股权薪酬经济成本的前瞻EPS设为<strong>6.50美元</strong>：由8.10扣约1.60美元SBC及其他经常性调整缓冲；与GAAP Q1年化6.24美元也相邻。这是保守化研究桥接，不是精确GAAP指引，优先股与继续稀释仍有误差。</p>
+<div aria-label="七、估值及条件买区" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">三年情景</th>
+<th scope="col" style="text-align: right;">EPS年增长</th>
+<th scope="col" style="text-align: right;">期末前瞻PE</th>
+<th scope="col" style="text-align: right;">三年后价格</th>
+<th scope="col" style="text-align: right;">相对141.08美元回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊：订单多、每股盈利停滞</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">14倍</td>
+<td style="text-align: right;">91.00</td>
+<td style="text-align: right;">-35.50%</td>
+</tr>
+<tr>
+<td>基准：逐步交付且融资受控</td>
+<td style="text-align: right;">+14%</td>
+<td style="text-align: right;">20倍</td>
+<td style="text-align: right;">192.60</td>
+<td style="text-align: right;">+36.52%</td>
+</tr>
+<tr>
+<td>牛：RPO高效转化、规模利润兑现</td>
+<td style="text-align: right;">+24%</td>
+<td style="text-align: right;">26倍</td>
+<td style="text-align: right;">322.22</td>
+<td style="text-align: right;">+128.39%</td>
+</tr>
+</tbody>
+</table></div>
+<p>公式6.5×(1+增长率)^3×PE，不计股息、税费和汇率。基准年化价格收益10.93%；情景不包含严重违约或再融资中断，真实下行可更大。</p>
+<p>当下条件研究买区<strong>104.00—123.50美元=6.50×16—19倍</strong>。不是历史软件公司的30倍，也不是根据RPO反推。倍数折让来自高杠杆、FCF为负及稀释，仍需正增长兑现才值得买。以图片137.30美元计算也高于该区，不能因看似低于昔日价格便称为安全边际。</p>
+<h2 id="section-8">八、最终行动</h2>
+<p>评级：<strong>等待价格</strong>，更重视等待现金证据。</p>
+<ul>
+<li>空仓：不在141.08美元或图片137.30美元无条件买入；104—123.50美元只在交付、现金及融资条件保持时进入研究买入。</li>
+<li>持有：核查季度RPO收入转换、剔除重大融资预收后的现金、债务与稀释；不只盯非GAAP EPS。</li>
+<li>加仓：客户合同实质风险可验证、融资需求不超原计划、交付后单位资本回报改善。</li>
+<li>降低敞口：借款/优先股/增发持续超计划、长期FCF赤字无法由高质量客户预付款覆盖，或主要合同延迟/重谈。</li>
+<li>失效：6.5美元正常化EPS桥接不成立，需下调整个买区；不机械补仓。</li>
+</ul>
+<p>AI研究置信度中，实际投资确定性偏低。数据库业务优质不能抵销AI建设项目的融资风险，也不代表公司必然失败；不提供个人仓位比例。</p>
+<h2 id="section-9">来源及交叉核验记录</h2>
+<ol>
+<li><a href="https://www.oracle.com/news/announcement/q1fy27-earnings-release-2026-09-10/" rel="noreferrer">FY2027 Q1发行人公告，2026-09-10</a>；<a href="https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf" rel="noreferrer">完整发行人财务PDF</a>。</li>
+<li><a href="https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/" rel="noreferrer">FY2026全年公告，2026-06-10</a>；<a href="https://s23.q4cdn.com/440135859/files/doc_earnings/2026/q4/earnings-result/4q26-pressrelease-final.pdf" rel="noreferrer">完整财务PDF</a>。</li>
+<li><a href="https://stockanalysis.com/stocks/orcl/financials/" rel="noreferrer">StockAnalysis财务与行情</a>、<a href="https://stockanalysis.com/stocks/orcl/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/orcl/statistics/" rel="noreferrer">股数及拆股统计</a>，2026-10-02访问。</li>
+<li><a href="https://companiesmarketcap.com/oracle/stock-splits/" rel="noreferrer">CompaniesMarketCap拆股历史</a>，2026-10-02访问，辅助而非发行人法律证明。</li>
+</ol>
+<p>FY2026收入67,357百万、普通股净利16,984百万与第三方一致；Q1现金及证券37,077百万亦一致，程序差异0%。发行人总净利17,087与普通股净利16,984相差优先股股息103百万，不是数据错误。第三方经营利润22,385与发行人20,606不同，已拒绝代用；债务和租赁重分类尚未逐项调节，采用发行人可识别项目并警示。约30.3亿股×141.08=4274.72亿美元，对第三方4286.2亿美元差异不足1%，非实时精确股本。工具及Decimal记录见<code>calculation-audit.json</code>；“TTM EPS”默认标签已改释为前瞻正常化假设。数字抽检只覆盖事实样本，不认证订单回报、未披露承诺或买区预测。</p></article><footer class="report-footer"><span>ORCL · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

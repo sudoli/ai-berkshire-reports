@@ -1,0 +1,757 @@
+URL https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
+LSEG STREETEVENTS
+EDITED TRANSCRIPT
+2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co
+Ltd Earnings Call (Chinese, English)
+EVENT DATE/TIME: JULY 16, 2026 / 6:00AM GMT
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+CORPORATE PARTICIPANTS
+Jeff SuTaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Wendell HuangTaiwanSemiconductorManufacturingCoLtd-SeniorVicePresidentandChiefFinancialOfficer/Spokesperson
+C.C. WeiTaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+CONFERENCE CALL PARTICIPANTS
+Sunny LinUBSAG-Analyst
+Charlie ChanMorganStanley-Analyst
+Arthur LaiMacquarieResearchLtd-Analyst
+Gokul HariharanJPMorganChase&Co-Analyst
+Jim FontanelliAreteResearchLLC-Analyst
+Mehdi HosseiniSusquehannaFinancialGroupLLLP-EquityAnalyst
+Laura ChenCitigroup-Analyst
+Haas LiuBofaSecurities-Analyst
+Robert SandersDeutscheBankAG-Analyst
+Evelyn YuGoldmanSachsGroupInc-Analyst
+Felix PanKGISecuritiesCoLtd-Analyst
+PRESENTATION
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+(SpokeninForeignLanguage)
+Good afternoon, everyone, and welcome to TSMC's second-quarter 2026 earnings conference and conference call. This is Jeff Su,
+TSMC'sDirectorofInvestorRelationsandyourhostfortoday.
+Today'seventisbeingwebcastlivethroughTSMC'swebsiteatwww.tsmc.com,whereyoucanalsodownloadtheearningsrelease
+materials.Ifyouarejoiningusthroughtheconferencecall,yourdial-inlinesareinlisten-onlymode.
+Theformatfortoday'seventwillbeasfollows.First,TSMC'sSeniorVicePresidentandCFO,Mr.WendellHuang,willsummarizeour
+operations in the second quarter 2026, followed by our guidance for the third quarter 2026. Afterwards, Mr. Huang and TSMC's
+ChairmanandCEO,Dr.C.C.Wei,willjointlyprovidethecompany'skeymessages.Thenwewillopenboththefloorandthelinefor
+thequestion-and-answersession.
+Asusual,I'dliketoremindeverybodythattoday'sdiscussionsmaycontainforward-lookingstatementsthataresubjecttosignificant
+risksanduncertainties,whichcouldcauseactualresultstodiffermaturityfromthosecontainedintheforward-lookingstatements.
+PleaserefertotheSafeHarbornoticethatappearsinourpressrelease.
+Andnow,IwouldliketoturnthemicrophoneovertoTSMCCFO,Mr.WendellHuang,forthesummaryofoperationsandthecurrent
+quarterguidance.
+2
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Wendell Huang-TaiwanSemiconductorManufacturingCoLtd-SeniorVicePresidentandChiefFinancialOfficer/Spokesperson
+Thankyou,Jeff.Goodafternoon,everyone.Thankyouforjoiningustoday.
+Mypresentationwillstartwithfinancialhighlightsforthesecondquarterof2026.Afterthat,Iwillprovidetheguidanceforthethird
+quarterof2026.
+[Second quarter revenue increased 12.0 percent sequentially in NT dollars, supported by strong demand for our leading-edge
+process technologies. In US dollar terms, revenue also increased 12.0 percent sequentially to 40.2 billion, at the high-end of our
+secondquarterguidance.Grossmarginincreasedby1.5percentagepointssequentiallyto67.7%,primarilyduetocostimprovement
+effortsandahighercapacityutilizationrate,partiallyoffsetbymargindilutionfromoverseasfabs].
+[Totaloperatingexpensesaccountedfor7.8%ofnetrevenue,ascomparedto8.3%in1Q26,mainlyduetooperatingleverage.Thus,
+operatingmarginincreasedby2.2percentagepointssequentiallyto60.3%.Totalnon-operatingitemswereagainof96billionNT
+dollars, an increase of 67 billion sequentially. The increase was mainly due to disposal and mark-to-market gains of 63 billion on
+Vanguardshares,whichcontributed2.24NTdollarstosecond-quarterEPS.Overall,oursecondquarterEPSwas27.25NTdollars,
+andROEwas45.9%].(addedbycompanyafterthecall)
+Nowlet'smoveontorevenuebytechnology.
+2-nanometerprocesstechnologycontributed3%ofwaferrevenueinthesecondquarter.3-nanometer,5-nanometer,and7-nanometer
+accounted for 30%, 33%, and 11%, respectively. Advanced technology, defined as 7-nanometer and below, accounted for 77% of
+waferrevenue.
+Movingontorevenuecontributionbyplatform.
+HPCincreased20%quarteroverquartertoaccountfor66%ofoursecond-quarterrevenue.Smartphonedecreased4%toaccount
+for22%.IoTincreased4%toaccountfor5%.Automotiveincreased15%toaccountfor4%.DCEincreased5%toaccountfor1%.
+Moving on to the balance sheet, we ended the second quarter with cash and marketable securities of TWD3.5 trillion or USD110
+billion.Ontheliabilityside,currentliabilitiesincreasedbyTWD144billionquarteroverquarter,mainlyduetotheincreaseofTWD58
+billioninaccountspayableandtheincreaseofTWD48billioninaccruedliabilitiesandothers.
+In terms of financial ratios, accounts receivable days increased by 3 days to 29 days. Inventory days increased 7 days to 87 days,
+primarilyduetotherampofN2technology.
+Regarding cash flow and CapEx. During the second quarter, we generated about TWD783 billion in cash from operations, spent
+TWD496billioninCapEx,anddistributedTWD156billionforthirdquarter2025cashdividend.Overall,ourcashbalanceincreased
+TWD99billiontoTWD3.1trillionattheendofthequarter.
+InUSdollarterms,oursecondquartercapitalexpenditurestotaledUSD15.7billion.
+Ifinishedmyfinancialsummary.Nowlet'sturntothecurrentquarterguidance.
+Based on the current business outlook, we expect our third-quarter revenue to be between USD44.6 billion and USD45.8 billion,
+whichrepresentsa12%sequentialincreaseora37%year-over-yearincreaseatthemidpoint.Basedontheexchangerateassumption
+ofUSD1toTWD32,grossmarginisexpectedtobebetween65%and67%,operatingmarginbetween56%and58%.
+Thisconcludesmyfinancialpresentation.
+3
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Nowletmeturntoourkeymessages.
+Iwillstartbytalkingaboutoursecond-quarter'26andthird-quarter'26profitability.
+Comparedtothefirstquarter,oursecondquartergrossmarginincreasedby150basispointssequentiallyto67.7%,slightlyahead
+ofourguidance,primarilyduetocostimprovementeffortsandaslightlyhigheroverallcapacityutilizationrate,partiallyoffsetby
+dilutionfromouroverseasfabs.Wehavejustguidedourthirdquartergrossmargintodecreaseby1.7percentagepointto66%at
+themidpoint,primarilyasweexpectthesteepramp-upofour2-nanometertechnologytodiluteourgrossmarginbyabout3to4
+percentage points. This dilution is expected to be partially offset by very strong demand for our leading-edge technologies and
+continuedcostimprovementefforts,includingproductivitygainsandacross-nodecapacityoptimization.
+Looking at the second-half of the year, given the six factors that determine our profitability, there are a few puts and takes that I
+wouldliketoshare.
+First, we expect a steep ramp-up of our 2-nanometer to dilute our gross margin by about 3 to 4 percentage points in the second
+halfoftheyear.Furthermore,asthescaleofouroverseasexpansiongrows,wecontinuetoforecastthegrossmargindilutionfrom
+theramp-upofoverseasfabsinthenextseveralyearstobe2%to3%intheearlystagesandwidento3%to4%inthelatterstages.
+Ontheotherhand,demandforourleading-edgetechnologiesisverystrong.
+In addition, we continue to leverage our manufacturing excellence to generate more wafer output and drive greater across-node
+capacityoptimizationinourfaboperationstosupportourprofitability.Finally,wehavenocontrolovertheforeignexchangerate,
+butthatmaybeanotherfactor.
+Next,letmetalkaboutour2026capitalbudget.
+At TSMC, a higher level of capital expenditures is always correlated to higher growth opportunities in following years. With our
+strong technology leadership and differentiation, we are well positioned to capture the multi-year structural demand from the
+industrymegatrendsof5G,AI,andHPC.
+Given the continued strong structural demand from our customers, including the newly emerging agentic AI market, we have
+decided to raise our full-year 2026 capital budget to be between USD60 billion and USD64 billion as we continue to invest heavily
+tosupportourcustomers'growth.
+We always collaborate closely with the tool suppliers well in advance to prepare the capacity, whether it is a strong upcycle or
+downcycle,justlikeourcustomerscollaboratewithuswellinadvancetoplanourcapacity.Thus,wedonotforeseeanybottlenecks
+toourcapacityexpansionplans.
+About 70% to 80% of the 2026 capital budget will be allocated for advanced process technologies, about 10% will be spent for
+specialtytechnologies,andabout10%to20%willbespentforadvancedpackaging,testing,maskmakingandothers.
+Even as we invest for the future growth with this level of CapEx spending in 2026, we remain committed to delivering profitable
+growth to our shareholders. We also remain committed to a sustainable and steadily increasing cash dividend per share on both
+anannualandquarterlybasis.
+In 2025, we paid TWD467 billion in cash dividends, up 28.6% year over year as TSMC shareholders receive a total of TWD18 cash
+dividend per share. In 2026, they will receive TWD24 per share, up another 33% year over year, and we expect a continued and
+increasingcashdividendspersharein2027aswell.
+NowletmeturnthemicrophoneovertoC.C.
+4
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Thankyou,Wendell.Goodafternoon,everyone.
+First, let me start with our near-term demand outlook. We concluded our second quarter with revenue of USD40.2 billion, at the
+highendofourguidanceinUSdollarterms,drivenbystrongdemandforourleading-edgeprocesstechnologies.
+Moving into third quarter, we expect our business to be supported by continuous strong demand for our leading-edge process
+technologies, including the steep ramp up of our 2-nanometer technology. Looking ahead, we observe consumer and the
+price-sensitive end-market segment are being challenged due to the impact of rising component prices and macroeconomics
+uncertainties.Assuch,wearebeingprudentinourbusinessplanningwhilefocusingonourfundamentalsofourbusinesstofurther
+strengthenourcompetitiveposition.
+Havingsaidthat,AI-relateddemandcontinuestobeextremelyrobust.TheAImegatrendcontinuestodrivetheneedformoreand
+more computation, which supports the robust demand for leading-edge silicon. Our customers and customers' customers, who
+aremainlythecloudserviceprovider,continuetoprovideuswiththeirverystrongsignalandpositiveoutlook.Thus,ourconviction
+inthemulti-yearAImegatrendremainveryhigh.Supportedbyourrobusttechnologydifferentiationandthebroadcustomerbase,
+wenowexpectourfull-year2026revenuegrowthtobeslightlyabove40%yearoveryearinUSdollarterms.
+NowletmetalkabouttheaccelerationofagenticAI.
+The AI market continues to be very dynamic. The emergence of agentic AI is leading to a resurgence in the role of CPUs in AI data
+centers, which drives more silicon demand in addition to AI accelerators. We believe this is positive for TSMC, as no matter what
+CPUapproachistaken,whetherit'sx86,ARM-based,orRISC-Varchitecture,theyarealmostallTSMC'scustomers.Wearealready
+collaborating closely with our CPU customers and working to support them with the most advanced technologies and necessary
+capacity,sotheycancaptureagenticAImarketopportunities.
+Next,letmetalkaboutTSMC'scapacityexpansionstrategies.
+Toaddressthestructuralincreaseinoveralllong-termsemiconductormarketdemandprofile,TSMCcollaboratescloselywithour
+customers and our customers' customers to plan our capacity. Given the fundamental complexity of leading-edge technologies
+andthedesign-inandleadtimeinvolved,wealsohaveaverygoodideaoftheirmulti-yearproductroadmapandproductionplans.
+This is important because it takes more than five years to develop the technology and product, prepare the capacity, and ramp it
+uptohigh-volumeproduction.Internally,TSMCemploysadisciplinedcapacityplanningsystemtoassessthemarketdemandfrom
+both a top-down and bottom-up approach. This is a continuous and ongoing process. Based on our assessment, we are stepping
+upourCapExinvestmenttoincreaseourcapacitytosupportourcustomers'futuregrowth.
+Now,withastrongcollaborationandsupportfromourleadingUScustomersandtheUSfederal,state,andcitygovernments,we
+wouldliketoannounceanadditionalUSD100billioninvestmentinArizona.Thisistobuildseveralmoresemiconductorlogicwafer
+fabsfor2-nanometerandbelowtechnologies,aswellasadvancedpackagingfabs,tosupportstrongmulti-yeardemandfromour
+leadingUSCustomers.WebelievethisinvestmentwillhelptofurtherfosterthedevelopmentoftheUSsemiconductorecosystem,
+strengthenthesupplychain,andsupportanincreasingnumberofhigh-tech,high-payingjobsintheUnitedStates.
+Atthesametime,wearebuilding13leading-edgeandadvancedpackagingfabsinTaiwanoverthenextseveralyears,andwewill
+continuetofurtherinvestinTaiwan.Therefore,TSMC'ssemiconductortechnologyandmanufacturingwillcontinuetoplayapivotal
+roleinsupportingtheglobalsemiconductorindustry,whileunleashingourcustomers'innovation.
+NowletmetalkaboutthecurrentN3capacityexpansion.
+5
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Weareexecutingwellonourglobalplantoaddthreeadditional3-nanometerfabs,oneinTaiwan,oneinArizona,andoneinJapan,
+tosupporttherobustmulti-yearpipelineofdemandfor3-nanometertechnologies.Inadditiontoallthenewfabs,wecontinueto
+convert 5-nanometer tools to support 3-nanometer capacity in Taiwan. We are also leveraging our manufacturing excellence to
+drivegreaterproductivityacrossourfabinalllocationstogeneratemorewaferoutput.Wearealsofocusingoncapacityoptimization
+across nodes, which includes flexible capacity support among N7, N5, and N3 nodes. In summary, we are using multiple levers to
+doeverythingwecan,whereverwecan,howeverwecan,tomaximizethesupporttoallourcustomers.
+Now,letmetalkaboutourmaturenodestrategies.
+TSMC's strategy at mature node has not changed. Our first priority is to fully support our customers, and now we continue to
+increase, not decrease, our mature node capacity in the higher value-added segment. For example, we are increasing our mature
+nodecapacitythroughJASMFab1inJapan,forCMOSImageSensorapplication,andESMCinGermanyforautomotiveandindustrial
+applications.Intoday'smarket,outsideofspecificareassuchaspowermanagementICandCMOSimagesensor,thematurenode
+demand in other commodity areas is not that strong. Thus, TSMC will continue to focus on the higher value-added and strategic
+segments,whileensuringwehavethenecessarycapacitytosupportourcustomers'growth.
+Finally,letmetalkaboutourA14status.
+As I mentioned a few minutes ago, the complexity of leading-edge technology continues to increase. The lead time to develop a
+newtechnologysuchasA14,buildingthecapacity,andthenrampitupnowtakesfivetosevenyears.Therearenoshortcuts.Our
+A14 technology represents the second generation of nanosheet transistors and delivers another full-node stride from N2, with
+performanceandpowerbenefitstoaddresstheinsensibleneedforhigh-performanceandenergy-efficientcomputing.Compared
+withN2,A14willprovidea10to15%speedimprovementatthesamepoweror25to30%powerimprovementatthesamespeed,
+and close to 20% chip density gain. A14 technology development is on track and progressing well. Internal product-like vehicle
+demonstrated close to 90% device performance and close to 90% 256 megabits SRAM yield. We are observing a strong level of
+customer interest and engagement on both smartphone and HPC/AI applications, and customer new tap-out activity is ongoing
+andaheadofschedule.Riskproductionwillstartin2027andvolumeproductionisscheduledfor2028.Withourstrategyofcontinuous
+enhancement, we also introduced A13 and A12 as extension of the A14 family. A13 represents a further advancement of our A14,
+achieving an over 6% die area saving through an innovative 97% optical shrink. Through continuous design-technology
+co-optimization,A13alsodeliversfurtherperformanceandpowerefficiencyimprovement.A13designrulesarebackwardcompatible
+withA14toensuresmoothIPmigration.
+WealsointroducedA12,whichwillbringourinnovativeSuperPowerRailtechnologytotheA14platformforsuperiorperformance,
+power, and area benefits. Both A13 and A12 are scheduled for volume production in 2029. We believe A14 and its derivative
+technologies will propel our A14 firmly to be an even larger and long-lasting node for TSMC than N2, just like a 2-nanometer
+technologyisalargerandlonger-lastingnodethan3-nanometer,andhelpfurtherextendourtechnologyleadershippositionwell
+intothefuture.
+Thisconcludesourkeymessages,andthankyouforyourattention.
+QUESTIONS AND ANSWERS
+Jeff Su -TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Thankyou,C.C.Sothisdoesconcludeourpreparedstatements.
+(EventInstructions)
+6
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+insatiable
+SunnyLin,UBS.
+Sunny Lin-UBSAG-Analyst
+Congratsontheverystrongperformanceandoutlook.
+So number one, I'll do a double-click on the CapEx. So very encouraging CapEx outlook, and I do think it's essential that TSMC
+showcase a stronger determination in capacity expansion, given the stronger demand and the very tight supply. And so beyond
+2026,IthinkeverylargeclientalsowonderhowaggressiveTSMCisplanningforCapEx.AndsobackintheCOVIDsupercycle,TSMC
+didprovideathree-yearCapExoutlookbythen.AndsoIwonderatthispoint,woulditbepossibleforyoutoshareanycolor,maybe
+forthecomingthreeyearsCapEx?
+Thankyou.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay.SoSunny'sfirstquestionisregardingCapEx.Shedoesbelieveit'simportant/essentialtoshowourdeterminationtosupport
+our customers with these large CapEx investments. So she wants to know, do we have a three-year CapEx guidance, '26, '27, '28,
+similartowhatwedidbackin2021?
+Wendell Huang-TaiwanSemiconductorManufacturingCoLtd-SeniorVicePresidentandChiefFinancialOfficer/Spokesperson
+Hey,Sunny,wedonothaveanumbertosharewithyou.Butasyouknow,weinvestCapExthisyearforthefuturebusinessopportunity
+andaslongastherearebusinessopportunities,wewillnothesitatetoinvest.Asyoucanhearfromourpreparedremarksthatour
+conviction in the megatrend, AI megatrend multi-year is very strong, and we are stepping up the CapEx, including increasing this
+year'sCapEx.
+Last time, we said our CapEx in the next three years will be significantly higher than the CapEx in the past three years. Now the
+CapExinthenextthreeyearswillbeevenmoresignificantlyhigherthanthepastthreeyears.
+Sunny Lin-UBSAG-Analyst
+Yeah,maybeletmefollow-uponCapExfromanother--yeah,sure.SoyoujustannouncedadditionalUSD100billionCapExinthe
+US,andIthinkthat'sprettyimportantforyoutosecurethebusinessintheUSaswell.AndsonowwithtotalUSD265billionCapEx
+inArizona,what'syourcurrentplantobringonthecapacitiesinArizonainthecomingfewyears?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay,soSunny'ssecondquestionisontoC.C.saidinvestinganadditionalUSD100billioninArizonabasedonthestrongdemand
+fromourcustomers.SothetotalinvestmentnowisUSD265billion.Whatistheschedule,timeframe,ortheplanfortheseinvestment?
+Isthatcorrect,Sunny?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Sunny, the schedule will depend on the market situation, you know that. So today's situation. The makeup trend is so strong so
+thatweannounceadditionalUSD100billioninvestmentinArizona.
+7
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Howmanyfabs?Many.
+Soactually,letmesaythatthere'sprobablyadditionalfourormorefabswillbebuilt.
+Sunny Lin-UBSAG-Analyst
+Andthat'scombiningfrontendbackend.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Yes.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+CharlieChan,MorganStanley.
+Charlie Chan-MorganStanley-Analyst
+Sofirstofall,socongratsforaverystrongoutlook.
+My first question is really about the foundry competition. I understand that there's no shortcut for a newcomer like TeraFab, but
+how about like Samsung Foundry, right? They got a huge profit from memory business. Intel got a US policy support. So I'm not
+surehowTSMCisgoingtoaddressthosecompetitionbecauseapparentlyseveralUScompaniesareengagingwiththoseindustry
+peers.
+Andrecently,actuallyyesterday,ASMLjustannouncedtoexpandtheEUVcapacityfor2028.WouldTSMCworrythatyourcompetitors
+totakemoreslotsandbuildalargecapacityinthefuturetocompetewithyourleadingedgebusiness?
+Thankyou.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay, so Charlie's question is competition from two angles. One, he does note, C.C. said, foundry competition, no shortcuts, but
+hesays,accordingtothenews,manyofourcustomersareengagingwithourfoundrycompetitors.OneoftheminKoreaismaking
+huge amounts of money these days. Another one may have the US Government policy support. So the first part of this question,
+howdoweseethecompetitionandthreatofcustomersmovingtoourcompetitors,numberone?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Well,letmesaythat.Yes,oneofmycompetitorsinSouthKorea,theymakeahugeamountofmoney.AndI'mjealousaboutit.And
+then the other one in the US, they got the very strong US Government support. We also got the government support, by the way,
+althoughwedon'tannounceit.However,letmesharewithyou,aswesaid,thereisnoshortcut.
+Whatdoesthatmean?Meaningthatinthissemiconductorindustry,youhavetogobacktofundamental.Governmentsarehereis
+welcome.Really,wealsoappreciatethat.Alotofmoney,ofcourse,that'snicetohave.Butthemostimportantthing,aswecontinue
+8
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+to say, is the technology, manufacturing, and customer trust. These three fundamentals never changed for my 30-some, 40-years
+career.It'salwaysthemostimportantthing.Andthat’salwaysTSMC'ssecretrecipetowinthebusiness.
+So from the competition point of view, choosing a technology, ramping it up, it's not buying milk from 7-Eleven. Well, I'm using
+that,I'mquotingthesentencefrommycustomeranyway.Itsaysthatyou'rechoosingakindoftechnologypartner,it'snoshortcut.
+Youneedtounderstandthetechnology.Youneedtoreallyutilizeitusingthetestchipandthensomethingandworktogetherand
+thenpreparethecapacityandrampitup.That'swhatIsay,ittakesaboutfiveyears.
+It's not that today, you think this milk is better, you go to the next store, it's a 7-Eleven. You don't like it, you go to another store,
+no.Sothat'smyanswer.
+Charlie,isagree.
+Charlie Chan-MorganStanley-Analyst
+Yeah,sohopeyoucanbuymoremilksootherpeoplecannotgetit.
+Thank you. Yeah, so let me switch gears to a more exciting side. Just said, you see very strong signals from customers. You also
+reviseofthefull-yearrevenueguide.Areyoureadytorevisethefive-yearrevenueCAGR,especiallytheAIsemiCAGR?Iremember
+itwaslikehigh50%.Butherecomesthequestion,right,thatagenticAIdemandissostrong.CPUisagreatopportunityforTSMC.
+But how about a kind of memory cost increase, right? It's kind of a big chunk of this kind of AI CapEx. So what's the update of the
+AIsemiCAGRandhowshouldwelookatthecontentsoftheAIsemirelatedtoTSMC'sgrowth.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+So,Charlie,secondquestionisregardingtheAI-relateddemand.
+Wedocontinuetoseeverystrongandpositivesignalsfromourcustomers,customers'customers.We'verevisedupourfullyear.
+SohisquestionisaroundourAICAGRguidancethatwegaveinJanuaryonafive-yearperiodmid-tohigh-50sCAGRgrowth.He's
+wonderingifthere'sanyupdatetothat.
+AgenticAI,anewopportunity,whatisourdefinitionofAIaccelerator,doweincludethat?AndwhatistheCAGR?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Charlie, if you read our message that we continue to invest more, we increase the CapEx, with a good reason. So if you're asking
+about the AI's CAGR, let me give you not a number, but it's stronger and stronger and stronger. So we don't give you the number
+todaybecauseitcontinuestoincrease,sowedon'tknowhowtoanswerthisquestion.Butstrongerthanwhatwesaidbefore.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+ArthurLai,Macquarie.
+Arthur Lai-MacquarieResearchLtd-Analyst
+First,congratsonthestrongexecutionandperformance.
+9
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+My question is regarding the new advanced packaging technology. We noticed that especially the EMIB-T is gaining traction, so
+howwouldTSMCreacttothisrequest?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoArthur'sfirstquestionisonadvancedpackagingandcompetition,Iguessverysimplyput.EMIB-T,inhisview,isgainingtraction.
+Sohowdoweseethecompetitivethreatfromthis?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Well, let me say that our packaging capacity is so tight that now it limits my customers' growth. So we welcome that additional
+flexibilityinthemarketandsothatwillhelpTSMC'sfrontendwaferbusinessgrowth,whichisamajoritypartofTSMC'sbusiness.
+Thetechnologylooksgood,accordingtothenewspaper,andwehopetheywillbesuccessfulandsothatsharesomeoftheloading
+fromTSMC.
+Today,we'reworkingveryhardtoshortenthegapbetweenthedemandandthecapacity.Andso,asIsaid,wewelcome,havethese
+additionalalternativesandsotheflexibilityformycustomer.
+Arthur Lai-MacquarieResearchLtd-Analyst
+Thankyou.Thatmakesalotofsense.
+So a follow-up. So this is a new technology, right? So if your clients, they ask your support and our value is support our customer
+success,right,howTSMCwillhandlethisspecialrequest?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Sorry,yourquestionis(multiplespeakers)--
+Arthur Lai-MacquarieResearchLtd-Analyst
+Ifthesetechnologieshavesomesmallproblemandthenaskourcompanytosupport,sohowisourcompanyaccommodateit?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoArthurquestion'sis,ifthereissomeissueswiththistechnology,dowehavea--orIdon'tknowhowtosayit,isthereanalternative
+plan?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Letmeanswerthequestion.
+Ournumberoneistosupportourcustomers'success.Sowhateverthatwecanhelpourcustomers,thebusiness,wewilldoit.Does
+thatansweryourquestion?Okay.
+10
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Let'scomeback.We'lltakeonemorehereandthenwe'llgoonlineandthenbacktotheroom.
+Yeah,Gokul.
+Gokul Hariharan-JPMorganChase&Co-Analyst
+Firstquestionon,maybesinceyou'renotwantingtogivealonger-termnumericalguidance,couldyoutalktousalittlebitabout
+thephilosophyofhowyouareexpandingcapacity?Obviously,customerfeedback,customers'customers'feedbackisimportant.
+Do you also consider competitive pressure? Because as an outright market leader, having like undersupply for a very long period
+oftimeisnotreallydesirableforTSMC,right?Youprobablywantamarketwhichismorebalanced.Sowhenyouthinkaboutyour
+capacityexpansion,likehowlongdoyouthinkittakestofulfillthedemandasyouseerightnow?That'sone.
+And second, chips obviously is the current shortage, but there is also a lot of discussion about data center delay, power capacity
+beingavailable.Socouldyoualsosharesomethoughtsonhowyouarelayeringinthatkindofconcerns?Becauseyoudon'twant
+yourchipstobeavailable,buthavingtowaitforthatdatacenterdeploymenttohappen.Sojusttounderstandhowthatgoesinto
+yourplanningframeworkaswell.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Thankyou.SoGokul'sfirstquestionis,again,howdoweplanourcapacityanddeterminethecapacityexpansionplan.Certainly,
+wetakeintoconsiderationthedemand,multi-yeardemandfromourcustomersandcustomers'customers,butdowealsoconsider
+thecompetitivepressuresfromcompetitors'buildingcapacity?Isthatpartofourcalculustoexpandthecapacity,one?
+Andthenalso,whataboutthingsoutsideofchipslikedatacenterdelaysorpower,thesetypeofdeals?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Gokul,that'sagoodquestion.
+Definitely,everytimewhenwethinkaboutbusiness,weconsiderthecompetition.That'snumberone.Andthenwelookatwhere
+weareandthenwedecideabottom-upandthentop-downassessmentofthosedemand.Thosearethetypicalthings,Imean,in
+ourdailylife.Sowemakealotofjudgmentandthenwebemorecareful.Wetalktocustomersandcustomers'customers.Those
+are the CSPs. And then we get all their input for the demand and then we make a judgment. Now remember that I believe every
+customertellmethetruth,everyone.Youputallthetruthtogether,it'snotatruth.Sowehavetomakesomeofthejudgment.You
+know what I mean? Since you are laughing. Because all the customers are very aggressive, right? That's the CEO's job. CEO got to
+beaggressive.SotheygivemethenumberoftheirdemandandIbelievetheytrytheirbesttotellmethetruth.SoIputalltogether,
+allthetruthtogetherisnotatruth.Markdownthatword.
+Soyes,wedoaverycarefuljudgment.Mightnotbecorrect,butwedidcarefullyandbecausethisisabigmoney,right?Thisyear,
+we say we increased the capex from USD52 billion to USD56 billion, now USD60 billion to USD64 billion. And you bet that will
+continuetoincrease.It'sabigmoney,sowedoitcarefully.
+Sowedidalltheassessmentandthatleadtoyoursecondquestion.Arewesurethatwedeliverthechipstoourcustomerandthey
+werenotputintoinventory?Soactually,wearecheckingtheAIdatacenters’progress,thebuilding,thelocation,thedemand,the
+racks.WecheckingallthattomakesurethatTSMC'schipswillnotbeputininventory.
+11
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Thatansweryourquestion.
+Gokul Hariharan-JPMorganChase&Co-Analyst
+Yeah, that's clear. So C.C. So do you still believe even end of next year, we are still going to be running short of supply even with
+thiselevatedcapacitybuild-outplans?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Youwantmetogiveyouaguarantee,right?Letmesaythat.
+I believe from this day on all the way to probably 2029, 2030, the demand is very strong. Whether in between there's a dip or not,
+I'm not very sure. But the trend is so robust that I believe we are witnessing a kind of a new industry. I would like to say the new
+industry called AI industry, which is so common in our daily life because it is going to affect our automotive, affect the humanoid
+robot, and also impact to all the industry. So by the amount of money we put in, I mean, including all the CSPs, this is alone is a
+veryimportantnewindustrytotheworld.Andsothedemandwillbethere.Andthefundamentalthingissemiconductorchipsand
+mostoftheminTSMC.
+Gokul Hariharan-JPMorganChase&Co-Analyst
+Mysecondquestionisonyourprofitability.SoCCyoujokedthatyouaredefinitelyjealousofmemorycompetitors’margins.Butit
+definitelyfeelslikeprofitability-wise,longer-termfoundry,especiallyleadingedgefoundry,shouldbehigherthanmemory,looking
+atnumberofcompetitorsoutthere.
+So as you are investing for a lot of your customers, how is that discussion going? Because you are no longer the most profitable
+semiconductormanufacturingcompanyatthispointintime.Soyouprobablyhavelesspressureintermsofpassingonyourvalue
+andcapturingyourvaluerightnow,comparedtomaybeoneyearback.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay, so Gokul's second question is on profitability and pricing to a certain extent. Of course, some of the memory makers are
+makingverygoodprofitabilityandmarginstoday,buthenotestheroleoffoundrycouldbeevenmorevalueinTSMC'sroleaswell.
+Sowhatshouldbetherightwaytothinkaboutthelong-termprofitabilityforafoundry?Shoulditbebetter?AndthenIguessreally
+pricingintothis?Whattypeofpricingapproachdowewanttotake?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Yeah,Gokul,yourquestionisactuallysimple.WhatisthewaferpricingstrategyforTSMCandwhatkindofgrossmarginweshould
+have? The higher, the better, of course. But we are a partner, a partner meaning that I say many times, our customer got to be
+successful.Idon'twanttosqueezethemoutfromthemarket.Andbesides,weareaverytrustablecompanywithourcustomers.
+Sowedon'tsuddenlyincreaseourpricebywhichIliketohave4xor5x.Youcannotsurviveforthatkindoffor--foryourcustomer
+tosurviveforthatkindofpriceincrease.Soweearnourvalueandwemakesurethatourprofit,ourgrossmarginisenoughforour
+long-termsustainingexpansion,that'stothebenefitofmycustomersandTSMCalso,that'sourphilosophy.
+So yes, I'm really jealous about memory company's 86% gross margin. 86 -- 68, I'll be happy about that. All right. Anyway, so I
+answeredthequestion.Weareverytrustable.
+12
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Operator,canwetakethenexttwoquestionsfromparticipantsontheline,please?
+Operator
+JimFontanelli,Arete.
+Jim Fontanelli-AreteResearchLLC-Analyst
+CouldIaskabouttheriskthatyouseearoundcustomerconcentration,asAIdemandcontinuestosignificantlyoutgrowotherend
+markets?Ithinkyourexposuretoyourtopfivecustomersisbecomingmeaningfullylargerthanatanypointinyourhistory.SoI'd
+justliketounderstandhowyouseethatrisk.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoJim'sfirstquestionisriskaroundcustomerconcentration.Wehavelargecustomersthataregettinglarger.Areweworriedthat
+wehavetoomanybigcustomersorthecustomerconcentration?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+No, that's not our concern. Besides what you say, the customers are growing bigger and bigger, we are very happy about it. And
+some of the customers are growing very fast. So it's not, Jim, it's not what you say that the bigger customer is going bigger and
+bigger.No,Imean,there'salotofnewplayersintheAIindustry.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Doyouhaveasecondquestion?
+Jim Fontanelli-AreteResearchLLC-Analyst
+Yes.Sowe'reseeingyourdirectcustomersputcapitalintobothfinancing,investingandinvestinginAIdemand.Isthatsomething
+thatTSMCisconsidering?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+So,Jim'ssecondquestion,heknowssomeofourcustomersarehelpingtoinvestintheircustomers.
+Jim, if I understand you right correctly, you're asking if TSMC, if this is an approach we would take to invest in our customers. Is
+thatcorrect?Orfinancingandinvesting?
+Jim Fontanelli-AreteResearchLLC-Analyst
+Yeah,intheend-endcustomers,notyourdirectcustomers.
+13
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Right,soincustomers'customersaswell.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Toanswer,Jim,toansweryourquestiondirectly,everycompanyhasadifferentconsiderationandeverycompanyhasadifferent
+strategy.Sofar,no,TSMCdon'tdothiskindoffinancialarrangement,becauseofwethinkweareworkingwithcurrentcustomer,
+withthecurrentmodelsmoothlyandalsosuccessfully.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+(EventInstructions)
+Operator
+MehdiHosseini,SIG.
+Mehdi Hosseini-SusquehannaFinancialGroupLLLP-EquityAnalyst
+Twofrommyend.IwanttogobacktotheUSD100billioninvestmentintheUS.Isthereanywayyoucangiveussometimeline?Is
+it over the next three years, five years? How should we think about the progression of these USD100 billion investment in the US?
+AndIhaveafollow-up.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoMehdi'sfirstquestionisaroundtheannouncementtoday,additionalUSD100billioninvestmentintheUS.IntermsoftheCapEx,
+a timeframe, is it in the next three years, in the five years, do we have any schedule or timeframe to share about this additional
+USD100billion?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+We do have a plan, but let me share with you actually the progress or the schedule, most of the time depending on the market
+situation and our customers' demand. So if you ask me to give you a firm schedule, no, we don't have it today, but we do have a
+plan.Andwespeeditup,wetrytospeeditupasfastaspossible.
+Mehdi Hosseini-SusquehannaFinancialGroupLLLP-EquityAnalyst
+Okay,sothemessageisyou'reflexiblebutalsoyou'reexpeditingtheinvestmentinUS.Isthatcorrect?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Well,IthinkC.C.said,we'retryingtomoveasfastaswecanbuteverythingisbasedonourcustomerneeds.
+14
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Yeah,we'realsomovingthenewfabsandfacilitiesinTaiwanasfastaspossible.Andthesamething,wetrytobringupanewfab
+in the Japan as fast as possible because -- the situation today is the demand and the supply, the gap is so big, so we are working
+veryhardtonarrowthegap.
+Mehdi Hosseini-SusquehannaFinancialGroupLLLP-EquityAnalyst
+AndIhaveafollow-up.Actually,IwanttodiveintothecomputepartofHPC.AndIwanttoaskyouaboutthenetworkingswitches.
+Andinthatcontext,whenshouldweexpecttheCOUPEplatformtohaveamaterialcontributiontoyourtop-line?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoMahdi’ssecondquestion,veryspecific.HewantstoknowforourCOUPEplatform.Whenwillithaveaverymeaningfulcontribution
+tothebusiness.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+We started the production right now, and it will be ramped up. As time goes by, I think the AI data center need to lower down the
+powerconsumptionandincreasethebandwidthofthecommunicationchannel.SoIbelievetheCOUPEwillcontinuetoincrease
+thedemandandthenwillbecomeafairlyimportanttechnologyinthenextfewyears.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+LauraChen,Citi.
+Laura Chen-Citigroup-Analyst
+AndmyfirstquestionisalsoaboutverypromisingoutlookasTSMCraisedtheCapExandalsothegrowthoutlookforthisyear.And
+particularly,Ithink,C.C.,youmentionedabouttheagenticAIandtheCPUgrowthpotential.Butcanyougiveussomemoreupdate
+amongthatAI,differentkindofchipsbetweenGPUs,accelerators,orCPU,whatyouseethegrowthpotentialandyourvisibility?
+Thankyou.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoLaura'sfirstquestionisaroundsortoftheoutlook.WeobviouslyraisedtheCapExandgrowthoutlookforthisyear.Shewants
+toknowwithintheAI,theoutlookforagenticAIandCPUsversusAIaccelerators,GPUs,etcetera.Howdoweseethesesegments.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Laura,Idon'tthinkIcangiveyouaveryspecificnumber,butletmesharewithyou,allofthemareinTSMC,andthey'realsousing
+the same kind of leading-edge technologies. We're working with our customers to allocate the wafer, the supply to balance the
+CPU,GPU,XPU'sratio.
+15
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Laura Chen-Citigroup-Analyst
+Okay,thankyou.Yeah,thatmakessense.
+Andthenmysecondquestionisalsoabouttheadvancedpackaging.WeknowthatduringtheSymposium,TSMCpreviouslyalready
+announced14timesreticleCoWoSroadmaptoenablelargerAIpackaging.Butatthesametime,wealsonotedthatTSMC,maybe
+last month in Japan, you showed the substrate developments for CoWoS to enable some of the glass technology. So I'm just
+wondering if you can give us more like technologies progress update on the different kind of technology for glass-core or glass
+substrateoraglasscarrier,what'stheprogressatTSMCrightnow?
+Thankyou.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+SoLaura'ssecondquestionisonadvancedpackaging.Shenotes,aswesaid,weroadmaptoevenlargerthan14xreticlesizewith
+CoWoS, but she also wants to know the technology process in newer areas like glass substrates, glass-cores, what is the progress
+andstatus.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Letmesaythattoday,themajorityisstillCoWoS,right?Andwearedevelopingthatalternative,trytolowerdownthecost.Andwe
+also work with substrate vendor so that our customer can have their product be in the market. The progress, we're building a
+pipelinethatIannouncedafewquartersago,andittakesaboutanotheroneyeartobemature,sowecanputintotheproduction
+withourcustomer.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+BankofAmerica,HaasLiu.
+Haas Liu-BofaSecurities-Analyst
+Congratsongreatresults.
+MyfirstquestionisregardingyourCapExandsales.YougaveprettysolidCapExoutlookforthisyearandalsosaidtheCapExoutlook
+inthenextcoupleofyearswillcontinuetobeprettysignificant.Andyoualsoraisedthisyearat40%-plus.Sowouldyoubeableto
+provideyournextcoupleofyearssalesgrowthoutlook,trytoquantifyit?
+And relatedly, I think also on that topic is whether you can just try to break down which part of the demand you are seeing as the
+keydriverforyoutoraiseyourCapExandalsoforthisyear'sdemand?Isitstillmostlydrivenbycloudcomputingoritisproliferating
+toedgecomputing?Ortosomeextent,isitalsorelatedtoyourequipmentsupplychainisraisingtheirpriceaswell?
+Thankyou.
+16
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay, that's several questions in one. So I'm going to take that as one and a half questions at least. But basically, Haas is asking
+withtheCapExincreaseandtherevenueincreasethisyear,Ithinkhe'stryingtolookatintensity,buthewantstoknowwhatabout
+therevenueguidanceforthenextseveralyears.
+Yes,I'llstop.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Okay,letmeanswerthatquestion.Becauseoftherevenuecorrespondingtoourinvestment,right,becauseweknowweforecast
+our demand and then we make an assessment and then we do the CapEx. Next few years is going to be a very good business for
+TSMC.That'sallIcansay.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Andthentheotherpart,sowhat'sthekeydriver?IsitcloudAI?IsitedgeAI?Isitbecausetoolvendorsareincreasingtheprice?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+It'sallAIrelated,everything.
+Haas Liu-BofaSecurities-Analyst
+Yes, I think it is more on your long-term strategy because. A lot of people have actually been asking about your CapEx and also
+competition on the frontend. But I would actually say that if on the backend competition is rising, especially coming from Intel
+EMIB-T.Areyouworriedthatyourvalue-addforoverallfoundrybusinessacrossfrontendmanufacturingtothebackendpackaging
+business,thevalue-addcouldactuallybecannibalizedwithgrowingcompetition?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay,thankyou.SoHaas'ssecondquestionisaroundthecompetitioninadvancedpackaging.Ifourcompetitorsareabletogain
+tractionorbusinesswiththingslikeEMIB-T,wouldthatbethegatewayoranentrywayintomorecompetitivethreatonthefrontend
+logicwaferside?Sodoesadvancedpackagingleadtofrontendwafer?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Let me answer that. The frontend wafer business and the backend business are two different things, right? If they are the same,
+then you can expect ASE become the frontend competitor also. It’s two different things. And I also say that since our capacity in
+the backend is still in shortage mode, the gap is bigger. And so I welcome that the competitor offer some of the flexibility to my
+customersothattheirfrontendwafercanbeputintothepackageandthathelpTSMC'sfrontendwaferbusiness.That'sourattitude.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Operator,let'stakeonemorefromtheonlineandthenwe'llwrapupwithbackinperson.
+17
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Operator
+RobertSanders,DeutscheBank.
+Robert Sanders-DeutscheBankAG-Analyst
+You recently stated that high-NA tools are too expensive, but could you please discuss how your customers are considering the
+impact of die stitching challenges from a smaller field size with high-NA? Could that actually slow the adoption of high-NA even if
+thetechimprovesorthetechgetsmoreproductive?
+AndIhaveafollow-up,thanks.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Well,Rob'sfirstquestionisveryspecifictechnology.Aroundhigh-NAadoption,hewantstoknowthecustomer'sfeedbackonthe
+challengeswithdiestitching.Isthisanimpedimentorbarriertohigh-NAadoptioninourview?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+You've got a very detailed understanding of the high-NA. Today, the field size is only one-half and we put that one into our
+considerationofthemanufacturingcostandsomething.Again,letmeanswerthisquestionquickly.Whetherweuseahigh-NAor
+not,actually,one,high-NAisaverygoodtool.Let'sassumethat,allright.Weunderstandit'sveryhighperformance.ButthenTSMC
+make it clear that we work with ASML and try to make it more suitable for manufacturing in terms of the cost and in terms of the
+maturity.Sowealwaysconsiderthattechnology,maturity,andthecostinwhetherweuseitornot.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Thankyou,C.C.Doyouhaveasecondquestion,Rob?
+Robert Sanders-DeutscheBankAG-Analyst
+Yeah,justaquickfollow-up.
+I think all of us on this call are assuming that the unconstrained demand for 3 nanometer and below is sort of 30% to 50% above
+yourabilitytosupply.Isitinfactmuchlargerthan30%to50%above?Becauseitfeelslikeitmightbebasedonwhatyou'resaying,
+because I think all of us are assuming it's sort of solvable over the next three, four years, but it sounds like the number could be
+muchlarger.
+Thanks.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Well, those are your numbers, but Robert is asking the demand in excess of supply, is it 30% to 50%? Is it something even larger?
+Dowehaveanumbertoshare?
+18
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+No, we don't have a number to share because of -- let me say that the gap is very big. Bigger than… Sorry, I don't want to make a
+commentonthememory,butaverybiggap.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+EvelynYu,Goldman.
+Evelyn Yu-GoldmanSachsGroupInc-Analyst
+Wementionedalotonthatwe'regoingtostepupourcapacitygrowth.I'mjusttryingtoquantifyherebecauseInoticedthatduring
+yourSymposiumthatyouactuallymentionedabout2-nanometerfamilycapacitygrowthwillbegrowingataround70%CAGRfrom
+'26 to '28 and N3+ N5 to grow by 25% CAGR from 2022 to '27. So I was just wondering, are those numbers still right assumptions
+today? Are we seeing actually any changes over the past quarter and how should we compare with the non-supporting demand
+outthere?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay. So Evelyn's first question is around capacity growth. She knows during the symposium we did share some five-year CAGR
+growthnumbersfor2nanometer,around70%CAGR,andthen3nanometeraround,Iguess,Ican'tremembertheexact,but25%.
+Soarethosenumbersstillthesame,orhasitchangednowthatourCapExandstuff?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+DidwesaythatinTechnologySymposium?Oh,weshowthechart.Okay,nowisbigger.That'sallIsay.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Doyouhaveasecondquestion.
+Evelyn Yu-GoldmanSachsGroupInc-Analyst
+Okay,thankyou.Verygooddirection.
+Allright,myotherquestiontouchedbasedontheadvancedpackagingside.Becauseyoualwaysbundletheadvancedpackaging
+CapEx together with testing, mask-making, and others, that's around 10% to 20% of total CapEx. And so one thing I'm trying to
+figureouthereisthathowmuchofthatactuallygoesthroughadvancedpackagingalone?
+And because given that advanced packaging is capital intensive, less capital intensive versus frontend, so how should we think
+about a gap between its pricing revenue share and its CapEx share over the next few years? And well, I think finally is that as it
+becomes more important, how should we think of maybe you should consider bringing it out as a separate CapEx item going
+forward?
+19
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Okay, so Evelyn's question is around advanced packaging. She wants to know when we guide for the CapEx? Of course, we guide
+itinabucketofpackaging,testing,mask-makingandotherstogether.Whydowenotseparateoutjustintopackagingspecifically?
+Hersuggestionisweshould,butIthinkmoresothat'spartofit,numberone,theCapExbreakdown.
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Evelyn,letmesaythatwetryveryhardtomakesurethatourCapExnumberiscorrect,butwiththeflexibilitybetweenthefrontend
+andthebackend.Sometimeswehaveabottleneck,soweputmoremoneytobuythebottlenecktools.Andsometimesit'sinthe
+frontend, sometimes it's in the backend. But in the ballpark, the percentage is just like a window shared with everybody. For
+long-term,Imean,that'sabackendisabout10to20%,that'sabigrange.
+Anyway,sothatwe--allIcansayisthatstill10to20%.BecauseasIsaid,actually,I'mveryhonesttotellyouthatastimegoesby,
+some of the customers' products need more tester. You cannot believe that. I mean, so the tester in shortage, so we have to put
+moreCapExinthetesterorinthepackagingorinotherareas.Sothat'swhywecannotbeveryspecificallysaywhichareaweput
+howmuchoftheCapEx.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+That'stoospecific.
+FelixPan,KGI.
+Felix Pan-KGISecuritiesCoLtd-Analyst
+SomyfirstquestionisregardingtotheCapExrevision.Sofromyeartodate,soTSMCraisedtheCapExguidancebyalmostUSD10
+billion.Socanyougivemesomecolor,whereistheupsidefrom,howyouguysseethedifferencefromsixmonthsago.Isthatfrom
+like CPU accelerator, or memory companion chip, or backend CoWoS expansion. Just the upside, how we see things differently
+fromsixmonthsago?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+So Felix is noting, in January, we guided for USD52 billion to USD56 billion. In April, we said closer to USD56 billion, now USD60
+billiontoUSD64billion.SowehaveincreasedtheCapExguidance.Whatisdrivingthis?IsitagenticAIonly?Isitpackaging?IsitAI
+accelerator?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Well, simply put, the most important reason is because that demand continues to increase. And we feel the pressure from the
+customertodriveTSMC,notdrive,actuallytocooperatewithTSMCforthecapacityincrease.That'soneofthemajorreasons.
+Thesecondreasonisinflation.Nowwebuythetoolswithinflationprice,okay?YouunderstandwhatIsay.
+20
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+Felix Pan-KGISecuritiesCoLtd-Analyst
+Somysecondquestionisaboutthematurenode.SopeoplealwaysfocusonAIleadingnodes,butitseemslikematurenodesalso
+seeing a very strong demand recovery and also some supply issue as well. So how do you guys see the demand-supply dynamic
+andpricingforthematurenode?
+Becauseapparently,there'ssomeimpactfromtheAIcrowding-outeffect,butmaturenodestilllargelydependsontheconsumer
+demand.Soconsumerdemandisstillweak.Sohowyouguysseethedemand-supplydynamicforthematurenode?
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Thankyou.SoFelix'ssecondquestionisonmaturenode.
+He notes there's lots of talk that mature nodes are seeing a strong demand recovery and the supply is very tight. So mature node
+pricingisveryfavorableorstrong.Sohewantstoknowhowdoweseethematurenodesupply-demandsituation?
+C.C. Wei-TaiwanSemiconductorManufacturingCoLtd-ChairmanandChiefExecutiveOfficer
+Actually,thematurenodecoveralotofdifferentsegments.OnlytheonewithrelatedtoAIisinshortage,whichisthemostimportant
+oneisthenumberoneispowermanagementIC,becausealltheAIdatacenterneedalotofpowermanagement.Andthosearethe
+mature node technology, like 0.18 micron, 90 nanometer, or something like that. Those are in shortage, definitely. And also, the
+sensor portion, because you need a lot of sensors to detect the environmental information and put it into the AI data center to
+analyzeit.
+Other than that, other area, just like you pointed out, the consumer product is not in a high demand, and so other segment is not
+insostrongdemand.AndasIpointedoutinmystatement,otherarea,no,it'snotsomuchof,say,inalotofshortage,notatall.
+Jeff Su-TaiwanSemiconductorManufacturingCoLtd-DirectorofInvestorRelations
+Thankyou.Thankyou,C.C.Thankyou,Wendell.Thankyou,everyone.
+This does conclude our Q&A session. Before we conclude today's conference, please be advised that the replay of the conference
+will be accessible within 30 minutes from now. The transcript will become available 24 hours from now, and both are going to be
+availablethroughourwebsite,again,atwww.tsmc.com.
+Ifsomeofyouarenotabletoaskyourquestion,pleasefeelfreetoreachouttoTSMCIR,andwewillfollow-upwithyou.Sothank
+you,everyoneforjoiningustoday.Wehopeeveryonecontinuestostaywell.Haveagoodsummer,andwehopeyou'lljoinusagain
+nextquarter.
+Thankyou,andhaveagoodday.
+21
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)
+DISCLAIMER
+LSEGreservestherighttomakechangestodocuments,content,orotherinformationonthiswebsitewithoutobligationtonotifyanypersonofsuchchanges.
+In the conference calls upon which Event Transcripts are based, companies may make projections or other forward-looking statements regarding a variety of items. Such forward-looking
+statementsarebaseduponcurrentexpectationsandinvolverisksanduncertainties.Actualresultsmaydiffermateriallyfromthosestatedinanyforward-lookingstatementbasedonanumber
+ofimportantfactorsandrisks,whicharemorespecificallyidentifiedinthecompanies'mostrecentSECfilings.Althoughthecompaniesmayindicateandbelievethattheassumptionsunderlying
+the forward-looking statements are reasonable, any of the assumptions could prove inaccurate or incorrect and, therefore, there can be no assurance that the results contemplated in the
+forward-lookingstatementswillberealized.
+THEINFORMATIONCONTAINEDINEVENTTRANSCRIPTSISATEXTUALREPRESENTATIONOFTHEAPPLICABLECOMPANY'SCONFERENCECALLANDWHILEEFFORTSAREMADETOPROVIDEAN
+ACCURATE TRANSCRIPTION, THERE MAY BE MATERIAL ERRORS, OMISSIONS, OR INACCURACIES IN THE REPORTING OF THE SUBSTANCE OF THE CONFERENCE CALLS. IN NO WAY DOES LSEG
+OR THE APPLICABLE COMPANY ASSUME ANY RESPONSIBILITY FOR ANY INVESTMENT OR OTHER DECISIONS MADE BASED UPON THE INFORMATION PROVIDED ON THIS WEB SITE OR IN ANY
+EVENTTRANSCRIPT.USERSAREADVISEDTOREVIEWTHEAPPLICABLECOMPANY'SCONFERENCECALLITSELFANDTHEAPPLICABLECOMPANY'SSECFILINGSBEFOREMAKINGANYINVESTMENT
+OROTHERDECISIONS.
+©2026,LSEG.AllRightsReserved. 16824310-2026-07-17T05:19:36.480
+22
+LSEG STREETEVENTS | www.lseg.com | Contact Us
+©2026 LSEG. All rights reserved. Republication or redistribution of LSEG content, including by framing or similar means, is prohibited without the
+prior written consent of LSEG. 'LSEG' and the LSEG logo are registered trademarks of LSEG and its affiliated companies.
+JULY 16, 2026 / 6:00AM, 2330.TW - Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings
+Call (Chinese, English)

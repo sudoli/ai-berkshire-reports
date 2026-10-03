@@ -1,0 +1,84 @@
+{
+  "basis": "Analyst normalized forward EPS, not TTM; prices Sep30 close; shares approximated from later snapshot",
+  "price": "41.07",
+  "eps": "4.0",
+  "shares": "656965384",
+  "scenarios": [
+    {
+      "label": "bear",
+      "growth": "-.10",
+      "pe": 8,
+      "eps3": "2.9160000",
+      "target": "23.3280000",
+      "return_pct": "-43.19941563184806428049671293",
+      "cagr_pct": "-17.18336100289064963999841750"
+    },
+    {
+      "label": "base",
+      "growth": ".10",
+      "pe": 12,
+      "eps3": "5.3240000",
+      "target": "63.8880000",
+      "return_pct": "55.55880204528853177501826150",
+      "cagr_pct": "15.86836088714181255927572620"
+    },
+    {
+      "label": "bull",
+      "growth": ".20",
+      "pe": 16,
+      "eps3": "6.9120000",
+      "target": "110.5920000",
+      "return_pct": "169.2768444119795471146822498",
+      "cagr_pct": "39.12323567200361134401140880"
+    }
+  ],
+  "buy_low": "28.0",
+  "buy_high": "34.00",
+  "scenario_tool": "============================================================\n三情景估值模型 (Three-Scenario Valuation)\n============================================================\n  当前股价: 41.07 USD\n  当前EPS:  4.0\n  预测期:   3年\n\n  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅\n  ------------ -------- -------- ---------- ---------- --------\n  乐观 (Bull)         20%      16x       6.91     110.6  +169.3%\n  中性 (Base)         10%      12x       5.32      63.9   +55.6%\n  悲观 (Bear)        -10%       8x       2.92      23.3   -43.2%\n\n  ✅ 所有计算使用精确十进制, 结果可审计复现\n",
+  "valuation_tool": "============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 41.07\n\n  PE (TTM):  41.07 / 4.0 = 10.27x\n  盈利收益率: 9.74%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+  "image_implied_cap_b": "26.98156832088",
+  "forward_pe": "10.2675",
+  "cross_checks": [
+    {
+      "field": "revenue_m",
+      "primary": 39063.072,
+      "secondary": 39063,
+      "error_pct": "0.0001843173010048979250787034875",
+      "tool": "============================================================\n交叉验证: revenue_m (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 39,063.04 USD_m_or_percent\n\n  ✅ issuer_or_SEC       : 39,063.07 USD_m_or_percent  (偏差 0.00%)\n  ✅ StockAnalysis       : 39,063.00 USD_m_or_percent  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 39,063.04 USD_m_or_percent\n"
+    },
+    {
+      "field": "net_income_m",
+      "primary": 2230.453,
+      "secondary": 2230,
+      "error_pct": "0.02030977563750502700572484603",
+      "tool": "============================================================\n交叉验证: net_income_m (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 2,230.23 USD_m_or_percent\n\n  ✅ issuer_or_SEC       : 2,230.45 USD_m_or_percent  (偏差 0.01%)\n  ✅ StockAnalysis       : 2,230.00 USD_m_or_percent  (偏差 0.01%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 2,230.23 USD_m_or_percent\n"
+    },
+    {
+      "field": "cash_m",
+      "primary": 7521.474,
+      "secondary": 7521,
+      "error_pct": "0.006301956238896790708842442319",
+      "tool": "============================================================\n交叉验证: cash_m (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 7,521.24 USD_m_or_percent\n\n  ✅ issuer_or_SEC       : 7,521.47 USD_m_or_percent  (偏差 0.00%)\n  ✅ StockAnalysis       : 7,521.00 USD_m_or_percent  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 7,521.24 USD_m_or_percent\n"
+    },
+    {
+      "field": "operating_cash_flow_m",
+      "primary": -6809.886,
+      "secondary": -6810,
+      "error_pct": "0.001674036834096782236883260601",
+      "tool": "============================================================\n交叉验证: operating_cash_flow_m (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: -6,809.94 USD_m_or_percent\n\n  ✅ issuer_or_SEC       : -6,809.89 USD_m_or_percent  (偏差 -0.00%)\n  ✅ StockAnalysis       : -6,810.00 USD_m_or_percent  (偏差 -0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): -6,809.94 USD_m_or_percent\n"
+    }
+  ],
+  "share_basis": {
+    "SEC_DEI_asof": "2026-07-31",
+    "SEC_DEI_raw_shares": 656965384,
+    "split_adjustment": 1,
+    "note": "不是精确Sep30股本；APH依据2026年9月2拆1转换。"
+  },
+  "market_cap_tool": {
+    "quote_for_test": "43.13",
+    "reported_stat_cap": "2.833E+10",
+    "note": "单行情源不完全同步快照；只检单位及分母，不证明9月30日市值。CLS约2.8%差异保留。",
+    "output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       43.13 USD\n  总股本 (Shares):    656.97M\n  计算市值:           28.33B USD\n  报告市值:           28.33B USD\n  偏差:               0.02%\n\n  ✅ 验证通过, 偏差仅 0.02%\n"
+  },
+  "share_crosscheck": "============================================================\n交叉验证: ordinary_shares_split_adjusted (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 656.97M shares\n\n  ✅ SEC_DEI_adjusted    : 656.97M shares  (偏差 0.00%)\n  ✅ StockAnalysis_rounded: 656.97M shares  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 656.97M shares\n"
+}

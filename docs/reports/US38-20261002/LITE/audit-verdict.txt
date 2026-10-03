@@ -1,0 +1,32 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：LITE
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 收入 · FY2024                          报告:      1359.00 
+                                                    https://stockanalysis.com/stocks/lite/financials/income-statement/: 1359.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] GAAP净利润 · FY2026                     报告:     -6935.10 
+                                                    https://stockanalysis.com/stocks/lite/financials/income-statement/: -6935.00 (偏差 0.00%)  |  https://data.sec.gov/api/xbrl/companyfacts/CIK0001633978.json: -6935.10 (偏差 0.00%)
+  [92m✅ 通过[0m [ 9] 经营现金流 · FY2023                       报告:       179.80 
+                                                    https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/: 179.80 (偏差 0.00%)
+  [92m✅ 通过[0m [16] 资本开支 · FY2026                        报告:       451.30 
+                                                    https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/: 451.30 (偏差 0.00%)  |  https://data.sec.gov/api/xbrl/companyfacts/CIK0001633978.json: 451.30 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 资本开支 · FY2025                        报告:       231.00 
+                                                    https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/: 231.00 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 自由现金流 · FY2024                       报告:      -108.30 
+                                                    https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/: -108.30 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 6  |  通过: [92m6[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 6,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 6,
+  "fail_items": [],
+  "warn_items": []
+}

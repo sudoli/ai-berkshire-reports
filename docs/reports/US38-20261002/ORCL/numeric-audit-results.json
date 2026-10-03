@@ -1,0 +1,80 @@
+{
+  "ticker": "ORCL",
+  "fact_samples": [
+    {
+      "id": 1,
+      "label": "云基础设施IaaS · 十亿美元",
+      "reported_value": 7.388,
+      "unit": "",
+      "line_number": 19,
+      "raw_text": "| 云基础设施IaaS | 7.388 | +121% | 向模型公司及企业出租计算、存储与网络，依赖交付和利用率 |",
+      "fetched_value": 7.388,
+      "fetched_source": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 4,
+      "label": "硬件 · 十亿美元",
+      "reported_value": 0.774,
+      "unit": "",
+      "line_number": 22,
+      "raw_text": "| 硬件 | 0.774 | +15% | Exadata等系统，非一般消费硬件 |",
+      "fetched_value": 0.774,
+      "fetched_source": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 101,
+      "label": "annual revenue",
+      "reported_value": 67357.0,
+      "unit": "USD million",
+      "fetched_value": 67357.0,
+      "fetched_source": "https://s23.q4cdn.com/440135859/files/doc_earnings/2026/q4/earnings-result/4q26-pressrelease-final.pdf",
+      "fetched_value2": 67357.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/orcl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 102,
+      "label": "annual net income available to common holders",
+      "reported_value": 16984.0,
+      "unit": "USD million",
+      "fetched_value": 16984.0,
+      "fetched_source": "https://s23.q4cdn.com/440135859/files/doc_earnings/2026/q4/earnings-result/4q26-pressrelease-final.pdf",
+      "fetched_value2": 16984.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/orcl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 103,
+      "label": "latest cash plus marketable securities, excluding restricted cash",
+      "reported_value": 37077.0,
+      "unit": "USD million",
+      "fetched_value": 37077.0,
+      "fetched_source": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "fetched_value2": 37077.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/orcl/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    }
+  ],
+  "excluded_from_external_fact_verdict": [
+    {
+      "id": 12,
+      "label": "基准：逐步交付且融资受控 · 相对141.08美元回报",
+      "reported_value": 36.52,
+      "unit": "%",
+      "line_number": 86,
+      "raw_text": "| 基准：逐步交付且融资受控 | +14% | 20倍 | 192.60 | +36.52% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "model assumption or computed model value; arithmetic separately verified"
+    }
+  ],
+  "warning": "PASS applies only to fact samples; some are issuer-only. Assumptions and parser false positives excluded, not certified. Full financial statement and contract audit not performed."
+}

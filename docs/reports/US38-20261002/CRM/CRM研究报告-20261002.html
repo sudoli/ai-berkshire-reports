@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="客户数据与流程锁定具有价值，但AI席位替代和负债回购使合理价格比转型叙事更重要。"><meta name="source-sha256" content="f6c15e5fb6aa25aabc814ec537e2d529cb09e5e75d2f2372a7c6df3be5f8eaeb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Salesforce（CRM）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="CRM%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / CRM / 2026-10-02</div>
+<h1>Salesforce, Inc.<span>企业客户关系与AI工作流软件 · 公司研究</span></h1><p class="hero-deck">客户数据与流程锁定具有价值，但AI席位替代和负债回购使合理价格比转型叙事更重要。</p>
+<div class="hero-meta"><span>FY2027 Q2 ended 2026-07-31; 10-Q filed 2026-08-27</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$229.57<small>2026-09-30 regular-session close<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">Yahoo与StockAnalysis历史表同日close均与用户截图一致；两站底层行情供应链未独立核查，非10月2日实时价。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：业务结构与财务底盘</a></li><li><a href="#section-3">第二步：护城河、竞争与价值捕获</a></li><li><a href="#section-4">第三步：资本配置与资产负债表</a></li><li><a href="#section-5">第四步：最强反面论证</a></li><li><a href="#section-6">第五步：估值与安全边际</a></li><li><a href="#section-7">第六步：行动清单</a></li><li><a href="#section-8">来源、差异与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：业务结构与财务底盘</a></li><li><a href="#section-3">第二步：护城河、竞争与价值捕获</a></li><li><a href="#section-4">第三步：资本配置与资产负债表</a></li><li><a href="#section-5">第四步：最强反面论证</a></li><li><a href="#section-6">第五步：估值与安全边际</a></li><li><a href="#section-7">第六步：行动清单</a></li><li><a href="#section-8">来源、差异与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Salesforce（CRM）研究报告</h1>
+<p><strong>研究日及信息截止：2026-10-02。</strong> 估值使用2026-09-30常规交易收盘 <strong>229.57美元</strong>。用户截图起初未经核实，本次与Yahoo Finance日线、StockAnalysis历史表同日close一致；两站底层行情供应链未独立核查，非研究日实时价格。最新核实财务为FY2027第二季度，截止2026-07-31，公告2026-08-26、10-Q提交2026-08-27。Salesforce财年在1月底结束，FY2027不是自然年2027。</p>
+<p>以2026-08-20普通股8.23亿股估算市值1,889.36亿美元。<strong>核心判断：客户数据、业务规则与权限构成护城河，但AI从席位收费转向工作量收费的价值捕获尚未定型；借债回购也改变了风险。</strong></p>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，AI分析置信度中。避免两种对称偏见：“AI会消灭所有SaaS”和“有客户数据就能永远收租”。本次验证年度、最新季度和现金债务，但没有客户群真实净留存率、Agentforce独立毛利、完整9月投资者日材料及最新并购交割后条款；不会将ARR、token、累计工作单元当作本期确认收入。</p>
+<h2 id="section-2">第一步：业务结构与财务底盘</h2>
+<p>Salesforce向企业销售销售管理、客服、营销、电商及数据集成软件；Sales/Service负责客户接触和服务流程，平台承载自定义字段、权限和应用，MuleSoft连接系统，Tableau处理分析，Slack承担协作，Informatica补充数据治理。它真正卖的是“组织如何管理客户关系并执行工作”的持续服务，主要通过订阅及支持收费，实施服务也存在，但并非全部高毛利软件收入。</p>
+<p>传统用户席位与较高等级套餐提供可预测收入；Agentforce和数据产品逐渐引入使用量、工作单元及新套餐。客户可能雇更少客服，减少席位，却消费更多自动化任务。能否让新增机器工作收费超过损失的人类席位，是未来利润关键，不能只看AI采用数量。</p>
+<p>历史单位为十亿美元，FCF统一为经营现金流减固定资产购买，非净利润。</p>
+<div aria-label="第一步：业务结构与财务底盘" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">FY2023</th>
+<th scope="col" style="text-align: right;">FY2024</th>
+<th scope="col" style="text-align: right;">FY2025</th>
+<th scope="col" style="text-align: right;">FY2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入</td>
+<td style="text-align: right;">31.352</td>
+<td style="text-align: right;">34.857</td>
+<td style="text-align: right;">37.895</td>
+<td style="text-align: right;">41.525</td>
+</tr>
+<tr>
+<td>GAAP净利润</td>
+<td style="text-align: right;">0.208</td>
+<td style="text-align: right;">4.136</td>
+<td style="text-align: right;">6.197</td>
+<td style="text-align: right;">7.457</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">7.111</td>
+<td style="text-align: right;">10.234</td>
+<td style="text-align: right;">13.092</td>
+<td style="text-align: right;">14.996</td>
+</tr>
+<tr>
+<td>资本开支</td>
+<td style="text-align: right;">0.798</td>
+<td style="text-align: right;">0.736</td>
+<td style="text-align: right;">0.658</td>
+<td style="text-align: right;">0.594</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">6.313</td>
+<td style="text-align: right;">9.498</td>
+<td style="text-align: right;">12.434</td>
+<td style="text-align: right;">14.402</td>
+</tr>
+<tr>
+<td>现金流表SBC</td>
+<td style="text-align: right;">3.279</td>
+<td style="text-align: right;">2.787</td>
+<td style="text-align: right;">3.183</td>
+<td style="text-align: right;">3.509</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2026利润率改善及现金流强劲有事实支持。但SBC仍占收入8.45%，大规模回购的一部分是在抵消薪酬稀释，不是所有回购金额都增加股东财富。软件轻资本并不意味着无需再投资：研发、销售、云算力和购买整个公司都要钱，后者不会出现在通常FCF的资本开支里。</p>
+<p>FY2027Q2收入113.45亿美元，公告四舍五入为113亿美元、同比约+11%；其中Informatica贡献4.56亿美元。订阅与支持约108亿美元，仍是收入主体。GAAP营业利润23.31亿美元，GAAP营业率20.5%，调整后34.1%。GAAP净利润35.26亿美元、EPS4.29美元，调整EPS5.90美元；<strong>本季投资收益26.13亿美元，GAAP/调整EPS均不得当成稳定订阅盈利直接年化</strong>。投资收益本身税前相当于每稀释股3.18美元，远非微小噪声。</p>
+<p>当季OCF12.69亿美元，FCF10.98亿美元；上半年OCF79.70亿美元、FCF76.54亿美元。收款季节性强，不能将较弱单季现金流外推全年。公司FY2027收入指引461—464亿美元，其中Informatica、待完成收购及汇率均影响增量；GAAP营业率指引20.1%、调整后34.3%，OCF与FCF同比增长指引约4%—5%。GAAP和调整差异不是现金股东可忽略的小项。</p>
+<h2 id="section-3">第二步：护城河、竞争与价值捕获</h2>
+<div aria-label="第二步：护城河、竞争与价值捕获" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">来源</th>
+<th scope="col">证据与反证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>转换成本</td>
+<td>客户历史、权限、数据质量、销售流程、自建应用相互依赖，迁移有组织成本；但界面可能被外部AI代理取代</td>
+</tr>
+<tr>
+<td>生态与规模</td>
+<td>顾问、开发者和合作应用丰富，企业采购信誉强；规模也带来复杂性和整合负担</td>
+</tr>
+<tr>
+<td>定价权</td>
+<td>高等级套餐及现有客户扩张能提价，但机器工作收费需要客户愿付且可衡量的ROI</td>
+</tr>
+<tr>
+<td>网络效应</td>
+<td>企业数据通常不共享，不应夸大为跨客户强网络效应</td>
+</tr>
+<tr>
+<td>技术领先</td>
+<td>长于企业流程与治理，不垄断大模型；微软Dynamics、ServiceNow、HubSpot及企业自建持续竞争</td>
+</tr>
+</tbody>
+</table></div>
+<p>Q2 cRPO335亿美元、同比+14%，是未来一段时间收入的可见度，不是利润。Agentforce与Data 360 ARR合计接近39亿美元；Agentforce超过15亿美元，但<strong>本季度定义扩展，纳入Slackbot及Headless 360等AI产品</strong>，同比+240%不能全部解释为原产品自然增长。ARR也含产品组合和并购影响，不能拿累计token量与营业收入混算。</p>
+<p>行业利润可能由数据治理和系统执行层捕获，也可能被基础模型、云服务及客户拿走。即便Salesforce成为“无界面后台”，护城河仍可能存在，但按用户收取的前台溢价不一定存在。判断AI利好必须同时看有机收入、每份合同经济性与模型成本。</p>
+<blockquote>
+<p>护城河追问：客户保留数据库，却不再为同样数量的席位付费，公司会更重要还是更赚钱？</p>
+</blockquote>
+<h2 id="section-4">第三步：资本配置与资产负债表</h2>
+<p>Marc Benioff团队近年改善利润率，并开始持续分红及回购。FY2026返还股东143亿美元，包含127亿美元回购、16亿美元股息；2026年公布500亿美元新回购授权。授权不是已实施金额，借债执行更不是无成本赠礼。</p>
+<p>FY2027Q1进行了250亿美元加速回购，并发行250亿美元债务支持；该季公告回购271亿美元。8月公告预计ASR在2026年10月最终结算，<strong>截至本报告不假设已经完成</strong>。截至7月底借款账面值392.88亿美元；现金83.10亿美元＋短期证券30.93亿美元＝114.03亿美元，不含任何租赁的净借款278.85亿美元。Yahoo总债务417.43亿美元另含经营租赁24.55亿美元；StockAnalysis总债务423.76亿美元进一步计入融资租赁6.33亿美元，均由SEC租赁标签核对。融资租赁也是实质义务，比较杠杆时应考虑；不能把三种债务口径取平均。</p>
+<p>经营现金流增长指引下修到4%—5%已反映新增利息。2026Q2单季利息费用4.73亿美元，回购推高EPS必须与融资成本一起评价。Informatica等并购增加交叉销售机会，也带来商誉、摊销和整合风险；本次不对最新高管持股比例、薪酬投票或内部人买卖做未经验证的结论。</p>
+<blockquote>
+<p>管理层追问：若不再借债回购，业务本身能让每股所有者收益增长多少？</p>
+</blockquote>
+<h2 id="section-5">第四步：最强反面论证</h2>
+<p>公司可能从成长平台变成高质量但增长有限的后台系统：AI减少客服和销售席位，数据接入与治理仍有需求，但新增AI收入不能完全覆盖席位和折扣损失；同时用并购支撑报表增长、借债支撑每股增长。结果不是公司倒闭，而是净债务提高、股东实际回报变差。</p>
+<div aria-label="第四步：最强反面论证" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">风险</th>
+<th scope="col">概率/影响判断</th>
+<th scope="col">观察与失效信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>席位转用量的净收入损失</td>
+<td>中等可能、高影响</td>
+<td>有机增长连续两个季度低于5%，AI用量升但合同价值不升</td>
+</tr>
+<tr>
+<td>并购掩盖疲弱核心业务</td>
+<td>中等可能</td>
+<td>排除并购与汇率后收入持续放缓、cRPO质量变差</td>
+</tr>
+<tr>
+<td>杠杆回购降低抗风险能力</td>
+<td>已发生杠杆上升</td>
+<td>利息扩大、净债务继续增加、现金盈利不能覆盖资本返还</td>
+</tr>
+<tr>
+<td>AI毛利被模型成本吃掉</td>
+<td>待证实、中高影响</td>
+<td>收入上涨但毛利与扣SBC现金收益下降</td>
+</tr>
+<tr>
+<td>估值误用投资收益</td>
+<td>本期明确存在</td>
+<td>用4.29或5.90季度EPS乘四形成错误“低PE”</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="section-6">第五步：估值与安全边际</h2>
+<p>投资收益扭曲净利润，故主模型使用<strong>正常所有者现金收益/股</strong>，不是公司non-GAAP EPS。FY2026 FCF144.02亿美元扣现金流表SBC35.09亿美元，以当前8.23亿股计算约13.24美元/股；这是将历史现金流换算到最新股数的参照，不是当年报告EPS。</p>
+<p>FY2027按管理层FCF增长指引中点4.5%得到150.5009亿美元，再扣研究假设SBC38亿美元、除以8.23亿股，约13.67美元；考虑整合支出和营运资金波动，采用更保守 <strong>12.50美元</strong> 作t0。它已承担SBC经济成本和现金利息，不再次扣净债务，也不额外假设借债回购贡献增长。SBC近似全部作为经济成本，不是精确估计未来股价下的回购费用。</p>
+<p>现价为该正常现金收益18.37倍，不是18.37倍GAAP PE。模型终值约对应FY2030的三年简化节点，忽略精确财年与日历差异；收益不计股息、税费和交易成本。分红另有真实收益，但不使用未来回购金额重复加在终值上。</p>
+<div aria-label="第五步：估值与安全边际" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">正常每股现金收益年增长</th>
+<th scope="col" style="text-align: right;">三年每股收益</th>
+<th scope="col" style="text-align: right;">终值倍数</th>
+<th scope="col" style="text-align: right;">三年价格/美元</th>
+<th scope="col" style="text-align: right;">相对229.57收益</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊</td>
+<td style="text-align: right;">-2%</td>
+<td style="text-align: right;">11.7649</td>
+<td style="text-align: right;">12倍</td>
+<td style="text-align: right;">141.18</td>
+<td style="text-align: right;">-38.50%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">+6%</td>
+<td style="text-align: right;">14.8877</td>
+<td style="text-align: right;">18倍</td>
+<td style="text-align: right;">267.98</td>
+<td style="text-align: right;">+16.73%</td>
+</tr>
+<tr>
+<td>牛</td>
+<td style="text-align: right;">+10%</td>
+<td style="text-align: right;">16.6375</td>
+<td style="text-align: right;">22倍</td>
+<td style="text-align: right;">366.03</td>
+<td style="text-align: right;">+59.44%</td>
+</tr>
+</tbody>
+</table></div>
+<p>12—22倍反映从低增长、杠杆化后台到恢复增长平台的不同质量，不是照搬另一家软件公司的PE。现价买入在基准下三年价格年化约5.29%；若要求10%年化、退出仍18倍，正常每股现金收益需要增长约10.74%，明显高于本报告6%基准。</p>
+<p><strong>今天的研究买带：176.20—201.34美元。</strong> 严格由267.9786÷1.15³与÷1.10³得出，对应基准三年价格终值以15%—10%必要回报折现。它不是未来目标价，也不表示下限没有风险。无可靠历史估值分位可用，不用“比历史便宜”代替现金估值。</p>
+<h2 id="section-7">第六步：行动清单</h2>
+<div aria-label="第六步：行动清单" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象</th>
+<th scope="col">行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>229.57美元等待价格；176.20—201.34美元内才进入条件买入评估</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>可围绕有机收入和债务改善持有观察；不要以投资收益驱动的低PE加仓</td>
+</tr>
+<tr>
+<td>加仓条件</td>
+<td>核心有机收入恢复，AI合约带来新增现金，净债务不再靠回购继续扩大</td>
+</tr>
+<tr>
+<td>减持/失效</td>
+<td>扣SBC正常现金收益低于模型、杠杆持续上升、AI用量增长无法转化为收入</td>
+</tr>
+</tbody>
+</table></div>
+<p>六关检查：业务可理解；现金经济性良好但需扣SBC；转换成本强；资本配置因负债回购需打折；现价安全边际不足；不因AI悲观情绪或过去高价锚定而交易。镜子测试：“我只在业务现金盈利和买价同时允许犯错时买入，不能把债务融资回购当成长。”现价不通过买入条件，生意本身未被否决。</p>
+<h2 id="section-8">来源、差异与审计</h2>
+<ol>
+<li><a href="https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/" rel="noreferrer">FY2027Q2官方公告</a>，2026-08-26；ARR新定义及并购条件均按原文。</li>
+<li><a href="https://www.salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings/" rel="noreferrer">FY2027Q1公告</a>，2026-05-27；250亿美元债务与ASR。</li>
+<li><a href="https://www.salesforce.com/news/press-releases/2026/02/25/fy26-q4-earnings/" rel="noreferrer">FY2026全年公告</a>，2026-02-25。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json" rel="noreferrer">SEC companyfacts</a>，最新2026-08-27提交，所有记录按研究日截断。</li>
+<li><a href="https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/CRM?type=annualTotalRevenue,annualNetIncomeCommonStockholders,quarterlyCashCashEquivalentsAndShortTermInvestments&amp;period1=1640995200&amp;period2=1790985600" rel="noreferrer">Yahoo财务API</a>，2026-10-02读取；四年收入和净利润、7月底现金与短期证券均与SEC一致。</li>
+<li><a href="https://query1.finance.yahoo.com/v8/finance/chart/CRM?range=1mo&amp;interval=1d" rel="noreferrer">Yahoo股价</a>，保留2026-09-30实际close。</li>
+<li><a href="https://stockanalysis.com/stocks/crm/financials/income-statement/" rel="noreferrer">StockAnalysis损益表</a>、<a href="https://stockanalysis.com/stocks/crm/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/crm/financials/cash-flow-statement/" rel="noreferrer">现金流表</a>、<a href="https://stockanalysis.com/stocks/crm/history/" rel="noreferrer">历史行情</a>，2026-10-02已通过requests读取完整HTML表格，年度利润、现金流及同日收盘价复核一致。<a href="https://www.macrotrends.net/stocks/charts/CRM/salesforce/net-income" rel="noreferrer">Macrotrends</a>仍返回403。</li>
+</ol>
+<p>financial_rigor最近年度收入、净利润、现金的SEC＋Yahoo＋StockAnalysis交叉误差均0%；市值仅核算指定价格乘股数，不是同期市值行情认证。report_audit抽中4项历史事实、2项模型结果，其中4项事实通过SEC与StockAnalysis完整表格核验，2项模型单独数学复算通过，没有计作外部事实认证，也没有把未抽项目算作通过。没有系统复核9月投资者日和此后并购交割，属更新风险。<strong>财务资料置信度高于AI转型与投资回报置信度；综合为中。</strong> 本报告用于研究学习，不构成个人化投资建议。</p></article><footer class="report-footer"><span>CRM · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

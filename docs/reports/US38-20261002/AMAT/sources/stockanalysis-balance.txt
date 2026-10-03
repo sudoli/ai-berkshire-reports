@@ -1,0 +1,412 @@
+Retrieved 2026-10-02
+URL https://stockanalysis.com/stocks/amat/financials/balance-sheet/
+
+Applied Materials (AMAT) Balance Sheet
+Skip to main content
+Help Log In Sign Up
+Home
+Watchlist
+Stocks
+Stock Screener
+Stock Exchanges
+Comparison Tool
+Earnings Calendar
+By Industry
+Stock Lists
+Top Stocks
+Corporate Actions
+IPOs
+Recent IPOs
+IPO Calendar
+IPO Lockups
+IPO Statistics
+IPO News
+IPO Screener
+ETFs
+ETF Screener
+Comparison Tool
+New Launches
+ETF Providers
+Analysts
+News
+Trending
+Private Companies
+Technical Chart
+Fundamental Chart
+Market Movers
+Top Gainers
+Top Losers
+Most Active
+Premarket
+After Hours
+Market Heatmap
+Market Newsletter
+Stock Analysis Pro
+Tools
+Collapse
+Applied Materials, Inc. (AMAT)
+NASDAQ: AMAT Â· Real-Time Price Â· USD
+Full Chart  Watchlist   Alerts    Compare
+538.73
++9.43 (1.78%)
+Oct 2, 2026, 11:18 AM EDT - Market open
+Overview
+Financials
+Forecast
+Statistics
+Metrics
+Dividends
+History
+Profile
+Chart
+Financials
+Income Statement
+Balance Sheet
+Cash Flow
+Ratios
+KPIs
+Annual
+Quarterly
+TTM
+Applied Materials Balance Sheet
+Financials in millions USD. Fiscal year is November - October.
+Millions USD. Fiscal year is Nov - Oct.
+Standardized As Reported
+Assets
+TTM
+Mil Millions
+Data Data Source
+USD
+USD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jul '26 Jul 26, 2026 | Oct '25 Oct 26, 2025 | Oct '24 Oct 27, 2024 | Oct '23 Oct 29, 2023 | Oct '22 Oct 30, 2022 | Oct '21 Oct 31, 2021
+|
+Cash & Equivalents
+| 7,037 | 7,241 | 8,022 | 6,132 | 1,995 | 4,995
+|
+Short-Term Investments
+| 2,196 | 1,332 | 1,449 | 737 | 586 | 464
+|
+Cash & Short-Term Investments
+| 9,233 | 8,573 | 9,471 | 6,869 | 2,581 | 5,459
+|
+Cash Growth
+| 31.64% | -9.48% | 37.88% | 166.14% | -52.72% | -4.86%
+|
+Receivables
+| 7,691 | 5,185 | 5,234 | 5,165 | 6,241 | 5,154
+|
+Inventory
+| 6,564 | 5,915 | 5,421 | 5,725 | 5,932 | 4,309
+|
+Prepaid Expenses
+| 1,272 | 1,060 | 974 | 976 | 710 | 592
+|
+Other Current Assets
+| 335 | 148 | 120 | 412 | 461 | 593
+|
+Total Current Assets
+| 25,095 | 20,881 | 21,220 | 19,147 | 15,925 | 16,107
+|
+Property, Plant & Equipment
+| 6,421 | 5,119 | 3,714 | 3,201 | 2,696 | 2,228
+|
+Long-Term Investments
+| 5,268 | 4,327 | 2,787 | 2,281 | 1,980 | 2,055
+|
+Goodwill
+| 3,873 | 3,707 | 3,732 | 3,732 | 3,700 | 3,479
+|
+Other Intangible Assets
+| 315 | 226 | 249 | 294 | 339 | 104
+|
+Long-Term Deferred Tax Assets
+| 1,105 | 1,233 | 2,393 | 1,729 | 1,395 | 1,623
+|
+Other Long-Term Assets
+| 1,445 | 806 | 314 | 345 | 691 | 229
+|
+Total Assets
+| 43,522 | 36,299 | 34,409 | 30,729 | 26,726 | 25,825
+Liabilities
+TTM
+Mil Millions
+Data Data Source
+USD
+USD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jul '26 Jul 26, 2026 | Oct '25 Oct 26, 2025 | Oct '24 Oct 27, 2024 | Oct '23 Oct 29, 2023 | Oct '22 Oct 30, 2022 | Oct '21 Oct 31, 2021
+|
+Accounts Payable
+| 2,387 | 1,978 | 1,570 | 1,478 | 1,755 | 1,472
+|
+Accrued Expenses
+| 1,302 | 1,221 | 1,188 | 1,024 | 974 | 987
+|
+Short-Term Debt
+| 100 | 100 | 99 | 100 | - | -
+|
+Current Portion of Long-Term Debt
+| 1,199 | - | 700 | - | - | -
+|
+Current Portion of Leases
+| 120 | 91 | 87 | 186 | 85 | 73
+|
+Current Income Taxes Payable
+| 317 | 380 | 535 | 282 | 319 | 734
+|
+Current Unearned Revenue
+| 3,271 | 2,566 | 2,849 | 2,975 | 3,142 | 2,076
+|
+Other Current Liabilities
+| 1,661 | 1,663 | 1,440 | 1,327 | 1,104 | 1,002
+|
+Total Current Liabilities
+| 10,357 | 7,999 | 8,468 | 7,372 | 7,379 | 6,344
+|
+Long-Term Debt
+| 5,245 | 6,455 | 5,460 | 5,461 | 5,457 | 5,452
+|
+Long-Term Leases
+| 682 | 404 | 259 | 252 | 287 | 228
+|
+Pension & Post-Retirement Benefits
+| 146 | 151 | 142 | 126 | 107 | 193
+|
+Other Long-Term Liabilities
+| 1,466 | 875 | 1,079 | 1,169 | 1,302 | 1,361
+|
+Total Liabilities
+| 17,896 | 15,884 | 15,408 | 14,380 | 14,532 | 13,578
+Shareholders' Equity
+TTM
+Mil Millions
+Data Data Source
+USD
+USD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jul '26 Jul 26, 2026 | Oct '25 Oct 26, 2025 | Oct '24 Oct 27, 2024 | Oct '23 Oct 29, 2023 | Oct '22 Oct 30, 2022 | Oct '21 Oct 31, 2021
+|
+Common Stock
+| 8 | 8 | 8 | 8 | 8 | 9
+|
+Additional Paid-In Capital
+| 10,572 | 10,333 | 9,660 | 9,131 | 8,593 | 8,247
+|
+Retained Earnings
+| 61,391 | 55,227 | 49,651 | 43,726 | 37,892 | 32,246
+|
+Treasury Stock
+| -46,180 | -45,043 | -40,150 | -36,299 | -34,097 | -27,995
+|
+Comprehensive Income & Other
+| -165 | -110 | -168 | -217 | -202 | -260
+|
+Shareholders' Equity
+| 25,626 | 20,415 | 19,001 | 16,349 | 12,194 | 12,247
+|
+Total Liabilities & Equity
+| 43,522 | 36,299 | 34,409 | 30,729 | 26,726 | 25,825
+Additional Metrics
+TTM
+Mil Millions
+Data Data Source
+USD
+USD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jul '26 Jul 26, 2026 | Oct '25 Oct 26, 2025 | Oct '24 Oct 27, 2024 | Oct '23 Oct 29, 2023 | Oct '22 Oct 30, 2022 | Oct '21 Oct 31, 2021
+|
+Total Debt
+| 7,346 | 7,050 | 6,605 | 5,999 | 5,829 | 5,753
+|
+Net Cash (Debt)
+| 1,887 | 1,523 | 2,866 | 870 | -3,248 | -294
+|
+Net Cash Growth
+| 648.81% | -46.86% | 229.42% | - | - | -
+|
+Net Cash Per Share
+| 2.36 | 1.88 | 3.44 | 1.03 | -3.70 | -0.32
+|
+Filing Date Shares Outstanding
+| 793.6 | 792.94 | 813.68 | 831.07 | 844.14 | 888.51
+|
+Total Common Shares Outstanding
+| 793.6 | 793 | 818 | 833 | 844 | 892
+|
+Working Capital
+| 14,738 | 12,882 | 12,752 | 11,775 | 8,546 | 9,763
+|
+Book Value Per Share
+| 32.29 | 25.74 | 23.23 | 19.63 | 14.45 | 13.73
+|
+Tangible Book Value
+| 21,438 | 16,482 | 15,020 | 12,323 | 8,155 | 8,664
+|
+Tangible Book Value Per Share
+| 27.01 | 20.78 | 18.36 | 14.79 | 9.66 | 9.71
+|
+Land
+| 573 | 558 | 492 | 393 | 387 | 334
+|
+Buildings
+| 3,182 | 2,930 | 2,359 | 2,194 | 2,027 | 1,780
+|
+Machinery
+| 4,000 | 3,563 | 3,360 | 3,115 | 2,826 | 2,540
+|
+Construction In Progress
+| 2,036 | 1,460 | 898 | 672 | 389 | 326
+|
+Order Backlog
+| - | 15,002 | - | - | - | -
+SEC Filings: 10-K  Â· 10-Q
+Data Source: S&P Global Market Intelligence Last updated: Aug 20, 2026
+Financial data is provided by S&P Global Market Intelligence and updates within hours after each earnings release, which is every three months for this company.
+Update frequency: Quarterly
+Last checked: Oct 2, 2026
+Data Sources  Report a data error
+Install The App
+4.9
+6.9K
+4.9
+7.6K
+Sections
+Stocks
+IPOs
+ETFs
+Private Companies
+Services
+Stock Analysis Pro
+Free Newsletter
+Get Support
+Install The App
+Website
+Login
+Create Account
+Changelog
+Data Sources
+Advertise
+Help Center
+Company
+About
+Contact Us
+Terms of Use
+Privacy Policy
+Affiliate Program
+Market Newsletter
+Daily market news in bullet point format.
+Subscribe
+Site Theme
+Light  Dark
+Â© 2026 StockAnalysis.com. All rights reserved.
+
+LINKS
+#main
+/
+/help/
+/login/
+/pro/
+/
+/watchlist/
+/stocks/
+/stocks/screener/
+/list/exchanges/
+/stocks/compare/
+/stocks/earnings-calendar/
+/stocks/industry/
+/list/
+/analysts/top-stocks/
+/actions/
+/ipos/
+/ipos/
+/ipos/calendar/
+/ipos/lockups/
+/ipos/statistics/
+/ipos/news/
+/ipos/screener/
+/etf/
+/etf/screener/
+/etf/compare/
+/etf/list/new/
+/etf/provider/
+/analysts/
+/news/
+/trending/
+/private/
+/chart/
+/fundamental-chart/
+/markets/gainers/
+/markets/gainers/
+/markets/losers/
+/markets/active/
+/markets/premarket/
+/markets/afterhours/
+/markets/heatmap/
+/subscribe/
+/pro/
+/tools/
+/stocks/amat/
+/stocks/amat/financials/
+/stocks/amat/forecast/
+/stocks/amat/statistics/
+/stocks/amat/metrics/
+/stocks/amat/dividend/
+/stocks/amat/history/
+/stocks/amat/company/
+/chart/AMAT/
+/stocks/amat/financials/
+/stocks/amat/financials/income-statement/
+/stocks/amat/financials/balance-sheet/
+/stocks/amat/financials/cash-flow-statement/
+/stocks/amat/financials/ratios/
+/stocks/amat/financials/metrics/
+https://www.sec.gov/cgi-bin/browse-edgar?CIK=0000006951&type=10-K
+https://www.sec.gov/cgi-bin/browse-edgar?CIK=0000006951&type=10-Q
+https://www.spglobal.com/market-intelligence/en?utm_source=stockanalysis.com&utm_medium=referral
+https://www.spglobal.com/market-intelligence/en?utm_source=stockanalysis.com&utm_medium=referral
+/data-sources/
+/report-data-error/#url=%2Fstocks%2Famat%2Ffinancials%2Fbalance-sheet%2F&ticker=AMAT
+https://apps.apple.com/us/app/stock-analysis-app/id6751272467
+https://play.google.com/store/apps/details?id=com.stockanalysis.app
+/stocks/
+/ipos/
+/etf/
+/private/
+/pro/
+/subscribe/
+/support/
+/app/
+/login/
+/create-account/
+/changelog/
+/data-sources/
+/advertise/
+/help/
+/about/
+/contact/
+/terms-of-use/
+/privacy-policy/
+/affiliates/
+https://www.facebook.com/stockanalysisoff/
+https://x.com/stock_analysisx
+https://www.linkedin.com/company/stock-analysis/
+https://www.threads.com/@stockanalysis_com
+https://apps.apple.com/us/app/stock-analysis-app/id6751272467
+https://play.google.com/store/apps/details?id=com.stockanalysis.app

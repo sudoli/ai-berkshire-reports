@@ -1,0 +1,101 @@
+{
+  "ticker": "GEV",
+  "research_date": "2026-10-02",
+  "seed": 42,
+  "ratio": 0.15,
+  "extracted_count": 39,
+  "sample": [
+    {
+      "id": 2,
+      "label": "收入 · 2024年",
+      "reported_value": 34935.0,
+      "unit": "",
+      "raw_text": "| 收入 | 33239 | 34935 | 38068 |",
+      "line_number": 19,
+      "fetched_value": 34935,
+      "fetched_value2": 34935,
+      "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json",
+      "fetched_source2": "https://stockanalysis.com/stocks/gev/financials/",
+      "verification_type": "external_financial_fact_two_sources"
+    },
+    {
+      "id": 8,
+      "label": "经营现金流 · 2024年",
+      "reported_value": 2583.0,
+      "unit": "",
+      "raw_text": "| 经营现金流 | 1186 | 2583 | 4987 |",
+      "line_number": 21,
+      "fetched_value": 2583,
+      "fetched_value2": 2583,
+      "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json",
+      "fetched_source2": "https://stockanalysis.com/stocks/gev/financials/",
+      "verification_type": "external_financial_fact_two_sources"
+    },
+    {
+      "id": 9,
+      "label": "经营现金流 · 2025年",
+      "reported_value": 4987.0,
+      "unit": "",
+      "raw_text": "| 经营现金流 | 1186 | 2583 | 4987 |",
+      "line_number": 21,
+      "fetched_value": 4987,
+      "fetched_value2": 4987,
+      "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json",
+      "fetched_source2": "https://stockanalysis.com/stocks/gev/financials/",
+      "verification_type": "external_financial_fact_two_sources"
+    },
+    {
+      "id": 15,
+      "label": "Power · 分部利润率",
+      "reported_value": 18.8,
+      "unit": "%",
+      "raw_text": "| Power | 5477 | 1031 | 18.8% |",
+      "line_number": 28,
+      "fetched_value": 18.8,
+      "fetched_value2": null,
+      "fetched_source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+      "fetched_source2": "",
+      "verification_type": "external_financial_fact_primary_only",
+      "limitation": "No independent second-source verification of this sampled quarterly metric; syndications of this release are not independent."
+    },
+    {
+      "id": 18,
+      "label": "Electrification · 分部利润率",
+      "reported_value": 18.4,
+      "unit": "%",
+      "raw_text": "| Electrification | 3637 | 671 | 18.4% |",
+      "line_number": 29,
+      "fetched_value": 18.4,
+      "fetched_value2": null,
+      "fetched_source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+      "fetched_source2": "",
+      "verification_type": "external_financial_fact_primary_only",
+      "limitation": "No independent second-source verification of this sampled quarterly metric; syndications of this release are not independent."
+    },
+    {
+      "id": 16,
+      "label": "Electrification · 收入（百万美元）",
+      "reported_value": 3637.0,
+      "unit": "",
+      "raw_text": "| Electrification | 3637 | 671 | 18.4% |",
+      "line_number": 29,
+      "fetched_value": 3637,
+      "fetched_value2": null,
+      "fetched_source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial",
+      "fetched_source2": "",
+      "verification_type": "external_financial_fact_primary_only",
+      "limitation": "No independent second-source verification of this sampled quarterly metric; syndications of this release are not independent."
+    }
+  ],
+  "verdict": {
+    "verdict": "PASS",
+    "pass_count": 6,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 6,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "verdict_output": "======================================================================\n\u001b[1m报告数据抽检 — 准出/打回判决\u001b[0m\n报告：GEV研究报告-20261002.md\n======================================================================\n\n  \u001b[92m✅ 通过\u001b[0m [ 2] 收入 · 2024年                           报告:     34935.00 \n                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json: 34935.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/gev/financials/: 34935.00 (偏差 0.00%)\n  \u001b[92m✅ 通过\u001b[0m [ 8] 经营现金流 · 2024年                        报告:      2583.00 \n                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json: 2583.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/gev/financials/: 2583.00 (偏差 0.00%)\n  \u001b[92m✅ 通过\u001b[0m [ 9] 经营现金流 · 2025年                        报告:      4987.00 \n                                                    https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json: 4987.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/gev/financials/: 4987.00 (偏差 0.00%)\n  \u001b[92m✅ 通过\u001b[0m [15] Power · 分部利润率                        报告:        18.80 %\n                                                    https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial: 18.80 (偏差 0.00%)\n  \u001b[92m✅ 通过\u001b[0m [18] Electrification · 分部利润率              报告:        18.40 %\n                                                    https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial: 18.40 (偏差 0.00%)\n  \u001b[92m✅ 通过\u001b[0m [16] Electrification · 收入（百万美元）           报告:      3637.00 \n                                                    https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial: 3637.00 (偏差 0.00%)\n\n----------------------------------------------------------------------\n  抽检总数: 6  |  通过: \u001b[92m6\u001b[0m  |  警告: \u001b[93m0\u001b[0m  |  不通过: \u001b[91m0\u001b[0m\n\n\u001b[1m\u001b[92m【准出】所有抽检数据通过，报告可发布。\u001b[0m\n======================================================================\n",
+  "scope_warning": "PASS is limited to checked samples. Skipped assumptions/false positives are not certification; primary-only quarterly facts retain source limitations. Cash definition differences discussed separately in report."
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "CRM",
+  "company": "Salesforce, Inc.",
+  "sector": "企业客户关系与AI工作流软件",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 229.57,
+    "currency": "USD",
+    "asof": "2026-09-30 regular-session close",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?range=1mo&interval=1d",
+    "verified": true,
+    "note": "Yahoo与StockAnalysis历史表同日close均与用户截图一致；两站底层行情供应链未独立核查，非10月2日实时价。"
+  },
+  "financial_period": "FY2027 Q2 ended 2026-07-31; 10-Q filed 2026-08-27",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 176.2,
+    "buy_high": 201.34,
+    "currency": "USD",
+    "basis": "采用扣SBC及利息后的正常所有者现金收益12.50美元/股，三年增长6%、退出18倍得267.9786美元；以15%和10%折现三年得176.20—201.34美元。不是GAAP或公司调整EPS。",
+    "conditions": "有机收入与AI货币化维持、扣SBC现金盈利不下修，净债务不因持续借债回购扩大。",
+    "holder_action": "围绕有机收入和债务观察；排除本季大额投资收益后再评估盈利，不凭表面低PE加仓。"
+  },
+  "thesis": "客户数据与流程锁定具有价值，但AI席位替代和负债回购使合理价格比转型叙事更重要。",
+  "key_risk": "新增AI消费不能覆盖席位下降，同时并购和借债回购掩盖核心增长与现金收益疲弱。",
+  "confidence": "中",
+  "source_limitations": [
+    "行情已通过Yahoo和StockAnalysis双站核对，底层供应链未独立核查；市值采用已公布股数估算。",
+    "Macrotrends不可访问；已读取StockAnalysis完整表格，与SEC和Yahoo交叉验证，债务差异按经营及融资租赁调节。",
+    "未系统复核9月投资者日和新并购交割后的条款。",
+    "Agentforce ARR本季扩展定义；独立毛利、客户续约价格及管理层持股比例未核实。"
+  ],
+  "report_file": "CRM研究报告-20261002.md"
+}

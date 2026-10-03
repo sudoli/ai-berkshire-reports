@@ -1,0 +1,14 @@
+{
+  "ticker": "COHR",
+  "company": "Coherent Corp.",
+  "sector": "光子技术与光通信制造",
+  "research_date": "2026-10-02",
+  "quote": {"price": 287.81, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/cohr/history/", "verified": true, "note": "直接核对历史Close及Adjusted Close与原图片一致；单一行情商、非即时价。现Coherent Corp普通股，不混用旧独立Coherent公司历史每股数据。"},
+  "financial_period": "FY2026 and Q4 ended 2026-06-30",
+  "recommendation": {"rating": "等待价格", "buy_low": 150, "buy_high": 187.5, "currency": "USD", "basis": "正常化前瞻调整后EPS假设7.50美元×20—25倍PE；以Q1 FY2027指引中点1.95年化7.80为锚，对周期及稀释留余量，并要求FCF回归。", "conditions": "现金转换改善、资本扩张有客户需求支持、正常化EPS7.50可维持；客户项目和技术路线未实质转坏。", "holder_action": "把扩产资本回报、融资稀释与每股FCF一起检查；现金持续外流或客户转单时降低风险，不只追踪调整后EPS。"},
+  "thesis": "光子技术和制造规模受益高速连接升级，但扩产是否转化为每股现金决定长期价值。",
+  "key_risk": "FY2026低经营现金流与高资本开支形成巨大负FCF，供需周期反转可能叠加稀释及减值。",
+  "confidence": "中",
+  "source_limitations": ["9月30日报价仅由单一独立行情源核对，非即时价。", "最新客户集中度、治理权益及所有证券条款未从附注完整核验。", "第三方营业利润和SBC分类与公司口径不同，报告明确采用公司经营指标。", "正常化EPS、现金回归与终值倍数均为条件假设。"],
+  "report_file": "COHR研究报告-20261002.md"
+}

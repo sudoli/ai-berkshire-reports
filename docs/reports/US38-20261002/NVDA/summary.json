@@ -1,0 +1,34 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA Corporation",
+  "sector": "AI计算平台与半导体",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 234.98,
+    "currency": "USD",
+    "asof": "2026-10-02 11:19 EDT",
+    "source_url": "https://stockanalysis.com/stocks/nvda/financials/",
+    "verified": true,
+    "note": "盘中非收盘；Yahoo 11:22:58 EDT为234.81作异时点交叉。图片2026-09-30的228.38未经核验，相差+2.89%；2024年10拆1后口径。"
+  },
+  "financial_period": "FY2027 Q2，截至2026-07-26，2026-08-26发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 190,
+    "buy_high": 220,
+    "currency": "USD",
+    "basis": "假设正常化年度收入4500亿美元、含SBC经营利润率65%、税率17%、稀释242亿股，经济EPS约10美元；10×19–22倍=190–220。三年基准380.22按12%折现为270.63。",
+    "conditions": "不依赖中国恢复销售；CUDA与集群系统优势保持，正常化10美元EPS及回款可兑现；应收和融资风险不显著恶化。",
+    "holder_action": "可在论点未破坏时观察持有；重点核对现金兑现、投资收益和客户融资敞口，不因价格下跌自动加仓。"
+  },
+  "thesis": "软硬件平台仍能捕获AI集群利润，但应剔除证券收益并为出口与客户融资风险留出折扣。",
+  "key_risk": "客户资本开支回撤叠加平台利润率下降，且应收账款和战略投资削弱现金转化。",
+  "confidence": "中",
+  "source_limitations": [
+    "图片228.38未验证，采用10月2日双平台异时点盘中报价，非同一时刻成交认证。",
+    "StockAnalysis现金投资口径较发行人现金加债券高10.40%，未完整重建，采用发行人分项。",
+    "未逐项核验最新出口许可、客户利用率、融资最终条款及管理层持股。",
+    "10美元正常化EPS和情景增长是研究假设；SEC与IR属于同一发行人来源。"
+  ],
+  "report_file": "NVDA研究报告-20261002.md"
+}

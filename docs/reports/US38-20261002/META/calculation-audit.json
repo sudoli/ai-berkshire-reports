@@ -1,0 +1,176 @@
+{
+  "ticker": "META",
+  "inputs": {
+    "price": "730.89",
+    "image": "725.18",
+    "eps": "32",
+    "shares": "2.55e9",
+    "reported": "1.86e12",
+    "growth": [
+      "0.16",
+      "0.10",
+      "0"
+    ],
+    "pe": [
+      "28",
+      "23",
+      "18"
+    ],
+    "band": [
+      "20",
+      "22"
+    ],
+    "rev": [
+      "200966",
+      "200966"
+    ],
+    "net": [
+      "60458",
+      "60458"
+    ],
+    "cash": [
+      "90260",
+      "90260"
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "bull",
+      "growth": "0.16",
+      "pe": "28",
+      "eps": "49.948672",
+      "target": "1398.562816",
+      "return_pct": "91.35065687039089329447659700",
+      "cagr_pct": "24.14902670096154705725731670"
+    },
+    {
+      "name": "base",
+      "growth": "0.10",
+      "pe": "23",
+      "eps": "42.592000",
+      "target": "979.616000",
+      "return_pct": "34.03056547496887356510555620",
+      "cagr_pct": "10.25575900383898522770914570"
+    },
+    {
+      "name": "bear",
+      "growth": "0",
+      "pe": "18",
+      "eps": "32",
+      "target": "576",
+      "return_pct": "-21.19197143208964413249599803",
+      "cagr_pct": "-7.631585757105336947826091600"
+    }
+  ],
+  "buy_low": "640",
+  "buy_high": "704",
+  "image_to_quote_pct": "0.787390716787556192945199800",
+  "forward_normalized_pe": "22.8403125",
+  "marketcap": "1.8637695E+12",
+  "warning": "EPS is forward normalized assumption; tool TTM label is inapplicable. Crosschecks use same basis, not independent audit.",
+  "financial_rigor": [
+    {
+      "command": [
+        "verify-market-cap",
+        "--price",
+        "730.89",
+        "--shares",
+        "2.55e9",
+        "--reported",
+        "1.86e12",
+        "--currency",
+        "USD"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       730.89 USD\n  总股本 (Shares):    2.55B\n  计算市值:           1.86T USD\n  报告市值:           1.86T USD\n  偏差:               0.20%\n\n  ✅ 验证通过, 偏差仅 0.20%\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify-valuation",
+        "--price",
+        "730.89",
+        "--eps",
+        "32"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 730.89\n\n  PE (TTM):  730.89 / 32.0 = 22.84x\n  盈利收益率: 4.38%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "three-scenario",
+        "--price",
+        "730.89",
+        "--eps",
+        "32",
+        "--shares",
+        "25.5",
+        "--growth",
+        "0.16",
+        "0.10",
+        "0",
+        "--pe",
+        "28",
+        "23",
+        "18",
+        "--years",
+        "3",
+        "--currency",
+        "USD"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n三情景估值模型 (Three-Scenario Valuation)\n============================================================\n  当前股价: 730.89 USD\n  当前EPS:  32.0\n  预测期:   3年\n\n  情景                年增速     目标PE      目标EPS       目标股价      涨跌幅\n  ------------ -------- -------- ---------- ---------- --------\n  乐观 (Bull)         16%      28x      49.95    1398.6   +91.4%\n  中性 (Base)         10%      23x      42.59     979.6   +34.0%\n  悲观 (Bear)          0%      18x      32.00     576.0   -21.2%\n\n  ✅ 所有计算使用精确十进制, 结果可审计复现\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "rev",
+        "--values",
+        "{\"Issuer\": 200966.0, \"StockAnalysis\": 200966.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: rev (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 200,966.00 USD_million\n\n  ✅ Issuer              : 200,966.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 200,966.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 200,966.00 USD_million\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "net",
+        "--values",
+        "{\"Issuer\": 60458.0, \"StockAnalysis\": 60458.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: net (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 60,458.00 USD_million\n\n  ✅ Issuer              : 60,458.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 60,458.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 60,458.00 USD_million\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cross-validate",
+        "--field",
+        "cash",
+        "--values",
+        "{\"Issuer\": 90260.0, \"StockAnalysis\": 90260.0}",
+        "--unit",
+        "USD_million"
+      ],
+      "returncode": 0,
+      "output": "============================================================\n交叉验证: cash (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 90,260.00 USD_million\n\n  ✅ Issuer              : 90,260.00 USD_million  (偏差 0.00%)\n  ✅ StockAnalysis       : 90,260.00 USD_million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 2.0%, 数据一致\n\n  共识值 (加权中位数): 90,260.00 USD_million\n",
+      "stderr": ""
+    }
+  ],
+  "supplemental_decimal_checks": {
+    "normal_eps_calibration": "31.98461538461538461538461538",
+    "company_q2_fcf_bn": "0.784",
+    "lease_liabilities_bn": "28.654",
+    "broad_net_debt_bn": "22.058",
+    "bare_net_cash_bn": "6.596"
+  }
+}

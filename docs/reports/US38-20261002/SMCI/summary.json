@@ -1,0 +1,14 @@
+{
+  "ticker": "SMCI",
+  "company": "Super Micro Computer, Inc.",
+  "sector": "AI服务器与机架系统",
+  "research_date": "2026-10-02",
+  "quote": {"price": 41.07, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/smci/history/", "verified": true, "note": "直接读取历史行情Close及Adjusted Close均41.07，与原未核实图片相同；仅单一行情商，非10月2日实时价。2024年10拆1后的美元普通股口径。"},
+  "financial_period": "FY2026 ended 2026-06-30; SEC XBRL 10-K filed 2026-08-31",
+  "recommendation": {"rating": "暂不买入", "buy_low": 28, "buy_high": 34, "currency": "USD", "basis": "分析假设正常化前瞻EPS4.00美元×7—8.5倍PE；收入650亿美元、净利率约4.68%、稀释股约7.61亿支撑EPS锚。", "conditions": "必须先验证至少两个季度现金回收改善、库存及应收增速回落，并核查审计意见及合规整改；价格进入区间不足以单独触发买入。", "holder_action": "优先跟踪现金、坏账及合规披露；不因低PE或股价下跌机械补仓，现金恶化或审计监管风险升级时撤销原估值。"},
+  "thesis": "交付与液冷集成能力可以受益于AI需求，但股东回报取决于薄毛利能否兑现为现金。",
+  "key_risk": "FY2026经营现金流大幅为负、库存和应收膨胀，叠加合规及融资稀释风险。",
+  "confidence": "中",
+  "source_limitations": ["行情由单一独立提供商核对，不是即时可成交报价。", "SEC结构化年报已核验，审计意见、客户集中度与关联交易附注全文未完成一手复核。", "公司内部调查完成不等于政府调查终结或监管免责。", "历史年度部分指标仅第三方，估值EPS为分析假设。"],
+  "report_file": "SMCI研究报告-20261002.md"
+}

@@ -1,0 +1,93 @@
+{
+  "scope_note": "LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.",
+  "automatic_sample_classification": [
+    {
+      "id": 1,
+      "label": "中国出口/服务限制 · 观察指标",
+      "reported_value": 26.0,
+      "unit": "%",
+      "raw_text": "| 中国出口/服务限制 | 中等/高 | 中国占比26%的暴露及受限产品范围 |",
+      "line_number": 53,
+      "classification": "historical-single-primary",
+      "fetched_value": 26,
+      "fetched_source": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+      "fetched_value2": null,
+      "limitation": "China quarterly share checked against issuer; no independent second-source figure obtained."
+    },
+    {
+      "id": 4,
+      "label": "偏弱 · 三年EPS",
+      "reported_value": 6.43,
+      "unit": "",
+      "raw_text": "| 偏弱 | -5% | 18 | 6.43 | 115.75 | -66.66% |",
+      "line_number": 76,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 9,
+      "label": "基准 · 三年EPS",
+      "reported_value": 11.41,
+      "unit": "",
+      "raw_text": "| 基准 | +15% | 27 | 11.41 | 307.98 | -11.28% |",
+      "line_number": 77,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    }
+  ],
+  "supplementary_historical_checks": [
+    {
+      "id": 101,
+      "label": "FY2026 revenue",
+      "reported_value": 23233,
+      "unit": "million, statement currency",
+      "fetched_value": 23232.69,
+      "fetched_source": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+      "fetched_value2": 23233,
+      "fetched_source2": "https://stockanalysis.com/stocks/lrcx/financials/"
+    },
+    {
+      "id": 102,
+      "label": "FY2026 net income",
+      "reported_value": 7265,
+      "unit": "million, statement currency",
+      "fetched_value": 7265.396,
+      "fetched_source": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+      "fetched_value2": 7265,
+      "fetched_source2": "https://stockanalysis.com/stocks/lrcx/financials/"
+    },
+    {
+      "id": 1,
+      "label": "中国出口/服务限制 · 观察指标",
+      "reported_value": 26.0,
+      "unit": "%",
+      "raw_text": "| 中国出口/服务限制 | 中等/高 | 中国占比26%的暴露及受限产品范围 |",
+      "line_number": 53,
+      "classification": "historical-single-primary",
+      "fetched_value": 26,
+      "fetched_source": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+      "fetched_value2": null,
+      "limitation": "China quarterly share checked against issuer; no independent second-source figure obtained."
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 3,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 3,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "additional_decimal_checks": {
+    "FY2026_simple_fcf_USD_million": "4891.252",
+    "FY2025_simple_fcf_USD_million": "5414.078",
+    "net_cash_ex_operating_leases_USD_million": "1844.608",
+    "normalized_eps_operating_bridge": "7.500",
+    "alternative_band_low": "132",
+    "alternative_band_high": "156"
+  },
+  "summary_schema_and_band_order": "PASS"
+}

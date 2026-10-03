@@ -1,0 +1,3414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="美股全市场跨行业漏斗式价值投资筛选：从 85 家逐层精选到 3 家终选标的。">
+  <title>美股全市场 · 跨行业漏斗筛选 | AI Berkshire Research</title>
+  <style>
+    :root {
+      --ink: #17202b;
+      --ink-soft: #56606c;
+      --paper: #f3f0e8;
+      --paper-bright: #fffdf8;
+      --navy: #101d2e;
+      --navy-2: #182a40;
+      --line: #d8d1c4;
+      --msft: #2a6fdb;
+      --spacex: #d95d42;
+      --positive: #167258;
+      --warning: #a84a2f;
+      --accent: #d7ff62;
+      --shadow: 0 24px 70px rgba(22, 31, 42, 0.12);
+      --radius: 18px;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      --serif: Georgia, "Noto Serif SC", "Songti SC", "SimSun", serif;
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--msft);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #164f9f;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 4px;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(215, 255, 98, 0.6);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      padding: 0 max(24px, calc((100vw - 1400px) / 2));
+      color: #fff;
+      background: rgba(16, 29, 46, 0.93);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      grid-template-columns: repeat(2, 7px);
+      gap: 3px;
+      transform: rotate(45deg);
+    }
+
+    .brand-mark i {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-meta {
+      color: #bac5d2;
+      font-size: 12px;
+    }
+
+    .print-button {
+      padding: 8px 13px;
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .print-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 610px;
+      overflow: hidden;
+      color: #fff;
+      background: var(--navy);
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::before {
+      width: 780px;
+      height: 780px;
+      top: -390px;
+      right: -120px;
+      box-shadow:
+        0 0 0 90px rgba(255, 255, 255, 0.025),
+        0 0 0 230px rgba(255, 255, 255, 0.018);
+    }
+
+    .hero::after {
+      width: 420px;
+      height: 420px;
+      right: 22%;
+      bottom: -330px;
+      border-color: rgba(215, 255, 98, 0.28);
+      box-shadow: 0 0 0 110px rgba(215, 255, 98, 0.025);
+    }
+
+    .hero-grid {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 96px 0 72px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 40px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .hero h1 {
+      max-width: 970px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(46px, 7vw, 94px);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      color: #91bfff;
+    }
+
+    .hero h1 em {
+      color: #ff9b84;
+      font-style: normal;
+    }
+
+    .hero-deck {
+      max-width: 760px;
+      margin: 32px 0 0;
+      color: #c7d0dc;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 36px;
+    }
+
+    .hero-meta span {
+      padding: 7px 12px;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .verdict-strip {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1fr;
+      width: min(1400px, calc(100% - 48px));
+      margin: -54px auto 0;
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .verdict-card {
+      min-height: 152px;
+      padding: 26px 30px;
+      border-right: 1px solid var(--line);
+    }
+
+    .verdict-card:last-child {
+      border-right: 0;
+    }
+
+    .verdict-card .label {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .verdict-card strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3vw, 38px);
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .verdict-card p {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .verdict-card.microsoft strong {
+      color: var(--msft);
+    }
+
+    .verdict-card.spacex strong {
+      color: var(--spacex);
+    }
+
+    .page-shell {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 940px);
+      gap: 64px;
+      width: min(1260px, calc(100% - 48px));
+      margin: 84px auto 120px;
+      align-items: start;
+    }
+
+    .toc-panel {
+      position: sticky;
+      top: 98px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      padding-right: 18px;
+      scrollbar-width: thin;
+    }
+
+    .toc-title {
+      display: block;
+      margin-bottom: 18px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .toc-panel nav {
+      display: grid;
+      gap: 3px;
+    }
+
+    .toc-panel a {
+      display: block;
+      padding: 7px 10px;
+      color: #68717b;
+      border-left: 2px solid transparent;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.4;
+      transition: 160ms ease;
+    }
+
+    .toc-panel a:hover,
+    .toc-panel a.active {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.52);
+      border-left-color: var(--msft);
+    }
+
+    .mobile-toc {
+      display: none;
+      width: 100%;
+      margin-bottom: 24px;
+      padding: 12px 42px 12px 14px;
+      color: var(--ink);
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .report {
+      min-width: 0;
+      padding: 52px 62px 70px;
+      background: var(--paper-bright);
+      border: 1px solid rgba(216, 209, 196, 0.8);
+      border-radius: var(--radius);
+      box-shadow: 0 15px 50px rgba(22, 31, 42, 0.08);
+    }
+
+    .report > h1:first-child {
+      display: none;
+    }
+
+    .report > h1:first-child + p {
+      margin-top: 0;
+      padding: 18px 20px;
+      color: var(--ink-soft);
+      background: #f3f6f9;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 12px 12px 0;
+      font-size: 14px;
+    }
+
+    .report h2,
+    .report h3,
+    .report h4 {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      scroll-margin-top: 90px;
+    }
+
+    .report h2 {
+      position: relative;
+      margin: 76px 0 30px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.18;
+    }
+
+    .report h2::before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 74px;
+      height: 3px;
+      background: var(--accent);
+      content: "";
+    }
+
+    .report h2:first-of-type {
+      margin-top: 45px;
+    }
+
+    .report h3 {
+      margin: 43px 0 18px;
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    .report h4 {
+      margin: 34px 0 12px;
+      font-size: 20px;
+    }
+
+    .report p {
+      margin: 0 0 18px;
+    }
+
+    .report ul,
+    .report ol {
+      margin: 16px 0 24px;
+      padding-left: 24px;
+    }
+
+    .report li {
+      margin: 7px 0;
+      padding-left: 4px;
+    }
+
+    .report hr {
+      height: 1px;
+      margin: 58px 0;
+      background: var(--line);
+      border: 0;
+    }
+
+    .table-scroll {
+      width: 100%;
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      scrollbar-width: thin;
+    }
+
+    .report table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .report thead {
+      color: #fff;
+      background: var(--navy-2);
+    }
+
+    .report th,
+    .report td {
+      padding: 13px 15px;
+      text-align: left;
+      vertical-align: top;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .report th.numeric,
+    .report td.numeric {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .report th:last-child,
+    .report td:last-child {
+      border-right: 0;
+    }
+
+    .report tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .report tbody tr:nth-child(even) {
+      background: #f7f4ee;
+    }
+
+    .report tbody tr:hover {
+      background: #eef3f8;
+    }
+
+    .report blockquote {
+      position: relative;
+      margin: 34px 0;
+      padding: 25px 28px 25px 32px;
+      color: #273446;
+      background: #edf2f6;
+      border: 0;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .report blockquote::before {
+      position: absolute;
+      top: 8px;
+      right: 18px;
+      color: rgba(42, 111, 219, 0.16);
+      font-family: var(--serif);
+      font-size: 65px;
+      line-height: 1;
+      content: "“";
+    }
+
+    .report blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .report code {
+      padding: 0.15em 0.42em;
+      color: #b23e2a;
+      background: #f2ece2;
+      border: 1px solid #e4dacb;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.88em;
+      overflow-wrap: anywhere;
+    }
+
+    .report strong {
+      color: #111a24;
+      font-weight: 800;
+    }
+
+    .citation {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 27px;
+      height: 19px;
+      margin: 0 2px;
+      padding: 0 5px;
+      color: #315a91;
+      background: #e7eef8;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1;
+      vertical-align: 0.12em;
+    }
+
+    .citation:hover {
+      color: #fff;
+      background: var(--msft);
+    }
+
+    .source-highlight {
+      animation: source-flash 1.8s ease-out;
+    }
+
+    @keyframes source-flash {
+      from { background: rgba(215, 255, 98, 0.7); }
+      to { background: transparent; }
+    }
+
+    .site-footer {
+      padding: 44px 24px;
+      color: #aeb9c6;
+      background: var(--navy);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .site-footer strong {
+      color: #fff;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 60;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      background: var(--navy);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(16, 29, 46, 0.22);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: 180ms ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .verdict-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .verdict-card {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .verdict-card:last-child {
+        border-bottom: 0;
+      }
+
+      .page-shell {
+        display: block;
+        width: min(860px, calc(100% - 32px));
+        margin-top: 52px;
+      }
+
+      .toc-panel {
+        display: none;
+      }
+
+      .mobile-toc {
+        display: block;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        font-size: 15px;
+      }
+
+      .site-header {
+        height: 58px;
+        padding: 0 16px;
+      }
+
+      .brand {
+        font-size: 11px;
+      }
+
+      .header-meta {
+        display: none;
+      }
+
+      .print-button {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 540px;
+      }
+
+      .hero-grid {
+        width: calc(100% - 32px);
+        padding: 78px 0 100px;
+      }
+
+      .hero h1 {
+        font-size: clamp(42px, 15vw, 67px);
+      }
+
+      .hero-deck {
+        font-size: 17px;
+      }
+
+      .verdict-strip {
+        width: calc(100% - 32px);
+        margin-top: -70px;
+      }
+
+      .verdict-card {
+        min-height: auto;
+        padding: 22px;
+      }
+
+      .report {
+        padding: 30px 20px 48px;
+        border-radius: 14px;
+      }
+
+      .report h2 {
+        margin-top: 58px;
+        font-size: 31px;
+      }
+
+      .report h3 {
+        font-size: 22px;
+      }
+
+      .report blockquote {
+        margin-inline: 0;
+        padding: 21px 20px 21px 23px;
+      }
+
+      .back-to-top {
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+        size: A4;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 10pt;
+      }
+
+      .site-header,
+      .toc-panel,
+      .mobile-toc,
+      .back-to-top,
+      .scroll-progress {
+        display: none !important;
+      }
+
+      .hero {
+        min-height: auto;
+        color: #000;
+        background: #fff;
+        border-bottom: 2px solid #000;
+      }
+
+      .hero-grid {
+        width: 100%;
+        padding: 20mm 0 12mm;
+      }
+
+      .hero h1 {
+        max-width: none;
+        font-size: 38pt;
+      }
+
+      .hero h1 span,
+      .hero h1 em,
+      .eyebrow,
+      .hero-deck,
+      .hero-meta span {
+        color: #000;
+      }
+
+      .hero-meta span {
+        border-color: #999;
+      }
+
+      .verdict-strip {
+        width: 100%;
+        margin: 10mm 0 0;
+        box-shadow: none;
+      }
+
+      .page-shell {
+        display: block;
+        width: 100%;
+        margin: 8mm 0 0;
+      }
+
+      .report {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .report h2,
+      .report h3 {
+        break-after: avoid;
+      }
+
+      .table-scroll {
+        overflow: visible;
+        break-inside: avoid;
+      }
+
+      .report table {
+        min-width: 0;
+        font-size: 7.5pt;
+      }
+
+      .report a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .site-footer {
+        color: #000;
+        background: #fff;
+        border-top: 1px solid #000;
+      }
+    }
+  
+    /* --- funnel-specific additions --- */
+    .funnel-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+    }
+
+    .funnel-step {
+      position: relative;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 13px;
+    }
+
+    .funnel-step b {
+      display: block;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .funnel-step span {
+      display: block;
+      margin-top: 8px;
+      color: #b6c2d1;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .funnel-step:last-child {
+      background: rgba(215, 255, 98, 0.1);
+      border-color: rgba(215, 255, 98, 0.42);
+    }
+
+    .funnel-step:last-child b {
+      color: var(--accent);
+    }
+
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.core .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.core strong { color: var(--positive); }
+    .verdict-card.satellite .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.satellite strong { color: var(--msft); }
+    .verdict-card.option .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.option strong { color: var(--warning); }
+
+    .weight-bar {
+      height: 4px;
+      margin-top: 14px;
+      background: #e7e2d7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .weight-bar i {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .verdict-card.core .weight-bar i { width: 55%; background: var(--positive); }
+    .verdict-card.satellite .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.option .weight-bar i { width: 10%; background: var(--warning); }
+
+    @media (max-width: 980px) {
+      .funnel-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 680px) {
+      .funnel-strip { width: calc(100% - 32px); gap: 8px; }
+      .funnel-step { padding: 14px; }
+    }
+
+    @media print {
+      .funnel-strip { width: 100%; margin: 8mm 0 0; }
+      .funnel-step { background: #fff; border-color: #999; }
+      .funnel-step b, .funnel-step span { color: #000; }
+      .funnel-step:last-child { background: #fff; border-color: #000; }
+      .funnel-step:last-child b { color: #000; }
+    }
+  
+    /* --- cross-sector report additions --- */
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.fin .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.fin strong { color: var(--positive); }
+    .verdict-card.tech .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.tech strong { color: var(--msft); }
+    .verdict-card.energy .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.energy strong { color: var(--warning); }
+
+    .weight-bar { height: 4px; margin-top: 14px; background: #e7e2d7; border-radius: 999px; overflow: hidden; }
+    .weight-bar i { display: block; height: 100%; border-radius: 999px; }
+    .verdict-card.fin .weight-bar i { width: 45%; background: var(--positive); }
+    .verdict-card.tech .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.energy .weight-bar i { width: 25%; background: var(--warning); }
+
+    .yield-banner {
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+      padding: 20px 24px;
+      background: rgba(215, 255, 98, 0.09);
+      border: 1px solid rgba(215, 255, 98, 0.4);
+      border-radius: 14px;
+      color: #dfe7f0;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .yield-banner b { color: var(--accent); font-size: 15px; }
+
+    @media (max-width: 680px) {
+      .yield-banner { width: calc(100% - 32px); padding: 16px; font-size: 13px; }
+    }
+
+    @media print {
+      .yield-banner { width: 100%; margin: 6mm 0 0; background: #fff; border-color: #000; color: #000; }
+      .yield-banner b { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回页面顶部">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      AI Berkshire Research
+    </a>
+    <div class="header-actions">
+      <span class="header-meta">价格基准 2026-08-06 收盘</span>
+      <button class="print-button" id="printButton" type="button">打印 / PDF</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-grid">
+        <div class="eyebrow">Cross-Sector Funnel · US Market · 2026</div>
+        <h1 id="pageTitle">美股 <span>全市场</span><br><em>跨行业筛选</em></h1>
+        <p class="hero-deck">扫描池 = 市值前 30 ∪ 动量榜 ∪ 非科技大盘补充，共 85 家。5 条硬指标按行业分组调整阈值——银行不套用现金流与负债率。</p>
+        <div class="hero-meta" role="group" aria-label="报告元数据">
+          <span>2026-08-07</span>
+          <span>巴菲特 · 芒格 · 段永平 · 李录</span>
+          <span>30 / 30 抽检准出</span>
+          <span>信息充分度 B</span>
+        </div>
+      </div>
+
+      <div class="funnel-strip" role="group" aria-label="漏斗各层数量">
+        <div class="funnel-step"><b>85</b><span>第一层<br>全市场扫描</span></div>
+        <div class="funnel-step"><b>10</b><span>第二层<br>盈利质量 + 5 条硬指标</span></div>
+        <div class="funnel-step"><b>10</b><span>第三层<br>精细分析</span></div>
+        <div class="funnel-step"><b>3</b><span>第四层<br>四大师终选</span></div>
+      </div>
+
+      <p class="yield-banner">
+        <b>本轮最重要的发现：</b>在 10 年期美国国债 4.69% 的环境下，筛出的 10 家优质公司里有 <b>9 家的自由现金流收益率低于无风险利率</b>。
+        标普 500 股权风险溢价仅 <b>+0.41 个百分点</b>。同时，全市场看起来最便宜的三家大盘股（Alphabet 17.9x、Amazon 21.7x、伯克希尔 15.6x）
+        剔除 AI 股权重估等非经营性项目后，PE 分别变为 <b>35.7x / 40.2x / 31.3x</b>。
+      </p>
+    </section>
+
+    <section class="verdict-strip" aria-label="终选组合">
+      <article class="verdict-card fin">
+        <span class="label">核心仓 · 金融</span>
+        <span class="ticker">NYSE: JPM</span>
+        <strong>摩根大通</strong>
+        <p>盈利收益率 6.54%，ROTCE 23%（剔除一次性项后），CET1 14.1%。建议 $270-300。</p>
+        <div class="weight-bar" aria-hidden="true"><i></i></div>
+      </article>
+      <article class="verdict-card tech">
+        <span class="label">成长仓 · 通信服务</span>
+        <span class="ticker">NASDAQ: META</span>
+        <strong>Meta Platforms</strong>
+        <p>全市场唯一 GAAP 利润被<strong>低估</strong>的大盘股。中性情景仅 -9.3%。建议 $480-540。</p>
+        <div class="weight-bar" aria-hidden="true"><i></i></div>
+      </article>
+      <article class="verdict-card energy">
+        <span class="label">分散仓 · 能源</span>
+        <span class="ticker">NYSE: CVX</span>
+        <strong>雪佛龙</strong>
+        <p>FCF 收益率 7.27%——唯一显著跑赢国债的大盘股。但油价是全部论点。上限 25%。</p>
+        <div class="weight-bar" aria-hidden="true"><i></i></div>
+      </article>
+    </section>
+
+    <div class="page-shell">
+      <aside class="toc-panel" aria-label="章节目录">
+        <span class="toc-title">Contents</span>
+        <nav id="toc"></nav>
+      </aside>
+
+      <div>
+        <label class="toc-title" for="mobileToc">跳转至章节</label>
+        <select class="mobile-toc" id="mobileToc" aria-label="选择章节"></select>
+        <article class="report" id="report">
+          <h1>美股全市场 — 漏斗式价值投资筛选研究（跨行业）</h1>
+          <p><strong>报告日期：</strong> 2026-08-07
+          <strong>价格基准：</strong> 2026-08-06 美股收盘（8/7 未开盘；全部标的经 stockanalysis.com 与 Yahoo Finance v8 chart API 双源核对到分）
+          <strong>筛选范围：</strong> 全美股跨行业。扫描池 = 市值前 30 ∪ 30 日涨幅前 20 ∪ 90 日涨幅前 20（市值 ≥ $100亿）∪ 非科技大盘补充。
+          <strong>不含：</strong> 微盘股（市值 &lt; $100亿）、已被并购/退市标的。</p>
+          <blockquote>
+          <p><strong>与本会话另两份报告的关系</strong>：<code>美股AI算力-funnel-20260807</code>（46 家 → TSM/NVDA/MU）与 <code>美股云计算-funnel-20260807</code>（36 家 → MSFT/CRM/ORCL）是行业内筛选。本报告是全市场跨行业筛选，<strong>不回避与前两份重叠</strong>——如果全市场口径独立选出同样的公司，那是交叉验证；如果选出不同的公司，说明行业筛选存在结构性盲区。<strong>结论是后者。</strong></p>
+          </blockquote>
+          <blockquote>
+          <p>投研原则：先摆数据 → 再推逻辑 → 最后出结论。每层淘汰留名字和理由。估计值标&quot;估计&quot;，未披露标 N/A。
+          本报告用于学习研究，不构成投资建议。</p>
+          </blockquote>
+          <hr>
+          <h2>方法论偏离声明（必读）</h2>
+          <p>本报告对 skill 标准流程做了三处显式偏离，全部因跨行业筛选的固有约束：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>偏离</th>
+          <th>原因</th>
+          <th>处理</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td><strong>扫描池 85 家，超出 skill 设定的 30-60 家</strong></td>
+          <td>30-60 是为单一行业校准的。全市场三类并集的自然结果就是 85 家</td>
+          <td>全部列出，不人为裁剪</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td><strong>第 3、4 条硬指标对银行/保险/公用事业失效</strong></td>
+          <td>摩根大通 TTM 经营现金流 <strong>-$1,077亿</strong>，资产负债率结构性在 90% 以上——这是银行的经营常态，不是财务恶化。用通用阈值筛选会把最好的银行排在最差</td>
+          <td>银行改用 <strong>ROTCE / CET1 / 效率比</strong>；公用事业豁免 FCF 与 D/E；负权益公司改用 <strong>ROIC</strong></td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td><strong>终选第三家不是&quot;期权型&quot;而是&quot;分散型&quot;</strong></td>
+          <td>skill 原文第三家为&quot;<strong>可选</strong>&quot;。跨行业组合中，第三个格位用于分散比用于加杠杆更有价值</td>
+          <td>已在第四层说明</td>
+          </tr>
+          </tbody>
+          </table>
+          <hr>
+          <h2>AI 研究偏见自觉</h2>
+          <p>本轮实际触发并已纠正的偏见：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>偏见</th>
+          <th>本次的具体表现</th>
+          <th>纠正动作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>非现金利润偏好（本轮最严重）</strong></td>
+          <td>全市场看起来最便宜的三家大盘股——Alphabet 17.9x、Amazon 21.7x、伯克希尔 15.6x——全部是假象</td>
+          <td>逐一定位并量化非经营性项目，用剔除后利润重算，PE 分别变为 <strong>35.7x / 40.2x / 31.3x</strong></td>
+          </tr>
+          <tr>
+          <td><strong>亏损即差公司</strong></td>
+          <td>Intel 报表 TTM 亏损 $112.9亿，按机械规则应直接淘汰</td>
+          <td>查明其中 <strong>$136.19亿是托管股份按市价重估的非现金损失</strong>——<strong>Intel 股价越涨，账面亏损越大</strong>。剔除后净利约 <strong>+$23亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>高 PE 即贵</strong></td>
+          <td>默克 PE 100.9 看似荒谬</td>
+          <td>其中 <strong>$147亿是 Cidara（$90亿）+ Terns（$57亿）两笔在研管线的一次性冲销</strong>。正常化后 PE 约 17.7</td>
+          </tr>
+          <tr>
+          <td><strong>科技股偏好</strong></td>
+          <td>前两份报告已覆盖 AI 算力与云计算，惯性会继续在科技股里找答案</td>
+          <td>强制纳入 19 家非科技大盘，并按自由现金流收益率横向排序——结果是<strong>能源股胜出</strong></td>
+          </tr>
+          <tr>
+          <td><strong>动量偏好</strong></td>
+          <td>30/90 日涨幅榜共 37 家，叙事最吸引人</td>
+          <td>其中 <strong>13 家（35%）GAAP 亏损</strong>；且这些标的普遍缺完整财务数据，一律不进入打分（见 2.4）</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>本报告最重要的一条自查</strong>：在 10 年期国债 <strong>4.69%</strong> 的环境下，我筛出的 10 家优质公司里有 <strong>9 家的自由现金流收益率低于无风险利率</strong>。如果不把这个事实摆到最前面，任何&quot;这家公司很优秀&quot;的结论都是误导。</p>
+          <hr>
+          <h2>第一层：全市场扫描（85 家）</h2>
+          <h3>1.1 A 类：市值前 30（截至 2026-08-06 收盘）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>公司</th>
+          <th>代码</th>
+          <th>行业</th>
+          <th>市值</th>
+          <th>PE(TTM)</th>
+          <th>前瞻PE</th>
+          <th>盈利质量标记</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>NVIDIA</td>
+          <td>NVDA</td>
+          <td>信息技术</td>
+          <td>$5.304万亿</td>
+          <td>33.2</td>
+          <td>21.9</td>
+          <td>⚠ 含 $251亿投资收益</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Apple</td>
+          <td>AAPL</td>
+          <td>信息技术</td>
+          <td>$4.559万亿</td>
+          <td>35.4</td>
+          <td>34.2</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>Alphabet</td>
+          <td>GOOGL</td>
+          <td>通信服务</td>
+          <td>$4.375万亿</td>
+          <td><strong>17.9</strong></td>
+          <td>26.9</td>
+          <td>⚠⚠ 含 <strong>$1,489.8亿</strong>股权重估</td>
+          </tr>
+          <tr>
+          <td>4</td>
+          <td>Microsoft</td>
+          <td>MSFT</td>
+          <td>信息技术</td>
+          <td>$3.712万亿</td>
+          <td>27.8</td>
+          <td>25.4</td>
+          <td>轻微</td>
+          </tr>
+          <tr>
+          <td>5</td>
+          <td>Amazon</td>
+          <td>AMZN</td>
+          <td>可选消费</td>
+          <td>$2.937万亿</td>
+          <td><strong>21.7</strong></td>
+          <td>29.3</td>
+          <td>⚠⚠ 含 <strong>$804.2亿</strong>（Anthropic/OpenAI）</td>
+          </tr>
+          <tr>
+          <td>6</td>
+          <td>台积电 ADR</td>
+          <td>TSM</td>
+          <td>信息技术</td>
+          <td>$2.169万亿</td>
+          <td>31.1</td>
+          <td>19.0</td>
+          <td>轻微</td>
+          </tr>
+          <tr>
+          <td>7</td>
+          <td>Broadcom</td>
+          <td>AVGO</td>
+          <td>信息技术</td>
+          <td>$2.001万亿</td>
+          <td>68.2</td>
+          <td>26.7</td>
+          <td>⚠ 实际税率仅 3.8%</td>
+          </tr>
+          <tr>
+          <td>8</td>
+          <td>SpaceX</td>
+          <td>SPCX</td>
+          <td>工业</td>
+          <td>$1.515万亿</td>
+          <td>亏损</td>
+          <td>47.7</td>
+          <td>FCF <strong>-$325.2亿</strong></td>
+          </tr>
+          <tr>
+          <td>9</td>
+          <td>Meta Platforms</td>
+          <td>META</td>
+          <td>通信服务</td>
+          <td>$1.503万亿</td>
+          <td>22.1</td>
+          <td>18.4</td>
+          <td>⚠ 利润被<strong>低估</strong>（税项净 -$109亿）</td>
+          </tr>
+          <tr>
+          <td>10</td>
+          <td>Tesla</td>
+          <td>TSLA</td>
+          <td>可选消费</td>
+          <td>$1.262万亿</td>
+          <td>331.6</td>
+          <td>165.3</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>11</td>
+          <td>伯克希尔</td>
+          <td>BRK.B</td>
+          <td>金融</td>
+          <td>$1.131万亿</td>
+          <td><strong>15.6</strong></td>
+          <td>25.5</td>
+          <td>⚠⚠ 含 <strong>$447.3亿</strong>股权重估</td>
+          </tr>
+          <tr>
+          <td>12</td>
+          <td>礼来</td>
+          <td>LLY</td>
+          <td>医疗保健</td>
+          <td>$1.062万亿</td>
+          <td>40.0</td>
+          <td>29.2</td>
+          <td>干净（IPR&amp;D 拖累）</td>
+          </tr>
+          <tr>
+          <td>13</td>
+          <td>SK 海力士 ADS</td>
+          <td>SKHY</td>
+          <td>信息技术</td>
+          <td>$1.019万亿</td>
+          <td><strong>9.7</strong></td>
+          <td>3.6</td>
+          <td>⚠⚠ 含约 <strong>$504亿</strong>（铠侠重估）</td>
+          </tr>
+          <tr>
+          <td>14</td>
+          <td>Micron</td>
+          <td>MU</td>
+          <td>信息技术</td>
+          <td>$9,955亿</td>
+          <td>19.7</td>
+          <td>6.1</td>
+          <td>周期峰值</td>
+          </tr>
+          <tr>
+          <td>15</td>
+          <td>摩根大通</td>
+          <td>JPM</td>
+          <td>金融</td>
+          <td>$9,471亿</td>
+          <td>15.3</td>
+          <td>14.8</td>
+          <td>⚠ 含 $56亿 Visa/股权收益</td>
+          </tr>
+          <tr>
+          <td>16</td>
+          <td>沃尔玛</td>
+          <td>WMT</td>
+          <td>日常消费</td>
+          <td>$8,919亿</td>
+          <td>39.5</td>
+          <td>37.6</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>17</td>
+          <td>AMD</td>
+          <td>AMD</td>
+          <td>信息技术</td>
+          <td>$7,987亿</td>
+          <td>124.1</td>
+          <td>44.1</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>18</td>
+          <td>Visa</td>
+          <td>V</td>
+          <td>金融</td>
+          <td>$6,800亿</td>
+          <td>31.5</td>
+          <td>25.6</td>
+          <td>轻微（$7.8亿特殊项）</td>
+          </tr>
+          <tr>
+          <td>19</td>
+          <td>ASML</td>
+          <td>ASML</td>
+          <td>信息技术</td>
+          <td>$6,612亿</td>
+          <td>54.5</td>
+          <td>30.6</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>20</td>
+          <td>埃克森美孚</td>
+          <td>XOM</td>
+          <td>能源</td>
+          <td>$6,367亿</td>
+          <td>20.0</td>
+          <td>12.8</td>
+          <td>⚠ 中东供应中断推高</td>
+          </tr>
+          <tr>
+          <td>21</td>
+          <td>强生</td>
+          <td>JNJ</td>
+          <td>医疗保健</td>
+          <td>$6,193亿</td>
+          <td>29.8</td>
+          <td>22.9</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>22</td>
+          <td>万事达</td>
+          <td>MA</td>
+          <td>金融</td>
+          <td>$5,045亿</td>
+          <td>31.7</td>
+          <td>27.1</td>
+          <td>权益仅 $56亿</td>
+          </tr>
+          <tr>
+          <td>23</td>
+          <td>Intel</td>
+          <td>INTC</td>
+          <td>信息技术</td>
+          <td>$5,034亿</td>
+          <td>亏损</td>
+          <td>59.8</td>
+          <td>⚠⚠ 亏损系 <strong>$136.2亿</strong>托管股份重估</td>
+          </tr>
+          <tr>
+          <td>24</td>
+          <td>思科</td>
+          <td>CSCO</td>
+          <td>信息技术</td>
+          <td>$4,764亿</td>
+          <td>39.8</td>
+          <td>25.8</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>25</td>
+          <td>美国银行</td>
+          <td>BAC</td>
+          <td>金融</td>
+          <td>$4,405亿</td>
+          <td>13.7</td>
+          <td>12.6</td>
+          <td>银行口径</td>
+          </tr>
+          <tr>
+          <td>26</td>
+          <td>艾伯维</td>
+          <td>ABBV</td>
+          <td>医疗保健</td>
+          <td>$4,310亿</td>
+          <td>68.9</td>
+          <td>16.1</td>
+          <td><strong>负权益 -$58.9亿</strong></td>
+          </tr>
+          <tr>
+          <td>27</td>
+          <td>好市多</td>
+          <td>COST</td>
+          <td>日常消费</td>
+          <td>$4,209亿</td>
+          <td>47.7</td>
+          <td>43.3</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>28</td>
+          <td>应用材料</td>
+          <td>AMAT</td>
+          <td>信息技术</td>
+          <td>$4,188亿</td>
+          <td>49.2</td>
+          <td>35.0</td>
+          <td>⚠ 含 $23.6亿投资收益</td>
+          </tr>
+          <tr>
+          <td>29</td>
+          <td>甲骨文</td>
+          <td>ORCL</td>
+          <td>信息技术</td>
+          <td>$4,133亿</td>
+          <td>24.3</td>
+          <td>17.8</td>
+          <td>FCF <strong>-$236.9亿</strong></td>
+          </tr>
+          <tr>
+          <td>30</td>
+          <td>卡特彼勒</td>
+          <td>CAT</td>
+          <td>工业</td>
+          <td>$3,939亿</td>
+          <td>36.9</td>
+          <td>29.8</td>
+          <td>周期高位</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><em>第 31 名：GE 航空 $3,886亿。</em></p>
+          <h3>1.2 B 类：动量榜并集（37 家，市值 ≥ $100亿）</h3>
+          <p><strong>30 日涨幅前 20</strong>（2026-07-07 → 08-06，按精确收盘价重算）：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>代码</th>
+          <th>公司</th>
+          <th>30日</th>
+          <th>90日</th>
+          <th>GAAP净利</th>
+          <th>驱动</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>CHYM</td>
+          <td>Chime Financial</td>
+          <td>+48.0%</td>
+          <td>+69.6%</td>
+          <td><strong>-$1,819万</strong></td>
+          <td>Q2 转 GAAP 盈利（8/5）</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>ZBRA</td>
+          <td>Zebra Technologies</td>
+          <td>+37.6%</td>
+          <td>+61.1%</td>
+          <td>$5.39亿</td>
+          <td>Q2 大超预期（8/4，+26.5%）</td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>U</td>
+          <td>Unity Software</td>
+          <td>+37.6%</td>
+          <td>+44.9%</td>
+          <td><strong>-$5.88亿</strong></td>
+          <td>Q2 超预期（8/6）</td>
+          </tr>
+          <tr>
+          <td>4</td>
+          <td>ARXS</td>
+          <td>Arxis</td>
+          <td>+35.5%</td>
+          <td>+64.1%</td>
+          <td>$1.28亿</td>
+          <td>Q2 超预期+上调指引</td>
+          </tr>
+          <tr>
+          <td>5</td>
+          <td>IT</td>
+          <td>Gartner</td>
+          <td>+31.3%</td>
+          <td>+16.5%</td>
+          <td>$7.75亿</td>
+          <td>Q2 EPS $4.37 vs 预期 $3.73</td>
+          </tr>
+          <tr>
+          <td>6</td>
+          <td>FIVE</td>
+          <td>Five Below</td>
+          <td>+31.1%</td>
+          <td>+3.6%</td>
+          <td>$4.41亿</td>
+          <td>无单一催化，两次评级上调</td>
+          </tr>
+          <tr>
+          <td>7</td>
+          <td>PYPL</td>
+          <td>PayPal</td>
+          <td>+31.0%</td>
+          <td>+31.8%</td>
+          <td>$49.0亿</td>
+          <td><strong>Stripe+Advent 约 $534亿收购要约</strong></td>
+          </tr>
+          <tr>
+          <td>8</td>
+          <td>CTSH</td>
+          <td>Cognizant</td>
+          <td>+29.5%</td>
+          <td>+10.1%</td>
+          <td>$22.2亿</td>
+          <td>Anthropic 合作 + Q2 财报</td>
+          </tr>
+          <tr>
+          <td>9</td>
+          <td>BABA</td>
+          <td>阿里巴巴 ADR</td>
+          <td>+29.2%</td>
+          <td>-9.5%</td>
+          <td>$153.5亿</td>
+          <td>中国 AI 重估（Qwen）</td>
+          </tr>
+          <tr>
+          <td>10</td>
+          <td>MSFT</td>
+          <td>Microsoft</td>
+          <td>+28.6%</td>
+          <td>+20.4%</td>
+          <td>$1,337.5亿</td>
+          <td><strong>7/30 单日 +15.5%，美股史上最大单日市值增幅</strong></td>
+          </tr>
+          <tr>
+          <td>11</td>
+          <td>CACI</td>
+          <td>CACI International</td>
+          <td>+26.4%</td>
+          <td>+30.7%</td>
+          <td>$5.36亿</td>
+          <td>FY Q4 大超预期（8/6，+21.4%）</td>
+          </tr>
+          <tr>
+          <td>12</td>
+          <td>IESC</td>
+          <td>IES Holdings</td>
+          <td>+26.1%</td>
+          <td>+15.3%</td>
+          <td>$4.54亿</td>
+          <td>数据中心电力承包，EPS 同比近翻倍</td>
+          </tr>
+          <tr>
+          <td>13</td>
+          <td>MLI</td>
+          <td>Mueller Industries</td>
+          <td>+24.8%</td>
+          <td>-1.4%</td>
+          <td>$8.51亿</td>
+          <td>铜价 + Q2 销售 +25%</td>
+          </tr>
+          <tr>
+          <td>14</td>
+          <td>TEAM</td>
+          <td>Atlassian</td>
+          <td>+24.6%</td>
+          <td>+20.3%</td>
+          <td><strong>-$5,383万</strong></td>
+          <td>⚠ Q4 财报在 8/6 盘后，涨幅不在窗口内</td>
+          </tr>
+          <tr>
+          <td>15</td>
+          <td>LDOS</td>
+          <td>Leidos</td>
+          <td>+24.6%</td>
+          <td>+4.0%</td>
+          <td>$13.8亿</td>
+          <td>Q2 超预期 + 上调全年指引</td>
+          </tr>
+          <tr>
+          <td>16</td>
+          <td>JD</td>
+          <td>京东 ADR</td>
+          <td>+23.9%</td>
+          <td>+8.9%</td>
+          <td>$20.1亿</td>
+          <td>中概 beta，无个股催化</td>
+          </tr>
+          <tr>
+          <td>17</td>
+          <td>BMNR</td>
+          <td>Bitmine Immersion</td>
+          <td>+23.6%</td>
+          <td>-17.5%</td>
+          <td><strong>-$87.7亿</strong></td>
+          <td>ETH 金库代理，非经营性</td>
+          </tr>
+          <tr>
+          <td>18</td>
+          <td>THC</td>
+          <td>Tenet Healthcare</td>
+          <td>+22.9%</td>
+          <td>+34.8%</td>
+          <td>$22.4亿</td>
+          <td>Q2 财报（7/24，+17.2%）</td>
+          </tr>
+          <tr>
+          <td>19</td>
+          <td>HPQ</td>
+          <td>HP Inc.</td>
+          <td>+22.7%</td>
+          <td>+24.3%</td>
+          <td>$25.5亿</td>
+          <td>AI PC + 内存短缺外溢，窗口内无公司事件</td>
+          </tr>
+          <tr>
+          <td>20</td>
+          <td>VOD</td>
+          <td>Vodafone ADR</td>
+          <td>+22.6%</td>
+          <td>-1.2%</td>
+          <td><strong>-$4.58亿</strong></td>
+          <td>股东结构变动（e&amp; 减持、Niel 增持）</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>90 日涨幅前 20</strong>（2026-05-08 → 08-06）新增名单：SNOW +108.6%、CORT +106.5%、PANW +72.9%、OKTA +71.0%、DELL +68.0%、HPE +67.2%、ALAB +65.9%、GH +64.7%、NTAP +62.3%、APGE +62.0%、SN +61.1%、CRWD +57.2%、W +57.1%、BAX +50.1%、CRL +49.5%、TECH +48.7%、NET +45.0%。</p>
+          <p><strong>动量榜的三个关键事实</strong>：</p>
+          <ul>
+          <li><strong>13/37（35%）GAAP 亏损</strong>：APGE、BAX、BMNR、CHYM、CRL、CRWD、GH、NET、SNOW、TEAM、U、VOD、W</li>
+          <li><strong>19/37（51%）属科技板块</strong>——动量高度集中，不是全市场普涨</li>
+          <li><strong>半导体几乎缺席</strong>：唯一入榜的 ALAB 在 30 日窗口内反而 <strong>-13.4%</strong></li>
+          </ul>
+          <h3>1.3 C 类：非科技大盘补充（19 家新增）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>代码</th>
+          <th>行业</th>
+          <th>市值</th>
+          <th>PE(TTM)</th>
+          <th>前瞻PE</th>
+          <th>关键标记</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>联合健康</td>
+          <td>UNH</td>
+          <td>医疗保健</td>
+          <td>$3,669亿</td>
+          <td>26.0</td>
+          <td>19.0</td>
+          <td>Q4'25 净利仅 $2.18亿</td>
+          </tr>
+          <tr>
+          <td>默克</td>
+          <td>MRK</td>
+          <td>医疗保健</td>
+          <td>$3,171亿</td>
+          <td><strong>100.9</strong></td>
+          <td>14.9</td>
+          <td>⚠⚠ $147亿 IPR&amp;D 冲销</td>
+          </tr>
+          <tr>
+          <td>赛默飞</td>
+          <td>TMO</td>
+          <td>医疗保健</td>
+          <td>$2,145亿</td>
+          <td>31.2</td>
+          <td>22.1</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>雅培</td>
+          <td>ABT</td>
+          <td>医疗保健</td>
+          <td>$1,868亿</td>
+          <td>34.9</td>
+          <td>18.6</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>雪佛龙</td>
+          <td>CVX</td>
+          <td>能源</td>
+          <td>$3,713亿</td>
+          <td>18.2</td>
+          <td>12.4</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>宝洁</td>
+          <td>PG</td>
+          <td>日常消费</td>
+          <td>$3,416亿</td>
+          <td>22.2</td>
+          <td>21.0</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>可口可乐</td>
+          <td>KO</td>
+          <td>日常消费</td>
+          <td>$3,737亿</td>
+          <td>26.1</td>
+          <td>25.6</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>百事</td>
+          <td>PEP</td>
+          <td>日常消费</td>
+          <td>$1,890亿</td>
+          <td>18.1</td>
+          <td>15.9</td>
+          <td>D/E 2.39</td>
+          </tr>
+          <tr>
+          <td>家得宝</td>
+          <td>HD</td>
+          <td>可选消费</td>
+          <td>$3,485亿</td>
+          <td>24.8</td>
+          <td>22.9</td>
+          <td>D/E 4.59</td>
+          </tr>
+          <tr>
+          <td>麦当劳</td>
+          <td>MCD</td>
+          <td>可选消费</td>
+          <td>$1,963亿</td>
+          <td>22.4</td>
+          <td>20.8</td>
+          <td><strong>负权益 -$12.9亿</strong></td>
+          </tr>
+          <tr>
+          <td>GE 航空</td>
+          <td>GE</td>
+          <td>工业</td>
+          <td>$3,886亿</td>
+          <td>44.2</td>
+          <td>44.6</td>
+          <td>前瞻 PE 高于 TTM</td>
+          </tr>
+          <tr>
+          <td>RTX</td>
+          <td>RTX</td>
+          <td>工业</td>
+          <td>$3,009亿</td>
+          <td>39.3</td>
+          <td>30.3</td>
+          <td>干净</td>
+          </tr>
+          <tr>
+          <td>霍尼韦尔</td>
+          <td>HON</td>
+          <td>工业</td>
+          <td>$763亿</td>
+          <td><strong>9.3</strong></td>
+          <td>26.4</td>
+          <td>⚠⚠ 分拆后财务不可比</td>
+          </tr>
+          <tr>
+          <td>洛克希德</td>
+          <td>LMT</td>
+          <td>工业</td>
+          <td>$1,345亿</td>
+          <td>21.5</td>
+          <td>18.9</td>
+          <td>毛利率仅 11.8%</td>
+          </tr>
+          <tr>
+          <td>NextEra</td>
+          <td>NEE</td>
+          <td>公用事业</td>
+          <td>$1,765亿</td>
+          <td>19.0</td>
+          <td>20.6</td>
+          <td>FCF <strong>-$165.7亿</strong>（费率基数投资）</td>
+          </tr>
+          <tr>
+          <td>AT&amp;T</td>
+          <td>T</td>
+          <td>通信服务</td>
+          <td>$1,625亿</td>
+          <td><strong>7.8</strong></td>
+          <td>9.9</td>
+          <td>债务 $1,658亿</td>
+          </tr>
+          <tr>
+          <td>Verizon</td>
+          <td>VZ</td>
+          <td>通信服务</td>
+          <td>$1,952亿</td>
+          <td>12.2</td>
+          <td>9.3</td>
+          <td>股息 6.02%</td>
+          </tr>
+          <tr>
+          <td>迪士尼</td>
+          <td>DIS</td>
+          <td>通信服务</td>
+          <td>$1,808亿</td>
+          <td>21.6</td>
+          <td>14.0</td>
+          <td>ROE 仅 8.0%</td>
+          </tr>
+          <tr>
+          <td>Netflix</td>
+          <td>NFLX</td>
+          <td>通信服务</td>
+          <td>$3,068亿</td>
+          <td>23.2</td>
+          <td>21.3</td>
+          <td>干净，收入 +16.0%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>第一层合计：30（A）+ 36（B 去重）+ 19（C 去重）= 85 家。</strong></p>
+          <hr>
+          <h2>第二层：粗筛 → 10 家</h2>
+          <h3>2.1 前置关 A：可投资性</h3>
+          <p><strong>因并购/结构变动淘汰（4 家）</strong>：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>理由</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>APGE</strong></td>
+          <td>艾伯维已同意以 <strong>$109亿</strong>收购（2026-06-22），股价由交易价锚定</td>
+          </tr>
+          <tr>
+          <td><strong>TECH</strong></td>
+          <td>默克 KGaA 已同意以 **$73/股（约 $113亿）**收购（2026-06-25）</td>
+          </tr>
+          <tr>
+          <td><strong>PYPL</strong></td>
+          <td>Stripe + Advent 提出约 <strong>$534亿</strong>收购要约（2026-07-15），董事会称报价&quot;不充分&quot;，结果未定</td>
+          </tr>
+          <tr>
+          <td><strong>HON</strong></td>
+          <td>2026-06-29 分拆航空业务并 1 拆 2 缩股。<strong>TTM 收入含四个季度的航空业务，市值只含分拆后主体</strong>——PE 9.3 与 PS 2.00 是不同公司的比值，本季无法估值</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>2.2 前置关 B：盈利质量（本轮最关键的一关）</h3>
+          <p><strong>规则</strong>：TTM GAAP 利润中非经营性项目占比 &gt; 20% 的，必须用剔除后利润或前瞻 PE 重新判定；无法可靠剔除的淘汰。</p>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>非经营性项目</th>
+          <th>金额</th>
+          <th>占 TTM 净利</th>
+          <th>报表 PE → 剔除后 PE</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>GOOGL</strong></td>
+          <td>股权证券收益（SpaceX 持仓 IPO 后转为可计量，10-Q 披露持有 <strong>$941亿</strong> SpaceX 股份）</td>
+          <td><strong>+$1,489.8亿</strong></td>
+          <td>约 50%</td>
+          <td><strong>17.9 → 约 35.7</strong></td>
+          </tr>
+          <tr>
+          <td><strong>AMZN</strong></td>
+          <td>私营公司股权向上重估，XBRL 标签直接写明 <code>AnthropicMember</code>、<code>OpenAIGroupPBCMember</code></td>
+          <td><strong>+$804.2亿</strong></td>
+          <td>约 46%</td>
+          <td><strong>21.7 → 约 40.2</strong></td>
+          </tr>
+          <tr>
+          <td><strong>BRK.B</strong></td>
+          <td>股权组合按市价重估（其中未实现 $412.8亿）。<strong>伯克希尔自己也告诉投资者忽略这一行</strong></td>
+          <td><strong>+$447.3亿</strong></td>
+          <td>约 50%</td>
+          <td><strong>15.6 → 约 31.3</strong></td>
+          </tr>
+          <tr>
+          <td><strong>SKHY</strong></td>
+          <td>铠侠（Kioxia）持股重估</td>
+          <td>约 <strong>+$504亿</strong></td>
+          <td>约 38%</td>
+          <td><strong>9.7 → 约 15.6</strong></td>
+          </tr>
+          <tr>
+          <td><strong>INTC</strong></td>
+          <td>美国政府认股权协议下<strong>托管股份按市价重估</strong>——非现金，且<strong>股价越涨亏损越大</strong></td>
+          <td><strong>-$136.2亿</strong></td>
+          <td>由约盈亏平衡变为 -$112.9亿</td>
+          <td>亏损 → 剔除后净利约 <strong>+$23亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>MRK</strong></td>
+          <td>Cidara（$90亿）+ Terns（$57亿）在研管线一次性冲销</td>
+          <td><strong>-$147亿</strong></td>
+          <td>使 Q1、Q2 均为 GAAP 亏损</td>
+          <td><strong>100.9 → 约 17.7</strong></td>
+          </tr>
+          <tr>
+          <td><strong>META</strong></td>
+          <td>2025Q3 的 <strong>-$159.3亿</strong>一次性税项（OBBBA/CAMT）与 2026Q1 的 <strong>+$50.2亿</strong>税收利益</td>
+          <td>净 <strong>-$109亿</strong></td>
+          <td>约 16%</td>
+          <td><strong>22.1 → 实际更低</strong></td>
+          </tr>
+          <tr>
+          <td><strong>JPM</strong></td>
+          <td>Visa 股份收益 $46亿 + 股权投资收益 $10亿</td>
+          <td>+$56亿</td>
+          <td>Q2 约 26%</td>
+          <td>ROTCE 29% → 剔除后 <strong>23%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>三家最&quot;便宜&quot;的大盘股，剔除非经营性项目后全部变贵一倍。</strong> FactSet 独立印证：2026Q2 标普 500 混合 EPS 增速 47.4%，<strong>剔除 Alphabet 与 Amazon 后降至 28.8%</strong>；创纪录的 16.7% 净利率<strong>剔除这两家后降至 14.7%</strong>。</p>
+          <h3>2.3 5 条硬指标（分行业调整）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>#</th>
+          <th>指标</th>
+          <th>通用标准</th>
+          <th>行业调整</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1</td>
+          <td>PE</td>
+          <td>合理；高成长可放宽至 PEG &lt; 1.5</td>
+          <td>盈利质量前置关处理后的口径</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>ROE</td>
+          <td>&gt; 15% 或趋势改善</td>
+          <td>银行用 <strong>ROTCE</strong>；负权益公司用 <strong>ROIC</strong></td>
+          </tr>
+          <tr>
+          <td>3</td>
+          <td>经营现金流</td>
+          <td>为正且占净利润 &gt; 70%</td>
+          <td><strong>银行豁免</strong>（JPM OCF -$1,077亿属经营常态）；公用事业豁免</td>
+          </tr>
+          <tr>
+          <td>4</td>
+          <td>杠杆</td>
+          <td>D/E &lt; 1.0（代理&quot;资产负债率&lt;60%&quot;）</td>
+          <td><strong>银行用 CET1 ≥ 11%</strong>；公用事业豁免；负权益公司 n/m</td>
+          </tr>
+          <tr>
+          <td>5</td>
+          <td>护城河</td>
+          <td>★★★ 以上</td>
+          <td>定性</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>2.4 动量榜（B 类）的处理：不进入打分</h3>
+          <p>30/90 日涨幅榜的 36 家新增标的中，我只掌握市值、收入、GAAP 净利与上涨原因，<strong>缺 ROE、经营现金流、资产负债表等完整数据</strong>。按本报告的诚实标准，不为它们编造评分。</p>
+          <ul>
+          <li><strong>13 家 GAAP 亏损</strong>，直接淘汰：APGE、BAX、BMNR、CHYM、CRL、CRWD、GH、NET、SNOW、TEAM、U、VOD、W</li>
+          <li><strong>6 家已被本会话前两份报告完整覆盖并淘汰</strong>：SNOW、PANW、OKTA、CRWD、NET、ALAB、DELL、HPE、NTAP</li>
+          <li><strong>7 家 PE 低于 20 且盈利，但数据不全</strong>，列入&quot;需补充数据后再评估&quot;：THC（9.2）、HPQ（10.1）、CTSH（11.5）、LDOS（12.3）、IT（15.1）、MLI（18.1）、JD（22.0）</li>
+          <li>其余因 PE 过高淘汰：CORT（215）、ARXS（188）、IESC（33.7）、SN（36.5）、ZBRA（32）、FIVE（29）、CACI（25.9）</li>
+          </ul>
+          <blockquote>
+          <p><strong>这是本报告最大的数据缺口。</strong> 上述 7 家里 THC（PE 9.2）与 HPQ（PE 10.1）估值确实低，可能藏着机会，但没有完整财务就下结论是不负责任的。见 5.5。</p>
+          </blockquote>
+          <h3>2.5 打分结果（完整数据标的）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>PE（质量调整后）</th>
+          <th>ROE</th>
+          <th>OCF/NI</th>
+          <th>D/E</th>
+          <th>护城河</th>
+          <th>得分</th>
+          <th>留/弃</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>MSFT</strong></td>
+          <td>27.8 / 25.4 ✓</td>
+          <td>34.0% ✓</td>
+          <td>1.37 ✓</td>
+          <td>0.29 ✓</td>
+          <td>★★★★★</td>
+          <td><strong>5/5</strong></td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>META</strong></td>
+          <td>22.1（实际更低）✓</td>
+          <td>29.8% ✓</td>
+          <td>1.91 ✓</td>
+          <td>0.43 ✓</td>
+          <td>★★★★★</td>
+          <td><strong>5/5</strong></td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>NFLX</strong></td>
+          <td>23.2 / 21.3 ✓</td>
+          <td>49.5% ✓</td>
+          <td>0.88 ✓</td>
+          <td>0.55 ✓</td>
+          <td>★★★★</td>
+          <td><strong>5/5</strong></td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>TSM</strong></td>
+          <td>31.1 / 19.0 ✓</td>
+          <td>40.0% ✓</td>
+          <td>1.17 ✓</td>
+          <td>0.15 ✓</td>
+          <td>★★★★★</td>
+          <td><strong>5/5</strong></td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>JPM</strong>（银行口径）</td>
+          <td>15.3 ✓</td>
+          <td>ROTCE <strong>23%</strong>（剔除后）✓</td>
+          <td>豁免</td>
+          <td>CET1 <strong>14.1%</strong> ✓</td>
+          <td>★★★★★</td>
+          <td><strong>5/5</strong></td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>NVDA</strong></td>
+          <td>33.2（剔除后约 38.3）△</td>
+          <td>114.3% ✓</td>
+          <td>0.79 ✓</td>
+          <td>0.07 ✓</td>
+          <td>★★★★★</td>
+          <td>4.5/5</td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>V</strong></td>
+          <td>31.5 / 25.6 △</td>
+          <td>61.2% ✓</td>
+          <td>1.01 ✓</td>
+          <td>0.68 ✓</td>
+          <td>★★★★★</td>
+          <td>4.5/5</td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>PG</strong></td>
+          <td>22.2（增速仅 3.3%，PEG 6.7）△</td>
+          <td>30.3% ✓</td>
+          <td>1.24 ✓</td>
+          <td>0.64 ✓</td>
+          <td>★★★★★</td>
+          <td>4.5/5</td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>JNJ</strong></td>
+          <td>29.8 / 22.9 △</td>
+          <td>25.7% ✓</td>
+          <td>1.31 ✓</td>
+          <td>0.58 ✓</td>
+          <td>★★★★</td>
+          <td>4.5/5</td>
+          <td><strong>留</strong></td>
+          </tr>
+          <tr>
+          <td><strong>CVX</strong></td>
+          <td>18.2 / 12.4 ✓</td>
+          <td>10.9% ✗</td>
+          <td>2.20 ✓</td>
+          <td>0.24 ✓</td>
+          <td>★★★★</td>
+          <td>4/5</td>
+          <td><strong>留（黄）</strong></td>
+          </tr>
+          <tr>
+          <td>AAPL</td>
+          <td><strong>35.4 / 34.2</strong> ✗</td>
+          <td>148.8% ✓</td>
+          <td>1.14 ✓</td>
+          <td>0.78 ✓</td>
+          <td>★★★★★</td>
+          <td>4/5</td>
+          <td>弃（见 2.6）</td>
+          </tr>
+          <tr>
+          <td>XOM</td>
+          <td>20.0 / 12.8 ✓</td>
+          <td>12.6% ✗</td>
+          <td>1.82 ✓</td>
+          <td>0.16 ✓</td>
+          <td>★★★★</td>
+          <td>4/5</td>
+          <td>弃（见 2.6）</td>
+          </tr>
+          <tr>
+          <td>T</td>
+          <td><strong>7.8 / 9.9</strong> ✓</td>
+          <td>18.3% ✓</td>
+          <td>1.86 ✓</td>
+          <td><strong>1.29</strong> ✗</td>
+          <td>★★★</td>
+          <td>4/5</td>
+          <td>弃：护城河不足 ★★★★</td>
+          </tr>
+          <tr>
+          <td>MRK（正常化）</td>
+          <td>约 17.7 ✓</td>
+          <td>6.9%（失真）△</td>
+          <td>5.64 ✓</td>
+          <td><strong>1.07</strong> ✗</td>
+          <td>★★★★</td>
+          <td>3.5/5</td>
+          <td>弃：<strong>Keytruda 占收入 50.4%，美国专利 2028 年到期</strong></td>
+          </tr>
+          <tr>
+          <td>UNH</td>
+          <td>26.0 / 19.0 △</td>
+          <td>14.2% ✗</td>
+          <td>1.91 ✓</td>
+          <td>0.69 ✓</td>
+          <td>★★★★</td>
+          <td>3.5/5</td>
+          <td>弃：监管与 MA 报销政策风险</td>
+          </tr>
+          <tr>
+          <td>BRK.B</td>
+          <td>15.6 → <strong>31.3</strong> ✗</td>
+          <td>10.5% ✗</td>
+          <td>0.63 ✗</td>
+          <td>0.18 ✓</td>
+          <td>★★★★★</td>
+          <td>3.5/5</td>
+          <td>弃：剔除后估值不便宜，且财报滞后一季</td>
+          </tr>
+          <tr>
+          <td>KO</td>
+          <td>26.1 △</td>
+          <td>42.1% ✓</td>
+          <td>1.14 ✓</td>
+          <td><strong>1.16</strong> ✗</td>
+          <td>★★★★★</td>
+          <td>3.5/5</td>
+          <td>弃</td>
+          </tr>
+          <tr>
+          <td>GOOGL</td>
+          <td>17.9 → <strong>35.7</strong> ✗</td>
+          <td>48.7%（虚高）✗</td>
+          <td>0.76 ✓</td>
+          <td>0.19 ✓</td>
+          <td>★★★★★</td>
+          <td>3/5</td>
+          <td>弃：剔除后 35.7x，现金转化率全场最低</td>
+          </tr>
+          <tr>
+          <td>AMZN</td>
+          <td>21.7 → <strong>40.2</strong> ✗</td>
+          <td>30.6%（虚高）✗</td>
+          <td>1.19 ✓</td>
+          <td>0.46 ✓</td>
+          <td>★★★★★</td>
+          <td>3/5</td>
+          <td>弃：剔除后 40.2x，<strong>TTM FCF -$116亿</strong></td>
+          </tr>
+          <tr>
+          <td>PEP</td>
+          <td>18.1 / 15.9 ✓</td>
+          <td>51.5% ✓</td>
+          <td>1.29 ✓</td>
+          <td><strong>2.39</strong> ✗</td>
+          <td>★★★★</td>
+          <td>3.5/5</td>
+          <td>弃：杠杆过高，增速 5.6%</td>
+          </tr>
+          <tr>
+          <td>MA</td>
+          <td>31.7 ✗</td>
+          <td>241.2%（权益仅$56亿）△</td>
+          <td>1.07 ✓</td>
+          <td><strong>4.40</strong> ✗</td>
+          <td>★★★★★</td>
+          <td>3/5</td>
+          <td>弃</td>
+          </tr>
+          <tr>
+          <td>VZ</td>
+          <td>12.2 / 9.3 ✓</td>
+          <td>15.8% ✓</td>
+          <td>2.40 ✓</td>
+          <td><strong>1.84</strong> ✗</td>
+          <td>★★★</td>
+          <td>3/5</td>
+          <td>弃</td>
+          </tr>
+          <tr>
+          <td>ORCL</td>
+          <td>24.3 / 17.8 ✓</td>
+          <td>53.4% ✓</td>
+          <td>1.88 ✓</td>
+          <td><strong>3.89</strong> ✗</td>
+          <td>★★★★</td>
+          <td>4/5</td>
+          <td>弃：已由云计算报告覆盖并列为期权仓</td>
+          </tr>
+          <tr>
+          <td>MU / AVGO / AMD / ASML / AMAT / INTC / CSCO</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>≤4/5</td>
+          <td>弃：已由 AI 算力报告完整覆盖</td>
+          </tr>
+          <tr>
+          <td>SPCX</td>
+          <td>亏损 ✗</td>
+          <td>负 ✗</td>
+          <td>-1.11 ✗</td>
+          <td>0.31 ✓</td>
+          <td>★★★★</td>
+          <td>1/5</td>
+          <td>弃：FCF <strong>-$325亿</strong>（已由 MSFT/SpaceX 报告覆盖）</td>
+          </tr>
+          <tr>
+          <td>TSLA</td>
+          <td><strong>331.6</strong> ✗</td>
+          <td>4.7% ✗</td>
+          <td>4.91 ✓</td>
+          <td>0.18 ✓</td>
+          <td>★★★</td>
+          <td>2/5</td>
+          <td>弃</td>
+          </tr>
+          <tr>
+          <td>ABBV / MCD</td>
+          <td>负权益</td>
+          <td>ROIC 17.7% / 18.3% ✓</td>
+          <td>✓</td>
+          <td>n/m</td>
+          <td>★★★★</td>
+          <td>3/5</td>
+          <td>弃：负权益 + ABBV 2033 二次专利悬崖</td>
+          </tr>
+          <tr>
+          <td>WMT / COST / HD / CAT / GE / RTX / LMT / TMO / ABT / DIS / BAC</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>≤3.5/5</td>
+          <td>弃：PE 过高或 ROE 不足，逐项理由见上表数据</td>
+          </tr>
+          <tr>
+          <td>NEE</td>
+          <td>19.0 △</td>
+          <td>11.7% ✗</td>
+          <td>1.48 ✓</td>
+          <td>豁免</td>
+          <td>★★★★</td>
+          <td>3/5</td>
+          <td>弃：FCF -$165.7亿 + <strong>与 Dominion 合并待批</strong>，独立估值失效</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>2.6 保留 12 家 &gt; 10，二次筛：护城河提至 ★★★★★</h3>
+          <p>按 skill 第 2.2 节规则执行。<strong>AAPL 与 XOM 虽达 ★★★★★/★★★★，但按风险调整价值淘汰</strong>：</p>
+          <ul>
+          <li><strong>AAPL（弃）</strong>：PE 35.4、前瞻 34.2——<strong>前瞻几乎不比 TTM 便宜</strong>，说明市场不预期利润增长。护城河无可挑剔，但这个价格没有安全边际。</li>
+          <li><strong>XOM（弃）</strong>：与 CVX 同属能源，二选一。XOM 的 TTM 被<strong>中东供应中断</strong>推高（Q2 收入从 Q1 的 $832亿跳到 $1,145亿，GAAP EPS $3.48 vs $1.00），基数不可持续；CVX 的 D/E 0.24、股息 3.76% 更干净。</li>
+          </ul>
+          <h3>2.7 第二层输出：保留 10 家</h3>
+          <p><strong>MSFT、META、NFLX、TSM、JPM、NVDA、V、PG、JNJ、CVX</strong></p>
+          <p>行业分布：信息技术 3（MSFT/TSM/NVDA）、通信服务 2（META/NFLX）、金融 2（JPM/V）、日常消费 1（PG）、医疗保健 1（JNJ）、能源 1（CVX）。<strong>跨行业分散达成，没有单一板块超过三席。</strong></p>
+          <hr>
+          <h2>第三层：精细分析（10 家）</h2>
+          <h3>全局对照：自由现金流收益率 vs 无风险利率</h3>
+          <p>在进入个股之前，必须先看这张表。<strong>10 年期美国国债 2026-08-06 收益率为 4.69%。</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>TTM 自由现金流</th>
+          <th>市值</th>
+          <th><strong>FCF 收益率</strong></th>
+          <th>对比 4.69%</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>CVX</strong></td>
+          <td>$270.1亿</td>
+          <td>$3,713亿</td>
+          <td><strong>7.27%</strong></td>
+          <td><strong>+2.58pp</strong> ✅</td>
+          </tr>
+          <tr>
+          <td>PG</td>
+          <td>$151.5亿</td>
+          <td>$3,416亿</td>
+          <td>4.44%</td>
+          <td>-0.25pp</td>
+          </tr>
+          <tr>
+          <td>NFLX</td>
+          <td>$111.5亿</td>
+          <td>$3,068亿</td>
+          <td>3.63%</td>
+          <td>-1.06pp</td>
+          </tr>
+          <tr>
+          <td>JNJ</td>
+          <td>$222.4亿</td>
+          <td>$6,193亿</td>
+          <td>3.59%</td>
+          <td>-1.10pp</td>
+          </tr>
+          <tr>
+          <td>V</td>
+          <td>$210.1亿</td>
+          <td>$6,800亿</td>
+          <td>3.09%</td>
+          <td>-1.60pp</td>
+          </tr>
+          <tr>
+          <td>META</td>
+          <td>$409.8亿</td>
+          <td>$1.503万亿</td>
+          <td>2.73%</td>
+          <td>-1.96pp</td>
+          </tr>
+          <tr>
+          <td>NVDA</td>
+          <td>$1,190.8亿</td>
+          <td>$5.304万亿</td>
+          <td>2.25%</td>
+          <td>-2.44pp</td>
+          </tr>
+          <tr>
+          <td>MSFT</td>
+          <td>$669.9亿</td>
+          <td>$3.712万亿</td>
+          <td>1.80%</td>
+          <td>-2.89pp</td>
+          </tr>
+          <tr>
+          <td>TSM</td>
+          <td>$354.9亿</td>
+          <td>$2.169万亿</td>
+          <td>1.64%</td>
+          <td>-3.05pp</td>
+          </tr>
+          <tr>
+          <td>JPM</td>
+          <td>不适用（银行）</td>
+          <td>—</td>
+          <td>盈利收益率 <strong>6.54%</strong></td>
+          <td>+1.85pp</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>10 家里只有 CVX 与 JPM 的现金/盈利收益率高于无风险利率。</strong> 这不是个股问题，是整个市场的定价状态：标普 500 前瞻盈利收益率 5.10%，减去 10 年期国债 4.69%，<strong>股权风险溢价仅 +0.41 个百分点</strong>；席勒超额 CAPE 收益率 <strong>0.97%</strong>，较 2025 年末的 1.59% 大幅下降。</p>
+          <hr>
+          <h3>Microsoft（MSFT）</h3>
+          <p><strong>一句话商业模式</strong>：把企业身份、数据、办公工作流与开发入口捆绑进统一云平台，以订阅、云消耗和 AI 使用量三重收费。</p>
+          <p><strong>财务质量</strong>：TTM 收入 $3,318.4亿、净利 $1,337.5亿、经营现金流 $1,829.4亿、自由现金流 $669.9亿、D/E 0.29。Microsoft Cloud 收入 $2,144亿（占 64.6%），Azure 全年 +41%，商业 RPO <strong>$6,780亿（+84%）</strong>，剔除 OpenAI 后仍 +25%。</p>
+          <p><strong>护城河</strong>：★★★★★。Entra 身份、Office 格式、Teams、Azure、SQL、GitHub 深度嵌入企业，替换是组织问题而非技术问题。</p>
+          <p><strong>主要风险</strong>：① 资本开支 $1,159.5亿（+79.6%）而 FCF 反降 6.5%；② 云毛利率 69%→65%；③ 折旧年限 15→25 年的变更<strong>只出现在电话会，FY2026 10-K 全文 0 次出现&quot;25 years&quot;</strong>。</p>
+          <p><strong>估值快评</strong>：PE 27.8、P/FCF 55.4、<strong>FCF 收益率 1.80%（全场倒数第二）</strong>。<strong>结论：质量顶级，价格已充分。</strong></p>
+          <p><strong>进入终选？</strong> 否——已由 <code>美股云计算-funnel</code> 列为核心仓（合理区间 $350-415）。全市场口径下 FCF 收益率不敌 JPM 与 CVX。</p>
+          <hr>
+          <h3>Meta Platforms（META）</h3>
+          <p><strong>一句话商业模式</strong>：用 40 亿用户的注意力做广告，把每一分利润再投进 AI 基础设施。</p>
+          <p><strong>财务质量</strong>：TTM 收入 $2,282.5亿、净利 $681.0亿、经营现金流 $1,303.0亿、自由现金流 $409.8亿、D/E 0.43、毛利率 <strong>81.7%</strong>、OCF/净利 1.91。</p>
+          <p><strong>关键发现</strong>：<strong>META 是全市场唯一一家 GAAP 利润被系统性低估的大盘股。</strong> TTM 窗口内含 2025Q3 的 <strong>-$159.3亿</strong>一次性税项（OBBBA/CAMT 法案下的估值备抵）与 2026Q1 的 +$50.2亿税收利益，净拖累约 $109亿。当 Alphabet、Amazon、伯克希尔的利润被股权重估灌水一倍时，META 的利润是被税项压低的。<strong>PE 22.1 的实际水平更低。</strong></p>
+          <p><strong>护城河</strong>：★★★★★。四大应用的网络效应是全球最强的消费者护城河之一。</p>
+          <p><strong>主要风险</strong>：① 资本开支 $893.3亿吞掉 69% 的经营现金流，<strong>FCF 收益率仅 2.73%</strong>；② AI 投入的回报路径不如云厂清晰（没有 Azure 那样的外部付费客户）；③ 监管与内容责任。</p>
+          <p><strong>估值快评</strong>：PE 22.1（实际更低）、前瞻 18.4。<strong>结论：全市场大盘股中盈利质量最被低估的一家。</strong></p>
+          <p><strong>进入终选？</strong> 是。</p>
+          <hr>
+          <h3>Netflix（NFLX）</h3>
+          <p><strong>一句话商业模式</strong>：把内容成本摊薄到全球最大的付费用户基数上，再加广告层变现。</p>
+          <p><strong>财务质量</strong>：TTM 收入 $483.7亿（<strong>+16.0%</strong>）、净利 $136.5亿、ROE 49.5%、经营现金流 $119.7亿、自由现金流 $111.5亿、资本开支仅 $8.2亿、D/E 0.55。<strong>盈利质量干净，无任何非经营性项目标记</strong>——这在本轮 85 家里是少数。</p>
+          <p><strong>护城河</strong>：★★★★。规模优势真实（内容预算摊薄到最大用户基数），但订阅可随时取消、Disney+/Prime 竞争实在，不到 ★★★★★。</p>
+          <p><strong>主要风险</strong>：① 用户增长减速而内容成本随竞争回升；② 23.2x PE 对 16% 增速留的余地不大；③ 2025-11-01 已 1 拆 10，历史每股数据须复权。</p>
+          <p><strong>估值快评</strong>：PE 23.2、前瞻 21.3、FCF 收益率 3.63%。<strong>结论：财务最干净的成长股之一，估值合理但不便宜。</strong></p>
+          <p><strong>进入终选？</strong> 否——与 META 在&quot;成长&quot;格位重叠，而 META 的护城河更强、盈利被低估。列观察名单。</p>
+          <hr>
+          <h3>台积电 ADR（TSM）</h3>
+          <p><strong>一句话商业模式</strong>：AI 时代的收费公路——所有芯片设计公司都必须经过它。</p>
+          <p><strong>财务质量</strong>：TTM 收入 $1,395.7亿、净利 $696.8亿、ROE 40.0%、经营现金流 $817.7亿、资本开支 <strong>$462.8亿</strong>、自由现金流 $354.9亿、D/E 0.15。</p>
+          <p><strong>护城河</strong>：★★★★★。制程与 CoWoS 封装领先十年无人追平。</p>
+          <p><strong>主要风险</strong>：① 台海地缘（无法用财务指标刻画的尾部归零风险）；② <strong>P/FCF 极高，FCF 收益率仅 1.64%，全场最低</strong>；③ ADR 较台北原股溢价约 11.8%。</p>
+          <p><strong>估值快评</strong>：ADR 口径 PE 31.1、前瞻 19.0。<strong>结论：护城河最深，但以自由现金流看是全场最贵。</strong></p>
+          <p><strong>进入终选？</strong> 否——已由 <code>美股AI算力-funnel</code> 列为核心仓（合理区间 $330-350）。</p>
+          <hr>
+          <h3>摩根大通（JPM）</h3>
+          <p><strong>一句话商业模式</strong>：用美国最大的存款基础与资本缓冲，在每一轮下行周期抢占份额。</p>
+          <p><strong>财务质量（银行口径）</strong>：TTM 收入 $1,863.3亿、净利 $636.3亿（普通股口径）。Q2 2026：<strong>ROTCE 29%（剔除一次性项后 23%）</strong>、<strong>CET1 14.1%（标准法）</strong>、<strong>效率比 48%</strong>、每股有形账面价值 $113.35。资本回报：$40亿股息 + $62亿净回购，近 12 个月净派息率 73%。</p>
+          <blockquote>
+          <p><strong>必须说明</strong>：JPM 的 TTM 经营现金流为 <strong>-$1,077亿</strong>，资产负债表&quot;债务&quot;$1.334万亿。这两个数字<strong>不代表财务恶化</strong>——银行的经营现金流由贷款投放、交易账簿和存款变动主导，一家扩张中的银行现金流为负是常态。用通用指标会把 JPM 排在全市场最差，这正是本报告第 2.3 节做行业调整的原因。</p>
+          </blockquote>
+          <p><strong>护城河</strong>：★★★★★。规模、存款成本、投行份额第一，且监管资本要求本身构成对小银行的壁垒。</p>
+          <p><strong>主要风险</strong>：① 信用周期转向——这是银行不可分散的核心风险；② 当前 ROTCE 29% 被 <strong>$56亿</strong> Visa/股权一次性收益抬高，真实水平 23%；③ 净息差对利率路径敏感。</p>
+          <p><strong>估值快评</strong>：PE 15.3、前瞻 14.8、<strong>盈利收益率 6.54%（较 10 年期国债 +1.85pp）</strong>、股息率 1.68%。<strong>结论：全市场质量与估值匹配度最好的大盘股。</strong></p>
+          <p><strong>进入终选？</strong> 是。</p>
+          <hr>
+          <h3>NVIDIA（NVDA）</h3>
+          <p><strong>财务质量</strong>：TTM 收入 $2,534.9亿、净利 $1,596.1亿、毛利率 74.1%、ROE 114.3%、自由现金流 <strong>$1,190.8亿</strong>、D/E 0.07。</p>
+          <p><strong>盈利质量标记</strong>：TTM 含 <strong>+$251.3亿</strong>投资收益（AI 生态股权重估），约占净利 13%，剔除后 PE 由 33.2 升至约 <strong>38.3</strong>。</p>
+          <p><strong>护城河</strong>：★★★★★（CUDA 生态）。<strong>主要风险</strong>：三大客户占计算与网络分部 21%/17%/16%，且这三家都在自研 ASIC。</p>
+          <p><strong>估值快评</strong>：PE 33.2（剔除后 38.3）、FCF 收益率 2.25%。<strong>进入终选？</strong> 否——已由 AI 算力报告列为卫星仓（合理区间 $175-190）。</p>
+          <hr>
+          <h3>Visa（V）</h3>
+          <p><strong>财务质量</strong>：TTM 收入 $444.9亿、净利 $224.0亿、ROE 61.2%、自由现金流 $210.1亿、D/E 0.68。FQ3 净收入 $116.3亿（+14%），支付金额 +10% 恒定汇率，跨境 +12%。<strong>费率（净收入÷总金额）0.267%</strong>。</p>
+          <p><strong>护城河</strong>：★★★★★。双边网络、零信用风险、边际成本近零的全球消费&quot;过路费&quot;。</p>
+          <p><strong>主要风险</strong>：① 交换费诉讼与监管直接攻击费率；② 账户到账户与稳定币新轨道；③ PE 31.5 对 14% 增长偏贵。</p>
+          <p><strong>估值快评</strong>：PE 31.5、前瞻 25.6、FCF 收益率 3.09%。<strong>结论：商业模式接近完美，价格已反映。</strong> <strong>进入终选？</strong> 否。列观察名单。</p>
+          <hr>
+          <h3>宝洁（PG）</h3>
+          <p><strong>财务质量</strong>：TTM 收入 $870.3亿、净利 <strong>$160.5亿</strong>（注：应采用 $160.5亿，供应商摘要页的 $157.5亿与其自身季度序列及 FY2026 10-K 均不符）、ROE 30.3%、自由现金流 $151.5亿、D/E 0.64。</p>
+          <p><strong>护城河</strong>：★★★★★。品牌资产 + 货架主导权 = 真实定价权。</p>
+          <p><strong>主要风险</strong>：① <strong>收入增速仅 +3.3%，PE 22.2 对应 PEG 约 6.7</strong>；② GLP-1 与自有品牌对部分品类的长期侵蚀。</p>
+          <p><strong>估值快评</strong>：PE 22.2、FCF 收益率 4.44%（10 家中第二高）。<strong>结论：防御性真实，但为 3% 增速付 22 倍。</strong> <strong>进入终选？</strong> 否。列观察名单首位。</p>
+          <hr>
+          <h3>强生（JNJ）</h3>
+          <p><strong>财务质量</strong>：TTM 收入 $979.3亿、净利 $210.4亿、ROE 25.7%、自由现金流 $222.4亿、D/E 0.58、股息率 2.09%。研发占收入 15.5%。</p>
+          <p><strong>护城河</strong>：★★★★。品种广度是最大优势——<strong>没有单一产品主导</strong>，与礼来（替尔泊肽占 64.7%）、默克（Keytruda 占 50.4%）形成鲜明对比。</p>
+          <p><strong>主要风险</strong>：① <strong>DARZALEX（占收入约 15%）美国专利 2029 年到期</strong>；② 滑石粉诉讼未了结；③ PE 29.8 偏高。</p>
+          <p><strong>估值快评</strong>：PE 29.8、前瞻 22.9、FCF 收益率 3.59%。<strong>结论：医药股里风险最分散的一家，但估值不便宜。</strong> <strong>进入终选？</strong> 否。</p>
+          <hr>
+          <h3>雪佛龙（CVX）</h3>
+          <p><strong>一句话商业模式</strong>：用二叠纪、圭亚那、TCO 的低成本桶产油，把现金还给股东。</p>
+          <p><strong>财务质量</strong>：TTM 收入 $2,093.7亿、净利 $205.9亿、经营现金流 <strong>$453.2亿</strong>、资本开支 $183.1亿、<strong>自由现金流 $270.1亿</strong>、D/E <strong>0.24</strong>、股息率 <strong>3.76%</strong>。<strong>资本回报 $263.4亿 = 经营现金流的 58.1%</strong>（股息 $138.6亿 + 回购 $124.8亿）。</p>
+          <p><strong>关键数字</strong>：<strong>自由现金流收益率 7.27%——本轮 85 家中唯一显著高于 10 年期国债 4.69% 的大盘股，超出 2.58 个百分点。</strong></p>
+          <p><strong>护城河</strong>：★★★★。资源禀赋（低成本桶）+ 全产业链整合。不是无限期的护城河，但在能源里是最好的之一。</p>
+          <p><strong>主要风险</strong>：① <strong>油价是全部论点</strong>——ROE 仅 10.9% 说明这不是高回报生意，是高现金回报生意；② 长期能源转型；③ 自由现金流盈亏平衡油价<strong>公司不披露</strong>（我在 2Q26 财报与 8-K 中检索&quot;breakeven&quot;零命中，不做估计）。</p>
+          <p><strong>估值快评</strong>：PE 18.2、前瞻 12.4、FCF 收益率 <strong>7.27%</strong>。<strong>结论：在一个股权风险溢价只有 0.41 个百分点的市场里，这是少数几个现金回报明确跑赢无风险利率的选择。</strong></p>
+          <p><strong>进入终选？</strong> 是。</p>
+          <hr>
+          <h2>第四层：四大师深度分析（终选 3 家）</h2>
+          <h3>终选逻辑说明</h3>
+          <p>skill 要求按组合互补性选择：至少 1 家高确定性低弹性、至少 1 家中等确定性中等弹性、<strong>可选</strong> 1 家高弹性高风险。</p>
+          <p><strong>本报告把第三个格位从&quot;期权型&quot;改为&quot;分散型&quot;</strong>，理由：跨行业筛选中，唯一具备&quot;高弹性高风险&quot;特征的候选是 TSM 与 NVDA，而这两家已由 <code>美股AI算力-funnel</code> 完整分析并给出明确结论。再选一次是重复劳动，且会让三家里有两家属半导体。用能源替代，组合的真实分散度更高。</p>
+          <p><strong>同时必须诚实说明</strong>：本轮终选（JPM / META / CVX）与前两份行业报告的终选（TSM/NVDA/MU、MSFT/CRM/ORCL）<strong>完全不重叠</strong>。这不是矛盾，而是说明行业内筛选存在结构性盲区——<strong>在 AI 算力和云计算的赛道里，找不到自由现金流收益率跑赢国债的公司</strong>。</p>
+          <hr>
+          <h3>终选一：摩根大通（JPM）— 核心仓</h3>
+          <h4>段永平视角：生意本质</h4>
+          <p><strong>一句话定义</strong>：摩根大通做的是&quot;用别人的钱赚钱&quot;的生意——以近乎全美最低的成本吸收存款，再以高于成本的价格放出去或投出去，中间赚差价和手续费。</p>
+          <p><strong>这是好生意吗？是一门古老、可理解、但周期性极强的好生意。</strong> 好在三点：第一，<strong>存款是负债端的护城河</strong>——上万亿美元的低成本沉淀存款，新进入者花多少钱都买不到；第二，规模让它在投行、交易、资管每个条线都是第一或第二，费用收入分散了利差风险；第三，<strong>监管资本要求本身是壁垒</strong>——CET1 14.1% 的要求让小银行无法与之竞争。</p>
+          <p><strong>它的&quot;本分&quot;是什么？</strong> 是<strong>在别人贪婪时保守</strong>。这家银行最值钱的资产不是资产负债表，是&quot;在每一轮危机里能反过来收购别人&quot;的记录（2008 年贝尔斯登、华盛顿互惠，2023 年第一共和）。管理层至今没有偏离——近 12 个月净派息率 73%，而不是把资本全部投出去追增长。</p>
+          <p><strong>持续性在哪？</strong> 在于<strong>银行业不会消失，而规模最大的银行会持续变大</strong>。过去二十年美国银行业集中度持续提高，JPM 是最大受益者。</p>
+          <p><strong>但要诚实说不好的地方</strong>：这是一门<strong>不能自己决定命运</strong>的生意。信贷周期由美联储和经济决定，不由管理层决定。段永平会说这是&quot;看得懂但控制不了&quot;的生意——而他偏好控制得了的。</p>
+          <h4>巴菲特视角：护城河深度</h4>
+          <table>
+          <thead>
+          <tr>
+          <th>护城河</th>
+          <th>强度</th>
+          <th>具体证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>品牌/定价权</td>
+          <td>★★★★</td>
+          <td>危机中的避风港地位让它在恐慌时反而吸收存款；但零售银行定价权有限</td>
+          </tr>
+          <tr>
+          <td>转换成本</td>
+          <td>★★★★</td>
+          <td>企业主账户、薪资、现金管理一旦嵌入极难迁移；零售端转换成本中等</td>
+          </tr>
+          <tr>
+          <td>网络效应</td>
+          <td>★★★</td>
+          <td>支付与清算网络有一定网络效应，但不如 Visa</td>
+          </tr>
+          <tr>
+          <td>规模效应</td>
+          <td>★★★★★</td>
+          <td><strong>效率比 48%</strong> 是大型银行中最好的之一；科技投入可摊薄到最大资产基数</td>
+          </tr>
+          <tr>
+          <td>牌照/监管壁垒</td>
+          <td>★★★★★</td>
+          <td>系统重要性银行牌照 + CET1 14.1% 的资本厚度，是资本无法快速复制的</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>10 年后护城河还在吗？</strong> 大概率在，且可能更宽。银行业的结构性趋势是集中，而 JPM 每一轮周期都在抢份额。能摧毁它的只有两件事：一次它没预料到的信用事件，或者监管强制拆分。</p>
+          <p><strong>安全边际在哪？</strong> 三情景（3 年期，起点 GAAP EPS $23.29，终值按 10% 折现）：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th>EPS 增速</th>
+          <th>第 3 年 PE</th>
+          <th>第 3 年目标价</th>
+          <th>折现现值</th>
+          <th>相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>乐观</td>
+          <td>12%</td>
+          <td>17x</td>
+          <td>$556.3</td>
+          <td><strong>$418.0</strong></td>
+          <td><strong>+17.3%</strong></td>
+          </tr>
+          <tr>
+          <td>中性</td>
+          <td>7%</td>
+          <td>14x</td>
+          <td>$399.4</td>
+          <td><strong>$300.1</strong></td>
+          <td>-15.8%</td>
+          </tr>
+          <tr>
+          <td>悲观</td>
+          <td>-10%</td>
+          <td>10x</td>
+          <td>$169.8</td>
+          <td><strong>$127.6</strong></td>
+          <td>-64.2%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>中性 -15.8%，说明 $356.30 已不便宜。<strong>合理买入区间 $270-300。</strong> 但注意悲观情景 -64.2%——这就是银行股：中性情景温和，尾部极厚。</p>
+          <h4>芒格视角：风险与失败模式</h4>
+          <p><strong>最可能怎么失败？</strong></p>
+          <ol>
+          <li><strong>信用周期转向（概率中，影响极高）</strong>：这是唯一真正能让银行归零的路径。当前拨备水平反映的是良性环境。芒格会说：银行的利润是&quot;未来损失的预支&quot;，只有在周期走完才知道赚没赚到。</li>
+          <li><strong>当前 ROTCE 被一次性收益虚增（概率高——已经发生）</strong>：29% 里有 6 个百分点来自 <strong>$56亿</strong> Visa 股份与股权投资收益。真实水平 <strong>23%</strong>。用 29% 做估值锚会系统性高估。</li>
+          <li><strong>利率路径逆转（概率中，影响中）</strong>：当前 2s10s +44bp、10s30s +53bp，曲线正斜率对银行有利。若长端下行而短端不动，净息差承压。</li>
+          </ol>
+          <p><strong>最坏情景值多少？</strong> 悲观情景折现现值 <strong>$127.6</strong>，-64.2%。触发条件是一次严重衰退：EPS 三年年均 -10%，市场给 10 倍。这在 2008-2009 发生过。</p>
+          <p><strong>聪明人为什么不买？</strong> 一句话：<strong>你无法从外部验证一家银行的资产质量。</strong> 资产负债表上 1.3 万亿美元的资产，投资者只能看到分类汇总。芒格对银行的态度一贯是：只买你信任其管理层保守程度的那一家——而这恰恰是无法量化的。</p>
+          <p><strong>道德/合规/管理层风险？</strong> 无重大问题。JPM 的披露质量（ROTCE、CET1、效率比、剔除一次性项后的口径）在大型银行中属上乘——它<strong>主动</strong>披露了剔除 Visa 收益后的 23% ROTCE，这本身是管理层诚信的信号。</p>
+          <h4>李录视角：文明级趋势定位</h4>
+          <p><strong>文明级还是阶段性？</strong> 银行业不是范式转移的受益方，而是<strong>所有范式转移的融资方</strong>。AI 建数据中心需要贷款，能源转型需要项目融资，这些钱大部分要过银行。JPM 是这个位置上最大的那一家。</p>
+          <p><strong>历史类比</strong>：最贴切的是 <strong>19 世纪末的 J.P. Morgan 本人</strong>——不押注哪个行业赢，只对资本的流动收费。这门生意存在了 150 年。</p>
+          <p><strong>10-20 年终局</strong>：大概率仍是美国乃至全球最大的银行。真正的变量是<strong>金融科技是否会剥离最赚钱的环节</strong>（支付、消费信贷）。过去十年的答案是：没有——反而是银行收购或复制了金融科技。</p>
+          <p><strong>赢家通吃吗？</strong> 不是，但是&quot;赢家占大头&quot;。美国四大行占据了不成比例的份额，且份额仍在上升。</p>
+          <h4>综合推荐度</h4>
+          <pre><code>推荐度：★★★★
+          仓位类型：核心
+          建议买入区间：$270-300 分批（当前 $356.30 已偏贵）
+          建议持仓比例：占该组合 35-45%
+          关键监测指标：
+            1. 净坏账率与拨备计提（信用周期唯一的领先指标）
+            2. 剔除一次性项后的 ROTCE（当前 23%，跌破 18% 需重新评估）
+            3. CET1（当前 14.1%）与净派息率（当前 73%）
+            4. 每股有形账面价值增速（当前 $113.35）
+          逻辑反转信号：消费与商业地产坏账率连续两季上升；或 CET1 因监管变化被迫大幅提高
+          </code></pre>
+          <hr>
+          <h3>终选二：Meta Platforms（META）— 成长仓</h3>
+          <h4>段永平视角：生意本质</h4>
+          <p><strong>一句话定义</strong>：Meta 做的是&quot;把 40 亿人的注意力批发给广告主&quot;的生意——用户免费，广告主付费，中间几乎没有边际成本。</p>
+          <p><strong>这是好生意吗？是本轮 85 家里商业模式最好的几门之一。</strong> 81.7% 毛利率、29.8% ROE、$1,303亿经营现金流——这些数字说明它的产品几乎不消耗原材料，只消耗服务器和工程师。更关键的是<strong>需求端的自我强化</strong>：用户越多，网络越有价值，新用户越难离开。</p>
+          <p><strong>它的&quot;本分&quot;是什么？</strong> 应该是把产品做得让人愿意用。这里有争议——Meta 的产品优化目标是&quot;停留时长&quot;，与&quot;用户福祉&quot;未必一致，这带来了长期的监管与声誉成本。</p>
+          <p><strong>持续性在哪？</strong> 在于<strong>社交图谱的迁移成本</strong>。你可以卸载 Instagram，但你的朋友关系搬不走。这个壁垒比任何技术壁垒都持久。</p>
+          <p><strong>但要诚实说不好的地方</strong>：资本开支 <strong>$893.3亿</strong>，吞掉了 69% 的经营现金流，自由现金流只剩 $409.8亿。这些钱投向 AI 基础设施，而 <strong>Meta 没有像 Azure、AWS 那样的外部付费客户</strong>——它的 AI 投入只能靠改善广告效率来回收，路径比云厂长得多。段永平会问：你怎么知道这钱花得值？</p>
+          <h4>巴菲特视角：护城河深度</h4>
+          <table>
+          <thead>
+          <tr>
+          <th>护城河</th>
+          <th>强度</th>
+          <th>具体证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>品牌</td>
+          <td>★★★★</td>
+          <td>Instagram、WhatsApp 品牌强；Facebook 主品牌在年轻人中老化</td>
+          </tr>
+          <tr>
+          <td>转换成本</td>
+          <td>★★★★</td>
+          <td>社交关系无法迁移；但用户可以同时使用多个平台</td>
+          </tr>
+          <tr>
+          <td>网络效应</td>
+          <td>★★★★★</td>
+          <td><strong>全球最强的消费者网络效应之一</strong>，40 亿用户跨四大应用</td>
+          </tr>
+          <tr>
+          <td>规模效应</td>
+          <td>★★★★★</td>
+          <td>广告定向的数据规模 + 服务器规模，中小平台无法企及</td>
+          </tr>
+          <tr>
+          <td>技术壁垒</td>
+          <td>★★★</td>
+          <td>推荐算法领先但可复制；开源 Llama 战略反而主动削弱了这一层</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>10 年后护城河还在吗？</strong> 网络效应层大概率在，<strong>注意力份额层不确定</strong>。TikTok 证明了一件事：社交图谱不能阻止新的内容形态抢走时长。Meta 用 Reels 挡住了一次，但不保证挡得住第二次。</p>
+          <p><strong>安全边际在哪？</strong> 三情景（3 年期，起点 GAAP EPS $26.69——<strong>注意这个起点被税项低估</strong>，终值按 10% 折现）：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th>EPS 增速</th>
+          <th>第 3 年 PE</th>
+          <th>第 3 年目标价</th>
+          <th>折现现值</th>
+          <th>相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>乐观</td>
+          <td>20%</td>
+          <td>24x</td>
+          <td>$1,106.9</td>
+          <td><strong>$831.7</strong></td>
+          <td><strong>+41.0%</strong></td>
+          </tr>
+          <tr>
+          <td>中性</td>
+          <td>12%</td>
+          <td>19x</td>
+          <td>$712.5</td>
+          <td><strong>$535.3</strong></td>
+          <td><strong>-9.3%</strong></td>
+          </tr>
+          <tr>
+          <td>悲观</td>
+          <td>0%</td>
+          <td>14x</td>
+          <td>$373.7</td>
+          <td><strong>$280.8</strong></td>
+          <td>-52.4%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>中性情景仅 -9.3%——<strong>在本轮三家终选里安全边际最接近合理</strong>。而且这是用<strong>被低估的 EPS 起点</strong>算的，真实中性值应更高。<strong>合理买入区间 $480-540。</strong></p>
+          <h4>芒格视角：风险与失败模式</h4>
+          <p><strong>最可能怎么失败？</strong></p>
+          <ol>
+          <li><strong>AI 资本开支无法回收（概率中高，影响高）</strong>：$893.3亿的年资本开支只能通过广告效率提升回收。如果 AI 让广告效率提高 5% 而不是 30%，这笔投入就是价值毁灭。<strong>这是三家终选里最难验证的一条。</strong></li>
+          <li><strong>注意力被新形态抢走（概率中，影响极高）</strong>：社交产品的历史是&quot;每十年换一次主导形态&quot;。Meta 已经躲过一次（TikTok→Reels），不代表能躲过第二次。</li>
+          <li><strong>监管与内容责任（概率中，影响中高）</strong>：欧盟 DSA、美国州级立法、未成年人保护诉讼持续消耗。</li>
+          </ol>
+          <p><strong>最坏情景值多少？</strong> 悲观情景折现现值 <strong>$280.8</strong>，-52.4%。触发条件：EPS 零增长 + 市场给 14 倍——即市场认定 AI 投入失败且增长终结。</p>
+          <p><strong>聪明人为什么不买？</strong> 因为<strong>这是一家把 69% 经营现金流投进一个无法验证回报的项目的公司</strong>。芒格的反向问法是：如果扎克伯格明天宣布把资本开支砍掉一半，股价是涨还是跌？如果答案是&quot;涨&quot;，那说明市场并不相信这笔投入——而管理层还在继续投。</p>
+          <p><strong>道德/合规/管理层风险？</strong> 有一处需要点名：<strong>双重股权结构</strong>。扎克伯格通过 B 类股控制投票权，公众股东对资本配置没有否决权。在一个每年花 $893亿做长周期赌注的公司里，这个治理安排的风险不小。</p>
+          <h4>李录视角：文明级趋势定位</h4>
+          <p><strong>文明级还是阶段性？</strong> 数字化的注意力经济是文明级的变化（人类把大部分闲暇转移到了屏幕上），Meta 是这场转移最大的变现者。但<strong>AI 是否会重塑注意力的分发方式，是一个未决问题</strong>。</p>
+          <p><strong>历史类比</strong>：最贴切的是 <strong>1950-1980 年代的电视网络（CBS/NBC/ABC）</strong>——垄断了一代人的注意力，赚了三十年的钱，最终被有线电视和互联网分流。<strong>关键教训：注意力垄断的持续时间比技术垄断短。</strong></p>
+          <p><strong>10-20 年终局</strong>：大概率仍是全球最大的广告平台之一，但<strong>份额会被 AI 原生的新入口分流</strong>。真正的变量是 Meta 能否把 AI 从&quot;成本项&quot;变成&quot;新产品线&quot;。</p>
+          <p><strong>赢家通吃吗？</strong> 广告技术层接近，社交内容层不是——这个市场从来容得下多个赢家。</p>
+          <h4>综合推荐度</h4>
+          <pre><code>推荐度：★★★★
+          仓位类型：成长 / 卫星
+          建议买入区间：$480-540 分批（当前 $589.90 略高于中性情景）
+          建议持仓比例：占该组合 30-40%
+          关键监测指标：
+            1. 资本开支与自由现金流的剪刀差（当前 $893.3亿 vs $409.8亿）
+            2. 每用户平均收入（ARPU）——这是&quot;AI 提升广告效率&quot;的唯一直接证据
+            3. Reality Labs 亏损收敛速度
+            4. FY2027 有效税率是否回归正常（当前 TTM 被 2025Q3 的 -$159.3亿税项扭曲）
+          逻辑反转信号：ARPU 增速失速而资本开支继续高增；或用户时长连续两季下滑
+          </code></pre>
+          <hr>
+          <h3>终选三：雪佛龙（CVX）— 分散 / 现金流仓</h3>
+          <blockquote>
+          <p><strong>先说清楚</strong>：这不是一个成长标的，也不是&quot;高弹性期权&quot;。它在组合中的作用有三个——<strong>现金回报跑赢无风险利率、与科技股低相关、通胀情景下的对冲</strong>。如果你要的是弹性，这一格应该换成 TSM 或 NVDA（见 <code>美股AI算力-funnel</code>）。</p>
+          </blockquote>
+          <h4>段永平视角：生意本质</h4>
+          <p><strong>一句话定义</strong>：雪佛龙从地下把油和气弄出来卖掉，然后把钱还给股东。</p>
+          <p><strong>这是好生意吗？就商业模式而言不算好，就现金回报而言很好。</strong> 不好的部分很清楚：<strong>产品完全同质、价格由自己无法控制的因素决定、ROE 只有 10.9%</strong>——这是教科书级的&quot;坏生意&quot;特征。段永平明确说过不碰这类生意。</p>
+          <p>但有一个真实的变化值得看：<strong>雪佛龙把 58.1% 的经营现金流还给了股东</strong>（股息 $138.6亿 + 回购 $124.8亿 = $263.4亿）。它不再假装自己是成长股，而是明确定位为现金回报工具。<strong>当一门坏生意被诚实地当作坏生意来经营时，它可能是个好投资。</strong></p>
+          <p><strong>它的&quot;本分&quot;是什么？</strong> 是<strong>不在高油价时乱扩张</strong>。这是石油公司最容易犯的错——周期顶部投产能，周期底部减记。雪佛龙当前 D/E 仅 0.24，是大型石油公司中最保守的，说明管理层守住了这条。</p>
+          <p><strong>持续性在哪？</strong> 在于<strong>低成本资源禀赋</strong>（二叠纪、圭亚那、TCO）。在油价下行周期里，成本曲线左侧的生产商活得下来，右侧的活不下来。</p>
+          <h4>巴菲特视角：护城河深度</h4>
+          <table>
+          <thead>
+          <tr>
+          <th>护城河</th>
+          <th>强度</th>
+          <th>具体证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>品牌/定价权</td>
+          <td>★</td>
+          <td>完全没有——原油是全球定价的同质商品</td>
+          </tr>
+          <tr>
+          <td>转换成本</td>
+          <td>★</td>
+          <td>几乎没有</td>
+          </tr>
+          <tr>
+          <td>网络效应</td>
+          <td>★</td>
+          <td>不存在</td>
+          </tr>
+          <tr>
+          <td>规模效应</td>
+          <td>★★★★</td>
+          <td>全产业链整合（上游+炼化+化工）平滑周期；采购与物流规模优势</td>
+          </tr>
+          <tr>
+          <td>资源/牌照壁垒</td>
+          <td>★★★★★</td>
+          <td><strong>低成本储量是真正的壁垒</strong>——二叠纪与圭亚那的桶成本无法被资本快速复制</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>10 年后护城河还在吗？</strong> <strong>资源禀赋在，需求端不确定。</strong> 这是唯一一家其护城河的持久性取决于外部（能源转型速度）而非自身执行的终选标的。巴菲特本人近年大举买入西方石油，逻辑正是&quot;低成本桶 + 现金回报&quot;，与此一致。</p>
+          <p><strong>安全边际在哪？</strong> 三情景（3 年期，起点 GAAP EPS $10.40，终值按 10% 折现）：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th>EPS 增速</th>
+          <th>第 3 年 PE</th>
+          <th>第 3 年目标价</th>
+          <th>折现现值</th>
+          <th>相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>乐观</td>
+          <td>20%</td>
+          <td>15x</td>
+          <td>$269.6</td>
+          <td><strong>$202.6</strong></td>
+          <td><strong>+7.1%</strong></td>
+          </tr>
+          <tr>
+          <td>中性</td>
+          <td>8%</td>
+          <td>12x</td>
+          <td>$157.2</td>
+          <td><strong>$118.1</strong></td>
+          <td>-37.6%</td>
+          </tr>
+          <tr>
+          <td>悲观</td>
+          <td>-15%</td>
+          <td>9x</td>
+          <td>$57.5</td>
+          <td><strong>$43.2</strong></td>
+          <td>-77.2%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>用会计利润估值，CVX 看起来很贵（中性 -37.6%）。但这个模型在这里会严重误导</strong>——石油公司的会计利润随油价剧烈波动，而现金回报才是真实回报路径。</p>
+          <p><strong>用现金流口径</strong>：FCF 收益率 <strong>7.27%</strong> + 股息率 3.76%。若油价维持当前水平，持有三年可获得约 <strong>21.8% 的累计股息</strong>（不含回购导致的每股价值增厚），且回购在缩减股数。<strong>两套口径给出相反答案，这本身就是结论：CVX 的价值取决于你按利润还是按现金回报估值。</strong> 我倾向后者，因为公司自己就是按后者经营的。</p>
+          <h4>芒格视角：风险与失败模式</h4>
+          <p><strong>最可能怎么失败？</strong></p>
+          <ol>
+          <li><strong>油价长期下行（概率中，影响极高）</strong>：这是全部论点。ROE 10.9% 意味着即使在当前环境下，这门生意的资本回报也不高；油价下跌 30%，它会迅速变成价值毁灭。</li>
+          <li><strong>TTM 数据被一次性事件抬高（概率高——已经发生）</strong>：Q2 收入从 Q1 的 $832亿跳到 $1,145亿，是<strong>中东供应中断</strong>推高油价所致。<strong>当前的 7.27% FCF 收益率建立在一个不可持续的季度上。</strong></li>
+          <li><strong>能源转型加速（概率中，影响高）</strong>：需求见顶的时点无人能准确预测，但方向确定。</li>
+          </ol>
+          <p><strong>最坏情景值多少？</strong> 悲观情景折现现值 <strong>$43.2</strong>，-77.2%。触发条件是油价崩塌到成本线附近。历史上（2015-2016、2020）发生过两次。</p>
+          <p><strong>聪明人为什么不买？</strong> 三个理由：一、<strong>你在为一个自己无法预测的变量（油价）付钱</strong>；二、7.27% 的自由现金流收益率是周期高点的读数，不是常态；三、<strong>公司不披露自由现金流盈亏平衡油价</strong>——我在其 2Q26 财报与 8-K 中检索&quot;breakeven&quot;零命中，这意味着外部投资者无法验证下行保护的厚度。这是本报告认为最应该披露而未披露的一项数据。</p>
+          <p><strong>道德/合规/管理层风险？</strong> 无重大问题。资本纪律（D/E 0.24）与资本回报（58.1% of OCF）都是正面的管理层信号。</p>
+          <h4>李录视角：文明级趋势定位</h4>
+          <p><strong>文明级还是阶段性？</strong> 化石能源正处在<strong>文明级范式转移的被替代侧</strong>——这是与前两家终选最本质的区别。META 和 JPM 站在趋势的中性或受益侧，CVX 站在被替代侧。</p>
+          <p><strong>历史类比</strong>：最贴切的是 <strong>1960-1990 年代的烟草股</strong>。需求确定性下降、社会认可度下降、但<strong>现金流极其充沛且估值持续折价，长期总回报反而跑赢大盘</strong>。原因是：市场对&quot;衰退中的行业&quot;给的折价，往往超过其实际衰退速度。</p>
+          <p><strong>10-20 年终局</strong>：产量可能下降，但<strong>低成本生产商会活到最后并在收缩期获得定价权</strong>。终局不是归零，是&quot;更小但更赚钱&quot;。</p>
+          <p><strong>赢家通吃吗？</strong> 不是。但成本曲线左侧的生产商会在收缩期占据不成比例的份额。</p>
+          <h4>综合推荐度</h4>
+          <pre><code>推荐度：★★★
+          仓位类型：分散 / 现金流（非期权型，见第四层开头说明）
+          建议买入区间：当前 $189.23 可小仓位建立；$150-165 为更优区间
+          建议持仓比例：占该组合 15-25%，上限 25%
+          关键监测指标：
+            1. 布伦特油价（这是全部论点，其他指标都是次要的）
+            2. 自由现金流与资本回报的比值（当前 58.1%，跌破 40% 说明现金流承压）
+            3. D/E（当前 0.24，升破 0.4 说明在借钱发股息）
+            4. 二叠纪与圭亚那的单位桶成本
+          逻辑反转信号：布伦特跌破 $60 且持续两个季度；或为维持股息而举债
+          </code></pre>
+          <hr>
+          <h2>第五层：综合输出</h2>
+          <h3>5.1 终选组合表</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>代码</th>
+          <th>行业</th>
+          <th>类型</th>
+          <th>推荐度</th>
+          <th>建议仓位</th>
+          <th>核心逻辑</th>
+          <th>关键风险</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>摩根大通</td>
+          <td>JPM</td>
+          <td>金融</td>
+          <td>核心</td>
+          <td>★★★★</td>
+          <td>35-45%</td>
+          <td>盈利收益率 6.54%，ROTCE 23%（剔除后），CET1 14.1%</td>
+          <td>信用周期转向；悲观情景 -64%</td>
+          </tr>
+          <tr>
+          <td>Meta Platforms</td>
+          <td>META</td>
+          <td>通信服务</td>
+          <td>成长</td>
+          <td>★★★★</td>
+          <td>30-40%</td>
+          <td>全市场唯一利润被<strong>低估</strong>的大盘股；★★★★★ 网络效应</td>
+          <td>$893亿资本开支回报无法验证；双重股权</td>
+          </tr>
+          <tr>
+          <td>雪佛龙</td>
+          <td>CVX</td>
+          <td>能源</td>
+          <td>分散/现金流</td>
+          <td>★★★</td>
+          <td>15-25%</td>
+          <td><strong>FCF 收益率 7.27%</strong>，唯一显著跑赢国债的大盘股</td>
+          <td>油价是全部论点；TTM 被中东中断推高</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>观察名单</strong>：PG（FCF 收益率 4.44%，防御性真实但为 3% 增速付 22 倍）、NFLX（财务最干净的成长股）、V（商业模式接近完美，价格已反映）、JNJ（医药中风险最分散）、MSFT / TSM / NVDA（已由前两份报告给出结论）。</p>
+          <p><strong>组合仓位上限建议：总组合的 20-30%。</strong> 高于 AI 算力（20-25%）与云计算（15-20%），因为跨行业分散降低了单一板块风险。</p>
+          <h3>5.2 行业级 ETF 替代</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>ETF</th>
+          <th>费率</th>
+          <th>AUM</th>
+          <th>前 5 大持仓</th>
+          <th>持仓数</th>
+          <th>1年总回报</th>
+          <th>说明</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>SPY</strong></td>
+          <td>0.0945%</td>
+          <td>$8,052亿</td>
+          <td>AAPL 7.64%、NVDA 7.37%、MSFT 5.23%、AMZN 3.60%、GOOGL 3.05%</td>
+          <td>505</td>
+          <td>+23.74%</td>
+          <td>市值加权，前十占 <strong>37.06%</strong></td>
+          </tr>
+          <tr>
+          <td><strong>VOO</strong></td>
+          <td><strong>0.03%</strong></td>
+          <td>$1.03万亿</td>
+          <td>NVDA 7.50%、AAPL 6.58%、MSFT 4.29%、AMZN 3.61%、GOOGL 3.24%</td>
+          <td>520</td>
+          <td>+23.80%</td>
+          <td>与 SPY 同标的，<strong>费率仅三分之一</strong></td>
+          </tr>
+          <tr>
+          <td><strong>RSP</strong>（等权重）</td>
+          <td>0.20%</td>
+          <td>$974.5亿</td>
+          <td>PYPL 0.27%、GPN 0.27%、TECH 0.26%、IP 0.26%、EXPE 0.26%</td>
+          <td>509</td>
+          <td>+21.24%</td>
+          <td>前十仅占 <strong>2.57%</strong>；<strong>基金 PE 21.02 vs SPY 26.82</strong></td>
+          </tr>
+          <tr>
+          <td><strong>VTV</strong>（大盘价值）</td>
+          <td>0.03%</td>
+          <td>$1,914亿</td>
+          <td>MU 4.85%、JPM 3.04%、BRK.B 2.93%、JNJ 2.28%、XOM 2.11%</td>
+          <td>326</td>
+          <td><strong>+28.69%</strong></td>
+          <td>基金 PE 20.92，本组一年回报最高</td>
+          </tr>
+          <tr>
+          <td><strong>QUAL</strong>（质量因子）</td>
+          <td>0.15%</td>
+          <td>$479.4亿</td>
+          <td>MSFT 7.16%、AAPL 6.64%、NVDA 5.85%、TJX 3.98%、META 3.69%</td>
+          <td>129</td>
+          <td>+23.51%</td>
+          <td>前十占 43.22%，比 SPY 更集中</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>选择建议</strong>：若不选股，<strong>VOO 优于 SPY</strong>（同一标的，费率 0.03% vs 0.0945%）。若认同本报告&quot;市值加权已过度集中、估值偏贵&quot;的判断，<strong>RSP 或 VTV 是更一致的表达</strong>——两者基金 PE 约 21，较 SPY 的 26.8 折价约 22%，且 2026 年 YTD 双双跑赢（RSP +15.04%、VTV +18.18% vs SPY +13.31%）。</p>
+          <h3>5.3 整体市场位置判断</h3>
+          <p><strong>估值：贵，但没有 2021 年那么贵。</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th>数值</th>
+          <th>对比</th>
+          <th>日期</th>
+          <th>来源</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>标普 500 收盘</td>
+          <td><strong>7,709.96</strong></td>
+          <td>—</td>
+          <td>2026-08-06</td>
+          <td>CNBC + Barchart 双源</td>
+          </tr>
+          <tr>
+          <td>前瞻 PE</td>
+          <td><strong>19.6</strong></td>
+          <td>5 年均值 19.9（<strong>低于</strong>）；10 年均值 19.0（<strong>高于</strong>）</td>
+          <td>2026-07-30</td>
+          <td>FactSet（<strong>单一来源</strong>）</td>
+          </tr>
+          <tr>
+          <td>滚动 PE（FactSet）</td>
+          <td>27.2</td>
+          <td>5 年 24.4、10 年 23.5，<strong>均高于</strong></td>
+          <td>2026-07-30</td>
+          <td>FactSet</td>
+          </tr>
+          <tr>
+          <td>滚动 PE（GAAP）</td>
+          <td><strong>29.69</strong></td>
+          <td>—</td>
+          <td>2026-08-06</td>
+          <td>multpl.com</td>
+          </tr>
+          <tr>
+          <td><strong>席勒 CAPE</strong></td>
+          <td><strong>42.12</strong></td>
+          <td>—</td>
+          <td>2026-08-06</td>
+          <td>multpl + 席勒官方 41.18 双源</td>
+          </tr>
+          <tr>
+          <td>10 年期国债</td>
+          <td><strong>4.69%</strong></td>
+          <td>—</td>
+          <td>2026-08-06</td>
+          <td>美国财政部 + CNBC 双源</td>
+          </tr>
+          <tr>
+          <td>联邦基金目标区间</td>
+          <td><strong>3.50%-3.75%</strong></td>
+          <td>上次变动 2025-12-11</td>
+          <td>2026-08-05</td>
+          <td>纽约联储 + 美联储双源</td>
+          </tr>
+          <tr>
+          <td><strong>股权风险溢价</strong></td>
+          <td><strong>+0.41pp</strong></td>
+          <td>前瞻盈利收益率 5.10% − 国债 4.69%</td>
+          <td>派生</td>
+          <td>本报告计算</td>
+          </tr>
+          <tr>
+          <td>席勒超额 CAPE 收益率</td>
+          <td><strong>0.97%</strong></td>
+          <td>2025 年末为 1.59%</td>
+          <td>2026-08</td>
+          <td>席勒官方数据</td>
+          </tr>
+          <tr>
+          <td>前十大占标普 500 市值</td>
+          <td><strong>36-38%</strong></td>
+          <td>—</td>
+          <td>2026-08</td>
+          <td>Slickcharts + stockanalysis</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>收益表现</strong>：标普 500 年初至今 +12.63%（价格）/ +13.38%（总回报），近一年 +21.51%（价格）。</p>
+          <p><strong>广度：正在扩散，这是 2026 年最重要的市场结构变化。</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th>YTD</th>
+          <th>近一年</th>
+          <th>5 年年化</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>RSP（等权重）</td>
+          <td><strong>+15.04%</strong></td>
+          <td>+21.24%</td>
+          <td>+9.14%</td>
+          </tr>
+          <tr>
+          <td>SPY（市值加权）</td>
+          <td>+13.31%</td>
+          <td>+23.74%</td>
+          <td>+13.24%</td>
+          </tr>
+          <tr>
+          <td><strong>RSP − SPY</strong></td>
+          <td><strong>+1.73pp</strong></td>
+          <td>-2.50pp</td>
+          <td>-4.10pp</td>
+          </tr>
+          <tr>
+          <td>IWM（小盘）</td>
+          <td><strong>+21.67%</strong></td>
+          <td>+36.45%</td>
+          <td>+7.41%</td>
+          </tr>
+          <tr>
+          <td>VTV（大盘价值）</td>
+          <td><strong>+18.18%</strong></td>
+          <td>+28.69%</td>
+          <td>+12.56%</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>年初至今，等权重、小盘、价值全面跑赢市值加权</strong>——这是 2023-2025 年格局的反转。但近一年与 5 年口径下市值加权仍领先，说明扩散刚开始。</p>
+          <p><strong>行业表现（YTD 总回报，GICS 11 个板块）</strong>：能源 <strong>+31.88%</strong> 与信息技术 <strong>+29.04%</strong> 领跑；通信服务 <strong>-5.01%</strong> 与可选消费 <strong>-0.70%</strong> 是仅有的两个负收益板块。首尾差 <strong>36.9 个百分点</strong>。</p>
+          <blockquote>
+          <p>一个值得注意的背离：通信服务板块的 2026Q2 报表盈利增速高达 <strong>+109.8%</strong>（主要来自 Alphabet 的股权重估），却是 YTD 表现最差的板块。<strong>市场已经在用脚投票，拒绝把非现金收益当作真实盈利。</strong> 这与本报告第 2.2 节的发现完全一致。</p>
+          </blockquote>
+          <p><strong>阶段判断：估值扩张末期，盈利质量分化期。</strong></p>
+          <p>依据：① 股权风险溢价仅 +0.41pp，几乎没有为承担股权风险付费；② 席勒超额 CAPE 收益率从 1.59% 降至 0.97%；③ 但广度在扩散，等权重与价值跑赢，说明资金正在从拥挤的市值加权头部流出；④ <strong>报表盈利被非经营性项目系统性抬高</strong>——FactSet 口径下剔除 Alphabet 与 Amazon 后，Q2 盈利增速从 47.4% 降至 28.8%，净利率从 16.7% 降至 14.7%。</p>
+          <p><strong>对应策略</strong>：降低市值加权头部暴露，提高现金流收益率要求（至少跑赢 4.69%），在非科技板块寻找机会。本报告终选的 JPM / META / CVX 正是这一判断的表达。</p>
+          <h3>5.4 信息充分度自评</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>维度</th>
+          <th>等级</th>
+          <th>说明</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>公司财务数据完整性</td>
+          <td><strong>B+</strong></td>
+          <td>A 类 30 家与 C 类 19 家经 stockanalysis + SEC XBRL 双源核对；<strong>但 B 类动量榜 36 家仅有市值/收入/净利，缺完整财务</strong>（见 5.5）</td>
+          </tr>
+          <tr>
+          <td>估值数据时效性</td>
+          <td><strong>A</strong></td>
+          <td>统一 2026-08-06 收盘；85 家价格全部双源核对到分</td>
+          </tr>
+          <tr>
+          <td>市场位置判断</td>
+          <td><strong>B</strong></td>
+          <td>标普收盘、CAPE、国债、广度均双源；<strong>但前瞻 PE 及其历史均值仅 FactSet 单一来源</strong>，Yardeni 为图片、Barron's 付费墙、WSJ 401</td>
+          </tr>
+          <tr>
+          <td>行业格局判断</td>
+          <td><strong>B</strong></td>
+          <td>GICS 板块回报为单一数据商（虽做了独立重算，但底层同源）；S&amp;P DJI 官方指数回报 403 无法获取</td>
+          </tr>
+          <tr>
+          <td>管理层信息</td>
+          <td><strong>C</strong></td>
+          <td>本轮未做系统的管理层履历、资本配置记录与薪酬研究。终选 3 家均需补 <code>/management-deep-dive</code></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>综合：B。</strong> 与云计算报告同级，低于 AI 算力报告的 B+。主因是动量榜数据不完整与板块估值分位单源。</p>
+          <h3>5.5 待更新数据点</h3>
+          <p><strong>最大的一处缺口：动量榜 7 家低估值标的缺完整财务</strong></p>
+          <p>以下 7 家 PE 低于 20 且 GAAP 盈利，但缺 ROE、经营现金流、资产负债表，<strong>本轮无法进入打分</strong>。它们可能藏着本报告漏掉的机会：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>公司</th>
+          <th>代码</th>
+          <th>PE(推算)</th>
+          <th>市值</th>
+          <th>缺失数据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>Tenet Healthcare</td>
+          <td>THC</td>
+          <td><strong>9.2</strong></td>
+          <td>$206.6亿</td>
+          <td>ROE、OCF/NI、D/E、护城河评估</td>
+          </tr>
+          <tr>
+          <td>HP Inc.</td>
+          <td>HPQ</td>
+          <td><strong>10.1</strong></td>
+          <td>$257.7亿</td>
+          <td>同上</td>
+          </tr>
+          <tr>
+          <td>Cognizant</td>
+          <td>CTSH</td>
+          <td>11.5</td>
+          <td>$256.3亿</td>
+          <td>同上</td>
+          </tr>
+          <tr>
+          <td>Leidos</td>
+          <td>LDOS</td>
+          <td>12.3</td>
+          <td>$169.7亿</td>
+          <td>同上</td>
+          </tr>
+          <tr>
+          <td>Gartner</td>
+          <td>IT</td>
+          <td>15.1</td>
+          <td>$116.7亿</td>
+          <td>同上</td>
+          </tr>
+          <tr>
+          <td>Mueller Industries</td>
+          <td>MLI</td>
+          <td>18.1</td>
+          <td>$153.6亿</td>
+          <td>同上</td>
+          </tr>
+          <tr>
+          <td>京东 ADR</td>
+          <td>JD</td>
+          <td>22.0</td>
+          <td>$443.1亿</td>
+          <td>同上</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>无法验证（明确标 N/A，未猜测）</strong></p>
+          <ol>
+          <li><strong>标普 500 前瞻 PE 及 5/10 年均值</strong> —— 仅 FactSet 单一来源（19.6，截至 2026-07-30）。Yardeni 图表为 JS/图片，Barron's 401，Statista 传输失败</li>
+          <li><strong>2026-08-06 当日前瞻 PE</strong> —— FactSet 8/7 版尚未发布；按指数 7,709.96 机械推算约 20.3，但<strong>这是我的算术不是来源数据</strong>，不采用</li>
+          <li><strong>标普 500 近一年总回报</strong> —— 两源冲突：stockanalysis 23.74% vs 用其自身复权收盘价重算 22.80%，Barchart 价格口径 +21.51%。报为区间</li>
+          <li><strong>CVX / XOM 自由现金流盈亏平衡油价</strong> —— 两家公司均不披露（2Q26 财报与 8-K 检索&quot;breakeven&quot;零命中）</li>
+          <li><strong>RSP 费率与 AUM 的发行商口径</strong> —— Invesco 官网全路径 HTTP 406</li>
+          <li><strong>GICS 板块指数官方回报</strong> —— S&amp;P DJI 403，只能用 Select Sector SPDR ETF 代理</li>
+          </ol>
+          <p><strong>两源冲突，需人工复核</strong>
+          7. <strong>TSM 市值差 14.2%</strong> —— stockanalysis $1.90万亿（ADR 比率算错）vs Yahoo/CMC $2.169万亿。<strong>本报告采用后者</strong>，1 ADR = 5 普通股经 20-F 确认
+          8. <strong>SKHY 市值三源全不同</strong> —— $7,661亿 / $10,189亿 / $7,107亿。以 424B4 招股书&quot;1 ADS = 1/10 普通股&quot;与 7.2887亿股为准，采用 $10,189亿
+          9. <strong>JPM 收入差 7.02%</strong> —— SEC XBRL $1,994.1亿 vs stockanalysis $1,863.3亿。银行&quot;收入&quot;口径本身有歧义（毛额 vs 净利息支出后、报表 vs 管理口径）
+          10. <strong>PG 净利差 1.85%</strong> —— 供应商摘要页 $157.5亿 vs 其自身季度序列与 FY2026 10-K 的 $160.5亿。<strong>本报告采用 $160.5亿</strong>
+          11. <strong>UNH 净利 ±5% 不确定</strong> —— 供应商站内自相矛盾（$145.3亿 vs $141.2亿），且 Optum 少数股东权益口径影响大
+          12. <strong>Visa 市值差 1.71%</strong> —— 转换后股数口径差异，$6,800亿 vs $6,917亿
+          13. <strong>席勒 CAPE 两口径差 2.28%</strong> —— 席勒官方 <code>ie_data.xls</code> 为 <strong>41.18</strong>（用 8 月每日收盘均值 7,600.50），multpl.com 为 <strong>42.12</strong>（用即期指数 7,709.96）。两者都对，差异全部来自分母取月均还是取即期（抽检警告项）。本报告两个数值并列呈现</p>
+          <p><strong>需重点跟踪</strong>
+          13. <strong>伯克希尔 Q2 2026 财报</strong> —— 最新仅至 Q1（2026-03-31），比同业滞后一个季度
+          14. <strong>霍尼韦尔 Q3 2026</strong> —— 航空业务转入终止经营后追溯重述，届时估值才可比
+          15. <strong>Meta FY2027 有效税率</strong> —— TTM 被 2025Q3 的 -$159.3亿税项扭曲，需看回归正常后的真实盈利水平
+          16. <strong>Intel FY2027</strong> —— 托管股份重估的会计影响是否持续放大</p>
+          <h3>5.6 资料来源清单</h3>
+          <p><strong>主数据源</strong></p>
+          <ol>
+          <li>stockanalysis.com 个股与 ETF 页（S&amp;P Global Market Intelligence / Fiscal.ai），85 家标的，访问 2026-08-07</li>
+          <li>stockanalysis.com 筛选器 API（本轮逆向发现的可用端点）：<code><a href="https://stockanalysis.com/_api/endpoints/screener/data-points?type=s&amp;ids=...">https://stockanalysis.com/_api/endpoints/screener/data-points?type=s&amp;ids=...</a></code>
+          <blockquote>
+          <p>注：任务书中给出的 <code><a href="https://stockanalysis.com/api/screener/s/f?...">https://stockanalysis.com/api/screener/s/f?...</a></code> <strong>已失效（HTTP 404）</strong>，约 12 种变体均不可用</p>
+          </blockquote>
+          </li>
+          <li>SEC XBRL companyfacts / companyconcept API：<code><a href="https://data.sec.gov/api/xbrl/...">https://data.sec.gov/api/xbrl/...</a></code></li>
+          <li>Yahoo Finance v8 chart API：<code><a href="https://query1.finance.yahoo.com/v8/finance/chart/{TICKER}?range=6mo&amp;interval=1d">https://query1.finance.yahoo.com/v8/finance/chart/{TICKER}?range=6mo&amp;interval=1d</a></code>（<strong>动量排名的主数据</strong>，968 只标的精确收盘价重算）</li>
+          <li>companiesmarketcap.com（市值第二源）</li>
+          </ol>
+          <p><strong>关键一手申报</strong>
+          6. Alphabet Q2 2026 10-Q：<code><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm">https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm</a></code>（$990.3亿单季股权收益、$941亿 SpaceX 持仓）
+          7. Amazon Q2 2026 10-Q：<code><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm">https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm</a></code>（$504.86亿单季私营股权向上重估，XBRL 标签含 <code>AnthropicMember</code>、<code>OpenAIGroupPBCMember</code>）
+          8. Intel Q2 2026 10-Q：<code><a href="https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm">https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm</a></code>（$136.19亿托管股份重估损失）
+          9. Merck Q1/Q2 2026 财报：Cidara $90亿、Terns $57亿 IPR&amp;D 冲销
+          10. Meta FY2025 10-K + Q2 2026 10-Q：2025Q3 的 $159.3亿 OBBBA/CAMT 税项
+          11. JPMorgan 2Q26 财报：<code><a href="https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm">https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm</a></code>（ROTCE 29%/23%、CET1 14.1%、效率比 48%）
+          12. Chevron Q2 2026 财报：<code><a href="https://www.sec.gov/Archives/edgar/data/93410/000009341026000162/a06302026ex9918-k.htm">https://www.sec.gov/Archives/edgar/data/93410/000009341026000162/a06302026ex9918-k.htm</a></code>
+          13. Honeywell 8-K：<code><a href="https://www.sec.gov/Archives/edgar/data/773840/000077384026000084/hon-20260625.htm">https://www.sec.gov/Archives/edgar/data/773840/000077384026000084/hon-20260625.htm</a></code>（航空分拆 + 1 拆 2 缩股）
+          14. ExxonMobil 8-K12B：新德州控股主体（CIK 0002115436）
+          15. SK hynix 424B4：<code><a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm">https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm</a></code>（1 ADS = 1/10 普通股、铠侠重估）</p>
+          <p><strong>市场与宏观</strong>
+          16. FactSet <em>Earnings Insight</em>（2026-07-31，41 页 PDF）：<code><a href="https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_073126.pdf">https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_073126.pdf</a></code>
+          17. FactSet Insight《Are 'Magnificent 7' Companies Still Top Contributors…》（2026-07-20）
+          18. multpl.com：席勒 PE 42.12、标普 PE 29.69（2026-08-06）
+          19. Robert Shiller / Yale <code>ie_data.xls</code>（文件最后保存 2026-08-04）：CAPE 41.18、超额 CAPE 收益率 0.97%
+          20. 美国财政部每日收益率曲线 CSV（2026 全年）：10 年期 4.69%
+          21. 美联储 H.15（发布 2026-08-06）与纽约联储 Markets API：EFFR 3.63%、目标区间 3.50-3.75%
+          22. CNBC <code>.SPX</code> 与 Barchart <code>$SPX</code>：标普 500 收盘 7,709.96
+          23. Slickcharts：标普 500 市值构成与总回报
+          24. Select Sector SPDR（XLE/XLK/XLI/XLB/XLRE/XLP/XLV/XLF/XLU/XLY/XLC）：板块 YTD 回报
+          25. State Street SPY、Vanguard VOO/VTV API、iShares QUAL 官方页</p>
+          <p><strong>未使用 / 失败的来源（披露完整性）</strong>
+          26. macrotrends.net —— HTTP 403，全程未使用
+          27. <code><a href="https://stockanalysis.com/api/screener/s/f?...">https://stockanalysis.com/api/screener/s/f?...</a></code> —— HTTP 404，端点已废弃
+          28. Yardeni 估值图表 —— 仅图片/JS，无可提取数值
+          29. Barron's / WSJ / MarketWatch —— HTTP 401 付费墙
+          30. Invesco RSP 产品页与持仓 CSV —— HTTP 406
+          31. spglobal.com/spdji —— HTTP 403，GICS 官方指数回报无法获取
+          32. iShares / State Street 持仓表 —— JS 渲染，仅能取到截止日期</p>
+          <hr>
+          <h2>附录：工具验证记录</h2>
+          <p><code>tools/financial_rigor.py</code> 执行结果：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>验证项</th>
+          <th>结果</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>标普 500 收盘价双源交叉验证</td>
+          <td>✅ 偏差 0.00%（CNBC 与 Barchart 均为 7,709.96）</td>
+          </tr>
+          <tr>
+          <td>MSFT 2026-08-06 收盘价双源交叉验证</td>
+          <td>✅ 偏差 0.00%（Yahoo v8 与 stockanalysis 均为 $499.86）</td>
+          </tr>
+          <tr>
+          <td>标普 500 前瞻盈利收益率 = 1 ÷ 19.6</td>
+          <td>5.102%（精确计算）</td>
+          </tr>
+          <tr>
+          <td><strong>股权风险溢价 = 5.102% − 4.69%</strong></td>
+          <td><strong>+0.412pp</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>JPM 盈利收益率 = 1 ÷ 15.3</td>
+          <td><strong>6.536%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>CVX 自由现金流收益率 = $270.1亿 ÷ $3,713亿</td>
+          <td><strong>7.274%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>MSFT / TSM / NVDA / META FCF 收益率</td>
+          <td>1.805% / 1.636% / 2.245% / 2.727%（<strong>全部低于 4.69%</strong>）</td>
+          </tr>
+          <tr>
+          <td>PG / XOM FCF 收益率</td>
+          <td>4.435% / 4.798%</td>
+          </tr>
+          <tr>
+          <td>三家非经营性项目合计（GOOGL+AMZN+BRK.B）</td>
+          <td><strong>$2,741.3亿</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>JPM / META / CVX 三情景估值</td>
+          <td>全部由 <code>three-scenario</code> 计算，现值由 <code>calc</code> 按 10% 折现三年</td>
+          </tr>
+          </tbody>
+          </table>
+          <hr>
+          <p><strong>报告完成：2026-08-07</strong></p>
+          <p><strong>终选：JPM（核心 ★★★★，35-45%）/ META（成长 ★★★★，30-40%）/ CVX（分散 ★★★，15-25%）</strong></p>
+          <p><strong>组合仓位上限：总组合 20-30%。三家中仅 META 的中性情景接近当前价（-9.3%），JPM 与 CVX 均需等待更好价格。</strong></p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <strong>AI Berkshire Research</strong> · 本报告用于学习研究，不构成投资建议。
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部">↑</button>
+
+  <script>
+    (() => {
+      const report = document.getElementById('report');
+      const toc = document.getElementById('toc');
+      const mobileToc = document.getElementById('mobileToc');
+      const progress = document.getElementById('scrollProgress');
+      const backToTop = document.getElementById('backToTop');
+      const printButton = document.getElementById('printButton');
+
+      report.querySelectorAll('table').forEach((table) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-scroll';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+
+      const headings = [...report.querySelectorAll('h2')];
+      headings.forEach((heading, index) => {
+        heading.id = `section-${index + 1}`;
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+        toc.appendChild(link);
+
+        const option = document.createElement('option');
+        option.value = heading.id;
+        option.textContent = heading.textContent;
+        mobileToc.appendChild(option);
+      });
+
+      mobileToc.addEventListener('change', () => {
+        document.getElementById(mobileToc.value)?.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      const tocLinks = [...toc.querySelectorAll('a')];
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (!visible) return;
+        tocLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${visible.target.id}`));
+        mobileToc.value = visible.target.id;
+      }, { rootMargin: '-15% 0px -75% 0px' });
+      headings.forEach((heading) => observer.observe(heading));
+
+      const sourceItems = [...report.querySelectorAll('li')];
+      sourceItems.forEach((item) => {
+        const match = item.textContent.trim().match(/^\[([MS]\d+)\]/);
+        if (match) item.id = `ref-${match[1].toLowerCase()}`;
+      });
+
+      const walker = document.createTreeWalker(report, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+      textNodes.forEach((node) => {
+        if (node.parentElement.closest('[id^="ref-"]')) return;
+        if (!/\[[MS]\d+\]/.test(node.nodeValue)) return;
+        const parts = node.nodeValue.split(/(\[[MS]\d+\])/g);
+        const fragment = document.createDocumentFragment();
+        parts.forEach((part) => {
+          const match = part.match(/^\[([MS]\d+)\]$/);
+          if (!match) {
+            fragment.appendChild(document.createTextNode(part));
+            return;
+          }
+          const citation = document.createElement('a');
+          citation.className = 'citation';
+          citation.href = `#ref-${match[1].toLowerCase()}`;
+          citation.textContent = match[1];
+          citation.title = `查看来源 ${match[1]}`;
+          fragment.appendChild(citation);
+        });
+        node.replaceWith(fragment);
+      });
+
+      report.addEventListener('click', (event) => {
+        const citation = event.target.closest('.citation');
+        if (!citation) return;
+        const target = document.querySelector(citation.hash);
+        if (!target) return;
+        target.classList.remove('source-highlight');
+        requestAnimationFrame(() => target.classList.add('source-highlight'));
+      });
+
+      report.querySelectorAll('a[href^="http"]').forEach((link) => {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = max > 0 ? window.scrollY / max : 0;
+        progress.style.width = `${Math.min(100, Math.max(0, ratio * 100))}%`;
+        backToTop.classList.toggle('visible', window.scrollY > 700);
+      };
+      window.addEventListener('scroll', updateScroll, { passive: true });
+      window.addEventListener('resize', updateScroll);
+      updateScroll();
+
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      printButton.addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>

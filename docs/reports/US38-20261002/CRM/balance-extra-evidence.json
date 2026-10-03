@@ -1,0 +1,339 @@
+[
+  [
+    "AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedGainBeforeTax",
+    {
+      "end": "2026-07-31",
+      "val": 1000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedLossBeforeTax",
+    {
+      "end": "2026-07-31",
+      "val": 12000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleDebtSecuritiesAmortizedCostBasis",
+    {
+      "end": "2026-07-31",
+      "val": 3104000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue",
+    {
+      "end": "2026-07-31",
+      "val": 1000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue",
+    {
+      "end": "2026-07-31",
+      "val": 1890000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue",
+    {
+      "end": "2026-07-31",
+      "val": 1202000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleSecuritiesDebtSecurities",
+    {
+      "end": "2026-07-31",
+      "val": 3093000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+    {
+      "end": "2026-07-31",
+      "val": 3093000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "ConvertibleDebtCurrent",
+    {
+      "end": "2026-07-31",
+      "val": 0,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "EffectiveIncomeTaxRateContinuingOperations",
+    {
+      "start": "2026-02-01",
+      "end": "2026-07-31",
+      "val": 0.23,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27"
+    }
+  ],
+  [
+    "GainLossOnInvestments",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 2613000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 4552000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "IncomeTaxExpenseBenefit",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 1026000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "IncomeTaxesPaidNet",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 222000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "LongTermDebtCurrent",
+    {
+      "end": "2026-07-31",
+      "val": 0,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "LongTermDebtNoncurrent",
+    {
+      "end": "2026-07-31",
+      "val": 39288000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "OtherLongTermInvestments",
+    {
+      "end": "2026-07-31",
+      "val": 11324000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2I"
+    }
+  ],
+  [
+    "OtherNonoperatingIncomeExpense",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 81000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 712000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "PaymentsToAcquireLongtermInvestments",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 958000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 160000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 357000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "ProceedsFromSaleOfLongtermInvestments",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 179000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "UnrealizedGainLossOnInvestments",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 2609000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ],
+  [
+    "InterestExpenseNonoperating",
+    {
+      "start": "2026-05-01",
+      "end": "2026-07-31",
+      "val": 473000000,
+      "accn": "0001108524-26-000190",
+      "fy": 2027,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-08-27",
+      "frame": "CY2026Q2"
+    }
+  ]
+]

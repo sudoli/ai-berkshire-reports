@@ -1,0 +1,78 @@
+{
+  "scope_note": "LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.",
+  "automatic_sample_classification": [
+    {
+      "id": 1,
+      "label": "规模研发 · 经济机制",
+      "reported_value": 2026.0,
+      "unit": "",
+      "raw_text": "| 规模研发 | FY2026研发约15.321亿美元支撑多产品平台 | 研发增长却无法带来关键缺陷检测能力 |",
+      "line_number": 45,
+      "classification": "extractor-false-positive-year",
+      "fetched_value": null,
+      "limitation": "The extractor selected fiscal year 2026, not the R&D amount. Excluded, not certified."
+    },
+    {
+      "id": 4,
+      "label": "偏弱 · 三年价格",
+      "reported_value": 96.8,
+      "unit": "",
+      "raw_text": "| 偏弱 | 0% | 22 | 4.40 | 96.80 | -53.19% |",
+      "line_number": 79,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 12,
+      "label": "乐观 · 终值PE",
+      "reported_value": 38.0,
+      "unit": "",
+      "raw_text": "| 乐观 | +20% | 38 | 7.60 | 288.92 | +39.72% |",
+      "line_number": 81,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    }
+  ],
+  "supplementary_historical_checks": [
+    {
+      "id": 101,
+      "label": "FY2026 revenue",
+      "reported_value": 13579,
+      "unit": "million, statement currency",
+      "fetched_value": 13579.476,
+      "fetched_source": "https://www.prnewswire.com/news-releases/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results-302836739.html",
+      "fetched_value2": 13579,
+      "fetched_source2": "https://stockanalysis.com/stocks/klac/financials/"
+    },
+    {
+      "id": 102,
+      "label": "FY2026 net income",
+      "reported_value": 4831,
+      "unit": "million, statement currency",
+      "fetched_value": 4830.771,
+      "fetched_source": "https://www.prnewswire.com/news-releases/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results-302836739.html",
+      "fetched_value2": 4831,
+      "fetched_source2": "https://stockanalysis.com/stocks/klac/financials/"
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 2,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 2,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "additional_decimal_checks": {
+    "Q4_simple_fcf_USD_million": "817.142",
+    "net_debt_ex_operating_leases_USD_million": "985.007",
+    "normalized_eps_operating_bridge": "4.396946564885496183206106870",
+    "gaap_pe": "56.5",
+    "alternative_band_low": "98.0",
+    "alternative_band_high": "112.0"
+  },
+  "summary_schema_and_band_order": "PASS"
+}

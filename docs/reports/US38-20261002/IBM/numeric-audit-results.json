@@ -1,0 +1,80 @@
+{
+  "ticker": "IBM",
+  "fact_samples": [
+    {
+      "id": 1,
+      "label": "Software · 收入，十亿美元",
+      "reported_value": 7.761,
+      "unit": "",
+      "line_number": 13,
+      "raw_text": "| Software | 7.761 | +5% | 82.6% | Red Hat混合云、自动化、数据及交易处理软件，订阅和许可支持 |",
+      "fetched_value": 7.761,
+      "fetched_source": "https://newsroom.ibm.com/2026-07-22-IBM-RELEASES-SECOND-QUARTER-RESULTS",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 4,
+      "label": "Consulting · 毛利率",
+      "reported_value": 28.9,
+      "unit": "%",
+      "line_number": 14,
+      "raw_text": "| Consulting | 5.327 | 约0% | 28.9% | 企业转型、实施和运营服务，依赖人才、工时与项目交付 |",
+      "fetched_value": 28.9,
+      "fetched_source": "https://newsroom.ibm.com/2026-07-22-IBM-RELEASES-SECOND-QUARTER-RESULTS",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_scope": "issuer-only sample fact; not independently corroborated at segment level"
+    },
+    {
+      "id": 101,
+      "label": "annual revenue",
+      "reported_value": 67535.0,
+      "unit": "USD million",
+      "fetched_value": 67535.0,
+      "fetched_source": "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+      "fetched_value2": 67535.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/ibm/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 102,
+      "label": "annual net income available to common holders",
+      "reported_value": 10593.0,
+      "unit": "USD million",
+      "fetched_value": 10593.0,
+      "fetched_source": "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS",
+      "fetched_value2": 10593.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/ibm/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    },
+    {
+      "id": 103,
+      "label": "latest cash plus marketable securities, excluding restricted cash",
+      "reported_value": 8132.0,
+      "unit": "USD million",
+      "fetched_value": 8132.0,
+      "fetched_source": "https://newsroom.ibm.com/2026-07-22-IBM-RELEASES-SECOND-QUARTER-RESULTS",
+      "fetched_value2": 8132.0,
+      "fetched_source2": "https://stockanalysis.com/stocks/ibm/financials/",
+      "audit_scope": "additional targeted issuer/third-party fact crosscheck"
+    }
+  ],
+  "excluded_from_external_fact_verdict": [
+    {
+      "id": 9,
+      "label": "熊：咨询弱、收购回报不足 · 期末前瞻PE",
+      "reported_value": 13.0,
+      "unit": "倍",
+      "line_number": 81,
+      "raw_text": "| 熊：咨询弱、收购回报不足 | 0% | 13倍 | 162.50 | -26.97% |",
+      "fetched_value": null,
+      "fetched_source": "",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "classification": "model assumption or computed model value; arithmetic separately verified"
+    }
+  ],
+  "warning": "PASS applies only to fact samples; some are issuer-only. Assumptions and parser false positives excluded, not certified. Full financial statement and contract audit not performed."
+}

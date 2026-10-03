@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="先进制程与量产生态创造稀缺利润，但资本密集和台湾尾部风险要求买入折价。"><meta name="source-sha256" content="13c5e5d9d67c2bf3f62d1cf7d102255975afe2467e0582e9a3f54a9b6888c33a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>台积电（TSM）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="TSM%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / TSM / 2026-10-02</div>
+<h1>Taiwan Semiconductor Manufacturing Company Limited（台积电）<span>半导体晶圆代工 · 公司研究</span></h1><p class="hero-deck">先进制程与量产生态创造稀缺利润，但资本密集和台湾尾部风险要求买入折价。</p>
+<div class="hero-meta"><span>2026Q2，2026-06-30；年度比较采用2025审计版摘要</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$470.54<small>2026-10-02 11:19 EDT（盘中）<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">单一来源有日期行情，不是收盘价或双源认证；1 ADR=5台湾普通股。用户2026-09-30截图456.19未核验，行情页市值/PE不一致，未沿用。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司与核心数据</a></li><li><a href="#section-3">第二步：利润不是股东现金</a></li><li><a href="#section-4">第三步：护城河与竞争</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理与行业价值捕获</a></li><li><a href="#section-7">第六步：估值、三年情景与今天的价格</a></li><li><a href="#section-8">第七步：具体行动</a></li><li><a href="#section-9">数据来源与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司与核心数据</a></li><li><a href="#section-3">第二步：利润不是股东现金</a></li><li><a href="#section-4">第三步：护城河与竞争</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理与行业价值捕获</a></li><li><a href="#section-7">第六步：估值、三年情景与今天的价格</a></li><li><a href="#section-8">第七步：具体行动</a></li><li><a href="#section-9">数据来源与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>台积电（TSM）研究报告</h1>
+<blockquote>
+<p>研究日及信息截止：2026-10-02。证券：纽约上市美元ADR，<strong>1 ADR代表5股台湾普通股</strong>。参考价470.54美元，为StockAnalysis标示的2026-10-02 11:19 EDT盘中价，并非收盘价；仅单一行情来源。用户9月30日截图456.19美元仍属未经独立核验的输入，新抓取价格高3.15%。最新核验财期为2026Q2，指引来自7月16日发布材料；不把尚未公布的Q3业绩当事实。</p>
+<p>一句话：台积电出售的是客户先进芯片能够按时、按良率量产的确定性，但股东必须同时承担巨额再投资和无法靠普通估值模型消除的台湾尾部风险。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级；本报告研究置信度中。广泛覆盖不等于拥有预测优势，尤其不能把AI算力需求直接等同于台积电每股自由现金流。年度原始报表与聚合站的利润存在超过1%的差异，已保留并优先采用原始报表，不伪装成完全交叉验证成功。现价、ADR溢价、汇率也不是同一概念。</p>
+<h2 id="section-2">第一步：公司与核心数据</h2>
+<p>台积电是纯晶圆代工企业，替无晶圆厂设计公司及部分IDM制造芯片，并提供先进封装。客户购买晶圆制造与封装服务，而不是获得台积电品牌的终端芯片。客户黏性来自设计规则、EDA/IP生态、良率积累和量产交期；迁移需要重新设计与认证。公司通常不与客户在芯片设计端直接竞争，这是其信任优势。</p>
+<p>2026Q2收入按应用分为HPC 66%、手机22%、物联网5%、汽车4%、消费电子1%、其他2%。HPC并不全是生成式AI。按晶圆工艺收入，2nm占3%、3nm占30%、5nm占33%、7nm占11%，先进制程合计77%；不能把这一比例误写成全部公司收入占比。北美客户收入占78%，是客户总部口径，不是北美生产占比。</p>
+<div aria-label="第一步：公司与核心数据" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">自然年</th>
+<th scope="col" style="text-align: right;">收入，十亿新台币</th>
+<th scope="col" style="text-align: right;">归母净利，十亿新台币</th>
+<th scope="col" style="text-align: right;">稀释EPS，新台币/普通股</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">2,263.891</td>
+<td style="text-align: right;">992.923</td>
+<td style="text-align: right;">38.29</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">2,161.736</td>
+<td style="text-align: right;">851.740</td>
+<td style="text-align: right;">32.85</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">2,894.308</td>
+<td style="text-align: right;">1,173.268</td>
+<td style="text-align: right;">45.25</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">3,809.054</td>
+<td style="text-align: right;">1,717.883</td>
+<td style="text-align: right;">66.25</td>
+</tr>
+</tbody>
+</table></div>
+<p>2022—2023来自StockAnalysis历史序列，未逐年重做原始年报复核；2024—2025采用2025年审计版财务摘要及其比较栏。聚合站对应两年净利为1,158.380、1,697.604，EPS为44.67、65.47；不混用这两组口径计算利润增长。原始文件未在摘要中解释与聚合站的差异原因，<strong>不能擅自断言属于会计重述</strong>。年度收入一致。</p>
+<p>2026Q2收入1,270.38十亿新台币，同比增长36.0%；归母净利706.56十亿，同比增长77.4%；普通股EPS 27.25新台币，发行人直接披露ADR EPS 4.31美元。毛利率67.7%、营业利润率60.3%。强劲利润包含出售及重估世界先进股份带来的63.20十亿新台币非营业收益，不能将4.31美元简单乘四视为可持续净利。</p>
+<p>Q3公司指引为收入446亿—458亿美元、毛利率65%—67%、营业利润率56%—58%，基于美元兑新台币32假设，属于预测而非订单保证。2026全年资本开支指引已提高至600亿—640亿美元，远超普通轻资产科技公司投入强度。</p>
+<h2 id="section-3">第二步：利润不是股东现金</h2>
+<p>2025经营现金流2,274.976十亿新台币，购买厂房设备1,272.411十亿，两者差额1,002.565十亿为本文简化FCF，未扣收购等投资。2026Q2经营现金流783.36十亿、资本开支496.00十亿、公司披露FCF287.36十亿，显著低于当季净利润706.56十亿：先进节点越赚钱，也可能需要越多先期现金投入。</p>
+<p>6月底现金及可交易金融资产3,518.01十亿新台币，有息债务1,031.68十亿，发行人净现金2,486.33十亿。聚合站现金加短投3,517.787十亿、广义债务1,068.559十亿、净现金2,449.452十亿；现金大体一致，净现金差约1.5%主要来自债务/资产归类范围，租赁等明细未全部逐项桥接，不能把较低债务数包装为无负债。</p>
+<p>股权激励仍是经济成本，本次摘要未单列足够的SBC明细，未声称其为零，也未将它加回估值收益。季度稀释普通股数约259.32亿股，对应51.864亿ADR等价单位；是加权股数，不是10月2日精确在外股数。</p>
+<blockquote>
+<p>判断好生意的关键问题：如果先进节点收入继续增长，但新厂折旧和资本开支增长更快，股东真正留下多少钱？</p>
+</blockquote>
+<h2 id="section-4">第三步：护城河与竞争</h2>
+<div aria-label="第三步：护城河与竞争" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">优势</th>
+<th scope="col">机制及可能的破坏因素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术与良率</td>
+<td>工艺、设计协同和量产学习累积；失败条件是连续关键节点良率落后</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>客户流片和认证耗时昂贵；但客户会培养第二供应源</td>
+</tr>
+<tr>
+<td>规模与生态</td>
+<td>高研发、设备采购和客户组合形成正循环；不是互联网式网络效应</td>
+</tr>
+<tr>
+<td>信任</td>
+<td>纯代工模式减少与客户竞争；无法抵消政治制裁或物理中断</td>
+</tr>
+</tbody>
+</table></div>
+<p>先进制程主要面对三星、英特尔代工能力竞争；成熟节点还面对联电、中芯等。技术领先不代表所有节点都拥有同样定价权。先进封装能扩大价值捕获，也可能形成瓶颈，使尚未交付的芯片需求无法立刻变成收入。</p>
+<h2 id="section-5">第四步：最强空方论点</h2>
+<p>聪明的不买者可以完全相信台积电技术领先，却认为现有盈利同时受益于AI资本开支高景气、产能利用率和资本收益，市场低估了下一轮折旧、客户降价和海外成本。美国、日本、欧洲建厂提高供应弹性，却未必创造与台湾同等回报。</p>
+<div aria-label="第四步：最强空方论点" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观判断，不是统计概率</th>
+<th scope="col">可观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI资本开支兑现不及预期</td>
+<td>中等，周期性影响大</td>
+<td>大客户削减投片、先进封装利用率下滑</td>
+</tr>
+<tr>
+<td>海外厂与2nm成本挤压</td>
+<td>中等偏高，持续影响利润</td>
+<td>营收增长而毛利率连续下降、单位折旧上升</td>
+</tr>
+<tr>
+<td>台湾军事冲突、封锁或制裁</td>
+<td>概率无法可靠量化，损失极大</td>
+<td>航运、保险、能源或跨境支付中断</td>
+</tr>
+<tr>
+<td>技术及客户集中风险</td>
+<td>低至中等，长期影响大</td>
+<td>主要客户迁单、连续节点交期或良率失误</td>
+</tr>
+</tbody>
+</table></div>
+<p>地震、水电、设备供应和网络事件同样重要。ADR不是对台湾运营风险的隔离资产；在极端情形下交易受限和本金大幅损失并非18倍PE能够涵盖。</p>
+<h2 id="section-6">第五步：管理与行业价值捕获</h2>
+<p>魏哲家领导下，公司选择高额前置资本开支、海外产能扩张和逐步增加现金分红，而非主要用回购粉饰EPS。7月材料确认已批准2026Q1每普通股7新台币现金股利，分配日为10月8日；ADR实收还受汇率、存托费用和适用预提税影响。资本配置评判应看新厂投产后现金回报，不应把宣布投资总额当业绩。</p>
+<p>管理层持股及完整薪酬结构本次未独立核验，不据此编造“创始人控制”或利益完全一致结论。领先来自组织和供应链体系，不只是单一CEO。AI、先进逻辑、芯粒化是长期需求驱动，但真正让股东受益的是持续溢价、良率和资本周转率。</p>
+<h2 id="section-7">第六步：估值、三年情景与今天的价格</h2>
+<p>使用<strong>前瞻正常化ADR EPS 17美元</strong>作为研究假设，不是公司EPS指引或TTM：它相当于在美元兑新台币32的假设下，每普通股108.80新台币。依据是2026上半年ADR EPS合计7.80美元、下半年更高销售指引，同时扣除世界先进资本收益的不可重复性并考虑新节点及海外成本；不把当季超高利润率永久化。</p>
+<p>现价对应27.68倍正常化EPS。按季度稀释股数估算权益规模约2.440万亿美元，仅为ADR等价市值校验；聚合页面同时显示2.03万亿和29.11倍PE，与抓取价格及股份/盈利口径不相容，故<strong>不采用其现成市值和PE</strong>。台湾本股价格未作同步核验，未计算或猜测ADR溢价。</p>
+<p>三年末股价＝17×(1+EPS年增速)^3×终值PE，美元/ADR。增长率是盈利假设，非收入承诺；三年从本研究日计算。</p>
+<div aria-label="第六步：估值、三年情景与今天的价格" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">EPS年增速</th>
+<th scope="col" style="text-align: right;">终值PE</th>
+<th scope="col" style="text-align: right;">三年EPS</th>
+<th scope="col" style="text-align: right;">三年末价格</th>
+<th scope="col" style="text-align: right;">相对470.54价格回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>常规周期偏弱</td>
+<td style="text-align: right;">+10%</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">22.63</td>
+<td style="text-align: right;">407.29</td>
+<td style="text-align: right;">-13.44%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">+18%</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">27.93</td>
+<td style="text-align: right;">698.29</td>
+<td style="text-align: right;">+48.40%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">33.20</td>
+<td style="text-align: right;">996.09</td>
+<td style="text-align: right;">+111.69%</td>
+</tr>
+</tbody>
+</table></div>
+<p>不含股息、税、ADR费用；偏弱情景不是地缘灾难压力测试，也不代表最大亏损。基准三年价格按12%年折现，今天条件性现值497.03美元，不是保底价值。若现价买入且要求12%价格年回报、三年后25倍PE，届时需要26.44美元EPS；盈利仍须大幅提升。</p>
+<p><strong>买入研究区间374—425美元＝17×22—25倍。</strong> 选择低于基准现值的区间，是对资本密集、台湾尾部风险和财务数据缺口留折价；倍数为本文判断，不是假称历史估值分位。若正常化EPS降为14美元，原区间即失效，应按同样方法重算，而非机械抄底。</p>
+<h2 id="section-8">第七步：具体行动</h2>
+<div aria-label="第七步：具体行动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象/情况</th>
+<th scope="col">行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓</td>
+<td>评级“等待价格”；470.54及未经核验截图456.19均高于研究带，不追价</td>
+</tr>
+<tr>
+<td>接近374—425</td>
+<td>先更新ADR价格、汇率、资本开支和季度财报；盈利17美元仍可信才分批研究买入</td>
+</tr>
+<tr>
+<td>已持有</td>
+<td>技术和现金流论点未变可继续跟踪，不因短期高估机械清仓；如无法承受台湾尾部风险，应减少暴露而非等估值兑现</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>正常化利润增长、FCF改善且市场价格进入区间，同时不是因突发政治危机“看似便宜”</td>
+</tr>
+<tr>
+<td>减持/否决</td>
+<td>连续两个季度毛利与现金转换恶化且不能由爬坡解释；重大客户迁单；出口、航运或资产权利受限</td>
+</tr>
+</tbody>
+</table></div>
+<p>Checklist结论：业务、护城河通过；资本密集程度需接受；管理层激励证据不全；当前安全边际未通过。镜子测试：愿意在合理价格买入领先代工能力，不愿以“台湾不会出事”作为唯一风险控制。</p>
+<h2 id="section-9">数据来源与审计</h2>
+<p>资料访问日均为2026-10-02，未使用截止日以后的事件。</p>
+<ol>
+<li><a href="https://investor.tsmc.com/english/quarterly-results/2026/q2" rel="noreferrer">台积电2026Q2发行人资料页，2026-07-16</a>：新闻稿、管理报告、财务表及资本开支电话会。</li>
+<li><a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/6f49632674bd2d0fd48cb65aaf89ec6ab510b559/2Q26%20ManagementReport.pdf" rel="noreferrer">2026Q2管理报告PDF</a>：收入结构、现金、债务、FCF及非经常收益。</li>
+<li><a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf" rel="noreferrer">2025审计版财务摘要PDF，2026-02资料目录</a>：年度归母净利、现金流及ADR比例。</li>
+<li><a href="https://stockanalysis.com/stocks/tsm/financials/" rel="noreferrer">StockAnalysis财务表</a>、<a href="https://stockanalysis.com/stocks/tsm/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/tsm/" rel="noreferrer">时间戳行情</a>。</li>
+</ol>
+<p><code>financial_rigor.py</code>已复核年度收入和现金（原始表与第三方一致）、利润差异、估值和三情景；2025净利差异约1.2%没有被工具“通过”所掩盖。Decimal复核买入带和折现，精确参数见<code>calculation.json</code>。<code>report_audit</code>抽检只认证具体取到的历史数据，预测EPS、倍数、汇率及买入区间仅作数学复算，不冒充外部已验证事实。管理层持股、月营收最新趋势和实时本股/ADR价差仍待补充。</p>
+<p>抽检实际结果：自动抽出的3项均为情景假设/派生价格，已转为数学复算而非外部事实认证；补充检查年度收入、归母净利和现金3项，其中净利保留双源差异警告。工具虽输出PASS，<strong>不代表全报告或全部来源一致</strong>，详细分类见<code>audit.json</code>。</p>
+<p><strong>AI分析置信度中，不代表投资确定性中高。</strong> 技术经济有强证据，三年盈利是推演，地缘尾部风险不能被资料丰富程度消除。本报告为研究用途，不是针对个人的投资建议。</p></article><footer class="report-footer"><span>TSM · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

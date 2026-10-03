@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="HPS平台及复杂硬件能力提升附加值，但制造利润仍受大客户议价和资本再投入约束。"><meta name="source-sha256" content="3faad1ad991ec6365374e9fe2c7cc3039af3bed4d3e346534adb8ef3435a95f4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Celestica（CLS）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="CLS%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / CLS / 2026-10-02</div>
+<h1>Celestica Inc.<span>数据中心硬件设计与制造 · 公司研究</span></h1><p class="hero-deck">HPS平台及复杂硬件能力提升附加值，但制造利润仍受大客户议价和资本再投入约束。</p>
+<div class="hero-meta"><span>Q2 2026 ended 2026-06-30; FY2025 annual</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$361.43<small>2026-09-30 regular-session close<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">历史行情Close及Adjusted Close直接核对一致；纽约美元普通股，不是多伦多加元报价；单一行情源、非实时价。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：这家公司赚什么钱</a></li><li><a href="#section-4">第二步：现金转换决定制造生意的价值</a></li><li><a href="#section-5">第三步：护城河与客户权力</a></li><li><a href="#section-6">第四步：管理层与最强反方</a></li><li><a href="#section-7">第五步：估值与情景</a></li><li><a href="#section-8">第六步：行动建议</a></li><li><a href="#section-9">来源与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：这家公司赚什么钱</a></li><li><a href="#section-4">第二步：现金转换决定制造生意的价值</a></li><li><a href="#section-5">第三步：护城河与客户权力</a></li><li><a href="#section-6">第四步：管理层与最强反方</a></li><li><a href="#section-7">第五步：估值与情景</a></li><li><a href="#section-8">第六步：行动建议</a></li><li><a href="#section-9">来源与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Celestica（CLS）研究报告</h1>
+<blockquote>
+<p>信息截止：2026-10-02。基准价：2026-09-30收盘 <strong>361.43美元</strong>。本次直接读取StockAnalysis历史Close和Adjusted Close确认原图片价格，但只有一个独立行情商，不是10月2日实时价。交易标的是纽约上市、美元计价普通股，不是多伦多加元报价或ADR。最新财务为Q2 2026；最新完整年度为FY2025。以约1.1498亿普通股估算的基准价参考市值约415.6亿美元，非严格同日历史市值。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A。制造商在AI基础设施中很重要，但“供应链不可或缺”和“能向客户收取高经济租金”是两回事。本报告不将Google TPU客户关系、1.6T项目中标或客户产能规划当作已经实现的利润；也不把受到股票相关衍生品收益影响的GAAP EPS直接用于长期估值。</p>
+<h2 id="section-2">第一步：这家公司赚什么钱</h2>
+<p>Celestica既做工程设计、供应链管理和制造，也提供数据中心硬件平台。主要客户为大型科技和工业企业，付钱购买经过认证、能规模交付的网络、计算、存储或专用电子产品。CCS覆盖通信及企业基础设施，ATS覆盖航空防务、工业、医疗和资本设备。HPS是平台解决方案，不是额外可以再加一次的独立合并收入。</p>
+<p>2026 Q2总收入47.0亿美元：CCS 38.1亿美元、分部利润率8.7%；ATS 8.9亿美元、分部利润率6.3%。HPS收入约19亿美元包含在业务收入中。大部分收入虽来自云连接，但利润机制仍包括元件采购、工厂效率、良率、工程设计及客户议价，并非纯软件授权。</p>
+<h3 id="section-3">四年趋势</h3>
+<p>单位百万美元，EPS美元。历史取StockAnalysis，2024—2025核心利润及现金另核对公司FY2025公告。GAAP利润包含不代表制造经营能力的公允价值项目。</p>
+<div aria-label="四年趋势" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">2022</th>
+<th scope="col" style="text-align: right;">2023</th>
+<th scope="col" style="text-align: right;">2024</th>
+<th scope="col" style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td style="text-align: right;">7,250</td>
+<td style="text-align: right;">7,961</td>
+<td style="text-align: right;">9,646</td>
+<td style="text-align: right;">12,391</td>
+</tr>
+<tr>
+<td>GAAP净利润</td>
+<td style="text-align: right;">180.1</td>
+<td style="text-align: right;">244.4</td>
+<td style="text-align: right;">428.0</td>
+<td style="text-align: right;">832.5</td>
+</tr>
+<tr>
+<td>GAAP稀释EPS</td>
+<td style="text-align: right;">1.46</td>
+<td style="text-align: right;">2.03</td>
+<td style="text-align: right;">3.61</td>
+<td style="text-align: right;">7.16</td>
+</tr>
+<tr>
+<td>毛利率，第三方统一口径</td>
+<td style="text-align: right;">8.96%</td>
+<td style="text-align: right;">9.47%</td>
+<td style="text-align: right;">10.72%</td>
+<td style="text-align: right;">12.06%</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">未在本表复核</td>
+<td style="text-align: right;">326.2</td>
+<td style="text-align: right;">473.9</td>
+<td style="text-align: right;">659.5</td>
+</tr>
+<tr>
+<td>自由现金流</td>
+<td style="text-align: right;">未在本表复核</td>
+<td style="text-align: right;">201.1</td>
+<td style="text-align: right;">303.0</td>
+<td style="text-align: right;">458.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2025调整后EPS为6.05，而GAAP为7.16；全年GAAP含每股税前2.18美元总回报掉期正向影响。2026 Q2 GAAP EPS3.17、调整后EPS2.54，GAAP还包含税前每股0.90美元类似收益。因此“GAAP更高就应更便宜”的机械判断在此失效，不能将掉期收益年化成永久经营利润。</p>
+<p>最新Q2收入同比+62%，调整后营业利润率8.2%，GAAP营业利润率9.8%。公司Q3指引收入52.5亿—55.5亿美元、调整后EPS2.88—3.08、指引中点调整后营业利润率8.4%。2026全年指引收入205亿美元、调整后EPS11.30、FCF6亿美元；公司预期2027收入增长进一步加速，但这只是管理层预期，不是保证。</p>
+<h2 id="section-4">第二步：现金转换决定制造生意的价值</h2>
+<p>FY2025经营现金流6.595亿美元、资本开支2.012亿美元、FCF4.583亿美元。2026上半年CFO7.672亿美元好于上年同期2.827亿美元，但扩厂明显加速。公司年初宣布2026约10亿美元资本投资，包括美国、泰国等基地和能力建设；不能把原有低资本开支率永远外推。</p>
+<p>2026全年FCF指引6亿美元，相对205亿美元收入只有约2.93%，相对基准价参考市值的现金收益率约1.44%。这解释了为什么约32倍前瞻调整后EPS对制造企业并不便宜：利润增长的一部分需要留在厂房、设备和营运资本，而不是流给股东。</p>
+<p>2026年6月现金5.357亿美元，第三方含租赁总债务约9.812亿美元，净负债并非目前核心危机，但必须看资本开支峰值时的融资余地。2025 SBC约0.698亿美元（第三方），调整后EPS会排除相关费用；本报告终值倍数已给予制造和现金转化折价，仍须监控股数，不能把调整后EPS视作不需资本的“所有者收益”。</p>
+<h2 id="section-5">第三步：护城河与客户权力</h2>
+<p>复杂硬件认证、良率、工程人才和跨区域供应链网络使客户切换不是随意行为。HPS把公司从单纯来料加工向设计和平台上移，有望提高单个项目贡献。但客户通常掌握架构、需求和订单分配，Celestica很难拥有类似软件平台的最终定价权；竞争包括大型EMS、ODM及客户自己的设计采购体系。</p>
+<p>公司FY2025公告披露，三个客户分别占全年收入32%、14%、12%；Q4分别36%、15%、12%。不能把季度比例误当成年比例，更不能仅根据公开TPU合作就给匿名客户强行命名。高度集中使项目成功可迅速推高利润，也使某一家客户重新分配制造订单产生非线性下行。</p>
+<p>公司明确表示扩展美国制造以支持Google TPU系统，并获得第三个超大规模客户的1.6T平台项目，预计2027开始爬坡。这是能力及客户关系的证据，但不等于客户承诺不可取消、利润率锁定或未来出货额已确认。</p>
+<h2 id="section-6">第四步：管理层与最强反方</h2>
+<p>Rob Mionis领导下，利润率和平台业务取得进步。管理层在需求增长时扩大产能，有潜力把企业推向更高价值环节；同时10亿美元资本计划意味着过去成功不能替代未来投资回报证明。应按新增资本带来的增量现金收益评价，不能只看EPS增厚。公司2025 Q4回购约10万股、支出3,570万美元；在扩厂阶段回购需与资产投资机会比较。</p>
+<p>最强反方是：科技客户的巨额资本支出将制造商短期收入抬高，投资者却误将8%左右利润率、集中客户与高周转业务按高壁垒平台定价；当客户需求反转，新工厂折旧与闲置费用还会存在。总回报掉期令利润表与股价产生关联，更需要用现金流剥离光鲜数字。</p>
+<div aria-label="第四步：管理层与最强反方" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">观察条件</th>
+<th scope="col">意义与行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大客户推迟项目或转单</td>
+<td>即使行业需求仍强，也重估订单稳定性</td>
+</tr>
+<tr>
+<td>调整后营业利润率连续两季低于7%</td>
+<td>重新评估平台升级是否失效</td>
+</tr>
+<tr>
+<td>营收增长、FCF下调且资本开支继续上升</td>
+<td>警惕增长无法自我融资</td>
+</tr>
+<tr>
+<td>2027产能爬坡延后、设备利用率低</td>
+<td>下调中期正常化盈利，不以便宜PE补仓</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些是研究阈值而非已发生的事件，无法客观赋予精确概率。最新控制权及高管持股未完成一手核验，不以旧有股权结构推断当下治理。</p>
+<h2 id="section-7">第五步：估值与情景</h2>
+<p>基准盈利采用公司2026调整后EPS指引 <strong>11.30美元</strong>，不是TTM GAAP EPS；在361.43美元对应31.98倍。EPS中排除SBC等项目的局限以现金流辅助检查，不能仅因管理层指引高增长就无限提高倍数。</p>
+<p>三年公式为<code>11.30×(1+EPS复合增长率)^3×终值PE</code>。增长率为三年平滑假设，不表示每年均同速；基准+25%允许首年较快、以后正常化，不把2027管理层的高增速无限延续。不计分红、税费。</p>
+<p>以2026指引代表当前年度盈利能力，三年末相应估计届时年度能力，终值不是今日价值。</p>
+<div aria-label="第五步：估值与情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">EPS年增长</th>
+<th scope="col" style="text-align: right;">三年末EPS</th>
+<th scope="col" style="text-align: right;">PE</th>
+<th scope="col" style="text-align: right;">三年末价格</th>
+<th scope="col" style="text-align: right;">相对361.43收益</th>
+<th scope="col" style="text-align: right;">年化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：项目停滞，制造溢价消失</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">11.300</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">180.80</td>
+<td style="text-align: right;">-49.98%</td>
+<td style="text-align: right;">-20.62%</td>
+</tr>
+<tr>
+<td>基准：平台升级但资本回报正常化</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">22.070</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">485.55</td>
+<td style="text-align: right;">+34.34%</td>
+<td style="text-align: right;">+10.34%</td>
+</tr>
+<tr>
+<td>乐观：多个平台同步放量</td>
+<td style="text-align: right;">+40%</td>
+<td style="text-align: right;">31.007</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">868.20</td>
+<td style="text-align: right;">+140.21%</td>
+<td style="text-align: right;">+33.93%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准情景已要求很强的每股盈利增长，只得到约10%年化，说明安全边际不能只靠需求故事。今天条件研究区间为 <strong>226—282.50美元</strong>，明确来自<code>11.30×20—25倍</code>。给予高于传统低附加值代工的倍数，理由是HPS和更高技术复杂度；同时低于软件型网络供应商，是因客户集中、薄利润和再投资负担。</p>
+<p>上述485.55是未来三年末情景价，不是今天应支付的价格；悲观情景未覆盖严重失单或产能减值，实际损失可能更大。</p>
+<h2 id="section-8">第六步：行动建议</h2>
+<p><strong>评级：等待价格。</strong> 空仓者在361.43基准不追买，等待226—282.50且确认全年EPS11.30仍可信、现金流指引不因扩产恶化、关键项目按期进行。若公司实际证明2027现金与利润同步大幅提升，可以上修估值，但不能提前将所有预期计入安全边际。</p>
+<p>持仓者应跟踪每季CFO、资本开支、客户集中度和调整后利润，不将GAAP掉期收益当作永久盈利；客户转单、现金兑现连续落后时撤销增长假设。区间是有条件研究区域，不是机械挂单或止损；不提供仓位比例。</p>
+<p>AI分析置信度中，商业盈利机制清晰，但客户采购计划和投产利用率的投资确定性仍低于已公布财报。</p>
+<h2 id="section-9">来源与审计</h2>
+<ul>
+<li><a href="https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-fourth-quarter-and-fy-2025-financial-results" rel="noreferrer">FY2025业绩及客户集中度、资本投资计划，2026-01-28</a>。</li>
+<li><a href="https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results" rel="noreferrer">Q2 2026业绩及全年更新指引，2026-07-27</a>。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001030894.json" rel="noreferrer">SEC公司事实</a>、<a href="https://stockanalysis.com/stocks/cls/financials/income-statement/" rel="noreferrer">StockAnalysis利润表</a>、<a href="https://stockanalysis.com/stocks/cls/financials/cash-flow-statement/" rel="noreferrer">现金流</a>、<a href="https://stockanalysis.com/stocks/cls/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/cls/history/" rel="noreferrer">历史报价</a>、<a href="https://stockanalysis.com/stocks/cls/statistics/" rel="noreferrer">股份及拆股</a>，2026-10-02访问。</li>
+</ul>
+<p>一手与第三方的FY2025收入约12,391、净利润832.5、最新现金535.7（百万美元）一致。公司全年GAAP营业利润率8.4%，第三方展示8.61%，不能混用：报告采用公司经营指标，第三方分类值不用于估值。FY2025 FCF458.3两源一致。financial_rigor、Decimal核算区间和情景；工具默认TTM标签不适用于这里的2026指引EPS。report_audit抽样及事实复核另存；客户条款、债务契约及最新治理附注并未全面认证。</p>
+<p>SEC DEI股数与第三方近似一致。另做即时报价乘股数测试时，第三方统计市值与即时价格存在约2.8%差异，属于未完全同步快照，故不用它认证9月30日历史市值。随机抽样六项事实均在容差内，其中两项另有一手对照，其余保留单源标记。</p></article><footer class="report-footer"><span>CLS · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

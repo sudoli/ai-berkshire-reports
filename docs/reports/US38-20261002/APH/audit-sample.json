@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2,
+    "label": "营业收入 · FY2023",
+    "reported_value": 12555.0,
+    "unit": "",
+    "line_number": 25,
+    "raw_text": "| 营业收入 | 12,623 | 12,555 | 15,222.7 | 23,094.7 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "GAAP归属净利润 · FY2025",
+    "reported_value": 4270.3,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| GAAP归属净利润 | 1,902 | 1,928 | 2,424.0 | 4,270.3 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "GAAP归属净利润 · FY2022",
+    "reported_value": 1902.0,
+    "unit": "",
+    "line_number": 26,
+    "raw_text": "| GAAP归属净利润 | 1,902 | 1,928 | 2,424.0 | 4,270.3 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "经营现金流 · FY2025",
+    "reported_value": 5374.7,
+    "unit": "",
+    "line_number": 28,
+    "raw_text": "| 经营现金流 | 本表未复核 | 2,529 | 2,814.7 | 5,374.7 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "自由现金流，第三方基础口径 · FY2025",
+    "reported_value": 4378.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| 自由现金流，第三方基础口径 | 本表未复核 | 2,156 | 2,149 | 4,378 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "自由现金流，第三方基础口径 · FY2023",
+    "reported_value": 2156.0,
+    "unit": "",
+    "line_number": 29,
+    "raw_text": "| 自由现金流，第三方基础口径 | 本表未复核 | 2,156 | 2,149 | 4,378 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

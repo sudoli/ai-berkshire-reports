@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ASIC工程能力和关键企业软件共同创造现金，但两者的增长、利润率及债务风险应分开判断。"><meta name="source-sha256" content="cfbc67f6011839489b0d36b2e978a0d39456be750804e96fd1313ec3e29bd9bf">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>博通（AVGO）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="AVGO%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / AVGO / 2026-10-02</div>
+<h1>Broadcom Inc.<span>定制AI芯片与基础设施软件 · 公司研究</span></h1><p class="hero-deck">ASIC工程能力和关键企业软件共同创造现金，但两者的增长、利润率及债务风险应分开判断。</p>
+<div class="hero-meta"><span>FY2026 Q3，截至2026-08-02，2026-09-02发布</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$352.83<small>2026-10-02 11:18 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">盘中非收盘；Yahoo 11:22:42 EDT为352.26。图片351.19未核验，与基准相差+0.47%；2024年10拆1后口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司介绍与利润地图</a></li><li><a href="#section-3">第二步：现金创造和负债</a></li><li><a href="#section-4">第三步：护城河与客户权力</a></li><li><a href="#section-5">第四步：反面论证</a></li><li><a href="#section-6">第五步：管理层与资本配置</a></li><li><a href="#section-7">第六步：估值、反推与情景</a></li><li><a href="#section-8">第七步：行动清单</a></li><li><a href="#section-9">来源和数值抽检</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司介绍与利润地图</a></li><li><a href="#section-3">第二步：现金创造和负债</a></li><li><a href="#section-4">第三步：护城河与客户权力</a></li><li><a href="#section-5">第四步：反面论证</a></li><li><a href="#section-6">第五步：管理层与资本配置</a></li><li><a href="#section-7">第六步：估值、反推与情景</a></li><li><a href="#section-8">第七步：行动清单</a></li><li><a href="#section-9">来源和数值抽检</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>博通（AVGO）研究报告</h1>
+<blockquote>
+<p>信息截止与研究日：2026-10-02。美元普通股。StockAnalysis当日11:18 EDT盘中 <strong>352.83</strong>，Yahoo 11:22:42 EDT为352.26；报价并非收盘或同秒成交。用户图片标称2026-09-30的351.19未独立验证，比本报告基准低0.47%。最新财务期FY2026第三季度，截至2026-08-02，9月2日发布。按SEC 8月28日4,773,629,865股估算市值1.6843万亿美元。研究主线：ASIC和软件都是好生意，但增长率、利润率与资本风险不能混成一个“纯AI”倍数。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，AI分析置信度中等。风险是将AI芯片收入和软件高毛利相乘，得到现实不存在的利润表。本报告以发行人和SEC为准，StockAnalysis交叉核对；未取得按客户划分的定制芯片净利润、软件真实流失率和最新全部合同条款。季度指引是预测，不是已实现利润；软件续费和定制芯片项目的可预测性也不同。</p>
+<h2 id="section-2">第一步：公司介绍与利润地图</h2>
+<p>博通设计并供应数据中心、网络、无线和其他半导体，同时经营VMware、基础设施管理和安全等企业软件。定制AI加速器由云客户定义架构和应用，博通提供设计、物理实现、IP、互连以及量产整合；客户购买的是复杂芯片设计和交付能力，而非博通独占的最终AI应用。以太网交换等连接产品也受益于集群规模扩大。</p>
+<p>基础设施软件则嵌入企业虚拟化、主机和关键IT流程，迁移成本较高，以许可、订阅、维护和相关服务获取收入。VMware产品组合、定价和销售策略能释放利润，也可能促使客户迁移。不能仅以短期涨价后的现金流判断长期护城河。</p>
+<p>单位：百万美元。FY2023至FY2025分别截至2023-10-29、2024-11-03及2025-11-02。</p>
+<div aria-label="第一步：公司介绍与利润地图" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">营收</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+<th scope="col" style="text-align: right;">OCF减固定资产资本开支</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">35,819</td>
+<td style="text-align: right;">14,082</td>
+<td style="text-align: right;">18,085</td>
+<td style="text-align: right;">17,633</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">51,574</td>
+<td style="text-align: right;">5,895</td>
+<td style="text-align: right;">19,962</td>
+<td style="text-align: right;">19,414</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">63,887</td>
+<td style="text-align: right;">23,126</td>
+<td style="text-align: right;">27,537</td>
+<td style="text-align: right;">26,914</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2024收购并表和税项影响使净利润与营收并非同向；FY2025利润大增不应全部归因于有机AI增长。FY2025半导体收入368.58亿美元、基础设施软件270.29亿美元，后者是重要现金来源，不是边缘业务。</p>
+<p>最新Q3收入295.91亿美元，同比+86%；半导体208.39亿美元，占70%，软件87.52亿美元，占30%。AI半导体收入167亿美元是半导体中的子集，不能再次加到总收入上；其中既有定制加速器，也有网络，<strong>不能把全部AI收入称为ASIC收入</strong>。公司披露AI半导体同比+221%，软件同比+29%。GAAP净利润130.88亿美元、EPS 2.68，non-GAAP净利润163.72亿美元、EPS 3.32。</p>
+<p>Q4指引总收入348亿美元、non-GAAP经营利润率66%，预计AI半导体收入217亿美元。后两个数字不能分别当作已实现净利润和订单现金。收入结构向芯片倾斜时，毛利率、营运资本和供应承诺会变化，即使合并利润继续增长。</p>
+<h2 id="section-3">第二步：现金创造和负债</h2>
+<p>Q3经营现金流141.97亿美元，资本开支5.32亿美元，FCF136.65亿美元；这是强现金创造能力。8月2日现金239.75亿美元、有息债务594.19亿美元，净债务354.44亿美元。相比FY2025末现金161.78亿美元、债务664.61亿美元，杠杆方向在改善，但并非净现金公司。定制AI客户砍单与软件增长减速同时发生时，债務依然需要偿付。</p>
+<p>最新季度利息费用7.78亿美元，SBC20.19亿美元；前九个月SBC62.87亿美元。FY2025 SBC75.68亿美元。non-GAAP排除SBC、并购无形资产摊销、重组等，部分有经济理由，但不能把全部差额当作不存在。最新季度GAAP经营利润159.55亿美元、non-GAAP经营利润200.95亿美元，中间不是“免费利润”。</p>
+<p>StockAnalysis FY2025经营利润显示263.67亿美元，SEC的GAAP OperatingIncomeLoss为254.84亿美元；本报告避免将重分类汇总冒充原始GAAP。年度营收、净利、现金和FCF则交叉一致。债务与现金用相同日期、美元和范围相减，不能用未来EBITDA简单宣称没有债务风险。</p>
+<h2 id="section-4">第三步：护城河与客户权力</h2>
+<div aria-label="第三步：护城河与客户权力" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">业务</th>
+<th scope="col">主要优势</th>
+<th scope="col">护城河的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定制芯片</td>
+<td>高速接口/IP、复杂实现、先进封装和大规模量产经验</td>
+<td>少数超级客户规模足以自行设计或转移项目，赢单有代际周期</td>
+</tr>
+<tr>
+<td>网络芯片</td>
+<td>产品深度、工程整合、生态和可靠性</td>
+<td>网络架构变化或客户垂直整合可能影响份额</td>
+</tr>
+<tr>
+<td>基础设施软件</td>
+<td>关键工作负载的迁移和重新认证成本</td>
+<td>激进捆绑或定价可能把客户推向替代平台</td>
+</tr>
+<tr>
+<td>多业务现金流</td>
+<td>软件支持研发、并购及偿债</td>
+<td>“多元化”不能消除对同一企业IT预算和AI周期的暴露</td>
+</tr>
+</tbody>
+</table></div>
+<p>真正利润分配取决于谁掌握客户需求和替代选择。博通不是所有ASIC的唯一供应商；客户的设计赢单通常跨多年，但工程阶段、试产和量产营收之间有落差。披露不足的客户集中度不应以猜测客户名字和订单金额补全。</p>
+<blockquote>
+<p>巴菲特式追问：如果最大的云客户下一代改用别家，软件现金流能否保护股东，同时不牺牲研发？</p>
+</blockquote>
+<h2 id="section-5">第四步：反面论证</h2>
+<p>最强空方观点是：市场按长期高增长定价，但增长集中于少数AI项目；与此同时软件涨价提升短期利润，却可能削弱未来续费。客户自研ASIC的大趋势，并不自动意味着博通长期保持同样的设计份额与利润分成。</p>
+<div aria-label="第四步：反面论证" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">路径</th>
+<th scope="col">主观风险评价</th>
+<th scope="col">可观察信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定制项目延迟或切换供应商</td>
+<td>中等可能、冲击大</td>
+<td>同一项目反复推迟量产，AI收入连续低于指引</td>
+</tr>
+<tr>
+<td>软件迁移快于续费提价</td>
+<td>中等可能、中长期损伤大</td>
+<td>合同续期、客户留存或现金增长恶化；不能只看季度收入确认</td>
+</tr>
+<tr>
+<td>芯片占比上升压低利润质量</td>
+<td>中等可能</td>
+<td>库存/应收增长，合并毛利与FCF转化明显下降</td>
+</tr>
+<tr>
+<td>收购、SBC和负债侵蚀每股价值</td>
+<td>持续存在</td>
+<td>大额并购重新抬高净债务，股数增速吞噬盈利增长</td>
+</tr>
+</tbody>
+</table></div>
+<p>研究复核阈值：正常化经营现金流减资本开支长期低于经济净利、净债务不再下降且客户集中上升；或经济EPS难以达到13美元。对无公开数据的软件流失率，本报告不能给“已改善”的结论。以上是失效观察条件，并非现状指控。</p>
+<h2 id="section-6">第五步：管理层与资本配置</h2>
+<p>Hock Tan的并购整合、聚焦关键产品及现金分配模式，能从VMware并表后的软件收入和现金中观察到结果。季度普通股股息0.65美元；FY2025末提高股息的决策有现金流基础，但股息率较低，不是主要收益来源。资本配置评价需同时看偿债、研发、股权稀释与收购回报，不能只看分红连续增长。未复核最新所有管理层持股、薪酬绩效指标和出售行为，故不作治理满分判断。</p>
+<h2 id="section-7">第六步：估值、反推与情景</h2>
+<p>用经济盈利而非最宽松调整后EPS。假设下一正常化年度收入1350亿美元，已扣持续SBC的经营利润率60%，净利息25亿美元，税率16%，稀释49.5亿股：</p>
+<p>经济EPS=(1350×60%−25)×84%÷49.5≈13.32美元，保守取 <strong>13美元</strong>。这允许剔除部分并购摊销，但不认为研发、SBC和偿债免费。该收入近似Q4指引年化水平，不是公司发布的全年预测。对应当前价格27.14倍。</p>
+<p>若想从352.83取得12%年化回报，假设三年后24倍经济PE，需要期末EPS约20.65美元，相对13美元增长约16.69%/年；基本可以讨论，但高于下面15%基准，而且需维持当前良好现金执行。</p>
+<p>以约2029年为估值时点，期末EPS是届时前瞻同口径经济盈利，终值PE亦为前瞻倍数；EPS增长同时反映收入、利润率、利息及稀释，不混用GAAP TTM。股息、税费、汇率不计入回报。</p>
+<div aria-label="第六步：估值、反推与情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">经济EPS年增长</th>
+<th scope="col" style="text-align: right;">期末EPS</th>
+<th scope="col" style="text-align: right;">期末PE</th>
+<th scope="col" style="text-align: right;">三年后目标价</th>
+<th scope="col" style="text-align: right;">相对352.83回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：AI项目回撤、软件放缓</td>
+<td style="text-align: right;">-5%</td>
+<td style="text-align: right;">11.1459</td>
+<td style="text-align: right;">18倍</td>
+<td style="text-align: right;">200.63</td>
+<td style="text-align: right;">-43.14%</td>
+</tr>
+<tr>
+<td>基准：项目扩展且软件稳定</td>
+<td style="text-align: right;">+15%</td>
+<td style="text-align: right;">19.7714</td>
+<td style="text-align: right;">24倍</td>
+<td style="text-align: right;">474.51</td>
+<td style="text-align: right;">+34.49%</td>
+</tr>
+<tr>
+<td>乐观：客户扩张、现金与利润同步</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">25.3906</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">761.72</td>
+<td style="text-align: right;">+115.89%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准474.51折现三年、年折现率12%，今日参考价值337.75美元。<strong>购买研究区间260–299美元=13美元经济EPS×20–23倍</strong>，较基准折现值留出折扣。这不是对未来目标价打随意折扣，也不是按技术支撑猜价。终值倍数低于纯软件高增长估值，是因为半导体占比和客户集中上升，另有净债务。</p>
+<h2 id="section-8">第七步：行动清单</h2>
+<div aria-label="第七步：行动清单" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">投资状态</th>
+<th scope="col">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓</td>
+<td>“等待价格”。实际352.83和图片351.19均未进入260–299研究区间；更接近合理价值而非显著廉价</td>
+</tr>
+<tr>
+<td>已持有</td>
+<td>核心假设保持可观察持有，收到的股息不改变高价格风险；不因AI指引增长而自动加仓</td>
+</tr>
+<tr>
+<td>加仓条件</td>
+<td>进入区间，13美元经济EPS及软件续费基础仍有效，净债务趋势保持可控</td>
+</tr>
+<tr>
+<td>减持/退出条件</td>
+<td>大客户项目结构性流失、软件现金流受损，或新并购和稀释导致每股经济价值下降</td>
+</tr>
+</tbody>
+</table></div>
+<p>生意与护城河具吸引力，价格安全边际关暂未通过。镜子测试：购买的是芯片工程和关键软件的可持续现金，不是“所有ASIC市场都归博通”。投资者没有必要因为公司好就忽略现金流周期、融资成本和买入价格；报告不替个人账户指定仓位。</p>
+<h2 id="section-9">来源和数值抽检</h2>
+<p>均在2026-10-02访问；网页日期以发行人原文为准，不采用搜索引擎的推测日期：</p>
+<ul>
+<li><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial" rel="noreferrer">FY2026 Q3公告，2026-09-02</a>。</li>
+<li><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025" rel="noreferrer">FY2025年度公告，2025-12-11</a>。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json" rel="noreferrer">SEC公司事实</a>：原始财报、股数、债务及SBC；与IR不算独立经济来源。</li>
+<li><a href="https://stockanalysis.com/stocks/avgo/financials/" rel="noreferrer">StockAnalysis财务与盘中行情</a>、<a href="https://stockanalysis.com/stocks/avgo/statistics/" rel="noreferrer">统计/拆股</a>、<a href="https://finance.yahoo.com/quote/AVGO/" rel="noreferrer">Yahoo行情</a>。</li>
+</ul>
+<p>2024-07-15的10拆1已反映于当前每股价格和EPS，不能再乘/除十。financial_rigor对FY2025营收63,887、净利23,126、现金23,975百万美元及市值完成双源/算术校验，现金采用最新季度。年度经营利润差异已按SEC处理。Decimal独立复算EPS桥、情景、净债务及折现。report_audit按15%、固定种子42抽取5项，其中2项属于情景计算；另补最新年度数据，共5项历史财务/现金流事实双源核验无超限差异，三情景目标和回报完成算术复核。未核验的客户合同、预测和图片价格不算准出证明，抽检不等于全面认证。AI置信度中等，真实投资不确定性主要来自客户的下一代芯片选择和软件长期留存。本报告仅为研究，不构成个性化投资建议。</p></article><footer class="report-footer"><span>AVGO · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

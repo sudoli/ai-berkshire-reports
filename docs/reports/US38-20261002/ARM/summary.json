@@ -1,0 +1,34 @@
+{
+  "ticker": "ARM",
+  "company": "Arm Holdings plc",
+  "sector": "处理器IP授权与生产芯片",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 314.2,
+    "currency": "USD",
+    "asof": "2026-10-02 11:18 EDT",
+    "source_url": "https://stockanalysis.com/stocks/arm/financials/",
+    "verified": true,
+    "note": "1 ADS代表1普通股，市值须使用全部普通股而非流通ADS。Yahoo 11:22:41 EDT为313.53；图价289.66未核验，相差+8.47%；盘中非收盘。"
+  },
+  "financial_period": "FY2027 Q1，截至2026-06-30，2026-07-29发布",
+  "recommendation": {
+    "rating": "暂不买入",
+    "buy_low": 45.5,
+    "buy_high": 58.5,
+    "currency": "USD",
+    "basis": "正常化收入70亿美元、含SBC经济经营利润率24%、税率15%、稀释11亿股得EPS约1.30；1.30×35–45倍=45.5–58.5。三年基准101.56按12%折现72.29。",
+    "conditions": "版税/CSS持续增长，持续SBC已被经济利润覆盖，自有生产芯片不损害客户中立性且投入回报可验证。",
+    "holder_action": "审查极高增长预期与资本强度变化，不把持仓当成低风险纯版税资产；客户关系或每股经济收益受损时重估。"
+  },
+  "thesis": "架构生态很强，但SBC与进入自有芯片改变盈利质量，当前估值要求远超温和增长。",
+  "key_risk": "生产芯片与IP客户竞争、SBC稀释及控制股东利益冲突，使收入增长不能兑现为每ADS价值。",
+  "confidence": "中",
+  "source_limitations": [
+    "自有芯片需求机会不等于已确认收入，分业务真实利润仍缺乏完整披露。",
+    "最新SoftBank精确持股和关联交易附注未完整复核。",
+    "SEC归档HTML受阻，使用官方PDF及SEC companyfacts；FCF网站与发行人口径不同。",
+    "图片价格未核验；1.30美元经济EPS与情景是研究假设，不是公司GAAP指引。"
+  ],
+  "report_file": "ARM研究报告-20261002.md"
+}

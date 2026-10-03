@@ -1,0 +1,30 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：META
+======================================================================
+
+  [92m✅ 通过[0m [ 1] Family of Apps · 收入，十亿美元             报告:        60.37 
+                                                    https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/: 60.37 (偏差 0.00%)
+  [92m✅ 通过[0m [ 4] FoA其他收入 · 收入，十亿美元                    报告:         1.01 
+                                                    https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/: 1.01 (偏差 0.00%)
+  [92m✅ 通过[0m [101] annual revenue                       报告:    200966.00 USD million
+                                                    https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/: 200966.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 200966.00 (偏差 0.00%)
+  [92m✅ 通过[0m [102] annual net income available to comm  报告:     60458.00 USD million
+                                                    https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/: 60458.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 60458.00 (偏差 0.00%)
+  [92m✅ 通过[0m [103] latest cash plus marketable securit  报告:     90260.00 USD million
+                                                    https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/: 90260.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/meta/financials/: 90260.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 5  |  通过: [92m5[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 5,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 5,
+  "fail_items": [],
+  "warn_items": []
+}

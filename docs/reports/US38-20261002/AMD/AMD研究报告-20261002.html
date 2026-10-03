@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CPU执行力与加速器份额机会真实，但第二供应商身份不保证复制龙头利润率。"><meta name="source-sha256" content="73092ba6d4932ee2f36dcf22a5a8493dc1083b5f9bd53bfd550c4d5f8e459341">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>超威半导体（AMD）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="AMD%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / AMD / 2026-10-02</div>
+<h1>Advanced Micro Devices, Inc.<span>CPU与AI加速器半导体 · 公司研究</span></h1><p class="hero-deck">CPU执行力与加速器份额机会真实，但第二供应商身份不保证复制龙头利润率。</p>
+<div class="hero-meta"><span>2026 Q2，截至2026-06-27，2026-08-04发布</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$635.53<small>2026-10-02 11:18 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>暂不买入<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">盘中非收盘；Yahoo 11:23:11 EDT为635.33作异时点交叉。图片611.76未验证，相差+3.89%；未发现2026额外拆股调整依据。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：这家公司究竟靠什么赚钱</a></li><li><a href="#section-3">第二步：收入增长不代表同等利润增长</a></li><li><a href="#section-4">第三步：竞争优势及其边界</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理和资本配置</a></li><li><a href="#section-7">第六步：正常化估值，而非把GPU利润率复制过来</a></li><li><a href="#section-8">第七步：最后决策</a></li><li><a href="#section-9">来源、口径与审计记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：这家公司究竟靠什么赚钱</a></li><li><a href="#section-3">第二步：收入增长不代表同等利润增长</a></li><li><a href="#section-4">第三步：竞争优势及其边界</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理和资本配置</a></li><li><a href="#section-7">第六步：正常化估值，而非把GPU利润率复制过来</a></li><li><a href="#section-8">第七步：最后决策</a></li><li><a href="#section-9">来源、口径与审计记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>超威半导体（AMD）研究报告</h1>
+<blockquote>
+<p>研究日/信息截止：2026-10-02。美元普通股。StockAnalysis 2026-10-02 11:18 EDT盘中价 <strong>635.53</strong>；Yahoo 11:23:11 EDT为635.33，非同一时点但方向一致。用户图片标称2026-09-30的611.76未经独立验证，与本报告行情相差+3.89%，不能仅凭历史记忆判定图片错误。最新季度截至2026-06-27，8月4日公布。按SEC 7月29日1,632,475,042股估算市值1.0375万亿美元。核心问题不是AMD能否增长，而是增长能否快到足以补偿当前价格。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，AI分析置信度中等。最常见偏见是把“第二供应商”和“复制第一供应商的利润率”画等号。本报告使用发行人季度/年度公告、SEC及StockAnalysis；不把公司产品性能宣传当作独立客户实测，不把合作部署的GW、设计赢单或未来采购意向计为已实现销售。客户具体加速器毛利率、软件维护成本和合同折扣并未公开，本报告保留这一关键数据缺口。</p>
+<h2 id="section-2">第一步：这家公司究竟靠什么赚钱</h2>
+<p>AMD是无晶圆厂计算芯片公司：EPYC服务器CPU、Instinct AI加速器、Ryzen个人电脑处理器、Radeon及游戏机半定制芯片、嵌入式/自适应计算产品构成不同利润池。客户包括云平台、服务器/PC制造商、游戏机厂商和工业设备商。技术优势来自CPU架构、chiplet封装、能效、系统设计，以及ROCm软件栈，而不是拥有先进制程工厂。</p>
+<p>第二季度数据中心收入约67亿美元，同比+107%；客户与游戏约38亿美元，其中客户31亿美元、游戏7.79亿美元；嵌入式9.77亿美元。合并数据中心并未单独披露GPU与CPU的完整利润表，<strong>不能用数据中心全部营收当作AI GPU营收</strong>。PC与游戏具备消费周期和产品发布时间表，嵌入式有库存周期，三者不能都套AI超高速增长。</p>
+<p>单位：百万美元。GAAP净利含并购会计、税项及其他收益；不等于纯经营盈利。</p>
+<div aria-label="第一步：这家公司究竟靠什么赚钱" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">营收</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">23,601</td>
+<td style="text-align: right;">1,320</td>
+<td style="text-align: right;">3,565</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">22,680</td>
+<td style="text-align: right;">854</td>
+<td style="text-align: right;">1,667</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">25,785</td>
+<td style="text-align: right;">1,641</td>
+<td style="text-align: right;">3,041</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">34,639</td>
+<td style="text-align: right;">4,335</td>
+<td style="text-align: right;">7,709</td>
+</tr>
+</tbody>
+</table></div>
+<p>上述序列与SEC、StockAnalysis交叉一致。2025购建固定资产9.74亿美元，简单FCF=77.09−9.74=67.35亿美元，显著好于2023年，但不能忽略全年16.38亿美元SBC和并购对经济回报的要求。</p>
+<p>最新季度营收115.36亿美元、GAAP经营利润19.90亿美元、净利润22.97亿美元、EPS 1.38；non-GAAP经营利润30.94亿美元、EPS 1.66。GAAP毛利率54%、调整后56%，GAAP经营利润率17%、调整后27%。2025同期包含8亿美元MI308出口限制相关库存费用，因此同比利润改善部分来自低基数。下一季度指引营收130亿美元±3亿美元、non-GAAP毛利率约56%，并非接近竞争龙头的约75%水平。</p>
+<h2 id="section-3">第二步：收入增长不代表同等利润增长</h2>
+<p>GPU系统规模扩大，要支付HBM、封装、机架部件、客户适配和软件开发费用。客户希望第二来源降低成本，因此AMD扩大份额与维持溢价之间存在矛盾。CPU竞争力可贡献现金，不能证明加速器已经获得同样的生态租金。ROCm需要持续改善生产环境稳定性、调试效率和算子支持；免费开源不等于维护成本为零。</p>
+<p>财务口径尤其重要：</p>
+<ul>
+<li>公司2025年GAAP毛利171.52亿美元、经营利润36.94亿美元；StockAnalysis汇总分别显示181.83亿和37.41亿美元。毛利差异较大，可能涉及分类和摊销处理，本报告不把第三方重分类数字冒充GAAP，也不平均。收入和净利仍与原始披露一致。</li>
+<li>6月末现金50.86亿美元、短期投资80.25亿美元，共131.11亿美元；有息债务32.26亿美元，保守净现金98.85亿美元。网站总债务42.76亿美元包含额外租赁等口径，不能与有息债务混比。</li>
+<li>最新季度SBC约5.03亿美元，non-GAAP排除了相关成本；季度“其他收益净额”5.98亿美元也使GAAP净利高于经营利润。直接把EPS 1.38乘四不是稳健正常盈利。</li>
+<li>2025年末商誉251.26亿美元、并购无形资产167.05亿美元：资本支出低不代表研发与收购免费。嵌入式业务必须证明并购资本的回报，不能只看扣除摊销后的利润。</li>
+</ul>
+<blockquote>
+<p>段永平式追问：如果客户不是为了制衡另一家供应商，它是否仍愿意以同样价格持续购买AMD？</p>
+</blockquote>
+<h2 id="section-4">第三步：竞争优势及其边界</h2>
+<div aria-label="第三步：竞争优势及其边界" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">护城河来源</th>
+<th scope="col">评价</th>
+<th scope="col">如何验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU架构、chiplet和能效</td>
+<td>较强，持续执行是关键</td>
+<td>EPYC在客户实际负载下的性能/总成本、续代采购</td>
+</tr>
+<tr>
+<td>软件和系统整合</td>
+<td>加速追赶，仍需投入</td>
+<td>ROCm在生产系统的迁移和维护成本，不只看演示性能</td>
+</tr>
+<tr>
+<td>客户第二来源需求</td>
+<td>有利进入市场，但不天然有定价权</td>
+<td>新增GPU收入是否同步带来经营利润及FCF</td>
+</tr>
+<tr>
+<td>嵌入式产品生命周期</td>
+<td>认证与设计替换成本较高</td>
+<td>去库存后收入、毛利与订单恢复是否稳定</td>
+</tr>
+</tbody>
+</table></div>
+<p>竞争来自英伟达、其他CPU架构、客户自研加速器和专用推理设计。先进制程和封装通常依赖外部供应链；同一供应商服务多个竞争者，AMD不拥有排他性制造壁垒。行业利润最终由可用软件、稳定交付、能源效率和议价地位共同决定，而不是由算力需求总额平均分配。</p>
+<h2 id="section-5">第四步：最强空方论点</h2>
+<p>空方可以承认AMD产品成功，却认为当前价格提前支付了多个增长阶段。客户用采购意向争取更低报价，AMD承担研发与适配，最终GPU销量很大但经济利润不足。若专用推理ASIC增长，AMD既要与平台龙头竞争，也要与自己的客户竞争。</p>
+<div aria-label="第四步：最强空方论点" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">风险路径</th>
+<th scope="col">主观可能性/影响</th>
+<th scope="col">需持续观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加速器放量但利润率偏低</td>
+<td>中高/大</td>
+<td>数据中心高增长，合并调整后毛利仍停滞；客户折扣或系统成本上升</td>
+</tr>
+<tr>
+<td>软件和机架交付延期</td>
+<td>中/大</td>
+<td>同一产品连续推迟量产，客户无法从测试转生产</td>
+</tr>
+<tr>
+<td>出口限制或供应中断</td>
+<td>中/大</td>
+<td>新库存减记、许可变化、HBM或封装不足</td>
+</tr>
+<tr>
+<td>高估值与稀释共同侵蚀回报</td>
+<td>高度相关/大</td>
+<td>每股利润跟不上营收，SBC、合作权益工具或并购增加股数</td>
+</tr>
+</tbody>
+</table></div>
+<p>研究失效条件：连续两个季度数据中心增长显著低于公司展望，同时调整后毛利低于约52%；或正常化经济EPS不能向8美元靠拢。52%只是复核门槛，不是公司承诺。缺少GPU独立利润表意味着不宜给“利润率必然追平”的高置信判断。</p>
+<h2 id="section-6">第五步：管理和资本配置</h2>
+<p>苏姿丰领导下的CPU产品节奏、chiplet路线及向数据中心倾斜，已有收入结果支持。Xilinx等收购扩大嵌入式能力，也引入商誉、摊销和整合成本。最新公告显示公司进一步强化机架和软件方案，战略逻辑合理，但“有产品”与“有高回报生意”仍需现金检验。未完整复核最新代理声明、管理层经济持股和所有客户权益激励条款，不能断言股东与客户及管理层利益完全一致。</p>
+<h2 id="section-7">第六步：正常化估值，而非把GPU利润率复制过来</h2>
+<p>设下一正常化年度收入650亿美元、<strong>已承担持续SBC和研发费用</strong>的经济经营利润率25%、税率17%、稀释股数16.9亿，忽略小额净利息，得EPS约7.98，取8美元。经济利润允许调整并购无形资产摊销，但不是无条件排除SBC的公司non-GAAP EPS。650亿美元收入已高于Q3指引年化520亿美元，25%利润率又高于当前17%的GAAP经营利润率，故该起点本身需要成功执行，谈不上悲观。</p>
+<p>当前价对应该假设79.44倍。历史及网站“前瞻PE”所用预测、税项、SBC和时间窗不同，不能用较低的55.73倍读数掩盖口径。用当前价、三年后30倍终值及12%年回报反推，需要期末EPS约29.76美元，相对8美元起点年增长约54.95%，比下面基准假设严格得多。</p>
+<p>三年以约2029年为估值时点，期末EPS是届时前瞻同口径经济盈利、终值PE也是前瞻倍数；EPS每股增长包含产品结构、费用率和稀释影响，不混用GAAP TTM。价格回报不含股息、税费和汇率。</p>
+<div aria-label="第六步：正常化估值，而非把GPU利润率复制过来" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">经济EPS年增长</th>
+<th scope="col" style="text-align: right;">期末EPS</th>
+<th scope="col" style="text-align: right;">期末PE</th>
+<th scope="col" style="text-align: right;">三年后目标价</th>
+<th scope="col" style="text-align: right;">相对635.53回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：第二来源但缺少利润溢价</td>
+<td style="text-align: right;">+5%</td>
+<td style="text-align: right;">9.2610</td>
+<td style="text-align: right;">22倍</td>
+<td style="text-align: right;">203.74</td>
+<td style="text-align: right;">-67.94%</td>
+</tr>
+<tr>
+<td>基准：CPU稳健、GPU逐步规模化</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">15.6250</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">468.75</td>
+<td style="text-align: right;">-26.24%</td>
+</tr>
+<tr>
+<td>乐观：加速器份额和利润率同时提升</td>
+<td style="text-align: right;">+40%</td>
+<td style="text-align: right;">21.9520</td>
+<td style="text-align: right;">38倍</td>
+<td style="text-align: right;">834.18</td>
+<td style="text-align: right;">+31.26%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准三年目标468.75以12%折现为今日333.65美元；基准回报为负并不证明公司差，而是起价过高。<strong>购买研究区间200–240美元=8美元经济EPS×25–30倍</strong>，较基准折现值保留明显折扣。若8美元起点无法实现，必须下修，不能把区间当作永远有效的限价单。即使跌至该区间，也要重新核验最新财报与股数。</p>
+<h2 id="section-8">第七步：最后决策</h2>
+<div aria-label="第七步：最后决策" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象/条件</th>
+<th scope="col">行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓</td>
+<td>“暂不买入”。635.53实际价和611.76图片价均显著超出研究区间，不以“还有上涨空间”代替安全边际</td>
+</tr>
+<tr>
+<td>已持有</td>
+<td>区分长期看好与继续增持；若不能接受高预期落空，考虑按自身税务及风险约束降低暴露，不给统一仓位百分比</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>价格200–240且8美元经济EPS路径、回款、GPU毛利/软件交付得到新证据支持</td>
+</tr>
+<tr>
+<td>卖出或重估</td>
+<td>核心客户流失、软件迁移受阻、出口减记扩大；或股价继续提高但每股现金盈利没有相应上修</td>
+</tr>
+</tbody>
+</table></div>
+<p>能力圈、生意方向与管理执行有可验证基础；加速器独立经济性尚不透明，当前价格安全边际关不通过。镜子测试应能说清“为何这笔采购产生AMD可保留的利润”，而非只说“AI需要第二家”。错过继续上涨的机会成本，通常比在不理解利润分配时高价入场更可控。</p>
+<h2 id="section-9">来源、口径与审计记录</h2>
+<p>均于2026-10-02读取：</p>
+<ul>
+<li><a href="https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results" rel="noreferrer">AMD Q2 2026发行人公告，2026-08-04</a>。</li>
+<li><a href="https://ir.amd.com/news-events/press-releases/detail/1276/amd-reports-fourth-quarter-and-full-year-2025-financial-results" rel="noreferrer">AMD FY2025公告，2026-02-03</a>。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json" rel="noreferrer">SEC companyfacts</a>：年度和季度数字、股数；SEC与IR并非独立经济来源。</li>
+<li><a href="https://stockanalysis.com/stocks/amd/financials/" rel="noreferrer">StockAnalysis财务及行情</a>、<a href="https://stockanalysis.com/stocks/amd/statistics/" rel="noreferrer">统计及拆股</a>、<a href="https://finance.yahoo.com/quote/AMD/" rel="noreferrer">Yahoo行情</a>。</li>
+</ul>
+<p>网站最近拆股记录为2000-08-22的2拆1，未发现需要把2026报价另外除倍数的证据。股本SEC16.32475亿与第三方16.3亿近似一致，非实时精确数。financial_rigor已验算市值、FY2025营收34,639/净利4,335百万美元双源一致、现金131.11亿美元一致，以及全部情景。毛利/经营利润按原始GAAP更正，债务区分租赁。Decimal复算购买区间及反向估值。report_audit按15%、固定种子42抽取3项，恰好均为模型数值，故额外核验FY2025收入、净利、OCF三项财务事实，均无超限差异；三情景目标和回报完成算术核验，不将模型数值当成外部财务认证。AI置信度中等；实际投资确定性更低，最大未知是加速器净经济利润而非营收规模。本报告为研究资料，不是个性化投资建议。</p></article><footer class="report-footer"><span>AMD · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

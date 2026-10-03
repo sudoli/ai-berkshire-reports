@@ -1,0 +1,14 @@
+{
+  "ticker": "APH",
+  "company": "Amphenol Corporation",
+  "sector": "连接器与高可靠互连",
+  "research_date": "2026-10-02",
+  "quote": {"price": 84.3, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/aph/history/", "verified": true, "note": "历史收盘直接核对与原图片一致，单一行情源、非即时价。2026年9月2拆1后口径；7月发布Q2 EPS1.35及Q3指引1.40—1.42必须减半。"},
+  "financial_period": "Q2 and H1 2026 ended 2026-06-30; FY2025 annual",
+  "recommendation": {"rating": "等待价格", "buy_low": 59.4, "buy_high": 70.2, "currency": "USD", "basis": "拆后正常化前瞻调整后EPS2.70美元×22—26倍PE；Q2扣关税回收年化约2.62及Q3拆后指引年化2.82之间取锚。", "conditions": "正常化EPS2.70仍成立，并购现金兑现及去杠杆路径清晰，有机增长和设计导入优势未破坏。", "holder_action": "跟踪有机增长、剔除关税后的盈利、收购现金回报与净负债；加杠杆并购加速而每股FCF停滞时降低风险。"},
+  "thesis": "设计导入和高可靠互连具有优质复利潜力，但收购后的现金回报和债务纪律决定安全边际。",
+  "key_risk": "大型收购推高净负债及商誉，若需求正常化，EPS增厚可能不足以弥补融资和整合成本。",
+  "confidence": "中",
+  "source_limitations": ["9月30日价格仅一个独立行情商核验，非实时价。", "最新客户集中度、高管权益及完整收购回报未完成一手附注核验。", "第三方营业利润与FCF定义不同，报告优先公司GAAP及其明确FCF口径。", "正常化EPS和三年情景为分析假设，股息未计入模型。"],
+  "report_file": "APH研究报告-20261002.md"
+}

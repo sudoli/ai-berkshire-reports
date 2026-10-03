@@ -1,0 +1,14 @@
+{
+  "ticker": "IBM",
+  "company": "International Business Machines Corporation",
+  "sector": "企业软件与IT咨询",
+  "research_date": "2026-10-02",
+  "quote": {"price": 222.50, "currency": "USD", "asof": "2026-10-02 11:20 EDT", "source_url": "https://stockanalysis.com/stocks/ibm/financials/", "verified": true, "note": "直接读取单站盘中价，非收盘；用户图片219.93美元未验证，普通股口径，未采用未经证实拆股调整。"},
+  "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+  "recommendation": {"rating": "等待价格", "buy_low": 175, "buy_high": 200, "currency": "USD", "basis": "研究正常化前瞻经营性EPS12.50美元×14—16倍=175—200美元；收入720亿美元×税前利润率19.5%×85%除9.55亿稀释股校准；正常化现金115亿美元另作保守交叉检验。", "conditions": "软件有机增长可验证，咨询毛利与收入同步改善，现金扣收购后足以支持降债和股息。", "holder_action": "收入型持有者可跟踪持有，结合净债务、收购及股息覆盖；增长或现金目标再次下修时重估。"},
+  "thesis": "企业核心系统黏性与软件组合支持现金，但咨询、主机周期和收购质量决定是否值得软件估值。",
+  "key_risk": "收购驱动的表面增长及经调整现金口径可能掩盖低有机增长、高净债务和咨询受AI压价的风险。",
+  "confidence": "中",
+  "source_limitations": ["行情与当前股数仅单站快照。", "未完整拆分收购有机增长、养老金附注及最新管理层持股。", "正常化EPS和现金折让均为研究假设；官方FCF与简单经营现金减资本支出不同。"],
+  "report_file": "IBM研究报告-20261002.md"
+}

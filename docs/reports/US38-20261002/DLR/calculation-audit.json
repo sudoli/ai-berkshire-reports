@@ -1,0 +1,43 @@
+{
+  "ticker": "DLR",
+  "price": "177.50",
+  "image_price": "175.53",
+  "metric_2026": "6.8",
+  "market_cap": "65676775000.00",
+  "image_difference_pct": "1.122315273742380219905429300",
+  "valuation_multiple": "26.10294117647058823529411765",
+  "dividend_yield_pct": "2.749295774647887323943661972",
+  "band": [
+    "136.0",
+    "149.6"
+  ],
+  "scenario": [
+    {
+      "growth": "0",
+      "multiple": "17",
+      "metric_2029": "6.8",
+      "target": "115.6",
+      "return_pct": "-34.87323943661971830985915493",
+      "annual_return_pct": "-13.31981579663885150975885501"
+    },
+    {
+      "growth": "0.08",
+      "multiple": "23",
+      "metric_2029": "8.5660416",
+      "target": "197.0189568",
+      "return_pct": "10.99659538028169014084507040",
+      "annual_return_pct": "3.538821933660067814560728400"
+    },
+    {
+      "growth": "0.12",
+      "multiple": "27",
+      "metric_2029": "9.5535104",
+      "target": "257.9447808",
+      "return_pct": "45.32100326760563380281690140",
+      "annual_return_pct": "13.26858169926696896340897390"
+    }
+  ],
+  "base_discounted_at_10_pct": "148.0232583020285499624342600",
+  "tool_output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       177.50 USD\n  总股本 (Shares):    370.01M\n  计算市值:           65.68B USD\n  报告市值:           67.04B USD\n  偏差:               2.03%\n\n  ⚠️  偏差 2.0% 在可接受范围, 可能因股价波动/股本变化\n============================================================\n交叉验证: 2025 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 6,112.85 USD million\n\n  ✅ SEC_or_issuer       : 6,112.69 USD million  (偏差 0.00%)\n  ✅ StockAnalysis       : 6,113.00 USD million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 6,112.85 USD million\n============================================================\n交叉验证: 2025 common net income (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,267.93 USD million\n\n  ✅ SEC_or_issuer       : 1,267.87 USD million  (偏差 0.01%)\n  ✅ StockAnalysis       : 1,268.00 USD million  (偏差 0.01%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 1,267.93 USD million\n============================================================\n交叉验证: cash-basis check (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 3,469.82 USD million\n\n  ✅ SEC_or_issuer       : 3,451.65 USD million  (偏差 0.52%)\n  ✅ StockAnalysis       : 3,488.00 USD million  (偏差 0.52%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 3,469.82 USD million\n============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 177.50\n\n  P/FCF:     177.50 / 6.8 = 26.10x\n  FCF Yield: 3.83%\n  股息率:    4.88 / 177.50 = 2.75%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+  "caveat": "REIT metric is normalized AFFO/share, VST normalized FCFbG-derived owner cash/share, not GAAP EPS or textbook FCF. Cash checks flagged where definitions differ."
+}

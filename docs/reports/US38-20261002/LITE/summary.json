@@ -1,0 +1,14 @@
+{
+  "ticker": "LITE",
+  "company": "Lumentum Holdings Inc.",
+  "sector": "光通信器件与系统",
+  "research_date": "2026-10-02",
+  "quote": {"price": 971.26, "currency": "USD", "asof": "2026-09-30 regular-session close", "source_url": "https://stockanalysis.com/stocks/lite/history/", "verified": true, "note": "直接读取历史Close及Adjusted Close均971.26，与原图片一致，不能擅改97.126；单一行情商、非即时价。统计页未列拆股，普通股而非ADR；另需考虑可转债及优先股稀释。"},
+  "financial_period": "FY2026 ended 2026-06-27; SEC 10-K filed 2026-08-17",
+  "recommendation": {"rating": "等待价格", "buy_low": 400, "buy_high": 520, "currency": "USD", "basis": "正常化前瞻调整后EPS假设16美元×25—32.5倍PE；Q1 FY2027指引EPS中点4.20年化16.80后预留波动，须验证充分稀释及现金兑现。", "conditions": "EPS16仍有订单、良率与现金流支持；客户项目未显著取消，扩产和可转证券稀释不超出模型。", "holder_action": "跟踪毛利、FCF、客户集中度和充分稀释股数；估值扩张而现金兑现落后或核心客户转单时降低风险，不把非现金亏损等同无经济成本。"},
+  "thesis": "高速激光器和光学系统受益AI链路升级，但极高估值要求短缺利润能够长期兑现为每股现金。",
+  "key_risk": "光学扩产周期、少数客户及技术路线变化叠加可转债权益化稀释，可能使EPS增长无法支撑股价。",
+  "confidence": "中",
+  "source_limitations": ["971.26仅由一个独立行情商的历史页面核验，非即时成交报价。", "客户集中度精确比例来自二手年报分析，未完成一手附注核验。", "SEC结构化数据不能完整验证优先股、可转债及治理条款。", "第三方毛利分类排除部分摊销，与公司GAAP不同；报告采用公司口径。", "正常化前瞻EPS和三年增速为分析假设，非公司年度承诺。"],
+  "report_file": "LITE研究报告-20261002.md"
+}

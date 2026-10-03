@@ -1,0 +1,32 @@
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：APH
+======================================================================
+
+  [92m✅ 通过[0m [ 2] 营业收入 · FY2023                        报告:     12555.00 
+                                                    https://stockanalysis.com/stocks/aph/financials/income-statement/: 12555.00 (偏差 0.00%)
+  [92m✅ 通过[0m [ 8] GAAP归属净利润 · FY2025                   报告:      4270.30 
+                                                    https://stockanalysis.com/stocks/aph/financials/income-statement/: 4270.00 (偏差 0.01%)  |  https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx: 4270.30 (偏差 0.00%)
+  [92m✅ 通过[0m [ 5] GAAP归属净利润 · FY2022                   报告:      1902.00 
+                                                    https://stockanalysis.com/stocks/aph/financials/income-statement/: 1902.00 (偏差 0.00%)
+  [92m✅ 通过[0m [15] 经营现金流 · FY2025                       报告:      5374.70 
+                                                    https://stockanalysis.com/stocks/aph/financials/cash-flow-statement/: 5375.00 (偏差 0.01%)  |  https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx: 5374.70 (偏差 0.00%)
+  [92m✅ 通过[0m [18] 自由现金流，第三方基础口径 · FY2025               报告:      4378.00 
+                                                    https://stockanalysis.com/stocks/aph/financials/cash-flow-statement/: 4378.00 (偏差 0.00%)
+  [92m✅ 通过[0m [16] 自由现金流，第三方基础口径 · FY2023               报告:      2156.00 
+                                                    https://stockanalysis.com/stocks/aph/financials/cash-flow-statement/: 2156.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 6  |  通过: [92m6[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================
+{
+  "verdict": "PASS",
+  "pass_count": 6,
+  "warn_count": 0,
+  "fail_count": 0,
+  "total": 6,
+  "fail_items": [],
+  "warn_items": []
+}

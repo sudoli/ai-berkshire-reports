@@ -1,0 +1,234 @@
+Retrieved 2026-10-02
+URL https://investor.asml.com/news-releases/news-release-details/q4-2025-financial-results
+
+ASML reports €32.7 billion total net sales and €9.6 billion net income in 2025 | Wed, 01/28/2026 - 07:00
+Skip to main navigation
+ASML Logo
+Go to asml.com
+Investors
+News
+Back
+News overview
+Press releases & announcements
+Media library
+News alerts
+Share information
+Back
+Share information overview
+Share price
+SEC filings
+Analyst coverage
+Quarterly results
+Annual reports
+Financial events
+Back
+Financial events overview
+Capital Markets Days
+Shareholder meetings
+Investor resources
+Back
+Investor resources overview
+Financial overview
+Factsheet
+Capital return & financing
+Sustainability overview
+Share buyback
+Contact Investor Relations
+Contact Media Relations
+Go to asml.com
+Search
+Search
+Investors
+News
+Press releases and announcements
+ASML reports €32.7 billion total net sales and €9.6 billion net income in 2025
+ASML reports €32.7 billion total net sales and €9.6 billion net income in 2025
+Press release -
+January 28, 2026
+ASML expects 2026 total net sales to be between €34 billion and €39 billion, with a gross margin between 51% and 53%
+Veldhoven, the Netherlands
+Today, ASML Holding NV (ASML) has published its 2025 fourth-quarter and full-year results.
+Q4 total net sales of €9.7 billion, gross margin of 52.2%, net income of €2.8 billion
+Quarterly net bookings in Q4 of €13.2 billion of which €7.4 billion is EUV
+2025 total net sales of €32.7 billion, gross margin of 52.8%, net income of €9.6 billion
+Backlog at the end of 2025 of €38.8 billion
+ASML expects Q1 2026 total net sales between €8.2 billion and €8.9 billion, and a gross margin between 51% and 53%
+ASML expects 2026 total net sales to be between €34 billion and €39 billion, with a gross margin between 51% and 53%
+ASML announces a new share buyback program of up to €12 billion to be executed by December 31, 2028
+ASML to strengthen focus on engineering and innovation by streamlining the Technology and IT organizations
+| (Figures in millions of euros unless otherwise indicated) | Q3 2025 | Q4 2025 | FY 2024 | FY 2025
+| Total net sales | 7,516 | 9,718 | 28,263 | 32,667
+| ...of which Installed Base Management sales 1 | 1,962 | 2,134 | 6,494 | 8,193
+|   |   |   |   |
+| New lithography systems sold (units) | 66 | 94 | 380 | 300
+| Used lithography systems sold (units) | 6 | 8 | 38 | 27
+|   |   |   |   |
+| Net bookings2  | 5,399 | 13,158 | 18,8993 | 28,0353
+| Backlog4 |   |   | 35,938 | 38,797
+|   |   |   |   |
+| Gross profit | 3,880 | 5,068 | 14,492 | 17,258
+| Gross margin (%) | 51.6 | 52.2 | 51.3 | 52.8
+|   |   |   |   |
+| Net income | 2,125 | 2,840 | 7,572 | 9,609
+| EPS (basic; in euros) | 5.49 | 7.35 | 19.25 | 24.73
+|   |   |   |   |
+| End-quarter cash and cash equivalents and short-term investments | 5,128 | 13,322 | 12,741 | 13,322
+(1) Installed Base Management sales equals our net service and field option sales.(2) Net bookings include all system sales orders and inflation-related adjustments, for which written authorizations have been accepted.(3) The sum of quarterly net bookings over the full year.(4) Backlog contains accumulated sales values for all system sales orders and inflation-related adjustments, for which written authorizations have been accepted, and not yet recorded in total net sales.Numbers have been rounded for readers' convenience. A complete summary of US GAAP Consolidated Statements of Operations is published on www.asml.com.
+CEO statement and outlook
+"ASML reported another record year in 2025, with total net sales of €32.7 billion and a gross margin of 52.8%. The fourth quarter was particularly strong: we reported record total net sales of €9.7 billion, including the revenue recognized for two High NA systems. Our gross margin for Q4 was in line with our guidance at 52.2%.
+"In the last months, many of our customers have shared a notably more positive assessment of the medium-term market situation, primarily based on more robust expectations of the sustainability of AI-related demand. This is reflected in a marked step-up in their medium-term capacity plans and in our record order intake.
+"Therefore, we expect 2026 to be another growth year for ASML's business, largely driven by a significant increase in EUV sales and growth in our installed base business sales1. We continue to invest in people and footprint to support that growth in 2026 and beyond.
+"We expect first-quarter 2026 total net sales between €8.2 billion and €8.9 billion, with a gross margin between 51% and 53%. We expect R&D costs of around €1.2 billion and SG&A costs of around €0.3 billion. For the full year 2026, we expect total net sales to be between €34 billion and €39 billion, with a gross margin between 51% and 53%," said ASML President and Chief Executive Officer Christophe Fouquet.
+Update dividend and share buyback program
+ASML intends to declare a total dividend for the year 2025 of €7.50 per ordinary share, which is a 17% increase compared to 2024. An interim dividend of €1.60 per ordinary share will be made payable on February 18, 2026. Recognizing this interim dividend and the two interim dividends of €1.60 per ordinary share paid in 2025, this leads to a final dividend proposal to the Annual General Meeting of €2.70 per ordinary share.
+In the fourth quarter, we purchased around €1.7 billion worth of shares under the 2022–2025 share buyback program. This program finished in December 2025, having repurchased a total of €7.6 billion out of the up to €12 billion program.
+ASML announces a new share buyback program, effective today and to be executed by December 31, 2028. We intend to repurchase shares of an amount up to €12 billion, of which we expect a total of up to 2 million shares will be used to cover employee share plans. We intend to cancel the remainder of the shares repurchased.
+The share buyback program will be executed within the limitations of the existing authority granted by the AGM on April 23, 2025, and of the authority to be granted by future AGMs. The share buyback program may be suspended, modified or discontinued at any time.
+Details of the share buyback program as well as transactions pursuant thereto, and details of the dividend are published on ASML's website.
+Strengthening our focus on engineering and innovation
+The semiconductor ecosystem is poised to experience significant growth in the coming years, and ASML is well positioned to leverage this positive development. To prepare for future opportunities, ASML intends to strengthen its focus on engineering and innovation in critical areas of the company through the streamlining of the Technology and the IT organizations. Employees and employee representatives are being informed of the proposed changes, and further details will be made available today on www.asml.com at 08:30 CET.
+Quarterly video interview, annual press release conference and investor call
+With this press release, ASML is publishing a video interview in which CEO Christophe Fouquet and CFO Roger Dassen discuss the 2025 fourth-quarter, full-year results and outlook for 2026. This video and the video transcript can be viewed on www.asml.com shortly after the publication of this press release.
+CEO Christophe Fouquet and CFO Roger Dassen will host a press conference on January 28, 2026, at 11:00 Central European Time, which will also be accessible via a live webcast on www.asml.com.
+An investor call for both investors and the media will be hosted by CEO Christophe Fouquet and CFO Roger Dassen on January 28, 2026 at 15:00 Central European Time / 09:00 US Eastern Time. Details can be found on our website.
+About ASML
+ASML is a leading supplier to the semiconductor industry. The company provides chipmakers with hardware, software and services to mass produce the patterns of integrated circuits (microchips). Together with its partners, ASML drives the advancement of more affordable, more powerful, more energy-efficient microchips. ASML enables groundbreaking technology to solve some of humanity's toughest challenges, such as in healthcare, energy use and conservation, mobility and agriculture. ASML is a multinational company headquartered in Veldhoven, the Netherlands, with offices across EMEA, the US and Asia. Every day, ASML’s more than 44,000 employees (FTE) challenge the status quo and push technology to new limits. ASML is traded on Euronext Amsterdam and NASDAQ under the symbol ASML. Discover ASML – our products, technology and career opportunities – at www.asml.com.
+US GAAP Reporting
+ASML's primary accounting standard for quarterly earnings releases and annual reports is US GAAP, the accounting principles generally accepted in the United States of America. Quarterly summary US GAAP consolidated statements of operations, consolidated statements of cash flows and consolidated balance sheets are available on www.asml.com.
+The consolidated balance sheets of ASML Holding N.V. as of December 31, 2025, the related consolidated statements of operations and consolidated statements of cash flows for the quarter and twelve months ended December 31, 2025 as presented in this press release are unaudited.
+In addition to reporting financial figures in accordance with US GAAP, ASML also reports financial figures in accordance with International Financial Reporting Standards as adopted by the European Union ('IFRS') for statutory purposes. The most significant recurring differences between US GAAP and IFRS that affect ASML concerns the capitalization of certain product development costs, valuation of equity investments, and accounting for income taxes.
+2025 Annual Reports
+ASML will publish its 2025 Annual Report based on US GAAP and its 2025 Annual Report based on IFRS on February 25, 2026. Both reports will include sustainability statements in accordance with the Corporate Sustainability Reporting Directive. The reports and introductory video with CFO Roger Dassen will be published on our website.
+Regulated information
+This press release contains inside information within the meaning of Article 7(1) of the EU Market Abuse Regulation.
+Forward Looking Statements
+This document and related discussions contain statements that are forward-looking within the meaning of the U.S. Private Securities Litigation Reform Act of 1995, including statements with respect to plans, strategies, expected trends, including expected trends in the semiconductor industry and end markets, expected trends in product mix and geography, business environment trends, expected growth in the semiconductor industry by 2030, and the semiconductor ecosystem being poised to experience significant growth and ASML being well positioned to benefit, statements with respect to AI including the expected impact of AI demand on our business, industry and results and expected sustainability of AI related demand, statements with respect to EUV adoption, our expectation that lithography will remain at the heart of customer innovation, expected increase in critical lithography exposures, statements with respect to our product portfolio, expected demand, shipments, system backlog, outlook of market segments and geographies, outlook and expected financial results including outlook and expected results for Q1 2026, including net sales, Installed Base Management sales, gross margin, R&D costs, SG&A costs, outlook and expected financial results for full year 2026, including expected full year 2026 total net sales and growth, gross margin, annualized effective tax rate and IBM sales, expectations with respect to EUV and DUV demand and sales in 2026, statements made at our 2024 Investor Day, including revenue and gross margin model and opportunity for 2030, our expectation to continue to return significant amounts of cash to shareholders through growing dividends and share buybacks, intentions and expectations with respect to our share buyback program announced in January 2026, and statements with respect to dividends including 2025 dividends, statements with respect to expected performance and capabilities of our systems and customer outlook and plans including capacity expansion plans, statements with respect to our ESG strategy and commitments and other non-historical statements. You can generally identify these statements by the use of words like “may”, “expect”, “will”, “could”, “should”, “project”, “believe”, “anticipate”, “expect”, “plan”, “estimate”, “forecast”, “guide”, “potential”, “intend”, “continue”, “target”, “future”, “progress”, “goal”, “model”, “opportunity”, “commitment” and variations of these words or comparable words. These statements are not historical facts, but rather are based on current expectations, estimates, assumptions, plans and projections about our business and industry and our future financial results and readers should not place undue reliance on them. Forward-looking statements do not guarantee future performance and involve a number of substantial known and unknown risks and uncertainties. These risks and uncertainties include, without limitation, risks relating to customer demand, semiconductor equipment industry capacity, worldwide demand for semiconductors and semiconductor manufacturing capacity, lithography tool utilization and semiconductor inventory levels, general trends and consumer confidence in the semiconductor industry, the impact of general economic conditions, including the impact of the current macroeconomic and geopolitical environment on the semiconductor industry, semiconductor market conditions, the impact of AI on our industry and business and semiconductor demand and demand for our tools, the impact of inflation, interest rates, wars and geopolitical developments, the impact of pandemics, the performance of our systems, the success of technology advances and the pace of new product development and customer acceptance of and demand for new technologies and products, our production capacity and ability to adjust capacity to meet demand, supply chain capacity, timely availability of parts and components, raw materials, critical manufacturing equipment and qualified employees, our ability to produce systems to meet demand, the number and timing of systems ordered, shipped and recognized in revenue, risks relating to fluctuations in orders and our ability to orders into sales and risks relating to the realization of our backlog, the risk of order cancellations, delays or push outs and restrictions on shipments of systems, including ordered systems, under export controls, risks relating to the trade environment, import/export and national security regulations and orders and their impact on us, including the impact of changes in export regulations and the impact of such regulations on our ability to obtain necessary licenses and to sell our systems and provide services to certain customers, the impact of the tariff announcements, exchange rate fluctuations, changes in tax rates, available liquidity and free cash flow and liquidity requirements, our ability to refinance our indebtedness, available cash and distributable reserves for, and other factors impacting, dividend payments and share repurchases, the number of shares that we repurchase under our share repurchase program, our ability to enforce patents and protect intellectual property rights and the outcome of intellectual property disputes and litigation, our ability to meet ESG goals and commitments and execute our ESG strategy, other factors that may impact ASML’s business or financial results, and other risks indicated in the risk factors included in ASML’s Annual Report on Form 20-F for the year ended December 31, 2024 and other filings with and submissions to the US Securities and Exchange Commission. These forward-looking statements are made only as of the date of this document. We undertake no obligation to update any forward-looking statements after the date of this report or to conform such statements to actual results or revised expectations, except as required by law.
+Contact information
+Monique Mols
+Head of Media Relations
++31652844418
+Sarah de Crescenzo
+Media relations manager, US
++19258998985
+Karen Lo
+Communications Asia
++886 939788635
+Jim Kavanagh
+VP Investor Relations Worldwide
++31402683938
+Pete Convertito
+Director Investor Relations Americas
++12039191714
+Peter Cheang
+Director Investor Relations Asia
++886 3 6596771
+Download PDF Version
+PDF Version
+PDF
+Download Financial statements US GAAP PDF
+Financial statements US GAAP PDF
+PDF
+Investors
+News
+/
+Press releases and announcements
+/
+ASML reports €32.7 billion total net sales and €9.6 billion net income in 2025
+/
+Invest
+Share information
+Quarterly results
+Annual reports
+Financial events
+Investor resources
+Stay informed
+Share buyback
+Media library
+Get in touch
+Contact Investor Relations
+Contact Media Relations
+Go to asml.com
+Social Media
+Manage cookie settings
+Copyright
+© 2019-2026
+(ASML)
+All Rights Reserved
+Terms of use
+Privacy
+Cookies
+Terms & conditions
+Accessibility
+
+LINKS
+#main-menu
+https://www.asml.com/en
+https://www.asml.com/en
+https://investor.asml.com/
+/news
+/news/press-releases-and-announcements
+/news/media-library
+/news/news-subscription
+/share-information
+/share-information/share-price
+/share-information/sec-filings
+/share-information/analyst-coverage
+/quarterly-results
+/annual-reports
+/financial-events
+/financial-events/capital-markets-days
+https://www.asml.com/en/investors/shares/shareholder-meetings
+/investor-resources
+/investor-resources/financial-overview
+/investor-resources/factsheet
+/investor-resources/capital-return-and-financing
+/investor-resources/sustainability
+/investor-resources/share-buyback
+/contact-investor-relations
+/contact-media-relations
+https://www.asml.com/en
+https://investor.asml.com/
+https://investor.asml.com/news
+https://investor.asml.com/news/press-releases-and-announcements
+https://www.asml.com/en/
+https://www.asml.com/en/investors
+https://www.asml.com/en/
+https://www.asml.com/en/
+https://www.asml.com/en/
+https://www.asml.com/en/investors/financial-results/q4-2025
+https://www.asml.com/en/
+https://www.asml.com/en/
+https://www.asml.com/en/
+tel:+31652844418
+tel:+19258998985
+tel:+886939788635
+tel:+31402683938
+tel:+12039191714
+tel:+88636596771
+/node/6281/pdf
+/static-files/aa0c0d33-e7b4-48d3-9715-1b70c6335dfb
+https://investor.asml.com/
+https://investor.asml.com/news
+https://investor.asml.com/news/press-releases-and-announcements
+
+/share-information
+/quarterly-results
+/annual-reports
+/financial-events
+/investor-resources
+/news/share-buyback
+/news/media-library
+/contact-investor-relations
+/contact-media-relations
+https://www.asml.com/en
+https://www.facebook.com/asml/
+https://www.linkedin.com/company/asml
+https://twitter.com/asmlcompany
+https://www.youtube.com/channel/UCIT9d3JjHEnsVi_w9guSXvA
+http://www.instagram.com/lifeatasml
+https://www.glassdoor.com/Reviews/ASML-Reviews-E5781.htm
+https://www.asml.com/en/terms-of-use
+https://www.asml.com/en/privacy
+https://www.asml.com/en/cookie-notice
+https://www.asml.com/en/general-terms-and-conditions
+https://www.asml.com/en/accessibility

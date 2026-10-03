@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="HBM提高长期价值捕获，但存储制造仍需以中周期而非极高峰值利润定价。"><meta name="source-sha256" content="fa5b2258bc47c8b7f6bf44b6e6363c24f937a97103916db59bc527cd819ebb93">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>美光科技（MU）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="MU%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / MU / 2026-10-02</div>
+<h1>Micron Technology, Inc.<span>DRAM NAND与HBM存储半导体 · 公司研究</span></h1><p class="hero-deck">HBM提高长期价值捕获，但存储制造仍需以中周期而非极高峰值利润定价。</p>
+<div class="hero-meta"><span>FY2026 Q4及全年，截至2026-09-03，2026-09-30发布</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$1,078.44<small>2026-10-02 11:18 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>暂不买入<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">盘中非收盘；Yahoo 11:22:50 EDT为1075.39。图价1065.11未核验，相差+1.25%；不可仅凭旧价格记忆判断多了一个零。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司与行业赚钱机制</a></li><li><a href="#section-3">第二步：最新利润很高，但不是估值终点</a></li><li><a href="#section-4">第三步：护城河与产业利润捕获</a></li><li><a href="#section-5">第四步：管理层与最强反方观点</a></li><li><a href="#section-6">第五步：中周期估值与三个情景</a></li><li><a href="#section-7">第六步：行动</a></li><li><a href="#section-8">来源与审计记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司与行业赚钱机制</a></li><li><a href="#section-3">第二步：最新利润很高，但不是估值终点</a></li><li><a href="#section-4">第三步：护城河与产业利润捕获</a></li><li><a href="#section-5">第四步：管理层与最强反方观点</a></li><li><a href="#section-6">第五步：中周期估值与三个情景</a></li><li><a href="#section-7">第六步：行动</a></li><li><a href="#section-8">来源与审计记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>美光科技（MU）研究报告</h1>
+<blockquote>
+<p>研究日期/信息截止：2026-10-02。美元普通股。StockAnalysis当日11:18 EDT盘中价 <strong>1,078.44</strong>；Yahoo 11:22:50 EDT为1,075.39，非收盘。用户图片标称2026-09-30的1,065.11未经独立核验，与基准相差+1.25%。两个行情平台和发行人最新经营规模均支持“不能因旧记忆就认定股价多了一个零”。最新财务期FY2026第四季度及全年，截至2026-09-03，9月30日发布。约11.3亿基本股估算市值1.2186万亿美元，最新精确基本股数仍需新10-K确认。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，但长期中周期利润不可直接观察，AI分析置信度中等。最危险的偏见是“低市盈率等于低估”：存储企业往往在盈利最强时显示最低PE。本报告承认发行人验证的FY26业绩确实出现跃升，不以旧行业印象否定事实；同时不把这一利润水平无条件当作永久现金流。中周期情景只是研究假设，可能低估结构性变化，也可能仍高估长期盈利。</p>
+<h2 id="section-2">第一步：公司与行业赚钱机制</h2>
+<p>美光研发、制造和销售DRAM、NAND及相关存储产品。客户包括云平台、服务器和设备制造商；DRAM提供工作内存，NAND用于持久存储。HBM通过堆叠、先进封装和客户认证为AI加速器提供高带宽，带来更高价值，但仍需生产良率、成本、供应及客户量产认证支持，不是无制造成本的软件许可。</p>
+<p>公司拥有制造资产与长期资本投入承诺，利润由比特销量、每比特售价、产品组合、每比特成本和产能利用率共同决定。需求增长时，扩产有时滞，价格可快速上升；供应到位或客户去库存时，售价可能比单位成本下降更快。HBM认证和长期客户协议有助于可见性，但不能直接证明全行业进入没有周期的时代。</p>
+<p>单位：百万美元；历年GAAP净利和OCF，FY26来自最新发行人业绩公告，其10-K结构化数据在读取时尚未同步。</p>
+<div aria-label="第一步：公司与行业赚钱机制" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">营收</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2022</td>
+<td style="text-align: right;">30,758</td>
+<td style="text-align: right;">8,687</td>
+<td style="text-align: right;">15,181</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">15,540</td>
+<td style="text-align: right;">-5,833</td>
+<td style="text-align: right;">1,559</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">25,111</td>
+<td style="text-align: right;">778</td>
+<td style="text-align: right;">8,507</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">37,378</td>
+<td style="text-align: right;">8,539</td>
+<td style="text-align: right;">17,525</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">133,188</td>
+<td style="text-align: right;">84,969</td>
+<td style="text-align: right;">89,675</td>
+</tr>
+</tbody>
+</table></div>
+<p>这一序列显示两种事实：上一轮价格下行可使利润转负；新一轮AI与存储需求又产生极强盈利。既不能抹去2026的真实变化，也不能抹去资本密集周期历史。第三方部分历史毛利/营业利润口径与发行人分类有别，本表仅采用交叉一致的营收、净利和经营现金流。</p>
+<h2 id="section-3">第二步：最新利润很高，但不是估值终点</h2>
+<p>FY26 Q4营收542.29亿美元，GAAP净利润377.01亿美元，EPS 32.87；non-GAAP EPS 33.42。GAAP毛利率86.8%、经营利润率80.7%，这是发行人明确披露的极高水平，而不是本报告估算。全年GAAP EPS 74.33；不能简单取Q4 EPS乘四，当作无周期的正常EPS。</p>
+<p>新业务分类下，本季云内存收入162.83亿美元，核心数据中心180.02亿美元，移动和客户端131.14亿美元，汽车与嵌入式68.24亿美元；不能把数据中心全部视为HBM，更不能把各客户的AI投资当作美光收入。下一季度指引收入615亿美元±15亿美元、GAAP EPS 37.84±1.00、non-GAAP EPS 38.15±1.00；指引毛利率仍高，但属于近端可见性而非跨周期保证。</p>
+<p>现金质量要拆开看：</p>
+<ul>
+<li>全年OCF896.75亿美元，固定资产支出307.12亿美元，简单FCF为589.63亿美元。发行人调整后FCF623.08亿美元，差额33.45亿美元来自资产处置收入0.29亿美元及政府补助33.16亿美元；不能把政府补助当作永续经营利润。</li>
+<li>9月3日现金383.64亿美元、短期投资50.70亿美元、长期可交易投资300.19亿美元，共734.53亿美元；公告含受限现金的头条为约734.8亿美元，范围不同。短期债务4.91亿、长期债务46.88亿美元，合计51.79亿美元，净现金682.74亿美元。</li>
+<li>非流动客户合同负债128.95亿美元，是未来交付义务，不是无条件新增利润。收款先于交货有利现金，但也要求未来供货及履约。</li>
+<li>FY26 SBC13.33亿美元，在当前巨额利润中占比不高，仍属股东成本。下一轮盈利下行时，固定薪酬、折旧和资本投入不会同比消失。</li>
+</ul>
+<blockquote>
+<p>段永平式追问：如果今天的高售价回落，保住技术竞争力所需的资本开支能否仍由经营现金覆盖？</p>
+</blockquote>
+<h2 id="section-4">第三步：护城河与产业利润捕获</h2>
+<p>DRAM先进工艺、良率积累、客户认证和大规模制造资金形成门槛；HBM把产品从更可替代的标准内存推向更复杂的系统协同。竞争者包括SK海力士、三星及其他细分存储供应商。供应结构集中不等于价格不会下跌：每个制造商都可能追求份额和更先进工艺，而技术进步本身会增加供给。</p>
+<div aria-label="第三步：护城河与产业利润捕获" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">优势</th>
+<th scope="col">价值来源</th>
+<th scope="col">仍然存在的风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工艺与规模</td>
+<td>降低每比特成本、摊薄研发</td>
+<td>扩产和节点迁移成本高，良率失误破坏优势</td>
+</tr>
+<tr>
+<td>HBM认证和封装</td>
+<td>稀缺产能、客户协同、产品差异</td>
+<td>客户集中、第二供应商认证、后续代际份额变化</td>
+</tr>
+<tr>
+<td>产品组合</td>
+<td>云、数据中心、终端和汽车需求</td>
+<td>共用供给和宏观库存周期，不是真正完全分散</td>
+</tr>
+<tr>
+<td>净现金</td>
+<td>能穿越下行并投资技术</td>
+<td>未来工厂与履约需求消耗现金，不能全部立即分红</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI带来的更高内存含量是真实机会；利润捕获取决于长期供应纪律和高价值产品占比，不只取决于AI服务器数量。战略客户协议的价格重谈、最低采购、取消及供货责任细节未完整公开，本报告不把它们视为永久锁定毛利的合同。</p>
+<h2 id="section-5">第四步：管理层与最强反方观点</h2>
+<p>Sanjay Mehrotra强调技术、产品和制造投资，以及长期客户协议。最新全年307.12亿美元固定资产投入表明公司在利用强周期扩张能力；这可能保护长期份额，也可能在高价格之后形成新增供给。分红提高至季度0.15美元，9月30日宣告、10月29日支付，截止日并未已经支付该笔股息。资本配置应以全周期自由现金流和技术回报评价，而不是以单年利润纪录评价。</p>
+<p>本次未完整复核新年度10-K、精确期末股数、管理层持股与所有补助条件。上一份SEC结构化季度事实截至5月28日，不冒充9月全年审计数据。</p>
+<p>最强反面论证：市场不是忽略了低PE，而是可能高估了超高利润持续时间。即便HBM改善行业结构，86.8%季度毛利率也可能刺激客户替代、压价及竞争者扩产。利润下行时PE从低变高，并不一定是股价上涨造成。</p>
+<div aria-label="第四步：管理层与最强反方观点" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观风险评价</th>
+<th scope="col">观察及失效条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业供给过快、价格回落</td>
+<td>中高可能/大影响</td>
+<td>库存天数上升、同类产品报价下行且资本投入继续加速</td>
+</tr>
+<tr>
+<td>HBM代际认证/良率落后</td>
+<td>中等可能/大影响</td>
+<td>下一代客户认证推迟、单位成本高于计划、份额流失</td>
+</tr>
+<tr>
+<td>客户预付款美化现金</td>
+<td>中等可能/中大影响</td>
+<td>履约支出追上收款，FCF在营收增长时反而恶化</td>
+</tr>
+<tr>
+<td>地缘与出口/补助约束</td>
+<td>中等可能/大影响</td>
+<td>销售资格、技术出口或扩产补助条件改变</td>
+</tr>
+</tbody>
+</table></div>
+<p>研究失效不是短期股价跌幅，而是无法维持中周期35美元经济EPS，或资本开支与现金流失衡。如果看到长期有效且可执行的最低售价合同、新增供给纪律和高回报持续数据，也应承认保守中周期假设可能过低，向上重估而不是固执等待旧价。</p>
+<h2 id="section-6">第五步：中周期估值与三个情景</h2>
+<p>设正常化年度收入1100亿美元、毛利率55%、经营费用120亿美元、税率17%、稀释11.5亿股，忽略小额净利息：</p>
+<p>EPS=(1100×55%−120)×83%÷11.5≈35.00美元。SBC和持续研发已包含于费用，折旧包含在成本中；这不是FY27指引，也不是宣称收入即将降至1100亿美元。它刻意低于当前高峰利润，用于检验资本密集企业跨周期的可支付价格。未来工厂支出还可能令FCF低于净利，故不采用高成长软件倍数。</p>
+<p>当前价格对应实际FY26 GAAP EPS 74.33约14.51倍，看似不高；对35美元中周期EPS却为30.81倍。净现金虽提供保护，但仍承担未来扩产和交货义务，本模型未将其另行全额加回，避免过度乐观或与收益口径重复计价。</p>
+<p>从35美元中周期起点外推三个盈利年度至约2029年，增长率指中周期每股盈利能力，不是从FY26峰值74.33直接增长；终值反映届时仍会存在存储周期。股息、税费、汇率不计。</p>
+<div aria-label="第五步：中周期估值与三个情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">中周期EPS年变化</th>
+<th scope="col" style="text-align: right;">期末EPS</th>
+<th scope="col" style="text-align: right;">期末PE</th>
+<th scope="col" style="text-align: right;">三年后目标价</th>
+<th scope="col" style="text-align: right;">相对1,078.44回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：供给扩张、价格回撤</td>
+<td style="text-align: right;">-15%</td>
+<td style="text-align: right;">21.4944</td>
+<td style="text-align: right;">10倍</td>
+<td style="text-align: right;">214.94</td>
+<td style="text-align: right;">-80.07%</td>
+</tr>
+<tr>
+<td>基准：HBM改善结构但周期仍在</td>
+<td style="text-align: right;">+5%</td>
+<td style="text-align: right;">40.5169</td>
+<td style="text-align: right;">13倍</td>
+<td style="text-align: right;">526.72</td>
+<td style="text-align: right;">-51.16%</td>
+</tr>
+<tr>
+<td>乐观：高价值内存持续扩大</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">68.3594</td>
+<td style="text-align: right;">16倍</td>
+<td style="text-align: right;">1,093.75</td>
+<td style="text-align: right;">+1.42%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准目标526.72按12%折现三年，对应今日374.91美元。若要从当前价格获得12%年回报、三年后仍给13倍，需届时EPS约116.55美元；并非物理上不可能，但需要很高利润长期保留，不能靠“现在PE低”证明。</p>
+<p><strong>条件购买研究区间280–350美元=35美元中周期EPS×8–10倍</strong>，低于基准折现值，为波动、资本开支和假设误差留折扣。该区间不是预测必到，而是本套保守证据下愿意进一步研究的支付范围。采用不同中周期利润会得出不同区间：投资者若认同盈利永久抬升，应先提供售价、成本及供给的证据，而非用股价反推结论。</p>
+<h2 id="section-7">第六步：行动</h2>
+<p>评级“暂不买入”：实际1,078.44和图片1,065.11均不满足中周期安全边际。空仓者可等待更低价格，或等待足以证明结构性盈利的新数据。持有者应建立跨周期退出和再评估纪律；不要因为股价下跌令峰值PE更低而自动加仓，也不要仅因本报告保守情景就机械清仓。价格进入280–350、35美元正常化盈利仍成立、扩产资金可控，才构成条件加仓研究；HBM技术落后、长期失去客户或资本配置失衡则需重估甚至退出。</p>
+<p>镜子测试：拥有的是必须不断再投资的制造企业，不是永不贬值的内存收费权。能力圈和制造壁垒可理解，当前价格关未通过；没有个人资金期限和风险资料，不给仓位比例或保证收益。</p>
+<h2 id="section-8">来源与审计记录</h2>
+<p>均于2026-10-02读取，未使用之后事件：</p>
+<ul>
+<li><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx" rel="noreferrer">FY2026 Q4/全年发行人公告，2026-09-30</a>：实际季度/全年、现金、资本开支和指引。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json" rel="noreferrer">SEC公司事实</a>：FY22–FY25年报及FY26前三季度；最新全年尚未同步，不当作全年审计认证。</li>
+<li><a href="https://stockanalysis.com/stocks/mu/financials/" rel="noreferrer">StockAnalysis财务与盘中行情</a>、<a href="https://stockanalysis.com/stocks/mu/statistics/" rel="noreferrer">股数/拆股统计</a>、<a href="https://finance.yahoo.com/quote/MU/" rel="noreferrer">Yahoo独立报价展示</a>。</li>
+</ul>
+<p>网站最新拆股记录为2000-05-02的2拆1，无证据要求把2026图价另外除以十。financial_rigor对FY26营收133,188、净利84,969、现金及投资73,453百万美元进行发行人与第三方交叉，金额一致；同一新闻稿的转载不算独立来源。最新基本股数约11.3亿与6月SEC11.2939亿近似，年度稀释11.43亿不能用于同一基础市值而不注明。Decimal复算现金、两种FCF、正常化EPS、目标和回报。report_audit按15%、固定种子42抽取5项，其中2项为模型假设/计算；补充最新年度事实后共6项财务数字双源无超限差异，三情景价格/回报算术核验通过。“35美元中周期EPS”、8–10倍支付范围和情景不是外部认证事实，抽检不代表新年报已经审计或周期风险消失。AI置信度中等，投资不确定性主要在长期利润而非已公布的峰值业绩。本报告仅作研究资料。</p></article><footer class="report-footer"><span>MU · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

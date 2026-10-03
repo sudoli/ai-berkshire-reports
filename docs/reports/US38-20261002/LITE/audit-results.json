@@ -1,0 +1,89 @@
+{
+  "scope": "15% deterministic random sample; forward scenarios checked separately, not externally certified; single-source historical checks explicitly identified",
+  "results": [
+    {
+      "id": 2,
+      "label": "收入 · FY2024",
+      "reported_value": 1359.0,
+      "unit": "",
+      "line_number": 23,
+      "raw_text": "| 收入 | 1,767 | 1,359 | 1,645.0 | 3,014.0 |",
+      "fetched_value": 1359.0,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/income-statement/",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_type": "reported_fact",
+      "verification_level": "single_independent_provider"
+    },
+    {
+      "id": 8,
+      "label": "GAAP净利润 · FY2026",
+      "reported_value": -6935.1,
+      "unit": "",
+      "line_number": 24,
+      "raw_text": "| GAAP净利润 | -131.6 | -546.5 | 25.9 | -6,935.1 |",
+      "fetched_value": -6935.0,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/income-statement/",
+      "fetched_value2": -6935.1,
+      "fetched_source2": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633978.json",
+      "audit_type": "reported_fact",
+      "verification_level": "issuer_or_SEC_plus_independent_provider"
+    },
+    {
+      "id": 9,
+      "label": "经营现金流 · FY2023",
+      "reported_value": 179.8,
+      "unit": "",
+      "line_number": 25,
+      "raw_text": "| 经营现金流 | 179.8 | 24.7 | 126.3 | 751.4 |",
+      "fetched_value": 179.8,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_type": "reported_fact",
+      "verification_level": "single_independent_provider"
+    },
+    {
+      "id": 16,
+      "label": "资本开支 · FY2026",
+      "reported_value": 451.3,
+      "unit": "",
+      "line_number": 26,
+      "raw_text": "| 资本开支 | 128.5 | 133.0 | 231.0 | 451.3 |",
+      "fetched_value": 451.3,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/",
+      "fetched_value2": 451.3,
+      "fetched_source2": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633978.json",
+      "audit_type": "reported_fact",
+      "verification_level": "issuer_or_SEC_plus_independent_provider"
+    },
+    {
+      "id": 15,
+      "label": "资本开支 · FY2025",
+      "reported_value": 231.0,
+      "unit": "",
+      "line_number": 26,
+      "raw_text": "| 资本开支 | 128.5 | 133.0 | 231.0 | 451.3 |",
+      "fetched_value": 231.0,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_type": "reported_fact",
+      "verification_level": "single_independent_provider"
+    },
+    {
+      "id": 18,
+      "label": "自由现金流 · FY2024",
+      "reported_value": -108.3,
+      "unit": "",
+      "line_number": 27,
+      "raw_text": "| 自由现金流 | 51.3 | -108.3 | -104.7 | 300.1 |",
+      "fetched_value": -108.3,
+      "fetched_source": "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/",
+      "fetched_value2": null,
+      "fetched_source2": "",
+      "audit_type": "reported_fact",
+      "verification_level": "single_independent_provider"
+    }
+  ]
+}

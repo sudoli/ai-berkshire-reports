@@ -1,0 +1,43 @@
+{
+  "ticker": "EQIX",
+  "price": "1023.21",
+  "image_price": "1011.58",
+  "metric_2026": "41.5",
+  "market_cap": "100961855832.06",
+  "image_difference_pct": "1.149686628838055319401332600",
+  "valuation_multiple": "24.65566265060240963855421687",
+  "dividend_yield_pct": "2.017181223795701762101621368",
+  "band": [
+    "830.0",
+    "913.0"
+  ],
+  "scenario": [
+    {
+      "growth": "0.03",
+      "multiple": "18",
+      "metric_2029": "45.3481705",
+      "target": "816.2670690",
+      "return_pct": "-20.22487377957604010906851966",
+      "annual_return_pct": "-7.255285922854983095495388930"
+    },
+    {
+      "growth": "0.09",
+      "multiple": "23",
+      "metric_2029": "53.7437035",
+      "target": "1236.1051805",
+      "return_pct": "20.80659693513550493056166380",
+      "annual_return_pct": "6.503419092810731844166718500"
+    },
+    {
+      "growth": "0.12",
+      "multiple": "27",
+      "metric_2029": "58.3045120",
+      "target": "1574.2218240",
+      "return_pct": "53.85129386929369337672618520",
+      "annual_return_pct": "15.44285295215701032028374720"
+    }
+  ],
+  "base_discounted_at_10_pct": "928.7041175807663410969196093",
+  "tool_output": "============================================================\n市值验算 (Market Cap Verification)\n============================================================\n  股价 (Price):       1023.21 USD\n  总股本 (Shares):    98.67M\n  计算市值:           100.96B USD\n  报告市值:           100.96B USD\n  偏差:               0.00%\n\n  ✅ 验证通过, 偏差仅 0.00%\n============================================================\n交叉验证: 2025 revenue (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 9,217.00 USD million\n\n  ✅ SEC_or_issuer       : 9,217.00 USD million  (偏差 0.00%)\n  ✅ StockAnalysis       : 9,217.00 USD million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 9,217.00 USD million\n============================================================\n交叉验证: 2025 common net income (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 1,350.00 USD million\n\n  ✅ SEC_or_issuer       : 1,350.00 USD million  (偏差 0.00%)\n  ✅ StockAnalysis       : 1,350.00 USD million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 1,350.00 USD million\n============================================================\n交叉验证: cash-basis check (Cross-Validation)\n============================================================\n  数据来源数: 2\n  参考中位数: 979.00 USD million\n\n  ✅ SEC_or_issuer       : 979.00 USD million  (偏差 0.00%)\n  ✅ StockAnalysis       : 979.00 USD million  (偏差 0.00%)\n\n  ✅ 所有来源偏差 ≤ 1%, 数据一致\n\n  共识值 (加权中位数): 979.00 USD million\n============================================================\n估值指标验算 (Valuation Verification)\n============================================================\n  当前股价: 1023.21\n\n  P/FCF:     1023.21 / 41.5 = 24.66x\n  FCF Yield: 4.06%\n  股息率:    20.64 / 1023.21 = 2.02%\n\n  ✅ 以上指标均使用精确十进制计算, 无浮点误差\n",
+  "caveat": "REIT metric is normalized AFFO/share, VST normalized FCFbG-derived owner cash/share, not GAAP EPS or textbook FCF. Cash checks flagged where definitions differ."
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 2,
+    "label": "收入 · FY2023",
+    "reported_value": 19.409,
+    "unit": "",
+    "raw_text": "| 收入 | 17.606 | 19.409 | 21.505 | 23.769 |",
+    "line_number": 21,
+    "fetched_value": 19.409,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 19.409,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 8,
+    "label": "GAAP净利润 · FY2025",
+    "reported_value": 7.13,
+    "unit": "",
+    "raw_text": "| GAAP净利润 | 4.756 | 5.428 | 5.560 | 7.130 |",
+    "line_number": 22,
+    "fetched_value": 7.13,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 7.13,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 5,
+    "label": "GAAP净利润 · FY2022",
+    "reported_value": 4.756,
+    "unit": "",
+    "raw_text": "| GAAP净利润 | 4.756 | 5.428 | 5.560 | 7.130 |",
+    "line_number": 22,
+    "fetched_value": 4.756,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 4.756,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 16,
+    "label": "经营现金流 · FY2025",
+    "reported_value": 10.031,
+    "unit": "",
+    "raw_text": "| 经营现金流 | 7.838 | 7.302 | 8.056 | 10.031 |",
+    "line_number": 24,
+    "fetched_value": 10.031,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 10.031,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 15,
+    "label": "经营现金流 · FY2024",
+    "reported_value": 8.056,
+    "unit": "",
+    "raw_text": "| 经营现金流 | 7.838 | 7.302 | 8.056 | 10.031 |",
+    "line_number": 24,
+    "fetched_value": 8.056,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 8.056,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 18,
+    "label": "资本开支 · FY2023",
+    "reported_value": 0.36,
+    "unit": "",
+    "raw_text": "| 资本开支 | 0.442 | 0.360 | 0.183 | 0.179 |",
+    "line_number": 25,
+    "fetched_value": 0.36,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "fetched_value2": 0.36,
+    "fetched_source2": "https://stockanalysis.com/stocks/adbe/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  }
+]

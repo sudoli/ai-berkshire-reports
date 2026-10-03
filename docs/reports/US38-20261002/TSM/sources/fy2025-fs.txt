@@ -1,0 +1,166 @@
+URL https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf
+TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LIMITED AND SUBSIDIARIES
+Consolidated Condensed Balance Sheet
+(Expressed in Millions of New Taiwan Dollars ("NTD") and U.S. Dollars ("USD")) (1)
+December 31, 2025 (Audited) September 30, 2025 (Unaudited) December 31, 2024 (Audited) QoQ YoY
+ASSETS USD NTD  % NTD % NTD % NTD % NTD %
+Current Assets
+Cash and Cash Equivalents $ 88,025 $ 2,767,856  34.9 $ 2,470,759  33.6 $ 2,127,627  31.8 $ 297,097  12.0 $ 640,229  30.1 
+Investments in Marketable Financial Instruments  9,564  300,738  3.8  280,297  3.8  294,392  4.4  20,441  7.3  6,346  2.2 
+Accounts Receivable  8,962  281,791  3.6  307,814  4.2  272,088  4.1  (26,023)  (8.5)  9,703  3.6 
+Inventories  9,163  288,110  3.6  288,689  3.9  287,869  4.3  (579)  (0.2)  241  0.1 
+Other Current Assets  5,681  178,636  2.2  88,456  1.2  106,376  1.6  90,180  101.9  72,260  67.9 
+Total Current Assets  121,395  3,817,131  48.1  3,436,015  46.7  3,088,352  46.2  381,116  11.1  728,779  23.6 
+Non-current Assets
+Long-term Investments  5,482  172,370  2.2  148,978  2.0  149,040  2.2  23,392  15.7  23,330  15.7 
+Property, Plant and Equipment  117,410  3,691,841  46.5  3,499,341  47.6  3,234,980  48.3  192,500  5.5  456,861  14.1 
+Right-of-use, Intangible and Other Non-current Assets  8,004  251,682  3.2  269,773  3.7  219,566  3.3  (18,091)  (6.7)  32,116  14.6 
+Total Non-current Assets  130,896  4,115,893  51.9  3,918,092  53.3  3,603,586  53.8  197,801  5.0  512,307  14.2 
+Total Assets $ 252,291 $ 7,933,024  100.0 $ 7,354,107  100.0 $ 6,691,938  100.0 $ 578,917  7.9 $ 1,241,086  18.5 
+LIABILITIES AND SHAREHOLDERS' EQUITY
+Current Liabilities
+Accounts Payable $ 2,682 $ 84,330  1.1 $ 86,386  1.2 $ 74,227  1.1 $ (2,056)  (2.4) $ 10,103  13.6 
+Payables to Contractors and Equipment Suppliers  5,652  177,730  2.2  175,430  2.4  192,635  2.9  2,300  1.3  (14,905)  (7.7) 
+Cash Dividends Payable  9,072  285,258  3.6  259,326  3.5  220,419  3.3  25,932  10.0  64,839  29.4 
+Accrued Expenses and Other Current Liabilities  24,608  773,775  9.8  678,538  9.2  717,386  10.7  95,237  14.0  56,389  7.9 
+Current Portion of Bonds Payable and Bank Loans  4,355  136,926  1.7  76,226  1.0  59,858  0.9  60,700  79.6  77,068  128.8 
+Total Current Liabilities  46,369  1,458,019  18.4  1,275,906  17.3  1,264,525  18.9  182,113  14.3  193,494  15.3 
+Non-current Liabilities
+Bonds Payable  27,230  856,228  10.8  880,433  12.0  926,604  13.8  (24,205)  (2.7)  (70,376)  (7.6) 
+Other Non-current Liabilities  5,024  157,982  2.0  162,190  2.2  177,233  2.7  (4,208)  (2.6)  (19,251)  (10.9) 
+Total Non-current Liabilities  32,254  1,014,210  12.8  1,042,623  14.2  1,103,837  16.5  (28,413)  (2.7)  (89,627)  (8.1) 
+Total Liabilities  78,623  2,472,229  31.2  2,318,529  31.5  2,368,362  35.4  153,700  6.6  103,867  4.4 
+Equity Attributable to Shareholders of the Parent
+Capital Stock at Par Value  8,247  259,325  3.3  259,325  3.5  259,327  3.9  -  -  (2)  - 
+Capital Surplus  2,336  73,446  0.9  73,361  1.0  73,261  1.1  85  0.1  185  0.3 
+Legal Capital Reserve  9,895  311,147  3.9  311,147  4.2  311,147  4.6  -  -  -  - 
+Special Capital Reserve  2,776  87,284  1.1  181,555  2.5  -  -  (94,271)  (51.9)  87,284  - 
+Unappropriated Earnings  149,633  4,705,070  59.3  4,260,829  58.0  3,606,105  53.9  444,241  10.4  1,098,965  30.5 
+Others  (530)  (16,676)  (0.2)  (87,910)  (1.2)  38,705  0.6  71,234  81.0  (55,381)  (143.1) 
+Equity Attributable to Shareholders of the Parent  172,357  5,419,596  68.3  4,998,307  68.0  4,288,545  64.1  421,289  8.4  1,131,051  26.4 
+Noncontrolling Interests  1,311  41,199  0.5  37,271  0.5  35,031  0.5  3,928  10.5  6,168  17.6 
+Total Shareholders' Equity  173,668  5,460,795  68.8  5,035,578  68.5  4,323,576  64.6  425,217  8.4  1,137,219  26.3 
+Total Liabilities & Shareholders' Equity $ 252,291 $ 7,933,024  100.0 $ 7,354,107  100.0 $ 6,691,938  100.0 $ 578,917  7.9 $ 1,241,086  18.5 
+Note :
+(1) Amounts in New Taiwan dollars have been translated into U.S. dollars at the rate of NT$31.444 as of December 31, 2025.
+
+    
+TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LIMITED AND SUBSIDIARIES
+Consolidated Condensed Statements of Comprehensive Income (Unaudited)
+For the Three Months Ended December 31, 2025, September 30, 2025 and December 31, 2024
+(Expressed in Millions of New Taiwan Dollars ("NTD") and U.S. Dollars ("USD") (1)
+Except for Per Share Amounts and Shares Outstanding)
+4Q 2025 3Q 2025 4Q 2024 QoQ YoY
+USD NTD  % NTD % NTD % NTD % NTD %
+Net Revenue $ 33,731 $ 1,046,090  100.0 $ 989,918  100.0 $ 868,461  100.0 $ 56,172  5.7 $ 177,629  20.5 
+Cost of Revenue  (12,708)  (394,103)  (37.7)  (401,375)  (40.5)  (356,082)  (41.0)  7,272  (1.8)  (38,021)  10.7 
+Gross Profit  21,023  651,987  62.3  588,543  59.5  512,379  59.0  63,444  10.8  139,608  27.2 
+Operating Expenses
+Research and Development Expenses  (2,091)  (64,857)  (6.2)  (63,743)  (6.5)  (57,232)  (6.6)  (1,114)  1.7  (7,625)  13.3 
+Sales, General and Administrative Expenses  (753)  (23,333)  (2.2)  (24,022)  (2.4)  (29,108)  (3.4)  689  (2.9)  5,775  (19.8) 
+Total Operating Expenses  (2,844)  (88,190)  (8.4)  (87,765)  (8.9)  (86,340)  (10.0)  (425)  0.5  (1,850)  2.1 
+Other Operating Income and Expenses  36  1,106  0.1  (93)  -  (326)  -  1,199 NM  1,432 NM
+Income from Operations  18,215  564,903  54.0  500,685  50.6  425,713  49.0  64,218  12.8  139,190  32.7 
+Non-operating Income and Expenses
+Share of Profits of Associates  48  1,483  0.1  1,424  0.1  1,289  0.2  59  4.1  194  15.1 
+Net Interest Income (Expenses)  853  26,463  2.5  23,222  2.4  21,750  2.5  3,241  14.0  4,713  21.7 
+Other Gains and Losses  (16)  (486)  -  38  -  46  -  (524)  (1,378.9)  (532)  (1,156.5) 
+Total Non-operating Income and Expenses  885  27,460  2.6  24,684  2.5  23,085  2.7  2,776  11.2  4,375  19.0 
+Income Before Income Tax  19,100  592,363  56.6  525,369  53.1  448,798  51.7  66,994  12.8  143,565  32.0 
+Income Tax Expenses  (2,803)  (86,947)  (8.3)  (73,614)  (7.5)  (74,329)  (8.6)  (13,333)  18.1  (12,618)  17.0 
+Net Income  16,297  505,416  48.3  451,755  45.6  374,469  43.1  53,661  11.9  130,947  35.0 
+Other Comprehensive Income  2,292  71,076  6.8  95,202  9.7  37,903  4.4  (24,126)  (25.3)  33,173  87.5 
+Comprehensive Income $ 18,589 $ 576,492  55.1 $ 546,957  55.3 $ 412,372  47.5 $ 29,535  5.4 $ 164,120  39.8 
+Net Income (Losses) Attributable to:
+Shareholders of the Parent $ 16,307 $ 505,744  48.3 $ 452,302  45.7 $ 374,680  43.1 $ 53,442  11.8 $ 131,064  35.0 
+Noncontrolling Interests  (10)  (328)  -  (547)  (0.1)  (211)  -  219  40.0  (117)  (55.5) 
+$ 16,297 $ 505,416  48.3 $ 451,755  45.6 $ 374,469  43.1 $ 53,661  11.9 $ 130,947  35.0 
+Earnings per Share - Diluted $ 0.63 $ 19.50 $ 17.44 $ 14.45 $ 2.06  11.8 $ 5.05  35.0 
+Earnings per ADR - Diluted (2) $ 3.14 $ 97.52 $ 87.22 $ 72.25 $ 10.30  11.8 $ 25.27  35.0 
+Weighted Average Outstanding Shares - Diluted ('M)  25,931  25,930  25,929 
+Note:
+(1) Amounts in New Taiwan dollars have been translated into U.S. dollars at the weighted average rate of NT$31.013 for the fourth quarter of 2025.
+(2) 1 ADR equals 5 ordinary shares.
+TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LIMITED AND SUBSIDIARIES
+Consolidated Condensed Statements of Comprehensive Income (Audited)
+(Expressed in Millions of New Taiwan Dollars ("NTD") and U.S. Dollars ("USD") (1)
+Except for Per Share Amounts and Shares Outstanding)
+For the Years Ended December 31
+2025 2024 YoY
+USD NTD  % NTD % NTD %
+Net Revenue $ 122,424 $ 3,809,054  100.0 $ 2,894,308  100.0 $ 914,746  31.6 
+Cost of Revenue  (49,104)  (1,527,760)  (40.1)  (1,269,954)  (43.9)  (257,806)  20.3 
+Gross Profit  73,320  2,281,294  59.9  1,624,354  56.1  656,940  40.4 
+Operating Expenses
+Research and Development Expenses  (7,920)  (246,427)  (6.5)  (204,182)  (7.1)  (42,245)  20.7 
+Sales, General and Administrative Expenses  (3,189)  (99,222)  (2.6)  (96,889)  (3.3)  (2,333)  2.4 
+Total Operating Expenses  (11,109)  (345,649)  (9.1)  (301,071)  (10.4)  (44,578)  14.8 
+Other Operating Income and Expenses  15  447  -  (1,230)  -  1,677 NM
+Income from Operations  62,226  1,936,092  50.8  1,322,053  45.7  614,039  46.4 
+Non-operating Income and Expenses
+Share of Profits of Associates  177  5,497  0.1  4,880  0.2  617  12.6 
+Net Interest Income (Expenses)  3,001  93,368  2.5  76,718  2.6  16,650  21.7 
+Other Gains and Losses  215  6,706  0.2  2,188  0.1  4,518  206.5 
+Total Non-operating Income and Expenses  3,393  105,571  2.8  83,786  2.9  21,785  26.0 
+Income before Income Tax  65,619  2,041,663  53.6  1,405,839  48.6  635,824  45.2 
+Income Tax Expenses  (10,486)  (326,266)  (8.6)  (233,407)  (8.1)  (92,859)  39.8 
+Net Income  55,133  1,715,397  45.0  1,172,432  40.5  542,965  46.3 
+Other Comprehensive Income (Losses)  (1,811)  (56,327)  (1.4)  71,585  2.5  (127,912)  (178.7) 
+Comprehensive Income $ 53,322 $ 1,659,070  43.6 $ 1,244,017  43.0 $ 415,053  33.4 
+Net Income (Losses) Attributable to:
+Shareholders of the Parent $ 55,213 $ 1,717,883  45.1 $ 1,173,268  40.5 $ 544,615  46.4 
+Noncontrolling interests  (80)  (2,486)  (0.1)  (836)  -  (1,650)  (197.4) 
+$ 55,133 $ 1,715,397  45.0 $ 1,172,432  40.5 $ 542,965  46.3 
+Earnings per Share - Diluted $ 2.13 $ 66.25 $ 45.25 $ 21.00  46.4 
+Earnings per ADR - Diluted (2) $ 10.65 $ 331.25 $ 226.24 $ 105.01  46.4 
+Weighted Average Outstanding Shares - Diluted ('M)  25,931  25,930 
+Note:
+(1) Amounts in New Taiwan dollars have been translated into U.S. dollars at the weighted average rate of NT$31.114 for the year ended December 31, 2025.
+(2) 1 ADR equals 5 ordinary shares.
+ TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY LIMITED AND SUBSIDIARIES
+Consolidated Condensed Cash Flow Statements
+For the Year Ended December 31, 2025 and for the Three Months Ended December 31, 2025, September 30, 2025 and December 31, 2024
+(Expressed in Millions of New Taiwan Dollars ("NTD") and U.S. Dollars ("USD")) (1)
+2025
+(Audited)
+4Q 2025
+(Unaudited)
+3Q 2025
+(Unaudited)
+4Q 2024
+(Unaudited)
+USD NTD NTD NTD NTD
+Cash Flows from Operating Activities:
+Income Before Income Tax $ 65,619 $ 2,041,663 $ 592,363 $ 525,369 $ 448,798 
+Depreciation & Amortization  22,115  688,096  162,112  162,787  170,378 
+Share of Profits of Associates  (177)  (5,497)  (1,483)  (1,424)  (1,289) 
+Income Taxes Paid  (8,599)  (267,557)  (1,407)  (137,266)  (1,190) 
+Changes in Working Capital & Others  (5,840)  (181,729)  (26,076)  (122,637)  3,508 
+Net Cash Generated by Operating Activities  73,118  2,274,976  725,509  426,829  620,205 
+Cash Flows from Investing Activities:
+Interest Received  3,180  98,955  26,160  22,351  18,473 
+Cash Dividend Received  127  3,940  49  2,705  207 
+Acquisitions of:
+Property, Plant and Equipment  (40,895)  (1,272,411)  (356,906)  (287,452)  (361,949) 
+Marketable Financial Instruments  (8,208)  (255,372)  (72,197)  (50,445)  (77,351) 
+Proceeds from Disposal or Redemption of:
+Property, Plant and Equipment  25  797  482  70  256 
+Marketable Financial Instruments  7,015  218,256  41,390  49,196  56,885 
+Others  1,975  61,441  (4,939)  3,823  51,560 
+Net Cash Used In Investing Activities  (36,781)  (1,144,394)  (365,961)  (259,752)  (311,919) 
+Cash Flows from Financing Activities:
+Increase (Decrease) in Hedging Financial Liabilities - Bank Loans  11  335  (95)  -  - 
+Proceeds from Issuance of Bonds  2,793  86,900  23,500  30,100  - 
+Repayment of Bonds  (1,746)  (54,310)  (1,750)  (39,160)  (1,750) 
+Proceeds from Long-term Bank Loans  342  10,658  3,031  2,232  7,455 
+Repayment of Long-term Bank Loans  (87)  (2,710)  (552)  (720)  (636) 
+Interest Paid  (615)  (19,129)  (5,350)  (4,040)  (5,946) 
+Cash Dividends Paid for Common Stock  (15,002)  (466,779)  (129,663)  (116,697)  (103,734) 
+Others  151  4,690  3,194  (9)  3,879 
+Net Cash Used In Financing Activities  (14,153)  (440,345)  (107,685)  (128,294)  (100,732) 
+Effect of Exchange Rate Changes on Cash and Cash Equivalents  (1,607)  (50,008)  45,234  67,452  33,292 
+Net Increase in Cash and Cash Equivalents  20,577  640,229  297,097  106,235  240,846 
+Cash and Cash Equivalents at Beginning of Period  68,382  2,127,627  2,470,759  2,364,524  1,886,781 
+Cash and Cash Equivalents at End of Period $ 88,959 $ 2,767,856 $ 2,767,856 $ 2,470,759 $ 2,127,627 
+Note:
+(1) Amounts in New Taiwan dollars have been translated into U.S. dollars at the weighted average rate of NT$31.114 for the year ended December 31, 2025.

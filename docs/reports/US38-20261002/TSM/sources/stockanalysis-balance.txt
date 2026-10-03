@@ -1,0 +1,419 @@
+Retrieved 2026-10-02
+URL https://stockanalysis.com/stocks/tsm/financials/balance-sheet/
+
+TSMC (TSM) Balance Sheet
+Skip to main content
+Help Log In Sign Up
+Home
+Watchlist
+Stocks
+Stock Screener
+Stock Exchanges
+Comparison Tool
+Earnings Calendar
+By Industry
+Stock Lists
+Top Stocks
+Corporate Actions
+IPOs
+Recent IPOs
+IPO Calendar
+IPO Lockups
+IPO Statistics
+IPO News
+IPO Screener
+ETFs
+ETF Screener
+Comparison Tool
+New Launches
+ETF Providers
+Analysts
+News
+Trending
+Private Companies
+Technical Chart
+Fundamental Chart
+Market Movers
+Top Gainers
+Top Losers
+Most Active
+Premarket
+After Hours
+Market Heatmap
+Market Newsletter
+Stock Analysis Pro
+Tools
+Collapse
+Taiwan Semiconductor Manufacturing Company Limited (TSM)
+NYSE: TSM Â· Real-Time Price Â· USD
+Full Chart  Watchlist   Alerts    Compare
+470.54
++11.34 (2.47%)
+Oct 2, 2026, 11:19 AM EDT - Market open
+Overview
+Financials
+Forecast
+Statistics
+Dividends
+History
+Profile
+Chart
+Financials
+Income Statement
+Balance Sheet
+Cash Flow
+Ratios
+KPIs
+Annual
+Quarterly
+TTM
+TSMC Balance Sheet
+Financials in millions TWD. Fiscal year is January - December.
+Millions TWD. Fiscal year is Jan - Dec.
+Standardized As Reported
+Assets
+TTM
+Mil Millions
+Data Data Source
+TWD
+TWD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jun '26 Jun 30, 2026 | Dec '25 Dec 31, 2025 | Dec '24 Dec 31, 2024 | Dec '23 Dec 31, 2023 | Dec '22 Dec 31, 2022 | Dec '21 Dec 31, 2021
+|
+Cash & Equivalents
+| 3,134,218 | 2,767,856 | 2,127,627 | 1,465,428 | 1,342,814 | 1,064,990
+|
+Short-Term Investments
+| 383,569 | 300,638 | 294,174 | 221,292 | 217,599 | 139,713
+|
+Trading Asset Securities
+| 223.43 | - | 11 | 223.4 | 125.2 | 13.5
+|
+Cash & Short-Term Investments
+| 3,518,010 | 3,068,495 | 2,421,812 | 1,686,943 | 1,560,538 | 1,204,717
+|
+Cash Growth
+| 33.63% | 26.70% | 43.56% | 8.10% | 29.54% | 50.21%
+|
+Accounts Receivable
+| 440,923 | 281,791 | 272,088 | 201,938 | 231,340 | 198,301
+|
+Other Receivables
+| 1,209 | 268.1 | 0.2 | 71.9 | 69 | 61.5
+|
+Receivables
+| 442,132 | 282,059 | 272,088 | 202,010 | 231,409 | 198,363
+|
+Inventory
+| 385,525 | 288,110 | 287,869 | 250,997 | 221,149 | 193,102
+|
+Other Current Assets
+| 220,034 | 178,468 | 106,583 | 54,082 | 39,801 | 10,891
+|
+Total Current Assets
+| 4,565,701 | 3,817,131 | 3,088,352 | 2,194,033 | 2,052,897 | 1,607,073
+|
+Property, Plant & Equipment
+| 4,357,776 | 3,735,760 | 3,275,109 | 3,104,900 | 2,735,751 | 2,007,853
+|
+Long-Term Investments
+| 227,936 | 172,189 | 148,867 | 129,268 | 68,608 | 29,184
+|
+Goodwill
+| 5,955 | 5,891 | 6,071 | 5,796 | 5,792 | 5,379
+|
+Other Intangible Assets
+| 18,119 | 19,062 | 20,212 | 16,970 | 20,207 | 21,443
+|
+Long-Term Deferred Tax Assets
+| 62,889 | 62,940 | 65,943 | 64,176 | 69,186 | 49,154
+|
+Other Long-Term Assets
+| 137,279 | 119,870 | 87,211 | 17,054 | 12,018 | 5,217
+|
+Total Assets
+| 9,375,655 | 7,932,843 | 6,691,765 | 5,532,197 | 4,964,459 | 3,725,302
+Liabilities
+TTM
+Mil Millions
+Data Data Source
+TWD
+TWD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jun '26 Jun 30, 2026 | Dec '25 Dec 31, 2025 | Dec '24 Dec 31, 2024 | Dec '23 Dec 31, 2023 | Dec '22 Dec 31, 2022 | Dec '21 Dec 31, 2021
+|
+Accounts Payable
+| 110,531 | 84,224 | 74,097 | 57,204 | 56,504 | 48,723
+|
+Accrued Expenses
+| 464,330 | 288,073 | 210,938 | 172,244 | 157,143 | 108,278
+|
+Short-Term Debt
+| - | - | - | - | - | 114,921
+|
+Current Portion of Long-Term Debt
+| 167,412 | 136,927 | 59,858 | 36,628 | 19,315 | 4,576
+|
+Current Portion of Leases
+| 3,606 | 3,833 | 3,049 | 2,811 | 2,604 | 2,177
+|
+Current Income Taxes Payable
+| 283,343 | 266,733 | 191,569 | 128,135 | 163,139 | 78,497
+|
+Current Unearned Revenue
+| 55,852 | 49,954 | 89,435 | 52,736 | 70,807 | 40,489
+|
+Other Current Liabilities
+| 772,687 | 692,670 | 679,709 | 493,048 | 517,054 | 360,692
+|
+Total Current Liabilities
+| 1,857,762 | 1,522,414 | 1,308,656 | 942,805 | 986,564 | 758,353
+|
+Long-Term Debt
+| 864,264 | 896,062 | 958,429 | 918,283 | 839,096 | 613,380
+|
+Long-Term Leases
+| 33,276 | 31,595 | 28,755 | 28,682 | 29,764 | 20,764
+|
+Pension & Post-Retirement Benefits
+| 5,894 | 6,012 | 7,581 | 9,257 | 9,321 | 11,037
+|
+Long-Term Deferred Tax Liabilities
+| 3,907 | 3,889 | 3,989 | 53.8 | 1,031 | 1,874
+|
+Other Long-Term Liabilities
+| 136,082 | 76,651 | 105,084 | 179,249 | 180,850 | 168,212
+|
+Total Liabilities
+| 2,901,184 | 2,536,623 | 2,412,493 | 2,078,330 | 2,046,627 | 1,573,620
+Shareholders' Equity
+TTM
+Mil Millions
+Data Data Source
+TWD
+TWD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jun '26 Jun 30, 2026 | Dec '25 Dec 31, 2025 | Dec '24 Dec 31, 2024 | Dec '23 Dec 31, 2023 | Dec '22 Dec 31, 2022 | Dec '21 Dec 31, 2021
+|
+Common Stock
+| 259,324 | 259,325 | 259,327 | 259,321 | 259,304 | 259,304
+|
+Additional Paid-In Capital
+| 72,291 | 73,446 | 73,261 | 69,876 | 69,330 | 64,762
+|
+Retained Earnings
+| 6,051,113 | 5,038,944 | 3,872,973 | 3,128,640 | 2,594,891 | 1,887,803
+|
+Comprehensive Income & Other
+| 49,791 | -16,676 | 38,705 | -28,314 | -20,506 | -62,608
+|
+Total Common Equity
+| 6,432,518 | 5,355,039 | 4,244,267 | 3,429,522 | 2,903,020 | 2,149,260
+|
+Minority Interest
+| 41,953 | 41,181 | 35,005 | 24,344 | 14,813 | 2,423
+|
+Shareholders' Equity
+| 6,474,471 | 5,396,219 | 4,279,272 | 3,453,867 | 2,917,832 | 2,151,683
+|
+Total Liabilities & Equity
+| 9,375,655 | 7,932,843 | 6,691,765 | 5,532,197 | 4,964,459 | 3,725,302
+Additional Metrics
+TTM
+Mil Millions
+Data Data Source
+TWD
+TWD
+More
+Download   Full Width
+|
+Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021
+|
+Period Ending | Jun '26 Jun 30, 2026 | Dec '25 Dec 31, 2025 | Dec '24 Dec 31, 2024 | Dec '23 Dec 31, 2023 | Dec '22 Dec 31, 2022 | Dec '21 Dec 31, 2021
+|
+Total Debt
+| 1,068,559 | 1,068,417 | 1,050,091 | 986,403 | 890,779 | 755,818
+|
+Net Cash (Debt)
+| 2,449,452 | 2,000,078 | 1,371,721 | 700,541 | 669,759 | 448,899
+|
+Net Cash Growth
+| 51.23% | 45.81% | 95.81% | 4.60% | 49.20% | 3.82%
+|
+Net Cash Per Share
+| 94.46 | 77.13 | 52.90 | 27.02 | 25.83 | 17.31
+|
+Filing Date Shares Outstanding
+| 25,932 | 25,933 | 25,933 | 25,932 | 25,930 | 25,929
+|
+Total Common Shares Outstanding
+| 25,932 | 25,933 | 25,933 | 25,932 | 25,930 | 25,930
+|
+Working Capital
+| 2,707,939 | 2,294,717 | 1,779,696 | 1,251,228 | 1,066,333 | 848,720
+|
+Book Value Per Share
+| 248.05 | 206.50 | 163.66 | 132.25 | 111.95 | 82.89
+|
+Tangible Book Value
+| 6,408,444 | 5,330,086 | 4,217,984 | 3,406,756 | 2,877,021 | 2,122,438
+|
+Tangible Book Value Per Share
+| 247.12 | 205.54 | 162.65 | 131.37 | 110.95 | 81.85
+|
+Land
+| 13,549 | 13,446 | 13,054 | 7,622 | 7,662 | 6,488
+|
+Buildings
+| 1,490,454 | 1,191,862 | 959,134 | 817,823 | 637,047 | 576,598
+|
+Machinery
+| 7,448,275 | 6,360,942 | 5,957,638 | 5,484,811 | 4,380,971 | 4,060,903
+|
+Construction In Progress
+| 1,032,953 | 1,518,996 | 1,080,284 | 908,290 | 1,336,843 | 593,156
+SEC Filings: 10-K  Â· 10-Q
+Data Source: S&P Global Market Intelligence Last updated: Aug 14, 2026
+Financial data is provided by S&P Global Market Intelligence and updates within hours after each earnings release, which is every three months for this company.
+Update frequency: Quarterly
+Last checked: Oct 1, 2026
+Data Sources  Report a data error
+Install The App
+4.9
+6.9K
+4.9
+7.6K
+Sections
+Stocks
+IPOs
+ETFs
+Private Companies
+Services
+Stock Analysis Pro
+Free Newsletter
+Get Support
+Install The App
+Website
+Login
+Create Account
+Changelog
+Data Sources
+Advertise
+Help Center
+Company
+About
+Contact Us
+Terms of Use
+Privacy Policy
+Affiliate Program
+Market Newsletter
+Daily market news in bullet point format.
+Subscribe
+Site Theme
+Light  Dark
+Â© 2026 StockAnalysis.com. All rights reserved.
+
+LINKS
+#main
+/
+/help/
+/login/
+/pro/
+/
+/watchlist/
+/stocks/
+/stocks/screener/
+/list/exchanges/
+/stocks/compare/
+/stocks/earnings-calendar/
+/stocks/industry/
+/list/
+/analysts/top-stocks/
+/actions/
+/ipos/
+/ipos/
+/ipos/calendar/
+/ipos/lockups/
+/ipos/statistics/
+/ipos/news/
+/ipos/screener/
+/etf/
+/etf/screener/
+/etf/compare/
+/etf/list/new/
+/etf/provider/
+/analysts/
+/news/
+/trending/
+/private/
+/chart/
+/fundamental-chart/
+/markets/gainers/
+/markets/gainers/
+/markets/losers/
+/markets/active/
+/markets/premarket/
+/markets/afterhours/
+/markets/heatmap/
+/subscribe/
+/pro/
+/tools/
+/stocks/tsm/
+/stocks/tsm/financials/
+/stocks/tsm/forecast/
+/stocks/tsm/statistics/
+/stocks/tsm/dividend/
+/stocks/tsm/history/
+/stocks/tsm/company/
+/chart/TSM/
+/stocks/tsm/financials/
+/stocks/tsm/financials/income-statement/
+/stocks/tsm/financials/balance-sheet/
+/stocks/tsm/financials/cash-flow-statement/
+/stocks/tsm/financials/ratios/
+/stocks/tsm/financials/metrics/
+https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001046179&type=10-K
+https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001046179&type=10-Q
+https://www.spglobal.com/market-intelligence/en?utm_source=stockanalysis.com&utm_medium=referral
+https://www.spglobal.com/market-intelligence/en?utm_source=stockanalysis.com&utm_medium=referral
+/data-sources/
+/report-data-error/#url=%2Fstocks%2Ftsm%2Ffinancials%2Fbalance-sheet%2F&ticker=TSM
+https://apps.apple.com/us/app/stock-analysis-app/id6751272467
+https://play.google.com/store/apps/details?id=com.stockanalysis.app
+/stocks/
+/ipos/
+/etf/
+/private/
+/pro/
+/subscribe/
+/support/
+/app/
+/login/
+/create-account/
+/changelog/
+/data-sources/
+/advertise/
+/help/
+/about/
+/contact/
+/terms-of-use/
+/privacy-policy/
+/affiliates/
+https://www.facebook.com/stockanalysisoff/
+https://x.com/stock_analysisx
+https://www.linkedin.com/company/stock-analysis/
+https://www.threads.com/@stockanalysis_com
+https://apps.apple.com/us/app/stock-analysis-app/id6751272467
+https://play.google.com/store/apps/details?id=com.stockanalysis.app

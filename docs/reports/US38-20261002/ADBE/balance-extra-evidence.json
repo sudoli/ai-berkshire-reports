@@ -1,0 +1,294 @@
+[
+  [
+    "AccruedIncomeTaxesCurrent",
+    {
+      "end": "2026-08-28",
+      "val": 63000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "AccruedIncomeTaxesNoncurrent",
+    {
+      "end": "2026-08-28",
+      "val": 567000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedGainBeforeTax",
+    {
+      "end": "2026-08-28",
+      "val": 0,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "AvailableForSaleDebtSecuritiesAccumulatedGrossUnrealizedLossBeforeTax",
+    {
+      "end": "2026-08-28",
+      "val": 1000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "CashCashEquivalentsAndShortTermInvestments",
+    {
+      "end": "2026-08-28",
+      "val": 5639000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "DebtCurrent",
+    {
+      "end": "2026-08-28",
+      "val": 1597000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "DebtSecuritiesAvailableForSaleAmortizedCostExcludingAccruedInterestAfterAllowanceForCreditLoss",
+    {
+      "end": "2026-08-28",
+      "val": 5640000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "DeferredIncomeTaxAssetsNet",
+    {
+      "end": "2026-08-28",
+      "val": 1928000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "DeferredIncomeTaxesAndTaxCredits",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 164000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "GainLossOnInvestments",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 21000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ],
+  [
+    "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 2357000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ],
+  [
+    "IncomeTaxExpenseBenefit",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 530000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ],
+  [
+    "IncomeTaxesPaidNet",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 1529000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "IncreaseDecreaseInAccruedIncomeTaxesPayable",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 3000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "NonoperatingIncomeExpense",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 3000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ],
+  [
+    "OtherNonoperatingIncomeExpense",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 48000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ],
+  [
+    "PaymentsToAcquireLongtermInvestments",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 80000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "PaymentsToAcquireShortTermInvestments",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 1625000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 1530000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "ProceedsFromSaleOfShortTermInvestments",
+    {
+      "start": "2025-11-29",
+      "end": "2026-08-28",
+      "val": 5000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22"
+    }
+  ],
+  [
+    "ShortTermInvestments",
+    {
+      "end": "2026-08-28",
+      "val": 1280000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3I"
+    }
+  ],
+  [
+    "InterestExpenseNonoperating",
+    {
+      "start": "2026-05-30",
+      "end": "2026-08-28",
+      "val": 66000000,
+      "accn": "0000796343-26-000156",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-09-22",
+      "frame": "CY2026Q3"
+    }
+  ]
+]

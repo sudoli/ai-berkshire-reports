@@ -1,0 +1,96 @@
+{
+  "scope_note": "LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.",
+  "automatic_sample_classification": [
+    {
+      "id": 4,
+      "label": "常规周期偏弱 · 三年末价格",
+      "reported_value": 407.29,
+      "unit": "",
+      "raw_text": "| 常规周期偏弱 | +10% | 18 | 22.63 | 407.29 | -13.44% |",
+      "line_number": 80,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 1,
+      "label": "常规周期偏弱 · EPS年增速",
+      "reported_value": 10.0,
+      "unit": "%",
+      "raw_text": "| 常规周期偏弱 | +10% | 18 | 22.63 | 407.29 | -13.44% |",
+      "line_number": 80,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 12,
+      "label": "乐观 · 终值PE",
+      "reported_value": 30.0,
+      "unit": "",
+      "raw_text": "| 乐观 | +25% | 30 | 33.20 | 996.09 | +111.69% |",
+      "line_number": 82,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    }
+  ],
+  "supplementary_historical_checks": [
+    {
+      "id": 101,
+      "label": "FY2025 revenue",
+      "reported_value": 3809054,
+      "unit": "million, statement currency",
+      "fetched_value": 3809054,
+      "fetched_source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf",
+      "fetched_value2": 3809054,
+      "fetched_source2": "https://stockanalysis.com/stocks/tsm/financials/"
+    },
+    {
+      "id": 102,
+      "label": "FY2025 parent net income",
+      "reported_value": 1717883,
+      "unit": "million, statement currency",
+      "fetched_value": 1717883,
+      "fetched_source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf",
+      "fetched_value2": 1697604,
+      "fetched_source2": "https://stockanalysis.com/stocks/tsm/financials/"
+    },
+    {
+      "id": 103,
+      "label": "FY2025 cash",
+      "reported_value": 2767856,
+      "unit": "million, statement currency",
+      "fetched_value": 2767856,
+      "fetched_source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf",
+      "fetched_value2": 2767856,
+      "fetched_source2": "https://stockanalysis.com/stocks/tsm/financials/balance-sheet/"
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 2,
+    "warn_count": 1,
+    "fail_count": 0,
+    "total": 3,
+    "fail_items": [],
+    "warn_items": [
+      {
+        "id": 102,
+        "label": "FY2025 parent net income",
+        "reported": 1717883.0,
+        "unit": "million, statement currency",
+        "diff1_pct": 0.0,
+        "diff2_pct": 1.18
+      }
+    ]
+  },
+  "additional_decimal_checks": {
+    "ordinary_eps_from_adr": "108.8",
+    "FY2025_simple_fcf_TWD_billion": "1002.565",
+    "Q2_simple_fcf_TWD_billion": "287.36",
+    "FY2025_net_income_discrepancy_percent": "1.180464560159219225057818257",
+    "net_cash_discrepancy_percent": "1.483230303298435847212558269"
+  },
+  "summary_schema_and_band_order": "PASS"
+}

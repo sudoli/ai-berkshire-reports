@@ -1,0 +1,29 @@
+{
+  "ticker": "EQIX",
+  "company": "Equinix, Inc.",
+  "sector": "互联与托管数据中心REIT",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 1023.21,
+    "currency": "USD",
+    "asof": "2026-10-02 11:09 EDT",
+    "source_url": "https://stockanalysis.com/stocks/eqix/financials/",
+    "verified": true,
+    "note": "单平台盘中实读，非收盘；9月30日图片1011.58美元未验证。最后列示2002年1比32反向拆股，采用当前普通股口径。"
+  },
+  "financial_period": "2026年第二季度，截至2026-06-30；2026-07-29发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 830,
+    "buy_high": 913,
+    "currency": "USD",
+    "basis": "2026 AFFO/股指引中点42.99减研究非经常性/波动缓冲1.49=正常化41.50美元；41.50×20至22倍P/AFFO=830至913美元，非GAAP PE。",
+    "conditions": "剔除一次性xScale费用后的每股增长兑现，经常性资本开支分类合理，SBC与增发不吞噬增长，扩建融资和杠杆保持可控。",
+    "holder_action": "可跟踪互联、续租和正常化每股AFFO继续持有观察；过度集中时再平衡，融资稀释或维护资本上升破坏现金回报时考虑减持。"
+  },
+  "thesis": "互联生态和迁移成本支持溢价，但庞大扩建开支、SBC及融资需求要求买入价格留出缓冲。",
+  "key_risk": "一次性收费及低估维护资本夸大AFFO，融资和股权激励使总量增长不能转为每股回报。",
+  "confidence": "中",
+  "source_limitations": ["报价单一平台；2023年AFFO及经常性资本开支未逐项核实。", "金融数据库的收入、FCF和现金标题存在分类差异，报告按原始公告及SEC纠正。", "1.49美元正常化缓冲及SBC年化敏感性为研究假设；管理层持股未全面核验。"],
+  "report_file": "EQIX研究报告-20261002.md"
+}

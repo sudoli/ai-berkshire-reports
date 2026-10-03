@@ -1,0 +1,34 @@
+{
+  "ticker": "MU",
+  "company": "Micron Technology, Inc.",
+  "sector": "DRAM NAND与HBM存储半导体",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 1078.44,
+    "currency": "USD",
+    "asof": "2026-10-02 11:18 EDT",
+    "source_url": "https://stockanalysis.com/stocks/mu/financials/",
+    "verified": true,
+    "note": "盘中非收盘；Yahoo 11:22:50 EDT为1075.39。图价1065.11未核验，相差+1.25%；不可仅凭旧价格记忆判断多了一个零。"
+  },
+  "financial_period": "FY2026 Q4及全年，截至2026-09-03，2026-09-30发布",
+  "recommendation": {
+    "rating": "暂不买入",
+    "buy_low": 280,
+    "buy_high": 350,
+    "currency": "USD",
+    "basis": "中周期收入1100亿美元、毛利率55%、经营费用120亿美元、税率17%、稀释11.5亿股推得EPS35；35×8–10倍=280–350。基准三年526.72按12%折现374.91。",
+    "conditions": "HBM技术与认证竞争力保持，中周期35美元盈利和跨周期现金覆盖资本投入可验证；不将峰值毛利或客户预付款永久化。",
+    "holder_action": "按全周期现金和供给纪律管理持仓，不因峰值PE低自动加仓；价格之外关注HBM认证、资本开支、存货与履约负担。"
+  },
+  "thesis": "HBM提高长期价值捕获，但存储制造仍需以中周期而非极高峰值利润定价。",
+  "key_risk": "行业扩产和价格回撤压低利润，高资本开支与客户履约义务放大周期下行。",
+  "confidence": "中",
+  "source_limitations": [
+    "最新全年10-K结构化数据尚未同步，FY2026使用发行人业绩公告及StockAnalysis交叉。",
+    "长期客户协议的最低售价、取消和履约条款未完整公开。",
+    "最新精确基本股数待新年报，市值使用约11.3亿股并与SEC旧期数比较。",
+    "图价未独立核验；中周期35美元EPS可能低估结构性变化，但不能拿近端峰值指引替代跨周期证据。"
+  ],
+  "report_file": "MU研究报告-20261002.md"
+}

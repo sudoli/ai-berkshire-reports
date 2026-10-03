@@ -1,0 +1,34 @@
+{
+  "ticker": "ADBE",
+  "company": "Adobe Inc.",
+  "sector": "创意设计、文档与数字体验软件",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 239.94,
+    "currency": "USD",
+    "asof": "2026-09-30 regular-session close",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?range=1mo&interval=1d",
+    "verified": true,
+    "note": "Yahoo及StockAnalysis历史表同日close均与用户截图一致；两站底层行情供应链未独立核查，非10月2日实时价。"
+  },
+  "financial_period": "FY2026 Q3 ended 2026-08-28; 10-Q filed 2026-09-22",
+  "recommendation": {
+    "rating": "条件买入",
+    "buy_low": 219.21,
+    "buy_high": 250.49,
+    "currency": "USD",
+    "basis": "以FY2026 GAAP EPS指引18.12—18.17美元为锚、正常基数取18美元，三年增长5%、退出16倍得333.396美元；按15%和10%折现三年得219.21—250.49美元。",
+    "conditions": "付费用户、ARR与客户群增长稳定，正常GAAP盈利18美元基数仍有效；AI投入未造成结构性利润衰退，管理层交接可控。",
+    "holder_action": "基本面稳定可继续观察持有；价格在区间且盈利兑现才考虑加仓，用户迁移和盈利下修时撤销原买带。"
+  },
+  "thesis": "专业创作与文档工作流仍有现金价值，现价不要求爆炸性增长，但AI用户迁移决定它是折价机会还是价值陷阱。",
+  "key_risk": "既有订阅、涨价与回购短期保护EPS，却掩盖新增创作者转向低价AI工具导致的长期盈利衰退。",
+  "confidence": "中",
+  "source_limitations": [
+    "Yahoo及StockAnalysis行情已双站核对，但底层供应链未独立核查；市值采用SEC9月18日股数估算。",
+    "Macrotrends仍受限；StockAnalysis完整原表已读取，其现金合计与债务分类小差异明确披露，采用SEC而非平均。",
+    "Yahoo Q3股数与SEC差约2.05%，疑似滞后；采用SEC，不平均；供应商财年日期也以SEC校正。",
+    "缺少独立用户迁移、Firefly利润和价格弹性数据，管理层12月交接尚未完成。"
+  ],
+  "report_file": "ADBE研究报告-20261002.md"
+}

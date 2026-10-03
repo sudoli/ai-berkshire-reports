@@ -1,0 +1,41 @@
+{
+  "quote": 1861.22,
+  "image": 1811.67,
+  "normalized_eps_assumption_usd": 39.6,
+  "quote_vs_image_percent": 2.74,
+  "normalized_pe": 47.0,
+  "indicative_cap_from_dated_diluted_shares_usd": 716383578000.0,
+  "buy_low": 1108.8,
+  "buy_high": 1267.2,
+  "scenarios": [
+    {
+      "scenario": "bear",
+      "growth": "0.05",
+      "terminal_pe": "25",
+      "year3_eps": 45.84,
+      "year3_target": 1146.05,
+      "price_return_percent": -38.42,
+      "image_price_return_percent": -36.74
+    },
+    {
+      "scenario": "base",
+      "growth": "0.15",
+      "terminal_pe": "32",
+      "year3_eps": 60.23,
+      "year3_target": 1927.25,
+      "price_return_percent": 3.55,
+      "image_price_return_percent": 6.38
+    },
+    {
+      "scenario": "bull",
+      "growth": "0.22",
+      "terminal_pe": "40",
+      "year3_eps": 71.91,
+      "year3_target": 2876.3,
+      "price_return_percent": 54.54,
+      "image_price_return_percent": 58.77
+    }
+  ],
+  "base_present_value_at_12_percent": 1371.78,
+  "price_required_year3_eps_at_base_pe": 81.72
+}

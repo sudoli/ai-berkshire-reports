@@ -1,0 +1,78 @@
+{
+  "scope_note": "LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.",
+  "automatic_sample_classification": [
+    {
+      "id": 4,
+      "label": "偏弱 · 三年价格",
+      "reported_value": 1146.05,
+      "unit": "",
+      "raw_text": "| 偏弱 | +5% | 25 | 45.84 | 1,146.05 | -38.42% |",
+      "line_number": 76,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 1,
+      "label": "偏弱 · EPS年增速",
+      "reported_value": 5.0,
+      "unit": "%",
+      "raw_text": "| 偏弱 | +5% | 25 | 45.84 | 1,146.05 | -38.42% |",
+      "line_number": 76,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    },
+    {
+      "id": 9,
+      "label": "基准 · 三年价格",
+      "reported_value": 1927.25,
+      "unit": "",
+      "raw_text": "| 基准 | +15% | 32 | 60.23 | 1,927.25 | +3.55% |",
+      "line_number": 77,
+      "classification": "model-assumption-or-derived-value",
+      "fetched_value": null,
+      "limitation": "Not an external historical fact. Checked against Decimal scenario calculations; excluded from external-fact verdict."
+    }
+  ],
+  "supplementary_historical_checks": [
+    {
+      "id": 101,
+      "label": "FY2025 revenue",
+      "reported_value": 32667,
+      "unit": "million, statement currency",
+      "fetched_value": 32667,
+      "fetched_source": "https://investor.asml.com/news-releases/news-release-details/q4-2025-financial-results",
+      "fetched_value2": 32667,
+      "fetched_source2": "https://stockanalysis.com/stocks/asml/financials/"
+    },
+    {
+      "id": 102,
+      "label": "FY2025 net income",
+      "reported_value": 9609,
+      "unit": "million, statement currency",
+      "fetched_value": 9609,
+      "fetched_source": "https://investor.asml.com/news-releases/news-release-details/q4-2025-financial-results",
+      "fetched_value2": 9609,
+      "fetched_source2": "https://stockanalysis.com/stocks/asml/financials/"
+    }
+  ],
+  "tool_verdict": {
+    "verdict": "PASS",
+    "pass_count": 2,
+    "warn_count": 0,
+    "fail_count": 0,
+    "total": 2,
+    "fail_items": [],
+    "warn_items": []
+  },
+  "additional_decimal_checks": {
+    "FY2025_system_sales_EUR_million": "24474",
+    "H1_simple_fcf_EUR_million": "-1290.9",
+    "Q2_simple_net_cash_EUR_million": "5597.1",
+    "normalized_eps_operating_bridge_EUR": "36.000",
+    "alternative_band_at_eurusd_1_low": "1008",
+    "alternative_band_at_eurusd_1_high": "1152"
+  },
+  "summary_schema_and_band_order": "PASS"
+}

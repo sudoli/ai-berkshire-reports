@@ -1,0 +1,14 @@
+{
+  "ticker": "GOOGL",
+  "company": "Alphabet Inc.",
+  "sector": "搜索广告与云计算",
+  "research_date": "2026-10-02",
+  "quote": {"price": 342.10, "currency": "USD", "asof": "2026-10-02 11:20 EDT", "source_url": "https://stockanalysis.com/stocks/googl/financials/", "verified": true, "note": "直接读取单站盘中价，非收盘；A类普通股，2022年20拆1后口径；用户图片344.08美元未经验证。"},
+  "financial_period": "2026 Q2，截至2026-06-30；全年基准2025",
+  "recommendation": {"rating": "等待价格", "buy_low": 240, "buy_high": 276, "currency": "USD", "basis": "研究正常化前瞻EPS12美元×20—23倍=240—276美元；经营利润1850亿美元×80%减优先股等10亿美元，再除123亿股约11.95美元。", "conditions": "AI搜索商业变现和贡献利润保持，Cloud扣共享AI成本后回报提高，新增融资与稀释受控。", "holder_action": "可跟踪持有但不因巨额未实现投资收益追加；若搜索单位利润恶化或稀释破坏EPS，重新估值。"},
+  "thesis": "搜索现金和云能力具备优势，但AI答案对广告点击的蚕食与资本成本决定最终每股价值。",
+  "key_risk": "搜索查询增长未必抵消点击变现下降和推理成本，且融资稀释与投资重估使表面EPS失真。",
+  "confidence": "中",
+  "source_limitations": ["报价只有单一供应商盘中快照。", "未完整复核最新监管案件、全部租赁付款和更新版年度CapEx指引。", "正常化盈利、股数和增长是研究假设，强制可转优先股可能追加稀释。"],
+  "report_file": "GOOGL研究报告-20261002.md"
+}

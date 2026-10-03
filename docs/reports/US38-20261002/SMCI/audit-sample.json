@@ -1,0 +1,86 @@
+[
+  {
+    "id": 2,
+    "label": "营业收入 · FY2024",
+    "reported_value": 14989.0,
+    "unit": "",
+    "line_number": 17,
+    "raw_text": "| 营业收入 | 7,123 | 14,989 | 21,972 | 39,063.1 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "GAAP净利润 · FY2026",
+    "reported_value": 2230.5,
+    "unit": "",
+    "line_number": 18,
+    "raw_text": "| GAAP净利润 | 640 | 1,153 | 1,049 | 2,230.5 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 9,
+    "label": "GAAP毛利率 · FY2023",
+    "reported_value": 18.01,
+    "unit": "%",
+    "line_number": 19,
+    "raw_text": "| GAAP毛利率 | 18.01% | 13.75% | 11.06% | 10.82% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "经营现金流 · FY2026",
+    "reported_value": -6809.9,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| 经营现金流 | 663.6 | -2,486 | 1,660 | -6,809.9 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "经营现金流 · FY2025",
+    "reported_value": 1660.0,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| 经营现金流 | 663.6 | -2,486 | 1,660 | -6,809.9 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "资本开支 · FY2024",
+    "reported_value": 124.3,
+    "unit": "",
+    "line_number": 21,
+    "raw_text": "| 资本开支 | 36.8 | 124.3 | 127.2 | 162.0 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 41,
+    "label": "乐观：企业方案放量 · 三年末价格",
+    "reported_value": 110.59,
+    "unit": "",
+    "line_number": 75,
+    "raw_text": "| 乐观：企业方案放量 | +20% | 6.912 | 16 | 110.59 | +169.28% | +39.12% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

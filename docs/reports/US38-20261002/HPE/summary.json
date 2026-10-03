@@ -1,0 +1,14 @@
+{
+  "ticker": "HPE",
+  "company": "Hewlett Packard Enterprise 慧与",
+  "sector": "服务器与企业硬件",
+  "research_date": "2026-10-02",
+  "quote": {"price": 68.80, "currency": "USD", "asof": "2026-10-02 11:20 EDT，盘中", "source_url": "https://stockanalysis.com/stocks/hpe/", "verified": true, "note": "单源快照；图片63.89未验证，不与HP Inc.混淆。"},
+  "financial_period": "FY2026Q3，截至2026-07-31",
+  "recommendation": {"rating": "等待价格", "buy_low": 48, "buy_high": 53, "currency": "USD", "basis": "调整后EPS3.80，三年+14%与终值PE14得78.82；10%折现为59.22，扣10%-20%安全边际后向内取48-53。", "conditions": "FY26 EPS及现金指引兑现、Juniper整合顺利、库存和净借款可控，并计入优先股稀释。", "holder_action": "按网络客户保留和现金偿债能力持有；现金失约、库存或坏账恶化则暂停加仓重估。"},
+  "thesis": "网络与混合云提升业务质量，但必须证明并购增长能转化为普通股股东现金。",
+  "key_risk": "并表及营运资本助推的盈利被长期化，忽略债务、SBC和强制可转优先股。",
+  "confidence": "中",
+  "source_limitations": ["行情单源。", "数据商FY25营业利润和现金与SEC重大不同，采用原始SEC数据。", "较早历史年度部分单源，FY25净利润涉及优先股与普通股归属差异。", "最新指引为管理层前瞻框架而非既成事实。"],
+  "report_file": "HPE研究报告-20261002.md"
+}

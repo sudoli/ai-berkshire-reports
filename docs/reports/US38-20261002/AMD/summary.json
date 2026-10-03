@@ -1,0 +1,34 @@
+{
+  "ticker": "AMD",
+  "company": "Advanced Micro Devices, Inc.",
+  "sector": "CPU与AI加速器半导体",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 635.53,
+    "currency": "USD",
+    "asof": "2026-10-02 11:18 EDT",
+    "source_url": "https://stockanalysis.com/stocks/amd/financials/",
+    "verified": true,
+    "note": "盘中非收盘；Yahoo 11:23:11 EDT为635.33作异时点交叉。图片611.76未验证，相差+3.89%；未发现2026额外拆股调整依据。"
+  },
+  "financial_period": "2026 Q2，截至2026-06-27，2026-08-04发布",
+  "recommendation": {
+    "rating": "暂不买入",
+    "buy_low": 200,
+    "buy_high": 240,
+    "currency": "USD",
+    "basis": "正常化收入650亿美元、含SBC经济经营利润率25%、税率17%、稀释16.9亿股推得EPS约8美元；8×25–30倍=200–240。基准三年468.75按12%折现为333.65。",
+    "conditions": "GPU规模化同时带来利润与回款、ROCm生产可用性持续改善、8美元经济EPS路径成立，股数和出口风险未显著恶化。",
+    "holder_action": "不因长期看好就继续高价加仓；复核高预期落空承受力，经营或每股价值恶化时考虑降低暴露。"
+  },
+  "thesis": "CPU执行力与加速器份额机会真实，但第二供应商身份不保证复制龙头利润率。",
+  "key_risk": "GPU放量但折扣、HBM与软件投入吞噬利润，极高估值要求每股盈利持续超预期。",
+  "confidence": "中",
+  "source_limitations": [
+    "加速器独立收入利润及客户合同折扣未完整公开，不能把数据中心全部收入视为GPU。",
+    "StockAnalysis毛利和经营利润与发行人GAAP分类存在差异，采用发行人数字。",
+    "未完整核验管理层持股及客户权益激励条款。",
+    "报价为双平台异时点盘中数据，图片价格未核验；8美元EPS为研究假设。"
+  ],
+  "report_file": "AMD研究报告-20261002.md"
+}

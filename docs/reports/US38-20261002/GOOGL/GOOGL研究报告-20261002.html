@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="搜索现金和云能力具备优势，但AI答案对广告点击的蚕食与资本成本决定最终每股价值。"><meta name="source-sha256" content="27821a5f3da0ae264d3ad4a97d02b7aa61b036e566c39570e7b5e9520241083c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Alphabet（GOOGL）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="GOOGL%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / GOOGL / 2026-10-02</div>
+<h1>Alphabet Inc.<span>搜索广告与云计算 · 公司研究</span></h1><p class="hero-deck">搜索现金和云能力具备优势，但AI答案对广告点击的蚕食与资本成本决定最终每股价值。</p>
+<div class="hero-meta"><span>2026 Q2，截至2026-06-30；全年基准2025</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$342.10<small>2026-10-02 11:20 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">直接读取单站盘中价，非收盘；A类普通股，2022年20拆1后口径；用户图片344.08美元未经验证。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">一、证据边界与公司介绍</a></li><li><a href="#section-2">二、四年财务与最新“盈利”真相</a></li><li><a href="#section-3">三、AI到底增强还是蚕食搜索</a></li><li><a href="#section-4">四、资产负债表与治理：净现金不是无限预算</a></li><li><a href="#section-5">五、风险清单</a></li><li><a href="#section-6">六、估值及买入研究区</a></li><li><a href="#section-7">七、行动与置信度</a></li><li><a href="#section-8">来源与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">一、证据边界与公司介绍</a></li><li><a href="#section-2">二、四年财务与最新“盈利”真相</a></li><li><a href="#section-3">三、AI到底增强还是蚕食搜索</a></li><li><a href="#section-4">四、资产负债表与治理：净现金不是无限预算</a></li><li><a href="#section-5">五、风险清单</a></li><li><a href="#section-6">六、估值及买入研究区</a></li><li><a href="#section-7">七、行动与置信度</a></li><li><a href="#section-8">来源与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Alphabet（GOOGL）研究报告</h1>
+<blockquote>
+<p>研究日及信息截止：2026-10-02。采用GOOGL A类普通股342.10美元，StockAnalysis于2026-10-02 11:20 EDT显示的盘中价，单源、非收盘价；用户9月30日图片344.08美元未经验证，本次价低0.58%。最新已核财期2026年第二季度。约122.30亿全部普通股按A类价格近似估值4.184万亿美元，不是只计算A类股市值。前瞻正常化EPS12美元对应28.51倍。</p>
+</blockquote>
+<p><strong>核心命题：Google把用户的需求意图卖给广告主，再用搜索现金建设AI和云；真正要判断的是AI答案能否创造足够收入，补偿传统点击与资本效率损失。</strong></p>
+<h2 id="section-1">一、证据边界与公司介绍</h2>
+<p>信息丰富度A级。模型热度与巨额投资收益容易掩盖利润结构。本报告从Alphabet IR链接直接下载并读取2026 Q2和2025全年发行人PDF，以StockAnalysis交叉核对。未完整复核全部监管诉讼最新进展、租赁承诺和AI查询的单位成本，不能给这些变量伪精确概率。</p>
+<div aria-label="一、证据边界与公司介绍" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">2026 Q2业务</th>
+<th scope="col" style="text-align: right;">收入，十亿美元</th>
+<th scope="col">变现机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Search &amp; other</td>
+<td style="text-align: right;">63.271</td>
+<td>搜索等高意图广告；收入依赖查询、商业意图、点击与广告价格</td>
+</tr>
+<tr>
+<td>YouTube广告</td>
+<td style="text-align: right;">11.055</td>
+<td>视频观看流量、广告加载与品牌/效果预算</td>
+</tr>
+<tr>
+<td>Google Network</td>
+<td style="text-align: right;">7.303</td>
+<td>向合作网站及应用分成的广告网络</td>
+</tr>
+<tr>
+<td>订阅、平台、设备</td>
+<td style="text-align: right;">12.911</td>
+<td>YouTube订阅、Google One、应用分发、硬件等</td>
+</tr>
+<tr>
+<td>Google Cloud</td>
+<td style="text-align: right;">24.768</td>
+<td>GCP用量、Workspace订阅，以及发行人新增明确列示的TPU系统销售</td>
+</tr>
+<tr>
+<td>Other Bets</td>
+<td style="text-align: right;">0.382</td>
+<td>自动驾驶等探索性业务，仍亏损</td>
+</tr>
+</tbody>
+</table></div>
+<p>上述前四项属于Google Services，季度合计945.40亿美元；对冲损益另有1.06亿美元。Cloud不能一律当成轻资产软件订阅，TPU硬件销售会改变增长及利润结构。</p>
+<p>季度Services经营利润395.44亿美元、Cloud88.14亿美元；Other Bets亏17.99亿美元，集团层活动亏57.89亿美元，主要包含共享AI研发。分部利润率不能忽略集团研发后直接变为全公司的股东利润。</p>
+<h2 id="section-2">二、四年财务与最新“盈利”真相</h2>
+<p>单位：十亿美元；自然年。历史数据来自StockAnalysis，2025年与发行人全年PDF核对。</p>
+<div aria-label="二、四年财务与最新“盈利”真相" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">年度</th>
+<th scope="col" style="text-align: right;">收入</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+<th scope="col" style="text-align: right;">现金CapEx</th>
+<th scope="col" style="text-align: right;">简式FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">282.836</td>
+<td style="text-align: right;">59.972</td>
+<td style="text-align: right;">91.495</td>
+<td style="text-align: right;">31.485</td>
+<td style="text-align: right;">60.010</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">307.394</td>
+<td style="text-align: right;">73.795</td>
+<td style="text-align: right;">101.746</td>
+<td style="text-align: right;">32.251</td>
+<td style="text-align: right;">69.495</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">350.018</td>
+<td style="text-align: right;">100.118</td>
+<td style="text-align: right;">125.299</td>
+<td style="text-align: right;">52.535</td>
+<td style="text-align: right;">72.764</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">402.836</td>
+<td style="text-align: right;">132.170</td>
+<td style="text-align: right;">164.713</td>
+<td style="text-align: right;">91.447</td>
+<td style="text-align: right;">73.266</td>
+</tr>
+</tbody>
+</table></div>
+<p>2025收入增长15.09%，资本支出却吞噬大部分经营现金增量。全年GAAP EPS10.81美元也包含297.87亿美元其他收入，不宜全部资本化为永久盈利。</p>
+<p>2026 Q2收入1,197.96亿美元、同比+24%，经营利润407.70亿美元、利润率34%；但净利润1,121.93亿美元，扣优先股股息后普通股净利1,121.07亿美元、EPS9.11美元。关键是979.83亿美元其他收入，主要来自未实现股权收益。<strong>不是搜索单季赚了1,121亿美元现金，也不能用EPS9.11乘四来判断低估。</strong></p>
+<p>经营现金流390.69亿美元，现金CapEx449.24亿美元，季度FCF=-58.55亿美元；半年FCF为42.61亿美元。Q2同比Search收入+17%、YouTube广告+13%、Cloud+82%，业务真实强劲，但不能让投资重估收益替代对盈利质量的检查。</p>
+<h2 id="section-3">三、AI到底增强还是蚕食搜索</h2>
+<p>Google的护城河是品牌入口、分发渠道、索引、广告主投放体系以及海量用户反馈；不是“拥有最多参数”。AI回答可以增加查询次数，帮助用户完成更多商业任务；与此同时，直接给答案会减少跳转点击、压缩广告位置，并增加每次查询的计算成本。</p>
+<p>应同时看三个层次：第一，查询总量是否增长；第二，商业查询与广告成交价值是否增长；第三，扣除TAC、推理和设备折旧后的贡献利润是否增长。只证明第一点，不足以证明股东受益。Q2流量获取成本TAC为161.79亿美元，分发平台仍能分走利润；AI助手若成为默认入口，分发议价和商业路径都可能改变。</p>
+<p>最强反方不是“明天没人用Google”，而是搜索份额仍高、查询也增长，却因答案替代点击及模型推理支出，单位查询利润持续下降。为了保住入口，Google还必须免费或低价提供AI，因而其主业可能在保持收入增长的同时资本回报降低。</p>
+<p>YouTube有内容、创作者与广告主的双边网络，但短视频竞争、版权与内容分成仍约束利润。Cloud的企业迁移成本和自研TPU有优势，竞争对手Azure/AWS也能降价。Waymo等Other Bets保留上行可选性，本估值不给未经验证的远期巨大独立价值。</p>
+<h2 id="section-4">四、资产负债表与治理：净现金不是无限预算</h2>
+<p>6月底现金及有价证券2,424.74亿美元，长期债务981.65亿美元；第三方含租赁等总债务1,207.91亿美元，广义净现金约1,216.83亿美元。净现金仍强，但短期金融资产并不等于全为银行活期存款。未开始租赁和采购承诺未全部计入这一净额。</p>
+<p>公司Q2发行普通股和强制可转优先股，合计净筹资约496亿美元，并新增至多400亿美元ATM计划；截至6月底该ATM尚未出售股票。季内还发行高级无担保票据。现金增长很大部分来自融资及资产变化，不能描述成完全由搜索经营积累。</p>
+<p>半年普通股回购为零，SBC147.08亿美元，股份奖励相关税款结算现金120.56亿美元。期末普通股由2025年底120.88亿增至122.30亿，未来强制转换还可能稀释。不要拿过去回购惯性预测未来每股收益。</p>
+<p>Pichai团队有把基础研究转成搜索、云与订阅的能力，资本配置却从大规模回购转向极高AI投资与新增融资。GOOGL为A类有投票权股票，GOOG为C类；控制权与经济权益不是同一回事。本次未复核创始人最新表决权百分比，不编造治理精确分数。</p>
+<h2 id="section-5">五、风险清单</h2>
+<div aria-label="五、风险清单" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">路径</th>
+<th scope="col">主观风险级别</th>
+<th scope="col">论点破坏指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI答案蚕食广告单位利润</td>
+<td>中高、影响高</td>
+<td>查询增长但搜索商业收入及利润率连续落后</td>
+</tr>
+<tr>
+<td>重资本竞争让Cloud增收不增现金</td>
+<td>中、影响高</td>
+<td>Cloud毛利承压、CapEx长期快于现金流</td>
+</tr>
+<tr>
+<td>分发或反垄断救济改变入口</td>
+<td>难量化、影响高</td>
+<td>默认分发结构或广告技术业务被实质改变</td>
+</tr>
+<tr>
+<td>模型/硬件迭代导致减值</td>
+<td>中、影响高</td>
+<td>设备寿命缩短、使用率和租赁回报下降</td>
+</tr>
+<tr>
+<td>持续融资与优先股稀释</td>
+<td>中、影响中高</td>
+<td>每股增速显著落后集团经营利润增速</td>
+</tr>
+</tbody>
+</table></div>
+<p>未把当前监管争议写成“最终判决已落地”，未穷尽所有截至截止日案件。最可能的分析错误，是把Cloud增长和模型表现同时给高估值，却不扣共享AI研发和后续融资成本。</p>
+<h2 id="section-6">六、估值及买入研究区</h2>
+<p>采用<strong>12美元未来12个月正常化EPS假设</strong>，不是发行人盈利指引。计算锚：经营利润1,850亿美元、正常税率20%、优先股等预留约10亿美元，除以123亿股，约11.95美元，取12。保留SBC，排除股权重估；若完全稀释股本明显超过假设，需向下修正。该经营利润假设比Q2年化水平更高，因此本身需要业务增长兑现。</p>
+<div aria-label="六、估值及买入研究区" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">三年情景</th>
+<th scope="col" style="text-align: right;">正常化EPS年增长</th>
+<th scope="col" style="text-align: right;">期末前瞻PE</th>
+<th scope="col" style="text-align: right;">三年后价格</th>
+<th scope="col" style="text-align: right;">相对342.10美元回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>熊：搜索利润遭蚕食</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">18倍</td>
+<td style="text-align: right;">216.00</td>
+<td style="text-align: right;">-36.86%</td>
+</tr>
+<tr>
+<td>基准：搜索守住、云继续增长</td>
+<td style="text-align: right;">+12%</td>
+<td style="text-align: right;">24倍</td>
+<td style="text-align: right;">404.62</td>
+<td style="text-align: right;">+18.28%</td>
+</tr>
+<tr>
+<td>牛：AI商业化及资本效率皆提升</td>
+<td style="text-align: right;">+20%</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">622.08</td>
+<td style="text-align: right;">+81.84%</td>
+</tr>
+</tbody>
+</table></div>
+<p>公式12×(1+增长率)^3×期末PE；不含股息、税费、汇率。基准年化价格回报仅5.75%，现价已经要求较强经营表现，不能因为表面TTM PE受投资收益拉低便称为便宜。</p>
+<p>当下条件研究买区为<strong>240—276美元=12×20—23倍</strong>。选择该倍数意味着盈利收益率约4.35%—5.00%，仍须盈利增长才能提供合理回报；相对基准终值24倍打折，是为AI搜索自我蚕食、融资稀释和资本密度留余地。不是历史低点猜测，未建立可比历史PE分位；也不将6月底现金重复加到已经包含利息收益的未经调整股价上。</p>
+<h2 id="section-7">七、行动与置信度</h2>
+<p>评级：<strong>等待价格</strong>。342.10美元实际单源盘中价和344.08美元图片价都高于研究买区。</p>
+<ul>
+<li>空仓：等240—276美元，或等经营证据显著提升后重建EPS，而非盲目提高PE。</li>
+<li>持有：持续监控Search/TAC、AI成本和Cloud集团分摊后盈利；数据保持可持有观察，但新增资金不追模型新闻。</li>
+<li>加仓条件：商业查询变现稳定、经营FCF而非融资现金回升、稀释受控。</li>
+<li>降低敞口或失效：搜索利润率结构性下降、Cloud不能覆盖新增投资、强制转换与ATM令每股收益假设落空。</li>
+</ul>
+<p>AI研究置信度中；实际投资不确定性高于传统搜索时代。公开信息多，只提高核对财报的能力，不会让AI商业模式的未来变得确定。</p>
+<h2 id="section-8">来源与审计</h2>
+<ol>
+<li><a href="https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Second-Quarter-2026-Results-2026-Y3uQ6H4ZJa/default.aspx" rel="noreferrer">Alphabet Q2发行人新闻页，2026-07-22</a>；<a href="https://s206.q4cdn.com/479360582/files/doc_news/2026/Jul/22/attachments/2026q2-alphabet-earnings-release.pdf" rel="noreferrer">直接读取的发行人PDF</a>，含分部、优先股、融资和现金流。</li>
+<li><a href="https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf" rel="noreferrer">Alphabet 2025全年PDF，2026-02-04</a>。</li>
+<li><a href="https://stockanalysis.com/stocks/googl/financials/" rel="noreferrer">StockAnalysis财务及盘中报价</a>、<a href="https://stockanalysis.com/stocks/googl/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/googl/statistics/" rel="noreferrer">股本及拆股</a>，2026-10-02访问。2022年20拆1后的A类股价格与每股指标。</li>
+</ol>
+<p>FY2025收入402,836百万、净利132,170百万；2026 Q2现金及证券242,474百万，与第三方一致，程序差异0%。注意Q2净利112,193百万与普通股净利112,107百万差86百万优先股股息，不平均不同口径。122.30亿股×342.10=4.183883万亿美元，与第三方4.18万亿近似一致。<code>financial_rigor.py</code>与Decimal计算保存在<code>calculation-audit.json</code>，工具TTM标签已更正为本文前瞻假设。数字提取及事实样本核验不认证模型假设；未逐项双源核对全部历史年度和未来合同。未采用未直接取得发行人材料的更新版全年CapEx指引。</p></article><footer class="report-footer"><span>GOOGL · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

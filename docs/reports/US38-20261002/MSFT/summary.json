@@ -1,0 +1,14 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "sector": "企业软件与云计算",
+  "research_date": "2026-10-02",
+  "quote": {"price": 514.95, "currency": "USD", "asof": "2026-10-02 11:21 EDT", "source_url": "https://stockanalysis.com/stocks/msft/financials/", "verified": true, "note": "直接浏览器读取单一供应商盘中价，非收盘价；图片9月30日512.90美元未经验证；普通股口径。"},
+  "financial_period": "FY2026及Q4，截至2026-06-30",
+  "recommendation": {"rating": "等待价格", "buy_low": 456, "buy_high": 494, "currency": "USD", "basis": "研究假设未来12个月正常化EPS19美元×24—26倍PE=456—494美元；以经营利润增长约15%、20%税率校准，剔除投资重估且保留SBC。", "conditions": "Azure及办公续费保持，Copilot消耗收入覆盖推理成本，包括租赁的资本投入回报未恶化；不是价格触及即买。", "holder_action": "基本面保持可观察持有；新增资金等安全边际，持续毛利下滑或RPO转化失败时重估。"},
+  "thesis": "企业工作流分销优势使微软能同时卖AI工具和基础设施，但必须用包含租赁的现金回报验证成长。",
+  "key_risk": "机房租赁重分类、GPU资本密度及投资重估可能令EPS改善快于真实所有者现金收益。",
+  "confidence": "中",
+  "source_limitations": ["行情仅一个供应商盘中快照。", "未完整核验未起租合同付款表及最新管理层持股。", "正常化EPS、增长率及倍数均为研究假设；历史年份并非逐项双源核验。"],
+  "report_file": "MSFT研究报告-20261002.md"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "ETN",
+  "company": "Eaton Corporation plc",
+  "sector": "电气化与电力管理设备",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 440.46,
+    "currency": "USD",
+    "asof": "2026-10-02 11:20 EDT",
+    "source_url": "https://stockanalysis.com/stocks/etn/financials/",
+    "verified": true,
+    "note": "单一平台有时间戳盘中行情，非收盘；9月30日图片429.71美元未核实。最后列示2011年2比1拆股，当前普通股口径。"
+  },
+  "financial_period": "2026年第二季度，截至2026-06-30；2026-07-31发布",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 303.6,
+    "buy_high": 343.2,
+    "currency": "USD",
+    "basis": "2026调整后EPS指引中点13.50减研究缓冲0.30=正常化13.20；13.20×23至26倍=303.60至343.20美元。",
+    "conditions": "电气订单和利润率兑现、Boyd整合现金回报可信、并购后的有息债务开始下降；任何盈利下修须重算区间。",
+    "holder_action": "不机械清仓，但评估同一电气资本开支敞口与估值风险；有机订单转弱且债务不降时考虑减持，避免按旧低杠杆印象追加。"
+  },
+  "thesis": "配电认证、渠道和服务带来较深壁垒，但电气化成长溢价已预支未来收益，Boyd收购增加资本负担。",
+  "key_risk": "短缺期价格及收购增长被当成永续增长，债务大幅上升后利润率或现金回报低于预期。",
+  "confidence": "中",
+  "source_limitations": ["公司原站多次超时，完整当季公告由公司Business Wire转载读取，并非第二独立来源。", "盘中报价仅单一平台；管理层最新持股、薪酬及SBC明细未全面核实。", "总债务是否包含租赁口径不同；未虚构历史估值分位。"],
+  "report_file": "ETN研究报告-20261002.md"
+}

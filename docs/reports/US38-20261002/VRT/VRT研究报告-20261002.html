@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="供电与散热的系统集成和服务网络具竞争壁垒，但参考价已预支较多高速增长。"><meta name="source-sha256" content="6aa289fb9b4fa0e0c29a8bf9b4bd4255c2762272385832fcf43a67c95729b97b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>Vertiv（VRT）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="VRT%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / VRT / 2026-10-02</div>
+<h1>Vertiv Holdings Co<span>数据中心供电与热管理设备 · 公司研究</span></h1><p class="hero-deck">供电与散热的系统集成和服务网络具竞争壁垒，但参考价已预支较多高速增长。</p>
+<div class="hero-meta"><span>2026年第二季度，截至2026-06-30；2026-07-29发布</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$251.45<small>2026-10-02 11:19 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">单一金融平台直接读取的盘中价，非收盘；用户9月30日图片241.31美元未核实。统计页未列拆股记录，当前普通股口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：收入、订单与现金</a></li><li><a href="#section-3">第二步：真正的生意与护城河</a></li><li><a href="#section-4">第三步：管理层与资本配置</a></li><li><a href="#section-5">第四步：最强反方与证伪条件</a></li><li><a href="#section-6">第五步：估值、情景与买入区间</a></li><li><a href="#section-7">第六步：最终决策</a></li><li><a href="#section-8">数据来源与审计记录</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：收入、订单与现金</a></li><li><a href="#section-3">第二步：真正的生意与护城河</a></li><li><a href="#section-4">第三步：管理层与资本配置</a></li><li><a href="#section-5">第四步：最强反方与证伪条件</a></li><li><a href="#section-6">第五步：估值、情景与买入区间</a></li><li><a href="#section-7">第六步：最终决策</a></li><li><a href="#section-8">数据来源与审计记录</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>Vertiv（VRT）研究报告</h1>
+<p><strong>研究日及信息截止：2026-10-02。</strong> 最新已核实财报为截至2026-06-30的第二季度，7月29日发布。参考股价251.45美元，为StockAnalysis在2026-10-02 11:19 EDT显示的盘中价，不是收盘价；按最近披露普通股384,988,173股估算市值968.05亿美元。用户图片标注9月30日241.31美元，未经验证，参考行情比图片高4.20%。本文不将图片自动当成正式历史收盘价。</p>
+<p>一句话观点：Vertiv出售的是算力设施持续运行所必需的供电、散热和服务能力，但高增长订单并不等于可以无限资本化的永久利润。</p>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，AI分析置信度中。容易误把“每颗AI芯片都需要散热”推导为“任何价格买液冷龙头都合理”。本次读取公司公告、SEC结构化申报及独立金融数据库；未完成客户合同和最新订单明细的逐项核验，不能从宣传性技术合作推算独占份额。行情为单一金融平台的有时间戳报价，交易前应重新核对。</p>
+<h2 id="section-2">第一步：收入、订单与现金</h2>
+<p>以下金额单位为百万美元，净利润采用GAAP，2023—2025收入及利润以SEC申报为准；现金流为StockAnalysis列示的经营现金流减资本开支，不与公司调整后FCF混称。</p>
+<div aria-label="第一步：收入、订单与现金" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">2023年</th>
+<th scope="col" style="text-align: right;">2024年</th>
+<th scope="col" style="text-align: right;">2025年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td style="text-align: right;">6863.2</td>
+<td style="text-align: right;">8011.8</td>
+<td style="text-align: right;">10229.9</td>
+</tr>
+<tr>
+<td>GAAP净利润</td>
+<td style="text-align: right;">460.2</td>
+<td style="text-align: right;">495.8</td>
+<td style="text-align: right;">1332.8</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td style="text-align: right;">900.5</td>
+<td style="text-align: right;">1319</td>
+<td style="text-align: right;">2114</td>
+</tr>
+<tr>
+<td>简单自由现金流</td>
+<td style="text-align: right;">772.6</td>
+<td style="text-align: right;">1152</td>
+<td style="text-align: right;">1894</td>
+</tr>
+</tbody>
+</table></div>
+<p>2025年公司调整后FCF为1,887百万美元，与上述1,894并不完全相同，不能把约定调整省略。净利润的跳升也不代表常态利润率每年都会按同样速度扩张。</p>
+<p>2026年第二季度：</p>
+<div aria-label="第一步：收入、订单与现金" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">指标</th>
+<th scope="col" style="text-align: right;">已披露值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>销售额（百万美元）</td>
+<td style="text-align: right;">3274.3</td>
+</tr>
+<tr>
+<td>产品收入（百万美元）</td>
+<td style="text-align: right;">2646.7</td>
+</tr>
+<tr>
+<td>服务收入（百万美元）</td>
+<td style="text-align: right;">627.6</td>
+</tr>
+<tr>
+<td>GAAP营业利润（百万美元）</td>
+<td style="text-align: right;">637.9</td>
+</tr>
+<tr>
+<td>调整后营业利润（百万美元）</td>
+<td style="text-align: right;">738</td>
+</tr>
+<tr>
+<td>调整后营业利润率</td>
+<td style="text-align: right;">22.6%</td>
+</tr>
+<tr>
+<td>GAAP摊薄EPS（美元）</td>
+<td style="text-align: right;">1.27</td>
+</tr>
+<tr>
+<td>调整后EPS（美元）</td>
+<td style="text-align: right;">1.52</td>
+</tr>
+<tr>
+<td>经营现金流（百万美元）</td>
+<td style="text-align: right;">1100</td>
+</tr>
+<tr>
+<td>调整后FCF（百万美元）</td>
+<td style="text-align: right;">925</td>
+</tr>
+</tbody>
+</table></div>
+<p>销售增长24%，其中有机增长18%、并购贡献5%、汇率贡献1%；调整后利润率同比提升410个基点。公司明确提到供应链拥堵和大型项目分阶段交付导致时间移动：不能只看年度订单强劲而忽略季度交付质量。</p>
+<p>2025年末已核实积压订单150亿美元、当季订单销售比约2.9倍；这是旧时点，<strong>不是2026年二季度积压订单</strong>。本次未获得可核验的最新订单总额及液冷/电力产品分别利润率，不编造拆分。全年最新指引为收入138亿—142亿美元、调整后EPS 6.65—6.75美元、调整后FCF24亿—26亿美元。</p>
+<p>6月底现金28.106亿美元、短期投资3亿美元；有息长期债务账面额29.398亿美元，按这一不含经营租赁的口径净现金约1.708亿美元。数据库把租赁等计入债务后呈现净负债，二者并不矛盾。尤其要注意递延收入从2025年末18.147亿美元升至36.337亿美元，客户预付款帮助现金流，但未来仍须采购、制造和交付，不能全当作闲置股东现金。上半年SBC为3,080万美元；总股数亦应持续跟踪。</p>
+<blockquote>
+<p>生意追问：现金增长来自已交付服务，还是客户提前支付而公司尚未履约？</p>
+</blockquote>
+<h2 id="section-3">第二步：真正的生意与护城河</h2>
+<p>客户是超大规模云厂商、托管数据中心、通信运营商和企业机房。电源链包含UPS、配电及相关系统，热管理从传统精密空调扩展至液冷，另有部署、备件、维护等服务。售出设备形成装机基础，服务再从可靠性需求获利；并非纯订阅软件。</p>
+<p>护城河来自停机代价高、设备认证、系统集成经验、全球服务网络及跨代机房设计能力。新竞争者可以买工厂，却很难立即复制现场故障记录和客户认证。另一方面，大客户可以多供应商采购；Schneider Electric、Eaton及专业散热厂商均会争夺利润。液冷渗透率增加有利于产品价值量，但也会改变原有风冷份额。必须观察产品组合、保修和服务附着率，而不是仅跟踪GPU出货。</p>
+<p>行业需求具有长期基础，盈利却仍受项目周期、原材料、关税和供应交期影响。越急的交付，越容易出现加班、外包和质量成本；毛利改善能否保留，比订单新闻更重要。</p>
+<h2 id="section-4">第三步：管理层与资本配置</h2>
+<p>CEO Giordano Albertazzi负责经营执行，Dave Cote任执行董事长。2025年第四季度部署约10亿美元进行增长型并购，2026年又把全年资本开支预期推至收入约4%。这意味着公司正用真实资本扩产，而非无成本分享AI繁荣。</p>
+<p>积极面是盈利、现金和资产负债表同步改善；反面是预付款繁荣期容易误判永久需求，扩产和并购回报需跨周期验证。本次没有核实最新代理文件中的管理层持股及薪酬考核细目，不以数据库估算代替治理结论。企业能力依赖工程和服务体系，并非单一明星经理人。</p>
+<h2 id="section-5">第四步：最强反方与证伪条件</h2>
+<div aria-label="第四步：最强反方与证伪条件" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观可能性/影响</th>
+<th scope="col">应观察的事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大客户延后数据中心，订单不取消却不交付</td>
+<td>中/高</td>
+<td>连续季度订单转收入变慢、预付款停止增加</td>
+</tr>
+<tr>
+<td>液冷竞争压价，设备升级未带来利润</td>
+<td>中/高</td>
+<td>产品增长而利润率下降、保修费用上升</td>
+</tr>
+<tr>
+<td>扩产超过真实需求</td>
+<td>中/高</td>
+<td>存货和固定资产快于销售增长，现金转换恶化</td>
+</tr>
+<tr>
+<td>单纯估值回归</td>
+<td>中高/高</td>
+<td>经营仍增长，但市场不再支付高倍数</td>
+</tr>
+</tbody>
+</table></div>
+<p>最强空方观点不是“AI没有需求”，而是客户把多年项目同时下单、供应商把稀缺期价格误认作常态利润；市场又提前给予成熟后的利润和稀缺期估值。最容易犯的错误是把三种乐观假设同时成立视为基准。</p>
+<p>实质证伪：连续两季有机增长明显低于公司目标且订单兑现恶化；调整后营业利润率持续跌破20%；现金流主要靠预收款，而履约后现金明显流失。上述20%是本报告监测阈值，不是债务契约。</p>
+<h2 id="section-6">第五步：估值、情景与买入区间</h2>
+<p>以2026年调整后EPS指引中点6.70美元为起点，研究上扣除0.30美元的正常化缓冲，采用<strong>6.40美元正常化EPS</strong>。这不是GAAP、TTM或公司新指引；缓冲用于承认整合、质量及异常利润率的不确定性，不声称它等于某一已披露调整科目。</p>
+<p>251.45美元对应正常化39.29倍，直接按公司调整后中点则更低，但仍不便宜。与Eaton的多终端分散业务相比，Vertiv增长更快，也更集中于数据中心资本开支，因此不能单凭增速给予软件式永久估值。</p>
+<p>三年示意模型：2029年价格＝6.40×(1＋EPS年增长率)^3×终值倍数。以下为价格回报，不含股息、税费；持有期限按三年估值期近似，不保证在某日达到目标。</p>
+<div aria-label="第五步：估值、情景与买入区间" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">EPS年增长假设</th>
+<th scope="col" style="text-align: right;">终值PE</th>
+<th scope="col" style="text-align: right;">2029年EPS</th>
+<th scope="col" style="text-align: right;">未来价格（美元）</th>
+<th scope="col" style="text-align: right;">三年价格回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">20倍</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;">128.00</td>
+<td style="text-align: right;">-49.10%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">18%</td>
+<td style="text-align: right;">30倍</td>
+<td style="text-align: right;">10.52</td>
+<td style="text-align: right;">315.46</td>
+<td style="text-align: right;">+25.46%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">28%</td>
+<td style="text-align: right;">38倍</td>
+<td style="text-align: right;">13.42</td>
+<td style="text-align: right;">510.03</td>
+<td style="text-align: right;">+102.83%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准价格315.46美元折现三年、要求10%年回报，今日价值代理为237.01美元，并非315.46美元就是今天的合理买价。基准情景从参考价出发的年化价格回报约7.85%，与悲观下行并不对称。</p>
+<p><strong>有安全缓冲的研究买入带为166.40—192.00美元</strong>：6.40美元正常化EPS×26—30倍。这是对高增长制造企业给出的主观估值纪律，不是历史支撑位；区间低于基准折现值，以覆盖增长和利润率落空。没有足够同口径历史数据，不虚构“历史估值分位”。</p>
+<h2 id="section-7">第六步：最终决策</h2>
+<p>评级：<strong>等待价格</strong>。在已核实参考价251.45美元，或未核实图片价241.31美元，均不建议因AI订单新闻追买。</p>
+<div aria-label="第六步：最终决策" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象/触发</th>
+<th scope="col">条件行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>等待166.40—192.00美元，并复核最新指引、订单转换和预付款来源；跌入区间不自动买入</td>
+</tr>
+<tr>
+<td>持仓者</td>
+<td>业务仍执行良好可继续跟踪；若持仓形成单一AI资本开支风险，考虑逐步降低集中度，而非机械清仓</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>价格与盈利依据同时满足，现金在交付后仍保留，服务和产品利润质量没有恶化</td>
+</tr>
+<tr>
+<td>减持/退出</td>
+<td>估值持续扩张但正常化EPS不跟上，或出现上述证伪条件；不用过去涨幅作为理由</td>
+</tr>
+</tbody>
+</table></div>
+<p>好生意判断中高、护城河中高、资本配置尚需跨周期检验、安全边际不足。投资不确定性高于资料丰富度所暗示的程度；本报告不提供个人仓位比例，不保证收益。</p>
+<h2 id="section-8">数据来源与审计记录</h2>
+<ol>
+<li><a href="https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx" rel="noreferrer">Vertiv二季度原始公告，2026-07-29</a>：季度、指引及现金/债务明细。</li>
+<li><a href="https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx" rel="noreferrer">2025年末业绩公告，2026-02-11</a>：订单、收购及现金流口径。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001674101.json" rel="noreferrer">SEC companyfacts</a>：2025年10-K编号0001674101-26-000008、二季度10-Q编号0001628280-26-050609。仅使用截止日前申报。</li>
+<li><a href="https://stockanalysis.com/stocks/vrt/financials/" rel="noreferrer">StockAnalysis财务与报价</a>、<a href="https://stockanalysis.com/stocks/vrt/statistics/" rel="noreferrer">统计和拆股</a>，2026-10-02读取。统计页未列拆股记录；采用当前普通股口径，非ADR。</li>
+</ol>
+<p>financial_rigor验证：2025收入10,229.9对10,230、利润1,332.8对1,333百万美元，均为四舍五入差异；现金加短投3,110.6对3,111一致。价格×股数与当次数据库市值966.6亿美元相差0.15%，来自行情时点/取整，未把加权摊薄股数当流通股数。估值工具默认把EPS显示为TTM，本文已明确更正为2026年正常化前瞻口径。Decimal计算及原始工具记录保存于同目录calculation-audit.json；report_audit抽取和财务样本核验另存audit-sample.json。抽检只核对所列事实及算术，不认证模型假设或遗漏数据。</p></article><footer class="report-footer"><span>VRT · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

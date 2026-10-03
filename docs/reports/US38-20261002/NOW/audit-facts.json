@@ -1,0 +1,80 @@
+[
+  {
+    "id": 2,
+    "label": "收入 · 2023",
+    "reported_value": 8.971,
+    "unit": "",
+    "raw_text": "| 收入 | 7.245 | 8.971 | 10.984 | 13.278 |",
+    "line_number": 23,
+    "fetched_value": 8.971,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 8.971,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 8,
+    "label": "GAAP净利润 · 2025",
+    "reported_value": 1.748,
+    "unit": "",
+    "raw_text": "| GAAP净利润 | 0.325 | 1.731 | 1.425 | 1.748 |",
+    "line_number": 24,
+    "fetched_value": 1.748,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 1.748,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 5,
+    "label": "GAAP净利润 · 2022",
+    "reported_value": 0.325,
+    "unit": "",
+    "raw_text": "| GAAP净利润 | 0.325 | 1.731 | 1.425 | 1.748 |",
+    "line_number": 24,
+    "fetched_value": 0.325,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 0.325,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/income-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 16,
+    "label": "经营现金流 · 2025",
+    "reported_value": 5.444,
+    "unit": "",
+    "raw_text": "| 经营现金流 | 2.723 | 3.398 | 4.267 | 5.444 |",
+    "line_number": 26,
+    "fetched_value": 5.444,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 5.444,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 15,
+    "label": "经营现金流 · 2024",
+    "reported_value": 4.267,
+    "unit": "",
+    "raw_text": "| 经营现金流 | 2.723 | 3.398 | 4.267 | 5.444 |",
+    "line_number": 26,
+    "fetched_value": 4.267,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 4.267,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  },
+  {
+    "id": 18,
+    "label": "资本开支 · 2023",
+    "reported_value": 0.694,
+    "unit": "",
+    "raw_text": "| 资本开支 | 0.550 | 0.694 | 0.852 | 0.868 |",
+    "line_number": 27,
+    "fetched_value": 0.694,
+    "fetched_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "fetched_value2": 0.694,
+    "fetched_source2": "https://stockanalysis.com/stocks/now/financials/cash-flow-statement/",
+    "normalization_note": "StockAnalysis full HTML table accessed using requests; units millions converted to report billions."
+  }
+]

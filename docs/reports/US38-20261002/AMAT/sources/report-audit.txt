@@ -1,0 +1,17 @@
+LIMITED CHECK ONLY. Automatic extract largely selected scenario assumptions rather than historical financials. Model items were separately recomputed with Decimal, never certified as externally verified facts. Supplementary historical samples selected from report financial table. Tool PASS may coexist with WARN; TSM issuer/aggregator profit discrepancy remains unresolved in cause and explicitly disclosed. No full-report audit certification is implied.
+
+======================================================================
+[1m报告数据抽检 — 准出/打回判决[0m
+报告：AMAT研究报告-20261002.md
+======================================================================
+
+  [92m✅ 通过[0m [101] FY2025 revenue                       报告:     28368.00 million, statement currency
+                                                    https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025/: 28368.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amat/financials/: 28368.00 (偏差 0.00%)
+  [92m✅ 通过[0m [102] FY2025 net income                    报告:      6998.00 million, statement currency
+                                                    https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025/: 6998.00 (偏差 0.00%)  |  https://stockanalysis.com/stocks/amat/financials/: 6998.00 (偏差 0.00%)
+
+----------------------------------------------------------------------
+  抽检总数: 2  |  通过: [92m2[0m  |  警告: [93m0[0m  |  不通过: [91m0[0m
+
+[1m[92m【准出】所有抽检数据通过，报告可发布。[0m
+======================================================================

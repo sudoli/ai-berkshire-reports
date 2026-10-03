@@ -1,0 +1,58 @@
+======================================================================
+报告数据抽检清单
+文件：ai-berkshire\reports\US38-20261002\GOOGL\GOOGL研究报告-20261002.md
+总提取数据点：17  |  抽样比例：15%  |  抽检数量：3
+随机种子：42（可用于复现同一批样本）
+======================================================================
+
+ ID     行号  数据标签                                          报告值  单位
+───  ─────  ───────────────────────────────────  ────────────  ──────
+  1     13  Google Search & other · 收入，十亿美元             63.27  
+  4     16  订阅、平台、设备 · 收入，十亿美元                          12.91  
+ 12     80  基准：搜索守住、云继续增长 · 三年后价格                      404.62  
+
+↑ 请对上述每个数据点，从以下信源取数，填入 fetched_value：
+  美股：macrotrends.net（主）+ stockanalysis.com（副）
+  港股：aastocks.com（主）+ macrotrends ADR（副）
+  A股： eastmoney.com（主）+ cninfo.com.cn（副）
+
+抽检清单 JSON（填入 fetched_value 后，传给 verdict 命令）：
+
+[
+  {
+    "id": 1,
+    "label": "Google Search & other · 收入，十亿美元",
+    "reported_value": 63.271,
+    "unit": "",
+    "line_number": 13,
+    "raw_text": "| Google Search & other | 63.271 | 搜索等高意图广告；收入依赖查询、商业意图、点击与广告价格 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 4,
+    "label": "订阅、平台、设备 · 收入，十亿美元",
+    "reported_value": 12.911,
+    "unit": "",
+    "line_number": 16,
+    "raw_text": "| 订阅、平台、设备 | 12.911 | YouTube订阅、Google One、应用分发、硬件等 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 12,
+    "label": "基准：搜索守住、云继续增长 · 三年后价格",
+    "reported_value": 404.62,
+    "unit": "",
+    "line_number": 80,
+    "raw_text": "| 基准：搜索守住、云继续增长 | +12% | 24倍 | 404.62 | +18.28% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "ticker": "AAPL",
+  "company": "Apple 苹果",
+  "sector": "消费电子与生态",
+  "research_date": "2026-10-02",
+  "quote": {"price": 331.35, "currency": "USD", "asof": "2026-10-02 11:19 EDT，盘中", "source_url": "https://stockanalysis.com/stocks/aapl/", "verified": true, "note": "行情单源；图片333.02未独立验证；USD普通股。"},
+  "financial_period": "FY2026Q3，截至2026-06-27",
+  "recommendation": {"rating": "等待价格", "buy_low": 205, "buy_high": 220, "currency": "USD", "basis": "TTM EPS约8.72扣关税退款0.11，取归一化8.60；+9%三年、PE29得322.98，按10%折现为242.66，205-220留约9%-16%额外边际。", "conditions": "归一化盈利与服务现金稳定、生态没有结构性破坏；不将退款与低基数永久化。", "holder_action": "可按生态和现金持有，但评估高估值的集中度与机会成本；EPS基数恶化则下修买区。"},
+  "thesis": "设备入口与服务复购支撑优质现金，但当前价格要求高于基准的长期增长。",
+  "key_risk": "把关税退款和低税务基数带来的EPS增速当成持续增长，忽视估值压缩。",
+  "confidence": "中",
+  "source_limitations": ["实时行情单源；市值以季末实际股数近似。", "较早FY22-23历史部分单源。", "8.60为研究者归一化EPS，不是公司指引；全年FY26结果尚未纳入。"],
+  "report_file": "AAPL研究报告-20261002.md"
+}

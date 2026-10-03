@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-09-30",
+    "regular_session_close_raw": 134.00999450683594,
+    "rounded": 134.01,
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/NOW?range=1mo&interval=1d",
+    "note": "Daily bar timestamp marks session open, value is session close; single vendor.",
+    "secondary_source": "https://stockanalysis.com/stocks/now/history/",
+    "secondary_close": "134.01",
+    "source_independence_limit": "Different sites; upstream market-data supply chain not independently verified."
+  }
+]

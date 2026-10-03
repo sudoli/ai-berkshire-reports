@@ -1,0 +1,34 @@
+{
+  "ticker": "NOW",
+  "company": "ServiceNow, Inc.",
+  "sector": "企业工作流与AI自动化软件",
+  "research_date": "2026-10-02",
+  "quote": {
+    "price": 134.01,
+    "currency": "USD",
+    "asof": "2026-09-30 regular-session close",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NOW?range=1mo&interval=1d",
+    "verified": true,
+    "note": "Yahoo及StockAnalysis同日close均与用户截图一致；已核实2025年1拆5、12月18日拆后交易，价格/EPS/股数均拆后。两站底层行情供应链未独立核查。"
+  },
+  "financial_period": "2026Q2 ended 2026-06-30; 10-Q filed 2026-07-23",
+  "recommendation": {
+    "rating": "等待价格",
+    "buy_low": 92.37,
+    "buy_high": 105.54,
+    "currency": "USD",
+    "basis": "正常所有者现金收益2.85美元/拆后股（调整FCF扣SBC和现金调整缓冲），增长18%三年、退出30倍得140.479236美元；按15%和10%折现三年得92.37—105.54美元。",
+    "conditions": "有机cRPO、AI毛利与扣SBC现金收益保持，收购整合和75.17亿美元有息债务受控；需复核现金调整缓冲。",
+    "holder_action": "监控有机合同增长、AI成本和稀释；勿因拆后股价数字低或调整FCF倍数看似便宜而加仓。"
+  },
+  "thesis": "企业执行流程与治理形成较强转换成本，但现价已要求显著增长且SBC与并购削弱可分配现金。",
+  "key_risk": "AI减少席位并抬高推理成本，大型并购和短债融资使调整FCF高于真正股东经济现金。",
+  "confidence": "中",
+  "source_limitations": [
+    "Yahoo及StockAnalysis行情已双站核对但底层供应链未独立核查，市值采用6月末股数估算。",
+    "Macrotrends访问受限；已取得StockAnalysis完整表格，与SEC和Yahoo复核，FCF差异按无形资产购置范围解释。",
+    "未获得产品级AI毛利、续约折扣、独立客户访谈及最新管理层持股比例。",
+    "公司35%指引是调整FCF率；正常收益模型含研究假设，现金并购调整缓冲可能不足。"
+  ],
+  "report_file": "NOW研究报告-20261002.md"
+}

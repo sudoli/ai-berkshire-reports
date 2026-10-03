@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="软硬件平台仍能捕获AI集群利润，但应剔除证券收益并为出口与客户融资风险留出折扣。"><meta name="source-sha256" content="69a30e66ae772488da0a109545a57104c68414a30ef6074aa64afe4253ee5e45">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>英伟达（NVDA）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="NVDA%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / NVDA / 2026-10-02</div>
+<h1>NVIDIA Corporation<span>AI计算平台与半导体 · 公司研究</span></h1><p class="hero-deck">软硬件平台仍能捕获AI集群利润，但应剔除证券收益并为出口与客户融资风险留出折扣。</p>
+<div class="hero-meta"><span>FY2027 Q2，截至2026-07-26，2026-08-26发布</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$234.98<small>2026-10-02 11:19 EDT<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">盘中非收盘；Yahoo 11:22:58 EDT为234.81作异时点交叉。图片2026-09-30的228.38未经核验，相差+2.89%；2024年10拆1后口径。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司和现金来源</a></li><li><a href="#section-3">第二步：必须修正的盈利和资产负债表口径</a></li><li><a href="#section-4">第三步：护城河与利润分配</a></li><li><a href="#section-5">第四步：最强反面论证</a></li><li><a href="#section-6">第五步：管理层与资本配置</a></li><li><a href="#section-7">第六步：估值与三年情景</a></li><li><a href="#section-8">第七步：行动纪律</a></li><li><a href="#section-9">数据来源、差异与审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司和现金来源</a></li><li><a href="#section-3">第二步：必须修正的盈利和资产负债表口径</a></li><li><a href="#section-4">第三步：护城河与利润分配</a></li><li><a href="#section-5">第四步：最强反面论证</a></li><li><a href="#section-6">第五步：管理层与资本配置</a></li><li><a href="#section-7">第六步：估值与三年情景</a></li><li><a href="#section-8">第七步：行动纪律</a></li><li><a href="#section-9">数据来源、差异与审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>英伟达（NVDA）研究报告</h1>
+<blockquote>
+<p>研究日及信息截止：2026-10-02。币种：美元。实际行情基准：StockAnalysis 2026-10-02 11:19 EDT 盘中 <strong>234.98</strong>，不是收盘价；Yahoo 11:22:58 EDT 为234.81，时间差可解释微小差异。用户图片标称2026-09-30的228.38未经独立验证，与本报告行情相差+2.89%。最新财务期：FY2027第二季度，截至2026-07-26，8月26日发布。按8月21日SEC普通股241亿股估算市值5.663万亿美元，不是实时精确股本。核心判断：平台优势仍强，但投资收益和客户融资正在使“利润等于现金”的直觉失效。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，AI分析置信度中等。资料很多不等于预测确定：市场与AI都容易把客户的资本开支、合作融资框架和英伟达收入混为一谈。本报告核对发行人公告、SEC结构化财务事实及第三方财务表；不声称验证了客户真实GPU利用率、订单不可取消性或中国出口许可的全部最新细则。所有估值中的增长与倍数都是研究假设，不是公司保证或分析师一致预期。</p>
+<h2 id="section-2">第一步：公司和现金来源</h2>
+<p>英伟达向云平台、AI实验室、企业和设备制造商提供GPU、CPU、网络、系统及软件。CUDA、算法库、编译器和开发工具帮助客户把芯片算力变成实际模型吞吐；NVLink、交换机与整机把竞争单位从单颗芯片扩展至集群。重复收入的主体仍是客户不断购买硬件和升级基础设施，而不是可直接按SaaS续费率估值的软件订阅。</p>
+<p>FY27第二季度数据中心收入890亿美元，占962.21亿美元总收入的绝大部分；边缘计算约72亿美元。公司公开的财务分部“Compute &amp; Networking/Graphics”与产品市场“Data Center/Edge”并非同一套分类，不能相加。先进制程代工、HBM、先进封装、电力与机房决定可交付量；晶圆厂资本开支主要由供应商承担，但预付款、库存、供应承诺和应收账款仍需英伟达投入现金。</p>
+<p>单位：百万美元；净利润为GAAP。年度营收、净利和经营现金流与SEC及StockAnalysis一致。</p>
+<div aria-label="第一步：公司和现金来源" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年（以1月结束年份命名）</th>
+<th scope="col" style="text-align: right;">营收</th>
+<th scope="col" style="text-align: right;">GAAP净利润</th>
+<th scope="col" style="text-align: right;">经营现金流</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2023</td>
+<td style="text-align: right;">26,974</td>
+<td style="text-align: right;">4,368</td>
+<td style="text-align: right;">5,641</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td style="text-align: right;">60,922</td>
+<td style="text-align: right;">29,760</td>
+<td style="text-align: right;">28,090</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td style="text-align: right;">130,497</td>
+<td style="text-align: right;">72,880</td>
+<td style="text-align: right;">64,089</td>
+</tr>
+<tr>
+<td>FY2026</td>
+<td style="text-align: right;">215,938</td>
+<td style="text-align: right;">120,067</td>
+<td style="text-align: right;">102,718</td>
+</tr>
+</tbody>
+</table></div>
+<p>最新季度营收96,221百万美元，同比+106%；GAAP净利润59,688百万，GAAP EPS 2.46，non-GAAP EPS 2.22；两种毛利率均75.0%。下一季度公司指引收入1080亿美元±2%、毛利率74.0%±0.5个百分点，且<strong>不假设任何来自中国的数据中心计算收入</strong>。这意味着本估值不把中国恢复销售作为必需条件，也不能把潜在恢复当成无风险增量。</p>
+<h2 id="section-3">第二步：必须修正的盈利和资产负债表口径</h2>
+<ol>
+<li>FY27起，公司non-GAAP已包含SBC，历史比较数也重新列示。不能机械地说“调整后利润总是排除股权薪酬”。FY26 SBC为63.86亿美元，最新上半年39.54亿美元，仍是真实股东成本。</li>
+<li>本季GAAP利润高于调整后利润，主要须关注证券投资收益等非经营项目；现金流表扣回本季证券净收益77.71亿美元、上半年237.07亿美元。本季经营现金流240.77亿美元，发行人口径FCF213.41亿美元，仅相当于GAAP净利约35.75%；应收账款本季吸收223.46亿美元现金。增长快并不自动证明回款风险低。</li>
+<li>7月26日现金224.43亿美元、可交易债务证券341.43亿美元、可交易权益证券427.83亿美元。有息债务333.66亿美元；排除权益证券、排除租赁的保守净现金为232.20亿美元。权益证券有价值，但不能当作无波动运营现金。</li>
+<li>StockAnalysis“Cash &amp; Investments”624.69亿美元，相比上述现金加债券565.86亿美元高10.40%，本次未能完整重建其分类，<strong>采用发行人分项，不平均</strong>。其总债务388.60亿美元亦高于发行人有息债务，存在租赁等定义差别。故不以网站净现金直接做EV估值。</li>
+</ol>
+<blockquote>
+<p>段永平式追问：客户为什么持续付款？答案应是每单位有效算力更便宜，而不是大家都相信GPU会涨价。</p>
+</blockquote>
+<h2 id="section-4">第三步：护城河与利润分配</h2>
+<div aria-label="第三步：护城河与利润分配" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">优势</th>
+<th scope="col">证据和边界</th>
+<th scope="col">可证伪指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>软件迁移成本</td>
+<td>CUDA库、调试经验、模型适配和运维流程积累，难以只靠一颗更便宜芯片替代</td>
+<td>同负载迁移成本持续下降，替代平台在大规模生产中稳定运行</td>
+</tr>
+<tr>
+<td>集群系统能力</td>
+<td>计算、内存、互连与软件联合优化，降低部署失败成本</td>
+<td>客户独立拼装系统的总拥有成本连续优于其平台</td>
+</tr>
+<tr>
+<td>研发规模和迭代</td>
+<td>高利润支持跨代产品、网络及软件投入</td>
+<td>高投入不再带来实际吞吐和能耗优势</td>
+</tr>
+<tr>
+<td>生态效应</td>
+<td>开发者和工具供给提高平台吸引力</td>
+<td>不是无限网络效应：大客户有资源支持第二生态和自研ASIC</td>
+</tr>
+</tbody>
+</table></div>
+<p>竞争不仅来自商用GPU，也来自云厂商自研加速器、开放软件和专用推理架构。模型需求增长不保证英伟达维持现有利润占比：标准化推理可能把价值让给客户、内存、网络或电力。平台护城河强，但不能假设今日约75%的毛利率永续。</p>
+<h2 id="section-5">第四步：最强反面论证</h2>
+<p>聪明的空方不必证明AI失败，只需证明客户为供给稀缺提前下单、真实变现速度低于资本开支，且竞争将租金压低。若英伟达同时投资客户或参与算力融资，客户采购的经济独立性更难判断。公告提及动员超过5000亿美元第三方资本的框架，受最终协议约束，绝不是当期收入、现金或无条件订单。</p>
+<div aria-label="第四步：最强反面论证" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">失败路径</th>
+<th scope="col">主观风险判断，非统计概率</th>
+<th scope="col">观察与失效条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户资本开支回撤</td>
+<td>中等可能、影响很大</td>
+<td>收入放缓同时应收/库存继续增长；连续两个季度回款明显落后利润</td>
+</tr>
+<tr>
+<td>出口与地缘限制扩大</td>
+<td>中等可能、影响很大</td>
+<td>新限制超出当前中国零收入假设，影响其他客户或制造供应链</td>
+</tr>
+<tr>
+<td>平台利润被ASIC/竞品分走</td>
+<td>中等可能、长期影响大</td>
+<td>毛利率连续两个季度低于约65%，且并非一次性换代成本</td>
+</tr>
+<tr>
+<td>金融投资和融资承担风险</td>
+<td>越来越重要</td>
+<td>权益投资损失、客户融资义务或信用损失抵消主营增长</td>
+</tr>
+</tbody>
+</table></div>
+<p>上述阈值是复核纪律，不是已发生事实。最可能的分析错误，是用本季GAAP净利直接年化，再忽视营运资本和证券收益。</p>
+<h2 id="section-6">第五步：管理层与资本配置</h2>
+<p>黄仁勋领导的长期软件投入和从GPU到系统平台扩张，体现了较强执行能力。最近季度向股东返还约260亿美元，期末回购授权约990亿美元；授权不是已执行回购，回购也不证明估值便宜。与此同时，战略投资、融资平台和债务扩张使公司不再只是简单的净现金芯片设计商。本次没有核验最新代理声明中的管理层持股及薪酬表，不给“利益完全一致”的保证。即使创始人仍在，投资者也应以产品交付、现金兑现和资本配置结果评价管理。</p>
+<h2 id="section-7">第六步：估值与三年情景</h2>
+<p>不用受投资收益抬高的GAAP净利作为估值锚。设未来正常化年度收入4500亿美元、包含SBC后的经常性经营利润率65%、有效税率17%、稀释股数242亿，忽略小额净利息，得到经济EPS约10.03，保守取 <strong>10美元</strong>。这是下一正常化年度假设，既非TTM，也非已验证的公司全年EPS指引。对应当前价格23.50倍，不能直接与未扣SBC的同行调整后PE比较。</p>
+<p>从当前视角的下一正常化年度10美元EPS起点外推三年，估值时点约2029年；表中期末EPS是届时前瞻同口径盈利能力，终值PE也是前瞻经济倍数，而非混用历史TTM。相应收入、利润率、稀释必须共同支持每股增长。下表只计算价格回报，不含股息、税费、汇率及再投资。</p>
+<div aria-label="第六步：估值与三年情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">正常化EPS年增长</th>
+<th scope="col" style="text-align: right;">期末EPS</th>
+<th scope="col" style="text-align: right;">期末PE</th>
+<th scope="col" style="text-align: right;">三年后目标价</th>
+<th scope="col" style="text-align: right;">相对234.98回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观：预算收缩、利润率压缩</td>
+<td style="text-align: right;">-5%</td>
+<td style="text-align: right;">8.5738</td>
+<td style="text-align: right;">18倍</td>
+<td style="text-align: right;">154.33</td>
+<td style="text-align: right;">-34.32%</td>
+</tr>
+<tr>
+<td>基准：增长放缓但平台地位保持</td>
+<td style="text-align: right;">+15%</td>
+<td style="text-align: right;">15.2088</td>
+<td style="text-align: right;">25倍</td>
+<td style="text-align: right;">380.22</td>
+<td style="text-align: right;">+61.81%</td>
+</tr>
+<tr>
+<td>乐观：推理扩张且维持系统优势</td>
+<td style="text-align: right;">+25%</td>
+<td style="text-align: right;">19.5313</td>
+<td style="text-align: right;">32倍</td>
+<td style="text-align: right;">625.00</td>
+<td style="text-align: right;">+165.98%</td>
+</tr>
+</tbody>
+</table></div>
+<p>基准目标以12%折现三年，得到今日参考价值270.63美元，<strong>不是380.22美元今天就值这么多</strong>。当前价若要求12%年回报、三年后25倍PE，需要期末EPS约13.21、相对10美元起点年增长约9.71%；这一要求不离谱，但起点、现金转化和终值倍数均存在风险。</p>
+<p><strong>条件购买研究区间190–220美元</strong>，由10美元经济EPS×19–22倍得出，也低于基准折现值约两至三成。选择该倍数是为客户集中、出口和财务投资风险留下折扣，不是历史支撑位。若正常化EPS只能维持7美元，同样倍数仅支持133–154美元，原区间立即失效。</p>
+<h2 id="section-8">第七步：行动纪律</h2>
+<div aria-label="第七步：行动纪律" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象/事件</th>
+<th scope="col">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓者</td>
+<td>评级“等待价格”。实际234.98与图片228.38均在区间上方，不追涨；核对行情后等待190–220，并复核正常化10美元EPS路径</td>
+</tr>
+<tr>
+<td>已持有者</td>
+<td>经营论点未破坏可继续观察，不因图片涨幅机械卖出；重点审查应收、融资敞口和组合中同一AI支出周期的重复风险</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>价格进入区间，同时交付、回款与毛利率仍支持假设；仅下跌不构成充分条件</td>
+</tr>
+<tr>
+<td>减持/退出</td>
+<td>价格脱离上调后的盈利价值，或平台优势、回款、中国之外销售范围出现实质恶化；触及研究失效条件须重估，不能摊低成本自我安慰</td>
+</tr>
+</tbody>
+</table></div>
+<p>生意理解与护城河关通过；治理信息仍有缺口；当前价格安全边际关未通过。镜子测试：只有能解释客户为什么持续赚回GPU投资、利润如何变为现金，并接受大幅波动，才有理由在条件区间考虑交易。本报告不设个人仓位比例，不构成个性化投资建议。</p>
+<h2 id="section-9">数据来源、差异与审计</h2>
+<p>均在2026-10-02读取，未纳入截止日之后事件：</p>
+<ul>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027" rel="noreferrer">FY27 Q2发行人公告，2026-08-26</a>：季度、指引、SBC新口径、证券收益、现金和债务。</li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026" rel="noreferrer">FY26全年公告，2026-02-25</a>。</li>
+<li><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json" rel="noreferrer">SEC公司财务事实</a>：历年10-K、最新10-Q数字及8月21日股数；同一发行人的SEC与IR不当作两个独立经济来源。</li>
+<li><a href="https://stockanalysis.com/stocks/nvda/financials/" rel="noreferrer">StockAnalysis财务表与盘中行情</a>、<a href="https://stockanalysis.com/stocks/nvda/statistics/" rel="noreferrer">股本及拆股</a>、<a href="https://finance.yahoo.com/quote/NVDA/" rel="noreferrer">Yahoo独立展示行情</a>。</li>
+</ul>
+<p>2024-06-10为10拆1，本文价格/EPS按拆股后美元普通股口径，不再除以十。SEC股数241亿与网站241.5亿相差约0.2%，日期及四舍五入可解释；非实时股本。financial_rigor完成市值、年度215,938/120,067百万美元双源交叉与估值验算；现金字段10.40%差异已回到发行人分项处理。Decimal独立复算情景、折现与收益。report_audit按15%、固定种子42抽取5项，其中2项为模型假设；另补最新全年数据，共6项财务事实双源核验无超限差异，三情景目标和回报通过算术复算。模型假设、主观风险判断和未核实图片价格不属于外部认证事实，财务抽检通过不代表整篇获全面认证。AI置信度“中”主要来自财务口径可追溯；真实投资确定性仍取决于客户回报、技术替代与买入价格。</p></article><footer class="report-footer"><span>NVDA · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

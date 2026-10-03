@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="材料工程复杂度与服务安装基数提升长期价值，但当前价格已计入强设备上行周期。"><meta name="source-sha256" content="abd0aca55998698ae82f79ef0ce2eb2a51c28e0d349ff062a8841db70d4f6a42">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2311283a'/%3E%3Cpath d='M16 5 27 16 16 27 5 16Z' fill='%23c9e897'/%3E%3C/svg%3E">
+<title>应用材料（AMAT）研究报告 | AI Berkshire Research</title><style>
+:root {
+  --ink:#1b2936; --muted:#53616d; --paper:#f3f1eb; --white:#fffefa;
+  --navy:#11283a; --line:#dcded7; --accent:#c9e897; --green:#276349;
+  --link:#1e587f; --warn:#8c4a23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color-scheme:light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+body { margin:0; background:var(--paper); color:var(--ink); font-size:16px; line-height:1.9; }
+a { color:var(--link); text-underline-offset:4px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #338463; outline-offset:4px; }
+.skip-link { position:fixed; top:8px; left:16px; transform:translateY(-160%); padding:8px 16px; background:white; z-index:200; }
+.skip-link:focus { transform:translateY(0); }
+.reading-progress { position:fixed; inset:0 auto auto 0; width:0; height:3px; background:var(--accent); z-index:110; }
+.site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:white; border-bottom:1px solid #40505d; }
+.header-inner { max-width:1360px; margin:auto; padding:15px 32px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.brand { font-size:12px; font-weight:750; letter-spacing:.11em; text-decoration:none; color:white; }
+.brand::before { content:""; display:inline-block; width:10px; height:10px; margin-right:12px; background:var(--accent); transform:rotate(45deg); }
+.actions { display:flex; gap:16px; align-items:center; }
+.actions a { color:#e5eced; font-size:13px; }
+button { font:inherit; cursor:pointer; }
+.print-button { background:transparent; color:white; border:1px solid #8a9ba6; border-radius:6px; padding:5px 12px; font-size:13px; }
+.print-button:hover { background:#294455; }
+.hero { background:var(--navy); color:white; }
+.hero-inner { max-width:1360px; margin:auto; padding:58px 32px 42px; }
+.eyebrow { color:var(--accent); font-size:12px; letter-spacing:.16em; font-weight:650; }
+h1 { font-size:clamp(32px,4.5vw,60px); letter-spacing:-.025em; line-height:1.2; margin:20px 0; font-weight:700; }
+h1 span { display:block; font-size:.54em; margin-top:14px; font-weight:450; letter-spacing:.07em; color:#d9e1e6; }
+.hero-deck { max-width:850px; color:#d9e1e6; margin:22px 0 28px; font-size:17px; }
+.hero-meta { display:flex; flex-wrap:wrap; gap:8px 24px; font-size:12px; color:#bdccd5; margin:18px 0; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid #4a5b66; padding-top:26px; margin-top:32px; gap:24px; }
+.metric dt { font-size:12px; color:#c4d0d6; margin-bottom:8px; }
+.metric dd { margin:0; font-size:clamp(23px,3vw,34px); line-height:1.3; font-weight:650; font-variant-numeric:tabular-nums; }
+.metric small { display:block; color:#c4d0d6; font-size:11px; font-weight:400; margin-top:9px; line-height:1.6; }
+.hero-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.hero-links a { color:var(--accent); font-size:13px; }
+.page-shell { display:grid; grid-template-columns:240px minmax(0,1fr); gap:40px; max-width:1360px; margin:40px auto 64px; padding:0 32px; align-items:start; }
+.toc-panel { position:sticky; top:98px; max-height:calc(100vh - 120px); overflow:auto; padding-right:10px; }
+.toc-title { font-size:11px; color:var(--muted); letter-spacing:.15em; text-transform:uppercase; font-weight:700; margin-bottom:15px; }
+.toc-list { list-style:none; margin:0; padding:0; }
+.toc-list li { margin:0; }
+.toc-list a { display:flex; align-items:baseline; gap:10px; padding:9px 10px; text-decoration:none; color:var(--muted); font-size:12px; border-left:2px solid transparent; line-height:1.6; }
+.toc-list a:hover,.toc-list a[aria-current="location"] { color:var(--green); background:#e6ecdf; border-left-color:var(--green); }
+.toc-number { color:#667d6a; font-size:10px; font-variant-numeric:tabular-nums; flex-shrink:0; }
+.sidebar-note { font-size:11px; color:var(--muted); border-top:1px solid var(--line); padding-top:16px; margin-top:22px; }
+.content-column { min-width:0; }
+.mobile-toc { display:none; }
+.report { background:var(--white); border:1px solid var(--line); border-radius:12px; padding:42px 46px; min-width:0; }
+.report p { margin:0 0 20px; }
+.report h2 { font-size:25px; line-height:1.55; letter-spacing:-.02em; margin:48px 0 22px; padding-top:18px; border-top:2px solid #c8d4c5; }
+.report h3 { font-size:19px; line-height:1.6; margin:30px 0 18px; }
+.report h2:first-child { margin-top:0; }
+.report strong { color:#183e31; font-weight:700; }
+.report li { margin:8px 0; }
+.report ul,.report ol { padding-left:24px; }
+.report hr { border:0; border-top:1px solid var(--line); margin:38px 0; }
+.report hr + h2 { border-top:0; padding-top:0; margin-top:30px; }
+.report blockquote { margin:26px 0; padding:15px 20px; border-left:3px solid #659876; background:#eef3e9; color:#365746; font-size:15px; }
+.report blockquote p:last-child { margin-bottom:0; }
+code { font-family:Consolas,"Cascadia Mono",monospace; font-size:.84em; background:#eef0eb; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+pre { padding:20px; background:#eef0eb; border:1px solid var(--line); border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; }
+pre code { background:none; padding:0; font-size:inherit; }
+.table-wrap { width:100%; overflow-x:auto; overscroll-behavior-x:contain; margin:25px 0; border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; min-width:570px; font-size:13px; line-height:1.8; font-variant-numeric:tabular-nums; }
+th,td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+th { background:#e9eee4; color:#26432f; font-weight:650; white-space:nowrap; }
+tbody tr:last-child td { border-bottom:0; }
+tbody tr:nth-child(even) { background:#f7f8f3; }
+tbody td:first-child { font-weight:550; min-width:130px; }
+.scenario-table { min-width:770px; }
+.scenario-table tbody tr:nth-child(2) { background:#e9f1e2; }
+.check-item { list-style:none; position:relative; margin-left:-24px !important; }
+.check-label { display:inline-block; font-size:10px; line-height:1.6; padding:2px 6px; margin-right:8px; border-radius:4px; color:#276349; background:#e5efdc; vertical-align:2px; }
+.citation { font-size:.78em; color:var(--green); text-decoration:none; margin:0 2px; white-space:normal; }
+.citation:hover { text-decoration:underline; }
+.source-item { font-size:13px; overflow-wrap:anywhere; line-height:1.85; }
+.source-item:target { background:#e6f1db; outline:2px solid #5d8650; outline-offset:5px; }
+.report-footer { color:var(--muted); font-size:12px; padding:22px 4px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+@media (max-width:1100px) {
+  .page-shell { grid-template-columns:minmax(0,1fr); max-width:1000px; margin-top:24px; }
+  .toc-panel { display:none; }
+  .mobile-toc { display:block; background:var(--white); border:1px solid var(--line); border-radius:8px; margin-bottom:18px; padding:12px 18px; }
+  .mobile-toc summary { cursor:pointer; color:var(--green); font-weight:650; font-size:14px; }
+  .mobile-toc .toc-list { margin-top:12px; }
+}
+@media (max-width:640px) {
+  body { font-size:15px; }
+  .header-inner { padding:12px 18px; gap:10px; }
+  .brand { font-size:10px; letter-spacing:.04em; }
+  .brand::before { margin-right:7px; width:7px; height:7px; }
+  .actions { gap:9px; }
+  .actions a,.print-button { font-size:11px; }
+  .print-button { padding:4px 7px; }
+  .hero-inner { padding:34px 20px 30px; }
+  .hero-deck { font-size:15px; }
+  .hero-meta { gap:6px 16px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; }
+  .metric dd { font-size:25px; }
+  .page-shell { margin-top:18px; padding:0 12px; }
+  .report { padding:24px 18px; border-radius:9px; }
+  .report h2 { font-size:22px; margin-top:38px; }
+  .report h3 { font-size:18px; }
+  .report blockquote { padding:12px 14px; font-size:14px; }
+  th,td { padding:10px 12px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  @page { size:A4; margin:16mm 14mm; }
+  body { background:white; font-size:10pt; line-height:1.65; }
+  .site-header,.reading-progress,.toc-panel,.mobile-toc,.hero-links,.skip-link,.report-footer { display:none !important; }
+  .hero { background:white; color:black; border-bottom:1px solid #aaa; }
+  .hero-inner { padding:0 0 18px; }
+  h1 { font-size:27pt; margin:12px 0; }
+  h1 span,.eyebrow,.hero-deck,.hero-meta,.metric dt,.metric small { color:#333; }
+  .hero-deck { font-size:11pt; }
+  .metrics { margin-top:16px; padding-top:12px; gap:12px; border-color:#aaa; }
+  .metric dd { font-size:17pt; }
+  .page-shell { display:block; padding:0; margin:20px 0 0; max-width:none; }
+  .report { border:0; padding:0; background:white; }
+  .report h2 { font-size:17pt; margin-top:24px; }
+  .report h3 { font-size:12pt; }
+  h2,h3 { break-after:avoid; }
+  .report p { orphans:3; widows:3; }
+  .table-wrap { overflow:visible; border-radius:0; margin:15px 0; }
+  table,.scenario-table { min-width:0; width:100%; table-layout:fixed; font-size:8pt; }
+  th,td { padding:6px; overflow-wrap:anywhere; }
+  th { white-space:normal; }
+  tbody td:first-child { min-width:0; }
+  tr { break-inside:avoid; }
+  thead { display:table-header-group; }
+  pre { font-size:8pt; }
+  a { color:inherit; }
+}
+
+[hidden]{display:none!important}
+.index-shell{max-width:1360px;margin:30px auto;padding:0 32px}
+.intro,.filters,.company-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px}
+.intro{margin-bottom:22px}.intro p:last-child{margin-bottom:0}
+.filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:22px 0}
+.filters label{display:flex;flex-direction:column;font-size:13px;gap:5px;flex:1;min-width:170px}
+input,select{font:inherit;border:1px solid #a0ada4;border-radius:5px;padding:10px;background:white;color:var(--ink);width:100%;min-width:0}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.company-card{min-width:0}.company-card h2{margin:0 0 5px;font-size:22px}
+.company-card p{font-size:14px;margin:10px 0}.company-card ul{font-size:12px;padding-left:20px}
+.company-card .quote{font-size:25px;font-variant-numeric:tabular-nums;margin:14px 0 0}
+.small,.quote-date{font-size:12px!important;color:var(--muted)}
+.badge{display:inline-block;border:1px solid #829a7c;background:#eef3e9;color:#254d34;border-radius:20px;padding:2px 11px;font-size:12px}
+.badge.caution{background:#fff0df;border-color:#b58e64;color:#744719}
+.card-links{display:flex;gap:18px;margin-top:16px}
+.card-links a{font-size:14px;font-weight:650}
+.method-link{color:var(--accent)}.metric dd{overflow-wrap:anywhere}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.data-warning{border-left:3px solid #b47940;padding-left:14px;font-size:14px}
+.result-count{font-size:13px;min-width:90px}
+.source-list li{font-size:13px}
+.report h1{font-size:28px;line-height:1.5}
+@media(max-width:700px){.index-shell{padding:0 12px}.card-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.header-inner{flex-wrap:wrap}.hero-inner{overflow-wrap:anywhere}.filters{padding:16px}.filters label{min-width:100%}.company-card,.intro{padding:18px}}
+@media print{.filters,.card-links{display:none!important}.index-shell{margin:0;padding:0}.card-grid{display:block}.company-card{break-inside:avoid;margin:15px 0}.company-card[hidden]{display:block!important}.intro{border:0}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report">跳至正文</a><div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html">AI BERKSHIRE / 38 COMPANIES</a>
+<div class="actions"><a href="AMAT%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-20261002.md.html" download>Markdown</a><button id="printButton" class="print-button" hidden>打印 / PDF</button></div></div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">EQUITY RESEARCH / AMAT / 2026-10-02</div>
+<h1>Applied Materials, Inc.（应用材料）<span>半导体材料工程设备 · 公司研究</span></h1><p class="hero-deck">材料工程复杂度与服务安装基数提升长期价值，但当前价格已计入强设备上行周期。</p>
+<div class="hero-meta"><span>FY2026Q3，截至2026-07-26</span><span>静态研究快照 · 不自动更新</span></div>
+<dl class="metrics"><div class="metric"><dt>参考价格 · USD</dt><dd>$538.73<small>2026-10-02 11:18 EDT（盘中）<br>已读取来源快照；不等于双源核验</small></dd></div>
+<div class="metric"><dt>研究评级 · 不是交易指令</dt><dd>等待价格<small>购买条件、估值假设及失效信号见完整正文</small></dd></div>
+<div class="metric"><dt>分析置信度</dt><dd>中<small>不等于投资确定性<br>学习研究 · 非个性化资产配置</small></dd></div></dl>
+<p class="small" style="color:#d9e1e6">单一带日期行情源，非收盘或双源认证；用户截图511.38美元未独立核验。页面PE刷新基准不同，报告自行重算。</p><a class="method-link" href="../index.html#method">返回38家公司总览与使用规则</a></div></section>
+<div class="page-shell"><aside class="toc-panel"><div class="toc-title">章节导航</div><nav aria-label="报告章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司到底卖什么</a></li><li><a href="#section-3">第二步：最新增长与现金质量</a></li><li><a href="#section-4">第三步：护城河和行业利润分配</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理与资本配置</a></li><li><a href="#section-7">第六步：中周期估值与三年情景</a></li><li><a href="#section-8">第七步：行动与Checklist</a></li><li><a href="#section-9">来源、差异与计算审计</a></li></ol></nav></aside>
+<div class="content-column"><details class="mobile-toc"><summary>章节导航</summary><nav aria-label="移动版章节"><ol class="toc-list"><li><a href="#section-1">AI研究偏见自觉</a></li><li><a href="#section-2">第一步：公司到底卖什么</a></li><li><a href="#section-3">第二步：最新增长与现金质量</a></li><li><a href="#section-4">第三步：护城河和行业利润分配</a></li><li><a href="#section-5">第四步：最强空方论点</a></li><li><a href="#section-6">第五步：管理与资本配置</a></li><li><a href="#section-7">第六步：中周期估值与三年情景</a></li><li><a href="#section-8">第七步：行动与Checklist</a></li><li><a href="#section-9">来源、差异与计算审计</a></li></ol></nav></details>
+<article id="report" class="report" tabindex="-1"><h1>应用材料（AMAT）研究报告</h1>
+<blockquote>
+<p>研究日期及截止：2026-10-02。参考价538.73美元，StockAnalysis 2026-10-02 11:18 EDT盘中，单一行情源、不是收盘价。用户9月30日截图511.38美元未经独立核验，现抓取价高5.35%。最新核验财报为截至2026-07-26的FY2026Q3，8月13日发布。财年截至10月，不与自然年混用。</p>
+<p>一句话：应用材料把复杂材料沉积、处理和互连工艺变成芯片客户可量产的制程，但设备需求与客户预算仍然是周期生意。</p>
+</blockquote>
+<h2 id="section-1">AI研究偏见自觉</h2>
+<p>信息丰富度A级，研究置信度中。容易出现的偏误是把AI芯片复杂度提高当成设备销售永远增长，或把季度调整后利润乘四直接当中周期利润。本报告区分GAAP与调整后结果，并保留股权激励、资本开支及出口限制的经济成本。</p>
+<h2 id="section-2">第一步：公司到底卖什么</h2>
+<p>AMAT供应沉积、离子注入、材料改性、刻蚀、化学机械抛光和检测等半导体制造设备，也提供零件、维修、工艺升级及显示相关设备。客户是晶圆代工、逻辑和存储厂，按自身工艺节点和产能投资购买设备，而不是按终端AI服务用户数付费。</p>
+<p>先进晶体管、背面供电、互连和先进封装提高材料工程的重要性。护城河由工艺认证、设备安装基数、技术服务及客户共同研发形成。客户更换一项关键设备可能影响良率和整条工艺，因此认证后的设备具有黏性；但客户通常保留第二供应商，不是无条件独家。</p>
+<p>FY2026Q3半导体系统收入70.40亿美元、全球服务17.81亿、其他2.94亿，合计91.15亿。系统内代工/逻辑及其他占67%、DRAM26%、Flash7%。系统营业利润率37.7%，服务30.1%，显示等其他业务录得1.18亿营业亏损。不能将总收入视为纯AI收入。</p>
+<p>特别注意：FY2026起200毫米设备从服务部门转入系统部门，且企业支持成本开始全面分配，发行人重列可比季度。因此第三方历史分部表不能直接与新口径服务收入作机械同比。</p>
+<div aria-label="第一步：公司到底卖什么" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">财年</th>
+<th scope="col" style="text-align: right;">收入，十亿美元</th>
+<th scope="col" style="text-align: right;">GAAP净利，十亿美元</th>
+<th scope="col" style="text-align: right;">稀释EPS，美元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td style="text-align: right;">25.785</td>
+<td style="text-align: right;">6.525</td>
+<td style="text-align: right;">7.44</td>
+</tr>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">26.517</td>
+<td style="text-align: right;">6.856</td>
+<td style="text-align: right;">8.11</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">27.176</td>
+<td style="text-align: right;">7.177</td>
+<td style="text-align: right;">8.61</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">28.368</td>
+<td style="text-align: right;">6.998</td>
+<td style="text-align: right;">8.66</td>
+</tr>
+</tbody>
+</table></div>
+<p>FY2024—2025收入净利由发行人全年业绩与StockAnalysis交叉核验，FY2022—2023为第三方历史序列，未逐年复核全部10-K。FY2025调整后EPS9.42，不是GAAP8.66；全年营收增长并未令GAAP净利同步增加，是反对“设备龙头永远高增长”的直接证据。</p>
+<h2 id="section-3">第二步：最新增长与现金质量</h2>
+<p>FY2026Q3收入91.15亿美元，同比+25%；GAAP净利25.38亿、EPS3.17，调整后EPS3.50。GAAP毛利率50.3%、营业利润率33.7%；调整后毛利率50.4%、营业利润率34.0%。GAAP与调整后差额还涉及投资、法律事项、税项等，不能把调整后结果称为没有任何一次性收益的纯现金盈利。</p>
+<p>Q4指引收入102.50亿美元上下5亿，调整后EPS4.02上下0.20。该EPS含每股约0.05美元无形资产内部转移相关税收利益和股权激励税项标准化影响，并非已实现利润。本文不把4.02×4直接当保守盈利。</p>
+<p>Q3经营现金流30.37亿美元，资本开支7.07亿，简化FCF23.30亿；前三季度经营现金流55.68亿、资本开支19.88亿，差额35.80亿。Q3SBC1.69亿美元、前三季度5.45亿，不因非现金性质而从估值中自动加回。新研发中心、产能和客户协作增加资本需求，AMAT比晶圆厂轻，但不是无资本开支的软件公司。</p>
+<p>7月底现金70.37亿美元、短投21.96亿；原始表短债12.99亿、长债52.45亿，现金短投减列示债务为26.89亿。StockAnalysis广义债务73.46亿，净现金18.87亿，较原始表短长债合计65.44亿高8.02亿。可能涉及租赁等宽口径，未完成逐项附注桥接，本文同时列示而不取平均，也不夸大“净现金”。</p>
+<h2 id="section-4">第三步：护城河和行业利润分配</h2>
+<div aria-label="第三步：护城河和行业利润分配" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">护城河</th>
+<th scope="col">判断</th>
+<th scope="col">反面检验</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>材料及工艺技术</td>
+<td>强，但分产品而异</td>
+<td>新架构是否令其他供应商方案更优</td>
+</tr>
+<tr>
+<td>转换成本</td>
+<td>高，工艺认证与良率绑定</td>
+<td>客户第二来源认证是否加速</td>
+</tr>
+<tr>
+<td>服务安装基数</td>
+<td>提供经常收入和现场数据</td>
+<td>利用率下降或许可限制会影响服务</td>
+</tr>
+<tr>
+<td>规模与研发组合</td>
+<td>有利于跨工艺协作</td>
+<td>业务广泛不等于每个领域第一</td>
+</tr>
+<tr>
+<td>网络效应/品牌</td>
+<td>非主要投资理由</td>
+<td>不能套互联网平台估值</td>
+</tr>
+</tbody>
+</table></div>
+<p>与Lam、东京电子、ASM International等在不同沉积、刻蚀和材料环节竞争，也面对中国设备本地化。ASML承担光刻、KLA侧重过程控制，不能因同属设备行业就给予同一倍数。AMAT更广的产品组合降低单一路线风险，也可能令投资回报被竞争较激烈的产品拉低。</p>
+<p>技术复杂度提升创造设备价值，但利润需要通过客户资本开支兑现。新增工艺步骤与更高设备份额，比“AI市场规模很大”更有解释力；客户把同一工厂改造提升效率，也可能减少某类新设备采购。</p>
+<h2 id="section-5">第四步：最强空方论点</h2>
+<p>空方可以指出：目前利润处于AI驱动的投资加速阶段，市场同时给予高成长和高估值；即使盈利继续上升，设备估值回归中周期即可使股价下跌。中国销售减少不必然能被海外补齐；全球客户可能提前下单以规避管制，形成后续需求真空。</p>
+<div aria-label="第四步：最强空方论点" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">风险</th>
+<th scope="col">主观概率/影响</th>
+<th scope="col">观察或否决信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户资本开支下修</td>
+<td>中等/高</td>
+<td>DRAM、先进代工预算及订单取消</td>
+</tr>
+<tr>
+<td>出口管制及售后限制</td>
+<td>中等/高</td>
+<td>新许可证范围、受限客户、服务收入变化</td>
+</tr>
+<tr>
+<td>工艺份额被竞争者侵蚀</td>
+<td>中等/中高</td>
+<td>关键节点设计胜出流失、系统毛利下降</td>
+</tr>
+<tr>
+<td>研发扩产投入回报不佳</td>
+<td>中等/中</td>
+<td>资本开支升而增量毛利及FCF不升</td>
+</tr>
+<tr>
+<td>税项/投资收益掩盖经营</td>
+<td>中等/中</td>
+<td>GAAP与调整后差距、现金转换持续偏弱</td>
+</tr>
+</tbody>
+</table></div>
+<p>不为这些事件编造精确概率。若两季以上系统份额和毛利持续下降、服务也不能缓冲，原正常化EPS需要下调，不应只因为跌价就加仓。</p>
+<h2 id="section-6">第五步：管理与资本配置</h2>
+<p>Gary Dickerson团队推进材料工程及EPIC研发协作。Q3公司披露11项EPIC合作接洽/安排，这说明研发生态扩张，但<strong>不是11份已确认销售合同，更不是当期利润</strong>。Q3回购4.40亿美元、分红4.20亿，合计8.60亿，低于同期经营现金流；仍需同时考虑资本开支和营运资金。</p>
+<p>评价管理层应问新增研发是否带来工艺份额、资本开支是否创造现金、回购是否发生在合理估值，而不是只看回购授权和EPS增长。完整代理书中的持股、报酬和关联事项未在本次完成独立核验，不据此断言管理层高度持股或不存在治理风险。</p>
+<h2 id="section-7">第六步：中周期估值与三年情景</h2>
+<p>采用<strong>正常化前瞻EPS14美元</strong>，高于FY2025调整后9.42，低于Q4指引机械年化16.08。因此这是承认需求结构升级后的正常化假设，不是真正衰退底部。一个直观经营桥梁是年收入约380亿美元、净利率约29%、稀释股数约8亿，得到约13.78美元；取整14仍需要强盈利能力维持。不是卖方一致预期。</p>
+<p>现价对应38.48倍正常化EPS。用季度稀释股数8亿估算市值4,309.84亿美元，页面市值4,275.3亿差异不到1%，但季度加权股数不是实时流通股，不能宣称精确双源市值认证。聚合PE45.66刷新基准不同；以TTM EPS11.59重算约46.48倍，只供参考，非本研究核心估值。</p>
+<p>三年价格＝14×(1+EPS年增速)^3×终值PE，忽略股息、税和费用。</p>
+<div aria-label="第六步：中周期估值与三年情景" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情景</th>
+<th scope="col" style="text-align: right;">EPS年增速</th>
+<th scope="col" style="text-align: right;">三年终值PE</th>
+<th scope="col" style="text-align: right;">三年EPS</th>
+<th scope="col" style="text-align: right;">三年价格</th>
+<th scope="col" style="text-align: right;">相对538.73价格回报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>偏弱</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">14.00</td>
+<td style="text-align: right;">252.00</td>
+<td style="text-align: right;">-53.22%</td>
+</tr>
+<tr>
+<td>基准</td>
+<td style="text-align: right;">+12%</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">19.67</td>
+<td style="text-align: right;">491.72</td>
+<td style="text-align: right;">-8.73%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td style="text-align: right;">+20%</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">24.19</td>
+<td style="text-align: right;">774.14</td>
+<td style="text-align: right;">+43.70%</td>
+</tr>
+</tbody>
+</table></div>
+<p>偏弱情景仍假设盈利不下降，并非最大下行。基准491.72是三年后价格，不是今天买入价；按12%折现现值350美元。现价若要获得12%年化价格回报且三年后25倍，需要第三年EPS30.28，显著高于本模型乐观盈利。</p>
+<p><strong>买入研究区间322—378美元＝正常化EPS14×23—27倍</strong>。这给AMAT工艺价值和服务基础适度溢价，但不像纯垄断资产；区间是研究判断，不是历史技术支撑或验证过的历史PE分位。若中周期EPS只能恢复至10美元，区间必须改为230—270，不能固守原价位。</p>
+<h2 id="section-8">第七步：行动与Checklist</h2>
+<div aria-label="第七步：行动与Checklist" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">对象/触发条件</th>
+<th scope="col">行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空仓</td>
+<td>“等待价格”；538.73和未经核验截图511.38均不处于合适研究带</td>
+</tr>
+<tr>
+<td>价格322—378</td>
+<td>重新确认EPS14、出口许可和现金转换，才考虑分批买入；下跌来自份额永久丧失则不买</td>
+</tr>
+<tr>
+<td>已持有</td>
+<td>不因单季景气强追高；若正常化盈利上修不足以消化估值，考虑控制风险或部分兑现</td>
+</tr>
+<tr>
+<td>加仓</td>
+<td>价格合理且领先节点/DRAM工艺份额、服务毛利和FCF同时保持</td>
+</tr>
+<tr>
+<td>减持/卖出</td>
+<td>连续份额丢失、重大合规限制扩大、资本开支无法转为现金；单纯股价上涨不是唯一理由</td>
+</tr>
+</tbody>
+</table></div>
+<p>Checklist：商业模式可理解；盈利与技术优势通过但有周期；管理层激励证据不足；现价安全边际未通过。镜子测试：在合理价格买入先进材料工程能力，而不是买入“未来所有晶圆厂都必须多花钱”的单向叙事。</p>
+<h2 id="section-9">来源、差异与计算审计</h2>
+<ol>
+<li><a href="https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2026-results/" rel="noreferrer">发行人FY2026Q3发布，2026-08-13</a>：系统/服务重分类、Q4指引、现金流、SBC与负债。</li>
+<li><a href="https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2025/" rel="noreferrer">发行人FY2025全年发布，2025-11-13</a>：年度GAAP及调整后比较。</li>
+<li><a href="https://stockanalysis.com/stocks/amat/financials/" rel="noreferrer">StockAnalysis利润表</a>、<a href="https://stockanalysis.com/stocks/amat/financials/balance-sheet/" rel="noreferrer">资产负债表</a>、<a href="https://stockanalysis.com/stocks/amat/" rel="noreferrer">盘中行情</a>。</li>
+</ol>
+<p>所有访问截至2026-10-02。年度收入28,368百万美元、净利6,998百万及Q3现金7,037百万均通过<code>financial_rigor.py</code>双源数值检查；两家展示同一发布的平台不被算作两份独立分析。债务差8.02亿美元未静默忽略，采用显式范围说明。Decimal重算所有核心估值，参数见<code>calculation.json</code>。<code>report_audit</code>抽检针对历史已取证值，14美元EPS、未来增速及倍数只是研究假设，并非经外部认证预测。</p>
+<p>抽检实际结果：自动抽出的3项全部属于情景参数或派生数字，只做数学复算；另补充年度收入、净利2项双源核验通过。不将模型或缺失数据视为已外部认证，也不将工具PASS等同于全报告无误，详见<code>audit.json</code>。</p>
+<p><strong>AI研究置信度中，实际投资不确定性较高。</strong> 本次没有完整重查所有出口规则细项、逐年附注或最新管理层持股；这些是下一步尽调项，而非默认不存在风险。研究用途，非个性化投资建议。</p></article><footer class="report-footer"><span>AMAT · 数据截止2026-10-02</span><a href="../index.html">全部38份报告</a><a href="#top">返回顶部</a></footer></div></div></main><script>
+const pb=document.getElementById('printButton');pb.hidden=false;pb.addEventListener('click',()=>window.print());
+const heads=[...document.querySelectorAll('.report h2')],links=[...document.querySelectorAll('.toc-list a')];
+let scheduled=false;
+function update(){scheduled=false;const total=document.documentElement.scrollHeight-innerHeight;
+document.getElementById('readingProgress').style.width=(total>0?Math.min(100,100*scrollY/total):0)+'%';
+let id=null;for(const h of heads){if(h.getBoundingClientRect().top<=160)id=h.id}
+for(const a of links){if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')}}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
+const mt=document.querySelector('.mobile-toc');if(mt)mt.addEventListener('click',e=>{if(e.target.closest('a'))mt.open=false});
+</script></body></html>

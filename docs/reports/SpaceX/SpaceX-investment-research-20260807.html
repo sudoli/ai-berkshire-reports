@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SpaceX（NASDAQ: SPCX）投资研究报告：巴菲特—芒格—段永平—李录四大师综合分析框架。">
+  <title>SpaceX · 投资研究报告 | AI Berkshire Research</title>
+  <style>
+    :root {
+      --ink: #17202b;
+      --ink-soft: #56606c;
+      --paper: #f3f0e8;
+      --paper-bright: #fffdf8;
+      --navy: #101d2e;
+      --navy-2: #182a40;
+      --line: #d8d1c4;
+      --msft: #2a6fdb;
+      --spacex: #d95d42;
+      --positive: #167258;
+      --warning: #a84a2f;
+      --accent: #d7ff62;
+      --shadow: 0 24px 70px rgba(22, 31, 42, 0.12);
+      --radius: 18px;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      --serif: Georgia, "Noto Serif SC", "Songti SC", "SimSun", serif;
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 32, 43, 0.035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--msft);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #164f9f;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 4px;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(215, 255, 98, 0.6);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      padding: 0 max(24px, calc((100vw - 1400px) / 2));
+      color: #fff;
+      background: rgba(16, 29, 46, 0.93);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      grid-template-columns: repeat(2, 7px);
+      gap: 3px;
+      transform: rotate(45deg);
+    }
+
+    .brand-mark i {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-meta {
+      color: #bac5d2;
+      font-size: 12px;
+    }
+
+    .print-button {
+      padding: 8px 13px;
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .print-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 610px;
+      overflow: hidden;
+      color: #fff;
+      background: var(--navy);
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::before {
+      width: 780px;
+      height: 780px;
+      top: -390px;
+      right: -120px;
+      box-shadow:
+        0 0 0 90px rgba(255, 255, 255, 0.025),
+        0 0 0 230px rgba(255, 255, 255, 0.018);
+    }
+
+    .hero::after {
+      width: 420px;
+      height: 420px;
+      right: 22%;
+      bottom: -330px;
+      border-color: rgba(215, 255, 98, 0.28);
+      box-shadow: 0 0 0 110px rgba(215, 255, 98, 0.025);
+    }
+
+    .hero-grid {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 96px 0 72px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 40px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .hero h1 {
+      max-width: 970px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(46px, 7vw, 94px);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      color: #91bfff;
+    }
+
+    .hero h1 em {
+      color: #ff9b84;
+      font-style: normal;
+    }
+
+    .hero-deck {
+      max-width: 760px;
+      margin: 32px 0 0;
+      color: #c7d0dc;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 36px;
+    }
+
+    .hero-meta span {
+      padding: 7px 12px;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .verdict-strip {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1fr;
+      width: min(1400px, calc(100% - 48px));
+      margin: -54px auto 0;
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .verdict-card {
+      min-height: 152px;
+      padding: 26px 30px;
+      border-right: 1px solid var(--line);
+    }
+
+    .verdict-card:last-child {
+      border-right: 0;
+    }
+
+    .verdict-card .label {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .verdict-card strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3vw, 38px);
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .verdict-card p {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .verdict-card.microsoft strong {
+      color: var(--msft);
+    }
+
+    .verdict-card.spacex strong {
+      color: var(--spacex);
+    }
+
+    .page-shell {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 940px);
+      gap: 64px;
+      width: min(1260px, calc(100% - 48px));
+      margin: 84px auto 120px;
+      align-items: start;
+    }
+
+    .toc-panel {
+      position: sticky;
+      top: 98px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      padding-right: 18px;
+      scrollbar-width: thin;
+    }
+
+    .toc-title {
+      display: block;
+      margin-bottom: 18px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .toc-panel nav {
+      display: grid;
+      gap: 3px;
+    }
+
+    .toc-panel a {
+      display: block;
+      padding: 7px 10px;
+      color: #68717b;
+      border-left: 2px solid transparent;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.4;
+      transition: 160ms ease;
+    }
+
+    .toc-panel a:hover,
+    .toc-panel a.active {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.52);
+      border-left-color: var(--msft);
+    }
+
+    .mobile-toc {
+      display: none;
+      width: 100%;
+      margin-bottom: 24px;
+      padding: 12px 42px 12px 14px;
+      color: var(--ink);
+      background: var(--paper-bright);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .report {
+      min-width: 0;
+      padding: 52px 62px 70px;
+      background: var(--paper-bright);
+      border: 1px solid rgba(216, 209, 196, 0.8);
+      border-radius: var(--radius);
+      box-shadow: 0 15px 50px rgba(22, 31, 42, 0.08);
+    }
+
+    .report > h1:first-child {
+      display: none;
+    }
+
+    .report > h1:first-child + p {
+      margin-top: 0;
+      padding: 18px 20px;
+      color: var(--ink-soft);
+      background: #f3f6f9;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 12px 12px 0;
+      font-size: 14px;
+    }
+
+    .report h2,
+    .report h3,
+    .report h4 {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      scroll-margin-top: 90px;
+    }
+
+    .report h2 {
+      position: relative;
+      margin: 76px 0 30px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.18;
+    }
+
+    .report h2::before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 74px;
+      height: 3px;
+      background: var(--accent);
+      content: "";
+    }
+
+    .report h2:first-of-type {
+      margin-top: 45px;
+    }
+
+    .report h3 {
+      margin: 43px 0 18px;
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    .report h4 {
+      margin: 34px 0 12px;
+      font-size: 20px;
+    }
+
+    .report p {
+      margin: 0 0 18px;
+    }
+
+    .report ul,
+    .report ol {
+      margin: 16px 0 24px;
+      padding-left: 24px;
+    }
+
+    .report li {
+      margin: 7px 0;
+      padding-left: 4px;
+    }
+
+    .report hr {
+      height: 1px;
+      margin: 58px 0;
+      background: var(--line);
+      border: 0;
+    }
+
+    .table-scroll {
+      width: 100%;
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      scrollbar-width: thin;
+    }
+
+    .report table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .report thead {
+      color: #fff;
+      background: var(--navy-2);
+    }
+
+    .report th,
+    .report td {
+      padding: 13px 15px;
+      text-align: left;
+      vertical-align: top;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .report th.numeric,
+    .report td.numeric {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .report th:last-child,
+    .report td:last-child {
+      border-right: 0;
+    }
+
+    .report tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .report tbody tr:nth-child(even) {
+      background: #f7f4ee;
+    }
+
+    .report tbody tr:hover {
+      background: #eef3f8;
+    }
+
+    .report blockquote {
+      position: relative;
+      margin: 34px 0;
+      padding: 25px 28px 25px 32px;
+      color: #273446;
+      background: #edf2f6;
+      border: 0;
+      border-left: 4px solid var(--msft);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .report blockquote::before {
+      position: absolute;
+      top: 8px;
+      right: 18px;
+      color: rgba(42, 111, 219, 0.16);
+      font-family: var(--serif);
+      font-size: 65px;
+      line-height: 1;
+      content: "“";
+    }
+
+    .report blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .report code {
+      padding: 0.15em 0.42em;
+      color: #b23e2a;
+      background: #f2ece2;
+      border: 1px solid #e4dacb;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.88em;
+      overflow-wrap: anywhere;
+    }
+
+    .report strong {
+      color: #111a24;
+      font-weight: 800;
+    }
+
+    .citation {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 27px;
+      height: 19px;
+      margin: 0 2px;
+      padding: 0 5px;
+      color: #315a91;
+      background: #e7eef8;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1;
+      vertical-align: 0.12em;
+    }
+
+    .citation:hover {
+      color: #fff;
+      background: var(--msft);
+    }
+
+    .source-highlight {
+      animation: source-flash 1.8s ease-out;
+    }
+
+    @keyframes source-flash {
+      from { background: rgba(215, 255, 98, 0.7); }
+      to { background: transparent; }
+    }
+
+    .site-footer {
+      padding: 44px 24px;
+      color: #aeb9c6;
+      background: var(--navy);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .site-footer strong {
+      color: #fff;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 60;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      background: var(--navy);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(16, 29, 46, 0.22);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: 180ms ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .verdict-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .verdict-card {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .verdict-card:last-child {
+        border-bottom: 0;
+      }
+
+      .page-shell {
+        display: block;
+        width: min(860px, calc(100% - 32px));
+        margin-top: 52px;
+      }
+
+      .toc-panel {
+        display: none;
+      }
+
+      .mobile-toc {
+        display: block;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        font-size: 15px;
+      }
+
+      .site-header {
+        height: 58px;
+        padding: 0 16px;
+      }
+
+      .brand {
+        font-size: 11px;
+      }
+
+      .header-meta {
+        display: none;
+      }
+
+      .print-button {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 540px;
+      }
+
+      .hero-grid {
+        width: calc(100% - 32px);
+        padding: 78px 0 100px;
+      }
+
+      .hero h1 {
+        font-size: clamp(42px, 15vw, 67px);
+      }
+
+      .hero-deck {
+        font-size: 17px;
+      }
+
+      .verdict-strip {
+        width: calc(100% - 32px);
+        margin-top: -70px;
+      }
+
+      .verdict-card {
+        min-height: auto;
+        padding: 22px;
+      }
+
+      .report {
+        padding: 30px 20px 48px;
+        border-radius: 14px;
+      }
+
+      .report h2 {
+        margin-top: 58px;
+        font-size: 31px;
+      }
+
+      .report h3 {
+        font-size: 22px;
+      }
+
+      .report blockquote {
+        margin-inline: 0;
+        padding: 21px 20px 21px 23px;
+      }
+
+      .back-to-top {
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+        size: A4;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 10pt;
+      }
+
+      .site-header,
+      .toc-panel,
+      .mobile-toc,
+      .back-to-top,
+      .scroll-progress {
+        display: none !important;
+      }
+
+      .hero {
+        min-height: auto;
+        color: #000;
+        background: #fff;
+        border-bottom: 2px solid #000;
+      }
+
+      .hero-grid {
+        width: 100%;
+        padding: 20mm 0 12mm;
+      }
+
+      .hero h1 {
+        max-width: none;
+        font-size: 38pt;
+      }
+
+      .hero h1 span,
+      .hero h1 em,
+      .eyebrow,
+      .hero-deck,
+      .hero-meta span {
+        color: #000;
+      }
+
+      .hero-meta span {
+        border-color: #999;
+      }
+
+      .verdict-strip {
+        width: 100%;
+        margin: 10mm 0 0;
+        box-shadow: none;
+      }
+
+      .page-shell {
+        display: block;
+        width: 100%;
+        margin: 8mm 0 0;
+      }
+
+      .report {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .report h2,
+      .report h3 {
+        break-after: avoid;
+      }
+
+      .table-scroll {
+        overflow: visible;
+        break-inside: avoid;
+      }
+
+      .report table {
+        min-width: 0;
+        font-size: 7.5pt;
+      }
+
+      .report a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .site-footer {
+        color: #000;
+        background: #fff;
+        border-top: 1px solid #000;
+      }
+    }
+  
+    /* --- funnel-specific additions --- */
+    .funnel-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+    }
+
+    .funnel-step {
+      position: relative;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 13px;
+    }
+
+    .funnel-step b {
+      display: block;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .funnel-step span {
+      display: block;
+      margin-top: 8px;
+      color: #b6c2d1;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .funnel-step:last-child {
+      background: rgba(215, 255, 98, 0.1);
+      border-color: rgba(215, 255, 98, 0.42);
+    }
+
+    .funnel-step:last-child b {
+      color: var(--accent);
+    }
+
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.core .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.core strong { color: var(--positive); }
+    .verdict-card.satellite .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.satellite strong { color: var(--msft); }
+    .verdict-card.option .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.option strong { color: var(--warning); }
+
+    .weight-bar {
+      height: 4px;
+      margin-top: 14px;
+      background: #e7e2d7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .weight-bar i {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .verdict-card.core .weight-bar i { width: 55%; background: var(--positive); }
+    .verdict-card.satellite .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.option .weight-bar i { width: 10%; background: var(--warning); }
+
+    @media (max-width: 980px) {
+      .funnel-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 680px) {
+      .funnel-strip { width: calc(100% - 32px); gap: 8px; }
+      .funnel-step { padding: 14px; }
+    }
+
+    @media print {
+      .funnel-strip { width: 100%; margin: 8mm 0 0; }
+      .funnel-step { background: #fff; border-color: #999; }
+      .funnel-step b, .funnel-step span { color: #000; }
+      .funnel-step:last-child { background: #fff; border-color: #000; }
+      .funnel-step:last-child b { color: #000; }
+    }
+  
+    /* --- cross-sector report additions --- */
+    .verdict-card .ticker {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 3px 9px;
+      background: #eef2f6;
+      border-radius: 5px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .verdict-card.fin .ticker { background: #e5efe9; color: var(--positive); }
+    .verdict-card.fin strong { color: var(--positive); }
+    .verdict-card.tech .ticker { background: #e7eef8; color: var(--msft); }
+    .verdict-card.tech strong { color: var(--msft); }
+    .verdict-card.energy .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.energy strong { color: var(--warning); }
+
+    .weight-bar { height: 4px; margin-top: 14px; background: #e7e2d7; border-radius: 999px; overflow: hidden; }
+    .weight-bar i { display: block; height: 100%; border-radius: 999px; }
+    .verdict-card.fin .weight-bar i { width: 45%; background: var(--positive); }
+    .verdict-card.tech .weight-bar i { width: 40%; background: var(--msft); }
+    .verdict-card.energy .weight-bar i { width: 25%; background: var(--warning); }
+
+    .yield-banner {
+      width: min(1400px, calc(100% - 48px));
+      margin: 26px auto 0;
+      padding: 20px 24px;
+      background: rgba(215, 255, 98, 0.09);
+      border: 1px solid rgba(215, 255, 98, 0.4);
+      border-radius: 14px;
+      color: #dfe7f0;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .yield-banner b { color: var(--accent); font-size: 15px; }
+
+    @media (max-width: 680px) {
+      .yield-banner { width: calc(100% - 32px); padding: 16px; font-size: 13px; }
+    }
+
+    @media print {
+      .yield-banner { width: 100%; margin: 6mm 0 0; background: #fff; border-color: #000; color: #000; }
+      .yield-banner b { color: #000; }
+    }
+  
+    /* --- single-company report additions --- */
+    .verdict-card.avoid .ticker { background: #fbeae5; color: var(--warning); }
+    .verdict-card.avoid strong { color: var(--warning); }
+    .verdict-card.neutral .ticker { background: #eef2f6; color: var(--ink-soft); }
+
+    .scenario-strip .funnel-step:last-child {
+      background: rgba(217, 93, 66, 0.14);
+      border-color: rgba(217, 93, 66, 0.5);
+    }
+
+    .scenario-strip .funnel-step:last-child b { color: #ff9b84; }
+
+    .scenario-strip .funnel-step b { font-size: clamp(22px, 3vw, 34px); }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回页面顶部">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      AI Berkshire Research
+    </a>
+    <div class="header-actions">
+      <span class="header-meta">价格基准 2026-08-07 收盘</span>
+      <button class="print-button" id="printButton" type="button">打印 / PDF</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-grid">
+        <div class="eyebrow">Investment Research · NASDAQ: SPCX · 2026</div>
+        <h1 id="pageTitle"><span>SpaceX</span><br><em>投资研究</em></h1>
+        <p class="hero-deck">巴菲特—芒格—段永平—李录四大师综合分析。8/7 单日 +15.83% 没有单一催化剂——是解禁落地、空头回补与宏观三重叠加。</p>
+        <div class="hero-meta" role="group" aria-label="报告元数据">
+          <span>2026-08-07</span>
+          <span>收盘 $133.11</span>
+          <span>市值 $1.754 万亿</span>
+          <span>30 / 30 抽检准出</span>
+        </div>
+      </div>
+
+      <div class="funnel-strip scenario-strip" role="group" aria-label="三情景折现现值">
+        <div class="funnel-step"><b>$13.45</b><span>悲观情景<br>折现现值 −89.9%</span></div>
+        <div class="funnel-step"><b>$43.63</b><span>基准情景<br>折现现值 −67.2%</span></div>
+        <div class="funnel-step"><b>$108.47</b><span>乐观情景<br>折现现值 −18.5%</span></div>
+        <div class="funnel-step"><b>$133.11</b><span>当前股价<br><strong>高于乐观情景</strong></span></div>
+      </div>
+
+      <p class="yield-banner">
+        <b>核心结论：回避。</b>即便在乐观情景下，折现现值 <b>$108.47</b> 仍低于当前股价 18.5%——找不到一组合理假设能证明 $133.11。
+        当前 <b>76.14 倍</b>市销率隐含：四年半内收入做到 <b>$1,841 亿至 $2,761 亿</b>（年复合 <b>58.7%–73.6%</b>），且届时市场仍愿给 10–15 倍市销率。
+      </p>
+    </section>
+
+    <section class="verdict-strip" aria-label="核心判断">
+      <article class="verdict-card avoid">
+        <span class="label">最终结论</span>
+        <span class="ticker">NASDAQ: SPCX</span>
+        <strong>回避</strong>
+        <p>无安全边际。重新评估触发价 $45–60（接近基准情景现值 $43.63）。</p>
+      </article>
+      <article class="verdict-card neutral">
+        <span class="label">生意质量 · 分裂</span>
+        <span class="ticker">Q2 2026 分部</span>
+        <strong>好生意养两个赌注</strong>
+        <p>Connectivity 经营利润 +$16.56 亿；Space −$5.42 亿、AI −$12.57 亿。AI 吃掉 86.2% 资本开支。</p>
+      </article>
+      <article class="verdict-card avoid">
+        <span class="label">最大风险 · 治理</span>
+        <span class="ticker">投票权 82.4%</span>
+        <strong>不可罢免的 CEO</strong>
+        <p>$202 亿关联方担保租赁；xAI 并购无独立公允性检验；37.8% 收入来自两个未具名客户。</p>
+      </article>
+    </section>
+
+    <div class="page-shell">
+      <aside class="toc-panel" aria-label="章节目录">
+        <span class="toc-title">Contents</span>
+        <nav id="toc"></nav>
+      </aside>
+
+      <div>
+        <label class="toc-title" for="mobileToc">跳转至章节</label>
+        <select class="mobile-toc" id="mobileToc" aria-label="选择章节"></select>
+        <article class="report" id="report">
+          <h1>SpaceX（NASDAQ: SPCX）投资研究报告</h1>
+          <p><strong>报告日期：</strong> 2026-08-07
+          <strong>价格基准：</strong> 2026-08-07 收盘 <strong>$133.11</strong>（周五收盘，美股已收周线；经 Yahoo Finance v8 与 stockanalysis 双源核对，偏差 0.00%）
+          <strong>分析框架：</strong> 巴菲特—芒格—段永平—李录 四大师综合分析
+          <strong>结论先行：</strong> <strong>回避。</strong> 乐观情景折现现值 <strong>$108.47</strong>，仍低于当前价 14.3%。</p>
+          <blockquote>
+          <p><strong>与本仓库既有报告的关系</strong>：<code>reports/SpaceX/SpaceX-research-20260623.md</code>（IPO 后 11 天）与 <code>SpaceX-IPO-招股书深度拆解-20260521.md</code> 未作修改，其中部分数据已过时或无法复核（见 8.3）。<code>microsoft-spacex-investment-research-20260806.md</code> 以 8/5 收盘 $108.27 为基准做过对比分析。本报告是独立的完整八步研究，基准更新为 <strong>8/7 收盘 $133.11</strong>。</p>
+          </blockquote>
+          <blockquote>
+          <p>本报告用于学习研究，不构成投资建议。</p>
+          </blockquote>
+          <hr>
+          <h2>前置步骤：AI 研究偏见自觉</h2>
+          <h3>信息丰富度评级：<strong>A 级（信息充裕）</strong></h3>
+          <p>SpaceX 于 2026-06-12 IPO，已提交 424B4 招股书（280 页）、首份 10-Q（2026-08-04）与 Q2 财报 8-K。券商覆盖从 6 月的 11 家增至 8 月的 <strong>35 家</strong>。财务数据可从 SEC XBRL 直接提取。</p>
+          <p><strong>但 A 级评级有三处重大保留</strong>，必须前置说明：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>保留项</th>
+          <th>内容</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>历史财务不是&quot;SpaceX 的历史&quot;</strong></td>
+          <td>xAI 于 2026-02-02 以<strong>共同控制</strong>方式并入。所有历史期间被<strong>追溯重述</strong>为包含 xAI 与 X。文件中的&quot;2023-2025 年 SpaceX 收入&quot;<strong>不是航天公司的独立历史</strong>。这是报告主体变更，不是有机增长</td>
+          </tr>
+          <tr>
+          <td><strong>共同控制并购没有独立公允性检验</strong></td>
+          <td>因属共同控制，<strong>没有购买价格分摊、没有新增商誉、没有独立公平性意见、没有单独审计的 xAI 财务报表</strong>。马斯克坐在交易两侧。投资者无法检验这笔交易的价格是否公允</td>
+          </tr>
+          <tr>
+          <td><strong>两个最大客户都未披露姓名</strong></td>
+          <td>客户 A 占 Q2 收入 <strong>18.3%</strong>（横跨三个分部），客户 B 占 <strong>19.5%</strong>（AI 分部）。合计 <strong>37.8%</strong>，均未具名</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>A 级公司的 AI 研究陷阱与应对</h3>
+          <p>资料充裕不等于可判断。本轮实际触发的偏见：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>偏见</th>
+          <th>本次的具体表现</th>
+          <th>纠正动作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>叙事偏差</strong></td>
+          <td>&quot;人类多行星物种&quot;+&quot;史上最大 IPO&quot;+&quot;马斯克&quot;三重叙事叠加，是全市场最强的故事</td>
+          <td>只看已披露数字：Q2 自由现金流 <strong>-$159.5亿</strong>，H1 <strong>-$250.1亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>动量偏差</strong></td>
+          <td>8/7 单日 +15.83%、两日 +22.9%，极易被解读为基本面反转</td>
+          <td>逐笔核查 8/5-8/7 全部 SEC 文件、公告、评级：<strong>零</strong> 重大事件（见 1.5）</td>
+          </tr>
+          <tr>
+          <td><strong>共识偏差</strong></td>
+          <td>35 位分析师平均目标价 <strong>$231.40</strong>（较现价 +73.8%）</td>
+          <td>目标价区间 <strong>$62 到 $800</strong>，跨度 12.9 倍——共识本身没有信息量</td>
+          </tr>
+          <tr>
+          <td><strong>分部混淆</strong></td>
+          <td>Starlink 是一门好生意，容易让人以为整个公司是好生意</td>
+          <td>分部拆开看：Connectivity 经营利润 <strong>+$16.56亿</strong>，Space <strong>-$5.42亿</strong>，AI <strong>-$12.57亿</strong></td>
+          </tr>
+          <tr>
+          <td><strong>现金充裕错觉</strong></td>
+          <td>$1,000.09亿现金看起来无懈可击</td>
+          <td>这笔钱来自 IPO（净募 $856.75亿）+ 发债 $250亿，<strong>不是经营产生的</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>AI 研究局限性声明</h3>
+          <ul>
+          <li>已申报财务与经营指标的 AI 分析置信度<strong>高</strong></li>
+          <li>Starship 关键技术里程碑、AI 云合同经济性、两大未具名客户的信用状况——置信度<strong>低</strong>，且<strong>无法通过公开资料提高</strong></li>
+          <li>本报告的估值结论对 2030 年收入假设极度敏感，属推理而非事实</li>
+          </ul>
+          <hr>
+          <h2>第一步：数据收集与交叉验证</h2>
+          <h3>1.1 市场快照（2026-08-07 收盘）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th>数值</th>
+          <th>口径</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>收盘价</td>
+          <td><strong>$133.11</strong>（+15.83%）</td>
+          <td>Yahoo v8 + stockanalysis 双源，偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td>成交量</td>
+          <td><strong>2.352亿股</strong></td>
+          <td>20 日均量 9,540 万股的 2.5 倍</td>
+          </tr>
+          <tr>
+          <td>总股本</td>
+          <td><strong>131.82亿股</strong></td>
+          <td>10-Q 封面（2026-07-28）：A 类 76.963亿 + B 类 54.855亿</td>
+          </tr>
+          <tr>
+          <td><strong>市值</strong></td>
+          <td><strong>$1.754万亿</strong></td>
+          <td>$133.11 × 131.82亿，工具验算偏差 0.04%</td>
+          </tr>
+          <tr>
+          <td>企业价值</td>
+          <td>约 <strong>$1.694万亿</strong></td>
+          <td>扣除净现金 $606.45亿</td>
+          </tr>
+          <tr>
+          <td>IPO 价</td>
+          <td>$135.00</td>
+          <td><strong>现价仍低于发行价 1.4%</strong></td>
+          </tr>
+          <tr>
+          <td>52 周区间</td>
+          <td>$104.83（8/3）— $225.64（6/16）</td>
+          <td>距高点 <strong>-41.0%</strong></td>
+          </tr>
+          <tr>
+          <td>全美股市值排名</td>
+          <td>第 7-8 位</td>
+          <td>介于 Broadcom 与 Meta 之间</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>1.2 Q2 2026 与 H1 2026 财务（单位：百万美元）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>项目</th>
+          <th class="numeric">Q2 2026</th>
+          <th class="numeric">Q2 2025</th>
+          <th class="numeric">同比</th>
+          <th class="numeric">H1 2026</th>
+          <th class="numeric">H1 2025</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>总收入</strong></td>
+          <td class="numeric"><strong>7,814</strong></td>
+          <td class="numeric">4,071</td>
+          <td class="numeric"><strong>+92.0%</strong></td>
+          <td class="numeric"><strong>12,508</strong></td>
+          <td class="numeric">8,138</td>
+          </tr>
+          <tr>
+          <td>— Connectivity（Starlink）</td>
+          <td class="numeric">4,291</td>
+          <td class="numeric">2,588</td>
+          <td class="numeric">+65.8%</td>
+          <td class="numeric">7,548</td>
+          <td class="numeric">5,062</td>
+          </tr>
+          <tr>
+          <td>— AI（xAI/X）</td>
+          <td class="numeric">2,561</td>
+          <td class="numeric">737</td>
+          <td class="numeric"><strong>+247.5%</strong></td>
+          <td class="numeric">3,379</td>
+          <td class="numeric">1,465</td>
+          </tr>
+          <tr>
+          <td>— Space（发射）</td>
+          <td class="numeric">962</td>
+          <td class="numeric">746</td>
+          <td class="numeric">+29.0%</td>
+          <td class="numeric">1,581</td>
+          <td class="numeric">1,611</td>
+          </tr>
+          <tr>
+          <td><strong>分部经营利润（亏损）</strong></td>
+          <td class="numeric"></td>
+          <td class="numeric"></td>
+          <td class="numeric"></td>
+          <td class="numeric"></td>
+          <td class="numeric"></td>
+          </tr>
+          <tr>
+          <td>— Connectivity</td>
+          <td class="numeric"><strong>+1,656</strong></td>
+          <td class="numeric">+923</td>
+          <td class="numeric">+79.4%</td>
+          <td class="numeric">+2,844</td>
+          <td class="numeric">+1,956</td>
+          </tr>
+          <tr>
+          <td>— Space</td>
+          <td class="numeric"><strong>-542</strong></td>
+          <td class="numeric">-369</td>
+          <td class="numeric">恶化</td>
+          <td class="numeric">-1,204</td>
+          <td class="numeric">-439</td>
+          </tr>
+          <tr>
+          <td>— AI</td>
+          <td class="numeric"><strong>-1,257</strong></td>
+          <td class="numeric">-1,524</td>
+          <td class="numeric">收窄</td>
+          <td class="numeric">-3,726</td>
+          <td class="numeric">-2,460</td>
+          </tr>
+          <tr>
+          <td><strong>合并经营亏损</strong></td>
+          <td class="numeric"><strong>-143</strong></td>
+          <td class="numeric">-970</td>
+          <td class="numeric">收窄</td>
+          <td class="numeric"><strong>-2,086</strong></td>
+          <td class="numeric">-943</td>
+          </tr>
+          <tr>
+          <td><strong>净亏损</strong></td>
+          <td class="numeric"><strong>-541</strong></td>
+          <td class="numeric">-1,008</td>
+          <td class="numeric">收窄</td>
+          <td class="numeric"><strong>-4,817</strong></td>
+          <td class="numeric">-1,536</td>
+          </tr>
+          <tr>
+          <td>调整后 EBITDA</td>
+          <td class="numeric">3,538</td>
+          <td class="numeric">1,214</td>
+          <td class="numeric">+191%</td>
+          <td class="numeric">4,665</td>
+          <td class="numeric">2,944</td>
+          </tr>
+          <tr>
+          <td>经营现金流</td>
+          <td class="numeric">2,419（推算）</td>
+          <td class="numeric">N/A</td>
+          <td class="numeric">—</td>
+          <td class="numeric"><strong>3,466</strong></td>
+          <td class="numeric">351</td>
+          </tr>
+          <tr>
+          <td><strong>资本开支</strong></td>
+          <td class="numeric"><strong>18,369</strong></td>
+          <td class="numeric">2,825</td>
+          <td class="numeric"><strong>+550%</strong></td>
+          <td class="numeric"><strong>28,476</strong></td>
+          <td class="numeric">6,965</td>
+          </tr>
+          <tr>
+          <td>— 其中 AI 分部</td>
+          <td class="numeric"><strong>15,828</strong></td>
+          <td class="numeric">749</td>
+          <td class="numeric">—</td>
+          <td class="numeric">23,551</td>
+          <td class="numeric">3,316</td>
+          </tr>
+          <tr>
+          <td><strong>自由现金流</strong>（推算，非公司口径）</td>
+          <td class="numeric"><strong>-15,950</strong></td>
+          <td class="numeric">—</td>
+          <td class="numeric">—</td>
+          <td class="numeric"><strong>-25,010</strong></td>
+          <td class="numeric">-6,614</td>
+          </tr>
+          <tr>
+          <td>股权激励（费用化）</td>
+          <td class="numeric">831</td>
+          <td class="numeric">463</td>
+          <td class="numeric">+79.5%</td>
+          <td class="numeric">1,470</td>
+          <td class="numeric">694</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>三个必须并列看的数字</strong>：Q2 净亏损收窄到 <strong>-$5.41亿</strong>（看起来在改善）；同期资本开支 <strong>$183.69亿</strong>（同比 +550%）；其中 <strong>$158.28亿（86.2%）投向 AI 分部</strong>，而 AI 分部收入只有 $25.61亿。</p>
+          <p><strong>H1 资本开支是同期收入的 2.28 倍。</strong></p>
+          <h3>1.3 资产负债表（2026-06-30）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>项目</th>
+          <th class="numeric">2026-06-30</th>
+          <th class="numeric">2025-12-31</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>现金及等价物</td>
+          <td class="numeric">93,522</td>
+          <td class="numeric">24,747</td>
+          </tr>
+          <tr>
+          <td>有价证券</td>
+          <td class="numeric">6,487</td>
+          <td class="numeric">0</td>
+          </tr>
+          <tr>
+          <td><strong>现金+有价证券</strong></td>
+          <td class="numeric"><strong>100,009</strong></td>
+          <td class="numeric">24,747</td>
+          </tr>
+          <tr>
+          <td>债务（本金）</td>
+          <td class="numeric">38,433</td>
+          <td class="numeric">22,049</td>
+          </tr>
+          <tr>
+          <td>融资租赁</td>
+          <td class="numeric">1,079</td>
+          <td class="numeric">1,237</td>
+          </tr>
+          <tr>
+          <td><strong>债务+融资租赁（净额）</strong></td>
+          <td class="numeric"><strong>39,364</strong></td>
+          <td class="numeric">22,896</td>
+          </tr>
+          <tr>
+          <td>— 其中<strong>关联方</strong></td>
+          <td class="numeric"><strong>13,329</strong></td>
+          <td class="numeric">4,507</td>
+          </tr>
+          <tr>
+          <td><strong>净现金</strong></td>
+          <td class="numeric"><strong>+60,645</strong></td>
+          <td class="numeric">+1,851</td>
+          </tr>
+          <tr>
+          <td>股东权益</td>
+          <td class="numeric">127,224</td>
+          <td class="numeric">2,573</td>
+          </tr>
+          <tr>
+          <td>总资产</td>
+          <td class="numeric">192,770</td>
+          <td class="numeric">92,079</td>
+          </tr>
+          <tr>
+          <td><strong>积压订单（RPO）</strong></td>
+          <td class="numeric"><strong>47,461</strong></td>
+          <td class="numeric">28,377</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>RPO 确认节奏：<strong>1 年内 56%、1-3 年 34%、3 年以上 10%</strong>。</p>
+          <p>债务结构：2026-06-26 完成 <strong>$250亿</strong>无担保票据发行（5 档，2031-2056 年到期，票息 5.35%-6.65%，加权 5.855%，加权期限 11.7 年）。H1 偿还 $393.96亿，产生 <strong>$15.45亿</strong>债务清偿损失与 $11.53亿提前还款溢价。</p>
+          <h3>1.4 关键数据交叉验证记录</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>数据点</th>
+          <th class="numeric">主来源</th>
+          <th class="numeric">副来源</th>
+          <th>工具结论</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2026-08-07 收盘价</td>
+          <td class="numeric">Yahoo v8 $133.11</td>
+          <td class="numeric">stockanalysis $133.11</td>
+          <td>✅ 偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td>Q2 2026 收入</td>
+          <td class="numeric">10-Q $7,814M</td>
+          <td class="numeric">8-K EX-99.1 $7,814M</td>
+          <td>✅ 偏差 0.00%</td>
+          </tr>
+          <tr>
+          <td>市值验算</td>
+          <td class="numeric">$133.11 × 131.82亿</td>
+          <td class="numeric">报告值 $1.754万亿</td>
+          <td>✅ 偏差 0.04%</td>
+          </tr>
+          <tr>
+          <td>净现金</td>
+          <td class="numeric">$100,009M − $39,364M</td>
+          <td class="numeric">= $60,645M</td>
+          <td>✅ 精确计算</td>
+          </tr>
+          <tr>
+          <td>PS（TTM）</td>
+          <td class="numeric">$1,754.6亿 ÷ $230.44亿</td>
+          <td class="numeric"><strong>76.14x</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          <tr>
+          <td>EV/Revenue</td>
+          <td class="numeric">($1,754.6−$606.45)亿 ÷ $230.44亿</td>
+          <td class="numeric"><strong>73.51x</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          <tr>
+          <td>AI 资本开支占比</td>
+          <td class="numeric">$15,828M ÷ $18,369M</td>
+          <td class="numeric"><strong>86.17%</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          <tr>
+          <td>客户集中度</td>
+          <td class="numeric">18.3% + 19.5%</td>
+          <td class="numeric"><strong>37.8%</strong></td>
+          <td>✅ 精确计算</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>1.5 关于 8/7 单日 +15.83% 的定性（重要）</h3>
+          <p><strong>结论：没有单一催化剂。</strong> 逐项排查结果：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>检查项</th>
+          <th>结果</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>8/5-8/7 SEC 文件（8-K、S-1、424、13D/G、Form 4）</td>
+          <td><strong>零</strong>。最近一份是 8/4</td>
+          </tr>
+          <tr>
+          <td>公司公告、新闻稿</td>
+          <td>零</td>
+          </tr>
+          <tr>
+          <td>指数纳入</td>
+          <td>无公告。且<strong>不符合标普 500 资格</strong>（Q2 GAAP 亏损、上市不足 12 个月）</td>
+          </tr>
+          <tr>
+          <td>Starship 发射</td>
+          <td>无。Flight 13 在 7 月，8/7 仍在印度洋打捞</td>
+          </tr>
+          <tr>
+          <td>政府合同</td>
+          <td>无新增。&gt;$60亿 Starshield 合同在 8/4 财报中已披露</td>
+          </tr>
+          <tr>
+          <td>8/7 评级变动</td>
+          <td><strong>仅 1 家</strong>：Argus 上调至买入，目标价 <strong>$160</strong>——比共识 $231 低 31%，不构成 $2,400亿市值增量的理由</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>盘中形态是最有力的证据</strong>：开盘价 $114.96 vs 前收 $114.92，<strong>跳空幅度 +0.03%</strong>。全部涨幅发生在盘中，从集合竞价开始，收在全天最高点，最后 5 分钟成交 997 万股。<strong>这是资金流特征（空头回补、逢低买入），不是消息特征</strong>——重大公告会产生跳空或某个时间戳的阶跃，两者都不存在。</p>
+          <p><strong>四个真实驱动（按重要性）</strong>：</p>
+          <ol>
+          <li><strong>解禁靴子落地</strong>（主因）：8/6 释放 9.115亿股，抛压未如期出现</li>
+          <li><strong>空头回补</strong>（主因）：空头持仓从 6/15 的 2,330万股 → 7/15 的 <strong>1.65亿股</strong>（Nasdaq 官方）→ 7/29 的 <strong>2.193亿股（约 $246亿）</strong>（摩根大通口径），约占解禁前流通盘 <strong>34%</strong></li>
+          <li><strong>Q2 后预期上修</strong>：FactSet 2027 收入共识从 7 月底约 $720亿 → 约 <strong>$1,020亿</strong></li>
+          <li><strong>宏观</strong>：7 月非农 <strong>-2.3万</strong>（预期 +8.3万），高贝塔股普涨（PLTR +10.32%、RKLB +9.46%），但<strong>传统防务 RTX -0.10%、LMT +0.88% 未参与</strong>——这不是航天板块行情，是高贝塔+高空头持仓+散户动量的行情</li>
+          </ol>
+          <hr>
+          <h2>第二步：生意本质分析 — 段永平&quot;对的生意&quot;</h2>
+          <h3>一句话定义</h3>
+          <p><strong>SpaceX 是三门完全不同的生意被装进一个股票代码：一门优秀的（Starlink）、一门尚可但在烧钱的（发射）、一门还没被验证的（AI）。</strong></p>
+          <p>用更通俗的类比：<strong>一家赚钱的电信公司，养着一家烧钱的火箭公司，再养着一家烧钱更凶的 AI 公司。</strong></p>
+          <h3>分部拆解（Q2 2026）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>分部</th>
+          <th class="numeric">收入</th>
+          <th class="numeric">占比</th>
+          <th class="numeric">经营利润</th>
+          <th class="numeric">利润率</th>
+          <th class="numeric">资本开支</th>
+          <th>这门生意的性质</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>Connectivity</strong></td>
+          <td class="numeric">$42.91亿</td>
+          <td class="numeric"><strong>54.9%</strong></td>
+          <td class="numeric"><strong>+$16.56亿</strong></td>
+          <td class="numeric"><strong>38.6%</strong></td>
+          <td class="numeric">$13.67亿</td>
+          <td>订阅制电信，真正的现金牛</td>
+          </tr>
+          <tr>
+          <td><strong>AI</strong></td>
+          <td class="numeric">$25.61亿</td>
+          <td class="numeric">32.8%</td>
+          <td class="numeric">-$12.57亿</td>
+          <td class="numeric">-49.1%</td>
+          <td class="numeric"><strong>$158.28亿</strong></td>
+          <td>重资本、未验证</td>
+          </tr>
+          <tr>
+          <td><strong>Space</strong></td>
+          <td class="numeric">$9.62亿</td>
+          <td class="numeric">12.3%</td>
+          <td class="numeric">-$5.42亿</td>
+          <td class="numeric">-56.3%</td>
+          <td class="numeric">$11.74亿</td>
+          <td>被 Starship 研发拖入亏损</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>Connectivity 一个分部贡献了全部利润，并且它自己的资本开支只占公司的 7.4%。</strong></p>
+          <h3>这是好生意吗？</h3>
+          <p><strong>Starlink 是。</strong> 订阅制、经常性收入、38.6% 经营利润率、Q2 调整后 EBITDA $25.97亿。用户从 2023 年的 230 万增至 2026Q2 的 <strong>1,200 万</strong>（同比 +100%）。而且收入结构在改善：<strong>企业与政府客户同比 +108%，消费者 +44%</strong>，企业占比从 2023 年的 27% 升至 <strong>42%</strong>。</p>
+          <p><strong>Space 曾经是，现在被 Starship 拖累。</strong> 2025 年 165 次 Falcon 发射，占全球轨道发射约 51%。但 H1 2026 经营亏损 <strong>-$12.04亿</strong>（去年同期 -$4.39亿），恶化了近两倍。</p>
+          <p><strong>AI 目前不是。</strong> H1 收入 $33.79亿，经营亏损 <strong>-$37.26亿</strong>，资本开支 <strong>$235.51亿</strong>。花 7 块钱换 1 块钱收入。</p>
+          <h3>段永平会问的三个问题</h3>
+          <p><strong>问题一：这门生意的&quot;本分&quot;是什么？</strong></p>
+          <p>Starlink 的本分是&quot;把网络送到地面基础设施到不了的地方&quot;，这个本分清晰且被恪守。<strong>但 AI 分部的本分是什么？</strong> 招股书里 SpaceX 用 <strong>$26.5万亿</strong>的 AI&quot;潜在市场&quot;来描述机会——一个没有可验证产品边界的数字。这不是本分，这是叙事。</p>
+          <p><strong>问题二：管理层有没有偏离？</strong></p>
+          <p>有一个具体证据：<strong>ARPU 从 2023 年的 $99 降到 2026Q2 的 $66，降幅 33%</strong>。公司在招股书中明确说这是主动选择（国际扩张、低价套餐、下调月费），&quot;不优先考虑 ARPU&quot;。这个选择本身没问题——<strong>但它意味着 Starlink 的增长是靠量而非价，而量的增长最终会遇到地面 5G 的天花板。</strong></p>
+          <p><strong>问题三：如果只能用一句话描述这门生意，是什么？</strong></p>
+          <blockquote>
+          <p><strong>用一门确定的好生意（Starlink），为两个不确定的赌注（Starship、AI）融资。</strong></p>
+          </blockquote>
+          <p>段永平的框架里，这恰恰是他最警惕的结构——<strong>好生意的现金流被拿去做看不懂的事</strong>。他对存储、对周期股的态度都是&quot;我不碰&quot;，而 SpaceX 的 AI 分部在商业模式清晰度上还不如存储。</p>
+          <h3>必须诚实说的不好</h3>
+          <ul>
+          <li><strong>合并层面从未产生正的自由现金流</strong>。H1 -$250.1亿，Q2 -$159.5亿</li>
+          <li><strong>两个最大客户合计 37.8% 收入，都未具名</strong>。客户 B（19.5%）是 AI 分部的云合同对手方，其信用状况完全不可知</li>
+          <li><strong>$1,000亿现金是融资来的</strong>，不是赚来的。分析师一致预期 FY2026 自由现金流 <strong>-$472亿</strong></li>
+          </ul>
+          <hr>
+          <h2>第三步：护城河评估 — 巴菲特&quot;经济护城河&quot;</h2>
+          <h3>五类护城河逐一验证</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>护城河</th>
+          <th>强度</th>
+          <th>具体证据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>品牌/定价权</strong></td>
+          <td>★★☆</td>
+          <td><strong>ARPU 三年降 33%</strong>（$99→$66），且公司主动降价。发射端对外报价受 Starship 未成熟制约。定价权弱于市场印象</td>
+          </tr>
+          <tr>
+          <td><strong>转换成本</strong></td>
+          <td>★★★</td>
+          <td>消费者需购买地面终端，有一定沉没成本但不高；<strong>企业、航空、海事与政府客户转换成本高</strong>（需重新认证），而这部分已占 Connectivity 的 42%</td>
+          </tr>
+          <tr>
+          <td><strong>网络效应</strong></td>
+          <td>★★</td>
+          <td><strong>不存在需求侧网络效应</strong>。用户增加不会让服务变好，只会占用容量。所谓&quot;生态效应&quot;是规模经济，不是网络效应</td>
+          </tr>
+          <tr>
+          <td><strong>规模效应</strong></td>
+          <td>★★★★★</td>
+          <td><strong>这是真正的护城河</strong>。2025 年 165 次 Falcon 发射超过其他所有西方发射商总和；自有 Starlink 需求填满自家产能，形成闭环；&gt;10,000 颗在轨卫星，占全球可机动卫星约 75%</td>
+          </tr>
+          <tr>
+          <td><strong>技术/牌照壁垒</strong></td>
+          <td>★★★★</td>
+          <td>轨道级火箭常态化复用全球唯一；频谱资源（含 EchoStar 65MHz）、各国牌照、ITAR 制度性保护</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>护城河的方向：过去五年显著变宽，未来五年取决于一件事</h3>
+          <p><strong>变宽的证据</strong>：从&quot;有趣的火箭公司&quot;变成全球最大卫星运营商；发射份额从约 43%（2023）升至约 51%（2025）；Starlink 用户从 230 万到 1,200 万。</p>
+          <p><strong>最有力的第三方验证</strong>：<strong>Hughes（EchoStar 旗下）于 2026-08-03 申请破产保护，明确归因于 Starlink</strong>——宽带用户同比 <strong>-21.7%</strong> 至约 64.1 万，其重整官表示&quot;LEO 卫星竞争是<strong>结构性的，不是周期性的</strong>&quot;。</p>
+          <p><strong>未来五年的唯一变量是 Starship。</strong> 若成功实现完全复用，Starlink 二代部署成本大幅下降，护城河再拉开一代；若长期延期，SpaceX 被困在 Falcon 的成本曲线上。</p>
+          <h3>竞争格局：2026 年是 SpaceX 竞争压力最小的一年</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>竞争者</th>
+          <th>状态（2026 年 8 月）</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>Amazon Leo</strong></td>
+          <td>在轨 <strong>390 颗</strong>（目标 3,232 颗），<strong>尚未商业化</strong>。买了 38 次 Vulcan 发射，<strong>一次未飞</strong></td>
+          </tr>
+          <tr>
+          <td><strong>Blue Origin New Glenn</strong></td>
+          <td><strong>停飞</strong>。2026-05-28 静态点火爆炸摧毁一枚火箭并严重损坏 LC-36</td>
+          </tr>
+          <tr>
+          <td><strong>ULA Vulcan</strong></td>
+          <td><strong>自 2026 年 2 月停飞</strong>（固体助推器喷管异常）。2026 年指引 18-22 次，实际 <strong>0 次 Vulcan</strong></td>
+          </tr>
+          <tr>
+          <td><strong>Rocket Lab Neutron</strong></td>
+          <td><strong>从未试飞</strong>。2026-01-21 一级贮箱水压测试破裂，推迟至 2026Q4</td>
+          </tr>
+          <tr>
+          <td><strong>Eutelsat OneWeb</strong></td>
+          <td>订购 440 颗替换星，<strong>2027 年初才开始发射</strong>，资本受限</td>
+          </tr>
+          <tr>
+          <td><strong>中国千帆</strong></td>
+          <td>在轨 200 颗（目标 &gt;10,000），2026 年 4 月起提速</td>
+          </tr>
+          <tr>
+          <td><strong>中国国网</strong></td>
+          <td>在轨 177 颗（目标 13,000）</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>西方两个最可信的发射竞争者同时停飞</strong>——这对 SpaceX 的 Space 分部是顺风，不是逆风。但也要看到：<strong>真正的竞争压力在 2027 年到来</strong>，Amazon Leo 商业化、OneWeb 换代、Amazon 收购 Globalstar 进入直连手机，都在 2027 年。</p>
+          <h3>巴菲特式追问</h3>
+          <blockquote>
+          <p><strong>10 年后这条护城河还在吗？什么能摧毁它？</strong></p>
+          <p><strong>Starlink 的星座规模与频谱护城河大概率还在</strong>——这是资本无法快速复制的物理资产。发射端的技术壁垒会缩小（中国已在 2026-07-10 首次回收轨道级助推器，成为第二个做到的国家）。</p>
+          <p>能摧毁它的：① Starship 长期无法实现经济性复用，Starlink 二代部署成本居高不下；② Kessler 综合征（轨道碎片级联碰撞）；③ <strong>AI 分部持续吞噬 Starlink 的现金流，把一门好生意拖垮</strong>——这是当前最现实的一条。</p>
+          </blockquote>
+          <p><strong>安全边际在哪？</strong> 见第七步。答案是：<strong>当前价格没有安全边际，乐观情景下也没有。</strong></p>
+          <hr>
+          <h2>第四步：逆向思考与风险清单 — 芒格&quot;反过来想&quot;</h2>
+          <h3>4.1 失败路径清单</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>失败路径</th>
+          <th>概率判断</th>
+          <th>影响</th>
+          <th>关键观察指标</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>AI 分部持续烧钱且无法验证回报</strong></td>
+          <td><strong>高</strong></td>
+          <td><strong>极高</strong></td>
+          <td>AI 资本开支/收入比（当前 Q2 为 <strong>6.2 倍</strong>）；云合同客户具名</td>
+          </tr>
+          <tr>
+          <td><strong>估值倍数收缩</strong></td>
+          <td><strong>高</strong></td>
+          <td><strong>极高</strong></td>
+          <td>76.1 倍 PS；解禁供给曲线</td>
+          </tr>
+          <tr>
+          <td><strong>Starship 关键里程碑延期</strong></td>
+          <td>中高</td>
+          <td>极高</td>
+          <td>Flight 14 轨道飞行、飞船塔捕、在轨加注</td>
+          </tr>
+          <tr>
+          <td><strong>两大未具名客户之一流失或违约</strong></td>
+          <td>中</td>
+          <td>高</td>
+          <td>客户 A 18.3% + 客户 B 19.5% = <strong>37.8%</strong></td>
+          </tr>
+          <tr>
+          <td><strong>关联方交易损害少数股东</strong></td>
+          <td><strong>中高</strong></td>
+          <td>高</td>
+          <td>Valor 租赁 <strong>$202亿</strong>；关联方债务 $133.29亿</td>
+          </tr>
+          <tr>
+          <td><strong>Starlink ARPU 继续下滑且量增放缓</strong></td>
+          <td>中</td>
+          <td>高</td>
+          <td>ARPU（Q2 $66，首次环比持平）；用户环比增量</td>
+          </tr>
+          <tr>
+          <td><strong>2027 年竞争兑现</strong></td>
+          <td>中</td>
+          <td>中高</td>
+          <td>Amazon Leo 商业化、OneWeb 换代</td>
+          </tr>
+          <tr>
+          <td><strong>EchoStar 交易 2027 年 11 月才交割</strong></td>
+          <td>已确定</td>
+          <td>中</td>
+          <td>Gen2 直连手机产品在此之前无法商用</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>概率为分析判断，非可观测事实。</p>
+          <h3>4.2 三个最容易被忽略的风险（本报告的核心发现）</h3>
+          <p><strong>风险一：Valor 关联租赁 $202亿，由 SpaceX 担保</strong></p>
+          <p>招股书 Item 404 披露：<strong>Valor</strong>（由 SpaceX 现任董事 <strong>Antonio Gracias</strong> 掌管）向 xAI 子公司提供<strong>三项计算设备租赁</strong>，租赁期内现金支付合计 <strong>$69.86亿 + $66.33亿 + $65.87亿 = $202.06亿</strong>，且<strong>由 SpaceX 或其子公司担保付款与履约</strong>。</p>
+          <p>已支付：2025 年 $8.85亿；<strong>2026 年 1-4 月单期 $19.17亿</strong>。</p>
+          <p><strong>这笔承诺的规模约等于 SpaceX 2025 年全年收入</strong>，交易对手是现任董事控制的实体。这不是航空器维护费那类噪音，这是本文件里最应该被独立审查的一项。</p>
+          <p><strong>风险二：xAI 并购没有任何独立公允性检验</strong></p>
+          <p>因属<strong>共同控制</strong>交易：没有购买价格分摊、没有新增商誉、没有独立公平性意见、<strong>没有单独审计的 xAI/X 财务报表</strong>。所有历史期间按账面价值追溯合并。</p>
+          <p><strong>投资者买到的是一份重述过的历史，其中 xAI 的亏损被回溯性地织进了&quot;SpaceX&quot;，而无法单独检视。</strong></p>
+          <p><strong>风险三：EchoStar 对价锁定在 $42.40，而 IPO 价是 $135.00</strong></p>
+          <p>EchoStar 频谱交易总额 <strong>$196亿</strong>，其中约 <strong>$111亿以 2.618亿股 A 类股支付，价格固定在每股 $42.40</strong>。这意味着一笔以约 IPO 价三分之一的价格进行的大额股份转移，且<strong>要到 2027 年 11 月才最终交割</strong>。在此之前，Gen2（2GHz S 波段，类 5G）产品无法商用。</p>
+          <h3>4.3 历史类比</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>类比</th>
+          <th>相似点</th>
+          <th>差异点</th>
+          <th>教训</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>2000 年的思科</strong></td>
+          <td>真实护城河、真实需求、极高估值（PE 100+）</td>
+          <td>思科当时盈利</td>
+          <td>即便护城河是真的，PS 76 倍也可能十年不回本</td>
+          </tr>
+          <tr>
+          <td><strong>2004 年的亚马逊</strong></td>
+          <td>以亏损换增长、垂直整合、被嘲笑&quot;永不盈利&quot;</td>
+          <td><strong>亚马逊当时 PS 约 3-5 倍，不是 76 倍</strong>；且 AWS 有清晰的外部付费客户</td>
+          <td>商业模式可类比，估值不可类比</td>
+          </tr>
+          <tr>
+          <td><strong>1990 年代末的电信运营商</strong></td>
+          <td>真实带宽需求、真实长期合同、极高杠杆</td>
+          <td>SpaceX 净现金 $606亿，杠杆结构好得多</td>
+          <td>合同对手方付不出钱时，合同价值归零</td>
+          </tr>
+          <tr>
+          <td><strong>2000 年的铱星</strong></td>
+          <td>卫星通信、全球覆盖愿景、巨额资本开支</td>
+          <td>铱星手机 $3,000+ 且笨重；Starlink 解决真实痛点</td>
+          <td>卫星通信的资本密集度会在需求不及预期时压垮盈利</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>4.4 跨学科检验</h3>
+          <ul>
+          <li><strong>技术采纳曲线</strong>：Starlink 1,200 万用户 vs 全球宽带用户约 15 亿，渗透率不足 1%，处于早期采纳阶段。跨越鸿沟需要继续降价——这正是 ARPU 下滑的结构性原因</li>
+          <li><strong>竞争博弈</strong>：SpaceX 是&quot;不对称竞争者&quot;——自有 Starlink 需求让它不依赖外部发射客户。<strong>但反过来，AI 分部让它第一次依赖外部客户</strong>（客户 B 占 19.5%），这是新增的脆弱性</li>
+          <li><strong>幸存者偏差</strong>：我们看到 SpaceX 成功了，容易忽略 Virgin Orbit 破产、Astra 濒临退市、ABL 放弃火箭。<strong>且现在 New Glenn、Vulcan、Neutron 三家同时受挫</strong>——这说明这个行业的淘汰率极高，不说明 SpaceX 必然持续成功</li>
+          </ul>
+          <h3>4.5 芒格式追问</h3>
+          <blockquote>
+          <p><strong>我最可能在哪里犯错？聪明人为什么会不买/做空这家公司？</strong></p>
+          <p>我最可能犯的错是<strong>用 Starlink 的质量给整个公司估值</strong>。Connectivity 是一门 38.6% 经营利润率的好生意，但它只占收入 54.9%，而它产生的现金正在被 AI 分部以 6.2 倍的速度消耗。</p>
+          <p>聪明人做空的理由非常具体，且在 7 月已经用真金白银表达过：<strong>空头持仓从 6 月的 2,330 万股增至 7 月底的 2.193 亿股（约 $246亿），占解禁前流通盘约 34%</strong>。他们的论点是：76 倍 PS、合并 GAAP 亏损、自由现金流 -$325亿、37.8% 收入来自两个未具名客户、$202亿关联方担保租赁、以及一位拥有 82.4% 投票权且无法被罢免的 CEO。</p>
+          <p><strong>8/7 的暴涨是空头被逼平，不是论点被证伪。</strong></p>
+          </blockquote>
+          <h3>4.6 道德/合规/管理层风险</h3>
+          <p>招股书主动披露了两项：马斯克 2018 年 SEC 和解；以及 <strong>Pampena 诉马斯克案</strong>——2026-03-20 陪审团裁决、2026-04-03 部分判决，认定马斯克个人因 2022 年 5 月关于收购推特的两项陈述违反 10b-5 条款，判决时点后续动议仍未了结。</p>
+          <hr>
+          <h2>第五步：管理层评估 — 段永平&quot;对的人&quot; + 巴菲特&quot;管理层诚信&quot;</h2>
+          <h3>5.1 核心团队与关键决策复盘</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>时间</th>
+          <th>决策</th>
+          <th>结果</th>
+          <th>评分</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2011-2015</td>
+          <td>Falcon 9 垂直着陆复用</td>
+          <td>彻底改变航天经济学，2025 年 165 次发射</td>
+          <td>A+</td>
+          </tr>
+          <tr>
+          <td>2015</td>
+          <td>启动 Starlink</td>
+          <td>成为收入与利润核心，Q2 贡献全部经营利润</td>
+          <td>A+</td>
+          </tr>
+          <tr>
+          <td>2018</td>
+          <td>Starship 改用不锈钢</td>
+          <td>大幅降本，但至今未入轨</td>
+          <td>B+</td>
+          </tr>
+          <tr>
+          <td>2025-09</td>
+          <td>收购 EchoStar 频谱（$196亿）</td>
+          <td>战略正确，但对价锁定 $42.40 且 2027-11 才交割</td>
+          <td>B</td>
+          </tr>
+          <tr>
+          <td><strong>2026-02</strong></td>
+          <td><strong>共同控制并购 xAI</strong></td>
+          <td><strong>引入 AI 收入，也引入巨额亏损、资本开支与利益冲突；无独立公允性检验</strong></td>
+          <td><strong>C-</strong></td>
+          </tr>
+          <tr>
+          <td>2026-06</td>
+          <td>IPO 定价 $135，募资 $856.75亿</td>
+          <td>融资执行优秀</td>
+          <td>A</td>
+          </tr>
+          <tr>
+          <td>2026-06</td>
+          <td>发债 $250亿</td>
+          <td>锁定长期低成本资金（加权 5.855%）</td>
+          <td>A-</td>
+          </tr>
+          <tr>
+          <td>进行中</td>
+          <td>拟收购 Cursor（$600亿估值）</td>
+          <td>约 4.44亿 A 类股，参考价 $135</td>
+          <td>待验证</td>
+          </tr>
+          </tbody>
+          </table>
+          <p>Gwynne Shotwell（总裁兼 COO）与 Bret Johnsen（CFO）降低日常运营的关键人物风险。</p>
+          <h3>5.2 股权结构与治理（本报告最重要的一节）</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>项目</th>
+          <th>内容</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>股份类别</strong></td>
+          <td>A 类 <strong>1 票</strong>；B 类 <strong>10 票</strong>；C 类 <strong>0 票</strong>（当前 0 股在外）</td>
+          </tr>
+          <tr>
+          <td><strong>经济权利</strong></td>
+          <td><strong>三类完全同权</strong>——股息按比例平等支付，清算按比例分配。<strong>投票权是唯一差异</strong></td>
+          </tr>
+          <tr>
+          <td><strong>马斯克投票权</strong></td>
+          <td><strong>82.3%</strong>（登记持有口径）/ <strong>84.4%</strong>（含 60 日内可行权的 3.5亿份期权）</td>
+          </tr>
+          <tr>
+          <td><strong>马斯克 B 类持股构成</strong></td>
+          <td>合计 55.69亿股，其中：<strong>未归属绩效股 13.02亿股（23.4%）</strong>、未行权期权 3.50亿股（6.3%）、<strong>已归属约 39.17亿股（70.3%）</strong></td>
+          </tr>
+          <tr>
+          <td><strong>关键事实</strong></td>
+          <td><strong>未归属的绩效股拥有完整投票权</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>两笔绩效授予的归属条件（逐字核对招股书）</strong>：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>授予</th>
+          <th class="numeric">股数</th>
+          <th>市值条件</th>
+          <th><strong>额外条件</strong></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>SpaceX CEO Award（2026-01-13）</td>
+          <td class="numeric">10.00亿股</td>
+          <td>$5,000亿 → $7.5万亿，每 $5,000亿一档，共 15 档</td>
+          <td><strong>在火星建立至少 100 万居民的永久人类殖民地</strong></td>
+          </tr>
+          <tr>
+          <td>AI CEO Award（2026-03-23）</td>
+          <td class="numeric">3.02亿股</td>
+          <td>$1.065万亿 → $6.565万亿，共 12 档</td>
+          <td><strong>建成非地球轨道数据中心，每年交付 100 太瓦算力</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>每一档都必须同时满足两个条件。</strong> 火星百万人殖民地与年产 100 太瓦的轨道算力，在可预见期内近乎不可能达成。</p>
+          <p><strong>因此这两笔授予的实质是投票权工具，附带一张彩票。</strong> 马斯克可以投这 13.02 亿股的票，而无需达成任何里程碑。</p>
+          <p><strong>其他控制条款</strong>：</p>
+          <ul>
+          <li><strong>B 类单独选举 51% 的董事</strong>（当前 8 席中的 5 席），只要还有任何 B 类股在外</li>
+          <li><strong>罢免马斯克的董事、CEO、董事长职务，均需 B 类股单独作为一类多数通过</strong>——而他控制 B 类。<strong>实际上不可罢免</strong></li>
+          <li>B 类对章程修订及特定合并/出售有单独否决权</li>
+          <li>依据纳斯达克规则认定为<strong>受控公司</strong>，明确豁免多数独立董事、独立薪酬委员会、独立提名委员会。仅保留完全独立的审计委员会</li>
+          <li>董事会 8 人，含 <strong>Google 全球合作与企业发展总裁 Donald Harrison</strong></li>
+          <li>董事与高管合计持有 B 类 93.7%，合计投票权 85.3%</li>
+          </ul>
+          <h3>5.3 Alphabet 的持股（已在其 10-Q 中确认）</h3>
+          <p>Alphabet 2026Q2 10-Q（2026-07-23 提交）金融工具附注披露，截至 2026-06-30 持有：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>项目</th>
+          <th class="numeric">金额</th>
+          <th>限制</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>有价股权证券（一级）</td>
+          <td class="numeric"><strong>$800亿</strong></td>
+          <td>短期出售限制</td>
+          </tr>
+          <tr>
+          <td>其他非流动资产—有价股权证券</td>
+          <td class="numeric"><strong>$141亿</strong></td>
+          <td><strong>限制至 2027 年第三季度</strong></td>
+          </tr>
+          <tr>
+          <td><strong>合计</strong></td>
+          <td class="numeric"><strong>$941亿</strong></td>
+          <td></td>
+          </tr>
+          </tbody>
+          </table>
+          <p>Alphabet 同时披露 Q2 其他收益 $980亿中，股权证券净收益 $990亿&quot;主要来自 SpaceX 与一家私人公司的未实现收益&quot;。<strong>Alphabet 不披露持股数量或比例。</strong></p>
+          <blockquote>
+          <p>这一条对 SpaceX 股东有两重含义：一是 Alphabet 是重大股东且其董事在董事会内；二是 <strong>$141亿的持股限制在 2027Q3 到期</strong>，届时构成额外供给。</p>
+          </blockquote>
+          <h3>5.4 段永平式追问</h3>
+          <blockquote>
+          <p><strong>如果 CEO 退休，这家公司还能保持竞争力吗？</strong></p>
+          <p><strong>Falcon 与 Starlink 可以继续运转</strong>——Shotwell 已经证明了这一点。但 <strong>Starship、火星计划、AI 分部大概率显著放缓或搁浅</strong>，而这三项正是当前估值的主要构成。</p>
+          <p>更本质的问题是：<strong>这家公司的治理结构使得&quot;CEO 退休&quot;这个假设本身不成立</strong>——他不可被罢免，且其绩效股的归属条件把他与公司绑定到了火星殖民地建成之时。这既是承诺，也是风险。</p>
+          </blockquote>
+          <hr>
+          <h2>第六步：行业与文明趋势 — 李录&quot;文明演进框架&quot;</h2>
+          <h3>6.1 是文明级范式转移吗？</h3>
+          <p><strong>是，但要区分三层：</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>层次</th>
+          <th>判断</th>
+          <th>依据</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>发射成本下降</strong></td>
+          <td><strong>文明级</strong></td>
+          <td>每公斤入轨成本已降一个数量级；类比集装箱之于航运</td>
+          </tr>
+          <tr>
+          <td><strong>LEO 全球连接</strong></td>
+          <td><strong>文明级</strong></td>
+          <td>Hughes 破产是结构性替代的直接证据，不是周期性波动</td>
+          </tr>
+          <tr>
+          <td><strong>轨道数据中心 / 火星殖民</strong></td>
+          <td><strong>尚未验证</strong></td>
+          <td>招股书用 $26.5万亿 AI&quot;潜在市场&quot;描述机会，缺乏可验证的产品边界</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>6.2 历史技术革命类比</h3>
+          <p>最贴切的不是互联网，而是 <strong>19 世纪的铁路</strong>：</p>
+          <ul>
+          <li><strong>相似</strong>：真实需求、真实的基础设施价值、改变文明形态</li>
+          <li><strong>教训</strong>：<strong>铁路改变了世界，但绝大多数铁路投资者亏了钱</strong>。原因是建设期资本消耗巨大、竞争性重复建设、以及投资者在建设高峰期支付了终局价格</li>
+          </ul>
+          <p>SpaceX 当前正处在&quot;建设高峰期&quot;：H1 资本开支是收入的 <strong>2.28 倍</strong>。</p>
+          <h3>6.3 TAM 与价值链位置</h3>
+          <p>SpaceX 同时占据太空价值链最关键的两个环节：<strong>运输层</strong>（发射）与<strong>应用层</strong>（Starlink）。这是极其有利的结构。</p>
+          <p><strong>但必须警惕 TAM 的口径</strong>：</p>
+          <ul>
+          <li>全球太空经济第三方估计 2025 年约 $6,264亿（Novaspace）至 $6,860亿（Space Foundation），两者口径差异显著</li>
+          <li>SpaceX 招股书称 Starlink 已获准市场覆盖约 33 亿潜在人口——<strong>人口不是付费用户，更不是收入 TAM</strong></li>
+          <li>AI 分部的 $26.5万亿&quot;潜在市场&quot;<strong>本报告不予采用</strong></li>
+          </ul>
+          <h3>6.4 技术路线风险：Starship 的真实状态</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>里程碑</th>
+          <th>状态</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>Flight 13（2026-07-24）</td>
+          <td><strong>部分成功</strong>：部署 20 颗真实 Starlink V3 卫星、Raptor 太空重启、完整再入、史上最软溅落（飞船完整浮于海面）。<strong>但 Super Heavy 助推器回推烧提前结束，着陆点火未全部启动，硬着陆——连续第二次助推器失控溅落</strong></td>
+          </tr>
+          <tr>
+          <td>Flight 14（拟 2026 年 8 月底）</td>
+          <td>将是 <strong>Starship 首次入轨尝试</strong>、首次运营型 V3 卫星部署、<strong>首次尝试塔臂捕获飞船</strong>。马斯克表示&quot;待监管批准&quot;</td>
+          </tr>
+          <tr>
+          <td><strong>从未实现</strong></td>
+          <td><strong>入轨飞行、上面级复用、在轨推进剂加注、载人认证</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>招股书把&quot;Starship 规模化开发或达成所需发射频次、复用性与能力的任何失败或延迟&quot;列为第一条风险因素。</strong></p>
+          <p>FAA 已完成 Starbase 每年最多 25 次发射的环境审批（2025-05-06），KSC LC-39A 最多 44 次（2026-02）。但<strong>现行 FAA 规则不允许 Starship 返回发射场再入，需要豁免，&quot;并不保证获得&quot;</strong>。</p>
+          <h3>6.5 李录式追问</h3>
+          <blockquote>
+          <p><strong>站在 20 年后回看，这家公司是&quot;这个时代的标准石油&quot;还是&quot;昙花一现的 3Com&quot;？</strong></p>
+          <p><strong>两者都不是，最可能是&quot;这个时代的 AT&amp;T&quot;</strong>——建立了关键基础设施、不可或缺、稳定盈利，但最终面临竞争与监管，增长放缓、估值回归。</p>
+          <p>它不会是 3Com（它有真实的垄断地位与现金流），也不太可能是标准石油（太空不是不可替代资源，且太空经济总规模可能不足以支撑 $1.75 万亿市值——2025 年全球太空经济总量约 $6,264亿，SpaceX 市值是整个行业年产值的 <strong>2.8 倍</strong>）。</p>
+          <p><strong>这个比值本身就是结论。</strong></p>
+          </blockquote>
+          <hr>
+          <h2>第七步：估值与安全边际</h2>
+          <h3>7.1 当前市场定价</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>指标</th>
+          <th class="numeric">数值</th>
+          <th>说明</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>股价</td>
+          <td class="numeric"><strong>$133.11</strong></td>
+          <td>2026-08-07 收盘</td>
+          </tr>
+          <tr>
+          <td>市值</td>
+          <td class="numeric"><strong>$1.754万亿</strong></td>
+          <td>工具验算偏差 0.04%</td>
+          </tr>
+          <tr>
+          <td>企业价值</td>
+          <td class="numeric">$1.694万亿</td>
+          <td>扣净现金 $606.45亿</td>
+          </tr>
+          <tr>
+          <td><strong>PS（TTM）</strong></td>
+          <td class="numeric"><strong>76.14x</strong></td>
+          <td>$1,754.6亿 ÷ $230.44亿</td>
+          </tr>
+          <tr>
+          <td><strong>EV/Revenue</strong></td>
+          <td class="numeric"><strong>73.51x</strong></td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>PB</td>
+          <td class="numeric">11.90x</td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>PE</td>
+          <td class="numeric"><strong>不适用</strong></td>
+          <td>TTM 净亏损 -$88.9亿</td>
+          </tr>
+          <tr>
+          <td>P/FCF</td>
+          <td class="numeric"><strong>不适用</strong></td>
+          <td>TTM 自由现金流 -$325.2亿</td>
+          </tr>
+          <tr>
+          <td>前瞻 PE</td>
+          <td class="numeric">47.74x</td>
+          <td>基于非 GAAP 预期</td>
+          </tr>
+          <tr>
+          <td>前瞻 PS（FY2027E $909.3亿）</td>
+          <td class="numeric"><strong>19.30x</strong></td>
+          <td>S&amp;P Global 15 位分析师</td>
+          </tr>
+          <tr>
+          <td>前瞻 PS（摩根大通 $1,230亿）</td>
+          <td class="numeric">14.27x</td>
+          <td></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>7.2 反向 DCF：当前价格隐含什么</h3>
+          <p>要求 12% 年回报，则 2030 年市值需达到 <strong>$2.761万亿</strong>。</p>
+          <table>
+          <thead>
+          <tr>
+          <th class="numeric">2030 年给予的 PS</th>
+          <th class="numeric">需要的 2030 年收入</th>
+          <th class="numeric">从 TTM $230.44亿起的年复合增速（4.5 年）</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td class="numeric">15x</td>
+          <td class="numeric"><strong>$1,841亿</strong></td>
+          <td class="numeric"><strong>58.7%</strong></td>
+          </tr>
+          <tr>
+          <td class="numeric">10x</td>
+          <td class="numeric"><strong>$2,761亿</strong></td>
+          <td class="numeric"><strong>73.6%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>当前价格要求 SpaceX 在四年半内把收入做到 1,841 亿到 2,761 亿美元，年复合 59%-74%，并且届时市场仍愿意给 10-15 倍市销率。</strong></p>
+          <p>作为参照：Amazon 2025 年收入约 $7,430亿。当前价格隐含 SpaceX 在 2030 年达到亚马逊今日收入的 25%-37%。</p>
+          <h3>7.3 分部三情景估值（2030 年，12% 折现 4 年）</h3>
+          <p>单位：十亿美元。基于 Q2 2026 年化收入（Connectivity $171.6亿、Space $38.5亿、AI $102.4亿）推演。</p>
+          <table>
+          <thead>
+          <tr>
+          <th>情景</th>
+          <th class="numeric">Connectivity</th>
+          <th class="numeric">Space</th>
+          <th class="numeric">AI</th>
+          <th class="numeric">2030 净现金</th>
+          <th class="numeric">权益价值</th>
+          <th class="numeric">每股（未折现）</th>
+          <th class="numeric"><strong>折现现值</strong></th>
+          <th class="numeric">相对当前</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>悲观</strong></td>
+          <td class="numeric">$35×6=$210</td>
+          <td class="numeric">$6×4=$24</td>
+          <td class="numeric">$15×3=$45</td>
+          <td class="numeric">$0</td>
+          <td class="numeric"><strong>$279</strong></td>
+          <td class="numeric">$21.17</td>
+          <td class="numeric"><strong>$13.45</strong></td>
+          <td class="numeric"><strong>-89.9%</strong></td>
+          </tr>
+          <tr>
+          <td><strong>基准</strong></td>
+          <td class="numeric">$55×9=$495</td>
+          <td class="numeric">$10×7=$70</td>
+          <td class="numeric">$40×8=$320</td>
+          <td class="numeric">$20</td>
+          <td class="numeric"><strong>$905</strong></td>
+          <td class="numeric">$68.66</td>
+          <td class="numeric"><strong>$43.63</strong></td>
+          <td class="numeric"><strong>-67.2%</strong></td>
+          </tr>
+          <tr>
+          <td><strong>乐观</strong></td>
+          <td class="numeric">$80×12=$960</td>
+          <td class="numeric">$15×10=$150</td>
+          <td class="numeric">$90×12=$1,080</td>
+          <td class="numeric">$60</td>
+          <td class="numeric"><strong>$2,250</strong></td>
+          <td class="numeric">$170.71</td>
+          <td class="numeric"><strong>$108.47</strong></td>
+          <td class="numeric"><strong>-18.5%</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>乐观情景的假设有多激进</strong>：Connectivity 收入从年化 $171.6亿增至 $800亿（4.7 倍）、AI 从 $102.4亿增至 $900亿（8.8 倍）、且 2030 年市场仍给 AI 分部 12 倍市销率。</p>
+          <p><strong>即便如此，乐观情景折现现值 $108.47 仍低于当前股价 18.5%。</strong></p>
+          <p><strong>模型的三处保守与三处激进（必须并列声明）</strong>：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>保守之处</th>
+          <th>激进之处</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>未扣除 2026-2030 期间的负自由现金流（分析师预期 FY2026 即为 <strong>-$472亿</strong>）</td>
+          <td>假设 2030 年三个分部均实现可观规模</td>
+          </tr>
+          <tr>
+          <td>未计入 CEO 绩效股（13.02亿股）、员工期权、Cursor 收购（约 4.44亿股）、EchoStar（2.618亿股）的稀释</td>
+          <td>假设 AI 分部能获得 8-12 倍市销率</td>
+          </tr>
+          <tr>
+          <td>未单独给火星殖民、轨道数据中心期权价值</td>
+          <td>假设 Starship 按期完成关键里程碑</td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>净效果：稀释项未计入是最大的低估来源。</strong> 已知的三笔股份支付合计约 <strong>20.6亿股</strong>，占当前股本 <strong>15.6%</strong>。若计入，三个情景的每股价值需再下调约 13.5%。</p>
+          <h3>7.4 与分析师共识的分歧</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>口径</th>
+          <th class="numeric">数值</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>分析师数量</td>
+          <td class="numeric">35</td>
+          </tr>
+          <tr>
+          <td>共识评级</td>
+          <td class="numeric">买入</td>
+          </tr>
+          <tr>
+          <td><strong>平均目标价</strong></td>
+          <td class="numeric"><strong>$231.40</strong>（+73.8%）</td>
+          </tr>
+          <tr>
+          <td>中位数目标价</td>
+          <td class="numeric">$200.00（+50.3%）</td>
+          </tr>
+          <tr>
+          <td><strong>最高 / 最低</strong></td>
+          <td class="numeric"><strong>$800 / $62</strong></td>
+          </tr>
+          <tr>
+          <td>评级分布</td>
+          <td class="numeric">强烈买入 21-22 / 买入 6 / 持有 5-6 / 卖出 0 / <strong>强烈卖出 2</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>目标价跨度 12.9 倍（$62 到 $800）——这不是共识，这是分歧。</strong> 本报告的乐观情景现值 $108.47 落在最低目标价 $62 与中位数 $200 之间，接近 Argus 8/7 上调后给出的 $160 的下方。</p>
+          <p>分析师预期本身也未收敛：FY2027 收入共识 S&amp;P Global $909.3亿 vs FactSet 约 $1,020亿 vs 摩根大通 $1,230亿，<strong>跨度 35%</strong>。</p>
+          <h3>7.5 解禁供给：一条必须画出来的曲线</h3>
+          <p>IPO 价 <strong>$135.00</strong>。条件性提前解禁的触发条件是：截至 2026-08-04 的 10 个交易日中，至少 5 日收盘价 ≥ <strong>$175.50</strong>（IPO 价 +30%）。</p>
+          <p><strong>实际该窗口最高收盘 $125.33，零日达标。触发失败。</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>日期</th>
+          <th class="numeric">解禁股数</th>
+          <th class="numeric">占总股本</th>
+          <th>状态</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>2026-08-06</strong></td>
+          <td class="numeric"><strong>9.115亿</strong></td>
+          <td class="numeric">6.9%</td>
+          <td>✅ 已释放（不含关联人）</td>
+          </tr>
+          <tr>
+          <td>2026-08-06 条件性</td>
+          <td class="numeric">4.558亿</td>
+          <td class="numeric">3.5%</td>
+          <td>❌ <strong>未触发，顺延至 12/8</strong></td>
+          </tr>
+          <tr>
+          <td>2026-08-20</td>
+          <td class="numeric">3.190亿</td>
+          <td class="numeric">2.4%</td>
+          <td>待释放</td>
+          </tr>
+          <tr>
+          <td>2026-09-09</td>
+          <td class="numeric">3.190亿</td>
+          <td class="numeric">2.4%</td>
+          <td>待释放</td>
+          </tr>
+          <tr>
+          <td><strong>2026-09-10</strong></td>
+          <td class="numeric"><strong>0.591亿（关联人）</strong></td>
+          <td class="numeric">0.4%</td>
+          <td>待释放</td>
+          </tr>
+          <tr>
+          <td>2026-09-24 / 10-09 / 10-24</td>
+          <td class="numeric">各 3.284亿</td>
+          <td class="numeric">各 2.5%</td>
+          <td>待释放</td>
+          </tr>
+          <tr>
+          <td>Q3 财报后第 2 日</td>
+          <td class="numeric"><strong>13.0亿</strong></td>
+          <td class="numeric">9.9%</td>
+          <td>待释放（最大单批）</td>
+          </tr>
+          <tr>
+          <td><strong>2026-12-08</strong></td>
+          <td class="numeric"><strong>7.976亿</strong></td>
+          <td class="numeric">6.1%</td>
+          <td>待释放（<strong>因条件未触发而放大</strong>）</td>
+          </tr>
+          <tr>
+          <td>…</td>
+          <td class="numeric"></td>
+          <td class="numeric"></td>
+          <td></td>
+          </tr>
+          <tr>
+          <td><strong>2027-06-12</strong></td>
+          <td class="numeric"><strong>64亿（马斯克全部）</strong></td>
+          <td class="numeric"><strong>48.6%</strong></td>
+          <td><strong>无提前解禁条款</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <p><strong>到 2026 年 12 月，约 40% 的股份可交易；其余约 60%（含马斯克 100%）锁定至 2027 年年中。</strong></p>
+          <blockquote>
+          <p>一个被低估的事实：<strong>条件未触发反而让 8/6 的解禁量从 13.673亿股降到 9.115亿股</strong>——供给冲击比预期温和，这正是 8/6-8/7 上涨的机械原因之一。但代价是 12 月的批次被放大。</p>
+          </blockquote>
+          <h3>7.6 段永平式追问</h3>
+          <blockquote>
+          <p><strong>如果股市明天关闭 5 年，你愿意以这个价格持有吗？</strong></p>
+          <p><strong>不愿意。</strong> 理由不是&quot;这家公司不好&quot;，而是三条可量化的事实：</p>
+          <ol>
+          <li><strong>乐观情景折现现值 $108.47，低于现价 18.5%</strong>——我找不到一个合理假设组合能证明 $133.11</li>
+          <li><strong>五年内公司大概率持续为负自由现金流</strong>（FY2026 分析师预期 -$472亿），期间需要继续融资，稀释不可避免</li>
+          <li><strong>37.8% 的收入来自两个我不知道名字的客户</strong>，其中一个（19.5%）是新签的 AI 云合同对手方</li>
+          </ol>
+          <p>股市关闭五年意味着我无法在中途修正错误——而这恰恰是最需要确定性的情形。</p>
+          </blockquote>
+          <hr>
+          <h2>第八步：综合决策备忘录</h2>
+          <h3>8.1 汇总评估</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>维度</th>
+          <th>结论</th>
+          <th>信心度</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>生意质量（段永平）</strong></td>
+          <td><strong>分裂</strong>。Connectivity 优秀（38.6% 经营利润率），Space 与 AI 合计 Q2 亏损 $17.99亿。用好生意养两个赌注</td>
+          <td>★★★★☆</td>
+          </tr>
+          <tr>
+          <td><strong>护城河（巴菲特）</strong></td>
+          <td><strong>规模效应 ★★★★★、技术壁垒 ★★★★ 真实且在变宽</strong>；但网络效应 ★★、定价权 ★★☆ 弱于市场印象</td>
+          <td>★★★★☆</td>
+          </tr>
+          <tr>
+          <td><strong>管理层（段永平+巴菲特）</strong></td>
+          <td><strong>执行力卓越，治理结构对少数股东不利</strong>。82.4% 投票权、不可罢免、$202亿关联方担保租赁、xAI 并购无独立公允性检验</td>
+          <td>★★★★★</td>
+          </tr>
+          <tr>
+          <td><strong>最大风险（芒格）</strong></td>
+          <td><strong>估值 + AI 分部烧钱 + 客户集中度</strong>。三者同时兑现即为灾难性</td>
+          <td>★★★★★</td>
+          </tr>
+          <tr>
+          <td><strong>文明趋势（李录）</strong></td>
+          <td>发射与 LEO 连接是文明级；轨道数据中心与火星尚未验证。<strong>市值已是全球太空经济年产值的 2.8 倍</strong></td>
+          <td>★★★★☆</td>
+          </tr>
+          <tr>
+          <td><strong>估值（巴菲特+段永平）</strong></td>
+          <td><strong>无安全边际</strong>。76.14 倍 PS；乐观情景现值 $108.47 仍低于现价 18.5%</td>
+          <td>★★★★★</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>8.2 最终决策</h3>
+          <table>
+          <thead>
+          <tr>
+          <th>策略</th>
+          <th>建议</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td><strong>空仓者</strong></td>
+          <td><strong>回避。</strong> 当前 $133.11 不提供任何安全边际。<strong>$45 以下</strong>（接近基准情景现值 $43.63）方可重新完整评估。若坚持参与，仓位应按&quot;可承受归零&quot;设定，且不超过总组合 2%</td>
+          </tr>
+          <tr>
+          <td><strong>持仓者</strong></td>
+          <td><strong>借 8/7 的反弹减仓。</strong> 这轮上涨是空头回补而非论点被证伪。若继续持有，必须清楚你持有的是&quot;Starlink 的现金流 + Starship 的期权 + AI 的赌注&quot;三者的捆绑，不能只买其中一项</td>
+          </tr>
+          <tr>
+          <td><strong>加仓信号</strong></td>
+          <td>① Starship 完成入轨飞行<strong>且</strong>成功塔捕飞船；② AI 分部自由现金流转正或云合同客户具名且为投资级；③ 合并自由现金流转正；④ 股价跌至 $45-60 区间</td>
+          </tr>
+          <tr>
+          <td><strong>卖出信号</strong></td>
+          <td>① 任一未具名大客户流失或缩单；② AI 资本开支/收入比继续扩大（当前 Q2 为 6.2 倍）；③ Starlink 用户环比增量连续两季下滑；④ Valor 关联租赁规模进一步扩大；⑤ 为维持资本开支而大额增发</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>8.3 对既有报告的核验（不修改原文件）</h3>
+          <p><code>reports/SpaceX/SpaceX-research-20260623.md</code>（2026-06-23）中，以下内容以当前一手文件核验<strong>无法证实或已失效</strong>：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>原报告表述</th>
+          <th>核验结果</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>股价 $165.78、市值 $2.17万亿</td>
+          <td><strong>已过时</strong>。8/7 收盘 $133.11、市值 $1.754万亿</td>
+          </tr>
+          <tr>
+          <td>&quot;马斯克经济权益约 42%&quot;</td>
+          <td><strong>无法证实</strong>。招股书披露的是投票权 82.3%-84.4%；经济权益需区分已归属/未归属绩效股/期权，无单一可验证数字</td>
+          </tr>
+          <tr>
+          <td>&quot;2025 年发射 165 次，占全球轨道发射质量 87%&quot;</td>
+          <td>165 次为公司披露的 Falcon 轨道发射，正确；<strong>87% 质量份额无独立数据支持</strong></td>
+          </tr>
+          <tr>
+          <td>&quot;Anthropic 每月支付 12.5亿美元&quot;</td>
+          <td><strong>一手文件中无此披露</strong>。10-Q 只披露客户 B 占 Q2 收入 19.5%，未具名</td>
+          </tr>
+          <tr>
+          <td>&quot;全部 11 名 xAI 联合创始人离职&quot;</td>
+          <td><strong>无一手证据</strong></td>
+          </tr>
+          <tr>
+          <td>&quot;持有 18,712 枚比特币&quot;</td>
+          <td>10-Q 只披露数字资产 $10.98亿，未披露枚数</td>
+          </tr>
+          <tr>
+          <td>&quot;在轨 10,400 颗卫星&quot;</td>
+          <td>招股书披露 2026-03-31 约 9,600 颗（宽带+移动）；第三方 2026-08-05 称宽带 &gt;10,000 颗。<strong>6/30 时点数字未披露</strong></td>
+          </tr>
+          </tbody>
+          </table>
+          <h3>8.4 四位大师模拟点评</h3>
+          <blockquote>
+          <p><strong>巴菲特</strong>：&quot;资产是真的，护城河也是真的。但我买不了一家我算不出内在价值的公司——它没有正的自由现金流，两个最大客户我不知道是谁，而 CEO 用不可罢免的投票权控制着一切。这不是我够得着的。&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>芒格</strong>：&quot;反过来想：如果 AI 分部明天停掉，这家公司会变好还是变坏？答案是自由现金流立刻转正，而市值可能腰斩——因为市场买的正是那个赌注。<strong>你要清楚自己付的是哪一部分钱。</strong> 另外，$202亿由公司担保、付给现任董事关联实体的租赁，这一条我需要独立审计才敢往下谈。&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>段永平</strong>：&quot;Starlink 是一门我看得懂的好生意。但我买不到单独的 Starlink，我必须同时买下 Starship 和 xAI。76 倍市销率买一个我只想要三分之一的组合，这个价格不对。<strong>好公司不等于好投资，价格决定回报。</strong>&quot;</p>
+          </blockquote>
+          <blockquote>
+          <p><strong>李录</strong>：&quot;这是文明级的基础设施，二十年后大概率还在。但铁路也是文明级的，而多数铁路投资者亏了钱——因为他们在建设高峰期支付了终局价格。SpaceX 现在的资本开支是收入的 2.28 倍，这正是建设高峰期。&quot;</p>
+          </blockquote>
+          <h3>8.5 最终结论</h3>
+          <p><strong>回避。</strong></p>
+          <ul>
+          <li><strong>AI 分析置信度：高。</strong> 已申报财务、经营指标、治理条款、解禁时间表均可从一手文件逐条核实</li>
+          <li><strong>实际投资确定性：低。</strong> 决定回报的不是资料量，而是四件尚未验证的事：Starship 入轨与复用、AI 分部的资本回报、两个未具名客户的信用、以及在 60% 股份于 2027 年年中解禁前市场是否愿意维持 76 倍市销率</li>
+          </ul>
+          <p><strong>基于充分数据的结论</strong>：收入、分部利润、现金、债务、股本、市值、Starlink 用户与 ARPU、解禁时间表、治理条款、关联方交易金额。</p>
+          <p><strong>基于推理而非事实的结论</strong>：三情景估值、失败路径概率、2030 年分部收入与倍数、护城河 10 年后的状态。<strong>这些必须随每季财报更新。</strong></p>
+          <hr>
+          <h2>需要一手验证的问题清单</h2>
+          <p>尽管 SpaceX 已是 A 级信息公司，以下问题<strong>无法通过公开资料回答</strong>，需要田野调查、供应链访谈或直接向管理层提问：</p>
+          <p><strong>关于两个未具名客户（最高优先级）</strong></p>
+          <ol>
+          <li>客户 B（占 Q2 收入 19.5%，AI 分部）是谁？其信用评级、合同期限、是否可单方终止？</li>
+          <li>客户 A（占 Q2 收入 18.3%，横跨三个分部）是否为美国政府？若是，涉及哪些项目？</li>
+          <li>$141亿&quot;云服务协议合同销售额&quot;的付款节奏与违约条款是什么？</li>
+          </ol>
+          <p><strong>关于关联方交易</strong>
+          4. Valor 的三笔 $202亿计算设备租赁，定价相对市场公允价的水平如何？审计委员会做了何种独立审查？
+          5. 为什么由 SpaceX 担保 xAI 子公司的租赁付款？若 xAI 分部现金流不足，担保如何执行？</p>
+          <p><strong>关于 AI 分部的单位经济性</strong>
+          6. 1.4GW 铭牌算力的利用率是多少？折旧年限假设是几年？
+          7. AI 分部的增量投入资本回报率（ROIC）是多少？管理层的内部门槛是多少？</p>
+          <p><strong>关于 Starlink</strong>
+          8. 分地区的流失率、获客成本、终端补贴金额？
+          9. ARPU 在 Q2 首次环比持平（$66），这是触底还是暂时现象？
+          10. 容量利用率如何？在高密度地区是否已出现拥塞降速？</p>
+          <p><strong>关于 Starship</strong>
+          11. Flight 14 的塔捕飞船若失败，对 Starlink V3 部署节奏的具体影响是多少个季度？
+          12. 在轨推进剂加注的首次演示目标日期？NASA HLS 里程碑付款的具体条件？</p>
+          <p><strong>关于股本与稀释</strong>
+          13. 完整的摊薄桥接表——基本股、期权、CEO 绩效股、Cursor（约 4.44亿股）、EchoStar（2.618亿股）——最终完全摊薄股本是多少？</p>
+          <hr>
+          <h2>附录 A：工具验证记录</h2>
+          <p><code>tools/financial_rigor.py</code> 执行结果：</p>
+          <table>
+          <thead>
+          <tr>
+          <th>验证项</th>
+          <th>结果</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>2026-08-07 收盘价双源交叉验证</td>
+          <td>✅ 偏差 0.00%（Yahoo v8 与 stockanalysis 均为 $133.11）</td>
+          </tr>
+          <tr>
+          <td>Q2 2026 收入双源交叉验证</td>
+          <td>✅ 偏差 0.00%（10-Q 与 8-K EX-99.1 均为 $7,814M）</td>
+          </tr>
+          <tr>
+          <td>市值验算（$133.11 × 131.82亿股 vs $1.754万亿）</td>
+          <td>✅ 偏差 0.04%</td>
+          </tr>
+          <tr>
+          <td>净现金 = $100,009M − $39,364M</td>
+          <td>$60,645M（精确计算）</td>
+          </tr>
+          <tr>
+          <td>PS（TTM）= $1,754.6亿 ÷ $230.44亿</td>
+          <td><strong>76.14x</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>EV/Revenue = ($1,754.6−$606.45)亿 ÷ $230.44亿</td>
+          <td><strong>73.51x</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>前瞻 PS（FY2027E $909.3亿）</td>
+          <td>19.30x（精确计算）</td>
+          </tr>
+          <tr>
+          <td>AI 资本开支占比 = $15,828M ÷ $18,369M</td>
+          <td><strong>86.17%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>客户集中度 = 18.3% + 19.5%</td>
+          <td><strong>37.8%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>H1 资本开支/收入 = $28,476M ÷ $12,508M</td>
+          <td><strong>2.28 倍</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>马斯克已归属占其 B 类持股</td>
+          <td><strong>70.33%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>三情景折现现值（12%，4 年，131.82亿股）</td>
+          <td>$13.45 / $43.63 / <strong>$108.47</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>反向 DCF：2030 需达市值</td>
+          <td>$2.761万亿（精确计算）</td>
+          </tr>
+          <tr>
+          <td>反向 DCF：15x PS 需收入 $1,841亿，隐含 CAGR</td>
+          <td><strong>58.69%</strong>（精确计算）</td>
+          </tr>
+          <tr>
+          <td>反向 DCF：10x PS 需收入 $2,761亿，隐含 CAGR</td>
+          <td><strong>73.65%</strong>（精确计算）</td>
+          </tr>
+          </tbody>
+          </table>
+          <h2>附录 B：资料来源</h2>
+          <p><strong>SEC 一手文件（CIK 0001181412，全部于 2026-08-07/08 访问）</strong></p>
+          <ol>
+          <li>Form 10-Q，Q2 2026，2026-08-04 提交，accession 0001628280-26-052535：<code><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm">https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm</a></code></li>
+          <li>Form 8-K + Exhibit 99.1（Q2 财报），2026-08-04：<code><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/earningsreleaseq22608042.htm">https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/earningsreleaseq22608042.htm</a></code></li>
+          <li><strong>Form 424B4 招股书</strong>，2026-06-12，accession 0001628280-26-042639：<code><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm">https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm</a></code>（股权结构、绩效股条件、解禁时间表、关联方交易、EchoStar 条款）</li>
+          <li>Form 8-K（IPO 交割），2026-06-26；Form 8-K（定价），2026-06-23</li>
+          <li>SEC Submissions API：<code><a href="https://data.sec.gov/submissions/CIK0001181412.json">https://data.sec.gov/submissions/CIK0001181412.json</a></code></li>
+          <li>SEC XBRL Company Facts：<code><a href="https://data.sec.gov/api/xbrl/companyfacts/CIK0001181412.json">https://data.sec.gov/api/xbrl/companyfacts/CIK0001181412.json</a></code></li>
+          <li>EDGAR 每日索引（用于确认 8/5、8/6 无新增文件）：<code><a href="https://www.sec.gov/Archives/edgar/daily-index/2026/QTR3/master.20260805.idx">https://www.sec.gov/Archives/edgar/daily-index/2026/QTR3/master.20260805.idx</a></code></li>
+          </ol>
+          <p><strong>第三方一手文件</strong>
+          8. <strong>Alphabet Inc. Form 10-Q Q2 2026</strong>，2026-07-23，accession 0001652044-26-000071：<code><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm">https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm</a></code>（$941亿 SpaceX 持股）</p>
+          <p><strong>市场数据</strong>
+          9. Yahoo Finance v8 chart API：<code><a href="https://query1.finance.yahoo.com/v8/finance/chart/SPCX?range=1mo&amp;interval=1d">https://query1.finance.yahoo.com/v8/finance/chart/SPCX?range=1mo&amp;interval=1d</a></code>（8/7 收盘 $133.11）
+          10. Nasdaq 空头持仓 API：<code><a href="https://api.nasdaq.com/api/quote/SPCX/short-interest?assetClass=stocks">https://api.nasdaq.com/api/quote/SPCX/short-interest?assetClass=stocks</a></code>
+          11. stockanalysis.com：<code>/stocks/spcx/</code>、<code>/statistics/</code>、<code>/forecast/</code>、<code>/history/</code></p>
+          <p><strong>行业与新闻（均含日期）</strong>
+          12. SpaceNews《SpaceX conducts 13th Starship test flight》，2026-07-24
+          13. SpaceNews《SpaceX to begin Starship orbital flights》，2026-08-04
+          14. SpaceNews《Hughes files for bankruptcy after GEO business loses ground to Starlink》，<strong>2026-08-03</strong>
+          15. SpaceNews《New Glenn explosion linked to rocket engine valve》，2026-08-05
+          16. SpaceNews《ULA deals with financial challenges caused by Vulcan grounding》，2026-07-24
+          17. SpaceNews《Final Atlas 5 Amazon Leo mission launches》，2026-07-02
+          18. SpaceNews《Qianfan constellation deployment hits 200 satellites》，2026-06-05
+          19. SpaceNews《Rocket Lab delays Neutron debut to late 2026》，2026-02-27
+          20. SpaceNews《FAA gives environmental approval for increased Starship launch rate》，2025-05-06
+          21. WSJ《SpaceX True Believers Propel Shares Past End of Epic Lockup》，2026-08-06
+          22. MarketWatch，2026-08-07：8/7 涨幅与解禁关系
+          23. TipRanks 引摩根大通空头持仓数据，2026-08-07</p>
+          <p><strong>未使用 / 失败的来源（披露完整性）</strong>
+          24. macrotrends.net —— HTTP 403，全程未使用
+          25. FAA 商业航天许可页 —— 仅返回导航框架，最后更新 2025-07-16，无法获取当前许可状态
+          26. eutelsat.com LEO 舰队页 —— HTTP 404
+          27. bls.gov 就业报告原文 —— HTTP 403（数据经 Forbes 2026-08-07 转述核对）</p>
+          <hr>
+          <p><strong>报告完成：2026-08-07</strong></p>
+          <p><strong>结论：回避。乐观情景折现现值 $108.47，仍低于当前 $133.11 达 18.5%。重新评估触发价 $45-60。</strong></p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <strong>AI Berkshire Research</strong> · 本报告用于学习研究，不构成投资建议。
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部">↑</button>
+
+  <script>
+    (() => {
+      const report = document.getElementById('report');
+      const toc = document.getElementById('toc');
+      const mobileToc = document.getElementById('mobileToc');
+      const progress = document.getElementById('scrollProgress');
+      const backToTop = document.getElementById('backToTop');
+      const printButton = document.getElementById('printButton');
+
+      report.querySelectorAll('table').forEach((table) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-scroll';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+
+      const headings = [...report.querySelectorAll('h2')];
+      headings.forEach((heading, index) => {
+        heading.id = `section-${index + 1}`;
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+        toc.appendChild(link);
+
+        const option = document.createElement('option');
+        option.value = heading.id;
+        option.textContent = heading.textContent;
+        mobileToc.appendChild(option);
+      });
+
+      mobileToc.addEventListener('change', () => {
+        document.getElementById(mobileToc.value)?.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      const tocLinks = [...toc.querySelectorAll('a')];
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (!visible) return;
+        tocLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${visible.target.id}`));
+        mobileToc.value = visible.target.id;
+      }, { rootMargin: '-15% 0px -75% 0px' });
+      headings.forEach((heading) => observer.observe(heading));
+
+      const sourceItems = [...report.querySelectorAll('li')];
+      sourceItems.forEach((item) => {
+        const match = item.textContent.trim().match(/^\[([MS]\d+)\]/);
+        if (match) item.id = `ref-${match[1].toLowerCase()}`;
+      });
+
+      const walker = document.createTreeWalker(report, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+      textNodes.forEach((node) => {
+        if (node.parentElement.closest('[id^="ref-"]')) return;
+        if (!/\[[MS]\d+\]/.test(node.nodeValue)) return;
+        const parts = node.nodeValue.split(/(\[[MS]\d+\])/g);
+        const fragment = document.createDocumentFragment();
+        parts.forEach((part) => {
+          const match = part.match(/^\[([MS]\d+)\]$/);
+          if (!match) {
+            fragment.appendChild(document.createTextNode(part));
+            return;
+          }
+          const citation = document.createElement('a');
+          citation.className = 'citation';
+          citation.href = `#ref-${match[1].toLowerCase()}`;
+          citation.textContent = match[1];
+          citation.title = `查看来源 ${match[1]}`;
+          fragment.appendChild(citation);
+        });
+        node.replaceWith(fragment);
+      });
+
+      report.addEventListener('click', (event) => {
+        const citation = event.target.closest('.citation');
+        if (!citation) return;
+        const target = document.querySelector(citation.hash);
+        if (!target) return;
+        target.classList.remove('source-highlight');
+        requestAnimationFrame(() => target.classList.add('source-highlight'));
+      });
+
+      report.querySelectorAll('a[href^="http"]').forEach((link) => {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = max > 0 ? window.scrollY / max : 0;
+        progress.style.width = `${Math.min(100, Math.max(0, ratio * 100))}%`;
+        backToTop.classList.toggle('visible', window.scrollY > 700);
+      };
+      window.addEventListener('scroll', updateScroll, { passive: true });
+      window.addEventListener('resize', updateScroll);
+      updateScroll();
+
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      printButton.addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>

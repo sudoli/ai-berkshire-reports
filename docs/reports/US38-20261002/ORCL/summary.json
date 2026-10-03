@@ -1,0 +1,14 @@
+{
+  "ticker": "ORCL",
+  "company": "Oracle Corporation",
+  "sector": "企业软件与AI云基础设施",
+  "research_date": "2026-10-02",
+  "quote": {"price": 141.08, "currency": "USD", "asof": "2026-10-02 11:20 EDT", "source_url": "https://stockanalysis.com/stocks/orcl/financials/", "verified": true, "note": "单站盘中价非收盘，图片137.30美元未验证。两处拆股历史均显示最后拆股2000-10-13；未找到2026拆股证据，不自行调整图片或EPS。200亿美元ATM是增发，不是拆股。"},
+  "financial_period": "FY2027 Q1，截至2026-08-31；全年基准FY2026",
+  "recommendation": {"rating": "等待价格", "buy_low": 104, "buy_high": 123.5, "currency": "USD", "basis": "研究正常化前瞻EPS6.50美元×16—19倍=104—123.50美元；从公司非GAAP8.10美元指引扣约1.60美元SBC等经常性经济成本缓冲。", "conditions": "RPO按期转收入和现金，资本需求及稀释不超过计划，排除重大融资预付款后的现金回报改善。", "holder_action": "跟踪RPO转化、现金预收、租赁债务及股本；若再融资或交付失控重估，不以订单总额机械加仓。"},
+  "thesis": "数据库与应用黏性提供基础，但巨额AI合同只有在交付、融资与资本回报兑现后才形成普通股价值。",
+  "key_risk": "RPO转换需要高资本投入，客户融资型预付款美化当期现金，债务利息与增发可能侵蚀每股收益。",
+  "confidence": "中",
+  "source_limitations": ["报价与当前股数为单站盘中快照及约数。", "全部未起租合同、客户信用条款及租赁重分类未完整复核。", "第三方FY2026经营利润与发行人GAAP相差8.63%，只采用发行人值，不盲目平均。", "正常化EPS6.50美元是研究桥接，不是GAAP指引。"],
+  "report_file": "ORCL研究报告-20261002.md"
+}

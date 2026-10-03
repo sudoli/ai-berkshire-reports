@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2,
+    "label": "收入 · FY2024",
+    "reported_value": 7003.0,
+    "unit": "",
+    "line_number": 19,
+    "raw_text": "| 收入 | 5,860 | 7,003 | 9,006 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 5,
+    "label": "GAAP净利润 · FY2024",
+    "reported_value": 2852.0,
+    "unit": "",
+    "line_number": 20,
+    "raw_text": "| GAAP净利润 | 2,087 | 2,852 | 3,511 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 8,
+    "label": "GAAP毛利率 · FY2024",
+    "reported_value": 64.13,
+    "unit": "%",
+    "line_number": 21,
+    "raw_text": "| GAAP毛利率 | 61.95% | 64.13% | 64.1% |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 15,
+    "label": "自由现金流 · FY2025",
+    "reported_value": 4252.0,
+    "unit": "",
+    "line_number": 23,
+    "raw_text": "| 自由现金流 | 2,000 | 3,676 | 4,252 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 18,
+    "label": "拆股后GAAP稀释EPS · FY2025",
+    "reported_value": 2.75,
+    "unit": "",
+    "line_number": 24,
+    "raw_text": "| 拆股后GAAP稀释EPS | 1.65 | 2.23 | 2.75 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  },
+  {
+    "id": 16,
+    "label": "拆股后GAAP稀释EPS · FY2023",
+    "reported_value": 1.65,
+    "unit": "",
+    "line_number": 24,
+    "raw_text": "| 拆股后GAAP稀释EPS | 1.65 | 2.23 | 2.75 |",
+    "fetched_value": null,
+    "fetched_source": "",
+    "fetched_value2": null,
+    "fetched_source2": ""
+  }
+]
